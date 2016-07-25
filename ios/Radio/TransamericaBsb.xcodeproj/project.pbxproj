@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C087D3CA132EA16800E37AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3C9132EA16800E37AE7 /* UIKit.framework */; };
+		C087D3CC132EA16800E37AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3CB132EA16800E37AE7 /* Foundation.framework */; };
+		C087D3CE132EA16800E37AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3CD132EA16800E37AE7 /* CoreGraphics.framework */; };
+		C087D3D4132EA16800E37AE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C087D3D2132EA16800E37AE7 /* InfoPlist.strings */; };
+		C087D3D7132EA16800E37AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C087D3D6132EA16800E37AE7 /* main.m */; };
+		C087D3DA132EA16800E37AE7 /* TransamericaBsbAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C087D3D9132EA16800E37AE7 /* TransamericaBsbAppDelegate.m */; };
+		C087D3DD132EA16800E37AE7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C087D3DB132EA16800E37AE7 /* MainWindow.xib */; };
+		C087D3E3132EA16800E37AE7 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C087D3E2132EA16800E37AE7 /* InfoView.m */; };
+		C087D3E9132EA16800E37AE7 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C087D3E7132EA16800E37AE7 /* InfoView.xib */; };
+		C087D3F0132EA16800E37AE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3C9132EA16800E37AE7 /* UIKit.framework */; };
+		C087D3F1132EA16800E37AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3CB132EA16800E37AE7 /* Foundation.framework */; };
+		C087D3F2132EA16800E37AE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D3CD132EA16800E37AE7 /* CoreGraphics.framework */; };
+		C087D3FA132EA16800E37AE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C087D3F8132EA16800E37AE7 /* InfoPlist.strings */; };
+		C087D3FD132EA16800E37AE7 /* TransamericaBsbTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C087D3FC132EA16800E37AE7 /* TransamericaBsbTests.h */; };
+		C087D3FF132EA16800E37AE7 /* TransamericaBsbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C087D3FE132EA16800E37AE7 /* TransamericaBsbTests.m */; };
+		C087D40D132EA25800E37AE7 /* LiveStream.xib in Resources */ = {isa = PBXBuildFile; fileRef = C087D40C132EA25800E37AE7 /* LiveStream.xib */; };
+		C087D410132EA35D00E37AE7 /* LiveStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C087D40F132EA35D00E37AE7 /* LiveStream.m */; };
+		C087D416132EA45A00E37AE7 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = C087D411132EA45A00E37AE7 /* header.png */; };
+		C087D417132EA45A00E37AE7 /* logo_transamerica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C087D412132EA45A00E37AE7 /* logo_transamerica.jpg */; };
+		C087D418132EA45A00E37AE7 /* player_pause.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C087D413132EA45A00E37AE7 /* player_pause.jpg */; };
+		C087D419132EA45A00E37AE7 /* player_play.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C087D414132EA45A00E37AE7 /* player_play.jpg */; };
+		C087D41A132EA45A00E37AE7 /* player.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C087D415132EA45A00E37AE7 /* player.jpg */; };
+		C087D425132EA6A000E37AE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D423132EA6A000E37AE7 /* AVFoundation.framework */; };
+		C087D426132EA6A000E37AE7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D424132EA6A000E37AE7 /* MediaPlayer.framework */; };
+		C087D4D3132EB86000E37AE7 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C087D4D2132EB86000E37AE7 /* splash.jpg */; };
+		C087D4D5132EBD3E00E37AE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D4D4132EBD3E00E37AE7 /* QuartzCore.framework */; };
+		C087D4D7132EBE1500E37AE7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C087D4D6132EBE1500E37AE7 /* CoreMedia.framework */; };
+		C087D4DE132EC30100E37AE7 /* ico_radio.png in Resources */ = {isa = PBXBuildFile; fileRef = C087D4DD132EC30100E37AE7 /* ico_radio.png */; };
+		C087D4E0132EC5C400E37AE7 /* ico_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C087D4DF132EC5C400E37AE7 /* ico_info.png */; };
+		C087D4E2132ECDD200E37AE7 /* prime.png in Resources */ = {isa = PBXBuildFile; fileRef = C087D4E1132ECDD200E37AE7 /* prime.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C087D3F3132EA16800E37AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C087D3BC132EA16800E37AE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C087D3C4132EA16800E37AE7;
+			remoteInfo = TransamericaBsb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C087D3C5132EA16800E37AE7 /* TransamericaBsb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransamericaBsb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C087D3C9132EA16800E37AE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C087D3CB132EA16800E37AE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C087D3CD132EA16800E37AE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C087D3D1132EA16800E37AE7 /* TransamericaBsb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransamericaBsb-Info.plist"; sourceTree = "<group>"; };
+		C087D3D3132EA16800E37AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C087D3D5132EA16800E37AE7 /* TransamericaBsb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransamericaBsb-Prefix.pch"; sourceTree = "<group>"; };
+		C087D3D6132EA16800E37AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C087D3D8132EA16800E37AE7 /* TransamericaBsbAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransamericaBsbAppDelegate.h; sourceTree = "<group>"; };
+		C087D3D9132EA16800E37AE7 /* TransamericaBsbAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransamericaBsbAppDelegate.m; sourceTree = "<group>"; };
+		C087D3DC132EA16800E37AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C087D3E1132EA16800E37AE7 /* InfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		C087D3E2132EA16800E37AE7 /* InfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		C087D3E8132EA16800E37AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InfoView.xib; sourceTree = "<group>"; };
+		C087D3EF132EA16800E37AE7 /* TransamericaBsbTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransamericaBsbTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C087D3F7132EA16800E37AE7 /* TransamericaBsbTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransamericaBsbTests-Info.plist"; sourceTree = "<group>"; };
+		C087D3F9132EA16800E37AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C087D3FB132EA16800E37AE7 /* TransamericaBsbTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransamericaBsbTests-Prefix.pch"; sourceTree = "<group>"; };
+		C087D3FC132EA16800E37AE7 /* TransamericaBsbTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransamericaBsbTests.h; sourceTree = "<group>"; };
+		C087D3FE132EA16800E37AE7 /* TransamericaBsbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransamericaBsbTests.m; sourceTree = "<group>"; };
+		C087D40C132EA25800E37AE7 /* LiveStream.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveStream.xib; sourceTree = "<group>"; };
+		C087D40E132EA35D00E37AE7 /* LiveStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStream.h; sourceTree = "<group>"; };
+		C087D40F132EA35D00E37AE7 /* LiveStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveStream.m; sourceTree = "<group>"; };
+		C087D411132EA45A00E37AE7 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		C087D412132EA45A00E37AE7 /* logo_transamerica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_transamerica.jpg; sourceTree = "<group>"; };
+		C087D413132EA45A00E37AE7 /* player_pause.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player_pause.jpg; sourceTree = "<group>"; };
+		C087D414132EA45A00E37AE7 /* player_play.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player_play.jpg; sourceTree = "<group>"; };
+		C087D415132EA45A00E37AE7 /* player.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player.jpg; sourceTree = "<group>"; };
+		C087D423132EA6A000E37AE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C087D424132EA6A000E37AE7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C087D4D2132EB86000E37AE7 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		C087D4D4132EBD3E00E37AE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C087D4D6132EBE1500E37AE7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C087D4DD132EC30100E37AE7 /* ico_radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_radio.png; sourceTree = "<group>"; };
+		C087D4DF132EC5C400E37AE7 /* ico_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_info.png; sourceTree = "<group>"; };
+		C087D4E1132ECDD200E37AE7 /* prime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prime.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C087D3C2132EA16800E37AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D4D7132EBE1500E37AE7 /* CoreMedia.framework in Frameworks */,
+				C087D4D5132EBD3E00E37AE7 /* QuartzCore.framework in Frameworks */,
+				C087D425132EA6A000E37AE7 /* AVFoundation.framework in Frameworks */,
+				C087D426132EA6A000E37AE7 /* MediaPlayer.framework in Frameworks */,
+				C087D3CA132EA16800E37AE7 /* UIKit.framework in Frameworks */,
+				C087D3CC132EA16800E37AE7 /* Foundation.framework in Frameworks */,
+				C087D3CE132EA16800E37AE7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C087D3EB132EA16800E37AE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D3F0132EA16800E37AE7 /* UIKit.framework in Frameworks */,
+				C087D3F1132EA16800E37AE7 /* Foundation.framework in Frameworks */,
+				C087D3F2132EA16800E37AE7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C087D3BA132EA16800E37AE7 = {
+			isa = PBXGroup;
+			children = (
+				C087D3CF132EA16800E37AE7 /* TransamericaBsb */,
+				C087D3F5132EA16800E37AE7 /* TransamericaBsbTests */,
+				C087D3C8132EA16800E37AE7 /* Frameworks */,
+				C087D3C6132EA16800E37AE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C087D3C6132EA16800E37AE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3C5132EA16800E37AE7 /* TransamericaBsb.app */,
+				C087D3EF132EA16800E37AE7 /* TransamericaBsbTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C087D3C8132EA16800E37AE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C087D4D6132EBE1500E37AE7 /* CoreMedia.framework */,
+				C087D4D4132EBD3E00E37AE7 /* QuartzCore.framework */,
+				C087D423132EA6A000E37AE7 /* AVFoundation.framework */,
+				C087D424132EA6A000E37AE7 /* MediaPlayer.framework */,
+				C087D3C9132EA16800E37AE7 /* UIKit.framework */,
+				C087D3CB132EA16800E37AE7 /* Foundation.framework */,
+				C087D3CD132EA16800E37AE7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C087D3CF132EA16800E37AE7 /* TransamericaBsb */ = {
+			isa = PBXGroup;
+			children = (
+				C087D40A132EA1BD00E37AE7 /* Main */,
+				C087D409132EA1AD00E37AE7 /* Control */,
+				C087D408132EA18A00E37AE7 /* Interface */,
+				C087D40B132EA1C900E37AE7 /* Resources */,
+				C087D3D0132EA16800E37AE7 /* Supporting Files */,
+			);
+			path = TransamericaBsb;
+			sourceTree = "<group>";
+		};
+		C087D3D0132EA16800E37AE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3D1132EA16800E37AE7 /* TransamericaBsb-Info.plist */,
+				C087D3D2132EA16800E37AE7 /* InfoPlist.strings */,
+				C087D3D5132EA16800E37AE7 /* TransamericaBsb-Prefix.pch */,
+				C087D3D6132EA16800E37AE7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C087D3F5132EA16800E37AE7 /* TransamericaBsbTests */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3FC132EA16800E37AE7 /* TransamericaBsbTests.h */,
+				C087D3FE132EA16800E37AE7 /* TransamericaBsbTests.m */,
+				C087D3F6132EA16800E37AE7 /* Supporting Files */,
+			);
+			path = TransamericaBsbTests;
+			sourceTree = "<group>";
+		};
+		C087D3F6132EA16800E37AE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3F7132EA16800E37AE7 /* TransamericaBsbTests-Info.plist */,
+				C087D3F8132EA16800E37AE7 /* InfoPlist.strings */,
+				C087D3FB132EA16800E37AE7 /* TransamericaBsbTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C087D408132EA18A00E37AE7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3DB132EA16800E37AE7 /* MainWindow.xib */,
+				C087D3E7132EA16800E37AE7 /* InfoView.xib */,
+				C087D40C132EA25800E37AE7 /* LiveStream.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		C087D409132EA1AD00E37AE7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3E1132EA16800E37AE7 /* InfoView.h */,
+				C087D3E2132EA16800E37AE7 /* InfoView.m */,
+				C087D40E132EA35D00E37AE7 /* LiveStream.h */,
+				C087D40F132EA35D00E37AE7 /* LiveStream.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		C087D40A132EA1BD00E37AE7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C087D3D8132EA16800E37AE7 /* TransamericaBsbAppDelegate.h */,
+				C087D3D9132EA16800E37AE7 /* TransamericaBsbAppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C087D40B132EA1C900E37AE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C087D4E1132ECDD200E37AE7 /* prime.png */,
+				C087D4DF132EC5C400E37AE7 /* ico_info.png */,
+				C087D4DD132EC30100E37AE7 /* ico_radio.png */,
+				C087D4D2132EB86000E37AE7 /* splash.jpg */,
+				C087D411132EA45A00E37AE7 /* header.png */,
+				C087D412132EA45A00E37AE7 /* logo_transamerica.jpg */,
+				C087D413132EA45A00E37AE7 /* player_pause.jpg */,
+				C087D414132EA45A00E37AE7 /* player_play.jpg */,
+				C087D415132EA45A00E37AE7 /* player.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C087D3C4132EA16800E37AE7 /* TransamericaBsb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C087D402132EA16800E37AE7 /* Build configuration list for PBXNativeTarget "TransamericaBsb" */;
+			buildPhases = (
+				C087D3C1132EA16800E37AE7 /* Sources */,
+				C087D3C2132EA16800E37AE7 /* Frameworks */,
+				C087D3C3132EA16800E37AE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransamericaBsb;
+			productName = TransamericaBsb;
+			productReference = C087D3C5132EA16800E37AE7 /* TransamericaBsb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C087D3EE132EA16800E37AE7 /* TransamericaBsbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C087D405132EA16800E37AE7 /* Build configuration list for PBXNativeTarget "TransamericaBsbTests" */;
+			buildPhases = (
+				C087D3EA132EA16800E37AE7 /* Sources */,
+				C087D3EB132EA16800E37AE7 /* Frameworks */,
+				C087D3EC132EA16800E37AE7 /* Resources */,
+				C087D3ED132EA16800E37AE7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C087D3F4132EA16800E37AE7 /* PBXTargetDependency */,
+			);
+			name = TransamericaBsbTests;
+			productName = TransamericaBsbTests;
+			productReference = C087D3EF132EA16800E37AE7 /* TransamericaBsbTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C087D3BC132EA16800E37AE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Prime Mobile Solutions";
+			};
+			buildConfigurationList = C087D3BF132EA16800E37AE7 /* Build configuration list for PBXProject "TransamericaBsb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C087D3BA132EA16800E37AE7;
+			productRefGroup = C087D3C6132EA16800E37AE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C087D3C4132EA16800E37AE7 /* TransamericaBsb */,
+				C087D3EE132EA16800E37AE7 /* TransamericaBsbTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C087D3C3132EA16800E37AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D3D4132EA16800E37AE7 /* InfoPlist.strings in Resources */,
+				C087D3DD132EA16800E37AE7 /* MainWindow.xib in Resources */,
+				C087D3E9132EA16800E37AE7 /* InfoView.xib in Resources */,
+				C087D40D132EA25800E37AE7 /* LiveStream.xib in Resources */,
+				C087D416132EA45A00E37AE7 /* header.png in Resources */,
+				C087D417132EA45A00E37AE7 /* logo_transamerica.jpg in Resources */,
+				C087D418132EA45A00E37AE7 /* player_pause.jpg in Resources */,
+				C087D419132EA45A00E37AE7 /* player_play.jpg in Resources */,
+				C087D41A132EA45A00E37AE7 /* player.jpg in Resources */,
+				C087D4D3132EB86000E37AE7 /* splash.jpg in Resources */,
+				C087D4DE132EC30100E37AE7 /* ico_radio.png in Resources */,
+				C087D4E0132EC5C400E37AE7 /* ico_info.png in Resources */,
+				C087D4E2132ECDD200E37AE7 /* prime.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C087D3EC132EA16800E37AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D3FA132EA16800E37AE7 /* InfoPlist.strings in Resources */,
+				C087D3FD132EA16800E37AE7 /* TransamericaBsbTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C087D3ED132EA16800E37AE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C087D3C1132EA16800E37AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D3D7132EA16800E37AE7 /* main.m in Sources */,
+				C087D3DA132EA16800E37AE7 /* TransamericaBsbAppDelegate.m in Sources */,
+				C087D3E3132EA16800E37AE7 /* InfoView.m in Sources */,
+				C087D410132EA35D00E37AE7 /* LiveStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C087D3EA132EA16800E37AE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C087D3FF132EA16800E37AE7 /* TransamericaBsbTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C087D3F4132EA16800E37AE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C087D3C4132EA16800E37AE7 /* TransamericaBsb */;
+			targetProxy = C087D3F3132EA16800E37AE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C087D3D2132EA16800E37AE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C087D3D3132EA16800E37AE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C087D3DB132EA16800E37AE7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C087D3DC132EA16800E37AE7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C087D3E7132EA16800E37AE7 /* InfoView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C087D3E8132EA16800E37AE7 /* en */,
+			);
+			name = InfoView.xib;
+			sourceTree = "<group>";
+		};
+		C087D3F8132EA16800E37AE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C087D3F9132EA16800E37AE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C087D400132EA16800E37AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Silva (AZ577X5B2C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "D9D0A009-9229-4C33-ACB6-9C5082DBA17F";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C087D401132EA16800E37AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Silva (AZ577X5B2C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D9D0A009-9229-4C33-ACB6-9C5082DBA17F";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C087D403132EA16800E37AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransamericaBsb/TransamericaBsb-Prefix.pch";
+				INFOPLIST_FILE = "TransamericaBsb/TransamericaBsb-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C087D404132EA16800E37AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransamericaBsb/TransamericaBsb-Prefix.pch";
+				INFOPLIST_FILE = "TransamericaBsb/TransamericaBsb-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C087D406132EA16800E37AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransamericaBsb.app/TransamericaBsb";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransamericaBsbTests/TransamericaBsbTests-Prefix.pch";
+				INFOPLIST_FILE = "TransamericaBsbTests/TransamericaBsbTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C087D407132EA16800E37AE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransamericaBsb.app/TransamericaBsb";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransamericaBsbTests/TransamericaBsbTests-Prefix.pch";
+				INFOPLIST_FILE = "TransamericaBsbTests/TransamericaBsbTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C087D3BF132EA16800E37AE7 /* Build configuration list for PBXProject "TransamericaBsb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C087D400132EA16800E37AE7 /* Debug */,
+				C087D401132EA16800E37AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C087D402132EA16800E37AE7 /* Build configuration list for PBXNativeTarget "TransamericaBsb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C087D403132EA16800E37AE7 /* Debug */,
+				C087D404132EA16800E37AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C087D405132EA16800E37AE7 /* Build configuration list for PBXNativeTarget "TransamericaBsbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C087D406132EA16800E37AE7 /* Debug */,
+				C087D407132EA16800E37AE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C087D3BC132EA16800E37AE7 /* Project object */;
+}

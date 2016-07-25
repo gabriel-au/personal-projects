@@ -1,0 +1,121 @@
+// !$*UTF8*$!
+{
+	C009A0CD132ED1DA00D00725 /* TransamericaBsb */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TransamericaBsb;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	C009A0E6132ED1DE00D00725 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C009A0E7132ED1DE00D00725 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C009A0F0132ED21900D00725 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Availability.h: No such file or directory";
+		fRef = C087D3D5132EA16800E37AE7 /* TransamericaBsb-Prefix.pch */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 4;
+		rType = 1;
+	};
+	C009A0F1132ED21900D00725 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C087D3D5132EA16800E37AE7 /* TransamericaBsb-Prefix.pch */;
+		name = "TransamericaBsb-Prefix.pch: 15";
+		rLen = 0;
+		rLoc = 336;
+		rType = 0;
+		vrLen = 336;
+		vrLoc = 0;
+	};
+	C087D3BC132EA16800E37AE7 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = C009A0CD132ED1DA00D00725 /* TransamericaBsb */;
+		activeTarget = C087D3C4132EA16800E37AE7 /* TransamericaBsb */;
+		codeSenseManager = C009A0E7132ED1DE00D00725 /* Code sense */;
+		executables = (
+			C009A0CD132ED1DA00D00725 /* TransamericaBsb */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 321835483;
+			PBXWorkspaceStateSaveDate = 321835483;
+		};
+		perUserProjectItems = {
+			C009A0F0132ED21900D00725 /* XCBuildMessageTextBookmark */ = C009A0F0132ED21900D00725 /* XCBuildMessageTextBookmark */;
+			C009A0F1132ED21900D00725 /* PBXTextBookmark */ = C009A0F1132ED21900D00725 /* PBXTextBookmark */;
+		};
+		sourceControlManager = C009A0E6132ED1DE00D00725 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	C087D3C4132EA16800E37AE7 /* TransamericaBsb */ = {
+		activeExec = 0;
+		executables = (
+			C009A0CD132ED1DA00D00725 /* TransamericaBsb */,
+		);
+	};
+	C087D3D5132EA16800E37AE7 /* TransamericaBsb-Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {726, 195}}";
+			sepNavSelRange = "{291, 0}";
+			sepNavVisRange = "{0, 335}";
+		};
+	};
+	C087D3EE132EA16800E37AE7 /* TransamericaBsbTests */ = {
+		activeExec = 0;
+	};
+}
