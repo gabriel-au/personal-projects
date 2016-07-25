@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/pages/pedido.js"></script>
+	
+	<script type="text/javascript">
+	
+	$(document).ready(		
+			function(){						
+			document.getElementById('panelDetalhes').style.display = 'none'; 
+			carregaPedidos();			
+		}
+	);		
+	
+	function carregaPedidos(){		
+		BRQMob.log("entrando na funcao carregar detalhes pedido CAD");
+	  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "detalhesPedidoCad",[]);
+	}
+		function sucesso(retorno){
+			loadListaDetalhesPedidos(retorno.detalhesPedido);
+		}
+		
+		function falha(retorno){
+			BRQMob.log("falha carregar detalhes pedido CAD" + retorno);	 
+		}	  	
+	
+		function calcularDetalhes(filialExp,valorIpi,fatorCondPagamento,valorStb,valorLiqMercadoria,quantidadeMercadoria,valorSemEncargos,filialFaturamento,numParcelas,qtdDiasPrazo,diasPrazoBeneficiario,periodoParcelas,condPagamento,numNotaFiscal){
+			$("#cadFilial").text("CAD " + filialExp);
+			$("#cadNota").text("CAD " + filialExp);
+			valorLiq = valorLiqMercadoria.split("$");
+			semEncargos = valorSemEncargos.split("$");
+		
+			BRQMob.log("entrando na funcao calcular detalhes");
+			BRQMob.exec("sucessoDetalhes", "falhaDetalhes", "VendasDispatcher", "calcularDetalhes", [valorIpi,fatorCondPagamento,valorStb,parseFloat(valorLiq[1]),quantidadeMercadoria,parseFloat(semEncargos[1]),filialFaturamento,numParcelas,qtdDiasPrazo,diasPrazoBeneficiario,periodoParcelas,condPagamento,numNotaFiscal,filialExp]);
+		}	
+		
+		function loadListaDetalhesPedidos(pedidoCad){
+			limpaBodyTabela();
+					
+			$.each(pedidoCad, function(i,obj){
+			
+				tr = $('<tr/>', {"class":(i % 2 == 0 ? "" : "off"), id : i, onclick : "tableTR(this),calcularDetalhes("+ obj.filialExpedicao + "," + obj.valorTotalIpi + "," + obj.fatorCondicaoPagamento +  "," + obj.valorTotalStb + ",\'" + obj.valorLiquidoMercadoria + "\'," + obj.qtdeMercadoria + ",\'" + obj.valorSemEncargos + "\'," + obj.filialFaturamento + "," + obj.numParcelas + "," + obj.qtdDiasPrazo + "," + obj.diasPrazoBeneficiario + "," + obj.periodoParcelas + "," + obj.condicaoPagamento + "," + obj.numNotaFiscal + ")"});
+				td_cad= $('<td/>', {});
+				div_cad=$('<div/>', {"class":"left"});
+				$($('<span/>', {"class":"icon aplicado"})).appendTo(div_cad);
+				label=$('<label/>', {"class":"left"});
+				$($('<span/>', {text: obj.filialExpedicao})).appendTo(label);
+				$(label).appendTo(div_cad);
+				$(div_cad).appendTo(td_cad);
+				$(td_cad).appendTo(tr);
+		
+				td_liq= $('<td/>', {"style":"text-align:right"});
+				$($('<span/>', {text: obj.valorLiqImpFrete})).appendTo(td_liq);
+				$(td_liq).appendTo(tr);
+				
+				td_poupe= $('<td/>', {"style":"text-align:right"});
+				$($('<span/>', {text: obj.valorPoupeCerto})).appendTo(td_poupe);
+				$(td_poupe).appendTo(tr);
+				
+				td_poupeBND= $('<td/>', {"style":"text-align:right"});
+				$($('<span/>', {text: obj.valorPoupeCertoBND})).appendTo(td_poupeBND);
+				$(td_poupeBND).appendTo(tr);
+				
+				td_bonif= $('<td/>', {"style":"text-align:right"});
+				$($('<span/>', {text: obj.valorBonificacao})).appendTo(td_bonif);
+				$(td_bonif).appendTo(tr);
+				
+				td_minimo= $('<td/>', {"style":"text-align:right"});
+				$($('<span/>', {text: obj.valorMinimo})).appendTo(td_minimo);
+				$(td_minimo).appendTo(tr);			
+				$(tr).appendTo(lista_detalhes_pedido_cad);
+			});
+		}
+		
+		function limpaBodyTabela(){
+			$("#lista_detalhes_pedido_cad").empty();
+		}		
+		
+		function sucessoDetalhes(retorno){
+		if(retorno!=null){
+		
+		 document.getElementById('panelDetalhes').style.display = 'block';
+		 	$("#lista_detalhes_filial").empty();
+		 	
+		 	$.each(retorno.calculoPedido, function(i,obj){
+		 		
+		 		if(i==0){
+		 			tr = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off ") + ("selected"),onclick:"tableTR(this),carregaValoresNotaFiscal(" + obj.filialFaturamento + ")"});
+		 			carregaValoresNotaFiscal(obj.filialFaturamento);
+		 		}else{
+		 			tr = $('<tr/>', {onclick:"tableTR(this),carregaValoresNotaFiscal(" + obj.filialFaturamento + ")"});
+		 		}
+				
+				td_fat= $('<td/>', {});		
+				$($('<span/>', {text: obj.filialFaturamento})).appendTo(td_fat);
+				$(td_fat).appendTo(tr);
+				
+				td_liq= $('<td/>', {});		
+				$($('<span/>', {text:obj.valorLiquidoImp})).appendTo(td_liq);
+				$(td_liq).appendTo(tr);
+				
+				td_valor_nota= $('<td/>', {});		
+				$($('<span/>', {text:obj.valorNotaFiscalSemEncargos})).appendTo(td_valor_nota);
+				$(td_valor_nota).appendTo(tr);
+				
+				$(tr).appendTo(lista_detalhes_filial);
+				
+			});				
+			}
+			
+			}
+			
+		function carregaValoresNotaFiscal(codigoFilialFat){
+			BRQMob.log("entrando na funcao carregaValoresNotaFiscal");
+			BRQMob.exec("detalharNotaFiscal", "falhaDetalhes", "VendasDispatcher", "calcularDetalhesNotaFiscal", [codigoFilialFat]);
+		}	
+			
+		function detalharNotaFiscal(retorno){
+	//	$("#cadNota").text("CAD " + retorno.calculoPedido.filialExpedicao);
+		$("#lista_detalhes_nota").empty();
+		
+		$.each(retorno.listaValores, function(i,obj){
+				tr = $('<tr/>', {});
+				td_num_nota= $('<td/>', {});		
+				$($('<span/>', {text:obj.numNotaFiscal})).appendTo(td_num_nota);
+				$(td_num_nota).appendTo(tr);
+				
+				td_val_nota= $('<td/>', {});		
+				$($('<span/>', {text:obj.valorNotaFiscal})).appendTo(td_val_nota);
+				$(td_val_nota).appendTo(tr);
+				
+				td_vendor= $('<td/>', {});		
+				$($('<span/>', {text: obj.valorEncargosVendor})).appendTo(td_vendor);
+				$(td_vendor).appendTo(tr);
+				
+				$(tr).appendTo(lista_detalhes_nota);
+			});	
+			detalharTotalPagar(retorno);
+		}
+		
+		function detalharTotalPagar(retorno){
+			limparTabela();
+			
+			$.each(retorno.listaValores, function(i,obj){
+			
+				tr = $('<tr/>', {});
+				td_cp= $('<td/>', {});		
+				$($('<span/>', {text: obj.condicaoPagamento})).appendTo(td_cp);
+				$(td_cp).appendTo(tr);
+				
+				td_valor_parc= $('<td/>', {});		
+				$($('<span/>', {text: obj.numParcelas + " x " + obj.totalParcelas})).appendTo(td_valor_parc);
+				$(td_valor_parc).appendTo(tr);
+				
+				td_entrada= $('<td/>', {});		
+				$($('<span/>', {text: obj.qtdDiasPrazo })).appendTo(td_entrada);
+				$(td_entrada).appendTo(tr);
+				
+				td_periodo= $('<td/>', {});		
+				$($('<span/>', {text: obj.periodo})).appendTo(td_periodo);
+				$(td_periodo).appendTo(tr);
+				$(tr).appendTo(lista_detalhes_total_pagar);
+			});
+		}		
+		
+		function limparTabela(){
+			$("#lista_detalhes_total_pagar").empty();
+		}
+		
+	</script>
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<!-- Navegação esquerda - em caso de seção com menu, deixar o leftNav vazio -->
+				<a class="button left" href="javascript:history.back()">Voltar</a>
+				<h1>Detalhes do Pedido por CAD</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<h2>Escolha o CAD para o detalhamento</h2>
+			<div class="tableList">
+					<table style="width: 100%" cellspacing="0">
+						<thead>
+							<tr>
+								<th>CAD</th>
+								<th>Líq + Imp + Frt</th>
+								<th>Poupe certo</th>
+								<th>Poupe certo p/ Brinde</th>
+								<th>Bonif</th>
+								<th>Valor Mínimo</th>
+							</tr>
+						</thead>
+						<tbody id="lista_detalhes_pedido_cad">
+						</tbody>		
+					</table>
+			</div>
+			
+			<div id="panelDetalhes">
+			<div class="panel"></div>
+			<h2>Detalhes por filial de Faturamento <span id="cadFilial"></span></h2>
+			<div class="tableList">
+					<table style="width: 100%;" cellspacing="0">
+						<thead>
+							<tr>
+								<th style="width: 33%;">FAT</th>
+								<th style="width: 33%;">Líq + Imp</th>
+								<th style="width: 33%;">Valor da nota fiscal</th>
+							</tr>
+						</thead>
+						<tbody id="lista_detalhes_filial">
+																	
+						</tbody>
+					</table>
+				</div>
+			
+			
+			<h2>Detalhes por nota fiscal <span id="cadNota"></span></h2>
+			<div class="tableList">
+					<table style="width: 100%;" cellspacing="0">
+						<thead>
+							<tr>
+								<th style="width: 33%;">NF</th>
+								<th style="width: 33%;">Valor da nota</th>
+								<th style="width: 33%;">Encargos Vendor</th>
+							</tr>
+						</thead>
+						<tbody id="lista_detalhes_nota">
+																		
+						</tbody>
+					</table>
+				</div>
+			<h2>Valor total a pagar (Despesas Acessórias e Benefícios Incluídos)</h2>
+			<div class="tableList">
+					<table style="width: 100%;" cellspacing="0">
+						<thead>
+							<tr>
+								<th style="width: 25%;">CP</th>
+								<th style="width: 25%;">Valor das parcelas</th>
+								<th style="width: 25%;">Entrada</th>
+								<th style="width: 25%;">Periodicidade</th>
+							</tr>
+						</thead>
+						<tbody id="lista_detalhes_total_pagar">																	
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

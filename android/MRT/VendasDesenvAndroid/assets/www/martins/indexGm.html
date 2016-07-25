@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	
+	<script type="text/javascript" src="../includes/js/pages/indexGm.js"></script>	
+
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<h1>Relação de RCA's da Equipe</h1>
+				<a class="button right" href="javascript:void(0);" class="bt" id="botao_ok">Ok</a>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Informe o RCA</h2>
+				
+				<div class="panel">
+					<div class="left" id="div_rca">
+						<select class="normal" id="rca" onchange="listaTerritorios(this.value);">
+							<option value="" selected="selected">Selecione um RCA</option>
+						</select>
+					</div>	
+					<div class="left" id="div_territorio">
+						<select class="normal" id="territorio" disabled="disabled">
+							<option value="" selected="selected">Selecione um Território</option>
+						</select>
+					</div>	
+					
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

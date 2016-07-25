@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="data">27/10</h2>
+        	<h2 class="aviso">8h às 9h</h2>
+        	<p><STRONG>Início das atividades no Centro de convenções</STRONG></p>
+			<div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>9h às 9h30 </STRONG></h2>
+        	<p><strong> Entrega dos Prêmios</strong></p>
+        	<p>- Lutero Arno Renck de Educação<br>
+        	  - Jeber Juabre Experiências de Sucesso<BR>
+        	</p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>9h30 às 11h30 </STRONG></h2>
+        	<p><strong> Mesa-redonda: "Modelos dos Sistemas de Saúde"
+        	</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong>  </p>
+            <p>Alexandre Augusto Ruschi Filho, presidente da Federação Espírito Santo</p>
+            <p><strong>Moderador</strong></p>
+            <p>Rosandro Aranha Montenegro, gestor de Fundos Institucionais da Confederação Norte Nordeste</p> 
+			<p><strong>Coordenador</strong></p>
+            <p>Adriano Soares, doutor em Medicina pela Unifesp, doutorando em Administração de Empresas pela FGV e consultor para o Sistema Unimed</p>
+			<div class="dotted-border"></div>  			
+            <p>- Política Nacional de Saúde – Agenda do Ministério da Saúde<br>
+              - Modelos de Sistemas de Saúde na Europa e América Latina, com a Profa. Ana Maria Malik <br>
+			  - O Sistema de Saúde Holandês - passado e presente, com Enne Osinga, membro da Society of Actuaries in the Netherlands - 'Actuarieel Genootschap'<br>
+			  - O Sistema de Saúde Português, com Gilson de Souza Lima, presidente da Unimed Centro-Sul Fluminense e mestre em Gestão em Saúde pelo Instituto Universitário de Lisboa/FGV<br>
+			  - Os Sistemas de Saúde Americano e Canadense, com Paulo Borem, especialista em Administração da Saúde pela Fundação Oswaldo Cruz e membro da Diretoria do Credicom<br>
+			  - O Sistema Unimed, com Eudes de Freitas Aquino, presidente da Unimed do Brasil<br>
+              - Debate</p>   
+            <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>11h30 às 12h30</STRONG></h2>
+        	<p><STRONG>Visita à Feira de Negócios</STRONG></p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>12h30 às 14h </STRONG></h2>
+        	<p><STRONG>Almoço</STRONG></p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>14h às 14h45</STRONG></h2>
+        	<p><STRONG>Palestra: "Gestão da sustentabilidade como apoio à estratégia de negócio"</STRONG></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong></p>
+            <p>Kamil Hussein Fares, presidente da Federação do Estado do Mato Grosso </p>
+            <h2 class="aviso">Palestrante</h2>
+            <p>Vitor Seravalli
+            <div class="dotted-border"></div>
+            <p>Engenheiro químico pela Unicamp, MBA em Marketing pela ESPM, e especialização em Responsabilidade Social e Terceiro Setor pela FIA/CEATS. Atualmente, é diretor de Responsabilidade Social do CIESP, membro do Conselho Superior de Responsabilidade Social da FIESP (CONSOCIAL) e membro do Conselho de Administração da ABRINQ, além de sócio-diretor da Seravalli Consulting.</p>
+			<div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>14h45 às 16h25 </STRONG></h2>
+        	<p><STRONG>Mesa-redonda: "Modelos viáveis para o financiamento da saúde privada no Brasil"</STRONG></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong> </p>
+            <p>Marcelo Mergh Monteiro, presidente da Federação Interfederativa do Estado de Minas Gerais</p>
+            <p><strong>Moderador</strong></p>
+            <p>Jefferson de Almeida Miranda, presidente da Federação Leste Nordeste de Minas
+            <p>- Perspectivas para o financiamento da saúde privada no Brasil - Maurício Ceschin, presidente da Agência Nacional de Saúde Suplementar   (ANS)<br>
+- Welfare state - Celina Ramalho, doutora em Economia de Empresas pela Fundação Getúlio Vargas<br>
+<EM>- </EM>Medicina de Grupo - Arlindo de Almeida, presidente da Associação Brasileira de Medicina de Grupo (Abramge)<br>
+- Autogestão - Denise Brito, presidente da União Nacional das Instituições de Autogestão em Saúde<br>
+- Seguradoras, com Sandro Leal Alves, gerente de Saúde Suplementar da FenaSaúde  
+            <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>16h25 às 17h40 </STRONG></h2>
+        	<p><STRONG>Mesa-redonda: Tendências em gestão de pessoas</STRONG></p>
+            <div class="dotted-border"></div>
+			<p><strong>Presidente da Mesa</strong> </p>
+			<p>Rafael Moliterno Neto, presidente da Seguros Unimed</p>
+			<p><strong>Moderador</strong></p>
+			<p>Hugo Campos Borges, presidente da Unimed Juiz de Fora<BR>
+			<p>- <strong>Carreira</strong> - José Antônio Monteiro Hipólito, consultor e pesquisador pela FIA e autor do livro "Administração Salarial"<br>
+			    - <strong>Liderança</strong> - Karim Khoury, diretor da ACORDO Consultoria e Treinamento e autor de diversos livros, dentre eles, "Liderança é uma questão de atitude"<br>
+  <EM>- </EM><strong>Desenvolvimento de Pessoas</strong> - Alexandre Slivnik, sócio-diretor do Instituto de Desenvolvimento Profissional (IDEPRO) <br>
+			    - <strong>Coaching</strong> - Eliane Mesquita, especialista em Coach pela Sociedade Brasileira de Coaching (SBC)<br>
+	      - <strong>Educação Cooperativista</strong> - Márcio Lopes de Freitas, presidente do Serviço Nacional de Aprendizagem do Cooperativismo (Sescoop)<br>
+	      <EM>- </EM><strong>Os Desafios das Diferentes Gerações no Mercado de Trabalho</strong> - João Batista Caetano, presidente da Fundação Unimed<br>
+	      - Cenário do Sistema Unimed - Rosana Nardy Balote, superintendente de RH da Seguros unimed<br>
+	      <EM>- </EM>Debate           
+			<p>
+		  
+		  <div class="dotted-border"></div>
+            <h2 class="aviso"><STRONG>17h40 às 19h </STRONG></h2>
+        	<p><STRONG>Mesa-redonda: "Mecanismos de Defesa do Cooperativismo Médico e de Saúde no Congresso Nacional – Avanços e desafios do Sistema Unimed"</STRONG></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong></p>
+            <p>Edevard José de Araújo, presidente da Federação do Estado de Santa Catarina</p>
+            <p><strong>Moderador</strong></p>
+            <p>José Abel Alcanfor Ximenes, presidente da Unimed Cerrado</p>           
+            <div class="dotted-border"></div>
+            <p>- Odacir Zonta, presidente de honra da Frencoop e atual assessor da presidência da OCB <br />
+		  - Lelo Coimbra, deputado e coordenador do ramo saúde da Frencoop<br>
+		  - Marco Aurélio Ubiali, deputado e coordenador do ramo trabalho da Frencoop<br>
+		  - Ronaldo Caiado, deputado e membro da Frencoop e da Frente Parlamentar da   Saúde<br>
+		  - José Pimentel, senador e membro da Frencoop<br>
+		  - Debate</p>
+            
+            <p>&nbsp;</p>
+              
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" class="highlight" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

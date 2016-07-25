@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript" src="../includes/js/pages/clienteRelacionamento.js"></script>
+
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:BRQNavegacao.voltar()">Voltar</a>
+				<h1>Relacionamento com Cliente</h1>
+				<!-- Navegação da direita -->
+				<!-- a class="button right selectable" href="javascript:void(0);" id="favoritos"><span class="icon favoritoHighlight"></span></a-->
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">				
+				<ul class="tabs selectable">
+                    <li onclick="nav('clienteDetalhe.html');" class="first">
+                    	<span class="number">1</span>
+                		<label>Informações</label>
+                    </li>
+                	<li onclick="nav('javascript:void(0);');" class="selected">
+                		<span class="number">2</span>
+                		<label>Vendas</label>
+                	</li>
+                    <li onclick="nav('clienteGondola.html');" class="last">
+                    	<span class="number">3</span>
+                		<label>Gôndola</label>
+                    </li>
+                </ul>
+                <div class="panel paddedGrey" id="divMensagem" style="display: none;">
+					<ul>
+						<li class="error" >
+							<span class="icon"></span>
+							<label id="mensagem"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="formDiv">
+					<div class="line panelBg">
+						<div class="cell" style="width: 50%;">
+							<label id="label_limite_credito"></label>
+							<span id="descLimiteCredito"></span>
+							<span id="limiteCredito"></span>
+						</div>
+						<div class="cell">
+							<label>Saldo em Aberto do Cliente</label>
+							<span id="saldoAberto"></span>
+						</div>
+					</div>
+				</div>
+				<h2>Compras</h2>
+				<!-- Justificar Não Atendimento -->
+				<ul class="listNav">
+					<li id="li_titulos">
+						<span class="icon cad"></span>
+						<div class="left"><label class="large">Títulos em Aberto</label></div>
+						<div class="right"><span id="span_total_titulos"></span></div>
+					</li>
+					<li id="li_pedidos">
+						<span class="icon pedido"></span>
+						<div class="left"><label class="large">Listar Pedidos</label></div>
+						<a href="javascript:void(0);"><label></label></a>
+						<div class="right"><span id="span_total_pedidos"></span></div>
+					</li>
+<!-- 					<li id="li_cotacao"> -->
+<!-- 						<span class="icon pedido"></span> -->
+<!-- 						<div class="left"><label class="large">Listar Cotações</label></div> -->
+<!-- 						<a href="javascript:void(0);"><label></label></a> -->
+<!-- 					</li> -->
+				</ul>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+			
+			<!-- RODAPÉ navegação inferior, abas e botões de navegação interna -->
+			<div id="footer">
+				<div class="groupButtons">
+					<ul>
+						<li><a href="clienteDetalhe.html">Informações</a></li>
+						<li class="selected"><a href="javascript:void(0);">Vendas</a></li>
+						<li><a href="clienteGondola.html">Gôndola</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- FIM DO RODAPÉ -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

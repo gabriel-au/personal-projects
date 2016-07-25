@@ -1,0 +1,102 @@
+10
+
+dir
+619
+svn+ssh://ouropreto.primems.com.br/svn/fiscon/trunk/FISCON_Mobile/src
+svn+ssh://ouropreto.primems.com.br/svn/fiscon
+
+
+
+2010-10-29T12:16:12.630064Z
+613
+Eduardo Carminati
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e04f4003-3cb9-4585-96a4-87db3f752821
+
+L10nConstants.java
+file
+
+
+
+
+2011-03-23T17:56:53.000000Z
+3e6261fadac427869a677b2b68b2e730
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+280
+
+L10nResources.java
+file
+
+
+
+
+2011-03-23T17:56:53.000000Z
+3010651e14933dec747db99ce9c7cd67
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7128
+
+br
+dir
+
+org
+dir
+

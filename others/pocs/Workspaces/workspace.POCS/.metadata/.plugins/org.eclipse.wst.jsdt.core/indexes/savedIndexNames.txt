@@ -1,0 +1,10 @@
+INDEX VERSION 1.122+/Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+304169936.index
+1463741441.index
+2266423414.index
+1793751995.index
+3694516748.index
+2695510326.index
+1606519587.index
+2723539995.index
+2253534900.index

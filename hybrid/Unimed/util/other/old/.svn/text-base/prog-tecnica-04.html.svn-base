@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+-->	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+  	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y"><br />
+        	<h2 class="data">28/10</h2>
+        	<h2 class="aviso">8h às 9h</h2>
+        	<p><strong>Início das atividades no Centro de Convenções</strong></p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">9h às 11h30</h2>
+        	<p><strong>Mesa-redonda:   “Recomendação nº 36 do Conselho Nacional de Justiça”  </strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente</strong></p>
+            <p>José Martiniano Grillo Neto, presidente da Unimed Centro Paulista
+            </p>
+            <p><strong>Moderador</strong></p>
+            <p>Marcos de Almeida Cunha, presidente da Federação Sudeste   Paulista
+            <div class="dotted-border"></div>
+            <p>- A Lei 9656 e o Rol de Procedimentos – Coberturas Obrigatórias - Leandro Reis Tavares, diretor de Normas e Habilitação de Operadoras da   Agência Nacional de Saúde Suplementar (ANS)<br>
+              - A Judicialização da Medicina - Humberto Jorge Isaac, presidente das Unimeds   do Estado de São Paulo<br>
+              <EM>- </EM>A visão do Poder Judiciário na concessão de Liminares em Procedimentos   Médicos<br>
+              - Nancy Andrighi, ministra do Superior Tribunal de Justiça<br>
+              - Massami Uyeda, ministro do Superior Tribunal de Justiça<br>
+              - Gilmar Mendes, ministro do Supremo Tribunal Federal
+
+
+ </p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">11h30 às 12h30</h2>
+        	<p><strong>Visita à Feira de Negócios</strong></p>
+            <div class="dotted-border"></div>
+            
+            
+            <h2 class="aviso">12h30 às 14h</h2>
+        	<p><strong>Almoço</strong></p>
+            <div class="dotted-border"></div>
+            
+             <h2 class="aviso">14h às 14h30</h2>
+        	<p><strong>Entrega dos Prêmios</strong></p>
+            <p>- Alberto Urquiza Wanderley de Comunicação<br />
+			- Nilo Marciano de Oliveira de Marketing<br> - Djalma Chastinet Contreiras de Responsabilidade Social
+</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">14h30 às 14h45</h2>
+        	<p><strong>Sorteio da promoção 'Viva a Vida 2011'</strong></p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">14h45 às 17h</h2>
+        	<p><strong>Mesa-redonda: "Governança   Corporativa Cooperativa – Saúde e Sustentabilidade"</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong></p>
+            <p>Raimundo Viana de Macedo, presidente da Unimed Santos</p>
+            <p><strong>Moderador</strong></p>
+            <p>Silvio Porto de Oliveira, presidente da Federação Baiana</p>           
+            <div class="dotted-border"></div>
+            <p>- Transparência   empresarial como fator de investimento - Tasso Jereissati,   ex-senador e empresário<br />
+		  - A importância da Governança Corporativa para o desenvolvimento do mercado   brasileiro de capitais - Edna   Sousa Holanda, gerente de Prospecção de Empresas da BMF-Bovespa<BR>
+          - The Triple Bottom Line - Paulette Melo, MBA em Gestão   Empresarial pela Fundação Getúlio Vargas, instituição na qual atua como   professora; atua há 29 anos no mercado financeiro e no terceiro setor<BR>
+          - Governança Corporativa e Sustentabilidade: efeitos na   sociedade<BR>
+          - Debate<BR>
+          </p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">17h às 17h45</h2>
+        	<p><strong>Palestra: "Setor Privado e   os Objetivos de Desenvolvimento do Milênio (ODM)"</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente</strong></p>
+            <p>Mauro Muiños de Andrade, presidente da Federação do Estado da Bahia <BR>Jorge Chediek, embaixador da ONU
+            </p>           
+            <div class="dotted-border"></div>
+            <h2 class="aviso">17h45 às 18h15</h2>
+            <p><strong>Palestra: &quot;Plano de Desenvolvimento Organizacional - Criação e   Estruturação&quot;</strong></p>
+            <div class="dotted-border"></div> 
+			<p><strong>Presidente</strong></p>
+            <p>Omar Abujamra Junior, presidente da Unimed Centro-Oeste   Paulista</p>
+			  <div class="dotted-border"></div> 
+            <p>- Erick Paulino, consultor da Deloitte, pós-graduado em Gestão Estratégica   pela FGV- SP (CEAG) e graduado em Administração de Empresas com Habilitação em   Marketing. Atuou na conclusão de diversos projetos nacionais e internacionais de   formulação e implementação da estratégia, gestão por indicadores, escritórios de   projetos e qualidade. Experiência com Modelos Sistêmicos de Gestão (Prêmio   Nacional da Qualidade – PNQ) e como examinador de Prêmios Estaduais e Regionais   de Qualidade.</p>
+			<div class="dotted-border"></div>
+            <h2 class="aviso">18h15 </h2>
+            <p><strong>Solenidade de Encerramento</strong></p>
+            
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.tml.framework.device,0.3.0.200906152200,"org.eclipse.tml.framework.device",1268340344636
+started,bundle,org.eclipse.tml.framework.device.wizard,0.3.0.200906152200,"org.eclipse.tml.framework.device.wizard",1268340344649
+started,bundle,org.eclipse.tml.service.vncviewer,0.3.0.200906152200,"org.eclipse.tml.service.vncviewer",1268340344649
+started,bundle,org.eclipse.wst.web,1.1.301.v200909021400,"org.eclipse.wst.web",1268340344660
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1268340344669
+os,sysinfo,,,"macosx",1268340344673
+arch,sysinfo,,,"x86_64",1268340344673
+ws,sysinfo,,,"cocoa",1268340344673
+locale,sysinfo,,,"en_US",1268340344673
+processors,sysinfo,,,"2",1268340344673
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1268340344673
+java.runtime.version,sysinfo,,,"1.6.0_17-b04-248-10M3025",1268340344673
+java.specification.name,sysinfo,,,"Java Platform API Specification",1268340344673
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268340344673
+java.specification.version,sysinfo,,,"1.6",1268340344673
+java.vendor,sysinfo,,,"Apple Inc.",1268340344673
+java.version,sysinfo,,,"1.6.0_17",1268340344673
+java.vm.info,sysinfo,,,"mixed mode",1268340344673
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1268340344673
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1268340344673
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268340344673
+java.vm.specification.version,sysinfo,,,"1.0",1268340344673
+java.vm.vendor,sysinfo,,,"Apple Inc.",1268340344673
+java.vm.version,sysinfo,,,"14.3-b01-101",1268340344674
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1268340345853

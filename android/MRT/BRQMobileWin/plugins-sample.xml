@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+	
+	<plugin name="ConversorDispatcher" 	value="br.com.martins.vendas.conversor.Dispatcher" />
+	
+	<plugin name="pilotoleo1" 			value="br.com.brq.mobile.martins.pilotoleo1.Dispacher" />
+	
+	<plugin name="Dispatcher" 			value="com.brq.dispatcher.Dispatcher" />
+	
+	<plugin name="SenhaDispatcher" 		value="br.com.martins.vendas.piloto2.Dispatcher" />
+	
+	<plugin name="PilotoDispatcher" 	value="br.com.martins.piloto.Dispatcher" />
+	
+</plugins>

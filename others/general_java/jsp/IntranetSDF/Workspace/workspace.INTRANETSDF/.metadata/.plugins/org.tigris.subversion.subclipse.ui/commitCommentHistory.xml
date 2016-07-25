@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Alteração no modelo das notas.</CommitComment>
+	<CommitComment>Inclusão do item &quot;Notas Fiscais&quot;.</CommitComment>
+	<CommitComment>Inserção de funcionalidade de emissão de notas fiscais.</CommitComment>
+	<CommitComment>inserção de novo dump da base</CommitComment>
+	<CommitComment>remoção dos arquivos de dump inutilizados</CommitComment>
+</CommitComments>

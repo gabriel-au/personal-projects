@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css"/>
+	
+	<script type="text/javascript" charset="utf-8" src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/BRQMob.js"></script>
+	
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-lite.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/pages/pedido.js"></script>
+	<script src="../includes/js/UISlider-min.js"></script>
+	
+	<script src="../includes/js/pages/pedido.js"></script>
+	<script src="../includes/js/pages/itensDisponiveis.js"></script>
+
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			
+			<div id="mainContent">
+			
+				<ul class="tabs selectable topMenu">
+                    <li onclick="removerPilhaNavegacao(); nav('infosGerais.html');">
+                    	<span class="number">1</span>
+                		<label>Cabeçalho</label>
+                    </li>
+                	<li onclick="nav('itensDisponiveis.html');" class="selected">
+                		<span class="number">2</span>
+                		<label>Itens</label>
+                	</li>
+                    <li onclick="nav('promocoes.html');">
+                    	<span class="number">3</span>
+                		<label>Promoções</label>
+                    </li>
+                    <li onclick="nav('gondola.html');">
+                    	<span class="number">4</span>
+                		<label>Gôndola</label>
+                    </li>
+                    <li onclick="nav('caminhao.html');" class="last">
+                    	<span class="number">5</span>
+                		<label>Caminhão</label>
+                    </li>
+                </ul>
+
+                <div class="tabMenu">
+                	<a class="button right" href="javascript:ativa();"><span class="icon opcoes"></span></a>
+				</div>
+				
+                <br class="clear"/>
+                
+				<div class="panel">
+					<div class="left">
+						<input id="text-search" type="text" class="type search" placeholder="Busca" style="width:100px;" />
+					</div>
+					<a id="pesq-search"     class="button left" href="javascript:buscaItensDisponiveis();">OK</a>
+					<a id="mex-search"	    class="button left selectable" href="javascript:notImplemented();">MEX</a>
+					<a id="half-search"	    class="button left selectable" href="javascript:notImplemented();">MEIO</a>
+					<a id="filiais-search"  class="button left selectable" href="javascript:void(0);">Filiais</a>
+					<a id="advanced-search"	class="button left selectable" href="javascript:apresentaBuscaAvancada(this);">Avan.</a>
+					<div class="left" style="top:10px">
+						<select style="height:30px; width: 160px;">
+							<option selected="selected">Listar todos</option>
+							<option>Prod. Estrela</option>
+							<option>Prod. Recomendados</option>
+							<option>Lista 1</option>
+							<option>Lista 2</option>
+							<option>Lista 3</option>
+							<option>MEX</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="panel">
+					<div class="left">
+						<input id="sliderVariacaoDesconto" type="text" class="type" placeholder="Var" maxlength="3" size="3"  
+							onchange="aplicaVariacaoSlider();" />
+					</div>
+					<div class="left">
+						<span class="ui slider" id="sliderSuperFlex"></span>
+					</div>
+					<div class="left">
+						<input id="sliderValorItem" type="text" class="type" placeholder="Preço (R$)" maxlength="9" size="9" />
+					</div>
+					<div class="left">
+						<div class="groupButtons">
+							<ul id="ul-unitario-caixa">
+								<li class="selected"><a href="javascript:void(0);" onclick="alterarValorUnitarioCaixa()";>Unitário</a></li>
+								<li><a href="javascript:void(0);" onclick="alterarValorUnitarioCaixa()";>Martins</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left"><label class="labelSwitch">Caixa</label><div id="switch-caixa" class="switch wLabel"></div></div>
+				</div>
+				<div class="formDiv">
+					<div class="line">                                                                                          
+						<label id="label-header-comissao"  class="listResults">Comissão:   <span></span><span></span></label>
+						&nbsp;&nbsp;
+						<label id="label-header-pontos"    class="listResults">Pontos:     <span></span></label>
+						&nbsp;&nbsp;			                                                                   
+						<label id="label-header-precoLiq"  class="listResults">Preço Líq:  <span></span></label>
+						&nbsp;&nbsp;
+						<label id="label-header-cad"       class="listResults">CAD:        <span></span></label>
+						&nbsp;&nbsp;
+						<label id="label-header-incentivo" class="listResults">I:          <span></span></label>
+						&nbsp;&nbsp;                                                                  
+						<label id="label-header-icm"       class="listResults">% ICM:      <span></span></label>
+					</div>
+				</div>
+				<!-- RESULTADOS -->
+				<div id="div-header-area"></div>
+				<div id="div-wrapper-area">
+					<div id="div-scroller-area" class="tableList2">							
+						<table cellspacing="0"  style="width:100%"    class="itens">
+							<thead>
+								<tr>
+									<th style="display:none">hidden data</th>
+									<th>&nbsp;</th>
+									<th style="width:10px">*</th>
+									<th style="width:20px">Qtd</th>
+									<th>Código/Nome do Produto</th>
+									<th style="width:10px">Filial</th>
+									<th>E</th>
+									<th>Cxa</th>
+									<th>Líq Imp Frt</th>
+									<th>Cxa Imp Frt</th>
+									<th>Unt Imp Frt</th>
+									<th style="width:50px">CPagto</th>
+									<th>Frete</th>
+									<th>S</th>
+									<th>NF</th>
+									<th>Neg</th>
+								</tr>
+							</thead>
+							<tbody id="tbody-itens"></tbody>
+						</table>
+					</div>
+				</div>
+				<div id="div-footer-area"></div>
+			</div><!-- FIM CONTEÚDO PRINCIPAL -->
+			<!-- RODAPÉ navegação inferior, abas e botões de navegação interna -->
+			<div id="footer" class="blue">
+				<div class="left">
+					<label>Qtd Itens</label>
+					<span id="span-qtd-total"></span>
+				</div>
+				<div class="left">
+					<label>Qtd Itens Pedidos</label>
+					<span id="span-qtd-pedidos"></span>
+				</div>
+				<div class="left">
+					<label>Valor de Comissão</label>
+					<span id="span-comissao-total">R$ </span>
+				</div>
+				<div class="left">
+					<label>Valor Total</label>
+					<span id="span-valor-total">R$ </span>
+				</div>
+			</div>
+			<!-- FIM DO RODAPÉ -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+    <div class="qtdBox blue">
+        <div class="panel">
+        	<div class="left"><input id="qtd" type="number" placeholder="Quantidade" value="0" class="type" style="width:75px" maxlength="4" /></div>
+        	<a class="button right" onclick="removeQtd();" href="javascript:void(0)">&lt;</a>
+        </div>
+        <br class="clear"/>
+        <div class="panel keyboard">
+	        <div>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">1</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">2</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">3</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">4</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">5</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">6</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">7</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">8</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">9</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this, 4);">0</a>
+	        	<br class="clear"/>
+	       	</div>
+	     </div>
+	     <div class="panel">
+         	<a id="btn_qtd_cancel" class="button left" onclick="$('.qtdBox').hide('fast');">x</a>
+         	<a id="btn_qtd_ok" class="button right" href="javascript:void(0);" onclick="alteraQuantidade();">Ok</a>
+         </div>
+    </div>
+    <div id="itensMenu">
+    	<a href="fecharPedido.html" class="button">Fechar Pedido</a>
+    	<a href="javascript:void(0)" onclick="$(this).parent().hide('fast');" class="button">Continuar Pedido</a>
+    	<a href="javascript:abandonar();" class="button">Abandonar Pedido</a>
+    </div>
+    <div id="buscaAvancada">
+    	<h2>Grupos</h2>
+    	<div class="left">
+    		<select id="select-grupos" onchange="javascript:alterarGrupos();" style="width:280px">
+    			<option selected="selected">Todos</option>
+    		</select>
+    	</div>
+    	<h2>Categorias</h2>
+    	<div class="left">
+    		<select id="select-categorias" class="normal" onchange="javascript:alterarCategorias();" style="width:280px">
+    			<option selected="selected">Todos</option>
+    		</select>
+    	</div>
+    	<h2>Sub-categorias</h2>
+    	<div class="left">
+    		<select id="select-subcategorias" onchange="javascript:alterarSubCategorias();" style="width:280px">
+    			<option selected="selected">Todos</option>
+    		</select>
+    	</div>
+    	<h2>Fornecedor</h2>
+    	<div class="left">
+    		<select id="select-fornecedores" style="width:280px">
+    			<option selected="selected">Todos</option>
+    		</select>
+    	</div>
+    	<br class="clear" />
+    	<!--<a class="button" onclick="buscaItensDisponiveis(); $(this).parent().hide('fast');">Buscar</a>-->
+    </div>
+	<!--
+	------------------------------------------------------------------	
+	-- TEMPLATES HTML ------------------------------------------------
+	------------------------------------------------------------------	
+    -->
+	<table id="table_model_item_desc" style="display:none;">
+		<tr onclick="tableTR(this); clickItem(this);">
+			<td style="display:none">
+				<!-- HIDDEN DATA -->
+				<span style="font-size:9px;border:solid 1px #0F0;">iscalculado</span>
+				<span style="font-size:9px;border:solid 1px #0F0;">codigomercadoria</span>
+				<span style="font-size:9px;border:solid 1px #0F0;">percentualacrescimo</span>
+				<span style="font-size:9px;border:solid 1px #0F0;">percentualdesconto</span>
+				<span style="font-size:9px;border:solid 1px #0F0;">codigopromocao</span>
+			</td>	
+			<td style="width: 16px;">
+				<ul class="itemDesc">
+					<li> 
+						<a href="javascript:void(0);" class="moreInfo" onclick="openDescription(this); event.stopPropagation();">
+							<span class="icon info" ></span>
+						</a>						
+						<div class="description">
+							<div class="left">
+								<label class="left">[codigo produto]</label>
+								<a class="left" href="#"><span class="icon ausente"></span></a>
+								<br class="clear"/>
+								<a class="selectable left" href="javascript:void(0);"><label class="title large">[nome produto]</label></a>
+							</div>
+							<div class="right" >
+								<a class="button left selectable" href="javascript:void(0);" onclick="adicionarGondola(this);">Gôndola</a>
+								<a class="button left" onclick="detalheItem(this);"><span class="icon detalhes"></span></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</td>
+			<td>
+				<a href="javascript:void(0);" onclick="apresentaPopupDetalhePEE(this.parentNode.parentNode);" class="button left">1</a>
+			</td>
+			<td>
+				<a class="button left qtdButton" href="javascript:void(0);" style="width:30px;" onclick="openQtd(this);">[quantidade]</a>
+			</td>
+			<td>
+				<div class="left">
+					<span class="left">[cod produto]</span>
+					<a class="left" href="#"><span class="icon ausente"></span></a>
+					<br class="clear"/>
+					<span class="grid">[desc produto]</span>
+				</div>	
+			</td>
+			<td>
+				<span style="display:none">[cod filial]</span>
+				<a class="button left" style="width:30px" href="javascript:void(0);" onclick="alteraFilial(this.parentNode.parentNode)"></a>
+			</td>
+			<td></td>
+			<td>4</td>
+			<td style="text-align: right;">0</td>
+			<td style="text-align: right;">0</td>								
+			<td style="text-align: right;">0</td>
+			<td><a class="button" href="javascript:void(0);" onclick="alteraCondicaoPagamento(this.parentNode.parentNode)">[cod congPagto]</a></td>
+			<td style="text-align: right;">0</td>
+			<td></td>
+			<td>
+				<div class="left">
+					<select onchange="javascript:calculaPreco(this.parentNode.parentNode.parentNode);"></select>
+				</div>
+			</td>
+			<td>
+				<div class="left">
+					<select onchange="javascript:calculaPreco(this.parentNode.parentNode.parentNode);" style="width:60px">
+						<option value="0">Venda</option>
+						<option value="2">Poupe Certo</option>						
+					</select>
+				</div>	
+			</td>
+		</tr>
+    </table>
+    <div id="boxDetalhe" class="detalhesPEE">
+		<h2>Descrição das Marcações</h2>
+		<p>Ação Tática:  <span>XX %</span></p>
+		<p>Validação Ação Tática: <span>XX</span></p>
+		<hr />		
+		<span>Itens Cadastrados na(s) Lista(s)</span>
+		<br />
+	</div>
+</body>
+</html>
+<script type="text/javascript">	
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('div-wrapper-area', {
+				useTransform: true,
+		    	onBeforeScrollStart: function (e) {
+			        var target = e.target;
+			        while (target.nodeType != 1) {target = target.parentNode};
+			        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+			        	e.preventDefault();
+			        }
+		       },
+		       onListEndV: function (){
+		       		pagination();
+		       }
+		    });
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>

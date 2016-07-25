@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobile/!svn/ver/5632/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/pedido
+END
+PedidoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/5782/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/pedido/PedidoService.java
+END
+FecharPedidoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/5782/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/pedido/FecharPedidoService.java
+END

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script>
+		function marcaBeneficio(idBeneficio, objeto){			
+			if(idBeneficio == 'P'){				
+				$('#headerPrazo').html('* ' +  'Prazo'); 
+				$('#desconto').html('Desc.');
+			}else{
+				$('#desconto').html('* ' + 'Desc.');
+				$('#headerPrazo').html('Prazo'); 
+			}
+		}
+	</script>
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<h1>Benefício de Natal</h1>
+				<a class="button right" href="beneficiosCustomizados.html">Ok</a>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="formDiv">
+					<div class="line on">
+						<div class="cell">
+							<label>Código</label><span>R$426.85</span>
+						</div>
+						<div class="cell">
+							<label>Razão Social</label><span>AFR São Paulo Cartuchos LTDA</span>
+						</div>
+					</div>
+					<div class="line on">
+						<div class="cell">
+							<label>Valor Líquido</label><span>R$426.85</span>
+						</div>
+						<div class="cell">
+							<label>Qtd. Itens</label><span>1</span>
+						</div>
+						<div class="cell">
+							<label>Pontos</label><span>10</span>
+						</div>
+						<div class="cell">
+							<label>Pontos/Pedido</label><span>-</span>
+						</div>
+					</div>
+					<div class="line on">
+						<div class="cell">
+							<label>Descrição</label><span>Promoção de Aniversário de 50 anos do Martins</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="left"><label class="large">Aplicar</label></div>
+					<div class="switch"></div>
+				</div>
+				<table style="width:100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>F</th>
+							<th>Min. Valor</th>
+							<th>E/OU</th>
+							<th>Mín. Itens</th>
+							<th>Mín. Pontos</th>
+							<th>Pontos/Pedidos</th>
+							<th id="headerPrazo" onclick="marcaBeneficio('P')" style="cursor:pointer">Prazo</th>
+							<th id="desconto" onclick="marcaBeneficio('D')" style="cursor:pointer">Desc.</th>
+							<th>Comissão</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td style="text-align:right;">R$ 550,00</td>
+							<td>E</td>
+							<td>10</td>
+							<td>2</td>
+							<td>2</td>
+							<td>7 dias</td>
+							<td style="text-align:right;">R$ 0,50</td>
+							<td style="text-align:right;">R$ 5,00</td>
+						</tr>
+						<tr class="off">
+							<td>2</td>
+							<td style="text-align:right;">R$ 550,00</td>
+							<td>E</td>
+							<td>10</td>
+							<td>3</td>
+							<td>-</td>
+							<td>14 dias</td>
+							<td style="text-align:right;">R$ 0,50</td>
+							<td style="text-align:right;">R$ 3,67</td>
+						</tr>
+						<tr class="highlight">
+							<td>3</td>
+							<td style="text-align:right;">R$ 550,00</td>
+							<td>E</td>
+							<td>10</td>
+							<td>4</td>
+							<td>2</td>
+							<td>14 dias</td>
+							<td style="text-align:right;">R$ 0,50</td>
+							<td style="text-align:right;">R$ 10,00</td>
+						</tr>
+						<tr class="off">
+							<td>4</td>
+							<td style="text-align:right;">R$ 550,00</td>
+							<td>E</td>
+							<td>10</td>
+							<td>5</td>
+							<td>-</td>
+							<td>14 dias</td>
+							<td style="text-align:right;">R$ 0,50</td>
+							<td style="text-align:right;">R$ 20,89</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td style="text-align:right;">R$ 550,00</td>
+							<td>E</td>
+							<td>10</td>
+							<td>3</td>
+							<td>-</td>
+							<td>14 dias</td>
+							<td style="text-align:right;">R$ 0,50</td>
+							<td style="text-align:right;">R$ 4,89</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/5684/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao
+END
+MercadoriaSimilarDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/3201/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/MercadoriaSimilarDAO.java
+END
+AgendaRoteirizacaoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/4939/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/AgendaRoteirizacaoDAO.java
+END
+RepresentanteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/RepresentanteDAO.java
+END
+GondolaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/GondolaDAO.java
+END
+BeneficiosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/5016/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/BeneficiosDAO.java
+END
+ItemDisponivelDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/5397/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ItemDisponivelDAO.java
+END
+CidadePrecoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/CidadePrecoDAO.java
+END
+CalculoPrecoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/5526/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/CalculoPrecoDAO.java
+END
+PalavraChaveDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/PalavraChaveDAO.java
+END
+OpcionaisClienteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/OpcionaisClienteDAO.java
+END
+ComissaoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/5137/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ComissaoDAO.java
+END
+ItemSimilarDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/5415/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ItemSimilarDAO.java
+END
+LivroPrecoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/5588/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/LivroPrecoDAO.java
+END
+SubCategoriaMercadoriaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/4065/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/SubCategoriaMercadoriaDAO.java
+END
+RegraDistribuicaoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/RegraDistribuicaoDAO.java
+END
+CondicaoPagamentoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/5702/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/CondicaoPagamentoDAO.java
+END
+ItemDisponivelAuxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/5718/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ItemDisponivelAuxDAO.java
+END
+CidadesTerritoriosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/CidadesTerritoriosDAO.java
+END
+PosicaoVendaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/PosicaoVendaDAO.java
+END
+PromocaoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/5505/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/PromocaoDAO.java
+END
+ItemPedidoTemporarioDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ItemPedidoTemporarioDAO.java
+END
+MercadoriaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/MercadoriaDAO.java
+END
+RelacaoGiroDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/5155/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/RelacaoGiroDAO.java
+END
+FiliaisBeneficioCustomizadoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/FiliaisBeneficioCustomizadoDAO.java
+END
+DescontoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/5016/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/DescontoDAO.java
+END
+LivroPrecoGrupamentoClienteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/LivroPrecoGrupamentoClienteDAO.java
+END
+GrupoMercadoriaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/4065/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/GrupoMercadoriaDAO.java
+END
+AlteraPedidoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/5632/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/AlteraPedidoDAO.java
+END
+CategoriaMercadoriaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4065/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/CategoriaMercadoriaDAO.java
+END
+ClienteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mobile/!svn/ver/5716/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/ClienteDAO.java
+END
+GrupoAfinidadePEEDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/4781/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/GrupoAfinidadePEEDAO.java
+END
+UnidadeNegocioDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/3623/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/UnidadeNegocioDAO.java
+END
+PedidoCortesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/5118/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/PedidoCortesDAO.java
+END

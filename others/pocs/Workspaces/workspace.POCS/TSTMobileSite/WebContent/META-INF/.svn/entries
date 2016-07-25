@@ -1,0 +1,62 @@
+10
+
+dir
+37
+svn+ssh://192.168.1.15/svn/poc/trunk/TST/TSTMobileSite/WebContent/META-INF
+svn+ssh://192.168.1.15/svn/poc
+
+
+
+2010-09-30T21:17:01.143947Z
+33
+Gabriel Silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ebed8b1-cc68-4b1b-8978-543341dfb65d
+
+MANIFEST.MF
+file
+
+
+
+
+2010-09-30T21:20:21.000000Z
+b10f37c8bb1803d98c127a01d1a71cc5
+2010-09-30T21:17:01.143947Z
+33
+Gabriel Silva
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+39
+

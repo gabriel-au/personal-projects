@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Executive Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="css/components.css" />
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.8rc3.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>	
+	<script type="text/javascript" src="scripts/brq.js"></script>			
+	<script type="text/javascript" src="scripts/amcharts.js"></script>
+    <script type="text/javascript" src="scripts/raphael.js"></script>    
+	<script type="text/javascript" src="scripts/data.js"></script>  
+</head>
+<body>
+	<div class="container initial">
+		<header class="introHeader">
+			<img src="img/img_bradesco.png" alt="Bradesco" /> 
+		</header>  
+		<div class="loginArea">
+			<input autofocus="autofocus" onfocus="$(this).addClass('highlight');" onblur="$(this).removeClass('highlight');" name="login" type="text" style="width:240px;">
+			</input><label>Login</label>
+			<br class="clear"/>
+			<a id="buttonLogin" class="button butError" onclick="login();" href="javascript:void(0);" title="Login ou Senha Errados"></a>
+			<input type="password" onfocus="$(this).addClass('highlight');" onblur="$(this).removeClass('highlight'); loginValidation();" name="password" style="width:180px; margin-right:15px;">
+			</input><label>Senha</label>
+		</div>
+	</div>
+</body>
+</html>

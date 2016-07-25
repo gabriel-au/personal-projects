@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<dict>
+		<key>armv6</key>
+		<true/>
+	</dict>
+	<key>appleId</key>
+	<string>gabriel.silva@me.com</string>
+	<key>artistId</key>
+	<integer>430253929</integer>
+	<key>artistName</key>
+	<string>BRQ IT Services</string>
+	<key>bundleShortVersionString</key>
+	<string>1.2</string>
+	<key>bundleVersion</key>
+	<string>1.2</string>
+	<key>copyright</key>
+	<string>BRQ IT SERVICES 2011</string>
+	<key>drmVersionNumber</key>
+	<integer>0</integer>
+	<key>fileExtension</key>
+	<string>.app</string>
+	<key>genre</key>
+	<string>Negócios</string>
+	<key>genreId</key>
+	<integer>6000</integer>
+	<key>itemId</key>
+	<integer>467211283</integer>
+	<key>itemName</key>
+	<string>Convenção Unimed 2011</string>
+	<key>kind</key>
+	<string>software</string>
+	<key>playlistArtistName</key>
+	<string>BRQ IT Services</string>
+	<key>playlistName</key>
+	<string>Convenção Unimed 2011</string>
+	<key>product-type</key>
+	<string>ios-app</string>
+	<key>purchaseDate</key>
+	<date>2012-08-13T22:53:06Z</date>
+	<key>rating</key>
+	<dict>
+		<key>content</key>
+		<string></string>
+		<key>label</key>
+		<string>4+</string>
+		<key>rank</key>
+		<integer>100</integer>
+		<key>system</key>
+		<string>itunes-games</string>
+	</dict>
+	<key>releaseDate</key>
+	<string>2011-10-21T12:41:34Z</string>
+	<key>s</key>
+	<integer>143503</integer>
+	<key>softwareIcon57x57URL</key>
+	<string>http://a1805.phobos.apple.com/us/r1000/087/Purple/f2/28/9e/mzi.lqglwpux.png</string>
+	<key>softwareIconNeedsShine</key>
+	<false/>
+	<key>softwareSupportedDeviceIds</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>softwareVersionBundleId</key>
+	<string>com.brq.mobile.unimed.convencao2011</string>
+	<key>softwareVersionExternalIdentifier</key>
+	<integer>4659572</integer>
+	<key>softwareVersionExternalIdentifiers</key>
+	<array>
+		<integer>4179620</integer>
+		<integer>4440373</integer>
+		<integer>4659572</integer>
+	</array>
+	<key>vendorId</key>
+	<integer>427592</integer>
+	<key>versionRestrictions</key>
+	<integer>16843008</integer>
+</dict>
+</plist>

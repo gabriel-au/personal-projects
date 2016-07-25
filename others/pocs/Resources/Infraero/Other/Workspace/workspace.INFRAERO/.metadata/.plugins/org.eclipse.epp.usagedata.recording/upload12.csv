@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.jst.jsf.ui,1.2.1.v20090827,"org.eclipse.jst.jsf.ui",1276210186949
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1276210193936
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1276210194867
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1276210204261
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1276210204425
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1276210209524
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210210598
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210212603
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210213056
+opened,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1276210214639
+activated,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1276210214719
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1276210246503
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1276210253506
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210265619
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210274351
+error,log,,,"Invalid MTJ Project.",1276210276164
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210276213
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210282403
+error,log,,,"Invalid MTJ Project.",1276210283647
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210284443
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1276210284498
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1276210290465
+error,log,,,"Invalid MTJ Project.",1276210292566
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210292577
+opened,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1276210293965

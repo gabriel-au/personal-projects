@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="STJ">
+        <property name="context-root" value="STJ"/>
+        <property name="java-output-path" value="/STJ/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210125174
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210132294
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1276210139923
+error,log,,,"Invalid MTJ Project.",1276210146957
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210147458
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.rename",1276210147560
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210150373
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210153046
+error,log,,,"Invalid MTJ Project.",1276210156173
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210157091
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.rename",1276210157152
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210159212
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210164549
+error,log,,,"Invalid MTJ Project.",1276210166759
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1276210167961
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.rename",1276210168023
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1276210174676
+error,log,,,"Invalid MTJ Project.",1276210178710
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1276210178761
+started,bundle,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui",1276210184905
+started,bundle,org.eclipse.wst.dtd.ui,1.0.400.v200904300717,"org.eclipse.wst.dtd.ui",1276210186027
+opened,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1276210186254
+activated,editor,org.eclipse.wst.xml.ui,1.1.1.v200908242115,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1276210186505
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.300.v200903120000,"org.eclipse.jst.j2ee.jca",1276210186865
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.300.v200904230730,"org.eclipse.jst.j2ee.ejb",1276210186897

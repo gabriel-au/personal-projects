@@ -1,0 +1,70 @@
+package br.jus.stj.site.iphone;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.stj.site.iphone.ui.A;
+import br.jus.stj.site.iphone.ui.Body;
+import br.jus.stj.site.iphone.ui.Br;
+import br.jus.stj.site.iphone.ui.Commentary;
+import br.jus.stj.site.iphone.ui.Div;
+import br.jus.stj.site.iphone.ui.Head;
+import br.jus.stj.site.iphone.ui.ImageLink;
+import br.jus.stj.site.iphone.ui.Img;
+import br.jus.stj.site.iphone.ui.Link;
+import br.jus.stj.site.iphone.ui.Meta;
+import br.jus.stj.site.iphone.ui.ScriptCode;
+import br.jus.stj.site.iphone.ui.Style;
+
+public class Padroes
+{
+  public static Head getHeader()
+    throws SystemException
+  {
+/* 20 */     Head head = new Head(
+/* 21 */       "Superior Tribunal de Justiça - O Tribunal da Cidadania");
+
+/* 24 */     head.add(new Commentary("by Gustavo Marcelo"));
+
+/* 26 */     head.add(new Meta("UTF-8"));
+
+/* 28 */     head.add(new Meta());
+
+/* 30 */     head.add(new ImageLink("imagens/logo-touch-icon.png"));
+/* 31 */     head.add(new Link("shortcut icon", "imagens/logo-touch-icon.ico", "image/icon"));
+/* 32 */     head.add(new Style("css/style.css"));
+/* 33 */     head.add(new Style("css/styleComplemento.css"));
+
+/* 36 */     String code = "if (navigator.userAgent.indexOf('iPhone') != -1) {\n        addEventListener(\"load\", function() {\n                setTimeout(hideURLbar, 0);\n        }, false);\n}\n\nfunction hideURLbar() {\n        window.scrollTo(0, 1);\n}";
+
+/* 42 */     ScriptCode sc = new ScriptCode(code);
+/* 43 */     head.add(sc);
+
+/* 45 */     return head;
+  }
+
+  public static Body getBody() throws SystemException {
+/* 49 */     Body body = new Body();
+
+/* 51 */     Div div = new Div(true);
+/* 52 */     A a = new A("", true);
+/* 53 */     a.add(new Img("imagens/topo.png"));
+/* 54 */     div.add(a);
+/* 55 */     body.add(div);
+
+/* 57 */     return body;
+  }
+
+  public static Div getEnchimentoPagina(int quantidadeLinhas) throws SystemException
+  {
+/* 62 */     Div div = new Div();
+/* 63 */     for (int i = 0; i < quantidadeLinhas; i++) {
+/* 64 */       div.add(new Br());
+    }
+
+/* 67 */     return div;
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.Padroes
+ * JD-Core Version:    0.6.0
+ */

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="autorizacao"
+				class="br.com.xtrategia.fiscon.web.AutorizacaoInterceptor" />
+			<interceptor-stack name="stackGeral">
+				<interceptor-ref name="autorizacao" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="stackGeral" />
+		<default-action-ref name="index" />
+
+		<global-results>
+			<result name="login" type="redirectAction">
+				<param name="actionName">index</param>
+				<param name="namespace">/</param>
+			</result>
+		</global-results>
+
+		<action name="executar" method="executar"
+			class="br.com.xtrategia.fiscon.web.servlet.Transacao">
+			<result>/WEB-INF/src/resultado.jsp</result>
+		</action>
+
+		<action name="index" method="index" 
+			class="br.com.xtrategia.fiscon.web.IndexAction">
+			<result>/WEB-INF/src/index.jsp</result>
+		</action>
+		<action name="sobre" method="index" 
+			class="br.com.xtrategia.fiscon.web.IndexAction">
+			<result>/WEB-INF/src/sobre.jsp</result>
+		</action>
+		<action name="contato" method="index" 
+			class="br.com.xtrategia.fiscon.web.IndexAction">
+			<result>/WEB-INF/src/contato.jsp</result>
+		</action>
+		<action name="login" method="login"
+			class="br.com.xtrategia.fiscon.web.LoginAction">
+			<result name="success">/WEB-INF/src/menu/index.jsp</result>
+			<result name="error">/WEB-INF/src/index.jsp</result>
+		</action>
+		<action name="logout" method="logout"
+			class="br.com.xtrategia.fiscon.web.UsuarioAction">
+			<result>/WEB-INF/src/index.jsp</result>
+		</action>
+	</package>
+
+	<include file="atualizacao.xml"></include>
+	<include file="auto_infracao.xml"></include>
+	<include file="categoria.xml"></include>
+	<include file="cnh.xml"></include>
+	<include file="cor.xml"></include>
+	<include file="especie.xml"></include>
+	<include file="infracao_tipo.xml"></include>
+	<include file="log.xml"></include>
+	<include file="marca_modelo.xml"></include>
+	<include file="municipio.xml"></include>
+	<include file="perfil.xml"></include>
+	<include file="restricao.xml"></include>
+	<include file="restricao_tipo.xml"></include>
+	<include file="tipo.xml"></include>
+	<include file="usuario.xml"></include>
+	<include file="veiculo.xml"></include>
+
+</struts>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Programação Soc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="lista-programacao.html">Voltar</a></div>
+        </div>
+        	
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="aviso">Solenidade de Abertura</h2>
+        	<p>Data: 25 de outubro de 2011</p>
+            <p>Horário: 20h</p>
+            <p>Local: Centro de Convenções do Ceará (Av. Washington Soares, 1.141, bairro Edson Queiroz)</p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">Festa Típica</h2>
+            <p>Data: 26 de outubro de 2011</p>
+            <p>Horário: 20h</p>
+            <p>Local: Coliseu (Av. Engenheiro Luís Vieira, 555 - Bairro Dunas)</p> 
+            <div class="dotted-border"></div>
+             <h2 class="aviso">Festa de Encerramento</h2>
+            <p>Data: 28 de outubro de 2011</p>
+            <p>Horário: 20h30</p>
+            <p>Local: Coliseu (Av. Engenheiro Luís Vieira, 555 - Bairro Dunas)</p> 
+            <div class="dotted-border"></div>        
+            <p><strong>O traje a ser usado nas festas é 'esporte fino'.</strong></p>  
+            <p><strong>Os convites para as festas serão entregues junto com a pasta do convencional, na retirada do material nas secretarias dos hotéis ou do Centro de Convenções do Ceará. </strong></p>
+            <p><strong>Ingressos avulsos para as festas 'Típica' e de 'Encerramento' custarão R$ 500 (adulto/cada). Para crianças e adolescentes (de 8 a 18 anos), a entrada custará R$ 200. Crianças entre 0 e 7 anos não pagam.</strong></p>
+           
+       </div>
+
+		<div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

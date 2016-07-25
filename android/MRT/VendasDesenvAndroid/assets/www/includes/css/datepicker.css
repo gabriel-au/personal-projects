@@ -1,0 +1,231 @@
+/*tamanho da caixa do calendario*/
+.datepicker {
+	position: absolute;
+	font-size: 11px;
+	width: 90%;
+	padding: 3px;
+	height: 560px;
+	line-height: normal;
+	z-index: 3003;
+	background:#D7D7D7;
+}
+
+/* header
+********************************************************/
+.datepicker .header {
+	position: relative;
+	background: #003355;
+	height: 21px;
+	padding-top: 4px;
+	margin-bottom: 3px;
+	overflow: hidden;
+}
+
+.datepicker .header .title {
+	text-align: center;
+	padding-top: 1px;
+	position: absolute;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+}
+
+.datepicker .header .titleText {
+}
+.datepicker .header .next,
+.datepicker .header .previous,
+.datepicker .header .closeButton {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	text-align: center;
+	color: #666;
+	top: 5px;
+	cursor: pointer;
+}
+.datepicker .header .previous {
+	left: 5px;
+}
+.datepicker .header .next {
+	right: 28px;
+}
+.datepicker .header .closeButton {
+	right: 5px;
+}
+
+/* body
+********************************************************/
+.datepicker .body {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 70%;
+	overflow: hidden;
+}
+
+/* Columns */
+
+.datepicker .body .column {
+	float: left;
+	width: 100%;
+	min-height: 193px;
+	margin-left: 5px;
+}
+
+.datepicker .body .column.column_1 {
+	margin-left: 0;
+}
+
+.datepicker .titleText .column {
+	float: left;
+	width: 400px;
+	margin:0 auto;
+}
+
+.datepicker .titleText .column.column_1 {
+	color:#FFFFFF;
+	width:100%;
+}
+
+/* days-grid
+********************************************************/
+.datepicker .days .day {
+	background: #FFF;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 4px;
+	width:300px;
+	overflow: hidden;
+	height: 50px;
+	margin: 0 3px 3px 0;
+}
+
+.datepicker .days .day0 {
+	margin-right: 0;
+}
+
+.datepicker .days .week5 .day {
+	margin-bottom: 0;
+}
+
+/* days-colors
+********************************************************/
+.datepicker .days .title {
+	background: #5D6E95;
+	font-weight: bold;
+	color: #fff;
+	cursor: default;
+}
+
+.datepicker .days .otherMonth {
+	background: #eee;
+	color: #aaa;
+}
+
+/* months
+********************************************************/
+.datepicker .months .month {
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	width: 112px;
+	height: 31px;
+	padding-top: 15px;
+	font-size:14px;
+}
+
+.datepicker .months .month3,
+.datepicker .months .month6,
+.datepicker .months .month9,
+.datepicker .months .month12 {
+	margin-right: 0;
+	width: 114px;
+}
+
+.datepicker .months .month10,
+.datepicker .months .month11,
+.datepicker .months .month12 {
+	margin-bottom: 0;
+}
+
+/* years
+********************************************************/
+.datepicker .years .year {
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 11px;
+	width: 46px;
+	overflow: hidden;
+	height: 25px;
+}
+
+.datepicker .years .year3,
+.datepicker .years .year7,
+.datepicker .years .year11,
+.datepicker .years .year15,
+.datepicker .years .year19 {
+	margin-right: 0;
+	width: 47px;
+}
+
+.datepicker .years .year16,
+.datepicker .years .year17,
+.datepicker .years .year18,
+.datepicker .years .year19 {
+	margin-bottom: 0;
+	height: 26px;
+}
+
+/* global
+********************************************************/
+.datepicker .selected {
+	background: #f37b07 !important;
+	color: #fff !important;
+}
+
+.datepicker .days .otherMonth.selected {
+	background: #bbbfc8 !important;
+}
+
+.datepicker .unavailable,
+.datepicker .body .days .week .day.unavailable:hover {
+	background: #edd !important;
+	color: #b88 !important;
+	cursor: default !important;
+}
+
+.datepicker .days .week .day:hover,
+.datepicker .months .month:hover,
+.datepicker .years .year:hover {
+	background: #5D6E95 !important;
+	color: #fff !important;
+}
+
+/*.datepicker .days.weeknumbers .day {
+	width: 22px;
+}*/
+
+/*.datepicker .days.weeknumbers .day.weeknumber,
+.datepicker .days.weeknumbers .day.weeknumber:hover {
+	color: #AAA !important;
+	width: 16px !important;
+	background: #EEE !important;
+}*/
+
+.datepicker table {
+	border-spacing: 0;
+	width:100%;
+	float:left;
+}
+
+.datepicker th,
+.datepicker td {
+	padding: 0;
+	border-radius:12px;
+	border:1px solid #9E9E9E;
+
+}
+

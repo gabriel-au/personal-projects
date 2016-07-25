@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+	
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/jshashtable-2.1.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script src="../includes/js/actions.js"></script>
+	<script type="text/javascript" src="../includes/js/pages/conversor.js"></script>
+	
+</head>
+<body onload="setTimeout('jsStartConverter()',1000);">
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<!-- Navegação esquerda - em caso de seção com menu, deixar o leftNav vazio -->
+				<h1>Conversor</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="panel">
+					<div class="listPanel">
+						<ul id="scroll">			
+						</ul>
+					</div>
+				</div>
+				<div class="panel">
+					<p id="p-progress" style="text-align: center;">
+						<strong>Nome da Tabela:</strong>
+						<strong id="strong-arq" style="color: red"></strong>
+						<strong>Percentual:</strong>
+						<strong id="strong-per" style="color: red"></strong>
+					</p>
+				</div>
+				<a id="bt_continuar" class="button right" style="margin-top: 5px; display: none" href="index.html">Continuar</a>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

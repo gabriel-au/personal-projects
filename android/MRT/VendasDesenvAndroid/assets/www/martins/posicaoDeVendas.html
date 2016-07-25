@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/date.format.js"></script>
+	<script src="../includes/js/pages/posicaoDeVendas.js"></script>	
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<h1>Posição de vendas</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Previsão de vendas</h2>
+				<div class="panel">
+					<span class="icon previsaoSemanal"></span>
+					<div class="left">
+						<label class="large">Previsão Semanal</label>
+					</div>
+					<div class="right">
+						<span id="previsaoSemanal"></span>
+					</div>
+				</div>
+				<div class="panel">
+					<span class="icon cliente">
+					</span>
+					<div class="left">
+						<label class="large">Aproveitamento de Clientes</label>
+					</div>
+					<div class="right" style="width:50%;">
+						<div class="thermometer">
+						<div class="glass">
+							<div class="temperature"  id="tempAproveitamentoAtual"></div>
+							<div class="measure"></div>
+							<div class="meta"  id="tempAproveitamentoIdeal"></div>
+						</div>
+						<div class="metaValue">
+							<label><strong id="aproveitamentoIdeal"></strong>% ideal</label>
+						</div>
+						<div class="valorReal">
+							<label><span><strong id="aproveitamentoAtual"></strong>%</span></label>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				<h2>Posição de vendas</h2>
+				<div class="panel">
+					<div class="left"><label class="large">Ordenar por</label></div>
+					<div class="left">
+						<div class="groupButtons">
+							<ul>
+								<li class="selected"><a href="javascript:void(0);" id="ordenarPorPrazoPagamento" >Prazo de Pagamento</a></li>
+								<li><a href="javascript:void(0);" id="ordenarPorCliente">Cliente</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="listNav">
+					<li onclick="nav('posicaoPeriodo.html');">
+						<span class="icon calendario"></span>
+						<div class="left"><label class="large">Selecione o Período</label></div>
+						<div class="right">
+							<span id="periodoSelecionado"></span>
+						</div>
+					</li>
+				</ul>
+				<div class="tableList">
+					<!-- Exemplo grupo de listas para seleção de dados -->
+					<!-- ---------------------- -->
+		
+					<div id="listaPosicaoVendas">
+							
+					</div>
+					<!-- ---------------------- -->
+					
+					<div class="formDiv">
+					<div class="line">
+						<div class="cell">
+							<label>Observação</label>
+							<span>Valores sem Impostos</span>
+						</div>
+					</div>	
+				</div>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

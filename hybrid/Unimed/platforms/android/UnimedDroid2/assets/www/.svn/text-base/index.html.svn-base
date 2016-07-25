@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+    
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	<script src="includes/js/load.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+
+<body>
+	
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header-evento" id="header">
+			<h1><span>Unimed</span></h1>
+		</div>
+        <div class="content" id="content">
+			<div data-scroll="y" style="height:380px" >
+        	<h2 class="destaque">Entre os dias 25 e 28 de outubro, a Unimed conta com a sua presença na 41ª Convenção Nacional.</h2>
+            <p>O evento será realizado em Fortaleza (CE) e terá como tema central Governança Cooperativa - Transformando o modelo.</p>
+            <div class="dotted-border"></div>
+            <p class="title-orange">Local de Realização</p>
+            <p class="qb-1">Centro de Conveções do Ceará
+            Av. Washington Soares, 1.141<br />
+            Bairro Edson Queiroz
+            Fortaleza - Ceará<br />
+            CEP 60.811-341<br />
+            Tel.: (85) 3101-4689</p>
+            <div class="bottom-mapa"><a href="mapa.html">Ver no Mapa</a></div>
+
+           	<div class="dotted-border"></div>    
+            <p class="title-orange">Realização</p>
+            <img src="includes/images/logo-unimed-brasil.jpg" alt="Unimed Brasil" title="Unimed Brasil">
+
+            <div class="section-apoio">
+              	 <img src="includes/images/logo-unimed-fortaleza.jpg" alt="Unimed Fortaleza" style="margin-left:15px;" title="Unimed Fortaleza">
+                 <img src="includes/images/logo-unimed-ceara.jpg" alt="Unimed Ceará" style="margin-left:15px;" title="Unimed Ceará">
+                </div>
+
+            <p>Patrocinadores</p>
+           <div class="section-a">
+            	<ul>
+                	<li><img src="includes/images/logo-unimed-seguros.jpg" alt="Unimed Seguros" title="Unimed Seguros"></li>
+                   <li><img src="includes/images/logo-unicred.jpg" alt="Unicred" title="Unicred"></li>
+                    <li><img src="includes/images/logo-afip.jpg" alt="AFIP" title="AFIP"></li>
+                    <li><img src="includes/images/logo-uniodonto.jpg" alt="Uniodonto" title="Uniodonto"></li>
+                    <li><img src="includes/images/logo-unimed-rs.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-axismed.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-alianca.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                </ul>
+            </div>     
+            <div class="section-b">
+            	<ul>
+	           	 	<li><img src="includes/images/logo-unimed-central.jpg" alt="Unimed Brasil" title="Unimed Central"></li>
+                	<li><img src="includes/images/logo-medilar.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-cms.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-ibbca.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-WM.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                    <li><img src="includes/images/logo-qualicorp.jpg" alt="Unimed - RS" title="Unimed -RS"></li>
+                </ul>
+            </div>
+     
+
+	    </div>
+	    </div>
+		<div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+		<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;" class="highlight"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+		
+		
+	</div>
+</body>
+</html>

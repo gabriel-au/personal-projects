@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	
+	<script src="../includes/js/iscroll-lite.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript">	
+	
+		var jsonModeloDistribuicao = null;
+	
+		$(document).ready(
+			function(){
+				BRQNavegacao.adicionarPilhaNavegacao('modeloDistribuicao');
+				setValoresIniciais();
+				
+				listarRegrasNormais();
+				criaLinkVoltar();
+								
+				$('#a_bt_ok').click(function() { 
+					controleModeloDistribuicao();
+				});
+			}
+		);
+		
+		function criaLinkVoltar(){
+			var a_href = $('<a/>', {"class": "button left", href: "javascript:BRQNavegacao.voltar()", text: "Voltar"});
+			$("#voltar").append(a_href);
+		}
+		
+		function listarRegrasNormais(){
+			execListarModeloDistribuicao(false);
+		}
+		
+		function listarRegrasExcecao(){
+			execListarModeloDistribuicao(true);
+		}
+			
+		function execListarModeloDistribuicao(isExcecao){
+			//zera ultima selecao usuario
+			var cliente = getCliente();
+			var codcli = cliente.codigoCliente;
+			var codFilExp = getFilialExpedicao().codigoFilial;
+			var codFilFat = getFilialFaturamento().codigoFilial;
+			BRQMob.log("entrando na funcao listarModeloDistribuicao");
+		 	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "listarModeloDistribuicao", [codcli,codFilExp,codFilFat,isExcecao]);
+			 	
+		}
+			
+		function sucesso(retorno){
+			montarTabela(retorno.listaModeloDistribuicao);
+			
+			//Listas selecionaveis
+			$("ul.selectable").each(function() {
+				$(this).children().each(function() {
+					$(this).click(function() {
+						listSelect(this);
+					})
+				})
+			});
+		}
+		
+		/**
+		* Método que monta a linha com os dados do modelo de distribuicao
+		* @param modeloDistribuicao - objeto ModeloDistribuicao
+		* @param objLista - objeto onde a linha será adicionada
+		*/
+		function montarTabela(modeloDistribuicao){
+			limpaBodyTabela();	
+			var tbody_modelo_distribuicao = $("#body_modelo_distribuicao");
+			
+			if(modeloDistribuicao == null){
+				jsonModeloDistribuicao = null;
+			};
+			
+			$.each(modeloDistribuicao, function(i,obj){
+				linha = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off") + ((jsonModeloDistribuicao && jsonModeloDistribuicao.codigo == obj.codRegraTabela) ? " selected" : ""), id : i, onclick : "tableTR(this); selecionarLinha(" + obj.indicadorTabelaManual + "," + obj.codRegraTabela + ", '" + obj.descRegraTabela + "')"});
+				if(!jsonModeloDistribuicao && i == 0){
+					linha.addClass(" selected");
+					selecionarLinha(obj.indicadorTabelaManual, obj.codRegraTabela, obj.descRegraTabela);
+				}
+				$('<td/>', {style: "text-align:center;", text: obj.codRegraTabela }).appendTo(linha);
+				$('<td/>', {style: "text-align:left;", text: obj.descRegraTabela }).appendTo(linha);
+				$('<td/>', {style: "text-align:left;", text: obj.razSocialTransportadora }).appendTo(linha);
+				$(linha).appendTo(tbody_modelo_distribuicao);
+			});
+			
+		}
+		
+		function limpaBodyTabela(){
+			$("#body_modelo_distribuicao").empty();
+		}
+
+		function selecionarLinha(indicadorTabelaManual, codRegraTabela, descRegraTabela){
+			jsonModeloDistribuicao = new Object();
+			jsonModeloDistribuicao.codigo = codRegraTabela;
+			jsonModeloDistribuicao.descricao = descRegraTabela;
+			jsonModeloDistribuicao.indicadorTabelaManual = indicadorTabelaManual;
+		}
+
+		/**
+		* Método para tratamento de falha no retorno das consultas
+		* @param result - mensagem de falha
+		*/
+		function falha(result){
+			BRQMob.log("falha: " + result);
+			$("#mensagem").html(result);
+			$("#divMensagem").css('display', 'inline');
+		}
+		
+		function controleModeloDistribuicao(){
+			if(jsonModeloDistribuicao == null){
+				alert('A escolha do modelo de distribuição é obrigatória.');
+			}else{
+				if(jsonModeloDistribuicao.indicadorTabelaManual == 1){
+					alert("Para o Modelo de Distribuição selecionado, o frete será calculado no faturamento e cobrado do cliente na entrega, conforme tabela acordada com a Transportadora.");
+				}else if(jsonModeloDistribuicao.codRegraTabela == -1){
+					alert("Modelo de Distribuição indisponível - Venda bloqueada !");
+				}
+				sessionStorage.setObject(CONST_MODELO_DISTRIBUICAO, jsonModeloDistribuicao);
+				BRQNavegacao.voltar();
+			}
+		}
+		
+		function setValoresIniciais(){
+			jsonModeloDistribuicao = getModeloDistribuicao();
+		}
+		
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<!--  div id="container" class="wMenu"-->
+			
+		<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+		<div id="container">
+			
+			<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+			<div id="content">
+				<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+				<div id="header">
+					<div id="voltar"></div>
+					<h1>Modelos de Distribuição</h1>
+					<a id="a_bt_ok" href="javascript:void(0);" class="button right">Ok</a>
+				</div>
+				<!-- FIM CABEÇALHO -->
+				
+				<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+				<div id="mainContent">
+					<div class="panel paddedGrey" id="divMensagem" style="display: none;">
+						<ul>
+							<li class="error" >
+								<span class="icon"></span>
+								<label id="mensagem"></label>
+							</li>
+						</ul>
+					</div>
+					<!-- Exemplo grupo de listas com seleção única -->
+					<h2>Escolha o modelo de distribuição principal</h2>	
+					<div class="panel">
+						<div class="groupButtons">
+							<ul>
+								<li class="selected"><a href="javascript:listarRegrasNormais();">Normais</a></li>
+								<li><a href="javascript:listarRegrasExcecao();">Regras de Exceção</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="div-header-area"></div>
+						<div id="div-wrapper-area" style="top:30px;">
+							<div id="div-scroller-area">					
+								<div class="tableList">
+									<!-- Exemplo grupo de listas para seleção de dados -->
+									<table style="width:100%;" cellspacing="0">
+										<thead>
+											<tr>
+												<th style="width:50px;">Código</th>
+												<th>Modelo de Distribuição</th>
+												<th>Transportadora</th>
+											</tr>
+										</thead>
+										<tbody id="body_modelo_distribuicao">
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- FIM CONTEÚDO PRINCIPAL -->
+			</div>
+			<!-- FIM CONTEÚDO -->
+		</div>
+	<!-- /div-->
+</body>
+</html>
+<script type="text/javascript">	
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('div-wrapper-area', {
+				useTransform: true,
+		    	onBeforeScrollStart: function (e) {
+			        var target = e.target;
+			        while (target.nodeType != 1) {target = target.parentNode};
+			        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+			        	e.preventDefault();
+			        }
+		       },
+		       onListEndV: function (){
+		       		BRQMob.log('Log onListEndV not remove!');
+		       }
+		    });
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>

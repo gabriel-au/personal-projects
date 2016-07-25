@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/pages/pedido.js"></script>
+	
+	<script type="text/javascript">
+	
+		/*
+		* Executado ao iniciar a tela
+		*/
+		$(document).ready(function() {
+			
+			//BRQNavegacao.adicionarPilhaNavegacao('listarGondolaCliente');
+
+			//var cliente = getCliente(); //1137173;
+			
+			//execListarItensGondola(cliente.codigoCliente);
+
+		});
+		
+		function execListarItensGondola(codigoCliente) {
+			BRQMob.log("Lendo dados execDetalheItemGondola");
+			BRQMob.exec("retornoListarItensGondola", "falha", "VendasDispatcher", "listarGondolaCliente", [ codigoCliente ]);
+		}
+		
+		/*
+		* Método que carrega as informaçoes de mercadoria
+		* @param Gondola - retorno do json
+ 		*/
+		function retornoListarItensGondola(retorno){
+			BRQMob.log("Lendo dados retornoListarItensGondola");
+			
+			document.getElementById("quantidadeTotalMercadoria").appendChild(document.createTextNode(retorno.Gondola.quantidadeTotalMercadoria));
+			document.getElementById("valorTotalComissao").appendChild(document.createTextNode("R$ " + formatarDecimal(retorno.Gondola.valorTotalComissao, 2)));
+			document.getElementById("valorTotalMercadoria").appendChild(document.createTextNode("R$ " + formatarDecimal(retorno.Gondola.valorTotalMercadoria, 2)));
+			
+			var start = new Date().getTime();
+			
+			var listaGondola = retorno.Gondola.listaItensGondola;
+				
+			var tblBody = document.getElementById("table_gondola").tBodies[0];
+			
+			var obj, tr, td, a, div, label, span, br, select, option;
+						
+			var newRow;
+			
+			for (var index = 0, l = retorno.Gondola.listaItensGondola.length; index < l; index++) {
+				
+				obj = listaGondola[index];
+
+				tr = document.createElement('tr');
+				tr.onclick=function(){ tableTR(this); };
+				if(index%2 != 0){
+					tr.className = 'off';
+				}
+				
+				td = document.createElement('td');
+				td.style.width="16px";
+				td.appendChild(document.createTextNode(' '));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.posicaoMercadoria)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				a = document.createElement('a');
+				a.onclick=function(){openQtd(this);};
+				a.style.width="50px";
+				a.setAttribute('href','javascript:void(0);');
+				a.className='button left qtdButton';
+				a.setAttribute('id','qtd1');
+				a.appendChild(document.createTextNode('0'));
+				td.appendChild(a);
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				div = document.createElement('div');
+				div.className='left';
+				label = document.createElement('label');
+				label.className='left';
+				label.appendChild(document.createTextNode('Cód: ' + tratamentoAtributoNulo(obj.codigoMercadoria)));
+				div.appendChild(label);
+				
+				// jgomes - Verificar regra para exibir os links abaixo (Kit, promoção ou sem link)
+				//<a class="left" href="kit.html"><span class="icon kit"></span></a>
+				//<a class="left" href="promocoes.html"><span class="icon premio"></span></a>
+				
+				a = document.createElement('a');
+				a.setAttribute('href','kit.html');
+				a.className='left';
+				span = document.createElement('span');
+				span.className='icon kit';
+				a.appendChild(span);
+				div.appendChild(a);
+				// -- bloco a
+				
+				br = document.createElement('br');
+				br.className='clear';
+				div.appendChild(br);
+				
+				label = document.createElement('label');
+				label.className='grid';
+				label.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.descricaoMercadoria)));
+				div.appendChild(label);
+				td.appendChild(div);
+				tr.appendChild(td);
+
+				td = document.createElement('td');
+		      	select = document.createElement('select');
+				select.onchange=function(){ alert("mudou filial"); };
+				option = document.createElement('option');
+				option.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoFilialFaturamento)));
+				select.appendChild(option);
+				td.appendChild(select);
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.tipoMercadoriaEsgotamento)));
+				tr.appendChild(td);
+
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorUnitarioImposto, 4)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.precoCliente, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.margemLucroCliente, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.quantidadeMercadoriaAnterior)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.quantidadeMercadoriaAtual)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.quantidadeCaixaFornecedor)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorLiquidoMercadoria, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorLiquidoImposto, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorCaixaImposto, 4)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.tipoMarcacaoRepresentante)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				a = document.createElement('a');
+				a.setAttribute('href','condPagamento.html');
+				a.className='button';
+				span = document.createElement('span');
+				span.className='icon condPagamento';
+				a.appendChild(span);
+				a.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoCondicaoPagamento)));
+				td.appendChild(a);
+				tr.appendChild(td);
+				
+				td =document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.dataUltimaVenda)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorFreteMercadoria, 2)));
+				tr.appendChild(td);
+				
+				// jgomes Montar combo de 1 a 10
+				td = document.createElement('td');
+		      	select = document.createElement('select');
+				select.onchange=function(){ alert("mudou nota fiscal"); };
+				select = criarSelectNotaFiscal(select, tratamentoAtributoNulo(obj.numeroNotaFiscal));
+				td.appendChild(select);
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.tipoIncentivo)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoFlexivelPreco)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoSimboloSituacao)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.percentualIcmsMercadoria, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoFilialExpedicao)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(formatarDecimal(obj.valorStbMercadoria, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.style.textAlign="right";
+				td.appendChild(document.createTextNode(formatarDecimal(obj.comissaoConcessaoMercadoria, 2)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.descricaoNegociacaoMercadoria)));
+				tr.appendChild(td);
+				
+				td = document.createElement('td');
+				td.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.valorPontosMercadoria)));
+				tr.appendChild(td);
+				
+				tblBody.appendChild(tr);
+				
+				
+			}	
+			
+			//alert(tblBody);
+			
+			//alert(html.length+' '+((i-1)*1035));
+		//	});
+		
+			var end = new Date().getTime();
+			var time = end - start;
+			BRQMob.log("Tempo para mostrar dados: " + time + " ms");
+			BRQMob.log("******************** FIM ********************");
+			
+		}
+		
+		function criarSelectNotaFiscal(select, numeroNota){
+			var option;
+			for (var i = 1; i <= 10; i++){
+				option = document.createElement('option');
+				option.appendChild(document.createTextNode(i));
+				if(numeroNota != "" && numeroNota == i){
+					option.selected = 'selected';
+				}
+				select.appendChild(option);
+			}
+			return select;
+		}
+		
+		function tratamentoAtributoNulo(valor){
+			if(valor != undefined){
+				return valor;
+			}else{
+				return "";
+			}
+		}
+		
+		function formatarDecimal(valor, precisao){
+			var decimal = tratamentoAtributoNulo(valor);
+			if(decimal != ""){
+				decimal = parseFloat(decimal).toFixed(precisao);
+			}
+			return decimal;
+		}
+		
+		/**
+		* Método para tratamento de falha no retorno das consultas
+		* @param result - mensagem de falha
+		*/
+		function falha(result){
+			BRQMob.log("falha: " + result);
+			$("#mensagem").html(result);
+			$("#divMensagem").css('display', 'inline');
+		}
+		
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				
+				<ul class="tabs selectable topMenu">
+                    <li onclick="nav('infosGerais.html');" class="last">
+                    	<span class="number">1</span>
+                		<label>Cabeçalho</label>
+                    </li>
+                	<li onclick="nav('itensDisponiveis.html');">
+                		<span class="number">2</span>
+                		<label>Itens</label>
+                	</li>
+                    <li onclick="nav('promocoes.html');">
+                    	<span class="number">3</span>
+                		<label>Promoções</label>
+                    </li>
+                    <li onclick="nav('gondola.html');" class="selected">
+                    	<span class="number">4</span>
+                		<label>Gôndola</label>
+                    </li>
+                    
+                    <li onclick="nav('caminhao.html');" class="last">
+                    	<span class="number">5</span>
+                		<label>Caminhão</label>
+                    </li>
+                </ul>
+                <div class="tabMenu">
+                	<a class="button right" href="javascript:ativa();"><span class="icon opcoes"></span></a>
+				</div>
+                <br class="clear"/>
+                
+                <div class="panel">
+					<div class="left">
+						<input type="text" class="type search" placeholder="Busca" style="width:220px;" />
+					</div>
+					<a href="gerarPDFGondola.html" class="button left"><span class="icon pdf"></span></a>
+				</div>
+                
+				
+				<div class="panel">
+					<div class="left">
+						<img src="../includes/images/FAKE_slider.png" />
+					</div>
+					<div class="left"><input type="text" class="type" placeholder="Var" maxlength="3" size="6" /></div>
+					<div class="left"><input type="text" class="type" placeholder="Preço (R$)" maxlength="8" size="12" /></div>
+					<div class="left">
+						<div class="groupButtons">
+							<ul>
+								<li class="selected"><a href="javascript:void(0);">Unitário</a></li>
+								<li><a href="javascript:void(0);">Martins</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="left"><label class="labelSwitch">Caixa</label><div class="switch wLabel"></div></div>
+				</div>
+				<div class="formDiv">
+					<div class="line">
+						<div class="cell">
+							<label class="listResults">Estoque: B</label>
+						</div>
+						<div class="cell">
+							<label>Comissão (E): 333,00</label>
+						</div>
+						<div class="cell">
+							<label>Pontos:54</label>
+						</div>
+						<a href="javascript:void(0);"></a>
+					</div>
+				</div>
+					
+				<!-- Exemplo grupo de listas para seleção de dados -->
+				<div class="tableList">
+					<div class="nav">
+						<a href="javascript:void(0);" class="left button prev" onclick="tableMov(this, 'prev');"></a><a href="javascript:void(0);" onclick="tableMov(this, 'next');" class="right button next"></a>
+					</div>
+					
+					<ul class="itemDesc">
+						<li>
+							<a href="javascript:void(0);" class="moreInfo" onclick="openDescription(this);">
+								<span class="icon info"></span>
+							</a>						
+							<div class="description">
+								<div class="left">
+									<label class="left">Cód:26754</label>
+									<a class="left" href="kit.html"><span class="icon kit"></span></a>
+									<br class="clear"/>
+									<a class="selectable left" href="javascript:void(0);"><label class="title large">Cera Auto Brilho 3M 6X200G Caixa Display</label></a>
+								</div>
+								<div class="right">
+									<a class="button left" href="produtoDetalhe.html"><span class="icon detalhes"></span></a>
+									<a class="button left" href="gondolaAdicionar.html"><span class="icon editar"></span></a>
+									<a class="button left" href="javascript:void(0);" onclick="alert('Deseja realmente retirar do caminhão?')"><span class="icon excluir"></span></a>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					
+					<table class="itens" style="width: 2600px;" cellspacing="0"  id="table_gondola">
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th style="width:10px;">Pos</th>
+								<th style="width:20px;">Qtd</th>
+								<th style="width:500px;">Código/Nome do Produto</th>
+								<th style="width:100px;">Filial</th>
+								<th style="width:50px;">E</th>
+								<th style="width:150px;">Unt + Imp + Frt</th>
+								<th style="width:150px;">Preço do Cliente</th>
+								<th style="width:150px;">Margem</th>
+								<th style="width:100px;">E.Ant</th>
+								<th style="width:100px;">E.Atual</th>
+								<th style="width:100px;">Cxa.</th>
+								<th style="width:150px;">Preço Líq.</th>
+								<th style="width:200px;">Vlr Líq + Imp + Frt</th>
+								<th style="width:150px;">Cxa + Imp + Frt</th>
+								<th style="width:100px;">M</th>
+								<th style="width:150px;">CPagto</th>
+								<th style="width:100px;">Última Compra</th>
+								<th style="width:150px;">Vlr Frete</th>
+								<th style="width:100px;">NF</th>
+								<th style="width:50px;">I</th>
+								<th style="width:50px;">F</th>
+								<th style="width:50px;">S</th>
+								<th style="width:100px;">%ICM</th>
+								<th style="width:100px;">CAD</th>
+								<th style="width:100px;">%Base STB</th>
+								<th style="width:100px;">Comissão</th>
+								<th style="width:100px;">Negociação</th>
+								<th>Pontos</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+			
+			<!-- RODAPÉ navegação inferior, abas e botões de navegação interna -->
+			<div id="footer" class="blue">
+				<div class="left">
+					<label>Qtd Itens</label>
+					<span id="quantidadeTotalMercadoria"></span>
+				</div>
+				<div class="left">
+					<label>Valor de Comissão</label>
+					<span id="valorTotalComissao"></span>
+				</div>
+				<div class="left">
+					<label>Valor Total</label>
+					<span id="valorTotalMercadoria"></span>
+				</div>
+			</div>
+			<!-- FIM DO RODAPÉ -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+    <div class="qtdBox blue">
+        <div class="panel">
+        	<div class="left"><input id="qtd" type="text" placeholder="Quantidade" value="0" class="type" style="width:75px" /></div>
+        	<a class="button right" onclick="removeQtd();" href="javascript:void(0;)"></a>
+        </div>
+        <br class="clear"/>
+        <div class="panel keyboard">
+	        <div>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">1</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">2</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">3</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">4</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">5</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">6</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">7</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">8</a>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">9</a>
+		        <br class="clear"/>
+		        <a class="button left" href="javascript:void(0);" onclick="qtdAddNumber(this);">0</a>
+	        	<br class="clear"/>
+	       	</div>
+	     </div>
+	     <div class="panel">
+         	<a class="button left" onclick="$('.qtdBox').hide('fast');">x</a>
+         	<a class="button right" href="javascript:void(0);" onclick="addQtd();">Ok</a>
+         </div>
+    </div>
+    <div id="itensMenu">
+    	<a href="javascript:fechaPedido();" class="button">Fechar Pedido</a>
+    	<a href="javascript:void(0)" onclick="$(this).parent().hide('fast');" class="button">Continuar Pedido</a>
+    	<a href="javascript:abandonar();" class="button">Abandonar Pedido</a>
+    </div>
+</body>
+</html>

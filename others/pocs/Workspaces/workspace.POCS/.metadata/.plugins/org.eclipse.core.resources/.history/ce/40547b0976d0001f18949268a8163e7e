@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Superior Tribunal de Justi&ccedil;a - O Tribunal da Cidadania</title>
+<!-- by Gustavo Marcelo -->
+<meta http-equiv="Content-Type" content="text/html; charset=8859-1" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+<!-- link rel="apple-touch-icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.png"/--> 
+<!-- link  rel="shortcut icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.ico" type="image/icon" /--> 
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/style.css";</style>
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/styleComplemento.css";</style>
+<script type="application/x-javascript">
+if (navigator.userAgent.indexOf('iPhone') != -1) {
+        addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+        }, false);
+}
+
+function hideURLbar() {
+        window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body>
+<div class="toolbar">
+<a href="<%=request.getContextPath()%>/" >
+<img src="<%=request.getContextPath()%>/imagens/topo.png" /></a>
+</div>
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=paginar&parametro=0" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">
+Jurisprud&ecirc;ncia
+</div>
+</div>
+<div class="arredondado">
+<div class="arredondado_chamada_negrito_sem_borda">
+Processo
+</div>
+<div class="arredondado_chamada_simples">
+AIRR - 38640-55.2003.5.03.0003 
+</div>
+<div class="arredondado_chamada_negrito">
+Relator(a)
+</div>
+<div class="arredondado_chamada_simples">
+Ministro Horácio Raymundo de Senna Pires 
+</div>
+<div class="arredondado_chamada_negrito">
+&Oacute;rg&atilde;o Judicante
+</div>
+<div class="arredondado_chamada_simples">
+6ª TURMA
+</div>
+<!-- div class="arredondado_chamada_negrito">
+Data do Julgamento
+</div>
+<div class="arredondado_chamada_simples">
+01/12/2009
+</div>
+<div class="arredondado_chamada_negrito">
+Data da Publica&ccedil;&atilde;o/Fonte
+</div-->
+<div class="arredondado_chamada_negrito">
+Ementa
+</div>
+<div class="arredondado_chamada_simples">
+Trata-se de agravo de instrumento interposto pela reclamada, contra despacho às fls. 82-83, denegatório do recurso de revista, ante a incidência das Súmulas nº 23, 126, 221 e 296 do TST.
+<br> 
+Alega, a Agravante, ter demonstrado a natureza indenizatória das diárias de viagem, bem como a limitação da integração das diárias ao salário do reclamante. Assevera, ainda, não ser devido o pagamento de horas extras
+<br> 
+Regularmente notificado, o agravado contraminutou o agravo de instrumento às fls. 85-88 e ofereceu contra-razões ao apelo principal às fls. 89-92.
+<br> 
+Sem remessa dos autos ao d. Ministério Público do Trabalho, nos termos regimentais.
+<br> 
+É o relatório. 
+</div>
+<div class="arredondado_chamada_negrito">
+Ac&oacute;rd&atilde;o
+</div>
+<div class="arredondado_chamada_simples">
+Vistos, relatados e discutidos estes autos, acordam os Ministros daQuinta Turma do Superior Tribunal de Justi&ccedil;a, na conformidade dosvotos e das notas taquigr&aacute;ficas a seguir, por unanimidade, denegar aordem. Os Srs. Ministros Felix Fischer, Laurita Vaz, Arnaldo EstevesLima e Napole&atilde;o Nunes Maia Filho votaram com o Sr. Ministro Relator.
+</div>
+<div class="arredondado_chamada_negrito">
+Informa&ccedil;&otilde;es Complementares
+</div>
+<div class="arredondado_chamada_simples">
+Aguardando an&aacute;lise.
+</div>
+<div class="arredondado_chamada_simples">
+DJE
+ 
+18/12/2009
+</div>
+</div>
+<div class="arredondado">
+<div class="arredondado_link">
+<a href="<%=request.getContextPath()%>/Pagina?p=DJEletronico&m=detalhar&parametro=20071231654456" >
+&Iacute;ntegra do Ac&oacute;rd&atilde;o</a>
+</div>
+</div>
+<div class="arredondado">
+<div class="arredondado_link">
+<a href="<%=request.getContextPath()%>/Pagina?p=Processos&m=detalhar&parametro=20071231654456" >
+AcompanhamentoProcessual</a>
+</div>
+</div>
+</body>
+</html>
+
+<!-- 
+
+
+
+
+ -->

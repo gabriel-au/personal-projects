@@ -1,0 +1,39 @@
+<project name="PilotoAndroid" default="jar" basedir=".">
+	<property name="prj-name"  		value="PilotoAndroid" />
+	
+	<echo>${basedir}</echo>
+	
+	<property name="src-dir"  location="../src" />
+	<property name="bin-dir"  location="../bin" />
+	<property name="dist-dir"  location="../dist" />
+	<property name="lib-dir"  location="../lib" />
+	
+	<path id="classpath.base">
+		<pathelement location="${src-dir}" />
+		<pathelement location="${lib-dir}/phonegap-1.3.0.jar" />
+		<pathelement location="${lib-dir}/android.jar" />
+		<pathelement location="${lib-dir}/framework-brq.jar" />
+	</path>
+
+	<target name="jar" depends="cleanWorkspace,init,compile">
+		<jar destfile="${dist-dir}/${prj-name}.jar">
+	 		<fileset dir="${bin-dir}" />
+		</jar>
+	</target>
+
+	<target name="compile">	
+		<javac debug="on" includeantruntime="true" destdir="${bin-dir}">
+			<src path="${src-dir}" />
+			<classpath refid="classpath.base" />
+		</javac>
+	</target>
+
+	<target name="cleanWorkspace">
+		<delete dir="${bin-dir}" />
+	</target>
+	
+	<target name="init">
+		<mkdir dir="${bin-dir}" />
+	</target>
+	
+</project>

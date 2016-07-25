@@ -1,0 +1,121 @@
+8
+
+dir
+54
+http://rjserver162.brq.com:8978/svn/Mobilidade/UnimedDroid
+http://rjserver162.brq.com:8978/svn/Mobilidade
+
+
+
+2011-10-21T23:32:59.665380Z
+54
+tgoncalves
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+82c5b4fb-17c2-0941-b1d8-291f0392c9ad
+
+.classpath
+file
+
+
+
+
+2011-10-20T22:25:36.000000Z
+24afb788488b7ad3394c9c53b7c31ceb
+2011-10-20T22:25:36.554585Z
+50
+tgoncalves
+
+.metadata
+dir
+
+.project
+file
+
+
+
+
+2011-10-20T22:25:36.000000Z
+5f3388f06fd9e393811ab2b80e3823ac
+2011-10-20T22:25:36.554585Z
+50
+tgoncalves
+
+AndroidManifest.out.xml
+file
+55
+
+
+
+2011-10-22T01:16:02.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-10-22T01:30:20.859892Z
+55
+tgoncalves
+
+AndroidManifest.xml
+file
+55
+
+
+
+2011-10-22T01:27:37.000000Z
+d9b493366dd2c32b50b94353ef82c7bd
+2011-10-22T01:30:20.859892Z
+55
+tgoncalves
+
+assets
+dir
+
+bin
+dir
+
+default.properties
+file
+
+
+
+
+2011-10-21T23:32:59.000000Z
+0ad71b162562861fb4a534019cdc043c
+2011-10-21T23:32:59.665380Z
+54
+tgoncalves
+
+gen
+dir
+
+libs
+dir
+
+proguard.cfg
+file
+
+
+
+
+2011-10-20T22:25:36.000000Z
+bec1efcef0f2c9b790a863a8a7d4e668
+2011-10-20T22:25:36.554585Z
+50
+tgoncalves
+
+res
+dir
+
+src
+dir
+

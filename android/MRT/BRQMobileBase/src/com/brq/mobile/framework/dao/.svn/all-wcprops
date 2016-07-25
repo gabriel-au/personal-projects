@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/5605/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao
+END
+TransactionManagerAndroidImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/4795/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/TransactionManagerAndroidImpl.java
+END
+TransactionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/3777/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/TransactionManager.java
+END
+DatabaseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobile/!svn/ver/4795/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/DatabaseFactory.java
+END
+Database.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/5605/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/Database.java
+END
+DatabaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobile/!svn/ver/4795/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/DatabaseHelper.java
+END
+DatabaseWindowsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobile/!svn/ver/5605/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/DatabaseWindowsImpl.java
+END
+DatabaseAndroidImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobile/!svn/ver/5605/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/DatabaseAndroidImpl.java
+END
+TransactionManagerWindowsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/4795/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/dao/TransactionManagerWindowsImpl.java
+END

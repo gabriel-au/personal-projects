@@ -1,0 +1,193 @@
+body{
+	background:#f7f7f7;
+	margin:0;
+	padding:0;
+	font-family:Verdana, Arial, Helvetica, sans-serif, 'Trebuchet';
+}
+
+.container{
+	width:320px;
+}
+
+.container .header-evento h1{
+	width:320px;
+	height:50px;
+	background:url(../imagens/logo-evento.jpg) no-repeat;
+	margin:0 auto;
+}
+.container .header-evento h1 span{
+	display:none;
+}
+
+.container .content .destaque{
+	color:#FFFFFF;
+	background:url(../imagens/bg-destaque.gif);
+	font-size:12px;
+	height:45px;
+	padding:10px 0 10px 15px;
+	margin:0 auto;
+}
+
+.container .content p{
+	font-size:11px;
+	color:#666666;
+	padding-left:15px;
+}
+
+.container .content .qb-1{
+	display:block;
+	width:200px;
+	line-height:15px;
+}
+
+.container .content a:link,
+.container .content span{
+	color:#e55300;
+	text-decoration:none;
+}
+
+.container .content .dotted-border{
+	width:300px;
+	height:2px;
+	border-bottom: dotted 1px silver;
+	clear:both;
+	margin-left:10px;
+}
+.container .content .title-orange{
+	color:#e55300;
+}
+
+.container .content .bt-mapa{
+	width:99px;
+	height:32px;
+	margin:-42px 0 0 215px;
+	padding-bottom:10px;
+}
+
+.container .content .section-a{
+	width:150px;
+	float:left;
+}
+.container .content .section-a li{
+	list-style-type:none;
+}
+.container .content .section-a img{
+	margin-left:-25px;
+}
+.container .content .section-b{
+	width:150px;
+	float:left;
+}
+.container .content .section-b li{
+	list-style-type:none;
+}
+.container .content .section-b img{
+	margin-left:-25px;
+}
+
+/*início programação*/
+.container .header {
+	width:320px;
+	height:50px;
+	background:#FFFFFF;
+	margin:0 auto;
+}
+
+.container .header .title{
+	color:#e55300;
+	font-size:17px;
+	margin:0 150px 0 100px;
+	padding-top:15px;
+	font-weight:bold;
+	width:170px;
+}
+
+.container .sombra{
+	background:url(../imagens/bg-sombra.png);
+	height:7px;
+	margin-top:16px;
+}
+.container .bottom-voltar{
+	float:left;
+	margin:-46px 0 0 14px;
+}
+.container .content .aviso{
+	color:#e55300;
+	font-size:11px;
+	margin-left:14px;
+}
+.bg-brq{
+	background:url(../imagens/bg-brq.png);
+	width:320px;
+	height:48px;
+}
+/*fim programação*/
+.footer {
+	background:url(../imagens/bg-footer.png);
+	margin:0 auto;
+	width:320px;
+	float:left;
+}
+.footer ul.evento{
+	list-style-type:none;
+}
+.footer ul.evento li{
+	float:left; 
+	display:block;
+}
+.footer ul.evento li a{
+	display:block; 
+	overflow:hidden; 
+	position:relative;
+	background:url(../imagens/menu.png) no-repeat scroll 0 0 transparent;
+}
+ul.evento li a.informacoes{
+	width:64px;
+	height:46px;
+	margin:-12px 0 0 -39px;
+}
+ul.evento li a.informacoes:hover{
+	background-position:0 -46px;
+}
+ul.evento li a.programacao{
+	width:64px;
+	height:46px;
+	background-position:-64px 0;
+	margin-top:-12px;
+}
+ul.evento li a.programacao:hover{
+	background-position:-64px -46px;
+	width:64px;
+}
+ul.evento li a.negocios{
+	width:64px;
+	height:46px;
+	background-position:-129px 0;
+	margin-top:-12px;
+}
+ul.evento li a.negocios:hover{
+	background-position:-129px -46px;
+	width:64px;
+}
+ul.evento li a.mapa{
+	width:62px;
+	height:46px;
+	background-position:-194px 0;
+	margin-top:-12px;
+}
+ul.evento li a.mapa:hover{
+	background-position:-194px -46px;
+	width:62px;
+}
+ul.evento li a.executivos{
+	width:64px;
+	height:46px;
+	background-position:-256px 0;
+	margin-top:-12px;
+}
+ul.evento li a.executivos:hover{
+	background-position:-256px -46px;
+	width:64px;
+}
+
+

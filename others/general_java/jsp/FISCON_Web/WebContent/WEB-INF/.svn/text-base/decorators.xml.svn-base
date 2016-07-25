@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE decorators []>
+
+<decorators defaultdir="/WEB-INF/decorators">
+
+	<excludes>
+		<pattern>/styles/*</pattern>
+		<pattern>/images/*</pattern>
+		<pattern>/dojo/*</pattern>
+		<pattern>/div/*</pattern>
+		<pattern>/executar</pattern>
+		<pattern>/executar*</pattern>
+	</excludes>
+
+	<decorator name="main" page="main.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+
+	<decorator name="administrador" page="mainMenu.jsp">
+		<pattern>/atualizacao/*</pattern>
+		<pattern>/atualizacao*</pattern>
+		<pattern>/auto_infracao/*</pattern>
+		<pattern>/auto_infracao*</pattern>
+		<pattern>/cor/*</pattern>
+		<pattern>/cor*</pattern>
+		<pattern>/cnh/*</pattern>
+		<pattern>/cnh*</pattern>
+		<pattern>/especie/*</pattern>
+		<pattern>/especie*</pattern>
+		<pattern>/infracao_tipo/*</pattern>
+		<pattern>/infracao_tipo*</pattern>
+		<pattern>/log/*</pattern>
+		<pattern>/log*</pattern>
+		<pattern>/login/*</pattern>
+		<pattern>/login*</pattern>
+		<pattern>/marca_modelo/*</pattern>
+		<pattern>/marca_modelo*</pattern>
+		<pattern>/menu/*</pattern>
+		<pattern>/menu*</pattern>
+		<pattern>/municipio/*</pattern>
+		<pattern>/municipio*</pattern>
+		<pattern>/perfil/*</pattern>
+		<pattern>/perfil*</pattern>
+		<pattern>/restricao/*</pattern>
+		<pattern>/restricao*</pattern>
+		<pattern>/restricao_tipo/*</pattern>
+		<pattern>/restricao_tipo*</pattern>
+		<pattern>/tipo/*</pattern>
+		<pattern>/tipo*</pattern>
+		<pattern>/usuario*</pattern>
+		<pattern>/usuario/*</pattern>
+		<pattern>/veiculo*</pattern>
+		<pattern>/veiculo/*</pattern>
+	</decorator>
+
+
+	<decorator name="printable" page="printable.jsp" />
+</decorators>

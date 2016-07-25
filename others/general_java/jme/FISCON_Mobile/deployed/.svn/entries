@@ -1,0 +1,170 @@
+10
+
+dir
+619
+svn+ssh://ouropreto.primems.com.br/svn/fiscon/trunk/FISCON_Mobile/deployed
+svn+ssh://ouropreto.primems.com.br/svn/fiscon
+
+
+
+2010-10-29T12:16:12.630064Z
+613
+Eduardo Carminati
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e04f4003-3cb9-4585-96a4-87db3f752821
+
+BO OLD.zip
+file
+
+
+
+
+2011-03-23T17:56:51.000000Z
+a7f5344c55a7c83148d65c5964c861cb
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1215
+
+DAO_OLD.zip
+file
+
+
+
+
+2011-03-23T17:56:51.000000Z
+98b879654d173770cbe1616c6ceb4c13
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4672
+
+DefaultCldcPhone2
+dir
+
+DefaultColorPhone
+dir
+
+OLD XHTML.zip
+file
+
+
+
+
+2011-03-23T17:56:52.000000Z
+3e62152fb93f1730a86c092f36986da2
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2432
+
+PAGEBEANS OLD.zip
+file
+
+
+
+
+2011-03-23T17:56:51.000000Z
+af45310194426b39cfe55b60f468d30e
+2010-10-28T16:47:46.940203Z
+607
+Eduardo Carminati
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2752
+

@@ -1,0 +1,74 @@
+package br.jus.tst.mobilesite.paginas;
+
+import br.jus.tst.mobilesite.Padroes;
+import br.jus.tst.mobilesite.ui.A;
+import br.jus.tst.mobilesite.ui.Body;
+import br.jus.tst.mobilesite.ui.Div;
+import br.jus.tst.mobilesite.ui.HTML;
+import br.jus.tst.mobilesite.ui.Img;
+import br.jus.tst.mobilesite.util.CriarArquivo;
+
+public class GeraPaginasPrincipal
+{
+  public static void main(String[] args)
+  {
+/* 17 */     gerar();
+  }
+
+  public static void gerar() {
+    try {
+/* 22 */       gerarIndex();
+    }
+    catch (Exception e) {
+/* 25 */       e.printStackTrace();
+    }
+  }
+
+  public static void gerarIndex() throws Exception
+  {
+/* 31 */     HTML pagina = new HTML();
+/* 32 */     pagina.add(Padroes.getHeader());
+/* 33 */     Body body = Padroes.getBody();
+/* 34 */     pagina.add(body);
+
+/* 36 */     Div divPrincipal = new Div("links");
+
+/* 38 */     Div divNoticia = new Div("links_secundario");
+/* 39 */     Div divJurisprudencia = new Div("links_secundario");
+/* 40 */     Div divProcessos = new Div("links_secundario");
+/* 41 */     Div divDJEletronico = new Div("links_secundario");
+
+/* 43 */     A linkNoticia = new A("noticias.jsp", true);
+/* 44 */     Img imgNoticia = new Img("imagens/btn_noticias.png");
+/* 45 */     linkNoticia.add(imgNoticia);
+/* 46 */     divNoticia.add(linkNoticia);
+
+/* 48 */     A linkJurisprudencia = new A("jurisprudencia.jsp", true);
+/* 49 */     Img imgJurisprudencia = new Img("imagens/btn_jurisprudencia.png");
+/* 50 */     linkJurisprudencia.add(imgJurisprudencia);
+/* 51 */     divJurisprudencia.add(linkJurisprudencia);
+
+/* 53 */     A linkProcessos = new A("processos.jsp", true);
+/* 54 */     Img imgProcessos = new Img("imagens/btn_processos.png");
+/* 55 */     linkProcessos.add(imgProcessos);
+/* 56 */     divProcessos.add(linkProcessos);
+
+/* 58 */     A linkDJEletronico = new A("JEletronico.jsp", true);
+/* 59 */     Img imgDJEletronico = new Img("imagens/btn_dj-eletronico.png");
+/* 60 */     linkDJEletronico.add(imgDJEletronico);
+/* 61 */     divDJEletronico.add(linkDJEletronico);
+
+/* 63 */     divPrincipal.add(divNoticia);
+/* 64 */     divPrincipal.add(divJurisprudencia);
+/* 65 */     divPrincipal.add(divProcessos);
+/* 66 */     divPrincipal.add(divDJEletronico);
+/* 67 */     body.add(divPrincipal);
+
+/* 69 */     CriarArquivo.salvar("index.jsp", pagina);
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.tst.mobilesite.paginas.GeraPaginasPrincipal
+ * JD-Core Version:    0.6.0
+ */

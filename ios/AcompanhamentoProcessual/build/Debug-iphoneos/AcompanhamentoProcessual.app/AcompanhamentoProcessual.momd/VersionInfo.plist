@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_CurrentVersionName</key>
+	<string>AcompanhamentoProcessual</string>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>AcompanhamentoProcessual</key>
+		<dict>
+			<key>Client</key>
+			<data>
+			sZ/P/8xFfhQc9M/ASMWx/r8181+OGoxjYcFo5ZWqiUM=
+			</data>
+			<key>Pushs</key>
+			<data>
+			VjsTz4vM/n/UtjX3MLUXxfOzJqeciKg4ROzT49yf/vU=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>

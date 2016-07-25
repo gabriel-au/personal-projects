@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="fabrica">
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">postgres</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://192.168.1.15:5432/fiscon</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoMarcaModeloPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoCorPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.MunicipioPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoMunicipioPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.CorPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.PerfilPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.InfracaoTipoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoCategoriaPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.LogPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.AutoInfracaoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoTipoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.UsuarioPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.CategoriaPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.EspeciePojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.RestricaoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.CnhPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoVeiculoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.RestricaoTipoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.MarcaModeloPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.VeiculoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.HistoricoEspeciePojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.TipoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.FotoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.AtualizacaoPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.BairroPojo" />
+		<mapping class="br.com.xtrategia.fiscon.web.pojo.MenuPojo" />
+
+		<mapping resource="chaveAutoInfracao.xml" />
+
+	</session-factory>
+</hibernate-configuration>

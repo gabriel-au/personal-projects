@@ -1,0 +1,7 @@
+# MTJ Build Properties
+DefaultCldcPhone2.includes=src-aplicacao\
+,src\
+,res\
+
+DefaultCldcPhone2.excludes=\
+

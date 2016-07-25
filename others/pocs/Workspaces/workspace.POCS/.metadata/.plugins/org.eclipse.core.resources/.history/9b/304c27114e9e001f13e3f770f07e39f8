@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="includes/head.jsp" %>
+<body>
+
+<%@ include file="includes/toolbar.jsp" %>
+
+<!-- Início da Barra de Título -->
+<!-- div class="titulo">
+<a href="<%=request.getContextPath()%>/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" />
+</a>
+<div class="titulo_texto">Noticias</div>
+</div-->
+<!-- Fim da Barra de Título -->
+
+<!-- Início do Conteúdo -->
+<div class="arredondado">
+	<div class="arredondado_saudacao">
+		OLÁ JOÃO!
+	</div>
+	<div class="arredondado_chamada_detalhe_espaco">
+		A SUA FATURA CREDICARD ESTÁ COM VISUAL MAIS MODERNO E TRAZ MUITO MAIS
+		INFORMAÇÕES PARA VOCÊ.
+	</div>
+</div>
+
+<div class="arredondado">
+	<div class="arredondado_titulo_detalhe_espaco">
+		CARTÃO Nº
+	</div>
+	<div class="arredondado_chamada_detalhe_espaco">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td width="40">
+					<img src="<%=request.getContextPath()%>/imagens/logo_cc_mastercard.jpg" style="vertical-align: middle;"/>
+				</td>
+				<td>XXXX-XXXX-XXXX-1234</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="arredondado">
+	<div class="arredondado_titulo_detalhe_espaco">
+		ÚLTIMA FATURA
+	</div>
+	<div class="arredondado_chamada_detalhe_espaco">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td width="25%" style="border-right: 1px solid #DDE; text-align: center;">VENC.</td>
+				<td width="40%" style="border-right: 1px solid #DDE; text-align: center;">TOTAL</td>
+				<td style="text-align: center;">MÍNIMO</td>
+			</tr>
+			<tr>
+				<td style="border-right: 1px solid #DDE; text-align: center; font-weight: bold;"><strong>20/08</strong></td>
+				<td style="border-right: 1px solid #DDE; text-align: center; font-weight: bold;"><strong>R$ 3.265,89</strong></td>
+				<td style="text-align: center; font-weight: bold;"><strong>R$ 326,59</strong></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+
+<!-- Fim do Conteúdo -->
+
+<div style="margin-top:0px; ">
+<img src="<%=request.getContextPath()%>/imagens/tabbar.png" />
+</div>
+
+<!-- Início do Espaçamento -->
+<p>&nbsp;</p>
+<!-- Fim do Espaçamento -->
+
+</body>
+</html>

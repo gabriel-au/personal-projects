@@ -1,0 +1,1170 @@
+TFaturaOnLine
+v7
+r0
+t303144427.636103
+cCheck dependencies
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
+c000000004C05C1B10000000000000110
+t1275445681
+s272
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+c000000004BF4B7F900000000000001E5
+t1274329081
+s485
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFE06FA000000000034A850
+t1274939130
+s3450960
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFE07D200000000003E1EB0
+t1274939346
+s4071088
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFE07B10000000000001466
+t1274939313
+s5222
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C0458CC00000000000000C4
+t1275353292
+s196
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C04711400000000000009CD
+t1275359508
+s2509
+
+N/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471FC0000000002D563E0
+t1275359740
+s47539168
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk
+c000000004C6DE9E30000000000000110
+t1282271715
+s272
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+c000000004C578FA900000000000001E5
+t1280806825
+s485
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A51050000000000345F00
+t1280987397
+s3432192
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A52B100000000003E1EF0
+t1280987825
+s4071152
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A527F0000000000001466
+t1280987775
+s5222
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C5A556300000000000000C4
+t1280988515
+s196
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C62427000000000000009CD
+t1281507952
+s2509
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C62430F0000000002EBC2B0
+t1281508111
+s49005232
+
+N/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/9D4D77EB-8C87-42E3-A71C-DB5CC517018F.mobileprovision
+c000000004C9BAE3E0000000000001CDC
+t1285271102
+s7388
+
+N/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision
+c000000004C6156E50000000000001CA0
+t1281447653
+s7328
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.h
+c000000004C3F71A400000000000001EA
+t1279226276
+s490
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m
+c000000004C40C88A0000000000000C8D
+t1279314058
+s3213
+i"FaturaOnLineAppDelegate.h"
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.h
+c000000004C3DB0840000000000000232
+t1279111300
+s562
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m
+c000000004C3DB0840000000000000651
+t1279111300
+s1617
+i"Mensagens.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.h
+c000000004C6164E8000000000000016A
+t1281451240
+s362
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m
+c000000004C61660A00000000000007D5
+t1281451530
+s2005
+i"PDFController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.h
+c000000004C61639A0000000000000194
+t1281450906
+s404
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m
+c000000004C6161710000000000000EEC
+t1281450353
+s3820
+i"SummaryController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.h
+c000000004C616288000000000000018E
+t1281450632
+s398
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m
+c000000004C6162C2000000000000091D
+t1281450690
+s2333
+i"TransactionsController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist
+c000000004C61595300000000000000E1
+t1281448275
+s225
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch
+c000000004C3F71A400000000000000C1
+t1279226276
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib
+c000000004C572CC800000000000078B2
+t1280781512
+s30898
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib
+c000000004C6164510000000000004A43
+t1281451089
+s19011
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib
+c000000004C572BE20000000000004A7A
+t1280781282
+s19066
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib
+c000000004C61642D0000000000004A4B
+t1281451053
+s19019
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+t1281451626
+s680
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM
+t1281451624
+s102
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+t1281451624
+s75728
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist
+t1281448292
+s780
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/MainWindow.nib
+t1281448294
+s2078
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PDFView.nib
+t1281451619
+s1270
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PkgInfo
+t1281448292
+s8
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist
+t1281448292
+s485
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/SummaryView.nib
+t1281448295
+s1249
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/TransactionsView.nib
+t1281451619
+s1254
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png
+t1281448295
+s2965
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+t1281448298
+s7328
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png
+t1281448295
+s2683
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/logo_citigroup.jpg
+t1281448295
+s55346
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png
+t1281448295
+s3359
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png
+t1281448295
+s2904
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png
+t1281448295
+s1105
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/teste.gif
+t1281448295
+s7054
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent
+t1281448298
+s377
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine
+t1281451624
+s28944
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine.LinkFileList
+c000000004C61611800000000000003DC
+t1281450264
+s988
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o
+t1281448297
+s50088
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o
+t1281450264
+s40416
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o
+t1281451622
+s43184
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o
+t1281451622
+s44064
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o
+t1281451622
+s43592
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o
+t1281448297
+s6540
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine
+t1281451624
+s28840
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine.LinkFileList
+c000000004C61611800000000000003DC
+t1281450264
+s988
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o
+t1281448298
+s50096
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o
+t1281450264
+s40316
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o
+t1281451623
+s43124
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o
+t1281451622
+s44004
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o
+t1281451622
+s43536
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o
+t1281448297
+s6520
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/card.png
+c000000004C40933F0000000000000BEE
+t1279300415
+s3054
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/icon.png
+c000000004C5B04BA000000000000096C
+t1281033402
+s2412
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/logo_citigroup.jpg
+c000000004C409EF2000000000000D832
+t1279303410
+s55346
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m
+c000000004C3F71A4000000000000016C
+t1279226276
+s364
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/money.png
+c000000004C408FBE0000000000000D32
+t1279299518
+s3378
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/paper.png
+c000000004C4094AC0000000000000BB9
+t1279300780
+s3001
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/resumo.png
+c000000004C408D3E0000000000000471
+t1279298878
+s1137
+
+N/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/teste.gif
+c000000004C48B2D90000000000001B8E
+t1279832793
+s7054
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.h
+c000000004C3F71A400000000000001EA
+t1279226276
+s490
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m
+c000000004C40C88A0000000000000C8D
+t1279314058
+s3213
+i"FaturaOnLineAppDelegate.h"
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.h
+c000000004C3DB0840000000000000232
+t1279111300
+s562
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m
+c000000004C3DB0840000000000000651
+t1279111300
+s1617
+i"Mensagens.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.h
+c000000004C6164E8000000000000016A
+t1281451240
+s362
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m
+c000000004C61660A00000000000007D5
+t1281451530
+s2005
+i"PDFController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.h
+c000000004C61639A0000000000000194
+t1281450906
+s404
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m
+c000000004C6161710000000000000EEC
+t1281450353
+s3820
+i"SummaryController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.h
+c000000004C616288000000000000018E
+t1281450632
+s398
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m
+c000000004C6162C2000000000000091D
+t1281450690
+s2333
+i"TransactionsController.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch
+c000000004C3F71A400000000000000C1
+t1279226276
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib
+c000000004C572CC800000000000078B2
+t1280781512
+s30898
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib
+c000000004C6164510000000000004A43
+t1281451089
+s19011
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib
+c000000004C572BE20000000000004A7A
+t1280781282
+s19066
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib
+c000000004C61642D0000000000004A4B
+t1281451053
+s19019
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+t1281451626
+s680
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM
+t1281451624
+s102
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+t1281451624
+s75728
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist
+t1281448292
+s780
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/MainWindow.nib
+t1281448294
+s2078
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PDFView.nib
+t1281451619
+s1270
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PkgInfo
+t1281448292
+s8
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist
+t1281448292
+s485
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/SummaryView.nib
+t1281448295
+s1249
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/TransactionsView.nib
+t1281451619
+s1254
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png
+t1281448295
+s2965
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+t1281448298
+s7328
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png
+t1281448295
+s2683
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/logo_citigroup.jpg
+t1281448295
+s55346
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png
+t1281448295
+s3359
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png
+t1281448295
+s2904
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png
+t1281448295
+s1105
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/teste.gif
+t1281448295
+s7054
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine
+t1281451624
+s28944
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine.LinkFileList
+c000000004C61611800000000000003DC
+t1281450264
+s988
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o
+t1281448297
+s50088
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o
+t1281450264
+s40416
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o
+t1281451622
+s43184
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o
+t1281451622
+s44064
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o
+t1281451622
+s43592
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o
+t1281448297
+s6540
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine
+t1281451624
+s28840
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine.LinkFileList
+c000000004C61611800000000000003DC
+t1281450264
+s988
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o
+t1281448298
+s50096
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o
+t1281450264
+s40316
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o
+t1281451623
+s43124
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o
+t1281451622
+s44004
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o
+t1281451622
+s43536
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o
+t1281448297
+s6520
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/card.png
+c000000004C40933F0000000000000BEE
+t1279300415
+s3054
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/icon.png
+c000000004C5B04BA000000000000096C
+t1281033402
+s2412
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/logo_citigroup.jpg
+c000000004C409EF2000000000000D832
+t1279303410
+s55346
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/main.m
+c000000004C3F71A4000000000000016C
+t1279226276
+s364
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/money.png
+c000000004C408FBE0000000000000D32
+t1279299518
+s3378
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/paper.png
+c000000004C4094AC0000000000000BB9
+t1279300780
+s3001
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/resumo.png
+c000000004C408D3E0000000000000471
+t1279298878
+s1137
+
+N/Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/teste.gif
+c000000004C48B2D90000000000001B8E
+t1279832793
+s7054
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-azavybulwdvprseosyfkpnbvgjkf/FaturaOnLine_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-bvbaqldcunlwfneghhshctoqtixb/FaturaOnLine_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch.gch
+t1281448297
+s10090032
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-easkqliwiqvgnugvrdxgqcknamyy/FaturaOnLine_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch.gch
+t1281448297
+s9635376
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-gjfiqbnzbpbwotblyyeedvpidjev/FaturaOnLine_Prefix.pch.gch
+t2
+s0
+
+NFaturaOnLine-Info.plist
+c000000004C5B051E0000000000000395
+t1281033502
+s917
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies307640287#307640287#0(137"[BEROR]CodeSign error: The entitlements file '/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist' is missing1(4@129"CodeSign error: The entitlements file '/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist' is missing307640287#18446744073709551615#0#0(1@0"0(0#1#0"27866456492998768#0"0#
+
+CCodeSign /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+s303144424.558283
+e303144426.634818
+r1
+xCodeSign
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+lSLF07#2@53"CodeSign build/Distribution-iphoneos/FaturaOnLine.app303144424#303144426#0(0"0(0#0#104"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app8622543104#847"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate"    /usr/bin/codesign -f -s "iPhone Distribution: Prime Tecnologia Movel e Informatica Ltda Me" --resource-rules=/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist --entitlements /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CCodeSign /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303141097.546264
+e303141097.774888
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m303141097#303141097#0(0"0(0#0#93"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m8612779744#2269"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLineAppDelegate.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303143064.417531
+e303143064.762268
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m303143064#303143064#0(0"0(0#0#79"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m8622233120#2241"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/Mensagens.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303144422.357410
+e303144422.648091
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m303144422#303144422#0(0"0(0#0#83"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m8622240960#2249"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/PDFController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303144419.455294
+e303144422.472293
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m303144419#303144422#0(0"0(0#0#87"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m8624666688#2257"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/SummaryController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303144419.472199
+e303144422.357189
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m303144419#303144422#0(0"0(0#0#92"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m8624037408#2267"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/TransactionsController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303141097.544969
+e303141097.722357
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m303141097#303141097#0(0"0(0#0#66"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m8610878976#2223"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/main.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303141097.986753
+e303141098.088836
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m303141097#303141098#0(0"0(0#0#93"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m8608752192#2269"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLineAppDelegate.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/FaturaOnLineAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303143064.684003
+e303143064.833910
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m303143064#303143064#0(0"0(0#0#79"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m8614624352#2241"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/Mensagens.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/Mensagens.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303144422.886499
+e303144423.034103
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m303144422#303144423#0(0"0(0#0#83"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m8621958944#2249"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/PDFController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/PDFController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303144422.472726
+e303144422.644185
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m303144422#303144422#0(0"0(0#0#87"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m8618035808#2257"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/SummaryController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/SummaryController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303144422.644400
+e303144422.885994
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m303144422#303144422#0(0"0(0#0#92"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m8623736320#2267"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/TransactionsController.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/Classes/TransactionsController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303141097.899654
+e303141097.986655
+r1
+xCompileC
+xbuild/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m303141097#303141097#0(0"0(0#0#66"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m8610085472#2223"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/main.m -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o0#
+
+CCompileC build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/main.o /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib
+s303141092.923336
+e303141094.648757
+r1
+xCompileXIB
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib303141092#303141094#0(0"0(0#0#74"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib8612207968#681"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/MainWindow.nib /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib --sdk "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCompileXIB /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib
+s303144416.789171
+e303144419.454832
+r1
+xCompileXIB
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib
+lSLF07#2@22"CompileXIB PDFView.xib303144416#303144419#0(0"0(0#0#71"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib8617031392#675"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PDFView.nib /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib --sdk "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCompileXIB /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib
+s303141094.648988
+e303141095.507295
+r1
+xCompileXIB
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib
+lSLF07#2@26"CompileXIB SummaryView.xib303141094#303141095#0(0"0(0#0#75"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib8612000352#683"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/SummaryView.nib /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib --sdk "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCompileXIB /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib
+s303144416.787678
+e303144419.453183
+r1
+xCompileXIB
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib
+lSLF07#2@31"CompileXIB TransactionsView.xib303144416#303144419#0(0"0(0#0#80"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib8617333952#693"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/TransactionsView.nib /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib --sdk "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCompileXIB /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/MainWindow.xib
+r0
+
+CCompileXIB /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/PDFView.xib
+r0
+
+CCompileXIB /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/SummaryView.xib
+r0
+
+CCompileXIB /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/TransactionsView.xib
+r0
+
+CCopyPNGFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png card.png
+s303141095.404513
+e303141095.491701
+r1
+xCopyPNGFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png
+xcard.png
+lSLF07#2@74"CopyPNGFile build/Distribution-iphoneos/FaturaOnLine.app/card.png card.png303141095#303141095#0(0"0(0#0#68"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/card.png8590386528#693"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv COPY_COMMAND "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/card.png /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png0#
+
+CCopyPNGFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png icon.png
+s303141095.573613
+e303141095.605278
+r1
+xCopyPNGFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png
+xicon.png
+lSLF07#2@74"CopyPNGFile build/Distribution-iphoneos/FaturaOnLine.app/icon.png icon.png303141095#303141095#0(0"0(0#0#68"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/icon.png8612305728#693"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv COPY_COMMAND "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/icon.png /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png0#
+
+CCopyPNGFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png money.png
+s303141095.376930
+e303141095.404425
+r1
+xCopyPNGFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png
+xmoney.png
+lSLF07#2@76"CopyPNGFile build/Distribution-iphoneos/FaturaOnLine.app/money.png money.png303141095#303141095#0(0"0(0#0#69"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/money.png8608488000#695"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv COPY_COMMAND "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/money.png /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png0#
+
+CCopyPNGFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png paper.png
+s303141095.491833
+e303141095.572638
+r1
+xCopyPNGFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png
+xpaper.png
+lSLF07#2@76"CopyPNGFile build/Distribution-iphoneos/FaturaOnLine.app/paper.png paper.png303141095#303141095#0(0"0(0#0#69"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/paper.png8613246880#695"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv COPY_COMMAND "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/paper.png /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png0#
+
+CCopyPNGFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png resumo.png
+s303141095.067231
+e303141095.376815
+r1
+xCopyPNGFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png
+xresumo.png
+lSLF07#2@78"CopyPNGFile build/Distribution-iphoneos/FaturaOnLine.app/resumo.png resumo.png303141095#303141095#0(0"0(0#0#70"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/resumo.png8611741152#697"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv COPY_COMMAND "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/resumo.png /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png0#
+
+CCopyPNGFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/card.png card.png
+r0
+
+CCopyPNGFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/icon.png icon.png
+r0
+
+CCopyPNGFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/money.png money.png
+r0
+
+CCopyPNGFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/paper.png paper.png
+r0
+
+CCopyPNGFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/resumo.png resumo.png
+r0
+
+CCpResource build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist"
+s303141092.812963
+e303141092.923251
+r1
+xCpResource
+xbuild/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist
+x/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+lSLF07#2@109"Copy /Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist303141092#303141092#0(0"0(0#0#104"/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist7311142388610462720#619"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CCpResource build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist"
+r0
+
+CCpResource build/Distribution-iphoneos/FaturaOnLine.app/logo_citigroup.jpg logo_citigroup.jpg
+s303141095.507393
+e303141095.550525
+r1
+xCpResource
+xbuild/Distribution-iphoneos/FaturaOnLine.app/logo_citigroup.jpg
+xlogo_citigroup.jpg
+lSLF07#2@23"Copy logo_citigroup.jpg303141095#303141095#0(0"0(0#0#78"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/logo_citigroup.jpg8612693984#591"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/logo_citigroup.jpg /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CCpResource build/Distribution-iphoneos/FaturaOnLine.app/teste.gif teste.gif
+s303141095.572730
+e303141095.579989
+r1
+xCpResource
+xbuild/Distribution-iphoneos/FaturaOnLine.app/teste.gif
+xteste.gif
+lSLF07#2@14"Copy teste.gif303141095#303141095#0(0"0(0#0#69"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/teste.gif8612492384#582"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/teste.gif /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CCreateUniversalBinary /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine normal "armv6 armv7"
+s303144424.104803
+e303144424.241578
+r1
+xCreateUniversalBinary
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+xnormal
+xarmv6 armv7
+lSLF07#2@100"CreateUniversalBinary build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine normal "armv6 armv7"303144424#303144424#0(0"0(0#0#71"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/armv6 armv78624120608#693"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine -output /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine0#
+
+CCreateUniversalBinary /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine normal "armv6 armv7"
+r0
+
+CGenerateDSYMFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+s303144424.241684
+e303144424.554809
+r1
+xGenerateDSYMFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+lSLF07#2@124"GenerateDSYMFile build/Distribution-iphoneos/FaturaOnLine.app.dSYM build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine303144424#303144424#0(0"0(0#0#117"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine8623758784#501"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/usr/bin/dsymutil" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM0#
+
+CGenerateDSYMFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app.dSYM /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/FaturaOnLine
+r0
+
+CLd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine normal armv6
+s303144422.648196
+e303144424.104092
+r1
+xLd
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine
+xnormal
+xarmv6
+lSLF07#2@164"Link /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine303144422#303144424#0(0"0(0#0#0"8622374176#1086"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv6 -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -L/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -filelist /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine0#
+
+CLd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine normal armv7
+s303144423.034305
+e303144424.104727
+r1
+xLd
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine
+xnormal
+xarmv7
+lSLF07#2@164"Link /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine303144423#303144424#0(0"0(0#0#0"8623535488#1086"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv7 -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -L/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -filelist /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine0#
+
+CLd /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv6/FaturaOnLine normal armv6
+r0
+
+CLd /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/Objects-normal/armv7/FaturaOnLine normal armv7
+r0
+
+CProcessInfoPlistFile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist FaturaOnLine-Info.plist
+s303141092.900987
+e303141092.907199
+r1
+xProcessInfoPlistFile
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist
+xFaturaOnLine-Info.plist
+lSLF07#2@31"Process FaturaOnLine-Info.plist303141092#303141092#0(0"0(0#0#83"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine-Info.plist8613354080#717"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility FaturaOnLine-Info.plist -genpkginfo /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/ResourceRules.plist -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/Info.plist FaturaOnLine-Info.plist
+r0
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-azavybulwdvprseosyfkpnbvgjkf/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-bvbaqldcunlwfneghhshctoqtixb/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s303141095.953676
+e303141097.544847
+r1
+xProcessPCH
+x/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch.gch
+xFaturaOnLine_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile FaturaOnLine_Prefix.pch303141095#303141097#0(0"0(0#0#83"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch8609431520#2088"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv7 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch -o /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-chnsgrnpjlesllebuytzeparsnqb/FaturaOnLine_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-easkqliwiqvgnugvrdxgqcknamyy/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s303141095.952703
+e303141097.380576
+r1
+xProcessPCH
+x/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch.gch
+xFaturaOnLine_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile FaturaOnLine_Prefix.pch303141095#303141097#0(0"0(0#0#83"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch8596571968#2088"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-generated-files.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-own-target-headers.hmap -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-all-target-headers.hmap -iquote /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine-project-headers.hmap -F/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/include -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources/armv6 -I/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/FaturaOnLine_Prefix.pch -o /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-ggfpptoixxuyxodrfdhvmmerhgqr/FaturaOnLine_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FaturaOnLine_Prefix-gjfiqbnzbpbwotblyyeedvpidjev/FaturaOnLine_Prefix.pch.gch FaturaOnLine_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/9D4D77EB-8C87-42E3-A71C-DB5CC517018F.mobileprovision" /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+s303141098.801627
+e303141098.816224
+r1
+xProcessProductPackaging
+x/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+lSLF07#2@206"ProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision" build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision303141098#303141098#0(0"0(0#0#129"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision8612459616#509"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision" -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/E0F37AEE-10CC-4547-B5C5-B415D86EFB49.mobileprovision" /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent
+s303141098.819760
+e303141098.821501
+r1
+xProcessProductPackaging
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent
+lSLF07#2@127"ProcessProductPackaging Entitlements.plist build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent303141098#303141098#0(0"0(0#0#144"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent8612045152#516"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/Entitlements.plist -entitlements -format xml -o /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/FaturaOnLine.build/Distribution-iphoneos/FaturaOnLine.build/FaturaOnLine.xcent0#
+
+CTouch /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+s303144424.555005
+e303144424.558120
+r1
+xTouch
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+lSLF07#2@110"Touch /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app303144424#303144424#0(0"0(0#0#0"8622713856#348"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CTouch /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+r0
+
+CValidate /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+s303144426.635061
+e303144427.636051
+r1
+xValidate
+x/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+lSLF07#2@53"Validate build/Distribution-iphoneos/FaturaOnLine.app303144426#303144427#0(0"0(0#0#104"/Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app8622056544#474"    cd /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine    setenv PATH "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.0/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    "/Developer/iPhone SDK 4.0/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation" /Users/Gabriel/Projetos/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app0#
+
+CValidate /Users/Gabriel/Workspace/POCs/Workspaces/iPhone/FaturaOnLine/build/Distribution-iphoneos/FaturaOnLine.app
+r0
+

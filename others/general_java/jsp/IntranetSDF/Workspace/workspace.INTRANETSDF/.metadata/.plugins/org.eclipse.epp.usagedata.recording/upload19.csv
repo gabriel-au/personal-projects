@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.runtime.version,sysinfo,,,"1.6.0_17-b04-248-10M3025",1268757573826
+java.specification.name,sysinfo,,,"Java Platform API Specification",1268757573826
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268757573826
+java.specification.version,sysinfo,,,"1.6",1268757573826
+java.vendor,sysinfo,,,"Apple Inc.",1268757573826
+java.version,sysinfo,,,"1.6.0_17",1268757573826
+java.vm.info,sysinfo,,,"mixed mode",1268757573826
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1268757573826
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1268757573826
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268757573826
+java.vm.specification.version,sysinfo,,,"1.0",1268757573827
+java.vm.vendor,sysinfo,,,"Apple Inc.",1268757573827
+java.vm.version,sysinfo,,,"14.3-b01-101",1268757573827
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.6,"org.tigris.subversion.clientadapter.javahl",1268757593762
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1268757593767
+started,bundle,org.tmatesoft.svnkit,1.3.1.6109,"org.tmatesoft.svnkit",1268757593848
+opened,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.sync.views.SynchronizeView",1268757599136
+activated,perspective,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui.TeamSynchronizingPerspective",1268757599165
+activated,view,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.sync.views.SynchronizeView",1268757599175
+started,bundle,org.eclipse.ui.navigator,3.4.1.M20090911-1550,"org.eclipse.ui.navigator",1268757603762
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1268757603876
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1268757605718
+executed,command,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui.synchronizeLast",1268757605747
+started,bundle,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.editors",1268757608104
+started,bundle,org.eclipse.jdt.core,3.5.1.v_972_R35x,"org.eclipse.jdt.core",1268757608374

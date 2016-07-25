@@ -1,0 +1,33 @@
+/* 
+RECOMENDAÇÕES PARA FACILITAR E OTIMIZAR O TRABALHO DE TODOS
+AS REGRAS CSS DEVEM SEGUIR A SEQUENCIA PADRÃO PARA FACILITAR A TODOS QUE NECESSITEM DAR MANUTENÇÃO EVOLUTIVA NO SITE 
+
+SEQUENCIA:
+1º ELEMENTOS VISUAIS. EX: display, border, background, color, font, text etc…
+2º REGRAS PARA MEDIDAS E DISTANCIAS ENTRE OS ELEMENTOS. EX:margin, padding, width, height, min-width, min-height etc…
+3º REGRAS DE POSICIONAMENTO DOS ELEMENTOS. EX: float, position
+
+USAR TEXTO EM CAIXA BAIXA PARA PADRONIZAR E ECONOMIZAR NO NO ESPAÇO HORIZONTAL E FACILITAR A LEITURA DO CÓDIGO CSS.
+
+UTILIZAR COMENTÁRIOS DETALHADOS PARA AS REGRAS DE ESTILO. 
+
+NÃO USAR HACKS PARA O INTERNET EXPLORER, AS REGRAS ESPECÍFICAS PARA ESTE NAVEGADOR ESTÃO NO ARQUIVO estilos_ie.css NO DIRETÓRIO css.
+
+COMPLEMENTAR ESTAS RECOMENDAÇÕES SEMPRE QUE ACHAR NECESSÁRIO.
+
+ESTA FOLHA DE ESTILO IMPORTA TODAS AS OUTRAS.
+
+DESENVOLVIDO EM MARÇO DE 2007
+POR LUIZ PAULO ARAUJO PEDROSA
+PARA O BANCO DE BRASÍLIA - BRB
+
+*/
+
+
+@import url(e-topo-ok.css); /** CSS do cabecalho e do BODY JUNTO **/
+@import url(e-estrutura-ok.css); /** CSS da estrutura de tres colunas e rodapé **/
+@import url(e-coluna-esquerda.css); /** CSS do menu esquerdo **/
+@import url(e-coluna-central.css); /** CSS do conteúdo central **/
+@import url(e-coluna-central-internas.css); /** CSS do conteúdo central das páginas internas **/
+@import url(e-coluna-direita.css); /** CSS do conteúdo central **/
+@import url(e-rodape-ok.css); /** CSS do rodapé **/

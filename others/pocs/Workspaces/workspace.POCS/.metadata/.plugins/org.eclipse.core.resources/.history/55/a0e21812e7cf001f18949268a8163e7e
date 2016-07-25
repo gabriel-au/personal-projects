@@ -1,0 +1,344 @@
+/*     */package br.jus.tst.mobilesite.servlet;
+
+/*     */
+/*     */import br.jus.stj.mobile.SystemException;
+/*     */
+import br.jus.stj.mobile.bd.consulta.ConsultaJurisprudencia;
+/*     */
+import br.jus.stj.mobile.bd.pojo.JurisprudenciaPojo;
+/*     */
+import br.jus.tst.mobilesite.PadraoPaginas;
+/*     */
+import br.jus.tst.mobilesite.Padroes;
+/*     */
+import br.jus.tst.mobilesite.ui.A;
+/*     */
+import br.jus.tst.mobilesite.ui.Body;
+/*     */
+import br.jus.tst.mobilesite.ui.Div;
+/*     */
+import br.jus.tst.mobilesite.ui.HTML;
+/*     */
+import br.jus.tst.mobilesite.ui.Img;
+/*     */
+import br.jus.tst.mobilesite.ui.Texto;
+/*     */
+import java.util.List;
+/*     */
+import java.util.Map;
+/*     */
+import javax.servlet.http.HttpSession;
+
+/*     */
+/*     */public class PaginaJurisprudencia extends PadraoPaginas
+/*     */{
+	/*     */private HttpSession session;
+	/* 23 */private int TAMANHO_PAGINA = 10;
+
+	/*     */
+	/*     */public String gerarPagina() throws SystemException
+	/*     */{
+		/* 27 */return null;
+		/*     */}
+
+	/*     */
+	/*     */public String gerarPagina(String metodo,
+			Map<String, String> listaParametros, HttpSession session)
+	/*     */throws SystemException
+	/*     */{
+		/* 34 */this.session = session;
+		/* 35 */HTML pagina = new HTML();
+		/* 36 */pagina.add(Padroes.getHeader());
+		/* 37 */Body body = Padroes.getBody();
+		/* 38 */pagina.add(body);
+		/*     */
+		/* 41 */Div div = new Div("titulo");
+		/* 42 */A at = new A("", true);
+		/* 43 */at.add(new Img("imagens/botao-inicio-azul.png"));
+		/* 44 */div.add(at);
+		/* 45 */div.add(new Div("titulo_texto", new Texto("Jurisprudência")));
+		/* 46 */body.add(div);
+		/*     */
+		/* 49 */if ((metodo == null) || (metodo.equals("gerarPagina"))) {
+			/* 50 */gerarPaginaConsulta(body, "Jurisprudencia");
+			/* 51 */} else if (metodo.equals("consultar")) {
+			/* 52 */String parametro = (String) listaParametros
+					.get("parametro");
+			/* 53 */at.setHref("Pagina?p=Jurisprudencia");
+			/* 54 */if ((parametro == null) || (parametro.trim().equals(""))) {
+				/* 55 */pagina.clear();
+				/* 56 */return gerarPaginaMensagem("Jurisprudência",
+				/* 57 */"O critério de pesquisa não foi informado.",
+				/* 58 */"Pagina?p=Jurisprudencia");
+				/*     */}
+			/* 60 */at.setHref("Pagina?p=Jurisprudencia");
+			/* 61 */gerarPaginaConsultaResultado(body, parametro);
+			/* 62 */} else if (metodo.equals("paginar")) {
+			/* 63 */at.setHref("Pagina?p=Jurisprudencia");
+			/* 64 */String parametro = (String) listaParametros
+					.get("parametro");
+			/* 65 */gerarPaginaPaginacao(body, parametro);
+			/* 66 */} else if (metodo.equals("detalhar")) {
+			/* 67 */String parametro = (String) listaParametros
+					.get("parametro");
+			/* 68 */int indice = new Integer(parametro).intValue();
+			/* 69 */indice = indice / this.TAMANHO_PAGINA * this.TAMANHO_PAGINA;
+			/*     */
+			/* 71 */at.setHref("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+ indice);
+			/* 72 */gerarPaginaDetalhar(body, parametro);
+			/*     */} else {
+			/* 74 */return gerarPaginaErro400();
+			/*     */}
+		/*     */
+		/* 77 */return pagina.toString();
+		/*     */}
+
+	/*     */
+	/*     */private void gerarPaginaPaginacao(Body body, String parametroConsulta)
+	/*     */throws SystemException
+	/*     */{
+		/* 89 */List lista = (List) this.session
+		/* 90 */.getAttribute("listaJurisprudencia");
+		/*     */
+		/* 92 */int i = new Integer(parametroConsulta).intValue();
+		/*     */
+		/* 94 */int fimLista = i + this.TAMANHO_PAGINA;
+		/* 95 */while ((i < fimLista) && (i < lista.size())) {
+			/* 96 */i = montarLista(body, i, (JurisprudenciaPojo) lista.get(i));
+			/*     */}
+		/*     */
+		/* 99 */int inicio = new Integer(parametroConsulta).intValue()
+				- this.TAMANHO_PAGINA;
+		/* 100 */Div div = new Div("arredondado");
+		/*     */
+		/* 102 */if (inicio >= 0)
+		/*     */{
+			/* 104 */A a = new A(
+					"Pagina?p=Jurisprudencia&m=paginar&parametro=0",
+					/* 105 */true);
+			/* 106 */a.add(new Img("imagens/nvg_primeiro.png"));
+			/* 107 */div.add(a);
+			/*     */
+			/* 110 */A a = new A("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+ inicio,
+			/* 111 */true);
+			/* 112 */a.add(new Img("imagens/nvg_anterior.png"));
+			/* 113 */div.add(a);
+			/*     */}
+		/*     */else {
+			/* 116 */div.add(new Img("imagens/nvg_primeiro_inativo.png"));
+			/* 117 */div.add(new Img("imagens/nvg_anterior_inativo.png"));
+			/*     */}
+		/* 119 */inicio += this.TAMANHO_PAGINA * 2;
+		/* 120 */if (lista.size() > inicio) {
+			/* 121 */int proximo = inicio;
+			/*     */
+			/* 123 */A a = new A("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+
+					/* 124 */proximo, true);
+			/* 125 */a.add(new Img("imagens/nvg_proximo.png"));
+			/* 126 */div.add(a);
+			/*     */
+			/* 128 */proximo = lista.size() / this.TAMANHO_PAGINA
+					* this.TAMANHO_PAGINA;
+			/*     */
+			/* 130 */A a = new A("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+
+					/* 131 */proximo, true);
+			/* 132 */a.add(new Img("imagens/nvg_ultimo.png"));
+			/* 133 */div.add(a);
+			/*     */}
+		/*     */else {
+			/* 136 */div.add(new Img("imagens/nvg_proximo_inativo.png"));
+			/* 137 */div.add(new Img("imagens/nvg_ultimo_inativo.png"));
+			/*     */}
+		/* 139 */body.add(div);
+		/*     */}
+
+	/*     */
+	/*     */private void gerarPaginaConsultaResultado(Body body,
+			String parametroConsulta)
+	/*     */throws SystemException
+	/*     */{
+		/* 145 */ConsultaJurisprudencia cj = new ConsultaJurisprudencia();
+		/* 146 */List lista = cj
+		/* 147 */.consultaPaginaLista(parametroConsulta);
+		/*     */
+		/* 149 */this.session.setAttribute("listaJurisprudencia", lista);
+		/*     */
+		/* 151 */int i = 0;
+		/* 152 */while ((i < this.TAMANHO_PAGINA) && (i < lista.size())) {
+			/* 153 */i = montarLista(body, i, (JurisprudenciaPojo) lista.get(i));
+			/*     */}
+		/* 155 */Div div = new Div("arredondado");
+		/* 156 */div.add(new Img("imagens/nvg_primeiro_inativo.png"));
+		/* 157 */div.add(new Img("imagens/nvg_anterior_inativo.png"));
+		/*     */
+		/* 159 */if (lista.size() > this.TAMANHO_PAGINA) {
+			/* 160 */int proximo = this.TAMANHO_PAGINA;
+			/*     */
+			/* 162 */A a = new A("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+
+					/* 163 */proximo, true);
+			/* 164 */a.add(new Img("imagens/nvg_proximo.png"));
+			/* 165 */div.add(a);
+			/*     */
+			/* 167 */proximo = lista.size() / this.TAMANHO_PAGINA
+					* this.TAMANHO_PAGINA;
+			/*     */
+			/* 169 */A a = new A("Pagina?p=Jurisprudencia&m=paginar&parametro="
+					+
+					/* 170 */proximo, true);
+			/* 171 */a.add(new Img("imagens/nvg_ultimo.png"));
+			/* 172 */div.add(a);
+			/*     */}
+		/*     */else {
+			/* 175 */div.add(new Img("imagens/nvg_proximo_inativo.png"));
+			/* 176 */div.add(new Img("imagens/nvg_ultimo_inativo.png"));
+			/*     */}
+		/* 178 */body.add(div);
+		/*     */}
+
+	/*     */
+	/*     */private int montarLista(Body body, int inicio, JurisprudenciaPojo pojo)
+	/*     */throws SystemException
+	/*     */{
+		/* 184 */Div div = new Div("arredondado");
+		/*     */
+		/* 186 */A a = new A("Pagina?p=Jurisprudencia&m=detalhar&parametro="
+				+ inicio,
+		/* 187 */true, "arredondado");
+		/*     */
+		/* 190 */Div dEsquerda = new Div("lista_esquerda");
+		/* 191 */dEsquerda.add(new Texto(" " + (++inicio) + " "));
+		/*     */
+		/* 194 */Div dCentral = new Div();
+		/* 195 */Div d1 = new Div("arredondado_link");
+		/*     */
+		/* 197 */d1.add(new Texto(pojo.getTopico()));
+		/* 198 */d1.add(new Texto(" "));
+		/* 199 */d1.add(new Texto(pojo.getCategoria()));
+		/*     */
+		/* 202 */Div d2 = new Div("lista_central", new Texto(pojo.getRelator()));
+		/*     */
+		/* 204 */Div d3 = new Div("lista_central");
+		/* 205 */d3.add(new Texto(pojo.getDataPublicacaoFonte()));
+		/* 206 */d3.add(new Texto(" "));
+		/* 207 */d3.add(new Texto(pojo.getDataPublicacao()));
+		/*     */
+		/* 209 */Div d4 = new Div("lista_central");
+		/* 210 */d4.add(new Texto("Decisão: "));
+		/* 211 */d4.add(new Texto(pojo.getDataJulgamento()));
+		/*     */
+		/* 213 */dCentral.add(d1);
+		/* 214 */dCentral.add(d2);
+		/* 215 */dCentral.add(d3);
+		/* 216 */dCentral.add(d4);
+		/*     */
+		/* 219 */Div dDireita = new Div("lista_base");
+		/* 220 */dDireita.add(new Texto(pojo.getResumoEmenta(), true));
+		/*     */
+		/* 222 */div.add(dEsquerda);
+		/* 223 */div.add(dCentral);
+		/* 224 */div.add(dDireita);
+		/*     */
+		/* 226 */a.add(div);
+		/*     */
+		/* 228 */body.add(a);
+		/* 229 */return inicio;
+		/*     */}
+
+	/*     */
+	/*     */private void gerarPaginaDetalhar(Body body, String parametroConsulta)
+	/*     */throws SystemException
+	/*     */{
+		/*     */{
+			List<JurisprudenciaPojo> lista;
+			/*     */try
+			/*     */{
+				/* 244 */lista = (List<JurisprudenciaPojo>) this.session.getAttribute("listaJurisprudencia");
+				/*     */}
+			/*     */catch (Exception e) {
+				/* 248 */return;
+				/*     */}
+		}
+		/*     */List<JurisprudenciaPojo> lista;
+		/* 251 */JurisprudenciaPojo pojo = (JurisprudenciaPojo) lista
+				.get(new Integer(parametroConsulta).intValue());
+		/*     */
+		/* 253 */Div div = new Div("arredondado");
+		/*     */
+		/* 256 */div.add(new Div("arredondado_chamada_negrito_sem_borda",
+				new Texto("Processo")));
+		/* 257 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getProcesso())));
+		/*     */
+		/* 259 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Relator(a)")));
+		/* 260 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getRelator())));
+		/*     */
+		/* 262 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Órgão Julgador")));
+		/* 263 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getOrgaoJulgador())));
+		/*     */
+		/* 265 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Data do Julgamento")));
+		/* 266 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getDataJulgamento())));
+		/*     */
+		/* 268 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Data da Publicação/Fonte")));
+		/* 269 */Div d = new Div("arredondado_chamada_simples");
+		/* 270 */d.add(new Texto(pojo.getDataPublicacaoFonte()));
+		/* 271 */d.add(new Texto(" "));
+		/* 272 */d.add(new Texto(pojo.getDataPublicacao()));
+		/*     */
+		/* 274 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Ementa")));
+		/* 275 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getEmenta(), true)));
+		/*     */
+		/* 277 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Acórdão")));
+		/* 278 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getAcordao())));
+		/*     */
+		/* 280 */div.add(new Div("arredondado_chamada_negrito", new Texto(
+				"Informações Complementares")));
+		/* 281 */div.add(new Div("arredondado_chamada_simples", new Texto(pojo
+				.getInformacoesComplementares())));
+		/*     */
+		/* 283 */div.add(d);
+		/* 284 */body.add(div);
+		/*     */
+		/* 286 */Div d1 = new Div("arredondado");
+		/*     */
+		/* 288 */if ((pojo.getLinkIntegraAcordao() != null) &&
+		/* 289 */(!(pojo.getLinkIntegraAcordao().equals("")))) {
+			/* 290 */A a = new A("Pagina?p=DJEletronico&m=detalhar&parametro=" +
+			/* 291 */pojo.getLinkIntegraAcordao(), true);
+			/* 292 */a.add(new Texto("Íntegra do Acórdão"));
+			/* 293 */d1.add(new Div("arredondado_link", a));
+			/*     */} else {
+			/* 295 */d1.add(new Div(new Texto("Íntegra do Acórdão")));
+			/*     */}
+		/*     */
+		/* 298 */Div d2 = new Div("arredondado");
+		/* 299 */if ((pojo.getLinkAcompanhamentoProcessual() != null) &&
+		/* 300 */(!(pojo.getLinkAcompanhamentoProcessual().equals("")))) {
+			/* 301 */A a = new A("Pagina?p=Processos&m=detalhar&parametro=" +
+			/* 302 */pojo.getLinkAcompanhamentoProcessual(), true);
+			/* 303 */a.add(new Texto("AcompanhamentoProcessual"));
+			/* 304 */d2.add(new Div("arredondado_link", a));
+			/*     */} else {
+			/* 306 */d2.add(new Div(new Texto("AcompanhamentoProcessual")));
+			/*     */}
+		/*     */
+		/* 309 */body.add(d1);
+		/* 310 */body.add(d2);
+		/*     */}
+	/*     */
+}

@@ -1,0 +1,72 @@
+10
+
+dir
+40
+svn+ssh://192.168.1.15/svn/poc/trunk/BRB/BRBMobileBankMobileSite/WebContent/WEB-INF
+svn+ssh://192.168.1.15/svn/poc
+
+
+
+2010-09-30T21:28:11.967652Z
+40
+Gabriel Silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ebed8b1-cc68-4b1b-8978-543341dfb65d
+
+
+
+
+
+
+0
+
+lib
+dir
+
+web.xml
+file
+
+
+
+
+2010-08-11T22:52:58.000000Z
+8398247f45de546a4add13bf3fdbf37b
+2010-09-30T21:28:11.967652Z
+40
+Gabriel Silva
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+717
+

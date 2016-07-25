@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQMob.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(		
+			function(){
+				setDadosAvisos(getAvisosCliente());
+				sessionStorage.setObject('paginaOrigem', 'avisos.html');
+			}
+		);
+		
+		function setDadosAvisos(avisosCliente){
+			$("#quantidadeAvisosClientes").text(avisosCliente.length);
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:BRQNavegacao.voltar()">Voltar</a>
+				<h1>Avisos</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Clientes</h2>
+				<div class="panel">
+					<div class="left"><input type="text" class="search type" placeholder="Pesquisar" style="width:310px;" /></div>
+				</div>
+				<ul class="listNav">
+					<li onclick="nav('descAvisosClientes.html');">
+						<span class="icon cliente"></span>
+						<div class="left">
+							<p><span class="large">Clientes</span></p>	
+							<p class="small" id="quantidadeAvisosClientes"></p>						
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

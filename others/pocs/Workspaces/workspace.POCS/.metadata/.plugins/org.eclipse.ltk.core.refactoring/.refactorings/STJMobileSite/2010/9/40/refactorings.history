@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;br.jus.tst.mobilesite.IniciarServico.java&apos; to &apos;InicializarServico.java&apos;&#x0A;- Original project: &apos;STJMobileSite&apos;&#x0A;- Original element: &apos;br.jus.tst.mobilesite.IniciarServico.java&apos;&#x0A;- Renamed element: &apos;br.jus.tst.mobilesite.InicializarServico.java&apos;" description="Rename compilation unit &apos;IniciarServico.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;br.jus.tst.mobilesite{IniciarServico.java" name="InicializarServico.java" references="false" stamp="1285880437437" version="1.0"/>
+</session>

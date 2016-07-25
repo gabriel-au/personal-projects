@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<sql-query name="ChaveAutoInfracao">
+
+		<return-scalar column="quantidade" type="integer"/>
+		<return-scalar column="codigo" type="string"/>
+
+		select sum(1) as quantidade, chave_extracao as codigo from auto_infracao
+		group by chave_extracao
+		order by chave_extracao
+		limit :tamanhoMaximoLista
+		offset :pagina
+	</sql-query>
+
+</hibernate-mapping>

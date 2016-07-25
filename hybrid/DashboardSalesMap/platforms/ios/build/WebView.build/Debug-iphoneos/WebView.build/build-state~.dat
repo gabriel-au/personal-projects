@@ -1,0 +1,808 @@
+TWebView
+v7
+r0
+t327525174.689637
+cCheck dependencies
+cCpResource build/Debug-iphoneos/WebView.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/Info.plist WebView-Info.plist
+cProcessPCH /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch.gch WebView_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o /Users/alexandreoliveira/Desktop/webview/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o /Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o /Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o /Users/alexandreoliveira/Desktop/webview/Classes/Network.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o /Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Loader.o /Users/alexandreoliveira/Desktop/webview/Classes/Loader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView normal armv7
+cGenerateDSYMFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app.dSYM /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView
+cCopyStringsFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+cCompileXIB /Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib
+cCompileXIB /Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib
+cCpResource build/Debug-iphoneos/WebView.app/www www
+cProcessProductPackaging "/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision" /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+cTouch /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+cCodeSign /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D5F25270000000000000110
+t1298081063
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/Availability.h
+c000000004D4F74C20000000000001B19
+t1297052866
+s6937
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.h
+c000000004DD18C160000000000000226
+t1305578518
+s550
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m
+c000000004DD18CEE000000000000071A
+t1305578734
+s1818
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/Loader.h
+c000000004DD3E0F50000000000000214
+t1305731317
+s532
+i<Foundation/Foundation.h>
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/Loader.m
+c000000004DD41EF50000000000000C1A
+t1305747189
+s3098
+i"Loader.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/Network.h
+c000000004DD3E55A0000000000000107
+t1305732442
+s263
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/Network.m
+c000000004DD401CD0000000000000481
+t1305739725
+s1153
+i"Network.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.h
+c000000004DD1922000000000000001E9
+t1305580064
+s489
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m
+c000000004DD18D060000000000000354
+t1305578758
+s852
+i"WebViewAppDelegate.h"
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.h
+c000000004DD3E05F00000000000001A4
+t1305731167
+s420
+i<UIKit/UIKit.h>
+i"InvokedUrlCommand.h"
+i"Loader.h"
+
+N/Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m
+c000000004DD561710000000000000786
+t1305829745
+s1926
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Desktop/webview/WebView_Prefix.pch
+c000000004DC978DA0000000000000141
+t1305049306
+s321
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<Availability.h>
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+t1305832374
+s374
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app.dSYM
+t1305832374
+s102
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/Info.plist
+t1305832373
+s1034
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/PkgInfo
+t1305832373
+s8
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/ResourceRules.plist
+t1305832373
+s485
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView
+t1305832374
+s26532
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+t1305832374
+s11846
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings
+t1305832374
+s122
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/MainWindow.nib
+t1305832374
+s1123
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/WebViewViewController.nib
+t1305832374
+s951
+
+N/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/www
+t1305832374
+s340
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o
+t1305832374
+s15276
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Loader.o
+t1305832374
+s45556
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o
+t1305832374
+s9272
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebView.LinkFileList
+c000000004DD56BB500000000000002F5
+t1305832373
+s757
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o
+t1305832374
+s50040
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o
+t1305832374
+s46156
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o
+t1305832374
+s6436
+
+N/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+t1305832374
+s402
+
+N/Users/alexandreoliveira/Desktop/webview/en.lproj/InfoPlist.strings
+c000000004DC978DA0000000000000064
+t1305049306
+s100
+
+N/Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib
+c000000004DC978DA0000000000004D09
+t1305049306
+s19721
+
+N/Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib
+c000000004DCBDAC20000000000001FAF
+t1305205442
+s8111
+
+N/Users/alexandreoliveira/Desktop/webview/main.m
+c000000004DC978DA0000000000000168
+t1305049306
+s360
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Desktop/webview/www
+c000000004DD562B10000000000000176
+t1305830065
+s374
+
+N/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision
+c000000004DD51C5F0000000000002E46
+t1305812063
+s11846
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.h
+c000000004DD064200000000000000253
+t1305502752
+s595
+i<Foundation/Foundation.h>
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m
+c000000004DD069A20000000000000579
+t1305504162
+s1401
+i"InvokedUrlCommand.h"
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/Network.h
+c000000004DD00FC20000000000000101
+t1305481154
+s257
+i<Foundation/Foundation.h>
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/Network.m
+c000000004DD14FE40000000000000375
+t1305563108
+s885
+i"network.h"
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.h
+c000000004DC978DA00000000000001E4
+t1305049306
+s484
+i<UIKit/UIKit.h>
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m
+c000000004DC97A56000000000000034C
+t1305049686
+s844
+i"WebViewAppDelegate.h"
+i"WebViewViewController.h"
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.h
+c000000004DD05A240000000000000218
+t1305500196
+s536
+i<UIKit/UIKit.h>
+i"InvokedUrlCommand.h"
+
+N/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m
+c000000004DD12C240000000000000F7E
+t1305553956
+s3966
+i"WebViewViewController.h"
+i"network.h"
+
+N/Users/suporte/Desktop/alexandre/WebView/WebView_Prefix.pch
+c000000004DC978DA0000000000000141
+t1305049306
+s321
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<Availability.h>
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app
+t1305571518
+s340
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app.dSYM
+t1305570974
+s102
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/Info.plist
+t1305570971
+s1037
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/PkgInfo
+t1305570971
+s8
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/ResourceRules.plist
+t1305569981
+s485
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView
+t1305570974
+s31808
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings
+t1305569987
+s122
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/MainWindow.nib
+t1305570977
+s1123
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/WebViewViewController.nib
+t1305570977
+s951
+
+N/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/www
+t1305569994
+s204
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o
+t1305570973
+s16420
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o
+t1305570973
+s9844
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebView.LinkFileList
+c000000004DD16ABC000000000000027D
+t1305569980
+s637
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o
+t1305570972
+s50116
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o
+t1305570972
+s50944
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o
+t1305570972
+s6436
+
+N/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+t1305570977
+s404
+
+N/Users/suporte/Desktop/alexandre/WebView/en.lproj/InfoPlist.strings
+c000000004DC978DA0000000000000064
+t1305049306
+s100
+
+N/Users/suporte/Desktop/alexandre/WebView/en.lproj/MainWindow.xib
+c000000004DC978DA0000000000004D09
+t1305049306
+s19721
+
+N/Users/suporte/Desktop/alexandre/WebView/en.lproj/WebViewViewController.xib
+c000000004DCBDAC20000000000001FAF
+t1305205442
+s8111
+
+N/Users/suporte/Desktop/alexandre/WebView/main.m
+c000000004DC978DA0000000000000168
+t1305049306
+s360
+i<UIKit/UIKit.h>
+
+N/Users/suporte/Desktop/alexandre/WebView/www
+c000000004DD1653200000000000000EE
+t1305568562
+s238
+
+N/Users/suporte/Library/MobileDevice/Provisioning Profiles/1D50C739-4802-4B90-849C-74F139BBEB6F.mobileprovision
+c00000000000000000000000000000000
+t2
+s0
+
+N/var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch.gch
+t1305570972
+s10676124
+
+N/var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-fiwgqddmwutlatdhtxhzjcuauvfz/WebView_Prefix.pch.gch
+t1305569984
+s10672028
+
+N/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch.gch
+t1305832373
+s10676124
+
+NWebView-Info.plist
+c000000004DD51D460000000000000487
+t1305812294
+s1159
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies327525173#327525173#0(0"0(0#1#0"8608577664#0"0#
+
+CCodeSign /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+s327525174.594585
+e327525174.689599
+r1
+xCodeSign
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+lSLF07#2@41"CodeSign build/Debug-iphoneos/WebView.app327525174#327525174#0(0"0(0#0#73"/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app8608198304#663"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Alexandre  Oliveira (T2G2R67LEU)" --resource-rules=/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/ResourceRules.plist --entitlements /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app0#
+
+CCodeSign /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app
+s327263777.947667
+e327263778.585249
+r1
+xCodeSign
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app
+lSLF07#2@41"CodeSign build/Debug-iphoneos/WebView.app327263777#327263778#0(0"0(0#0#73"/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app8614617504#661"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Thiago Pellegrino (M88UN36WBX)" --resource-rules=/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/ResourceRules.plist --entitlements /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o /Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525174.062964
+e327525174.129410
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o
+x/Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m327525174#327525174#0(0"0(0#0#68"/Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m8608575680#1797"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/Classes/InvokedUrlCommand.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o /Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263773.076788
+e327263773.196216
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o
+x/Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m327263773#327263773#0(0"0(0#0#68"/Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m8614969984#1790"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch -c /Users/suporte/Desktop/alexandre/WebView/Classes/InvokedUrlCommand.m -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/InvokedUrlCommand.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Loader.o /Users/alexandreoliveira/Desktop/webview/Classes/Loader.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525174.084004
+e327525174.150672
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Loader.o
+x/Users/alexandreoliveira/Desktop/webview/Classes/Loader.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/alexandreoliveira/Desktop/webview/Classes/Loader.m327525174#327525174#0(0"0(0#0#57"/Users/alexandreoliveira/Desktop/webview/Classes/Loader.m8608288768#1775"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/Classes/Loader.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Loader.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o /Users/alexandreoliveira/Desktop/webview/Classes/Network.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525174.002174
+e327525174.083876
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o
+x/Users/alexandreoliveira/Desktop/webview/Classes/Network.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/alexandreoliveira/Desktop/webview/Classes/Network.m327525174#327525174#0(0"0(0#0#58"/Users/alexandreoliveira/Desktop/webview/Classes/Network.m8604120992#1777"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/Classes/Network.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o /Users/suporte/Desktop/alexandre/WebView/Classes/Network.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263773.001924
+e327263773.076649
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o
+x/Users/suporte/Desktop/alexandre/WebView/Classes/Network.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/suporte/Desktop/alexandre/WebView/Classes/Network.m327263773#327263773#0(0"0(0#0#58"/Users/suporte/Desktop/alexandre/WebView/Classes/Network.m8615204224#1770"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch -c /Users/suporte/Desktop/alexandre/WebView/Classes/Network.m -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/Network.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o /Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525173.999867
+e327525174.093393
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o
+x/Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m327525174#327525174#0(0"0(0#0#69"/Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m8602347136#1799"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/Classes/WebViewAppDelegate.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263772.789617
+e327263772.886591
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o
+x/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m327263772#327263772#0(0"0(0#0#69"/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m8612539744#1792"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch -c /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewAppDelegate.m -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewAppDelegate.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o /Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525174.000810
+e327525174.098952
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o
+x/Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m327525174#327525174#0(0"0(0#0#72"/Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m8606523104#1805"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/Classes/WebViewViewController.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263772.886729
+e327263773.001420
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o
+x/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m327263772#327263773#0(0"0(0#0#72"/Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m8611342272#1798"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch -c /Users/suporte/Desktop/alexandre/WebView/Classes/WebViewViewController.m -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebViewViewController.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o /Users/alexandreoliveira/Desktop/webview/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525173.998885
+e327525174.062824
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o
+x/Users/alexandreoliveira/Desktop/webview/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/alexandreoliveira/Desktop/webview/main.m327525173#327525174#0(0"0(0#0#47"/Users/alexandreoliveira/Desktop/webview/main.m8604400096#1763"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch -c /Users/alexandreoliveira/Desktop/webview/main.m -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o0#
+
+CCompileC build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o /Users/suporte/Desktop/alexandre/WebView/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263772.652828
+e327263772.789481
+r1
+xCompileC
+xbuild/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o
+x/Users/suporte/Desktop/alexandre/WebView/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/suporte/Desktop/alexandre/WebView/main.m327263772#327263772#0(0"0(0#0#47"/Users/suporte/Desktop/alexandre/WebView/main.m8613723776#1756"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -include /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch -c /Users/suporte/Desktop/alexandre/WebView/main.m -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib
+s327525174.191037
+e327525174.554816
+r1
+xCompileXIB
+x/Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib
+lSLF07#2@34"CompileXIB en.lproj/MainWindow.xib327525174#327525174#0(0"0(0#0#64"/Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib8606275104#566"    cd /Users/alexandreoliveira/Desktop/webview    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/MainWindow.nib /Users/alexandreoliveira/Desktop/webview/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib
+s327525174.191662
+e327525174.571464
+r1
+xCompileXIB
+x/Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib
+lSLF07#2@45"CompileXIB en.lproj/WebViewViewController.xib327525174#327525174#0(0"0(0#0#75"/Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib8606130080#588"    cd /Users/alexandreoliveira/Desktop/webview    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/WebViewViewController.nib /Users/alexandreoliveira/Desktop/webview/en.lproj/WebViewViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/suporte/Desktop/alexandre/WebView/en.lproj/MainWindow.xib
+s327263774.718681
+e327263777.896735
+r1
+xCompileXIB
+x/Users/suporte/Desktop/alexandre/WebView/en.lproj/MainWindow.xib
+lSLF07#2@34"CompileXIB en.lproj/MainWindow.xib327263774#327263777#0(0"0(0#0#64"/Users/suporte/Desktop/alexandre/WebView/en.lproj/MainWindow.xib8612843776#566"    cd /Users/suporte/Desktop/alexandre/WebView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/MainWindow.nib /Users/suporte/Desktop/alexandre/WebView/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/suporte/Desktop/alexandre/WebView/en.lproj/WebViewViewController.xib
+s327263774.719658
+e327263777.911706
+r1
+xCompileXIB
+x/Users/suporte/Desktop/alexandre/WebView/en.lproj/WebViewViewController.xib
+lSLF07#2@45"CompileXIB en.lproj/WebViewViewController.xib327263774#327263777#0(0"0(0#0#75"/Users/suporte/Desktop/alexandre/WebView/en.lproj/WebViewViewController.xib8611419328#588"    cd /Users/suporte/Desktop/alexandre/WebView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/WebViewViewController.nib /Users/suporte/Desktop/alexandre/WebView/en.lproj/WebViewViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCopyStringsFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+s327525174.190370
+e327525174.314121
+r1
+xCopyStringsFile
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF07#2@31"Copy en.lproj/InfoPlist.strings327525174#327525174#0(0"0(0#0#67"/Users/alexandreoliveira/Desktop/webview/en.lproj/InfoPlist.strings8606373344#473"    cd /Users/alexandreoliveira/Desktop/webview    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary en.lproj/InfoPlist.strings --outdir /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/en.lproj0#
+
+CCopyStringsFile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+s327262787.139661
+e327262787.861615
+r1
+xCopyStringsFile
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF07#2@31"Copy en.lproj/InfoPlist.strings327262787#327262787#0(0"0(0#0#67"/Users/suporte/Desktop/alexandre/WebView/en.lproj/InfoPlist.strings8611057216#473"    cd /Users/suporte/Desktop/alexandre/WebView    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary en.lproj/InfoPlist.strings --outdir /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/en.lproj0#
+
+CCpResource build/Debug-iphoneos/WebView.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+s327525173.504604
+e327525173.509942
+r1
+xCpResource
+xbuild/Debug-iphoneos/WebView.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist327525173#327525173#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist8606706272#498"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app0#
+
+CCpResource build/Debug-iphoneos/WebView.app/www www
+s327525174.192230
+e327525174.204771
+r1
+xCpResource
+xbuild/Debug-iphoneos/WebView.app/www
+xwww
+lSLF07#2@8"Copy www327525174#327525174#0(0"0(0#0#44"/Users/alexandreoliveira/Desktop/webview/www8606014304#453"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/alexandreoliveira/Desktop/webview/www /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app0#
+
+CGenerateDSYMFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app.dSYM /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView
+s327525174.175995
+e327525174.190288
+r1
+xGenerateDSYMFile
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app.dSYM
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView
+lSLF07#2@95"GenerateDSYMFile build/Debug-iphoneos/WebView.app.dSYM build/Debug-iphoneos/WebView.app/WebView327525174#327525174#0(0"0(0#0#81"/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView8606613632#368"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView -o /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app.dSYM0#
+
+CGenerateDSYMFile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app.dSYM /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView
+s327263774.663508
+e327263774.718445
+r1
+xGenerateDSYMFile
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app.dSYM
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView
+lSLF07#2@95"GenerateDSYMFile build/Debug-iphoneos/WebView.app.dSYM build/Debug-iphoneos/WebView.app/WebView327263774#327263774#0(0"0(0#0#81"/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView8613602784#368"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView -o /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app.dSYM0#
+
+CLd /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView normal armv7
+s327525174.150762
+e327525174.175908
+r1
+xLd
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView
+xnormal
+xarmv7
+lSLF07#2@86"Link /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView327525174#327525174#0(0"0(0#0#0"8607890592#832"    cd /Users/alexandreoliveira/Desktop/webview    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -filelist /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebView.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/WebView0#
+
+CLd /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView normal armv7
+s327263773.196346
+e327263774.663241
+r1
+xLd
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView
+xnormal
+xarmv7
+lSLF07#2@86"Link /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView327263773#327263774#0(0"0(0#0#0"8615829568#832"    cd /Users/suporte/Desktop/alexandre/WebView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -filelist /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/Objects-normal/armv7/WebView.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/WebView0#
+
+CProcessInfoPlistFile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/Info.plist WebView-Info.plist
+s327525173.505422
+e327525173.509026
+r1
+xProcessInfoPlistFile
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/Info.plist
+xWebView-Info.plist
+lSLF07#2@26"Process WebView-Info.plist327525173#327525173#0(0"0(0#0#59"/Users/alexandreoliveira/Desktop/webview/WebView-Info.plist8606433888#570"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility WebView-Info.plist -genpkginfo /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/ResourceRules.plist -o /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/Info.plist WebView-Info.plist
+s327263770.973057
+e327263771.004192
+r1
+xProcessInfoPlistFile
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/Info.plist
+xWebView-Info.plist
+lSLF07#2@26"Process WebView-Info.plist327263771#327263771#0(0"0(0#0#59"/Users/suporte/Desktop/alexandre/WebView/WebView-Info.plist8614726688#570"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility WebView-Info.plist -genpkginfo /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/ResourceRules.plist -o /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/Info.plist0#
+
+CProcessPCH /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch.gch WebView_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327263771.004356
+e327263772.652614
+r1
+xProcessPCH
+x/var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch.gch
+xWebView_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile WebView_Prefix.pch327263771#327263772#0(0"0(0#0#59"/Users/suporte/Desktop/alexandre/WebView/WebView_Prefix.pch8613824448#1652"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -c /Users/suporte/Desktop/alexandre/WebView/WebView_Prefix.pch -o /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-dfkrzhnwwsxjmgaqpqgkxyxuhafi/WebView_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-fiwgqddmwutlatdhtxhzjcuauvfz/WebView_Prefix.pch.gch WebView_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327262781.932364
+e327262784.477894
+r1
+xProcessPCH
+x/var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-fiwgqddmwutlatdhtxhzjcuauvfz/WebView_Prefix.pch.gch
+xWebView_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile WebView_Prefix.pch327262781#327262784#0(0"0(0#0#59"/Users/suporte/Desktop/alexandre/WebView/WebView_Prefix.pch8611492096#1652"    cd /Users/suporte/Desktop/alexandre/WebView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos -I/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/include -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -c /Users/suporte/Desktop/alexandre/WebView/WebView_Prefix.pch -o /var/folders/-e/-e2sOFWmH7WE39+rsR8ZiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WebView_Prefix-fiwgqddmwutlatdhtxhzjcuauvfz/WebView_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch.gch WebView_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s327525173.510020
+e327525173.998795
+r1
+xProcessPCH
+x/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch.gch
+xWebView_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile WebView_Prefix.pch327525173#327525173#0(0"0(0#0#59"/Users/alexandreoliveira/Desktop/webview/WebView_Prefix.pch8606073504#1659"    cd /Users/alexandreoliveira/Desktop/webview    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-generated-files.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-own-target-headers.hmap -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-all-target-headers.hmap -iquote /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView-project-headers.hmap -F/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos -I/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/include -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources/armv7 -I/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/DerivedSources -c /Users/alexandreoliveira/Desktop/webview/WebView_Prefix.pch -o /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/WebView_Prefix-dpymwauonmkvopfgiowtllyfkooo/WebView_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision" /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+s327525174.571574
+e327525174.574630
+r1
+xProcessProductPackaging
+x/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+lSLF07#2@204"ProcessProductPackaging "/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision" build/Debug-iphoneos/WebView.app/embedded.mobileprovision327525174#327525174#0(0"0(0#0#98"/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision8606492736#439"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/alexandreoliveira/Library/MobileDevice/Provisioning Profiles/94FE6FD8-E46E-4575-B257-E39DDB3D74E0.mobileprovision" -o /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/suporte/Library/MobileDevice/Provisioning Profiles/1D50C739-4802-4B90-849C-74F139BBEB6F.mobileprovision" /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+s327264329.339420
+e327264329.340147
+r0
+xProcessProductPackaging
+x/Users/suporte/Library/MobileDevice/Provisioning Profiles/1D50C739-4802-4B90-849C-74F139BBEB6F.mobileprovision
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/embedded.mobileprovision
+lSLF07#2@194"ProcessProductPackaging "/Users/suporte/Library/MobileDevice/Provisioning Profiles/1D50C739-4802-4B90-849C-74F139BBEB6F.mobileprovision" build/Debug-iphoneos/WebView.app/embedded.mobileprovision327264329#327264329#0(165"<com.apple.tools.product-pkg-utility>: error: class '(null)' of input object does not respond to either selector writeToFile:options:error: or writeToFile:atomically1(4@165"<com.apple.tools.product-pkg-utility>: error: class '(null)' of input object does not respond to either selector writeToFile:options:error: or writeToFile:atomically327264329#18446744073709551615#0#0(6@0"327264329#0#0#0#0#0"0(0#0#98"/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/embedded.mobileprovision8614203776#429"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/suporte/Library/MobileDevice/Provisioning Profiles/1D50C739-4802-4B90-849C-74F139BBEB6F.mobileprovision" -o /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app/embedded.mobileprovision1#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+s327525174.577389
+e327525174.594538
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+lSLF07#2@175"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent327525174#327525174#0(0"0(0#0#103"/Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent8600003168#436"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/alexandreoliveira/Desktop/webview/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+s327263777.932459
+e327263777.947569
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent
+lSLF07#2@175"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent327263777#327263777#0(0"0(0#0#103"/Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent8614927712#436"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/suporte/Desktop/alexandre/WebView/build/WebView.build/Debug-iphoneos/WebView.build/WebView.xcent0#
+
+CTouch /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+s327525174.574703
+e327525174.577216
+r1
+xTouch
+x/Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app
+lSLF07#2@79"Touch /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app327525174#327525174#0(0"0(0#0#0"8605910080#268"    cd /Users/alexandreoliveira/Desktop/webview    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/alexandreoliveira/Desktop/webview/build/Debug-iphoneos/WebView.app0#
+
+CTouch /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app
+s327263777.911988
+e327263777.932322
+r1
+xTouch
+x/Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app
+lSLF07#2@79"Touch /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app327263777#327263777#0(0"0(0#0#0"8611209664#268"    cd /Users/suporte/Desktop/alexandre/WebView    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/suporte/Desktop/alexandre/WebView/build/Debug-iphoneos/WebView.app0#
+

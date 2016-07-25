@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="veiculo" namespace="/veiculo" extends="default">
+		<action name="editar" method="editar"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result>/WEB-INF/src/veiculo/editar.jsp</result>
+		</action>
+		<action name="salvar" method="salvar"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result>/WEB-INF/src/veiculo/listar.jsp</result>
+		</action>
+		<action name="excluir" method="excluir"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result>/WEB-INF/src/veiculo/listar.jsp</result>
+		</action>
+		<action name="listar" method="listar"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result name="success">/WEB-INF/src/veiculo/listar.jsp</result>
+			<result name="error">/WEB-INF/src/branco.jsp</result>
+		</action>
+		<action name="consultar" method="consultar"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result>/WEB-INF/src/veiculo/consultar.jsp</result>
+		</action>
+		<action name="exibir" method="exibir"
+			class="br.com.xtrategia.fiscon.web.VeiculoAction">
+			<result name="success">/WEB-INF/src/veiculo/resultado.jsp</result>
+			<result name="error">/WEB-INF/src/veiculo/consultar.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

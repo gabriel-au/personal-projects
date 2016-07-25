@@ -1,0 +1,4 @@
+<!ELEMENT configuracao (command+)>
+<!ELEMENT command (alias,classe)>
+<!ELEMENT alias (#PCDATA)>
+<!ELEMENT classe (#PCDATA)>

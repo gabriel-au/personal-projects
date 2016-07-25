@@ -1,0 +1,8 @@
+MIDlet-1: FISCON,/icones/icone.png,br.com.codequest.mobile.MobileMain
+MIDlet-Jar-Size: 582694
+MIDlet-Jar-URL: fiscon.jar
+MIDlet-Name: FISCON
+MIDlet-Vendor: SITRAN LTDA
+MIDlet-Version: 3.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

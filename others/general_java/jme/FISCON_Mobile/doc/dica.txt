@@ -1,0 +1,14 @@
+http://devmobile.blog.br/2008/07/06/como-assinar-midlets-com-certificados-digitais-e-certificar-suas-aplicacoes-jme/
+
+
+http://developers.sun.com/mobility/midp/articles/permissions/
+
+
+http://www.fergonez.net/files/permissoes_certificados_java.pdf
+
+transacao?transacao=login&usuario=1&senha=1
+
+
+
+Arrumar a consulta CNH
+http://localhost:8080/middleware/transacao?transacao=consultarCNH&cnh=03206202142&dataNascimento=22/07/1985

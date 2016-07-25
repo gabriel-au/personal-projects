@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+	</head>
+
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Calendário</div>
+            <div class="sombra"></div>
+            <div class="bottom-voltar"><a href="lista-programacao.html">Voltar</a></div>
+            
+        </div>
+        	
+
+        <!--inicio content-->
+        <div class="content"><br />
+        
+                <ul class="lista menu">
+                    <li><a href="prog-tecnica-01.html">25/10</a></li>
+                    <div class="dotted-border-lista"></div>
+                    <li><a href="prog-tecnica-02.html">26/10</a></li>
+                    <div class="dotted-border-lista"></div>
+                    <li><a href="prog-tecnica-03.html">27/10</a></li>
+                    <div class="dotted-border-lista"></div>
+                    <li><a href="prog-tecnica-04.html">28/10</a></li>
+               </ul> 
+		       
+           
+       </div>
+    	<!--fim content-->
+        <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+      <!--inicio footer-->
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--fim container-->
+</body>
+</html>

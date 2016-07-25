@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	
+	<script src="../includes/js/iscroll-lite.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript" src="../includes/js/pages/situacaoClientes.js"></script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<h1>Situação de Clientes</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Lista de situação de clientes</h2>
+				<div class="panel">
+					<div class="left">
+						<input type="text" class="type search" placeholder="Buscar cliente" style="width: 250px;" id="nomeCliente"/>
+					</div>
+					<div class="groupButtons"  id="divTipoConsulta">
+						<ul>
+							<li class="selected"><a href="javascript:void(0);">Todos</a></li>
+							<li><a href="javascript:void(0);">Normais</a></li>
+							<li><a href="javascript:void(0);">Suspensos</a></li>
+							<li><a href="javascript:void(0);">Cortados</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="div-header-area"></div>
+				<div id="div-wrapper-area" style="top:75px;height:465px;">
+					<div id="div-scroller-area">
+						<div class="result">	
+							<div class="tableList">
+								<!--
+								div class="nav">
+									<a href="javascript:void(0);" class="left button prev" onclick="tableMov(this, 'prev');"></a><a href="javascript:void(0);" onclick="tableMov(this, 'next');" class="right button next"></a>
+								</div
+								-->
+								<table style="width:2180px" cellspacing="0" id="tabela_situacao_clientes">
+									<thead>
+										<tr>
+											<th>Código</th>
+											<th>Razão Social</th>
+											<th>Filial</th>
+											<th>Data Sit.</th>
+											<th>Situação</th>
+											<th>Pedido</th>
+											<th>Nome Fantasia</th>
+											<th>Descrição da Situação</th>
+											<th>Observação</th>
+										</tr>
+									</thead>
+									<tbody id="tbody_situacao_clientes">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="div-footer-area"></div>
+				<div id="clientFilter" class="filterAlphabet"></div>					
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>
+<script type="text/javascript">	
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('div-wrapper-area', {
+				useTransform: true,
+		    	onBeforeScrollStart: function (e) {
+			        var target = e.target;
+			        while (target.nodeType != 1) {target = target.parentNode};
+			        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+			        	e.preventDefault();
+			        }
+		       },
+		       onListEndV: function (){
+		       		BRQMob.log('Log onListEndV not remove!');
+		       }
+		    });
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>

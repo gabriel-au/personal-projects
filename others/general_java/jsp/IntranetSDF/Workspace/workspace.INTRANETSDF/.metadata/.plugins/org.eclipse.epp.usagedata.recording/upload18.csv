@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,com.collabnet.subversion.merge,1.10.0,"com.collabnet.subversion.merge",1268757573594
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1268757573594
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1268757573594
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1268757573594
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1268757573610
+started,bundle,org.eclipse.dltk.core,1.0.1.v20090910-1601,"org.eclipse.dltk.core",1268757573630
+started,bundle,org.eclipse.dltk.launching,1.0.1.v20090910-1601,"org.eclipse.dltk.launching",1268757573642
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1268757573661
+started,bundle,org.eclipse.jst.jsf.common,1.1.7.v20090903,"org.eclipse.jst.jsf.common",1268757573683
+started,bundle,org.eclipse.jst.jsf.core,1.2.2.v20090903,"org.eclipse.jst.jsf.core",1268757573694
+started,bundle,org.eclipse.php.core,2.1.1.v20090914-1400,"org.eclipse.php.core",1268757573755
+started,bundle,org.eclipse.php.debug.core,2.1.1.v20090914-1400,"org.eclipse.php.debug.core",1268757573774
+started,bundle,org.eclipse.php.debug.daemon,2.1.1.v20090707-1108,"org.eclipse.php.debug.daemon",1268757573781
+started,bundle,org.eclipse.php.server.core,2.1.1.v20090707-1108,"org.eclipse.php.server.core",1268757573789
+started,bundle,org.eclipse.tml.framework.device,0.3.0.200906152200,"org.eclipse.tml.framework.device",1268757573789
+started,bundle,org.eclipse.tml.framework.device.wizard,0.3.0.200906152200,"org.eclipse.tml.framework.device.wizard",1268757573802
+started,bundle,org.eclipse.tml.service.vncviewer,0.3.0.200906152200,"org.eclipse.tml.service.vncviewer",1268757573802
+started,bundle,org.eclipse.wst.web,1.1.301.v200909021400,"org.eclipse.wst.web",1268757573813
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1268757573822
+os,sysinfo,,,"macosx",1268757573826
+arch,sysinfo,,,"x86_64",1268757573826
+ws,sysinfo,,,"cocoa",1268757573826
+locale,sysinfo,,,"en_US",1268757573826
+processors,sysinfo,,,"2",1268757573826
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1268757573826

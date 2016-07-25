@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobile/!svn/ver/5496/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp
+END
+TabelaTmpMeGoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/5196/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMeGoDAO.java
+END
+TabelaTmpGrpDeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4741/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpGrpDeDAO.java
+END
+TabelaTmpImpPedDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4785/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpImpPedDAO.java
+END
+TabelaTmpPcaBcdDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4785/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpPcaBcdDAO.java
+END
+TabelaTmpMerRecDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4924/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMerRecDAO.java
+END
+TabelaTmpMePmcDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4741/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMePmcDAO.java
+END
+TabelaBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/5723/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaBase.java
+END
+TabelaTmpItePeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/5462/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpItePeDAO.java
+END
+TabelaTmpMeSmrDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4741/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMeSmrDAO.java
+END
+TabelaTmpMemCoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4741/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMemCoDAO.java
+END
+TabelaTmpMePrmDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4741/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/dao/temp/TabelaTmpMePrmDAO.java
+END

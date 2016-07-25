@@ -1,0 +1,112 @@
+/*     */ package br.jus.stj.site.iphone.servlet;
+/*     */ 
+/*     */ import br.jus.stj.mobile.SystemException;
+/*     */ import br.jus.stj.mobile.bd.consulta.ConsultaDiarioJustica;
+/*     */ import br.jus.stj.mobile.bd.pojo.DiarioJusticaPojo;
+/*     */ import br.jus.stj.site.iphone.ui.A;
+/*     */ import br.jus.stj.site.iphone.ui.Div;
+/*     */ import br.jus.stj.site.iphone.ui.Input;
+/*     */ import br.jus.stj.site.iphone.ui.P;
+/*     */ import br.jus.stj.site.iphone.ui.Texto;
+/*     */ import java.util.List;
+/*     */ 
+/*     */ public class PaginaDJEletronicoConsultas
+/*     */ {
+/*     */   public Div getNumero()
+/*     */     throws SystemException
+/*     */   {
+/*  17 */     Div d = new Div();
+/*     */ 
+/*  19 */     d.add(
+/*  20 */       new Div("arredondado_chamada", 
+/*  20 */       new Texto("Número do Processo no STJ:")));
+/*     */ 
+/*  22 */     Div div = new Div("arredondado_chamada_simples_center");
+/*  23 */     div.add(
+/*  24 */       new Input("text", "parametro", "input_text", 
+/*  24 */       "", "50"));
+/*  25 */     div.add(
+/*  26 */       new Input("submit", "valor", "input_submit", "", 
+/*  26 */       "50"));
+/*  27 */     d.add(div);
+/*     */ 
+/*  30 */     d.add(
+/*  31 */       new Div("arredondado_chamada", 
+/*  31 */       new Texto("Data:")));
+/*     */ 
+/*  33 */     Div div = new Div("arredondado_chamada_simples_center");
+/*  34 */     div.add(
+/*  35 */       new Input("text", "parametro", "input_text", 
+/*  35 */       "", "10"));
+/*  36 */     div.add(
+/*  37 */       new Input("button", "valor", "input_data", "", 
+/*  37 */       "50"));
+/*  38 */     d.add(div);
+/*     */ 
+/*  40 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getNumeroRegistro() throws SystemException {
+/*  44 */     Div d = new Div();
+/*  45 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getNumeroUnico() throws SystemException {
+/*  49 */     Div d = new Div();
+/*  50 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getNumeroOrigem() throws SystemException {
+/*  54 */     Div d = new Div();
+/*  55 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getOAB() throws SystemException {
+/*  59 */     Div d = new Div();
+/*  60 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getNomeParte() throws SystemException {
+/*  64 */     Div d = new Div();
+/*  65 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getNomeAdvogado() throws SystemException {
+/*  69 */     Div d = new Div();
+/*  70 */     return d;
+/*     */   }
+/*     */ 
+/*     */   public Div getIntegral() throws SystemException {
+/*  74 */     ConsultaDiarioJustica consulta = new ConsultaDiarioJustica();
+/*     */ 
+/*  76 */     Div d = new Div();
+/*     */ 
+/*  78 */     d.add(new P("Atenção! Cada arquivo PDF contendo a íntegra do DJe tem um tamanho aproximado de 30 MB. Arquivos desse tamanho costumam levar cerca de 30 minutos para serem copiados (download) em conexões de 256 Kbps, podendo demorar mais em função da quantidade de usuários que estiverem utilizando o serviço. Caso haja lentidão excessiva durante a cópia do arquivo, tente efetuá-lo em horários de menor concorrência."));
+/*     */ 
+/*  87 */     d.add(new P("O arquivo único representa o resultado de um dos critérios de pesquisa. Não tem valor legal por não ser assinado digitalmente. O resultado dessa pesquisa é mantido durante 60 dias."));
+/*     */ 
+/*  93 */     List lista = consulta.listarUltimasEdicoes();
+/*     */ 
+/*  95 */     for (DiarioJusticaPojo pojo : lista)
+/*     */     {
+/*  97 */       A a = new A(pojo.getLink(), true);
+/*  98 */       Div div = new Div();
+/*  99 */       div.add(
+/* 100 */         new Div(new Texto("Edição nº " + pojo.getEdicao() + " " + 
+/* 100 */         pojo.getLocal())));
+/* 101 */       div.add(new Div(new Texto(pojo.getDisponivelEm())));
+/* 102 */       div.add(new Div(new Texto(pojo.getPublicadoEm())));
+/*     */ 
+/* 105 */       a.add(div);
+/*     */ 
+/* 107 */       d.add(new Div("arredondado_link_borda", a));
+/*     */     }
+/*     */ 
+/* 110 */     return d;
+/*     */   }
+/*     */ }
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.servlet.PaginaDJEletronicoConsultas
+ * JD-Core Version:    0.6.0
+ */

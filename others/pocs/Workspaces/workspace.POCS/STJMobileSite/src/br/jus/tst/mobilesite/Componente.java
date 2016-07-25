@@ -1,0 +1,89 @@
+package br.jus.tst.mobilesite;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.tst.mobilesite.ui.CodigoJava;
+import br.jus.tst.mobilesite.ui.Commentary;
+import java.util.ArrayList;
+import java.util.List;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public abstract class Componente {
+	private static Log log = LogFactory.getLog(Componente.class);
+	private static boolean readFullPath;
+	protected List<Componente> itens = new ArrayList();
+	protected List<Class<? extends Componente>> itensOpcionais = new ArrayList();
+	protected List<Class<? extends Componente>> itensObrigatorio = new ArrayList();
+
+	public abstract String getCode();
+
+	protected abstract void getMontarItensObrigatoriosOpcionais();
+
+	public Componente() {
+		getMontarItensObrigatoriosOpcionais();
+		this.itensOpcionais.addAll(this.itensObrigatorio);
+		this.itensOpcionais.add(Commentary.class);
+		this.itensOpcionais.add(CodigoJava.class);
+	}
+
+	public void clear() {
+		this.itens.clear();
+	}
+
+	public void add(Componente item) throws SystemException {
+		if (item == null) {
+			log.warn("Atencao: " + super.getClass() + " recebeu um item nulo");
+
+			return;
+		}
+
+		if (validar(item))
+			this.itens.add(item);
+		else
+			throw new SystemException("Item inválido:" + item.getClass()
+					+ " no item" + super.getClass());
+	}
+
+	private boolean validar(Componente item) {
+		return this.itensOpcionais.contains(item.getClass());
+	}
+
+	private void validarCodigo() {
+		List<Class<? extends Componente>> itensTeste = new ArrayList<Class<? extends Componente>>();
+
+		itensTeste.addAll(itensObrigatorio);
+
+		for (Componente item : itens) {
+			itensTeste.remove(item.getClass());
+		}
+		for (Class<? extends Componente> item : itensTeste) {
+			log.info("Atenção: o item " + item.getName()
+					+ " não está presente no Objeto " + this.getClass());
+		}
+	}
+
+	public String toString() {
+		validarCodigo();
+		return getCode();
+	}
+
+	protected List<Componente> getItens() {
+		return this.itens;
+	}
+
+	protected String getCodeChild() {
+		String texto = "";
+		for (Componente item : this.itens) {
+			texto = texto + "\n" + item;
+		}
+		return texto;
+	}
+
+	public static void setFullPath(boolean isFullPath) {
+		readFullPath = isFullPath;
+	}
+
+	protected boolean isFullPath() {
+		return readFullPath;
+	}
+}

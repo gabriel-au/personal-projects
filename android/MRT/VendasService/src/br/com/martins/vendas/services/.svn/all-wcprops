@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobile/!svn/ver/5690/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services
+END
+RepresentanteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/4929/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/RepresentanteService.java
+END
+GondolaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/3453/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/GondolaService.java
+END
+BeneficiosService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/5724/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/BeneficiosService.java
+END
+ListarCortesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/4836/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ListarCortesService.java
+END
+PalavraChaveService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/4022/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/PalavraChaveService.java
+END
+RetornosClienteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mobile/!svn/ver/5662/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/RetornosClienteService.java
+END
+SimulacaoBeneficioService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/4994/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/SimulacaoBeneficioService.java
+END
+CadastroChaveAcessoNFeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/CadastroChaveAcessoNFeService.java
+END
+ECMService.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/1196/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ECMService.java
+END
+PosicaoVendasService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/4836/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/PosicaoVendasService.java
+END
+SenhaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/SenhaService.java
+END
+LivroPrecoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/3557/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/LivroPrecoService.java
+END
+TitulosService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/5267/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/TitulosService.java
+END
+RegraDistribuicaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mobile/!svn/ver/3631/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/RegraDistribuicaoService.java
+END
+CondicaoPagamentoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mobile/!svn/ver/5702/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/CondicaoPagamentoService.java
+END
+CidadesTerritoriosService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/CidadesTerritoriosService.java
+END
+MenuService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/MenuService.java
+END
+CaminhaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/5410/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/CaminhaoService.java
+END
+PromocaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/5772/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/PromocaoService.java
+END
+ItensDisponiveisServiceAux.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/5690/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ItensDisponiveisServiceAux.java
+END
+DadosComerciaisRepresentanteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mobile/!svn/ver/4836/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/DadosComerciaisRepresentanteService.java
+END
+BuscarDescricaoProdutoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5342/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/BuscarDescricaoProdutoService.java
+END
+ItemPedidoTemporarioService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/3806/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ItemPedidoTemporarioService.java
+END
+MercadoriaService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4065/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/MercadoriaService.java
+END
+RelacaoGiroService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/5153/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/RelacaoGiroService.java
+END
+FiliaisBeneficioCustomizadoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/3369/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/FiliaisBeneficioCustomizadoService.java
+END
+LivroPrecoGrupamentoClienteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/3557/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/LivroPrecoGrupamentoClienteService.java
+END
+FilialService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/5783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/FilialService.java
+END
+GestaoMixService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/5620/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/GestaoMixService.java
+END
+AlteraPedidoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/5673/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/AlteraPedidoService.java
+END
+JustificativaNaoAtendimentoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/JustificativaNaoAtendimentoService.java
+END
+AtualizacaoCadastralService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/4836/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/AtualizacaoCadastralService.java
+END
+InicialService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/InicialService.java
+END
+MailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/5783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/MailService.java
+END
+ItemPedidoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/5573/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ItemPedidoService.java
+END
+ProdutoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/5140/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ProdutoService.java
+END
+ItensSimilaresService.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/mobile/!svn/ver/5414/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ItensSimilaresService.java
+END
+ClienteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/5422/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ClienteService.java
+END
+ModeloDistribuicaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/4784/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ModeloDistribuicaoService.java
+END
+ItensDisponiveisService.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mobile/!svn/ver/5620/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/ItensDisponiveisService.java
+END
+AvisosService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/5662/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/AvisosService.java
+END
+AgendaRoteirizacaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/3767/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/AgendaRoteirizacaoService.java
+END

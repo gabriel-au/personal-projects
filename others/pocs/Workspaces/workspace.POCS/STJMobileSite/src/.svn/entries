@@ -1,0 +1,54 @@
+10
+
+dir
+37
+svn+ssh://192.168.1.15/svn/poc/trunk/STJ/STJMobileSite/src
+svn+ssh://192.168.1.15/svn/poc
+
+
+
+2010-09-30T21:08:48.966889Z
+29
+Gabriel Silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ebed8b1-cc68-4b1b-8978-543341dfb65d
+
+br
+dir
+
+log4j.properties
+file
+
+
+
+add
+
+79be31afc9b78ba56c2333c3dffc3a7c
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn+ssh://192.168.1.15/svn/poc/trunk/STJ/STJMobileSite/WebContent/WEB-INF/classes/log4j.properties
+37
+

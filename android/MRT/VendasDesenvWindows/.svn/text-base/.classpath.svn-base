@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BRQMobileWin"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/BRQMobileBase"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EstruturaModulo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MartinsModulo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RelacionamentoModulo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VendasModulo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/VendasService"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

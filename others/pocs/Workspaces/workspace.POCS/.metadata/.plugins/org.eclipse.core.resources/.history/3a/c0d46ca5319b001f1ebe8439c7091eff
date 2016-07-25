@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/negocios/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">NegÛcios</div>
+</div>
+
+<div class="arredondado">
+<div class="arredondado_titulo">PUBLICIDADE NO AEROPORTO INTERNACIONAL DE BRASÕçLIA</div>
+
+<p>
+Clique na imagem a baixo e acesse os pontos de publicidade instalados nos diversos pavimentos do terminal de passageiros do aeroporto.
+</p>
+<p class="imagem">
+<a href="<%=request.getContextPath()%>/negocios/planta_SBBR.jsp" >
+<img src="<%=request.getContextPath()%>/imagens/bt_mapas.png" /></a>
+</p>
+<p>
+Clique na imagem a baixo e obtenha informaÁıes gerais relativas ao movimento de passageiros e o perfil do usu·rio do aeroporto.
+</p>
+<p class="imagem">
+<a href="<%=request.getContextPath()%>/negocios/aero_internacional_bsb.jsp" >
+<img src="<%=request.getContextPath()%>/imagens/bt_informacoes.png" /></a>
+</p>
+
+<p>
+A publicidade em ambiente aeroportu·rio situa-se entre os mais significativos negÛcios para as empresas do ramo publicit·rio, com amplas possibilidades de criaÁ„o e divulgaÁ„o. 
+</p>
+<p>
+Os aeroportos brasileiros s„o a plataforma ideal para iniciativas de marketing das empresas mais exigentes. Em ·reas p√∫blicas e restritas, internas e externas, oferecem espaÁos para diferentes segmentos de m√≠dia, em variados formatos e dimensıes, por meio dos canais tradicionais ou com exibiÁıes interativas e efeitos 3D. 
+</p>
+<p>
+Para divulgar as oportunidades de investimentos em m√≠dia aeroportu·ria, a Infraero est· publicando, como projeto piloto, o Plano Geral de Publicidade (PGP) do Aeroporto Internacional de Bras√≠lia ‚Äì Presidente Juscelino Kubitschek, onde √© poss√≠vel identificar locais dispon√≠veis para exploraÁ„o publicit·ria. 
+</p>
+<p>
+<b>
+Como anunciar: </b>
+</p>
+<p>
+Os espaÁos s„o disponibilizados em blocos (lotes) ou individualmente, conforme o interesse da administraÁ„o. S„o publicados em editais de licitaÁ„o amplamente divulgados na internet, jornais locais, associaÁıes comerciais, no Di·rio Oficial da Uni„o, entre outros, permitindo‚Äìse a participaÁ„o de anunciantes diretos ou empresas de publicidade que tenham interesse em comercializar os pontos publicit·rios. 
+</p>
+
+<p>
+<b>ormaÁıes adicionais:</b> 
+</p>
+<p>
+Aeroporto: <br/>
+Tel. 55 (61) 3214 6458 e 3214 6542 
+</p>
+<p>
+Sede da Infraero:<br/>
+CoordenaÁ„o de Publicidade e PromoÁıes Comerciais <br/>
+Tel. 55 (61) 3312 3539 e 3312 2548 <br/>
+Email: midiacomercial@infraero.gov.br e aeroshopping@infraero.gov.br 
+</p>
+
+
+<p>
+<a href="<%=request.getContextPath()%>/pdf/NI_13.06_COM_22.10.2007.PDF" >
+<img src="<%=request.getContextPath()%>/imagens/pdf.png" /></a>
+Clique na imagem √† esquerda e acesse AS DIRETRIZES E PROCEDIMENTOS PARA CONCESS√ÉO COMERCIAL E UTILIZA√á√ÉO DE √ÅREAS PARA EXPLORA√á√ÉO DE PUBLICIDADE E PROPAGANDA nos aeroportos administrados pela Infraero.
+</p>
+<p>
+<a href="<%=request.getContextPath()%>/pdf/Manual_Basico_Quiosques_e_Exposicoes.pdf" >
+<img src="<%=request.getContextPath()%>/imagens/pdf.png" /></a>
+Clique na imagem √† esquerda e acesse o conte√∫do do MANUAL B√ÅSICO PARA IMPLANTA√á√ÉO DE QUIOSQUES E √ÅREAS DE EXPOSI√á√ïES TEMPOR√ÅRIAS nos aeroportos administrados pela Infraero.
+</p>
+
+<p class="atencao">
+OBS: O conte√∫do desta p·gina, inclusive os arquivos nela anexos, poder· sofrer alteraÁıes sem aviso pr√©vio.
+</p>
+</div>
+
+
+
+
+</body>
+</html>

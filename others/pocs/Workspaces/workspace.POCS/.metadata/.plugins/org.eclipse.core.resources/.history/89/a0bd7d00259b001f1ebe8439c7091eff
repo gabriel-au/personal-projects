@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/voo_online/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">Vôos On-line</div>
+</div>
+
+
+
+<div class="arredondado">
+<div class="arredondado_chamada_right_borda">
+28/07/2010
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_gol.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>01866</strong> GOL</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Rio Jan-Galeao - RJ</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Rio Jan-Galeao - RJ</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<!-- tr>
+		<td width="5%">VÔO</td>
+		<td width="55%">ORIGEM</td>
+		<td width="35%">CIA AÉREA</td>
+		<td width="5%">STATUS</td>
+	</tr>
+	<tr>
+		<td>01866</td>
+		<td>Rio Jan-Galeao - RJ</td>
+		<td>GOL</td>
+		<td><img src="<%=request.getContextPath()%>/imagens/status_ok.gif"></img></td>
+	</tr-->
+	
+</table>
+</div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:13: warning: cannot find interface declaration for 'SummaryController'
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:13: error: no declaration of property 'wvSummary' found in the interface
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m: In function '-[SummaryController viewDidLoad]':
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:35: error: no super class declared in @interface for 'SummaryController'
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:41: error: 'wvSummary' undeclared (first use in this function)
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:41: error: (Each undeclared identifier is reported only once
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:41: error: for each function it appears in.)
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m: In function '-[SummaryController didReceiveMemoryWarning]':
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:54: error: no super class declared in @interface for 'SummaryController'
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m: In function '-[SummaryController dealloc]':
+/Users/Gabriel/Projetos/POCs/Resources/TPi/iPhone/FaturaOnLine/Classes/SummaryController.m:66: error: no super class declared in @interface for 'SummaryController'

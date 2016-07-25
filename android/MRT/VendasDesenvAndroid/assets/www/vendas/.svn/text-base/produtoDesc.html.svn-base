@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Sistema de Vendas Martins</title>
+
+<link rel="stylesheet" type="text/css"
+	href="../includes/css/skeleton.css" />
+<link rel="stylesheet" type="text/css"
+	href="../includes/css/components.css" />
+<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css" />
+
+<script type="text/javascript" charset="utf-8"
+	src="../includes/js/phonegap-1.3.0.js"></script>
+
+
+<script src="../includes/js/jquery-1.7.2.min.js"></script>
+<script src="../includes/js/BRQMob.js"></script>
+<script src="../includes/js/iscroll-lite.js"></script>
+<script src="../includes/js/actions.js"></script>
+<script src="../includes/js/BRQComum.js"></script>
+<script src="../includes/js/BRQNavegacao.js"></script>
+
+<!--script src="../includes/js/pages/pedido.js"></script-->
+<!--script src="../includes/js/pages/simulacaoBnf.js"></script-->
+
+<!-- slider de imagens paginação -->
+<script src="../includes/js/easypaginate.min.js"></script>
+<!-- fim slider de imagens paginação -->
+<script src="../includes/js/pages/produtoDetalhe.js"></script>
+<!-- slideshow imagem do produto -->
+<script src="../includes/js/jquery.colorbox.js"></script>
+<style type="text/css">
+table {
+	width: 100%;
+}
+
+table td {
+	background: #FFF;
+	border: 0;
+}
+
+table tr {
+	border: 0;
+}
+
+table tbody td {
+	text-align: left;
+	height: 26px;
+}
+
+table span {
+	font-weight: normal;
+	color: #FFF;
+}
+
+.BgTitulo {
+	background: none repeat scroll 0 0 #003355;
+	height: 20px;
+	border-top: 1px solid #EE6622;
+}
+
+.on {
+	background: #EBEBEB;
+}
+</style>
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<!-- Navegação esquerda - em caso de seção com menu, deixar o leftNav vazio -->
+				<a class="button left" href="javascript:BRQNavegacao.voltar();">Voltar</a>
+				<h1>Detalhes do Produto</h1>
+				<a class="button right selectable" href="javascript:void(0);"><span
+					class="icon help"></span></a>
+			</div>
+			<!-- FIM CABEÇALHO -->
+
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+
+				<div class="panel">
+					<span class="icon curtirHighlight"></span>
+					<div class="left">
+						<label class="large">Recomendar</label>
+					</div>
+					<div class="switch" id="switch-curtir"></div>
+				</div>
+				<div class="panel">
+					<div class="left">
+						<label class="large">Adicionar a lista</label>
+					</div>
+					<div class="groupButtons" style="float: right;"
+						id="groupButtonsLista">
+						<ul>
+							<li class="selected"><a href="javascript:void(0);">Nenhuma</a></li>
+							<li><a href="javascript:void(0);" style="min-width: 14px">1</a></li>
+							<li><a href="javascript:void(0);" style="min-width: 14px">2</a></li>
+							<li><a href="javascript:void(0);" style="min-width: 14px">3</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="formDiv">
+					<div class="line" style="background-color: #FFF">
+						<div class="cell" style="margin-left: 80px">
+
+							<ul id="items"></ul>
+
+						</div>
+					</div>
+
+					<div id="div_detalhes" style="visibility: block;">
+
+						<ul class="listNav listPanel">
+							<li onclick="nav('modeloDistribuicao.html');"><span
+								class="icon modDistr"></span>
+								<div class="left">
+									<label>Modelo de Distribuição</label>
+								</div>
+								<div class="right">
+									<span id="codigoModeloDistribuicao"></span>
+								</div></li>
+							<li onclick="nav('promocoes.html');"><span
+								class="icon promo"></span>
+								<div class="left">
+									<label>Promoções</label>
+								</div></li>
+						</ul>
+
+						<div class="panel">
+							<div class="groupButtons">
+								<ul id="ul_detalhes">
+									<li id="detalhes_li_detalhes" class="selected"><a
+										href="javascript:void(0);">Detalhes</a></li>
+									<li id="detalhes_li_caracteristicas"><a
+										href="javascript:void(0);" style="min-width: 14px"
+										id="href_caracteristica">Características Gerais</a></li>
+								</ul>
+							</div>
+						</div>
+					
+					<div id="div-header-area"></div>
+					<div id="div-wrapper-area" style="top: 365px; height: 150px;">
+						<div id="div-scroller-area">
+							<div class="line off">
+								<div class="cell">
+									<label>Cód.</label> <span id="span-cod"></span>
+								</div>
+								<div class="cell">
+									<label>Mercadoria</label> <span id="span-mer"></span>
+								</div>
+								<div class="cell">
+									<label>Fornecedor</label> <span id="span-for"></span>
+								</div>
+							</div>
+							<div class="line">
+								<div class="cell">
+									<label>Categoria</label> <span id="span-cat"></span>
+								</div>
+								<div class="cell">
+									<label>Sub-Categoria</label> <span id="span-sub"></span>
+								</div>
+							</div>
+							<div class="line off">
+								<div class="cell">
+									<label>Caixa Fechada</label> <span id="span-cxa"></span>
+								</div>
+								<div class="cell">
+									<label>Distribuição</label> <span id="span-dtb"></span>
+								</div>
+								<div class="cell">
+									<label>Vencimento</label> <span id="span-vnc"></span>
+								</div>
+							</div>
+							<div class="line">
+								<div class="cell">
+									<label>Unid. Venda</label> <span id="span-und"></span>
+								</div>
+								<div class="cell">
+									<label>Incentivo</label> <span id="span-inc"></span>
+								</div>
+								<div class="cell">
+									<label>Qtd. Mínima</label> <span id="span-min"></span>
+								</div>
+								<div class="cell">
+									<label>Quota</label> <span id="span-qta"></span>
+								</div>
+							</div>
+							<div class="line off">
+								<div class="cell">
+									<label>Código de Barras</label> <span id="span-brr"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="div-footer-area"></div>
+					</div>
+				</div>
+
+				<div id="div_caracteristicas" style="visibility: hidden;">
+
+					<div class="panel">
+						<div class="groupButtons">
+							<ul id="ul_caracteristicas">
+								<li id="caracteristicas_li_detalhes"><a id="href_detalhes"
+									href="javascript:void(0);">Detalhes</a></li>
+								<li id="caracteristicas_li_caracteristicas"><a
+									href="javascript:void(0);" style="min-width: 14px">Características
+										Gerais</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="div-header-area"></div>
+					<div id="div-wrapper-area-2" class="div-wrapper-area"
+						style="top: 345px;">
+						<div id="div-scroller-area2">
+							
+						</div>
+					</div>
+					<div id="div-footer-area"></div>
+				</div>
+
+
+			</div>
+
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+<script type="text/javascript">
+	var myScroll;
+	var myScroll2;
+	function loaded() {
+		myScroll = new iScroll('div-wrapper-area', {
+			useTransform : true,
+			onBeforeScrollStart : function(e) {
+				var target = e.target;
+				while (target.nodeType != 1) {
+					target = target.parentNode
+				}
+				;
+				if (target.tagName != 'SELECT' && target.tagName != 'INPUT'
+						&& target.tagName != 'TEXTAREA') {
+					e.preventDefault();
+				}
+			},
+			onListEndV : function() {
+				BRQMob.log('scrolling');
+			}
+		});
+		myScroll2 = new iScroll('div-wrapper-area-2', {
+			useTransform : true,
+			onBeforeScrollStart : function(e) {
+				var target = e.target;
+				while (target.nodeType != 1) {
+					target = target.parentNode
+				}
+				;
+				if (target.tagName != 'SELECT' && target.tagName != 'INPUT'
+						&& target.tagName != 'TEXTAREA') {
+					e.preventDefault();
+				}
+			},
+			onListEndV : function() {
+				BRQMob.log('scrolling');
+			}
+		});
+	}
+	document.addEventListener('touchmove', function(e) {
+		e.preventDefault();
+	}, false);
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+</html>

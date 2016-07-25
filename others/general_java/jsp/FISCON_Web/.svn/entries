@@ -1,0 +1,126 @@
+10
+
+dir
+619
+svn+ssh://ouropreto.primems.com.br/svn/fiscon/trunk/FISCON_Web_novolayout
+svn+ssh://ouropreto.primems.com.br/svn/fiscon
+
+
+
+2010-12-10T19:36:55.920464Z
+618
+eduardo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e04f4003-3cb9-4585-96a4-87db3f752821
+
+.classpath
+file
+
+
+
+
+2011-03-23T18:30:42.094000Z
+2107db22930d4c0a55b17506283dde08
+2010-12-08T17:01:43.281153Z
+615
+eduardo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1027
+
+.project
+file
+
+
+
+
+2011-03-23T18:30:42.092000Z
+e7d93359bad4c2512f677d77e5b1ea85
+2010-12-08T17:01:43.281153Z
+615
+eduardo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1007
+
+.settings
+dir
+
+WEB-INF
+dir
+
+WebContent
+dir
+
+doc
+dir
+
+lib
+dir
+
+src
+dir
+
+src-command
+dir
+
+src-mobile
+dir
+
+src-teste
+dir
+
+src-web
+dir
+

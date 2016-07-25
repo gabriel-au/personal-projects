@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/5477/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util
+END
+EnviromentIdentifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/4794/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/EnviromentIdentifier.java
+END
+DateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/4865/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/DateUtil.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/4794/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/FileUtil.java
+END
+DatabaseUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobile/!svn/ver/5477/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/DatabaseUtil.java
+END
+JsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/4801/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/JsonUtil.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mobile/!svn/ver/4803/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/StringUtil.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/5379/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/Util.java
+END

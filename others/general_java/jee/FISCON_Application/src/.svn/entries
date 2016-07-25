@@ -1,0 +1,71 @@
+10
+
+dir
+619
+svn+ssh://ouropreto.primems.com.br/svn/fiscon/trunk/FISCON_Application/src
+svn+ssh://ouropreto.primems.com.br/svn/fiscon
+
+
+
+2010-04-12T20:10:14.912949Z
+521
+gustavomarcelo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e04f4003-3cb9-4585-96a4-87db3f752821
+
+META-INF
+dir
+
+br
+dir
+
+configuracao.properties
+file
+
+
+
+
+2011-03-23T18:29:30.000000Z
+227d5d7f91d9d1a68d887d4f6418ff04
+2010-02-15T20:05:55.575541Z
+141
+gustavomarcelo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+313
+
+imagens
+dir
+

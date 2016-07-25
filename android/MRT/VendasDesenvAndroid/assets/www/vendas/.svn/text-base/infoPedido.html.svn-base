@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script type="text/javascript" charset="utf-8" src="../includes/js/phonegap-1.3.0.js"></script>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/pages/pedido.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(		
+			function(){
+				BRQNavegacao.adicionarPilhaNavegacao('infoPedido');
+				carregaInfoPedido();
+			}
+		);
+		
+		function carregaInfoPedido(){
+			var pedidoBase = getPedidoBase();
+			
+			$("#mensagem_nota").append(pedidoBase.info.mensagemNota);
+			$("#desc_tipo_pedido").append(pedidoBase.info.tipoPedido); 
+				
+			$("#codigo_cliente").append(pedidoBase.cliente.codigoCliente); 
+			$("#nome_cliente").append(pedidoBase.cliente.nomeCliente); 
+			$("#territorio_cliente").append(pedidoBase.cliente.codigoTerritorio); 
+			$("#canal_cliente").append(pedidoBase.cliente.canal); 
+			$("#indexRazaoFantasia_cliente").append(pedidoBase.cliente.indexRazaoFantasia); 
+			$("#indicativoFavorito_cliente").append(pedidoBase.cliente.indicativoFavorito); 
+			$("#indicativoTop_cliente").append(pedidoBase.cliente.indicativoTop); 
+			$("#tipoContratoVendor_cliente").append(pedidoBase.cliente.tipoContratoVendor); 
+			$("#tipoCobrancaCondicaoPagamento_cliente").append(pedidoBase.cliente.tipoCobrancaCondicaoPagamento); 
+			$("#codigoSegmento_cliente").append(pedidoBase.cliente.codigoSegmento);
+							
+			
+			var exp = pedidoBase.filialExpedicao;
+			var fat = pedidoBase.filialFaturamento;
+			var txt = exp.codigoFilial +' - '+ exp.nomeFilial + ' / ' + fat.codigoFilial +' - '+ fat.nomeFilial;
+			$("#descricao_filial").append(txt); 
+			
+			$("#codigo_condicao_pagamento").append(pedidoBase.condicaoPagamento.codigo); 
+			$("#descricao_condicao_pagamento").append(pedidoBase.condicaoPagamento.descricao); 
+			
+			$("#codigo_modelo_distribuicao").append(pedidoBase.modeloDistribuicao.codigo); 
+			$("#descricao_modelo_distribuicao").append(pedidoBase.modeloDistribuicao.descricao); 
+			
+			//for (var i in pedidoBase.cliente){
+			//	document.write('Campo \''+i+'\': ' + pedidoBase.cliente[i] + '<br>');
+			//}
+			
+		}
+	</script>	
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:BRQNavegacao.voltar();" id="a_bt_voltar">Voltar</a>
+				<h1>Dados para tela de itens de pedido</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="formDiv">
+					<h2>Info</h2>
+					<div class="line off">
+						<div class="cell" style="width:80%;">
+							<span class="header_info_pedido" id="mensagem_nota">Mensagem na nota: </span>
+							<span class="header_info_pedido" id="desc_tipo_pedido">Tipo do Pedido: </span>
+						</div>
+					</div>
+					<h2>Cliente</h2>
+					<div class="line off">
+						<div class="cell" style="width:80%;">
+							<span class="header_info_pedido" id="codigo_cliente">Código: </span>
+							<span class="header_info_pedido" id="nome_cliente">Nome: </span>
+							<span class="header_info_pedido" id="territorio_cliente">Território: </span>
+							<span class="header_info_pedido" id="canal_cliente">Canal: </span>
+							<span class="header_info_pedido" id="indexRazaoFantasia_cliente">IndexRazao Fantasia: </span>
+							<span class="header_info_pedido" id="indicativoFavorito_cliente">Indicativo Favorito: </span>
+							<span class="header_info_pedido" id="indicativoTop_cliente">Indicativo Top: </span>
+							<span class="header_info_pedido" id="tipoContratoVendor_cliente">Tipo Contrato Vendor: </span>
+							<span class="header_info_pedido" id="tipoCobrancaCondicaoPagamento_cliente">Tipo Cobranca Condicao Pagamento: </span>
+							<span class="header_info_pedido" id="codigoSegmento_cliente">Codigo Segmento: </span>
+						</div>
+					</div>
+					<h2>CAD/Filial</h2>
+					<div class="line off">
+						<div class="cell" style="width:80%;">
+							<span id="descricao_filial"></span>
+						</div>
+					</div>
+					<h2>Condição de Pagamento</h2>
+					<div class="line off">
+						<div class="cell" style="width:80%;">
+							<span class="header_info_pedido" id="codigo_condicao_pagamento">Código: </span>
+							<span class="header_info_pedido" id="descricao_condicao_pagamento">Descrição: </span>
+						</div>
+					</div>
+					<h2>Modelo de Distribuição</h2>
+					<div class="line off">
+						<div class="cell" style="width:80%;">
+							<span class="header_info_pedido" id="codigo_modelo_distribuicao">Código: </span>
+							<span class="header_info_pedido" id="descricao_modelo_distribuicao">Descrição: </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+	<plugin name="VendasDispatcher" value="br.com.martins.vendas.vendas.Dispatcher" />
+	<plugin name="MartinsDispatcher" value="br.com.martins.vendas.martins.Dispatcher" />
+	<plugin name="EstruturaDispatcher" value="br.com.martins.vendas.estrutura.Dispatcher" />
+	<plugin name="RelacionamentoDispatcher" value="br.com.martins.vendas.relacionamento.Dispatcher" />
+</plugins>

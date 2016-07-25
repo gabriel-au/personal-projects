@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Executive Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="css/components.css" />
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.8rc3.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>	
+	<script type="text/javascript" src="scripts/brq.js"></script>			
+	<script type="text/javascript" src="scripts/amcharts.js" ></script>
+    <script type="text/javascript" src="scripts/raphael.js" ></script>    
+	<script type="text/javascript" src="scripts/data.js" >    </script>  
+	
+	<script>
+	
+	$(document).ready(function() {
+	
+		var tamanho = window.location.search.length;
+		sistemaSelecionado = window.location.search.substring(1,tamanho); 
+		
+
+		if(sistemaSelecionado == 1 ){
+			
+			$('#labelAnalise').text("Indicadores de Oportunidades");
+			$('#labelVisao').text("Analise Trimestral das Oportunidades por Campanha");
+			$('#content1').show();
+			$('#content2').hide();
+			$('#webcharts').show('fast');	
+			
+			initCCSO();
+			
+		}
+		if(sistemaSelecionado == 2 ){
+			
+			$('#labelAnalise').text("Produção AUTO");
+			$('#labelVisao').text("Análise da Produção Mensal");
+			$('#content1').hide();
+			$('#content2').show();
+			$('#webcharts').show('fast');	
+
+			initDWADP();		
+		}
+		
+    });
+	</script>
+
+</head>
+<body>
+	
+
+	
+	<!-- CONTE⁄DO -->
+	<div id="webcharts">
+		<div class="container" style="overflow:hidden; width:1024px;">
+			<header class="webchartsHeader">
+				<div class="top">
+					<img src="img/bg_topExecutiveDashboard.png" alt="webCharts Bradesco" style="margin:5px 0 0 30px;"/>
+					<!--a onclick="closeAplication();" href="javascript:void(0);" class="closeApplication" title="Fechar Campanha"></a-->
+				</div>
+				<div class="toolbar">
+					
+					<a href="javascript:void(0);" onclick="closeAplication();" class="but_flagBack" title="Fechar Campanha"></a>
+					<h1 id="labelSist"></h1>
+					<ul>
+						<li><a href="javascript:void(0);" class="but_toolbar help" title="Ajuda">Ajuda</a></li>
+					</ul>					
+				</div>
+			</header>
+			<div class="content" style="height:623px;">
+				<div class="navigation">
+					<!--<a href="javascript:void(0);" onclick="prevPage();" class="but_prevPage" style="display:none;" title="P·gina Anterior"></a-->
+					<h2 id="labelVisao"></h2>
+					<!--a href="javascript:void(0);" onclick="nextPage();" class="but_nextPage" title="PrÛxima P·gina"></a>
+					<ul>
+						<li><a class="highlight" onclick="pageNav(30, this);" href="javascript:void(0);" title="1™ P·gina"</a></li>
+						<li><a href="javascript:void(0);" onclick="pageNav(-990, this);" title="2™ P·gina"</a></li>
+						<li><a href="javascript:void(0);" onclick="pageNav(-2020, this);" title="3™ P·gina"</a></li>
+					</ul-->
+				</div>
+				<br class="clear"/>
+				<div class="mainContent" style="left:30px;">
+					<div class="subject">
+						
+						<!-- P·gina 3 -->
+						<div class="page">
+							<div class="chartArea large2lines">
+								<div class="chartHeader">
+									<h3 id="labelAnalise">	</h3>						
+								</div>
+								
+								<div class="chartContent" id="content1">
+									<table>
+										<tr>
+											<td style="width:15%">				
+												<select id="comboCampanha" onChange="getSituacaoPorCampanha()" style="align:left">
+													<option value="-1">TODAS</option>
+													<option value="5">Leasing</option>
+													<option value="7">Feira & Eventos</option>
+													<option value="8">Finame BFV Pesados</option>	
+													<option value="10">Finame Rede</option>
+													<option value="12">CDC</option>
+													<option value="15">Aniv.Finan.</option>
+												</select>
+											</td>
+											<td style="align:left;width:29%"> <a href="javascript:initCCSO()">Recarregar</a></td>
+											
+											<td>				
+												<select id="comboSituacao" onChange="getSituacaoPorMesesDaCampanha()" style="align:left">
+													<option value="7">Fechada Bare</option>
+													<option value="2">Nova </option>	
+													<option value="5">Nova em Atraso</option>
+													<option value="3">Em Andamento </option>
+													<option value="6">Em Andamento em Atraso</option>
+													<option value="4">Fechada Improdutiva</option>													
+												</select>
+											</td>
+											
+										</tr>
+									</table>
+									<br><div id="labelDetalhe"></div>								
+										
+									<div id="chartdiv3" style="width:90%; height:90%;">	
+										<table style="width:100%; height:100%;">
+											<tr>
+												<td style="width:50%; height:100%;"><div id='ccso1' style="width:100%; height:100%;"></div></td>
+												<td style="width:50%; height:100%;"><div id='ccso2' style="width:100%; height:100%;"></div></td>
+											</tr>
+										</table>										
+									</div>
+								</div>
+
+								<div class="chartContent" id="content2">
+									<table>
+										<tr>
+											<td style="width:15%">																					
+												<select id="comboMes" onChange="loadDwadp()" style="align:left">
+													<option value="0">--- Selecione ---</option>
+													<option value="201101">JAN/2011</option>
+													<option value="201102">FEV/2011</option>
+													<option value="201103">MAR/2011</option>	
+												</select>
+											</td>											
+											
+											<td style="align:left"> <a href="javascript:loadDwadp()"><div id="drillUp" style="visibility:hidden">Voltar</div> </a></td>
+											<td style="align:left"> <a href="javascript:loadDwadp()"><div id="drillUp" style="visibility:hidden">Voltar</div> </a></td>
+										</tr>
+									</table>
+									
+									<br><div id="labelDetalhe2"></div>											
+										
+									<div id="chartdiv2" style="width:100%; height:90%;">
+									
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<br class="clear"/>
+				<!-- div class="scrollbar">
+					<div class="scroll"></div>
+				</div-->
+				<nav class="subjectNav">
+					<div class="headerNav" onclick="openSubject(this);">
+						<a class="openSubject" href="javascript:void(0);" title="Abrir Assuntos"></a>
+						<h4>Assuntos</h4>
+					</div>
+					<div class="subjectNavContent">
+						<div class="subjectVision nextleft" style="left:35%;"><img src="img/teste_carroussel.png" title="Assunto 1" style="width:250px;"/></div>
+						<div class="subjectVision" style="left:50%;"><img src="img/teste_carroussel.png" style="width:288px;" title="Assunto 1"/></div>
+						<!--div class="subjectVision" style="left:65%; top:60px; margin-left:-125px; z-index:1;"><img src="img/teste_carroussel.png" style="opacity: 0.6; width:250px;" title="Assunto 1"/></div-->
+						<div class="navControl">
+							<a href="javascript:void(0);" onclick="prevVision();" class="but_prevPage" style="display:none;" title="P·gina Anterior"></a>
+							<a href="javascript:void(0);" onclick="nextVision();" class="but_nextPage" title="PrÛxima P·gina"></a>
+							<h4>Producao por Ramo</h4>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- FIM DO CONTE⁄DO -->
+	
+	<div id="logout" class="floater invisible">
+		<div class="chartArea small" style="height:auto;">
+			<div class="chartHeader">
+				<h3>Logout</h3>
+				<ul>
+					<li><a class="but_close" onclick="logout(); $('.floater').hide('fast');" href="javascript:void(0);" title="Fechar"></a></li>
+				</ul>
+			</div>
+			<div class="chartContent" style="text-align:center; height:auto;">
+				<h5>Deseja realmente fazer o logout?</h5>
+				<a href="javascript:void(0);" onclick="logout(); $('.floater').hide('fast');" class="textButton">Sim</a> <a class="textButton" onclick="$('.floater').hide('fast');" href="javascript:void(0);" class="button">Não</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

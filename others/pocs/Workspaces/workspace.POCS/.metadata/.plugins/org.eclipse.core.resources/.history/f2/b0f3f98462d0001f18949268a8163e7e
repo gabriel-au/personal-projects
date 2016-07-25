@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Superior Tribunal de Justi&ccedil;a - O Tribunal da Cidadania</title>
+<!-- by Gustavo Marcelo -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+<!-- link rel="apple-touch-icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.png"/--> 
+<!-- link  rel="shortcut icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.ico" type="image/icon" /--> 
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/style.css";</style>
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/styleComplemento.css";</style>
+<script type="application/x-javascript">
+if (navigator.userAgent.indexOf('iPhone') != -1) {
+        addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+        }, false);
+}
+
+function hideURLbar() {
+        window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body>
+<div class="toolbar">
+<a href="<%=request.getContextPath()%>/" >
+<img src="<%=request.getContextPath()%>/imagens/topo.png" /></a>
+</div>
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/jurisprudencia.jsp" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">
+Jurisprud&ecirc;ncia
+</div>
+</div>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=0" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 1 
+</div>
+<div>
+<div class="arredondado_link">
+TST-AIRR-386/2003-003-03-40.8
+</div>
+<div class="lista_central">
+Ministro Relator: Horácio Raymundo de Senna Pires 
+</div>
+<div class="lista_central">
+DJ
+ 
+13/06/2008
+</div>
+<div class="lista_central">
+Data de Julgamento: 11/06/2008
+</div>
+</div>
+<div class="lista_base">
+HABEAS CORPUS. TENTATIVA DE HOMIC&Iacute;DIO. DEFICI&Ecirc;NCIA DE DEFESAT&Eacute;CNICA. AUS&Ecirc;NCIA DE PROVA PR&Eacute;-CONSTITU&Iacute;DA. CONSTRANGIMENTO ILEGALN&Atilde;O EVIDENCIADO.
+<br>
+1. N&atilde;o havendo nos autos nenhum documento apto a demonstrar a...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=1" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 2 
+</div>
+<div>
+<div class="arredondado_link">
+HC 11575
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. SONEGA&Ccedil;&Atilde;O FISCAL. APELA&Ccedil;&Atilde;O. 1.AUS&Ecirc;NCIA DE INTIMA&Ccedil;&Atilde;O DO ADVOGADO. MAT&Eacute;RIA J&Aacute; APRECIADA EM ANTERIORWRIT. REITERA&Ccedil;&Atilde;O. COGNI&Ccedil;&Atilde;O. IMPOSSIBILIDADE. 2. DESEMBARGADORREVISOR. F&Eacute;RIAS. JUIZ CONVOCADO. COMPET&Ecirc;NCIA PARA JULGAR....
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=2" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 3 
+</div>
+<div>
+<div class="arredondado_link">
+HC 116592
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. TR&Aacute;FICO INTERNACIONAL DE DROGAS. (1)PROCESSAMENTO DA APELA&Ccedil;&Atilde;O. EXCESSO PRAZO. FEITO COMPLEXO. V&Aacute;RIOSAPELANTES. ADVOGADOS DISTINTOS. SUBSTITUI&Ccedil;&Atilde;O DE CAUS&Iacute;DICOS.OFERECIMENTO DE RAZ&Otilde;ES EM SEGUNDO GRAU. CONSTRANGIMENTO ILEGAL. N&Atilde;O...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=3" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 4 
+</div>
+<div>
+<div class="arredondado_link">
+HC 94305
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministra MARIA THEREZA DE ASSIS MOURA 
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+HABEAS CORPUS. TENTATIVA DE HOMIC&Iacute;DIO. DEFICI&Ecirc;NCIA DE DEFESAT&Eacute;CNICA. AUS&Ecirc;NCIA DE PROVA PR&Eacute;-CONSTITU&Iacute;DA. CONSTRANGIMENTO ILEGALN&Atilde;O EVIDENCIADO.
+<br>
+1. N&atilde;o havendo nos autos nenhum documento apto a demonstrar a...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=4" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 5 
+</div>
+<div>
+<div class="arredondado_link">
+HC 11575
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. SONEGA&Ccedil;&Atilde;O FISCAL. APELA&Ccedil;&Atilde;O. 1.AUS&Ecirc;NCIA DE INTIMA&Ccedil;&Atilde;O DO ADVOGADO. MAT&Eacute;RIA J&Aacute; APRECIADA EM ANTERIORWRIT. REITERA&Ccedil;&Atilde;O. COGNI&Ccedil;&Atilde;O. IMPOSSIBILIDADE. 2. DESEMBARGADORREVISOR. F&Eacute;RIAS. JUIZ CONVOCADO. COMPET&Ecirc;NCIA PARA JULGAR....
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=5" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 6 
+</div>
+<div>
+<div class="arredondado_link">
+HC 116592
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. TR&Aacute;FICO INTERNACIONAL DE DROGAS. (1)PROCESSAMENTO DA APELA&Ccedil;&Atilde;O. EXCESSO PRAZO. FEITO COMPLEXO. V&Aacute;RIOSAPELANTES. ADVOGADOS DISTINTOS. SUBSTITUI&Ccedil;&Atilde;O DE CAUS&Iacute;DICOS.
+<br>
+OFERECIMENTO DE RAZ&Otilde;ES EM SEGUNDO GRAU. CONSTRANGIMENTO ILEGAL. N&Atilde;O...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=6" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 7 
+</div>
+<div>
+<div class="arredondado_link">
+HC 94305
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministra MARIA THEREZA DE ASSIS MOURA 
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+HABEAS CORPUS. TENTATIVA DE HOMIC&Iacute;DIO. DEFICI&Ecirc;NCIA DE DEFESAT&Eacute;CNICA. AUS&Ecirc;NCIA DE PROVA PR&Eacute;-CONSTITU&Iacute;DA. CONSTRANGIMENTO ILEGALN&Atilde;O EVIDENCIADO.
+<br>
+1. N&atilde;o havendo nos autos nenhum documento apto a demonstrar a...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=7" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 8 
+</div>
+<div>
+<div class="arredondado_link">
+HC 11575
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. SONEGA&Ccedil;&Atilde;O FISCAL. APELA&Ccedil;&Atilde;O. 1.AUS&Ecirc;NCIA DE INTIMA&Ccedil;&Atilde;O DO ADVOGADO. MAT&Eacute;RIA J&Aacute; APRECIADA EM ANTERIORWRIT. REITERA&Ccedil;&Atilde;O. COGNI&Ccedil;&Atilde;O. IMPOSSIBILIDADE. 2. DESEMBARGADORREVISOR. F&Eacute;RIAS. JUIZ CONVOCADO. COMPET&Ecirc;NCIA PARA JULGAR....
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=8" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 9 
+</div>
+<div>
+<div class="arredondado_link">
+HC 116592
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministro JORGE MUSSI
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+PROCESSO PENAL. HABEAS CORPUS. TR&Aacute;FICO INTERNACIONAL DE DROGAS. (1)PROCESSAMENTO DA APELA&Ccedil;&Atilde;O. EXCESSO PRAZO. FEITO COMPLEXO. V&Aacute;RIOSAPELANTES. ADVOGADOS DISTINTOS. SUBSTITUI&Ccedil;&Atilde;O DE CAUS&Iacute;DICOS.OFERECIMENTO DE RAZ&Otilde;ES EM SEGUNDO GRAU. CONSTRANGIMENTO ILEGAL. N&Atilde;O...
+</div>
+</div></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=detalhar&parametro=9" clazz="arredondado" >
+<div class="arredondado">
+<div class="lista_esquerda">
+ 10 
+</div>
+<div>
+<div class="arredondado_link">
+HC 94305
+ 
+(AC&Oacute;RD&Atilde;O)
+</div>
+<div class="lista_central">
+Ministra MARIA THEREZA DE ASSIS MOURA 
+</div>
+<div class="lista_central">
+DJE
+ 
+18/12/2009
+</div>
+<div class="lista_central">
+Decis&atilde;o: 
+01/12/2009
+</div>
+</div>
+<div class="lista_base">
+HABEAS CORPUS. TENTATIVA DE HOMIC&Iacute;DIO. DEFICI&Ecirc;NCIA DE DEFESAT&Eacute;CNICA. AUS&Ecirc;NCIA DE PROVA PR&Eacute;-CONSTITU&Iacute;DA. CONSTRANGIMENTO ILEGALN&Atilde;O EVIDENCIADO.
+<br>
+1. N&atilde;o havendo nos autos nenhum documento apto a demonstrar a...
+</div>
+</div></a>
+<div class="arredondado">
+<img src="<%=request.getContextPath()%>/imagens/nvg_primeiro_inativo.png" />
+<img src="<%=request.getContextPath()%>/imagens/nvg_anterior_inativo.png" />
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=paginar&parametro=10" >
+<img src="<%=request.getContextPath()%>/imagens/nvg_proximo.png" /></a>
+<a href="<%=request.getContextPath()%>/Pagina?p=Jurisprudencia&m=paginar&parametro=20" >
+<img src="<%=request.getContextPath()%>/imagens/nvg_ultimo.png" /></a>
+</div>
+</body>
+</html>

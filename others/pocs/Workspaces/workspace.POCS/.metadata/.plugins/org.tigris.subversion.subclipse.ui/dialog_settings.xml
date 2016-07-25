@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="378" key="RevertDialog.location.x"/>
+	<item value="273" key="DifferencesDialog.location.x"/>
+	<item value="131" key="RevertDialog.location.y"/>
+	<item value="525" key="RevertDialog.size.x"/>
+	<item value="417" key="RevertDialog.size.y"/>
+	<item value="118" key="HistoryTableProvider.SVNHistoryPage.Date"/>
+	<item value="402" key="ChooseUrlDialog.location.x"/>
+	<item value="130" key="ChooseUrlDialog.location.y"/>
+	<item value="382" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
+	<item value="419" key="DifferencesDialog.size.y"/>
+	<item value="true" key="TreeConflictsView.container"/>
+	<item value="75" key="TreeConflictsView.col.Resource"/>
+	<item value="730" key="DifferencesDialog.size.x"/>
+	<item value="66" key="HistoryTableProvider.SVNHistoryPage.Revision"/>
+	<item value="130" key="DifferencesDialog.location.y"/>
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="477" key="ChooseUrlDialog.size.x"/>
+	<item value="351" key="ChooseUrlDialog.size.y"/>
+	<item value="107" key="HistoryTableProvider.SVNHistoryPage.Author"/>
+	<item value="22" key="CommitDialog.location.y"/>
+	<item value="77" key="CommitDialog.location.x"/>
+	<item value="/Users/Gabriel/Projetos/POCs/Workspaces/workspace.POCS/FaturaOnLineApp/FaturaOnLine.xcodeproj" key="TreeConflictsView.resource"/>
+	<item value="1127" key="CommitDialog.size.x"/>
+	<item value="774" key="CommitDialog.size.y"/>
+	<item value="450" key="TreeConflictsView.col.Description"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="IgnoreResourcesDialog">
+		<item value="0" key="Action"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://patrocinio.primetecnologia.net/svn/jmob"/>
+			<item value="https://patrocinio.primetecnologia.net/svn/easyforms"/>
+			<item value="https://patrocinio.primetecnologia.net/svn/poc"/>
+			<item value="https://patrocinio.primetecnologia.net/svn/pocs"/>
+		</list>
+	</section>
+	<section name="SynchronizeResourceSelectionDialog">
+		<item value="" key="SynchronizeResourceSelectionDialog.STORE_WORKING_SETS"/>
+	</section>
+</section>

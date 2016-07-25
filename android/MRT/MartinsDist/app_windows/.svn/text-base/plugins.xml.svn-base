@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+	
+	<plugin name="ConversorDispatcher" 	value="br.com.martins.vendas.conversor.Dispatcher" />
+	
+</plugins>

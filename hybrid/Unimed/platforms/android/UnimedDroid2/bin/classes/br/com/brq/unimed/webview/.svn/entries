@@ -1,0 +1,40 @@
+8
+
+dir
+55
+http://rjserver162.brq.com:8978/svn/Mobilidade/UnimedDroid/src/br/com/brq/unimed/webview
+http://rjserver162.brq.com:8978/svn/Mobilidade
+
+
+
+2011-10-22T01:30:20.859892Z
+55
+tgoncalves
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+82c5b4fb-17c2-0941-b1d8-291f0392c9ad
+
+UnimedActivity.java
+file
+
+
+
+
+2011-10-22T01:27:02.000000Z
+0942a467bbffa139af96419aedc425c2
+2011-10-22T01:30:20.859892Z
+55
+tgoncalves
+

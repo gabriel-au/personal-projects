@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/log
+END
+LogManagerWindowsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/log/LogManagerWindowsImpl.java
+END
+LogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/log/LogManager.java
+END
+LogManagerAndroidImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/log/LogManagerAndroidImpl.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/log/Log.java
+END

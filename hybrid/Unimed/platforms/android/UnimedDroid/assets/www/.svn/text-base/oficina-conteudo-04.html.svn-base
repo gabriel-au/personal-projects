@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Conteúdo Oficina</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="oficinas.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="aviso">Gerenciamento de conflitos - uma abordagem cooperativista </h2>
+        	<p>Ministrada por Maria Regina de Carvalho Teixeira, doutoranda em Administração de Empresas na área de Gestão de Pessoas, pela UFMG, e mestre em Administração de Empresas com foco em Gestão de Pessoas e Organizações, também pela UFMG, esta oficina tem como objetivo estudar condições e formas de gerenciamento de conflitos; sensibilizar para condutas e atitudes de negociação; oportunizar análise de ambientes mais propícios de trabalho; desenvolver competências pessoais de relacionamento através da administração dos conflitos e refletir sobre a conduta pessoal e profissional diante de uma situação conflituosa.</p>
+            <div class="dotted-border"></div>
+            
+            <p><strong>Público-alvo</strong></p>
+            <p>Dirigentes, Conselheiros, Executivos e Gerentes da área de Recursos Humanos do Sistema Unimed </p>
+            <h2 class="aviso">Conteúdo programático</h2>
+            <p>- A ansiedade do homem de hoje;<BR>
+              - O diagnóstico de um comportamento conflituoso nas cooperativas;<BR>
+              - A dinâmica de tensão grupal e o conflito;<BR>
+              - O papel da liderança cooperativista;<BR>
+              - Possibilidade de mudança e relações com o grupo;<BR>
+              - Como acompanhar funcionários de forma eficaz;<BR>
+              - A solução criativa de problemas;<BR>
+              - Os meios psicológicos intuitivos na negociação. Estratégia: Ataque e Defesa. O Ganha-ganha; <BR>
+              - Processo e táticas de negociações;<BR>
+	          - Relacionamentos baseados em confiança.</p>
+            
+            <p><strong>Resultados esperados</strong></p>
+            <p>- Conhecimento de condições incentivadoras de conflitos e de negociação <BR>
+            - Sensibilização e desenvolvimento de competências de gestão de conflitos e condutas de negociação </p>
+	  </div>
+         <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BRBMobileBankMobileSite/WebContent/images&apos; to &apos;imagens&apos;" description="Rename resource &apos;images&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/images" name="imagens" stamp="1281574029977" updateReferences="true"/>
+</session>

@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9608AFE514562C4E0080F57F /* www in Resources */ = {isa = PBXBuildFile; fileRef = 9608AFE414562C4E0080F57F /* www */; };
+		9623B3B9145591C000652871 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9623B3B7145591C000652871 /* MBProgressHUD.m */; };
+		9640D4E3142B9398004FBF17 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9640D4E1142B9398004FBF17 /* icon.png */; };
+		9640D4E4142B9398004FBF17 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9640D4E2142B9398004FBF17 /* icon@2x.png */; };
+		96B3C0B1142A774600B76290 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B3C0B0142A774600B76290 /* UIKit.framework */; };
+		96B3C0B3142A774600B76290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B3C0B2142A774600B76290 /* Foundation.framework */; };
+		96B3C0B5142A774600B76290 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B3C0B4142A774600B76290 /* CoreGraphics.framework */; };
+		96B3C0BB142A774600B76290 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96B3C0B9142A774600B76290 /* InfoPlist.strings */; };
+		96B3C0BD142A774600B76290 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0BC142A774600B76290 /* main.m */; };
+		96B3C0C1142A774600B76290 /* UnimedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0C0142A774600B76290 /* UnimedAppDelegate.m */; };
+		96B3C0C4142A774600B76290 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B3C0C2142A774600B76290 /* MainWindow.xib */; };
+		96B3C0C7142A774600B76290 /* UnimedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0C6142A774600B76290 /* UnimedViewController.m */; };
+		96B3C0CA142A774600B76290 /* UnimedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B3C0C8142A774600B76290 /* UnimedViewController.xib */; };
+		96B3C0E9142A808C00B76290 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B3C0E8142A808C00B76290 /* SystemConfiguration.framework */; };
+		96B3C0FC142A85A600B76290 /* FileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0F1142A85A600B76290 /* FileSystem.m */; };
+		96B3C0FD142A85A600B76290 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0F3142A85A600B76290 /* Loader.m */; };
+		96B3C0FE142A85A600B76290 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0F5142A85A600B76290 /* Network.m */; };
+		96B3C0FF142A85A600B76290 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0F7142A85A600B76290 /* Reachability.m */; };
+		96B3C100142A85A600B76290 /* Updater.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C0F9142A85A600B76290 /* Updater.m */; };
+		96B3C107142A864A00B76290 /* InvokedUrlCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3C106142A864900B76290 /* InvokedUrlCommand.m */; };
+		C0F3554F17E79058003AD7A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F3554E17E79058003AD7A0 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9608AFE414562C4E0080F57F /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		9623B3B7145591C000652871 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9623B3B8145591C000652871 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9640D4E1142B9398004FBF17 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		9640D4E2142B9398004FBF17 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		96B3C0AC142A774600B76290 /* Unimed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unimed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B3C0B0142A774600B76290 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96B3C0B2142A774600B76290 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96B3C0B4142A774600B76290 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96B3C0B8142A774600B76290 /* Unimed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unimed-Info.plist"; sourceTree = "<group>"; };
+		96B3C0BA142A774600B76290 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96B3C0BC142A774600B76290 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96B3C0BE142A774600B76290 /* Unimed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unimed-Prefix.pch"; sourceTree = "<group>"; };
+		96B3C0BF142A774600B76290 /* UnimedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnimedAppDelegate.h; sourceTree = "<group>"; };
+		96B3C0C0142A774600B76290 /* UnimedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnimedAppDelegate.m; sourceTree = "<group>"; };
+		96B3C0C3142A774600B76290 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		96B3C0C5142A774600B76290 /* UnimedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnimedViewController.h; sourceTree = "<group>"; };
+		96B3C0C6142A774600B76290 /* UnimedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnimedViewController.m; sourceTree = "<group>"; };
+		96B3C0C9142A774600B76290 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UnimedViewController.xib; sourceTree = "<group>"; };
+		96B3C0E6142A806A00B76290 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		96B3C0E8142A808C00B76290 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96B3C0F0142A85A600B76290 /* FileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystem.h; sourceTree = "<group>"; };
+		96B3C0F1142A85A600B76290 /* FileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystem.m; sourceTree = "<group>"; };
+		96B3C0F2142A85A600B76290 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		96B3C0F3142A85A600B76290 /* Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		96B3C0F4142A85A600B76290 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		96B3C0F5142A85A600B76290 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		96B3C0F6142A85A600B76290 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		96B3C0F7142A85A600B76290 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		96B3C0F8142A85A600B76290 /* Updater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Updater.h; sourceTree = "<group>"; };
+		96B3C0F9142A85A600B76290 /* Updater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Updater.m; sourceTree = "<group>"; };
+		96B3C105142A864900B76290 /* InvokedUrlCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvokedUrlCommand.h; sourceTree = "<group>"; };
+		96B3C106142A864900B76290 /* InvokedUrlCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvokedUrlCommand.m; sourceTree = "<group>"; };
+		C0F3554E17E79058003AD7A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96B3C0A9142A774600B76290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3C0E9142A808C00B76290 /* SystemConfiguration.framework in Frameworks */,
+				96B3C0B1142A774600B76290 /* UIKit.framework in Frameworks */,
+				96B3C0B3142A774600B76290 /* Foundation.framework in Frameworks */,
+				96B3C0B5142A774600B76290 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9651ADAA1453231B0089F63E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				96B3C0C5142A774600B76290 /* UnimedViewController.h */,
+				96B3C0C6142A774600B76290 /* UnimedViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		9651ADAB1453232F0089F63E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9640D4E1142B9398004FBF17 /* icon.png */,
+				9640D4E2142B9398004FBF17 /* icon@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		9651ADAD145323610089F63E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				96B3C0C2142A774600B76290 /* MainWindow.xib */,
+				96B3C0C8142A774600B76290 /* UnimedViewController.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		96B3C0A1142A774600B76290 = {
+			isa = PBXGroup;
+			children = (
+				C0F3554E17E79058003AD7A0 /* Default-568h@2x.png */,
+				9608AFE414562C4E0080F57F /* www */,
+				96B3C0B6142A774600B76290 /* Unimed */,
+				96B3C0AF142A774600B76290 /* Frameworks */,
+				96B3C0AD142A774600B76290 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96B3C0AD142A774600B76290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B3C0AC142A774600B76290 /* Unimed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96B3C0AF142A774600B76290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B3C0E8142A808C00B76290 /* SystemConfiguration.framework */,
+				96B3C0E6142A806A00B76290 /* Security.framework */,
+				96B3C0B0142A774600B76290 /* UIKit.framework */,
+				96B3C0B2142A774600B76290 /* Foundation.framework */,
+				96B3C0B4142A774600B76290 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96B3C0B6142A774600B76290 /* Unimed */ = {
+			isa = PBXGroup;
+			children = (
+				9651ADAD145323610089F63E /* view */,
+				9651ADAB1453232F0089F63E /* images */,
+				9651ADAA1453231B0089F63E /* controller */,
+				96B3C0D0142A7BE900B76290 /* Util */,
+				96B3C0BF142A774600B76290 /* UnimedAppDelegate.h */,
+				96B3C0C0142A774600B76290 /* UnimedAppDelegate.m */,
+				96B3C0B7142A774600B76290 /* Supporting Files */,
+			);
+			path = Unimed;
+			sourceTree = "<group>";
+		};
+		96B3C0B7142A774600B76290 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96B3C0B8142A774600B76290 /* Unimed-Info.plist */,
+				96B3C0B9142A774600B76290 /* InfoPlist.strings */,
+				96B3C0BC142A774600B76290 /* main.m */,
+				96B3C0BE142A774600B76290 /* Unimed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B3C0D0142A7BE900B76290 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9623B3B7145591C000652871 /* MBProgressHUD.m */,
+				9623B3B8145591C000652871 /* MBProgressHUD.h */,
+				96B3C105142A864900B76290 /* InvokedUrlCommand.h */,
+				96B3C106142A864900B76290 /* InvokedUrlCommand.m */,
+				96B3C0F0142A85A600B76290 /* FileSystem.h */,
+				96B3C0F1142A85A600B76290 /* FileSystem.m */,
+				96B3C0F2142A85A600B76290 /* Loader.h */,
+				96B3C0F3142A85A600B76290 /* Loader.m */,
+				96B3C0F4142A85A600B76290 /* Network.h */,
+				96B3C0F5142A85A600B76290 /* Network.m */,
+				96B3C0F6142A85A600B76290 /* Reachability.h */,
+				96B3C0F7142A85A600B76290 /* Reachability.m */,
+				96B3C0F8142A85A600B76290 /* Updater.h */,
+				96B3C0F9142A85A600B76290 /* Updater.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96B3C0AB142A774600B76290 /* Unimed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B3C0CD142A774600B76290 /* Build configuration list for PBXNativeTarget "Unimed" */;
+			buildPhases = (
+				96B3C0A8142A774600B76290 /* Sources */,
+				96B3C0A9142A774600B76290 /* Frameworks */,
+				96B3C0AA142A774600B76290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unimed;
+			productName = Unimed;
+			productReference = 96B3C0AC142A774600B76290 /* Unimed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96B3C0A3142A774600B76290 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "BRQ IT Services";
+				TargetAttributes = {
+					96B3C0AB142A774600B76290 = {
+						DevelopmentTeam = JKJPH7EME2;
+					};
+				};
+			};
+			buildConfigurationList = 96B3C0A6142A774600B76290 /* Build configuration list for PBXProject "Unimed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96B3C0A1142A774600B76290;
+			productRefGroup = 96B3C0AD142A774600B76290 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96B3C0AB142A774600B76290 /* Unimed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96B3C0AA142A774600B76290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3C0BB142A774600B76290 /* InfoPlist.strings in Resources */,
+				96B3C0C4142A774600B76290 /* MainWindow.xib in Resources */,
+				96B3C0CA142A774600B76290 /* UnimedViewController.xib in Resources */,
+				9640D4E3142B9398004FBF17 /* icon.png in Resources */,
+				9640D4E4142B9398004FBF17 /* icon@2x.png in Resources */,
+				9608AFE514562C4E0080F57F /* www in Resources */,
+				C0F3554F17E79058003AD7A0 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96B3C0A8142A774600B76290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3C0BD142A774600B76290 /* main.m in Sources */,
+				96B3C0C1142A774600B76290 /* UnimedAppDelegate.m in Sources */,
+				96B3C0C7142A774600B76290 /* UnimedViewController.m in Sources */,
+				96B3C0FC142A85A600B76290 /* FileSystem.m in Sources */,
+				96B3C0FD142A85A600B76290 /* Loader.m in Sources */,
+				96B3C0FE142A85A600B76290 /* Network.m in Sources */,
+				96B3C0FF142A85A600B76290 /* Reachability.m in Sources */,
+				96B3C100142A85A600B76290 /* Updater.m in Sources */,
+				96B3C107142A864A00B76290 /* InvokedUrlCommand.m in Sources */,
+				9623B3B9145591C000652871 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96B3C0B9142A774600B76290 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96B3C0BA142A774600B76290 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96B3C0C2142A774600B76290 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96B3C0C3142A774600B76290 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		96B3C0C8142A774600B76290 /* UnimedViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96B3C0C9142A774600B76290 /* en */,
+			);
+			name = UnimedViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96B3C0CB142A774600B76290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ana  Martins (SPA5TG9494)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ana  Martins (SPA5TG9494)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "E4181825-DAB2-43F5-AA09-9BE1C0EE5E81";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96B3C0CC142A774600B76290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BRQ Solucoes em Informatica S/A";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BRQ Solucoes em Informatica S/A";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "977B41A5-B3EF-4F2D-9517-1BF8670F57F8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "977B41A5-B3EF-4F2D-9517-1BF8670F57F8";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96B3C0CE142A774600B76290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ana  Martins (SPA5TG9494)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ana  Martins (SPA5TG9494)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unimed/Unimed-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Unimed/Unimed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E4181825-DAB2-43F5-AA09-9BE1C0EE5E81";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E4181825-DAB2-43F5-AA09-9BE1C0EE5E81";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96B3C0CF142A774600B76290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BRQ Solucoes em Informatica S/A (JKJPH7EME2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BRQ Solucoes em Informatica S/A (JKJPH7EME2)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unimed/Unimed-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Unimed/Unimed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "977B41A5-B3EF-4F2D-9517-1BF8670F57F8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "977B41A5-B3EF-4F2D-9517-1BF8670F57F8";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96B3C0A6142A774600B76290 /* Build configuration list for PBXProject "Unimed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3C0CB142A774600B76290 /* Debug */,
+				96B3C0CC142A774600B76290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B3C0CD142A774600B76290 /* Build configuration list for PBXNativeTarget "Unimed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B3C0CE142A774600B76290 /* Debug */,
+				96B3C0CF142A774600B76290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96B3C0A3142A774600B76290 /* Project object */;
+}

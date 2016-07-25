@@ -1,0 +1,46 @@
+10
+
+dir
+5697
+https://mobile139.brq.com:8443/svn/mobile/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/res
+https://mobile139.brq.com:8443/svn/mobile
+
+
+
+2012-03-20T20:37:15.344524Z
+1114
+allansantos
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+692d38cc-a861-b441-aa62-ddaff52ae480
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+xml
+dir
+

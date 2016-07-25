@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+         <div class="content android" data-scroll="y"><br />
+        	<h2 class="data">14/9 (sexta)</h2>
+        	<h2 class="aviso">8h30 às 9h</h2>
+        	<p><strong>Palestra: “Transporte Aeromédico: Um Diferencial no Plano de Saúde”</strong></p>
+			<p><strong>Presidente</strong></p>
+			<p>Dr. Márcio Pizzato, presidente da Unimed Porto Alegre</p>
+			<p><strong>Moderador</strong></p>
+			<p>Dr Reinaldo Antônio Barbosa, presidente da Unimed Vale do Paraíba</p>
+			
+			<div class="dotted-border"></div>
+			<h2 class="aviso">Palestrante</h2>
+			<p>Dr. Antonio Oliveira Quevedo, diretor comercial da Uniair Serviços Aéreos</p>
+				
+			<div class="dotted-border"></div>
+			
+			<h2 class="aviso">9h às 10h</h2>
+        	<p><strong>Palestra: "Marca Unimed: Histórico e Perspectivas Futuras do Nosso Maior Ativo"</strong></p>
+        	<p><strong>Presidente</strong></p>
+            <p>Dr. Darival Bringel de Olinda, presidente da Federação Ceará</p>
+			<p><strong>Moderador</strong></p>
+            <p>Dr. João Alberto da Cruz, presidente da Unimed Resende</p>
+
+            <div class="dotted-border"></div>
+            <p>Debatedor</p>
+            <p>Dr. Almir Adir Gentil, consultor de marca da Unimed do Brasil</p>
+            <div class="dotted-border"></div>
+             
+            <h2 class="aviso">10h às 13h</h2>
+             <p><strong>Mesa-redonda: "O Regime Jurídico dos Sistemas de Saúde Brasileiro e Americano"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Dr. Humberto Jorge Isaac, presidente da Federação das Unimeds do Estado de São Paulo</p>
+            <p><strong>Moderador</strong></p>
+            <p>Dr. José Claudio Ribeiro Oliveira, assessor jurídico da Unimed do Brasil</p>
+            <div class="dotted-border"></div>
+            
+			<h2 class="aviso">Palestrante</h2>
+			<p>Gilmar Mendes, Ministro do Supremo Tribunal Federal (STF)</p>
+
+			<div class="dotted-border"></div>
+			
+            <p>Debatedores</p>
+            <p>Jorge Mussi, Ministro do Superior Tribunal de Justiça (STJ)<br />
+            Laurita Vaz, Ministra do Superior Tribunal de Justiça (STJ)<br />
+            Ricardo Villas Boas Cueva, Ministro do Superior Tribunal de Justiça (STJ)<br />
+            Massami Uyeda, Ministro do Superior Tribunal de Justiça (STJ)</p>
+            
+			<div class="dotted-border"></div>
+			
+            <h2 class="aviso">13h às 14h30</h2>
+            <p><strong>Almoço</strong></p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">14h30 às 16h30</h2>
+        	<p><strong>Mesa-Redonda: “O Ato Cooperativo no Congresso Nacional”</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Dr. José Abel Alcanfor Ximenes, assessor da Presidência da Unimed do Brasil, coordenador nacional do Comitê Político do Sistema Unimed e presidente da Unimed Federação Goiás, Tocantins e Distrito Federal</p>
+           
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Márcio Lopes de Freitas, presidente do Sistema OCB</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Casildo Maldaner, Senador pelo PMDB/SC e membro da Frencoop<br />
+            André Vargas, Deputado pelo PT/PR e relator do Projeto do Ato Cooperativo na Comissão de Finanças e Tributação (CFT) da Câmara dos Deputados<br />
+            Eleuses Paiva, Deputado pelo PSD/SP e médico defensor do Ato Médico no Congresso Nacional e integrante da Frencoop</p>
+            <div class="dotted-border"></div>
+            
+            
+            <h2 class="aviso">16h30 às 17h30</h2>
+        	<p><strong>Mesa-redonda: “Particularidades da Administração de Hospitais em Diferentes Setores”</strong></p>
+        	<p><strong>Presidente</strong></p>
+        	<p>Dr. Kamil Hussein Fares, presidente da Federação Mato Grosso e diretor adjunto da Central Nacional Unimed </p>
+			<p><strong>Moderador</strong></p>
+            <p>Dr. José Martiniano Grillo Neto, presidente da Federação Intra Centro Paulista e Unimed Rio Claro</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Walter Cintra, diretor do instituto de ortopedia da FMUSP<br />
+			Dr. Luiz Zeferino, superintendente do Hospital de Clínicas da Unicamp<br />
+			Dr. Alexandre Augusto Ruschi Filho, presidente da Federação Espírito Santo e diretor técnico da Seguros Unimed <br />
+			Dr. Helton Freitas, presidente da Unimed Belo Horizonte e diretor de Operações da Seguros Unimed</p>
+			<div class="dotted-border"></div>
+			 
+            <h2 class="aviso">17h30 às 18h</h2>
+        	<p><strong>Sorteio Viva Vida 2012</strong></p>
+        	<div class="dotted-border"></div>
+        	
+        	<h2 class="aviso">18h</h2>
+        	<p><strong>Cerimônia de Encerramento</strong></p>
+        	<div class="dotted-border"></div>
+        	
+        	<h2 class="aviso">20h</h2>
+        	<p><strong>Festa de Encerramento</strong></p>
+        	<div class="dotted-border"></div>
+        	
+              
+           <p>&nbsp;</p>
+       </div>
+            
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" class="highlight" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <!--li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li-->
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

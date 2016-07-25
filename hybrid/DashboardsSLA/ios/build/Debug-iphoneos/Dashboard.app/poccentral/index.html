@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1" />
+        <title>Painel Central de Atendimento</title>        
+		<link rel="stylesheet" type="text/css" href="css/components.css" />		
+		
+		<script src="js/jq.js"></script>		
+		<script src="js/jqm.js"></script>
+		<script src="js/gray.js"></script>		
+		<script src="js/highcharts.js"></script>			
+		<script src="js/data.js"></script>
+		<script src="js/charts.js"></script>
+		<script src="js/theme.js"></script>		
+	
+	</head>
+	<body>
+		<div class="container t2x t2y">
+			<div class="box t2x t1y lastX">
+				<img class="assinaturaBrq" src="imagens/assinatura_brq.png" />
+			</div>
+			<div class="box t1x t1y lastY">
+				<a href="javascript:init();"  class="button bt_index"></a>
+				<a href="#" class="button bt_configs"></a>
+			</div>
+			<div class="box t1x t1y lastY lastX">
+				<p class="smallBoxText">Última Atualização<br/>
+				<div  class="smallBoxText" id="viewDataUltMov" style="font-size:16px"></div><br/>
+				</p>
+				<a href="#" class="flag"></a>
+			</div>
+		</div>
+		<!-- GRAFICO PRINCIPAL -->
+		<div class="box t6x t2y">
+			<h1><div id="titChart1">Planejamento de Tráfego - Nível de Serviço</div></h1>
+			<div class="chartArea" id="container"></div>
+			<a href="#" class="flag flagFilter"></a>
+		</div>
+		
+		<br class="clear" />
+		<!-- GRAFICOS AUXILIARES -->
+		<div class="box t4x t2y" id="chartArea2">
+			<h1><div id="titChart2">Volume</div></h1>
+			<div class="chartArea" id="containerVolume"></div>
+		</div>
+		
+		<div class="box t4x t2y" id="chartArea3">
+			<h1><div id="titChart3">TMA</div></h1>
+			<div class="chartArea" id="containerTMA"></div>
+		</div>
+		
+		<br class="clear" />
+		
+		<div class="box t4x t2y" id="chartArea4">
+			<h1><div id="titChart4">Tráfego</div></h1>
+			<div class="chartArea" id="containerTrafego"></div>
+		</div>
+		
+		<!-- INDICADORES -->
+		<div class="container t4x t2y" id="chartArea5">
+			<div class="box t2x t1y">
+				<h1>Nível de Serviço</h1>
+				<span class="indicadorUP"></span>
+				<span class="indicadorValue"><strong>99</strong> %</span>
+			</div>
+			<div class="box t2x t1y lastX">
+				<h1>Volume</h1>				
+				<span class="indicadorValue"><strong><div id="viewIndicadorVolume"></div></strong></span>
+			</div>
+			<div class="box t2x t1y">
+				<h1>TMA</h1>
+				<span class="indicadorStill"></span>
+				<span class="indicadorValue"><strong>498</strong></span>
+			</div>
+			<div class="box t2x t1y lastY lastX">
+				<h1>Tráfego</h1>
+				<span class="indicadorUP"></span>
+				<span class="indicadorValue"><strong>9999</strong></span>
+			</div>
+		</div>
+        
+        
+		
+		<!--EXEMPLO FLUTUANTE>
+		<div class="box t6x t2y floater">
+			<h1>Gráfico 1</h1>
+			<a href="#" class="flag flagClose"></a>
+		</div-->
+		
+	</body>
+</html>

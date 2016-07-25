@@ -1,0 +1,588 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #36C;
+}
+
+a:hover {
+	color: #06F;
+}
+
+body {
+	color: #000000;
+	font: normal 8pt "Lucida Sans Unicode", sans-serif;
+	margin: 0;
+	margin-top:0px;
+}
+
+input {
+	color: #555;
+	font: normal 1.1em "Lucida Sans Unicode", sans-serif;
+}
+
+p,cite,code,ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+
+h1 {
+	font-size: 1.4em;
+	margin-bottom: 4px;
+}
+
+code {
+	background: url(../img/bgcode.gif);
+	border: 1px solid #F0F0F0;
+	border-left: 6px solid #39F;
+	color: #FFF;
+	display: block;
+	font: normal 1.1em "Lucida Sans Unicode", serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+
+cite {
+	background: url(../img/quote.gif) no-repeat;
+	color: #666;
+	display: block;
+	font: normal 1.3em "Lucida Sans Unicode", serif;
+	padding-left: 28px;
+}
+
+h1,h2,h3 {
+	color: #367EA6;
+	padding-top: 6px;
+}
+
+/* misc */
+.clearer {
+	clear: both;
+}
+
+/* structure */
+.container {
+	margin: 0 auto;
+	padding-bottom: 6px;
+}
+
+.topo {
+	background: url(../img/header.png) repeat-x;
+	height: 128px;
+}
+
+/* title */
+.title h1 {
+	color: #FFF;
+	font: normal 3em Verdana, sans-serif;
+	height: 100px;
+	line-height: 100px;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+/* navigation */
+.navigation {
+	margin-bottom: 4px;
+}
+
+.navigation a {
+	background-color: #4A91C3;
+	color: #FFF;
+	float: left;
+	font: bold 1.2em "Trebuchet MS", sans-serif;
+	padding: 8px 0;
+	width: 19%;
+	border-right: 1px solid #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+/* main left */
+.left h1,.left ul {
+	padding-left: 12px;
+}
+
+.left {
+	background: #EEE;
+	border: 1px solid #E5E5E5;
+	float: left;
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.left h1 {
+	color: #666;
+	font-size: 1.2em;
+	height: 20px;
+	margin-top: 1.2em;
+}
+
+.left ul {
+	border-top: 1px solid #FAFAFA;
+	background: url(../img/bgul.gif) repeat-x;
+	margin: 0;
+	padding: 0;
+}
+
+.left li {
+	border: 1px solid #FAFAFA;
+	border-top: none;
+	list-style: none;
+	margin: 0;
+}
+
+.left li a {
+	color: #777;
+	display: block;
+	font-size: 9pt;
+	padding: 3px 6px 3px 14px;
+	text-decoration: none;
+}
+
+.left li a:hover {
+	color: #111;
+}
+
+/* content */
+.content {
+	float: left;
+	margin-right: 20px;
+	margin-left: 8px;
+}
+
+.content .item {
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin-bottom: 8px;
+	width: 100%;
+}
+
+.content .descr {
+	color: #333;
+	margin-bottom: 6px;
+}
+
+.content li {
+	list-style: url(img/li.gif);
+	margin-left: 18px;
+}
+
+/* search form */
+form {
+	padding: 0 0 6px 8px;
+}
+
+.styled {
+	border: 1px solid #DDD;
+	padding: 4px;
+}
+
+/*.button {
+	background: url(img/search.gif) no-repeat left bottom;
+	border: none;
+	height: 27px;
+	width: 27px;
+}*/
+.button {
+	height: 21px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-right: 15px;
+}
+
+img {
+	border: none;
+}
+
+.a {
+	margin-top: 20px;
+}
+
+/* footer */
+.footer {
+	clear: left;
+	background: #FFF;
+	border: 1px solid #EEE;
+	color: #666;
+	font-size: 1.1em;
+	text-align: center;
+	padding: 6px;
+}
+
+.footer a {
+	color: #36C;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #06F;
+	text-decoration: underline;
+}
+
+.msg {
+	font-family: Helvetica;
+	font-size: 9pt;
+	border: 1px solid #c0c0c0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #FFFBF5;
+	width: 530px;
+}
+
+.colunaBotoes {
+	vertical-align: bottom;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.colunaSenha {
+	font-family: Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: right;
+	width: 30px;
+	padding: 2.5px;
+	padding-right: 5px;
+	font-size: 9pt;
+}
+
+.colunaSenha2 {
+	font-family: Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	width: 170px;
+	padding: 2.5px;
+	font-size: 9pt;
+}
+
+.colunaSenha3 {
+	width: 159px;
+	padding: 2.5px;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.colunaEsqueci {
+	width: 300px;
+}
+
+.alinhaEsquerda {
+	text-align: left;
+	width: 210px;
+}
+
+.coluna:hover {
+	cursor: hand;
+}
+
+.alinhaDireita {
+	width: 210px;
+	text-align: right;
+}
+
+.loading {
+	font-family: Helvetica;
+	font-size: 9pt;
+	text-align: center;
+}
+
+.coluna {
+	
+}
+
+.linhaTabela1:hover {
+	cursor: pointer;
+}
+
+.linhaTabela2:hover {
+	cursor: pointer;
+}
+
+/*
+
+.linhaTabela1 {
+	background-color: #f0f0f0;
+}
+
+*/
+select {
+	width: 200px;
+}
+
+.imgForms {
+	vertical-align: bottom;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+.imgForms2 {
+	vertical-align: bottom;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.imgPDF {
+	background: url(../img/pdf.png);
+}
+
+.imgXLS {
+	
+}
+
+.imgCSV {
+	
+}
+
+.logoPrime {
+	float: right;
+	margin-top: 13px;
+	padding-rigth: 10px;
+}
+
+.logoEasyForm {
+	float: left;
+	margin-top: 13px;
+	padding-left: 10px;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+	width: 530px;
+}
+
+.quarter {
+	text-align: right;
+}
+
+.table {
+	width: 550px;
+}
+
+input[type=text] {
+	height: 17px;
+	font-size: 11px;
+	background-image: url(../img/bg_form.gif);
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	width: 200px;
+}
+
+input[type=password] {
+	height: 17px;
+	font-size: 11px;
+	background-image: url(../img/bg_form.gif);
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	width: 200px;
+}
+
+input[type=file] {
+	height: 17px;
+	font-size: 11px;
+	background-image: url(../img/bg_form.gif);
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+	width: 200px;
+}
+
+select {
+	font-size: 10px;
+	background-image: url(../img/bg_form.gif);
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #000000;
+}
+
+.colunas {
+	padding: 5px;
+}
+
+.conteudo {
+	vertical-align: top;
+}
+
+/*FORM*/
+.colunaFiltros {
+	vertical-align: top;
+}
+
+.bardaForm {
+	padding: 10px;
+	border: 1px solid #c0c0c0;
+	width: 550px;
+}
+
+.colunaLabel {
+	font-family: Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	width: 100px;
+	padding-right: 0px;
+	padding-left: 5px;
+	font-size: 9pt;
+}
+
+.colunaComponente {
+	font-family: Helvetica;
+	font-size: 9pt;
+	width: 80%;
+}
+
+.checkBoxColumn {
+	width: 10px;
+}
+
+.textColumn {
+	
+}
+
+.linha1 {
+	background-color: #FFEDD1;
+	background-color: #f0f0f0;
+	height: 25px;
+	vertical-align: middle;
+	text-align: left;
+	width: 100%;
+}
+
+.linha2 {
+	height: 25px;
+	vertical-align: middle;
+	text-align: left;
+	width: 100%;
+}
+
+.ai {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -110px;
+	margin-top: -40px;
+}
+
+<!-- FISCON -->
+#tabela table{
+	width: auto;
+	margin-left: 220px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#tabela th {
+	background: #4a75b5;
+	color:#FFFFFF;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-left: 5px;	
+	font-size: 9pt;
+	}
+#tabela tr{
+	border-bottom-width: thin;
+}
+
+#tabela td{
+padding-bottom: 3.5px;
+padding-top: 3.5px;
+padding-left: 12px;
+padding-right: 12px;
+		font-size: 9pt;
+}
+.alt{
+background-color: #f5f5f5;
+}
+#tabela img{
+border: none;
+}
+
+#tabela .imag{
+border: none;
+margin-left: 16px;
+margin-top: 10px;
+}
+
+#tabela .tablefooter{
+background: #FFFFFF;
+margin: auto;
+text-align: center;
+}
+
+
+#tabelaleft table{
+	width: auto;
+	margin-left: 220px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#tabelaleft th {
+			font-size: 1px;
+	background: #000066;
+	color:#FFFFFF;
+	font-style: oblique;
+	padding-bottom: 2px;
+	padding-top: 2px;	
+	}
+
+#tabelaleft td{
+
+padding-bottom: 3.5px;
+padding-top: 3.5px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+span {
+font-size:15pt;
+margin-right: 40px;
+}
+
+.underbanner2 {
+
+
+font-size:8pt;
+border-bottom: 1px solid black;
+margin-bottom: 20px;
+
+}
+th,td {
+font-size: 9pt;
+	line-height:20px;
+	margin-top: 5px;
+}
+
+i {
+margin-top: 20px;
+	font-size: 12pt;
+
+	font-color: grey;
+}
+
+tableFooter {
+texst-align:center;
+}

@@ -1,0 +1,11 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.php.debug.daemon,2.1.1.v20090707-1108,"org.eclipse.php.debug.daemon",1268846585831
+started,bundle,org.eclipse.tml.framework.device,0.3.0.200906152200,"org.eclipse.tml.framework.device",1268846585857
+started,bundle,org.eclipse.tml.service.vncviewer,0.3.0.200906152200,"org.eclipse.tml.service.vncviewer",1268846585888
+started,bundle,org.eclipse.tml.framework.device.wizard,0.3.0.200906152200,"org.eclipse.tml.framework.device.wizard",1268846585932
+started,bundle,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui",1268846586012
+started,bundle,org.eclipse.php.server.core,2.1.1.v20090707-1108,"org.eclipse.php.server.core",1268846586050
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1268846586054
+started,bundle,org.eclipse.php.core,2.1.1.v20090914-1400,"org.eclipse.php.core",1268846586115
+started,bundle,org.eclipse.php.debug.core,2.1.1.v20090914-1400,"org.eclipse.php.debug.core",1268846586150
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1268846586202

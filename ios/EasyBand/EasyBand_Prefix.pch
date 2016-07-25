@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'EasyBand' target in the 'EasyBand' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "EasyBandAppDelegate.h"
+	#import "Const.h"
+#endif

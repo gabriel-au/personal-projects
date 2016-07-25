@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+	
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo2.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	<script src="includes/js/load.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+ 
+</head>
+
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+	
+	<style>
+		.footer {
+			position:absolute;
+			width:100%;
+			height:50px;
+			left:0;
+			top:1000px;
+			z-index:1;
+			border-top:2px solid #696969;
+		    background: #000000 url(includes/images/bg-footer_a.png);
+		}
+
+
+		.footer ul.evento{
+			list-style-type:none;
+			display:block;
+			position:relative;
+			margin:0 10px;
+			padding:0;
+		}
+		.footer ul.evento li
+		{
+			float:left; 
+			display:block;
+			width:59px;
+			height:50px;
+			margin:0;
+		}
+		.footer ul.evento li a{
+			display:block;
+			float:left;
+		    margin:4px 0;
+			width: 59px;
+			height:13px;
+			padding-top:33px;
+			text-align: center;
+			font-size:8px;
+			color: #A8A8A8;
+			text-decoration:none;
+			background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+		    border-radius:5px;
+		}
+
+		ul.evento li.highlight a {
+		    color:#FFFFFF;
+		}
+		ul.evento li a.informacoes:hover, 
+		ul.evento li.highlight a.informacoes{
+			background-position:0 -54px;
+		}
+		ul.evento li a.programacao{
+			background-position:-60px -4px;
+		}
+		ul.evento li a.programacao:hover,
+		ul.evento li.highlight a.programacao{
+			background-position:-60px -54px;
+		}
+		ul.evento li a.negocios{
+			background-position:-120px -4px;
+		}
+		ul.evento li a.negocios:hover,
+		ul.evento li.highlight a.negocios{
+			background-position:-120px -54px;
+		}
+		ul.evento li a.mapa{
+			background-position:-180px -4px;
+		}
+		ul.evento li a.mapa:hover,
+		ul.evento li.highlight a.mapa{
+			background-position:-180px -54px;
+		}
+		ul.evento li a.executivos{
+			background-position:-240px -4px;
+		}
+		ul.evento li a.executivos:hover,
+		ul.evento li.highlight a.executivos{
+			background-position:-240px -54px;
+		}
+	
+    
+		ul {list-style:none;}
+		.container .content .master{
+		color:#009900;
+		font-size:13px;
+		margin-left:14px;
+		}
+		.container .content .diamante{
+			color:#3399FF;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .ouro{
+			color:#FF9900;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .prata{
+			color:#666666;
+			font-size:13px;
+			margin-left:14px;
+		}
+	
+	 </style>	
+	
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="lista-programacao.html"><img src="includes/imagens/bt-voltar.jpg"></a></div>
+        </div>
+        	
+
+        <!--inicio content-->
+        <div class="content" data-scroll="y" style="height:350px"><br />
+        	<h2 class="data">19/09 - QUINTA-FEIRA </h2>
+        	<h2 class="aviso">8h às 9h30</h2>
+        	<p>FEIRA DE NEGÓCIOS
+<p>Abertura e visita aos estandes</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">9h30 às 11h</h2> <p>MESA-REDONDA - “As Redes de Atenção à Saúde”
+
+<p>Debatedora: Somava Stout
+Médica da Cambridge Health Alliance, Somava Stout é especialista em cuidados primários e está profundamente comprometida com a melhoria da saúde de comunidades
+carentes. Vice-presidente de Patient Centered Medical Home Development, Somava participa ativamente na transformação do sistema de saúde, no contexto acadêmico, e se orgulha de estar envolvida na construção da próxima geração de médicos focados em cuidados primários.</p>
+
+<p>Debatedor: Luis Fernando Rolim Sampaio
+Superintendente dos Serviços Próprios da Unimed BH, Luís Fernando cursou medicina pela UFMG e especializou-se em Homeopatia pelo Instituto Mineiro de Homeopatia e em Gestão Hospitalar pela ESMIG/ENSP. É mestre em Saúde Pública e doutor em Saúde Global pela Universidade de Toronto, no Canadá. Foi professor em Toronto e consultor de instituições no Canadá, Índia, África do Sul e América Latina.</p>
+
+<p>Presidente de Mesa: Adelson Severino Chagas
+Presidente da Federação Unimed Equatorial e Diretor de Finanças e Administração da Seguros Unimed</p>
+
+<p>Moderador: Alexandre Ruschi Filho
+Diretor Técnico da Seguros Unimed</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">11h às 12h30</h2> <p>MESA-REDONDA - “Modelos de atenção à Saúde - Primeiros resultados do Sistema Unimed”</p>
+
+<p>Debatedor: Mário Scheffer
+Formado em Comunicação Social, especialista em Saúde Pública, Doutor em Ciências da Saúde, atualmente é professor e pesquisador do Departamento de Medicina Preventiva
+da Faculdade de Medicina da USP, membro do conselho do Cebes (Centro Brasileiro de Estudos de Saúde) e do conselho diretor do Idec (Instituto Brasileiro de Defesa do Consumidor).</p>
+
+<p>Debatedor: Cloer Vescia
+Com mais de 20 anos de carreira, Cloer Vescia já geriu e administrou importantes instituições públicas e privadas. Não obstante, foi consultor para o Ministério da Saúde, coordenador do Núcleo de Atenção Integral à Saúde da Unimed RS e chefe da Divisão de Atenção Integral à Saúde do Hospital de Aeronáutica de Canoas. Mestre em Gestão de Serviços de Saúde, Vescia trabalha atualmente como diretor-técnico, professor e consultor do comitê do CAS, além de coordenar o curso de Atenção Primária da Fundação Unimed.</p>
+
+<p>Debatedor: Paulo Borem
+Dr. Paulo Borem é cirurgião vascular e improvement advisor formado pelo IHI, Boston, EUA. Já foi consultor do Banco Mundial, USAID e BID em projetos de reforma do sistema
+de saúde na Índia, Colômbia, África, Argentina e EUA. Hoje, Borem coordena o Centro de Qualidade e Inovação em Saúde da Unimed do Brasil (CQIS,) em parceria com o IHI, bem como Open School Fundação Unimed-IHI e mais nove Unimeds pilotos.</p>
+
+<p>Presidente de Mesa: Mohamad Akl
+Diretor-Presidente da Central Nacional Unimed</p>
+
+<p>Moderador: Reinaldo Antonio M. Barbosa
+Presidente da Federação Unimed Vale do Paraíba</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">12h30 às 14h</h2> <p>INTERVALO PARA ALMOÇO</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">14h às 14h30</h2> <p>MESA REDONDA: "A Unimed como patrocinadora da Seleção Brasileira de Futebol" </p>
+
+<p>Debatedor: Frederico Chaves Guedes
+Atacante do Fluminense e da Seleção Brasileira de Futebol. Fred começou sua carreira no América Mineiro e chamou a atenção do País ao marcar o gol mais rápido da história
+do futebol brasileiro. Hoje, ele é atacante do Fluminense – time carioca patrocinado pela Unimed Rio – e possui títulos de destaque, entre eles, o Campeonato Francês de 2006-2007, pelo Lyon; Copa América de 2007 com a Seleção Brasileira; Campeonato Francês de 2007-2008, pelo Lyon; Campeonato Brasileiro de 2010 e 2012, além do Estadual do Rio de Janeiro de 2012, todos pelo Fluminense.</p>
+
+<p>Presidente de mesa: Edevard j. de Araujo
+Diretor de Marketing e Desenvolvimento da Unimed do Brasil</p>
+
+<p>Moderador: Mauri Aparecido Raphaelli
+Diretor de Negócios da Seguros Unimed</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">14h30 às 15h30</h2> <p>MESA-REDONDA - “Ética e poesia na relação médico-paciente”</p>
+
+<p>Debatedor: João Gabriel Marques Fonseca
+Herdou do pai a paixão pela música, mas a vida lhe trouxe a medicina como profissão, o que não o impediu de prosseguir com sua carreira musical. Hoje, ele atua no Hospital das Clínicas, além de lecionar no curso de pós-graduação da Escola de Música da UFMG, dando continuidade ao trabalho desenvolvido por seu ex-professor, Hans- Joachim Koellreutter.</p>
+
+<p>Debatedora: Adélia Prado
+Renomada escritora brasileira, seus textos retratam o cotidiano com perplexidade e encanto, norteados pela fé cristã e permeados pelo aspecto lúdico. Professora por formação, exerceu o magistério durante 24 anos, até que a carreira de escritora tornouse a atividade central. Em termos de literatura brasileira, o surgimento da escritora representou a revalorização do feminino nas letras e da mulher como ser pensante, tendo-se em conta que Adélia incorpora os papéis de intelectual e de mãe, esposa e dona-de-casa.</p>
+
+<p>Presidente de Mesa: Viviane Vieira Malta Presidente da Federação Unimed Alagoas Moderador: Nilson Luiz May
+Presidente da Federação Unimed Rio Grande do Sul</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">15h30 às 17h</h2> <p>PAINEL DE MERCADO - “Tendências e competitividade do Sistema Unimed”</p>
+
+<p>Debatedor: Batista Gigliotti
+Engenheiro Civil e mestre em Administração de Empresas pela FGV, Batista Gigliotii é sócio-fundador da Fran Systems Consultoria, uma empresa especializada em estratégias
+e desenvolvimento de negócios e franquias. Também foi o executivo responsável pela implantação da Burger King em países da América Latina, incluindo o Brasil, além de reorganizar as marcas Pizza Hut, KFC e Taco Bell na América do Sul. Co-autor do livro “Franquias Brasileiras”, já ganhou o Prêmio ABF Destaque Franchising na categoria Trabalho Acadêmico e o President’s Award 2003 da Burger King Corporation.</p>
+
+<p>Debatedor: Cícero Ferreira
+Sócio-Fundador da Omega Consultoria de Gestão e professor em cursos de MBA e pós-graduação em instituições como FIA-USP, FIAP, Mackenzie e USJT.</p>
+
+<p>Presidente da Sessão: Mauro Muños de Andrade
+Presidente da Federação Unimed do Estado da Bahia</p>
+
+<p>Moderador: Jamal Nasser Haddad
+Presidente da Federação Unimed do Estado do Mato Grosso do Sul</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">18h às 19h</h2> <p>PALESTRA - “Qual o futuro das marcas nas Redes Sociais e Mídias Digitais?”</p>
+
+<p>Palestrante: Gil Giardelli
+Professor na ESPM nos cursos de Pós-Graduação, MBA, Miami Ad School e do CIC e da FIA-USP). Gil Giardelli é um dos maiores especialistas brasileiros do mundo digital.
+Ele é web ativista, difusor de conceitos e atividades ligados à sociedade em rede, colaboração humana, economia criativa e inovação digital. Por onde passa, difunde ideias inovadoras e inspira o empreendedorismo social no Brasil por meio de palestras, aulas e, é claro, das redes sociais.</p>
+
+<p>Presidente de Sessão: Sizenando da Silva Campos Júnior
+Presidente da Unimed Goiânia</p>
+
+<p>Moderador: Rafael Moliterno Neto
+Presidente da Seguros Unimed
+<div class="dotted-border"></div>
+<h2 class="aviso">17h30 às 18h30</h2> <p>FEIRA DE NEGÓCIOS</p>
+<p>Visita aos estandes, sorteios e happy hour </p>
+            <div class="dotted-border"></div>
+           
+       </div>
+    	<!--fim content-->
+    	<div class="bg-brq">
+			<img src="includes/imagens/bg-brq.png" style="float: right;">
+		</div>
+		<div class="footer">
+			<ul class="evento">
+				<li style="border-left: none;"><a class="informacoes"
+					href="index.html" data-transition="none" title="Informações">Informações</a></li>
+				<li class="highlight"><a class="programacao" href="lista-programacao.html"
+					data-transition="none" title="">Programação</a></li>
+				<li><a class="negocios" href="negocio.html"
+					data-transition="none" title="">Negócios</a></li>
+				<li><a class="mapa" href="mapa.html" data-transition="none"
+					title="">Mapa</a></li>
+				<li><a class="executivos"
+					href="patrocinadores.html" data-transition="none" title="">Patrocínios</a></li>
+			</ul>
+		</div>
+    </div>
+    <!--fim container-->
+</body>
+</html>

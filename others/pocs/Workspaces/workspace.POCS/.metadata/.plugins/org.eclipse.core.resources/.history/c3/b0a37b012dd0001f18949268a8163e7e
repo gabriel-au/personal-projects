@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tribunal Superior do Trabalho</title>
+<!-- by Gustavo Marcelo -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+<!--  link rel="apple-touch-icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.png"/--> 
+<!-- link  rel="shortcut icon" href="<%=request.getContextPath()%>/imagens/logo-touch-icon.ico" type="image/icon" /--> 
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/style.css";</style>
+<style type="text/css" media="screen">@import "<%=request.getContextPath()%>/css/styleComplemento.css";</style>
+<script type="application/x-javascript">
+if (navigator.userAgent.indexOf('iPhone') != -1) {
+        addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+        }, false);
+}
+
+function hideURLbar() {
+        window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body>
+<div class="toolbar">
+<a href="<%=request.getContextPath()%>/" >
+<img src="<%=request.getContextPath()%>/imagens/topo.png" /></a>
+</div>
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/Pagina?p=Noticias" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">
+Sala de Not&iacute;cias
+</div>
+</div>
+<div class="arredondado">
+<div class="arredondado_chamada_rigth">
+22/01/2010
+ - 
+08h07
+</div>
+<div class="arredondado_chamada_dupla_borda">
+DECIS&Atilde;O
+</div>
+<div class="arredondado_titulo">
+Acordo entre seguradora e terceiro n&atilde;o isenta segurado de ressarcir
+</div>
+<div class="arredondado_chamada">
+O Superior Tribunal de Justi&ccedil;a decidiu que um segurado da Companhia de Seguros Minas Brasil S/A dever&aacute; responder pelo acidente automobil&iacute;stico que levou a &oacute;bito quatro pessoas no munic&iacute;pio de S&atilde;o Jo&atilde;o Del Rey, Minas Gerais. Os ministros da Quarta Turma entenderam que o acordo firmado entre a seguradora e os familiares das v&iacute;timas n&atilde;o isenta o segurado da responsabilidade de ressarcimento pelos danos morais e materiais decorrentes do desastre. A decis&atilde;o foi un&acirc;nime.
+<br>
+
+<br>
+No caso, os familiares das v&iacute;timas (sete) ajuizaram a&ccedil;&atilde;o contra o segurado e outro acusado alegando serem os causadores do acidente. Durante o andamento do processo, a seguradora firmou um acordo extrajudicial com os parentes das vitimas no qual ressarciu os danos morais e materiais.
+<br>
+
+<br>
+Em primeira inst&acirc;ncia, o juiz singular extinguiu o processo em rela&ccedil;&atilde;o aos parentes que firmaram o acordo extrajudicial. O magistrado entendeu que ?inexistindo pronunciamento judicial que rescinda a aludida transa&ccedil;&atilde;o, produz esta entre as partes o efeito de coisa julgada, extinguindo a controv&eacute;rsia e definindo direitos?. Ainda estabeleceu, no m&eacute;rito, uma pens&atilde;o mensal aos familiares menores de idade equivalente a 1/3 do sal&aacute;rio at&eacute; completarem 25 anos de idade e o pagamento por dano moral.
+<br>
+
+<br>
+Os familiares apelaram. O Tribunal de Justi&ccedil;a de Minas Gerais (TJMG) anulou a extin&ccedil;&atilde;o do processo para que outra senten&ccedil;a fosse proferida sob o fundamento de que o acordo extrajudicial firmado entre a companhia de seguros e os esp&oacute;lios das v&iacute;timas n&atilde;o fez refer&ecirc;ncia aos acusados de provocarem o acidente. Nesse sentido, o TJMG afirmou que o segurado dever&aacute; ser acionado judicialmente e pagar indeniza&ccedil;&atilde;o por danos morais e materiais no disposto do artigo 1031 do C&oacute;digo Civil.
+<br>
+
+<br>
+Inconformada, a Minas Brasil S/A recorreu ao STJ alegando ter atuado em nome de seu segurado. Sustentou que a seguradora e o segurado estariam equiparados a devedores solid&aacute;rios. Argumentou que a realiza&ccedil;&atilde;o do acordo extrajudicial sub-rogou no direito destes, operando a ren&uacute;ncia do cr&eacute;dito de forma irrestrita. Assim, solicitou a extin&ccedil;&atilde;o da d&iacute;vida a ambos.n
+<br>
+Em seu voto, o relator, ministro Luis Felipe Salom&atilde;o, destacou que a discuss&atilde;o n&atilde;o est&aacute; s&oacute; em saber a extens&atilde;o subjetiva do acordo extrajudicial realizado entre a seguradora e os familiares das v&iacute;timas, mas tamb&eacute;m o alcance material-objetivo desse acordo. Para o ministro, o pagamento realizado pelo segurador diretamente &agrave; v&iacute;tima, sem participa&ccedil;&atilde;o do segurado, n&atilde;o &eacute; fato apto para afastar por completo a responsabilidade do causador do dano e nem impede a instaura&ccedil;&atilde;o do processo em face do mesmo.
+<br>
+
+<br>
+O relator rejeitou a possibilidade de sub-roga&ccedil;&atilde;o operada com o pagamento feito pela seguradora diretamente aos familiares das v&iacute;timas por n&atilde;o abranger necessariamente todo o cr&eacute;dito decorrente do acidente, uma vez que n&atilde;o equipara o instituto da sub-roga&ccedil;&atilde;o &agrave; cess&atilde;o de cr&eacute;dito.
+<br>
+
+<br>
+Por fim, Luis Felipe Salom&atilde;o confirmou que n&atilde;o configura a rela&ccedil;&atilde;o da seguradora com o segurado como devedores solid&aacute;rios, uma vez que o contrato de responsabilidade civil facultativo n&atilde;o &eacute; em si bastante para criar a solidariedade em rela&ccedil;&atilde;o a atos praticados por este frente a terceiros
+</div>
+<div class="arredondado_chamada_negrito">
+Coordenadoria de Editoria e Imprensa 
+</div>
+<div class="arredondado_chamada_negrito">
+Esta p&aacute;gina foi acessada: 2991 vezes
+</div>
+</div>
+<div class="titulo_mais_noticias">
+<a href="<%=request.getContextPath()%>/Pagina?p=Noticias&m=listar&dataInicio=null" >
+Mais Not&iacute;cias  </a>
+</div>
+</body>
+</html>

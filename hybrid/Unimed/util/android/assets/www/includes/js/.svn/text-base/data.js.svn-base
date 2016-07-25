@@ -1,0 +1,463 @@
+var file;
+
+var sl;
+
+var indicador1 = [];
+var indicador2 = [];
+
+var indiceChartLinha = 1;
+
+getFile();
+
+function getFile(){
+
+	var json = $.ajax({ 
+		      url: "/WEBC-PocCentral/getFile.do", 
+		      type: "GET", 
+		      contentType: "application/x-www-form-urlencoded;charset=UTF-8",     
+		      dataType: 'json', 
+		      async:false 
+		   });
+			
+	file = eval(json.responseText);
+	
+	getEmpresas();
+	
+	filtroDeTempoAno();
+	
+	getIndicadorLinha(1);
+				   					   
+}
+
+function getEmpresas(){
+
+	var doc = document;
+	
+	for(var i = 0;i < file.length;i++){
+	
+		doc.forms[0].empresa.options[i] = new Option(file[i].nome,i);							
+	}
+	
+	getUnidades(0);
+		
+}
+
+function getUnidades(e){
+
+	var doc         = document;			
+	var unidade     = doc.forms[0].unidade;
+	var listUnidade = file[e].listUnidade;
+	
+	// LIMPANDO A COMBO DE UNIDADES
+	$("#unidade").find("option").remove();
+	
+	
+	// POPULANDO A COMBO COM NOVOS VALORES			
+	for(var i = 0;i < listUnidade.length;i++){	
+		unidade.options[i] = new Option(listUnidade[i].nome,i);							
+	}
+	
+	unidade.options[0].selected = true;
+	
+	getCelulas(e,0);
+}
+
+function getCelulas(e,u){
+
+	var doc        = document;
+	var celula     = doc.forms[0].celula;
+	var listCelula = file[e].listUnidade[u].listCelula;
+	
+	// LIMPANDO A COMBO DE CELULAS
+	$("#celula").find("option").remove();
+	
+	// POPULANDO A COMBO COM NOVOS VALORES	
+	for(var i = 0;i < listCelula.length;i++){
+		celula.options[i] = new Option(listCelula[i].nome,i);							
+	}
+	
+	celula.options[0].selected = true;
+	
+	//alert(celula.options[listCelula.length-1].text);
+	
+	getIndicadoresTermometro();
+	
+	getIndicadorLinha(indiceChartLinha);
+}
+
+function filtroDeTempoAno(){
+
+	var filtroAno = "<ul class='options'>";			
+			
+	var periodo = file[0].listUnidade[0].listCelula[0].listPeriodo;
+	
+	for(var i = 0;i < (periodo.length-1);i++){
+		if(periodo[i].ano != periodo[i+1].ano){
+			filtroAno += "<li id='ano_"+periodo[i].ano+"'><a href='javascript:void(0)' onclick='filtroDeTempoMes("+i+")'>"+periodo[i].ano+"</a></li>";
+		}
+	}
+
+	filtroAno += "<li class='highlight' id='ano_"+periodo[i].ano+"'><a href='javascript:void(0)' onclick='filtroDeTempoMes("+i+")' >"+periodo[i].ano+"</a></li></ul>";					
+	
+	$("#ano").html(filtroAno.toString());
+	
+	filtroDeTempoMes(i);			
+	
+}
+
+function filtroDeTempoMes(a){
+
+	var filtroMes = "";
+	var doc = document;
+	var ind = a;
+	
+	var periodo = file[0].listUnidade[0].listCelula[0].listPeriodo;
+	
+	for(var j = 0;j < periodo.length;j++){
+		if(periodo[a].ano == periodo[j].ano){
+			filtroMes += "<a href='javascript:void(0)' onclick='setMes(\""+periodo[j].mes+"\")'>"+periodo[j].mes+"</a>  ";
+		}
+	}
+	
+	doc.forms[0].ano.value = periodo[a].ano;
+	doc.forms[0].mes.value = periodo[a].mes;
+	
+	if(a >= 12){
+		a = 12 - a; 
+		if(a < 0){ a = a *(-1);}
+		
+		sl = a;
+	}
+	
+	if(a == 0){ $("#labelMes").html("Janeiro - "+periodo[ind].ano);}
+	if(a == 1){ $("#labelMes").html("Fevereiro - "+periodo[ind].ano);}
+	if(a == 2){ $("#labelMes").html("Março - "+periodo[ind].ano);}
+	if(a == 3){ $("#labelMes").html("Abril - "+periodo[ind].ano);}
+	if(a == 4){ $("#labelMes").html("Maio - "+periodo[ind].ano);}
+	if(a == 5){ $("#labelMes").html("Junho - "+periodo[ind].ano);}
+	if(a == 6){ $("#labelMes").html("Julho - "+periodo[ind].ano);}
+	if(a == 7){ $("#labelMes").html("Agosto - "+periodo[ind].ano);}
+	if(a == 8){ $("#labelMes").html("Setembro - "+periodo[ind].ano);}
+	if(a == 9){ $("#labelMes").html("Outubro - "+periodo[ind].ano);}
+	if(a == 10){$("#labelMes").html("Novembro - "+periodo[ind].ano);}
+	if(a == 11){$("#labelMes").html("Dezembro - "+periodo[ind].ano);}
+	
+	$("#mes").html(filtroMes.toString());	
+	
+	getIndicadoresTermometro();		
+}
+
+function setMes(p){
+	
+	document.forms[0].mes.value = p;
+	
+	getIndicadoresTermometro();
+}
+
+function getIndicadoresTermometro(){
+	
+	var doc = document;
+	
+	var empresa = doc.forms[0].empresa.selectedIndex;		
+	var unidade = doc.forms[0].unidade.selectedIndex;
+	var celula  = doc.forms[0].celula.selectedIndex;
+	
+	var ano = doc.forms[0].ano.value;
+	var mes = doc.forms[0].mes.value;
+	
+	var periodo = file[empresa].listUnidade[unidade].listCelula[celula].listPeriodo;
+		
+	var value;
+	var meta;
+	
+	var count = 0;
+		
+	for(var i = 0;i < periodo.length;i++){
+	
+		if(periodo[i].ano == ano && periodo[i].mes == mes){
+			count++;
+			
+			if(periodo[i].listIndicador[2].valor < periodo[i].listIndicador[3].valor){
+				$("#nsTemperature").addClass("hot");
+			}else{
+				$("#nsTemperature").removeClass("hot");    
+			}
+			
+			value = parseFloat(periodo[i].listIndicador[2].valor) * 100;
+			meta = parseFloat(periodo[i].listIndicador[3].valor) * 100;
+			
+			$("#nivelServicoAtual").html(value.toFixed(2));
+			$("#nivelServicoMeta").html(meta.toFixed(2));			
+			
+			$("#nsTemperature").animate({"height":(periodo[i].listIndicador[2].valor*100)+"%"},"slow");
+			$("#nsMeta").animate({"bottom":(periodo[i].listIndicador[3].valor*100)+"%"},"slow");
+			
+			value = parseFloat(periodo[i].listIndicador[7].valor) * 100;
+			meta = parseFloat(periodo[i].listIndicador[6].valor) * 100;
+			
+			if(value < meta){
+				$("#abTemperature").addClass("hot");
+			}else{
+				$("#abTemperature").removeClass("hot");    
+			}
+						
+			$("#absenteismoAtual").html(value.toFixed(2));
+			$("#absenteismoMeta").html(meta.toFixed(2));			
+			
+			$("#abTemperature").animate({"height":(periodo[i].listIndicador[7].valor*1000)+"%"},"fast");
+			$("#abMeta").animate({"bottom":(periodo[i].listIndicador[6].valor*1000)+"%"},"fast");
+				
+			if(periodo[i].listIndicador[9].valor < periodo[i].listIndicador[8].valor){
+				$("#toTemperature").addClass("hot");
+			}else{
+				$("#toTemperature").removeClass("hot");    
+			}
+			
+			value = parseFloat(periodo[i].listIndicador[9].valor) * 100;
+			meta = parseFloat(periodo[i].listIndicador[8].valor) * 100;
+									
+			$("#turnOverAtual").html(value.toFixed(2));
+			$("#turnOverMeta").html(meta.toFixed(2));					
+			
+			$("#toTemperature").animate({"height":(periodo[i].listIndicador[9].valor*1000)+"%"},"slow");
+			$("#toMeta").animate({"bottom":(periodo[i].listIndicador[8].valor*1000)+"%"},"slow");
+		
+			value = parseFloat(periodo[i].listIndicador[1].valor) * 100;
+												
+			$("#pcaAtual").html(value.toFixed(2));			
+			
+			$("#pcaTemperature").animate({"height":(periodo[i].listIndicador[1].valor*100)+"%"},"slow");
+			
+		}
+	}	
+	
+	if(count == 0){
+		
+		value = 0;
+		$("#nivelServicoAtual").html(value.toFixed(2));
+		$("#nivelServicoMeta").html(value.toFixed(2));			
+		
+		$("#nsTemperature").animate({"height":value+"%"},"slow");
+		$("#nsMeta").animate({"bottom":value+"%"},"slow");
+		
+		$("#absenteismoAtual").html(value.toFixed(2));
+		$("#absenteismoMeta").html(value.toFixed(2));			
+		
+		$("#abTemperature").animate({"height":value+"%"},"slow");
+		$("#abMeta").animate({"bottom":value+"%"},"slow");
+
+		$("#turnOverAtual").html(value.toFixed(2));
+		$("#turnOverMeta").html(value.toFixed(2));					
+		
+		$("#toTemperature").animate({"height":value+"%"},"slow");
+		$("#toMeta").animate({"bottom":value+"%"},"slow");
+												
+		$("#pcaAtual").html(value.toFixed(2));			
+		
+		$("#pcaTemperature").animate({"height":value+"%"},"slow");
+				
+	}
+}	
+
+function getIndicadorLinha(p){
+
+	indiceChartLinha = p;
+	
+	indicador1 = [];
+	indicador2 = [];
+	
+	var doc = document;
+	
+	var empresa = doc.forms[0].empresa.selectedIndex;		
+	var unidade = doc.forms[0].unidade.selectedIndex;
+	var celula  = doc.forms[0].celula.selectedIndex;
+	
+	var ano = doc.forms[0].ano.value;
+	var mes = doc.forms[0].mes.value;
+	
+	var periodo = file[empresa].listUnidade[unidade].listCelula[celula].listPeriodo;
+		
+	var k = 1;
+		
+	switch(p){
+		case 1:
+			k = 2;
+			break;
+		case 2:
+			k = 6;
+			break;
+		case 3:
+			k = 8;				
+			break;
+		case 4:
+			k = 1;	
+			break;
+		default:
+			break;	
+	}
+		
+	for(var i = 0;i < periodo.length;i++){
+			
+		var data = Date.UTC(eval(periodo[i].ano),(parseInt(eval(periodo[i].dataAnoMes.substring(4,6)-1))),1);	
+		if(k == 2){						
+			
+			indicador1.push([data,eval((parseFloat(periodo[i].listIndicador[k].valor)*100).toFixed(2))]);		
+			indicador2.push([data,eval((parseFloat(periodo[i].listIndicador[k+1].valor)*100).toFixed(2))]);
+		}else{
+			indicador1.push([data,eval((parseFloat(periodo[i].listIndicador[k+1].valor)*100).toFixed(2))]);		
+			indicador2.push([data,eval((parseFloat(periodo[i].listIndicador[k].valor)*100).toFixed(2))]);
+		}			
+	}
+	
+	switch(p){
+		case 1:
+			$("#labelChartLinha").html("Nível de Serviço");
+			renderChart(indicador1,indicador2);
+			break;
+		case 2:
+			$("#labelChartLinha").html("Absentçãismo");
+			renderChart(indicador1,indicador2);
+			break;
+		case 3:
+			$("#labelChartLinha").html("TurnOver");
+			renderChart(indicador1,indicador2);			
+			break;
+		case 4:
+			$("#labelChartLinha").html("PCA");
+			renderChartPCA(indicador1);	
+			break;
+		default:
+			break;	
+	}
+	
+	
+}
+
+function renderChart(indicador1,indicador2){
+
+	var chart;
+
+	var chart1 = {
+		chart: {
+			renderTo: 'container',
+			defaultSeriesType: 'line',
+			backgroundColor: '#dfdfdf'
+		},
+		credits: false ,
+		title: {
+			text: null
+		},
+		subtitle: {
+			text: null
+		},
+		xAxis: {
+			type: 'datetime',
+			labes: { 
+				align:'left',
+				x:10,
+				y:11
+			}
+			
+		},
+		yAxis: {
+			title: {
+				text: null
+			},
+			plotLines: [{
+				value: 0,
+				width: 1,
+				color: '#808080'
+			}]
+		},
+		tooltip: {
+			
+			shared: true,
+			crosshairs : true,
+			formatter: function(){
+				var s = '<b>' + Highcharts.dateFormat('%b/%Y',this.x) +'</b><br/>';
+				
+				$.each(this.points, function(i,point){
+					s +=  point.series.name + ': '+point.y + '<br>';
+				});
+				
+				return s;
+			}
+			
+		},
+		series: [{
+			name: 'Real'						
+			},{
+			name: 'Meta'
+			}]
+	};
+		
+	chart1.series[0].data = indicador1;
+	chart1.series[1].data = indicador2;
+	
+	chart = new Highcharts.Chart(chart1);
+
+}
+
+function renderChartPCA(indicador1){
+
+	var chart;
+
+	var chart1 = {
+		chart: {
+			renderTo: 'container',
+			defaultSeriesType: 'line',
+			backgroundColor: '#dfdfdf'
+		},
+		credits: false ,
+		title: {
+			text: null
+		},
+		subtitle: {
+			text: null
+		},
+		xAxis: {
+			type: 'datetime',
+			marginLeft:60,
+			marginRight:10,
+			labes: { 
+				align:'left',
+				x:3,
+				y:11
+			}
+			
+		},
+		yAxis: {
+			title: {
+				text: null
+			},
+			plotLines: [{
+				value: 0,
+				width: 1,
+				color: '#808080'
+			}]
+		},
+		tooltip: {
+			
+			shared: true,
+			crosshairs : true,
+			formatter: function(){
+				var s = '<b>' + Highcharts.dateFormat('%b/%Y',this.x) +'</b><br/>';
+				
+				$.each(this.points, function(i,point){
+					s +=  point.series.name + ': '+point.y + '<br>';
+				});
+				
+				return s;
+			}
+			
+		},
+		series: [{
+			name: 'PCA'						
+			}]
+	};
+		
+	chart1.series[0].data = indicador1;
+	
+	chart = new Highcharts.Chart(chart1);
+
+}

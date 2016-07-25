@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Prog. Acomp.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="lista-programacao.html">Voltar</a></div>
+        </div>
+        	
+        <div class="content android" data-scroll="y"><br />
+       		<h2 class="data">26/10</h2>
+        	<p><strong>9h30</strong> - Ponto de encontro no Centro de Convenções do Ceará.</p>
+            <p><strong>10h às 12h</strong> - Palestra: “Como ter estilo na era da moda democrática”, com Danielle Ferraz, jornalista e consultora de moda e estilo.</p>
+            <p><strong>12h às 14h</strong> - Almoço</p>
+            <p><strong>14h às 15h30</strong> - Aula-show: “Paixão, Poesia e Êxtase”, com o médico Malcolm Montgomery, o ginecologista das estrelas, e sua banda.</p> 
+            <p><strong>15h30 às 16h</strong> - Sorteio de prêmios.</p>          
+            <div class="dotted-border"></div>
+            
+           <h2 class="data">27/10</h2>
+           <p><strong>9h30</strong> - Saída dos hotéis.</p>
+            <p><strong>9h30 às 12h30</strong> - Passeio Turístico.</p>
+            <p>A Organização da 41ª Convenção Nacional Unimed oferecerá aos acompanhantes um city tour por Fortaleza, no dia 27 de outubro.<br /><br />A saída dos hotéis oficiais (Gran Marquise, Luzeiros, Seara, Praiano, Oasis Imperial, Quality, Othon, Golden Tulip Iate Plaza e Comfort) será às 9h e o passeio terminará no Centro de Convenções, onde será servido o almoço.<br /><br />
+
+O city tour faz parte da inscrição do acompanhante, mas os interessados devem confirmar presença pelo e-mail eventos@lbmviagens.com.br até o dia 17 de outubro, às 16h. Na mensagem, é necessário incluir o nome do acompanhante, a Unimed de origem e o nome do hotel em que ficará hospedado.</p>
+          <p><strong>12h30</strong> - Almoço no Centro de Convenções.</p> 
+            <p>Tarde livre.</p>
+           
+       </div>
+
+		<div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" class="highlight" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

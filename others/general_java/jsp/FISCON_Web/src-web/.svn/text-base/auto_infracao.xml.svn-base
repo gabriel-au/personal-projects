@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="auto_infracao" namespace="/auto_infracao" extends="default">
+		<action name="consultar" method="consultar"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/consultar.jsp</result>
+		</action>
+		<action name="listar" method="listar"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result name="success">/WEB-INF/src/auto_infracao/listar.jsp</result>
+			<result name="error">/WEB-INF/src/auto_infracao/consultar.jsp</result>
+		</action>
+		<action name="exibir" method="editar"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/exibir.jsp</result>
+		</action>
+		<action name="homologar" method="homologar"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/homologarListar.jsp</result>
+		</action>
+		<action name="homologarExibir" method="homologarExibir"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/homologarExibir.jsp</result>
+		</action>
+		<action name="salvar" method="salvar"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/homologarListar.jsp</result>
+		</action>
+		<action name="listarChaves" method="listarChaves"
+			class="br.com.xtrategia.fiscon.web.AutoInfracaoAction">
+			<result name="success">/WEB-INF/src/auto_infracao/listarChaves.jsp</result>
+			<result name="error">/WEB-INF/src/auto_infracao/listarChaves.jsp</result>
+		</action>
+		<action name="gerarMapaInfracao" method="gerarMapaInfracao"
+			class="br.com.xtrategia.fiscon.web.GeraMapaAutoInfracaoAction">
+			<result>/WEB-INF/src/auto_infracao/mapaInfracao.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

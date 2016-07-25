@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+         <div class="content android" data-scroll="y"><br />
+        	<h2 class="data">13/9 (quinta)</h2>
+        	<h2 class="aviso">9h às 10h</h2>
+        	<p><strong>Palestra: "Atenção à Saúde e Qualidade: Um Novo Modelo – Unimed do Brasil"</strong></p>
+        	<p><strong>Presidente</strong></p>
+            <p>Dr. João Batista Caetano, presidente da Fundação Unimed</p>
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Paulo Cesar Januzzi de Carvalho, presidente da Federação Intrafederativa Sul de Minas</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Paulo Borem, coordenador do Centro de Qualidade e Inovação da Unimed do Brasil<br />
+            Dr. Luis Pisco, Luis Pisco é vice-presidente do Conselho Diretivo da Administração <br />
+            Regional de Saúde de Lisboa e Vale do Tejo<br />
+            Dr. Luis Fernando Rolim Sampaio - Superintendente de Serviços Próprios – Unimed Belo Horizonte<br />
+            Dr. Cloer Vescia Alves, Especialista em Atenção Integral à Saúde da Unimed do Brasil </p>
+             <div class="dotted-border"></div>
+             
+            <h2 class="aviso">10h às 12h</h2>
+             <p><strong>Palestra: "Comunicação e Saúde: “A imagem da Unimed na imprensa”"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Dr. Nilson Luiz May, presidente da Federação Rio Grande do Sul</p>
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Domingos Silva Lavecchia, presidente da Federação Intrafederativa Nordeste Paulista<br />
+            Gaudêncio Torquato, especialista em comunicação empresarial<br />
+            Augusto Nunes, colunista da Revista Veja<br />
+            José Nêumanne Pinto, colunista da Rádio Jovem Pan</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">12h às 13h</h2>
+            <p><strong>a definir</strong></p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">14h30 às 15h30</h2>
+        	<p><strong>Palestra: "Cooperativismo de Trabalho Médico: Uma Nova Visão do Exercício da Medicina no Âmbito de Saúde Suplementar"</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente</strong></p>
+            <p>Dr. Orestes Barrozo Medeiros Pullin, presidente da Confederação Regional Mercosul </p>
+           
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Jamal Nasser Haddad, presidente da Federação Mato Grosso do Sul</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Florentino de Araújo Cardoso Filho, presidente da Associação Médica Brasileira (AMB)<br />
+            Dr. Geraldo Ferreira Filho, presidente da Federação Nacional dos Médicos (Fenam)<br />
+            Dr. Márcio Costa Bichara, representante do Conselho Federal de Medicina</p>
+            <div class="dotted-border"></div>
+            
+            
+            <h2 class="aviso">15h30 às 17h</h2>
+        	<p><strong>Palestra: "Cenários Macro Econômicos para Expansão do Cooperativismo no Brasil e no Mundo"</strong></p>
+			<p><strong>Moderador</strong></p>
+            <p>Dr. Valdmário Rodrigues Júnior, diretor de Integração Cooperativista da Unimed Brasil</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Eudes de Freitas Aquino, presidente da Unimed do Brasil<br />
+			Dr. José Carlos Guisado, presidente do IHCO - “Cooperativismo Mundial e na América Latina. Realidade e perspectivas”</p>
+			<div class="dotted-border"></div>
+			 
+            <h2 class="aviso">17h às 17h30</h2>
+        	<p><strong>Palestra: "CNU: Passado, Presente e Futuro"</strong></p>
+        	<h2 class="aviso">Palestrante</h2>
+        	<p>Dr. Mohamad Akl, presidente da Central Nacional Unimed</p>
+        	<div class="dotted-border"></div>
+        	
+            <h2 class="aviso">17h30 às 18h</h2>
+        	<p><strong>Entrega dos Prêmios</strong></p>
+        	<p>Comunicação<br />
+        	Marketing<br />
+        	Prêmio Nacional de RH</p>
+              
+           <p>&nbsp;</p>
+       </div>
+            
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" class="highlight" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

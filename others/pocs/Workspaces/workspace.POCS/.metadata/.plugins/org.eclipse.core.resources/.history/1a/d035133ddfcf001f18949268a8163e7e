@@ -1,0 +1,85 @@
+package br.jus.tst.mobilesite.servlet;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.tst.mobilesite.PadraoPaginas;
+import br.jus.tst.mobilesite.util.UtilString;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.Constructor;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class Pagina extends HttpServlet
+{
+  private static final long serialVersionUID = 1L;
+
+  protected void service(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException
+  {
+/* 33 */     UtilString.setFullPath(request.getContextPath());
+/* 34 */     response.setContentType("text/html");
+/* 35 */     PrintWriter out = response.getWriter();
+
+/* 37 */     String parametro = request.getParameter("p");
+
+/* 39 */     String metodo = request.getParameter("m");
+
+/* 41 */     Map listaParametros = new HashMap();
+/* 42 */     Enumeration itens = request.getParameterNames();
+/* 43 */     while (itens.hasMoreElements()) {
+/* 44 */       String nome = (String)itens.nextElement();
+/* 45 */       String valor = request.getParameter(nome);
+/* 46 */       listaParametros.put(nome, valor);
+    }
+
+/* 49 */     HttpSession session = request.getSession();
+    try {
+/* 51 */       if ((parametro == null) || (parametro.equals("")))
+/* 52 */         out.write(getPagina());
+      else
+/* 54 */         out.write(getPagina(parametro, metodo, listaParametros, session));
+    }
+    catch (SystemException e) {
+/* 57 */       throw new ServletException(e.getMessage());
+    }
+  }
+
+  private String getPagina()
+    throws SystemException
+  {
+/* 67 */     PaginaIndex pg = new PaginaIndex();
+/* 68 */     return pg.gerarPagina();
+  }
+
+  private String getPagina(String parametro, String metodo, Map<String, String> listaParametros, HttpSession session)
+    throws SystemException
+  {
+/* 80 */     if ((metodo == null) || (metodo.equals(""))) {
+/* 81 */       metodo = "gerarPagina";
+    }
+
+/* 84 */     String classeNome = "br.jus.tst.mobilesite.servlet.Pagina" + parametro;
+    try {
+/* 86 */       Object[] contrutoraParam = new Object[0];
+/* 87 */       Object objeto = java.lang.Class.forName(classeNome).getConstructors()[0]
+/* 88 */         .newInstance(contrutoraParam);
+
+/* 90 */       PadraoPaginas pagina = (PadraoPaginas)objeto;
+
+/* 92 */       return pagina.gerarPagina(metodo, listaParametros, session);
+    } catch (Exception e) {
+    }
+/* 95 */     throw new SystemException("Erro: " + e.getMessage());
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.tst.mobilesite.servlet.Pagina
+ * JD-Core Version:    0.6.0
+ */

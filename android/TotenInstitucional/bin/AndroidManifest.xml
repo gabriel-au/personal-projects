@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.primeits.toten.ui.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.TotenMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.InstitucionalActivity"
+            android:label="@string/title_activity_institucional" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.LinhaTempoActivity"
+            android:label="@string/title_activity_linha_tempo" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.ProjetosActivity"
+            android:label="@string/title_activity_projetos" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.GaleriaFotosActivity"
+            android:label="@string/title_activity_galeria_fotos" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.GaleriaVideosActivity"
+            android:label="@string/title_activity_galeria_videos" >
+        </activity>
+        <activity
+            android:name="br.com.primeits.toten.ui.activity.PicSelectActivity"
+            android:label="@string/title_activity_pic_select" >
+        </activity>
+    </application>
+
+</manifest>

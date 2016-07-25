@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MenuConfig>
+	<Menu name="venda" title="Venda" roles="">
+<!-- 		<Item name="cotacao" 				viewName="cotacao" 				title="Cotação"/> -->
+		<Item name="pedido" 				viewName="listaCliente" 		title="Pedido"/>
+		<Item name="posicaoVendas" 			viewName="posicaoVendas" 		title="Posição de Vendas"/>
+		<Item name="itensVendidosSemana" 	viewName="itensVendidosSemana" 	title="Itens Vendidos na Semana"/>
+		<Item name="titulosAberto"			viewName="titulosAberto" 		title="Títulos em Aberto"/>		
+		<!--Item name="adicionarItemGondola"   viewName="adicionarItemGondola" title="Adicionar Gondola"/-->
+	</Menu>
+	<Menu name="cliente" title="Clientes">
+		<Item name="clientes" 			viewName="clientes" 		title="Clientes"/>
+		<Item name="situacaoClientes" 	viewName="situacaoClientes" title="Situação de Clientes"/>
+	</Menu>		
+	<Menu name="vendedor" title="Vendedor" roles="">
+		<Item name="inicialRca" 			viewName="inicialRca" 				title="Inicial"/>
+		<Item name="senhasAcessoVendasNet" 	viewName="senhasAcessoVendasNet" 	title="Senha de Acesso VendasNet"/>
+		<Item name="cadastroChaveAcessoNFe" viewName="cadastroChaveAcessoNFe" 	title="Cadastro Chave de Acesso NFe"/>
+		<Item name="cidadesTerritorios" 	viewName="cidadesTerritorios" 		title="Cidades dos Territórios"/>
+		<Item name="atualizacaoCadastral" 	viewName="atualizacaoCadastral" 	title="Atualização Cadastral"/>
+	</Menu>
+	<Menu name="gerente" title="Gerente" roles="">
+		<Item name="inicialGm" viewName="inicialGm" title="Relação RCA's"/>
+	</Menu>
+	<NavigationConfig>
+		<!-- MODULO VENDEDOR -->
+		<view name="inicial" 						page="../martins/index.html" />
+		<view name="inicialRca" 					page="../martins/indexRca.html" />
+		<view name="posicaoVendas" 					page="../martins/posicaoDeVendas.html" />
+		<view name="senhasAcessoVendasNet" 			page="../martins/senhasVendasNet.html" />
+		<view name="cadastroChaveAcessoNFe" 		page="../martins/cadastroChave.html" />
+		<view name="cidadesTerritorios" 			page="../martins/cidadesTerritorios.html" />
+		<view name="atualizacaoCadastral" 			page="../martins/cadastroAtualizacao.html" />
+		<view name="descAvisosCliente" 				page="../martins/descAvisosClientes.html" />
+		<!-- MODULO CLIENTE -->	
+		<view name="clientes" 						page="../relacionamento/listaClientes.html" />
+		<view name="clientePedidos" 				page="../relacionamento/clientePedidos.html" />
+		<view name="clienteRelacionamento" 			page="../relacionamento/clienteRelacionamento.html" />
+		<view name="clienteDetalhe" 				page="../relacionamento/clienteDetalhe.html" />
+		<view name="situacaoClientes" 				page="../relacionamento/situacaoClientes.html" />
+		<!-- MODULO VENDA -->	
+		<view name="adicionarItemGondola" 			page="../vendas/gondolaAdicionar.html" />
+		<view name="clienteGondola" 				page="../relacionamento/clienteGondola.html" />
+		<view name="listarGondolaCliente" 			page="../vendas/gondola.html" />
+		<view name="beneficiosCustomizados" 		page="../vendas/beneficiosCustomizados.html" />
+		<view name="beneficiosCustomizadosDetalhe" 	page="../vendas/beneficiosCustomizadosDetalhe.html" />
+		<view name="informacoesGerais" 				page="../vendas/infosGerais.html" />
+		<view name="infoPedido" 					page="../vendas/infoPedido.html" />
+		<view name="cotacao"						page="../comum/infoSprint2.html" />
+		<view name="listaCliente" 					page="../vendas/listaClientes.html" />
+		<view name="todosPedidos" 					page="../vendas/todosPedidos.html" />
+		<view name="agendaRoteirizacao" 			page="../vendas/agendaRoteirizacao.html" />
+		<view name="itensVendidosSemana" 			page="../vendas/itensVendidos.html" />
+		<view name="titulosAberto" 					page="../vendas/titulosEmAberto.html" />
+		<view name="condPagamento" 					page="../vendas/condPagamento.html" />
+		<view name="cad" 							page="../vendas/cad.html" />
+		<view name="retornos" 						page="../vendas/relacaoRetornos.html" />
+		<view name="cortes" 						page="../vendas/cortes.html" />
+		<view name="modeloDistribuicao" 			page="../vendas/modeloDistribuicao.html" />
+		<view name="agendaRoteirizacao" 			page="../vendas/agendaRoteirizacao.html" />
+		<view name="titulosAberto" 					page="../vendas/titulosEmAberto.html" />
+		<view name="itensDisponiveis" 				page="../vendas/itensDisponiveis.html" />
+		<view name="itensSimilares" 				page="../vendas/itensSimilares.html" />
+		<view name="caminhao" 						page="../vendas/caminhao.html" />
+		<view name="produtoDesc"					page="../vendas/produtoDesc.html" />
+		<view name="fecharPedido" 					page="../vendas/fecharPedido.html" />
+		<view name="promocoes" 					    page="../vendas/promocoes.html" />
+		<view name="fecharPedidoMensagem" 			page="../vendas/fecharPedidoMensagem.html" />
+		<view name="kit" 							page="../vendas/kit.html" />
+		<view name="produtoDetahe"					page="../vendas/produtoDetahe.html" />
+		
+		<!-- MODULO GERENTE -->
+		<view name="inicialGm" page="../martins/indexGm.html" />
+	</NavigationConfig>
+</MenuConfig>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+	
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+		<form>
+		</form>
+        
+		<div class="header">
+        	<div class="title">Executivos</div>
+			<div class="sombra"></div>
+        </div>
+		
+		<div class="content">
+		<!--inicio content-->
+
+			<div id="dadosUsuario">
+				<h2 class="title-login">Efetue seu login</h2>
+				
+				<div class="formulario">
+					<input type="text" value = "" id="usuario"/>
+				</div>	
+				<div class="formulario">
+					<input type="password" value = "" id="senha"/>
+				</div>	
+				<div class="formulario">
+					<img src="includes/images/bt_entrar.png" onclick='login()' id='enviar'/>
+				</div>
+				<br/><br/>
+			</div>
+       
+			<div data-scroll="y" id="sy" style="height:315px">
+				<div id="listaDeEmpresas" style="display:none">
+				</div>
+			</div>
+			
+    	<!--fim content-->
+        </div>
+	
+		<div class="bg-brq"></div>
+
+		 <!--inicio footer-->
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li class="highlight"><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+		<!--fim container-->
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+		if(localStorage['idUsuario'] != "0" && localStorage['idUsuario'] != null){
+		
+			$("#dadosUsuario").css("display","none");
+			$("#sy").css("display","");
+			$("#listaDeEmpresas").css("display","");
+			$("#listaDeEmpresas").removeClass("msg-login");
+		
+			listarEmpresas();
+		
+			timedRefresh(30000);
+			
+		}else{
+	
+			$("#sy").css("display","none");
+			$("#dadosUsuario").css("display","");
+			$("#listaDeEmpresas").css("display","");
+			$("#listaDeEmpresas").addClass("msg-login");
+		
+			$("#listaDeEmpresas").html("Favor informar os dados de login.");
+	
+		}
+		
+		
+	});
+	
+	</script>
+
+</div>
+
+</body>
+</html>

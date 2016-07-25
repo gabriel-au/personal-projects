@@ -1,0 +1,1057 @@
+TDashboard
+v7
+r0
+t336319771.933714
+cCheck dependencies
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004D54CF0700000000000689C0
+t1297403655
+s428480
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/Availability.h
+c000000004D4F7A2B0000000000001B19
+t1297054251
+s6937
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.h
+c000000004DD18C160000000000000226
+t1305578518
+s550
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m
+c000000004DD18CEE000000000000071A
+t1305578734
+s1818
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.h
+c000000004DD3E0F50000000000000214
+t1305731317
+s532
+i<Foundation/Foundation.h>
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m
+c000000004DD41EF50000000000000C1A
+t1305747189
+s3098
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.h
+c000000004DD3E55A0000000000000107
+t1305732442
+s263
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m
+c000000004DD401CD0000000000000481
+t1305739725
+s1153
+i"Network.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.h
+c000000004DD1922000000000000001E9
+t1305580064
+s489
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m
+c000000004DD18D060000000000000354
+t1305578758
+s852
+i"WebViewAppDelegate.h"
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.h
+c000000004DD3E05F00000000000001A4
+t1305731167
+s420
+i<UIKit/UIKit.h>
+i"InvokedUrlCommand.h"
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m
+c000000004DD6BD9D0000000000000786
+t1305918877
+s1926
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Dashboard_Prefix.pch
+c000000004DC978DA0000000000000141
+t1305049306
+s321
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<Availability.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList
+c000000004DEFC56400000000000003C1
+t1307559268
+s961
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+t1307559269
+s16388
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+t1307559269
+s45964
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+t1307559269
+s9268
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+t1307559269
+s50516
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+t1307559269
+s47040
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+t1307559269
+s6364
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app
+t1307559270
+s306
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app.dSYM
+t1307559269
+s102
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+t1307559269
+s26816
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+t1307559268
+s692
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/PkgInfo
+t1307559268
+s8
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings
+t1307559269
+s122
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/MainWindow.nib
+t1307559269
+s1123
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/WebViewViewController.nib
+t1307559270
+s951
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/icon.png
+t1307559269
+s65594
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/icon@2x.png
+t1307559269
+s65594
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/www
+t1307559269
+s408
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/InfoPlist.strings
+c000000004DC978DA0000000000000064
+t1305049306
+s100
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/MainWindow.xib
+c000000004DD6C0BC0000000000002BC1
+t1305919676
+s11201
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/WebViewViewController.xib
+c000000004DD6C04600000000000021A6
+t1305919558
+s8614
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon.png
+c000000004D891958000000000001003A
+t1300830552
+s65594
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon@2x.png
+c000000004D891958000000000001003A
+t1300830552
+s65594
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m
+c000000004DD6C67E0000000000000169
+t1305921150
+s361
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/www
+c000000004DD5731300000000000001BA
+t1305834259
+s442
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.h
+c000000004DD18C160000000000000226
+t1305578518
+s550
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m
+c000000004DD18CEE000000000000071A
+t1305578734
+s1818
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.h
+c000000004DFB5FA50000000000000214
+t1308319653
+s532
+i<Foundation/Foundation.h>
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m
+c000000004DFB5F890000000000000C42
+t1308319625
+s3138
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.h
+c000000004DD3E55A0000000000000107
+t1305732442
+s263
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m
+c000000004DFB4E6D00000000000006BB
+t1308315245
+s1723
+i"Network.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.h
+c000000004DD1922000000000000001E9
+t1305580064
+s489
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m
+c000000004DD18D060000000000000354
+t1305578758
+s852
+i"WebViewAppDelegate.h"
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.h
+c000000004DD3E05F00000000000001A4
+t1305731167
+s420
+i<UIKit/UIKit.h>
+i"InvokedUrlCommand.h"
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m
+c000000004E1B3D1E000000000000083C
+t1310407966
+s2108
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Dashboard_Prefix.pch
+c000000004DC978DA0000000000000141
+t1305049306
+s321
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<Availability.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList
+c000000004E204E2000000000000003A9
+t1310740000
+s937
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+t1310740002
+s18168
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+t1310740002
+s47744
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+t1310740002
+s12040
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+t1310740002
+s52296
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+t1310740002
+s49876
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+t1310740002
+s8144
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app
+t1310740003
+s340
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app.dSYM
+t1310740002
+s102
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+t1310740002
+s31144
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+t1310740000
+s708
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/PkgInfo
+t1310740000
+s8
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings
+t1307559269
+s122
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/en.lproj/MainWindow.nib
+t1307559269
+s1123
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/en.lproj/WebViewViewController.nib
+t1310740002
+s951
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/icon.png
+t1307559269
+s65594
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/poccentral
+t1310740002
+s204
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/InfoPlist.strings
+c000000004DC978DA0000000000000064
+t1305049306
+s100
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/MainWindow.xib
+c000000004DD6C0BC0000000000002BC1
+t1305919676
+s11201
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/WebViewViewController.xib
+c000000004E1C566E00000000000021A7
+t1310479982
+s8615
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/icon.png
+c000000004DED31730000000000000D4F
+t1307390323
+s3407
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m
+c000000004DD6C67E0000000000000169
+t1305921150
+s361
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/poccentral
+c000000004E1B682600000000000000EE
+t1310418982
+s238
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.h
+c000000004DD18C160000000000000226
+t1305578518
+s550
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m
+c000000004DD18CEE000000000000071A
+t1305578734
+s1818
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.h
+c000000004DFB5FA50000000000000214
+t1308319653
+s532
+i<Foundation/Foundation.h>
+i"InvokedUrlCommand.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m
+c000000004DFB5F890000000000000C42
+t1308319625
+s3138
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.h
+c000000004DD3E55A0000000000000107
+t1305732442
+s263
+i<Foundation/Foundation.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m
+c000000004DFB4E6D00000000000006BB
+t1308315245
+s1723
+i"Network.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.h
+c000000004DD1922000000000000001E9
+t1305580064
+s489
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m
+c000000004DD18D060000000000000354
+t1305578758
+s852
+i"WebViewAppDelegate.h"
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.h
+c000000004E559B4900000000000001A4
+t1314233161
+s420
+i<UIKit/UIKit.h>
+i"InvokedUrlCommand.h"
+i"Loader.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m
+c000000004E2080160000000000000876
+t1310752790
+s2166
+i"WebViewViewController.h"
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Dashboard_Prefix.pch
+c000000004DC978DA0000000000000141
+t1305049306
+s321
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<Availability.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app.dSYM
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/PkgInfo
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/en.lproj/MainWindow.nib
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/en.lproj/WebViewViewController.nib
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/icon.png
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/poccentral
+t2
+s0
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/en.lproj/InfoPlist.strings
+c000000004DC978DA0000000000000064
+t1305049306
+s100
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/en.lproj/MainWindow.xib
+c000000004DD6C0BC0000000000002BC1
+t1305919676
+s11201
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/en.lproj/WebViewViewController.xib
+c000000004E1C566E00000000000021A7
+t1310479982
+s8615
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/icon.png
+c000000004DED31730000000000000D4F
+t1307390323
+s3407
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m
+c000000004DD6C67E0000000000000169
+t1305921150
+s361
+i<UIKit/UIKit.h>
+
+N/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/poccentral
+c000000004E1B682600000000000000EE
+t1310418982
+s238
+
+N/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch.gch
+t1307559269
+s15846832
+
+N/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch.gch
+t1310740002
+s15879600
+
+N/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch.gch
+t2
+s0
+
+NDashboard-Info.plist
+c000000004E5598BC000000000000042C
+t1314232508
+s1068
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies336319771#336319771#0(0"0(0#1#0"8604487904#0"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.381475
+e329252069.454541
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m329252069#329252069#0(0"0(0#0#92"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m8604498848#2313"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/InvokedUrlCommand.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.226350
+e332432802.323357
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m332432802#332432802#0(0"0(0#0#88"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m8606639584#2269"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/InvokedUrlCommand.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s335924779.855230
+e335924779.952613
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m335924779#335924779#0(0"0(0#0#100"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m8610252576#2401"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/InvokedUrlCommand.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/InvokedUrlCommand.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.383076
+e329252069.479270
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m329252069#329252069#0(0"0(0#0#81"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m8604270752#2291"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Loader.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.320895
+e332432802.409008
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m332432802#332432802#0(0"0(0#0#77"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m8603060672#2247"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Loader.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s335924779.913552
+e335924780.042232
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m335924779#335924780#0(0"0(0#0#89"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m8609970656#2379"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Loader.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Loader.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.287918
+e329252069.381336
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m329252069#329252069#0(0"0(0#0#82"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m8603988672#2293"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/Network.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.323472
+e332432802.399155
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m332432802#332432802#0(0"0(0#0#78"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m8590375200#2249"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/Network.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s335924779.952750
+e335924780.020876
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m335924779#335924780#0(0"0(0#0#90"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m8605205472#2381"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/Network.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Network.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.285361
+e329252069.407127
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m329252069#329252069#0(0"0(0#0#93"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m8604336800#2315"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewAppDelegate.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.224577
+e332432802.337800
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m332432802#332432802#0(0"0(0#0#89"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m8612041600#2271"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewAppDelegate.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s336319745.905631
+e336319747.996135
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@109"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m336319745#336319747#0(0"0(0#0#101"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m8604532352#2403"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewAppDelegate.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewAppDelegate.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.286633
+e329252069.410771
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m329252069#329252069#0(0"0(0#0#96"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m8605712128#2321"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Classes/WebViewViewController.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.225327
+e332432802.344508
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m332432802#332432802#0(0"0(0#0#92"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m8609567104#2277"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Classes/WebViewViewController.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s336319745.906944
+e336319747.995768
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m336319745#336319747#0(0"0(0#0#104"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m8603630368#2409"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Classes/WebViewViewController.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/WebViewViewController.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252069.284070
+e329252069.382963
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m329252069#329252069#0(0"0(0#0#71"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m8603954688#2279"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/main.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432802.223631
+e332432802.320771
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m332432802#332432802#0(0"0(0#0#67"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m8613701472#2235"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/main.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s335924779.852090
+e335924779.913411
+r1
+xCompileC
+xbuild/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m335924779#335924779#0(0"0(0#0#79"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m8595710752#2367"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -include /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/main.m" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/MainWindow.xib"
+s329252069.564386
+e329252070.013766
+r1
+xCompileXIB
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/MainWindow.xib
+lSLF07#2@34"CompileXIB en.lproj/MainWindow.xib329252069#329252070#0(0"0(0#0#88"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/MainWindow.xib8603059936#674"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/MainWindow.nib" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/WebViewViewController.xib"
+s329252069.564902
+e329252070.223107
+r1
+xCompileXIB
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/WebViewViewController.xib
+lSLF07#2@45"CompileXIB en.lproj/WebViewViewController.xib329252069#329252070#0(0"0(0#0#99"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/WebViewViewController.xib8601911168#696"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/WebViewViewController.nib" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/WebViewViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/WebViewViewController.xib"
+s332432802.620452
+e332432803.008023
+r1
+xCompileXIB
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/WebViewViewController.xib
+lSLF07#2@45"CompileXIB en.lproj/WebViewViewController.xib332432802#332432803#0(0"0(0#0#95"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/WebViewViewController.xib8612813280#684"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/en.lproj/WebViewViewController.nib" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/en.lproj/WebViewViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/en.lproj/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/en.lproj/WebViewViewController.xib"
+r0
+
+CCopyStringsFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings" en.lproj/InfoPlist.strings
+s329252069.563682
+e329252069.638448
+r1
+xCopyStringsFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF07#2@31"Copy en.lproj/InfoPlist.strings329252069#329252069#0(0"0(0#0#91"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/en.lproj/InfoPlist.strings8603849760#541"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary en.lproj/InfoPlist.strings --outdir "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/en.lproj"0#
+
+CCopyStringsFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings" en.lproj/InfoPlist.strings
+r0
+
+CCopyStringsFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/en.lproj/InfoPlist.strings" en.lproj/InfoPlist.strings
+r0
+
+CCpResource build/Debug-iphonesimulator/Dashboard.app/icon.png icon.png
+s329252069.566336
+e329252069.603578
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Dashboard.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png329252069#329252069#0(0"0(0#0#73"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon.png8603641312#552"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon.png" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CCpResource build/Debug-iphonesimulator/Dashboard.app/icon@2x.png icon@2x.png
+s329252069.568182
+e329252069.607049
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Dashboard.app/icon@2x.png
+xicon@2x.png
+lSLF07#2@16"Copy icon@2x.png329252069#329252069#0(0"0(0#0#76"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon@2x.png8603364832#555"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/icon@2x.png" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CCpResource build/Debug-iphonesimulator/Dashboard.app/poccentral poccentral
+s332432802.621152
+e332432802.634505
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Dashboard.app/poccentral
+xpoccentral
+lSLF07#2@15"Copy poccentral332432802#332432802#0(0"0(0#0#71"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/poccentral8612205408#542"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/poccentral" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CCpResource build/Debug-iphonesimulator/Dashboard.app/www www
+s329252069.565469
+e329252069.723233
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Dashboard.app/www
+xwww
+lSLF07#2@8"Copy www329252069#329252069#0(0"0(0#0#68"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/www8599460128#547"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/www" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CGenerateDSYMFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app.dSYM" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard"
+s329252069.547123
+e329252069.563600
+r1
+xGenerateDSYMFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app.dSYM
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/Dashboard.app.dSYM build/Debug-iphonesimulator/Dashboard.app/Dashboard329252069#329252069#0(0"0(0#0#116"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard8605915904#473"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app.dSYM"0#
+
+CGenerateDSYMFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app.dSYM" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard"
+s332432802.598087
+e332432802.620300
+r1
+xGenerateDSYMFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app.dSYM
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/Dashboard.app.dSYM build/Debug-iphonesimulator/Dashboard.app/Dashboard332432802#332432802#0(0"0(0#0#112"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard8596126624#461"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app.dSYM"0#
+
+CGenerateDSYMFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app.dSYM" "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard"
+s336319748.534037
+e336319748.564375
+r1
+xGenerateDSYMFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app.dSYM
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/Dashboard.app.dSYM build/Debug-iphonesimulator/Dashboard.app/Dashboard336319748#336319748#0(0"0(0#0#124"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard8600404224#497"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard" -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app.dSYM"0#
+
+CLd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard" normal i386
+s329252069.479388
+e329252069.547001
+r1
+xLd
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+xnormal
+xi386
+lSLF07#2@121"Link /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard329252069#329252069#0(0"0(0#0#0"8603616256#1050"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk "-L/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" -filelist "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Dashboard"0#
+
+CLd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard" normal i386
+s332432802.409124
+e332432802.597782
+r1
+xLd
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+xnormal
+xi386
+lSLF07#2@117"Link /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard332432802#332432802#0(0"0(0#0#0"8609580064#1061"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk "-L/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" -filelist "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework SystemConfiguration -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Dashboard"0#
+
+CLd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard" normal i386
+s336319747.996190
+e336319748.533690
+r1
+xLd
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard
+xnormal
+xi386
+lSLF07#2@129"Link /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard336319747#336319748#0(0"0(0#0#0"8607164864#1121"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk "-L/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" -filelist "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Objects-normal/i386/Dashboard.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework SystemConfiguration -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Dashboard"0#
+
+CProcessInfoPlistFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Info.plist" Dashboard-Info.plist
+s329252068.499102
+e329252068.512080
+r1
+xProcessInfoPlistFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+xDashboard-Info.plist
+lSLF07#2@28"Process Dashboard-Info.plist329252068#329252068#0(0"0(0#0#85"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Dashboard-Info.plist3418059989470962176#569"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Dashboard-Info.plist -genpkginfo "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app/Info.plist"0#
+
+CProcessInfoPlistFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Info.plist" Dashboard-Info.plist
+s332432800.562354
+e332432800.571023
+r1
+xProcessInfoPlistFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+xDashboard-Info.plist
+lSLF07#2@28"Process Dashboard-Info.plist332432800#332432800#0(0"0(0#0#81"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Dashboard-Info.plist8606049568#557"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Dashboard-Info.plist -genpkginfo "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app/Info.plist"0#
+
+CProcessInfoPlistFile "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Info.plist" Dashboard-Info.plist
+s336319745.861191
+e336319745.905103
+r1
+xProcessInfoPlistFile
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Info.plist
+xDashboard-Info.plist
+lSLF07#2@28"Process Dashboard-Info.plist336319745#336319745#0(0"0(0#0#93"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Dashboard-Info.plist8241991261514588160#593"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Dashboard-Info.plist -genpkginfo "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app/Info.plist"0#
+
+CProcessPCH /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch.gch Dashboard_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s329252068.512289
+e329252069.283931
+r1
+xProcessPCH
+x/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch.gch
+xDashboard_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile Dashboard_Prefix.pch329252068#329252069#0(0"0(0#0#85"/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Dashboard_Prefix.pch8606025312#2141"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/Dashboard_Prefix.pch" -o /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-begzbiemcpwocidppwqgzeyordho/Dashboard_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch.gch Dashboard_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s332432800.571175
+e332432802.223462
+r1
+xProcessPCH
+x/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch.gch
+xDashboard_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile Dashboard_Prefix.pch332432800#332432802#0(0"0(0#0#81"/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Dashboard_Prefix.pch8611128800#2101"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/Dashboard_Prefix.pch" -o /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-bnmuxoiwbnvudrcwdyenjbkzauhw/Dashboard_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch.gch Dashboard_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s335924779.015185
+e335924779.851997
+r1
+xProcessPCH
+x/var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch.gch
+xDashboard_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile Dashboard_Prefix.pch335924779#335924779#0(0"0(0#0#93"/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Dashboard_Prefix.pch8616619072#2221"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-generated-files.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-own-target-headers.hmap" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-all-target-headers.hmap" -iquote "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/Dashboard-project-headers.hmap" "-F/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/include" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources/i386" "-I/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Dashboard.build/Debug-iphonesimulator/Dashboard.build/DerivedSources" -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/Dashboard_Prefix.pch" -o /var/folders/u5/u5pCRhMQGSCwYkP+AZI3HqVxHbM/-Caches-/com.apple.Xcode.1753042550/SharedPrecompiledHeaders/Dashboard_Prefix-gmoxwjvovbmfgefcagbfjccvpsoi/Dashboard_Prefix.pch.gch0#
+
+CTouch "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app"
+s329252070.223227
+e329252070.225850
+r1
+xTouch
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app
+lSLF07#2@112"Touch /Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app329252070#329252070#0(0"0(0#0#0"8604452320#336"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/dashboard bradesco/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CTouch "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app"
+s332432803.008145
+e332432803.010950
+r1
+xTouch
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app
+lSLF07#2@108"Touch /Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app332432803#332432803#0(0"0(0#0#0"8609628608#328"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/demo dashboard/build/Debug-iphonesimulator/Dashboard.app"0#
+
+CTouch "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app"
+s336319748.564792
+e336319748.567896
+r1
+xTouch
+x/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app
+lSLF07#2@120"Touch /Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app336319748#336319748#0(0"0(0#0#0"8604480128#352"    cd "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/alexandreoliveira/Dropbox/projetos/BRQ/governanca/dashboard final/build/Debug-iphonesimulator/Dashboard.app"0#
+

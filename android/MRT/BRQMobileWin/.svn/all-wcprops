@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/5661/framework/code/trunk/BRQMobileWin
+END
+plugins-sample.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/874/framework/code/trunk/BRQMobileWin/plugins-sample.xml
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/874/framework/code/trunk/BRQMobileWin/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/874/framework/code/trunk/BRQMobileWin/build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/874/framework/code/trunk/BRQMobileWin/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mobile/!svn/ver/874/framework/code/trunk/BRQMobileWin/.classpath
+END

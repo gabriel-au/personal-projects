@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Oficinas</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="lista-programacao.html">Voltar</a></div>
+        </div>
+        	
+        <div class="content android" data-scroll="y"><br />
+        	<h2 class="aviso">VAGAS LIMITADAS</h2>
+        	<p>No dia 11 de setembro (terça-feira) acontecerão as tradicionais oficinas para dirigentes e gerentes das Unimeds, no Costão do Santinho SPA, Golf e Resort.
+            <p>A participação é gratuita e não está vinculada à inscrição da 42ª Convenção Nacional Unimed.</p>
+            <p>As inscrições podem ser realizadas até o dia 28 de agosto de 2012.</p>
+			<p>Portanto, aqueles que tiverem interesse em participar apenas das Oficinas devem se inscrever em apenas um dos cursos no site da Fundação Unimed.</p>
+            <p>Ao todo serão oito oficinas, realizadas no período da tarde.</p>
+            
+           <ul class="itens">
+              <li><a href="oficina-conteudo-01.html">Implementando o 5S - Case Unimed do Brasil</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-02.html">Informações Gerenciais e Acompanhamento Econômico e Financeiro</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-03.html">Líder Coach</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-04.html">Redes Sociais</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-05.html">Custos Assistenciais e Estratégia de Recursos Próprios</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-06.html">Gestão da Qualidade por meio da Acreditação</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-07.html">Branding como Estratégia: Conquistando Mercados e Corações</a></li>
+              <div class="dotted-border-lista"></div>
+              <li><a href="oficina-conteudo-08.html">Estratégia da Unimed do Brasil junto ao Órgão Regulador</a></li>
+           </ul> 
+           
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <!--li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li-->
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {background-color:#666666; padding:0 0px; margin:2px 15px; font-family: helvetica neue; color:#FFFFFF;}
+br.clear {width:0; height:0; line-height:0; margin:0; clear:both;}
+
+h1 {font-size:18px; line-height:25px; margin:0 10px; font-weight:lighter;}
+
+.box {float:left; margin:2px; background-color:#333333; position:relative;}
+
+.container {float:left; margin:2px;}
+.container .box {margin:0 4px 4px 0;}
+.container .lastX {margin-right:0;}
+.container .lastY {margin-bottom:0;}
+
+.chartArea {float:left; width:100%;height:100%; overflow:hidden;}
+
+/*Tabela*/
+table {width:100%; border:0; padding:0; margin:0;}
+th {border-bottom:1px solid #666666; padding:5px; font-weight:normal; text-align:left;}
+td {padding:5px; color:#CCCCCC; font-weight:lighter;}
+tr.off {background-color:#444444;}
+
+/*EIXO X*/
+.t1x {width:120px;}
+.t2x {width:244px;}
+.t3x {width:368px;}
+.t4x {width:492px;}
+.t5x {width:616px;}
+.t6x {width:740px;}
+.t7x {width:864px;}
+.t8x {width:988px;}
+
+/*EIXO Y*/
+.t1y {height:120px;}
+.t1y .chartArea {height:95px;}
+.t2y {height:244px;}
+.t2y .chartArea {height:219px;}
+.t3y {height:368px;}
+.t3y .chartArea {height:343px;}
+.t4y {height:492px;}
+.t4y .chartArea {height:367px;}
+.t5y {height:616px;}
+.t5y .chartArea {height:591px;}
+.t6y {height:740px;}
+.t6y .chartArea {height:715px;}
+.t7y {height:864px;}
+.t7y .chartArea {height:739px;}
+.t8y {height:978px;}
+.t8y .chartArea {height:853px;}
+
+/*COMPONENTES*/
+.assinaturaBrq {display:block; margin:30px auto;}
+
+/*Links*/
+.button {display:block; width:100%; height:64px; background: url(../imagens/buttons.png) no-repeat left top;}
+.bt_index {background-position:0 0;}
+.bt_index:hover {background-position:-120px 0;}
+.bt_configs {background-position:0 -64px; height:60px;}
+.bt_configs:hover {background-position:-120px -64px;}
+
+/*Atualização*/
+.smallBoxText {margin-top: 25px; text-align:center; font-size:12px; font-weight:lighter;}
+.smallBoxText strong {font-size:36px;;}
+
+/*Indicadores*/
+.indicadorUP, .indicadorDown, .indicadorStill {display:inline-block; margin:10px 0 0 10px; width:50px; height:50px; background: url(../imagens/indicadores.png) no-repeat left top;}
+.indicadorDown {background-position: -50px 0;} 
+.indicadorStill {background-position: -100px 0;}
+.indicadorValue {display:inline-block; font-size:18px; font-weight:lighter;}
+.indicadorValue strong {font-size:60px;}
+
+/*Bandeira*/
+.flag {display:block; width:38px; height:38px; position:absolute; top:0; right:0; background: url(../imagens/flags.png) no-repeat left top;}
+.flagClose {background-position: 0 -38px;}
+.flagClose:hover {background-position: -38px -38px;}
+.flagFilter {background-position: 0 -76px;}
+.flagFilter:hover {background-position: -38px -76px;}
+
+/*floater*/
+.floater {position:absolute; width:740px; height:244px; margin:-122px 0 0 -370px; left:50%; top:50%; -webkit-box-shadow: 0px 0px 10px #000000;}

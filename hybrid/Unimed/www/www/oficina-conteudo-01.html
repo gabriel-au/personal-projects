@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Conteúdo oficina</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="oficinas.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="aviso">Implementando o 5S - Case Unimed do Brasil</h2>
+        	<p><strong>Ministrada por </strong>Jeanine Barbosa Cavalcanti Sheludiakoff.</p>
+        	<p>Carga horária: 02 horas<br />
+        	Horário: 12h às 14h<br />
+        	Local: Sala Graciosa I</p>
+        	<p>A palestra apresentará os conceitos e benefícios do 5S para as organizações, bem como, compartilhará a experiência na implementação desta filosofia na Unimed do Brasil, como uma das ações do Programa Treinar para Melhorar, em busca da excelência operacional e atenderá às solicitações de Unimeds participantes do Comitê Nacional da Qualidade.</p>
+            <div class="dotted-border"></div>
+            
+            <p><strong>Público-alvo</strong></p>
+            <p>Dirigentes, Conselheiros e Executivos do Sistema Unimed</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">Conteúdo programático</h2>
+            <p>- Objetivo.<br />
+			- Origem do Programa 5S.<br />
+			- Conceito e Benefícios do 5S.<br />
+			- Case Unimed do Brasil.</p>
+			<div class="dotted-border"></div>
+            
+            <p><strong>Bibliografia Básica</strong></p> 
+            <p>- O Programa 5S e a Qualidade Total – Pedro Carlos de Carvalho. <br />
+            - A Bíblia do 5S – Da implantação à Excelência – Haroldo Ribeiro. <br />
+            - Cartilhas(Cada Vez Melhor e Aplicando o PDCA) – Wagner Matias de Andrade<br />
+            - Artigo: Os 5S da Administração Japonesa – Koiti Egoshi</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">Currículo Palestrante</h2> 
+            <p>Jeanine Barbosa Cavalcanti Sheludiakoff é bacharel em Administração de Empresas, pela Universidade Federal do Ceará, mestre em Administração e Planejamento pela Pontifícia Universidade Católica – PUC-SP e pós-graduada em Gestão do Conhecimento e Gerenciamento de Projetos pela Fundação Getulio Vargas – SP.<br /><br />
+            Trabalhou por mais de dez anos como consultora, em Qualidade e Processos, em empresas tais como: Kodak Polychrome Graphics, Fundação Armando Alvares Penteado- FAAP e Fundação Getulio Vargas – FGV-SP.<br /><br />
+            Atualmente é gestora da área de Qualidade e Processos da Unimed do Brasil.</p>
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <!--li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li-->
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

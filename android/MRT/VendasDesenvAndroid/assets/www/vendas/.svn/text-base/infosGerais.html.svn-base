@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script type="text/javascript" charset="utf-8" src="../includes/js/phonegap-1.3.0.js"></script>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/pages/pedido.js"></script>
+	<script type="text/javascript" src="../includes/js/pages/infosGerais.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Refaz a renderizacao do Scroll no Android
+			document.addEventListener("touchmove", function ScrollStart() { $("#dummy").focus(); }, false);
+			
+			// Calcula o tamanho do Wrapper
+			calculaAltura(document.getElementsByClassName('result')[0], document.getElementById('div-footer-area'));
+			
+			$(window).resize(function() {
+			  calculaAltura(document.getElementsByClassName('result')[0], document.getElementById('div-footer-area'));
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+					
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<ul class="tabs selectable topMenu">
+                    <li onclick="nav('infosGerais.html');" class="first selected">
+                    	<span class="number">1</span>
+                		<label>Cabeçalho</label>
+                    </li>
+                	<li onclick="bloquearBotaoTipoPedido(); nav('itensDisponiveis.html');">
+                		<span class="number">2</span>
+                		<label>Itens</label>
+                	</li>
+                    <li onclick="bloquearBotaoTipoPedido(); nav('promocoes.html'); ">
+                    	<span class="number">3</span>
+                		<label>Promoções</label>
+                    </li>
+                    <li onclick="bloquearBotaoTipoPedido(); nav('gondola.html'); ">
+                    	<span class="number">4</span>
+                		<label>Gôndola</label>
+                    </li>
+                    <li onclick="bloquearBotaoTipoPedido(); nav('caminhao.html'); " class="last">
+                    	<span class="number">5</span>
+                		<label>Caminhão</label>
+                    </li>
+                </ul>  
+                              
+                 <div class="tabMenu">
+                	<a class="button right" href="javascript:ativa();"><span class="icon opcoes"></span></a>
+				</div>
+                <br class="clear"/>
+                
+                <div id="div-header-area"></div>
+				
+				<div id="div-wrapper-area">
+					<div class="result" style="overflow: scroll; -webkit-overflow-scrolling: touch;">
+						<h2>Cabeçalho do Pedido <span class="right" id="span_numero_pedido"></span></h2>
+						<div class="formDiv">
+							<div class="line off">
+								<div class="cell" style="width:80%;">
+									<label>Razão Social</label>
+									<span id="span_nome_cliente"></span>
+								</div>
+								<div class="cell">
+									<label>Nº Ter.</label>
+									<span id="span_codigo_territorio"></span>
+								</div>
+							</div>
+							<div class="line">
+								<div class="cell">
+									<label>Limite de Crédito Nomeado</label>
+									<span id="span_val_lim_cred_nom" style="text-align: right;"></span>
+								</div>
+								<div class="cell">
+									<label>Saldo em aberto do Cliente</label>
+									<span id="span_val_sld_abt_cli" style="text-align: right;"></span>
+								</div>						
+							</div>
+							<div class="line">
+								<div class="cell">
+									<input type="text" id="mensagemNota" class="type" placeholder="Mensagem na nota" size="70" onchange="mantemValoresInfo()"/>
+								</div>
+							</div>
+						</div>
+						<ul class="listNav listPanel">
+							<li onclick="nav(getPage('titulosAberto'));" id="titulosPendentes">
+								<span class="icon aviso"></span>
+								<div class="left"><label class="large">Cliente com título pendente</label></div>
+								<div class="right"><span id="span_total_titulos"></span></div>
+							</li>
+							<li onclick="nav(getPage('cad'));">
+								<span class="icon cad"></span>
+								<div class="left"><label class="large">CAD/Filial</label></div>
+								<div class="right"><span id="span_cad_filial"></span></div>
+							</li>
+							<li onclick="nav(getPage('condPagamento'));">
+								<span class="icon condPagamento"></span>
+								<div class="left"><label class="large">Cond. de Pagamento Principal</label></div>
+								<div class="right"><span id="span_cond_pagto"></span></div>
+							</li>
+							<li onclick="nav(getPage('modeloDistribuicao'));">
+								<span class="icon modDistr"></span>
+								<div class="left"><label class="large">Modelo de Distribuição</label></div>
+								<div class="right"><span id="span_modelo_dist"></span></div>
+							</li>
+						</ul>
+						<div class="panel">
+							<div class="left">
+								<label class="large">Tipo do Pedido</label>
+							</div>
+							<div id="buttons" class="groupButtons">
+								<ul>
+									<li id="li_normal"><a href="javascript:void(0);" id="btn_normal">Normal</a></li>
+									<li id="li_simplificado"><a href="javascript:void(0);" id="btn_simplificado">Simplificado</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<h2>Roteirização</h2>
+						<ul class="listNav">
+							<li onclick="nav('agendaRoteirizacao.html')">
+								<span class="icon agRoteiro"></span>
+								<div class="left"><label class="large">Agenda de Roteirização</label></div>
+							</li>
+						</ul>
+						<h2>Valores Mínimos</h2>
+						<div class="formDiv">
+							<div class="line">
+								<div class="cell" style="width:50%;">
+									<label id="label_filial_exp"></label>
+									<span id="span_val_min_exp" ></span>
+								</div>
+								
+								<div class="cell">
+									<label>Por Boleto Bancário : </label>
+									<span id="span_val_bol_ban" style="text-align: right;"></span>
+								</div>
+							</div>
+							<div class="line off">
+								<div class="cell" style="width:50%;">
+									<label>Valor Mínimo de Ponto do Pedido : </label>
+									<span id="span_val_min_ponto_ped" ></span>
+								</div>
+								
+								<div class="cell">
+									<label>Valor Máximo do Brinde Poupe Certo : </label>
+									<span id="span_val_max_brinde" style="text-align: right;"></span>
+								</div>
+							</div>
+						</div>
+						
+						<div id="panelCotacao" class="panel">
+							<div class="left">
+								<div class="groupButtons">
+									<ul>
+										<li><a href="javascript:void(0);" id="btn_cotacao">Cotação</a></li>
+										<li class="selected"><a href="javascript:void(0);" id="btn_pedido">Pedido</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="div-footer-area"></div> <!--style="clear:both;width:100%;height:50px;position:absolute; bottom:0;border-top:1px solid #888888; border-bottom: 1px solid #888888;"></div-->
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		
+		<!-- Refaz a renderizacao do Scroll no Android -->
+		<input type="text" id="dummy" class="js-notRequired"  style="width: 1px; height:1px; margin:0; padding:0; border: 0;" />
+		<!-- FIM CONTEÚDO -->
+	</div>
+	<div id="itensMenu">
+    	<a href="javascript:fechaPedido();" class="button">Fechar Pedido</a>
+    	<a href="javascript:void(0)" onclick="$(this).parent().hide('fast');" class="button">Continuar Pedido</a>
+    	<a href="javascript:abandonar();" class="button">Abandonar Pedido</a>
+    </div>
+    
+</body>
+</html>

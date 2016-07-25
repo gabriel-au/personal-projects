@@ -1,0 +1,63 @@
+<project name="BRQ Build Martins Project" default="dist" basedir=".">
+	<!--
+		Para abilitar essa task é necessário eclipse.refreshLocal rodar o ant na mesma jre do eclipse.
+		Preferences > Ant > Always run new Ant configurations in the same JRE as the workspace
+	-->
+	<property file="build-full.properties" />
+
+	<target name="dist">
+
+		<ant antfile="build.xml" dir="${framework-base}"	inheritall="false" inheritrefs="false" />
+		
+		<ant antfile="build.xml" dir="${framework-windows}" inheritall="false" inheritrefs="false" />
+
+		<ant antfile="build.xml" dir="${framework-android}" inheritall="false" inheritrefs="false" />
+		
+		<ant antfile="build.xml" dir="${conversor-core}"	inheritall="false" inheritrefs="false" />
+		
+		<ant antfile="build.xml" dir="${conversor-module}"	inheritall="false" inheritrefs="false" />
+		
+		<ant antfile="build.xml" dir="${conversor-windows}"	inheritall="false" inheritrefs="false" />
+			
+		<ant antfile="build.xml" dir="${conversor-android}"	inheritall="false" inheritrefs="false" />
+		
+		<antcall target="cleanWorkspace" />
+
+	</target>
+
+	<!-- Ant Eclipse Refresh -->
+	<target name="cleanWorkspace" depends="refreshResource">
+		<echo message="clean project" />
+		<eclipse.incrementalBuild project="${project-name}"    		kind="clean"/>
+		
+		<eclipse.incrementalBuild project="${project-name-base}"    kind="clean"/>
+		<eclipse.incrementalBuild project="${project-name-windows}" kind="clean"/>
+		<eclipse.incrementalBuild project="${project-name-android}" kind="clean"/>
+		
+		<eclipse.incrementalBuild project="${project-name-conversor-core}"    kind="clean"/>
+		<eclipse.incrementalBuild project="${project-name-conversor-module}"  kind="clean"/>
+		<eclipse.incrementalBuild project="${project-name-conversor-windows}" kind="clean"/>
+		<eclipse.incrementalBuild project="${project-name-conversor-android}" kind="clean"/>		
+	</target>
+	<target name="refreshResource">
+		<echo message="refresh project" />
+		<eclipse.convertPath fileSystemPath="${basedir}" 			property="resourcePath" />
+		<eclipse.convertPath fileSystemPath="${framework-base}" 	property="frameBasePath" />
+		<eclipse.convertPath fileSystemPath="${framework-windows}"  property="frameWinPath" />
+		<eclipse.convertPath fileSystemPath="${framework-android}"  property="frameAndroidPath" />
+		<eclipse.convertPath fileSystemPath="${conversor-core}" 	property="conversorCorePath" />
+		<eclipse.convertPath fileSystemPath="${conversor-module}" 	property="conversorModulePath" />
+		<eclipse.convertPath fileSystemPath="${conversor-windows}"  property="conversorWindowsWinPath" />
+		<eclipse.convertPath fileSystemPath="${conversor-android}"  property="conversorAndroidPath" />
+		
+		<eclipse.refreshLocal resource="${resourcePath}" 		depth="infinite" />		
+		<eclipse.refreshLocal resource="${framework-base}" 		depth="infinite" />
+		<eclipse.refreshLocal resource="${framework-windows}"	depth="infinite" />
+		<eclipse.refreshLocal resource="${framework-android}" 	depth="infinite" />
+		<eclipse.refreshLocal resource="${conversor-core}" 		depth="infinite" />
+		<eclipse.refreshLocal resource="${conversor-module}" 	depth="infinite" />
+		<eclipse.refreshLocal resource="${conversor-windows}" 	depth="infinite" />		
+		<eclipse.refreshLocal resource="${conversor-android}" 	depth="infinite" />
+	</target>
+	
+</project>

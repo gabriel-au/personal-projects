@@ -1,0 +1,31 @@
+10
+
+dir
+181
+svn+ssh://192.168.1.15/svn/sdf/trunk/web/intranetsdf/src/br
+svn+ssh://192.168.1.15/svn/sdf
+
+
+
+2010-04-19T20:23:28.251043Z
+174
+andremaximo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0385309e-e567-46d2-8f01-cfda608f516c
+
+com
+dir
+

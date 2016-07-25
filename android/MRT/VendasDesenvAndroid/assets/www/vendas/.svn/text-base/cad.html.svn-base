@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	
+	<script type="text/javascript">
+	
+	$(document).ready(	
+		function(){
+		BRQNavegacao.adicionarPilhaNavegacao('cad');
+			var filiaisClienteExp = null;	
+			var filiaisClienteFat = null;	
+			carregaFiliais();	
+			criaLinkVoltar();
+			
+			$("#a_bt_ok").click(function(){
+				verificarFilial();
+		});		
+		}
+	);	
+	
+	function criaLinkVoltar(){
+			var a_href = $('<a/>', {"class": "button left", href: "javascript:BRQNavegacao.voltar()", text: "Voltar"});
+			$("#voltar").append(a_href);
+		}
+	function carregaFiliais(){	
+		var codigoCliente = getCliente().codigoCliente;
+		var terriorioId	= getCliente().codigoTerritorio;		
+		BRQMob.log("entrando na funcao carregaFiliais()");
+	  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "listaFiliais",[codigoCliente,terriorioId]);
+	}
+		function sucesso(retorno){
+			loadListaFiliais(retorno.filiais);
+		}	
+	
+		function loadListaFiliais(filiais){
+			
+			sessionStorage.setObject(CONST_LISTA_FILIAIS, filiais);
+			
+			$.each(filiais, function(i,obj) {					
+				
+				if(i==0){
+					tr = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off ") + ("selected"),onclick:"tableTR(this);"});
+					selecionarLinha(obj.filialExpedicao.codigoFilial,obj.filialExpedicao.nomeFilial,obj.filialFaturamento.codigoFilial,obj.filialFaturamento.nomeFilial);
+				}else{
+					tr = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off "),onclick:"tableTR(this),selecionarLinha(" + obj.filialExpedicao.codigoFilial + ",'" + obj.filialExpedicao.nomeFilial + "'," + obj.filialFaturamento.codigoFilial + ",'" + obj.filialFaturamento.nomeFilial + "')"});
+				}			
+								
+				td_codigoEpd= $('<td/>', {});
+				$($('<span/>', {"text":obj.filialExpedicao.codigoFilial})).appendTo(td_codigoEpd);
+				$(td_codigoEpd).appendTo(tr);
+				
+				td_nomeEpd= $('<td/>', {});
+				$($('<span/>', {"text":obj.filialExpedicao.nomeFilial})).appendTo(td_nomeEpd);
+				$(td_nomeEpd).appendTo(tr);
+				
+				td_codigoFat= $('<td/>', {});
+				$($('<span/>', {"text":obj.filialFaturamento.codigoFilial})).appendTo(td_codigoFat);
+				$(td_codigoFat).appendTo(tr);
+				
+				td_nomeFat= $('<td/>', {});
+				$($('<span/>', {"text":obj.filialFaturamento.nomeFilial})).appendTo(td_nomeFat);
+				$(td_nomeFat).appendTo(tr);
+				$(tr).appendTo(tbody_lista_cad);
+			});	
+		}	
+		
+		function selecionarLinha(codExp,nomeExp,codFat, nomeFat){
+			filiaisClienteExp = new Object();
+			filiaisClienteFat = new Object();
+			
+			filiaisClienteExp.codigoFilial=codExp;
+			filiaisClienteExp.nomeFilial=nomeExp;
+			filiaisClienteFat.codigoFilial=codFat;
+			filiaisClienteFat.nomeFilial=nomeFat;
+		}
+			
+		function verificarFilial(){
+			if(filiaisClienteExp==null || filiaisClienteFat==null){
+				alert('A escolha da Filial é obrigatória.');
+			}else{
+				sessionStorage.setObject('filialExpedicao', filiaisClienteExp);
+				sessionStorage.setObject('filialFaturamento', filiaisClienteFat);
+				sessionStorage.removeObject(CONST_ITEM_DISPONIVEL_RECUPERA_PESQUISA_ANTERIOR);
+				BRQNavegacao.voltar();
+			}				
+		}
+	
+	</script>
+	
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<div  id="voltar"></div>
+				<h1>CAD</h1>
+				<a id="a_bt_ok" href="javascript:void(0);" class="button right">Ok</a>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<!-- Exemplo grupo de listas com seleção única -->
+				<h2>Escolha a Filial de Expedição</h2>	
+					<div class="tableList">
+					<!-- Exemplo grupo de listas para seleção de dados -->
+					<table class="tableSelectable" style="width:100%;" cellspacing="0">
+						<thead>
+							<tr>							
+								<th>Código</th>
+								<th>Filial de Expedição</th>
+								<th>Código</th>
+								<th>Filial de Faturamento</th>
+							</tr>
+						</thead>
+						<tbody id="tbody_lista_cad">
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

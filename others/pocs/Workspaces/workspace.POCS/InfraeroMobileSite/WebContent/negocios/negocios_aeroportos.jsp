@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/negocios/empreen_areas_externas.jsp" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">Negócios</div>
+</div>
+
+<div class="arredondado">
+<div class="arredondado_titulo">Aeroporto Internacional de Brasília</div>
+<div class="arredondado_titulo">Estacionamento para veículos com 1.034 vagas</div>
+ 
+<p>
+Concessão de uso de três áreas para exploração comercial da atividade de estacionamento de veículos no Aeroporto Internacional de Brasília, sendo: uma medindo 41.654,93m², localizada na área externa, em frente ao Terminal de Passageiros; e duas medindo respectivamente 12m² e 9m² cada para instalação de balcões para	pagamento antecipado, localizados no saguão de desembarque doméstico. O estacionamento conta com 1.034 vagas, sendo 81 para pessoas com deficiência/idosos. 
+</p>
+<p>
+<b>Data de Abertura da Licitação: prevista para o mês de fevereiro de 2010, encontra-se adiada até ulterior deliberação judicial</b>
+</p> 
+<p>
+<b>Para mais informações</b>: (61) 3214-6553/3214-6596/3214-6515
+</p>
+<p class="imagem">
+<img src="<%=request.getContextPath()%>/imagens/img_estacionamento.png" />
+</p>
+
+
+</div>
+
+
+
+
+</body>
+</html>

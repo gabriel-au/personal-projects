@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_30-b12 (Sun Microsystems Inc.)
+Built-By: BRQ_MOBILE_vvellozo 
+Build-Number: 60
+Implementation-Version: 2.060
+Built-Date: 2012-06-15 19:17:57
+Main-Class: br.com.martins.vendas.Inicia
+Class-Path: lib/framework-base.jar lib/framework-windows.jar lib/DJNat
+ iveSwing-SWT.jar lib/DJNativeSwing.jar lib/swt.jar lib/xpp3-1.1.4c.ja
+ r lib/VendasService.jar     lib/VendasModulo.jar lib/RelacionamentoMo
+ dulo.jar lib/MartinsModulo.jar lib/EstruturaModulo.jar lib/log4j-1.2.
+ 16.jar lib/sqlitejdbc-v056.jar
+

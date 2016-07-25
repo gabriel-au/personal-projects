@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/voo_online/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">VÙos On-line</div>
+</div>
+
+<div class="arredondado">
+<div class="arredondado_titulo">Consulta por N√∫mero do V√¥o</div>
+
+<form action="resultado.jsp">
+
+
+<div class="arredondado_chamada">Aeroporto:</div>
+
+<div class="arredondado_chamada_simples_center">
+<select class="input_select" name="aeroporto">
+<option value="Selecione um Aeroporto" selected="selected">Selecione um Aeroporto</option>
+<option value="SBHT">ALTAMIRA-PA</option>
+<option value="SBAR">ARACAJU-SE</option>
+<option value="SBBE">BELEM-PA</option>
+<option value="SBBH">BELO HORIZONTE - PAMPULHA-MG</option>
+<option value="SBCF">BELO HORIZONTE - T.NEVES-MG</option>
+<option value="SBBV">BOA VISTA-RR</option>
+<option value="SBBR">BRASILIA-DF</option>
+<option value="SBKG">CAMPINA GRANDE-PB</option>
+<option value="SBKP">CAMPINAS-SP</option>
+<option value="SBCG">CAMPO GRANDE-MS</option>
+<option value="SBCP">CAMPOS DOS GOYTACAZES-RJ</option>
+<option value="SBCJ">CARAJAS-PA</option>
+<option value="SBCR">CORUMBAÅ-MS</option>
+<option value="SBCM">CRICIUöMA-SC</option>
+<option value="SBCZ">CRUZEIRO DO SUL-AC</option>
+<option value="SBCY">CUIABA-MT</option>
+<option value="SBCT">CURITIBA-PR</option>
+<option value="SBFL">FLORIANOìPOLIS-SC</option>
+<option value="SBFZ">FORTALEZA-CE</option>
+<option value="SBFI">FOZ DO IGUA√áU-PR</option>
+<option value="SBGO">GOIANIA-GO</option>
+<option value="SBIL">ILHEUS-BA</option>
+<option value="SBIZ">IMPERATRIZ-MA</option>
+<option value="SBJP">JOAO PESSOA-PB</option>
+<option value="SBJV">JOINVILLE-SC</option>
+<option value="SBJU">JUAZEIRO DO NORTE-CE</option>
+<option value="SBLO">LONDRINA-PR</option>
+<option value="SBME">MACAEâ-RJ</option>
+<option value="SBMQ">MACAPAÅ-AP</option>
+<option value="SBMO">MACEIO-AL</option>
+<option value="SBEG">MANAUS-AM</option>
+<option value="SBMA">MARABA-PA</option>
+<option value="SBMK">MONTES CLAROS-MG</option>
+<option value="SBNT">NATAL-RN</option>
+<option value="SBNF">NAVEGANTES-SC</option>
+<option value="SBPJ">PALMAS-TO</option>
+<option value="SBPK">PELOTAS-RS</option>
+<option value="SBPL">PETROLINA-PE</option>
+<option value="SBPA">PORTO ALEGRE-RS</option>
+<option value="SBPV">PORTO VELHO - RO</option>
+<option value="SBRF">RECIFE-PE</option>
+<option value="SBRB">RIO BRANCO-AC</option>
+<option value="SBGL">RIO DE JANEIRO - GALEAO-RJ</option>
+<option value="SBRJ">RIO DE JANEIRO - S.DUMONT-RJ</option>
+<option value="SBSV">SALVADOR-BA</option>
+<option value="SBSN">SANTAREâM-PA</option>
+<option value="SBSL">SAO LUIS-MA</option>
+<option value="SBSP">SAO PAULO - CONGONHAS-SP</option>
+<option value="SBGR">SAO PAULO - GUARULHOS-SP</option>
+<option value="SBTE">TERESINA-PI</option>
+<option value="SBUR">UBERABA-MG</option>
+<option value="SBUL">UBERLANDIA-MG</option>
+<option value="SBUG">URUGUAIANA-RS</option>
+<option value="SBVT">VITOìRIA-ES</option>
+</select>
+</div>
+
+<div class="arredondado_chamada">N√∫mero do V√¥o:</div>
+<div class="arredondado_chamada_simples_center">
+	<input  type="text" name="numero" class="input_text"/>
+</div>
+
+<p></p>
+
+<div class="arredondado_chamada_simples_center">
+	<input  type="submit" value="" class="input_submit"/>
+</div>
+
+
+</form>
+</div>
+
+</body>
+</html>

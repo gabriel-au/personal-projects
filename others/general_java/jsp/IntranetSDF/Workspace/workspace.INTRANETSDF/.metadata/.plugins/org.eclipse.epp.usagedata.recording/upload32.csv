@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1268846585110
+java.runtime.version,sysinfo,,,"1.6.0_17-b04-248-10M3025",1268846585110
+java.specification.name,sysinfo,,,"Java Platform API Specification",1268846585110
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268846585110
+java.specification.version,sysinfo,,,"1.6",1268846585110
+java.vendor,sysinfo,,,"Apple Inc.",1268846585110
+java.version,sysinfo,,,"1.6.0_17",1268846585110
+java.vm.info,sysinfo,,,"mixed mode",1268846585110
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1268846585110
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1268846585110
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1268846585110
+java.vm.specification.version,sysinfo,,,"1.0",1268846585110
+java.vm.vendor,sysinfo,,,"Apple Inc.",1268846585110
+java.vm.version,sysinfo,,,"14.3-b01-101",1268846585110
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1268846585246
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1268846585259
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1268846585420
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1268846585477
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1268846585494
+started,bundle,org.eclipse.dltk.core,1.0.1.v20090910-1601,"org.eclipse.dltk.core",1268846585660
+started,bundle,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.workbench.texteditor",1268846585699
+started,bundle,org.eclipse.debug.core,3.5.0.v20090526-1600,"org.eclipse.debug.core",1268846585743
+started,bundle,org.eclipse.dltk.launching,1.0.1.v20090910-1601,"org.eclipse.dltk.launching",1268846585769
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1268846585788
+started,bundle,org.eclipse.wst.web,1.1.301.v200909021400,"org.eclipse.wst.web",1268846585817

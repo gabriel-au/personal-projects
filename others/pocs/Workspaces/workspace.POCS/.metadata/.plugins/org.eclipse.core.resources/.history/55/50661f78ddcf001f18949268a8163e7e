@@ -1,0 +1,49 @@
+/*    */ package br.jus.stj.site.iphone.ui;
+/*    */ 
+/*    */ import br.jus.stj.site.iphone.Componente;
+/*    */ 
+/*    */ public class Meta extends Componente
+/*    */ {
+/*    */   public static final String CHARSET_UTF8 = "UTF-8";
+/*    */   public static final String CHARSET_UTF16 = "UTF-16";
+/*    */   public static final String CHARSET_ISO88591 = "ISO8859-1";
+/*    */   public static final String CHARSET_ISO88592 = "ISO8859-2";
+/*    */   private String name;
+/*    */   private String content;
+/*    */   private String charset;
+/*    */ 
+/*    */   public Meta(String name, String content)
+/*    */   {
+/* 24 */     this.name = name;
+/* 25 */     this.content = content;
+/*    */   }
+/*    */ 
+/*    */   public Meta(String charset) {
+/* 29 */     this.charset = charset;
+/*    */   }
+/*    */ 
+/*    */   public Meta()
+/*    */   {
+/* 34 */     this.name = "viewport";
+/* 35 */     this.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
+/*    */   }
+/*    */ 
+/*    */   public String getCode()
+/*    */   {
+/* 40 */     String texto = "<meta ";
+/* 41 */     if (this.charset != null)
+/* 42 */       texto = texto + "http-equiv=\"Content-Type\" content=\"text/html; charset=" + this.charset + "\" /> ";
+/*    */     else
+/* 44 */       texto = texto + "name=\"" + this.name + "\" content=\"" + this.content + "\"/> ";
+/* 45 */     return texto;
+/*    */   }
+/*    */ 
+/*    */   protected void getMontarItensObrigatoriosOpcionais()
+/*    */   {
+/*    */   }
+/*    */ }
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.ui.Meta
+ * JD-Core Version:    0.6.0
+ */

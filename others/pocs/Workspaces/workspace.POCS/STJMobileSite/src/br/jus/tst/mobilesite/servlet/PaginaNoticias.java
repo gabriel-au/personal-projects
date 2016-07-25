@@ -1,0 +1,208 @@
+package br.jus.tst.mobilesite.servlet;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.stj.mobile.bd.consulta.ConsultaNoticia;
+import br.jus.stj.mobile.bd.pojo.AuxiliarPojo;
+import br.jus.stj.mobile.bd.pojo.NoticiaPojo;
+import br.jus.tst.mobilesite.PadraoPaginas;
+import br.jus.tst.mobilesite.Padroes;
+import br.jus.tst.mobilesite.ui.A;
+import br.jus.tst.mobilesite.ui.Body;
+import br.jus.tst.mobilesite.ui.Div;
+import br.jus.tst.mobilesite.ui.HTML;
+import br.jus.tst.mobilesite.ui.Img;
+import br.jus.tst.mobilesite.ui.Texto;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Map;
+import javax.servlet.http.HttpSession;
+
+public class PaginaNoticias extends PadraoPaginas
+{
+  public String gerarPagina()
+    throws SystemException
+  {
+/*  37 */     return gerarPaginaErro400().toString();
+  }
+
+  public String gerarPagina(String metodo, Map<String, String> listaParametros, HttpSession session)
+    throws SystemException
+  {
+/*  45 */     HTML pagina = new HTML();
+/*  46 */     pagina.add(Padroes.getHeader());
+/*  47 */     Body body = Padroes.getBody();
+/*  48 */     pagina.add(body);
+
+/*  51 */     Div div = new Div("titulo");
+/*  52 */     A at = new A("", true);
+/*  53 */     at.add(new Img("imagens/botao-inicio-azul.png"));
+/*  54 */     div.add(at);
+/*  55 */     div.add(new Div("titulo_texto", new Texto("Sala de Not’cias")));
+/*  56 */     body.add(div);
+
+/*  58 */     String dataInicio = (String)listaParametros.get("dataInicio");
+
+/*  61 */     if ((metodo == null) || (metodo.equals("gerarPagina"))) {
+/*  62 */       gerarPaginaInicial(body);
+/*  63 */     } else if (metodo.equals("detalhar")) {
+/*  64 */       at.setHref("Pagina?p=Noticias");
+/*  65 */       String id = (String)listaParametros.get("id");
+/*  66 */       gerarPaginaDetalhe(body, id);
+/*  67 */     } else if (metodo.equals("listar")) {
+/*  68 */       at.setHref("Pagina?p=Noticias");
+/*  69 */       dataInicio = gerarPaginaListar(body, dataInicio);
+    } else {
+/*  71 */       return gerarPaginaErro400();
+    }
+
+/*  74 */     Div div2 = new Div("titulo_mais_noticias");
+/*  75 */     A a = new A("Pagina?p=Noticias&m=listar&dataInicio=" + dataInicio, true);
+/*  76 */     a.add(new Texto("Mais Not’cias  "));
+/*  77 */     div2.add(a);
+/*  78 */     body.add(div2);
+
+/*  80 */     return pagina.toString();
+  }
+
+  private void gerarPaginaInicial(Body body)
+    throws SystemException
+  {
+/*  91 */     ConsultaNoticia c = new ConsultaNoticia();
+/*  92 */     NoticiaPojo pojo = c.consultaPaginaInicial();
+
+/*  94 */     Div divPrincipal = new Div("arredondado");
+{
+/*  98 */     Div div = new Div("arredondado_titulo");
+/*  99 */     div.add(new Texto(pojo.getPaginaInicialTitulo()));
+/* 100 */     divPrincipal.add(div);
+}
+{
+/* 103 */     Div div = new Div("arredondado_chamada");
+/* 104 */     div.add(new Texto(pojo.getPaginaInicialChamada()));
+
+/* 106 */     A aChamada = new A("Pagina?p=Noticias&m=detalhar&id=" + 
+/* 107 */       pojo.getPaginaInicialLink(), true);
+/* 108 */     aChamada.add(new Img("imagens/btn_leia_mais.png"));
+/* 109 */     div.add(aChamada);
+
+/* 111 */     divPrincipal.add(div);
+}
+/* 113 */     body.add(divPrincipal);
+
+/* 115 */     for (AuxiliarPojo link : pojo.getPaginaInicialLinkSecundarios()) {
+/* 116 */       Div div = new Div("arredondado");
+
+/* 118 */       A a = new A("Pagina?p=Noticias&m=detalhar&id=" + 
+/* 119 */         link.getParametro(), true);
+/* 120 */       a.add(new Texto(link.getValor()));
+/* 121 */       div.add(new Div("arredondado_link", a));
+
+/* 123 */       body.add(div);
+    }
+  }
+
+  private void gerarPaginaDetalhe(Body body, String id)
+    throws SystemException
+  {
+/* 135 */     ConsultaNoticia c = new ConsultaNoticia();
+/* 136 */     NoticiaPojo pojo = c.consultaPaginaDetalhe(id);
+
+/* 138 */     Div divPricipal = new Div("arredondado");
+{
+/* 140 */     Div div = new Div("arredondado_chamada_rigth");
+/* 141 */     div.add(new Texto(pojo.getPaginaDetalheData()));
+/* 142 */     div.add(new Texto(" - "));
+/* 143 */     div.add(new Texto(pojo.getPaginaDetalheHora()));
+/* 144 */     divPricipal.add(div);
+}
+{
+/* 147 */     Div div = new Div("arredondado_chamada_dupla_borda");
+/* 148 */     div.add(new Texto(pojo.getPaginaDetalheCategoria()));
+/* 149 */     divPricipal.add(div);
+}
+{
+/* 152 */     Div div = new Div("arredondado_titulo");
+/* 153 */     div.add(new Texto(pojo.getPaginaDetalheTitulo()));
+/* 154 */     divPricipal.add(div);
+}
+{
+/* 157 */     Div div = new Div("arredondado_chamada");
+/* 158 */     div.add(new Texto(pojo.getPaginaDetalheTexto(), true));
+/* 159 */     divPricipal.add(div);
+}
+{
+/* 162 */     Div div = new Div("arredondado_chamada_negrito");
+/* 163 */     div.add(new Texto(pojo.getPaginaDetalheAutor()));
+/* 164 */     divPricipal.add(div);
+}
+{
+/* 167 */     Div div = new Div("arredondado_chamada_negrito");
+/* 168 */     div.add(
+/* 169 */       new Texto("Esta p‡gina foi acessada: " + 
+/* 169 */       pojo.getPaginaDetalheAcesso() + " vezes"));
+/* 170 */     divPricipal.add(div);
+}
+/* 172 */     body.add(divPricipal);
+  }
+
+  private String gerarPaginaListar(Body body, String dataInicio)
+    throws SystemException
+  {
+/* 183 */     ConsultaNoticia c = new ConsultaNoticia();
+/* 184 */     List<NoticiaPojo> lista = c.consultaPaginaLista(dataInicio);
+
+/* 186 */     String dataAtual = "";
+
+/* 188 */     Div divPricipal = new Div("arredondado");
+
+/* 190 */     boolean primeiro = true;
+
+/* 192 */     for (NoticiaPojo pojo : lista) {
+/* 193 */       dataInicio = pojo.getPaginaDetalheData();
+/* 194 */       if (!dataAtual.equals(dataInicio))
+      {
+        Div div;
+/* 196 */         if (primeiro)
+/* 197 */           div = new Div("arredondado_titulo");
+        else
+/* 199 */           div = new Div("arredondado_titulo_espaco_superior");
+/* 200 */         div.add(new Texto(pojo.getPaginaDetalheData()));
+/* 201 */         divPricipal.add(div);
+/* 202 */         dataAtual = dataInicio;
+/* 203 */         primeiro = false;
+      }
+
+{
+/* 207 */       Div div = new Div("arredondado_titulo_hora");
+/* 208 */       div.add(new Texto(pojo.getPaginaDetalheHora()));
+/* 209 */       div.add(new Texto(" - "));
+/* 210 */       div.add(new Texto(pojo.getPaginaDetalheCategoria()));
+/* 211 */       divPricipal.add(div);
+}
+
+/* 214 */       Div div = new Div("arredondado_link_left");
+/* 215 */       A a = new A("Pagina?p=Noticias&m=detalhar&id=" + 
+/* 216 */         pojo.getPaginaDetalheLink(), true);
+/* 217 */       a.add(new Texto(pojo.getPaginaDetalheTitulo()));
+/* 218 */       div.add(a);
+/* 219 */       divPricipal.add(div);
+    }
+
+/* 222 */     body.add(divPricipal);
+
+/* 224 */     int day = new Integer(dataAtual.substring(0, 2)).intValue();
+/* 225 */     int month = new Integer(dataAtual.substring(3, 5)).intValue() - 1;
+/* 226 */     int year = new Integer(dataAtual.substring(6, 10)).intValue();
+
+/* 228 */     GregorianCalendar gc = new GregorianCalendar(year, month, day);
+/* 229 */     gc.add(5, -1);
+/* 230 */     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+/* 231 */     return sdf.format(gc.getTime());
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.tst.mobilesite.servlet.PaginaNoticias
+ * JD-Core Version:    0.6.0
+ */

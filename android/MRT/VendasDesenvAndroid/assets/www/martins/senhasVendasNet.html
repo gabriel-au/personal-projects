@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript">
+		function gerarSenha(){
+			var representante = getRepresentante();
+			const codRep = representante.codigoRepresentante;
+			presenha = $("input[name='presenha']").val();
+			BRQMob.log("entrando na funcao gerarSenha");
+		  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "gerarSenha", [presenha,codRep]);	
+		  			
+		}
+		
+		function sucesso(retorno){
+			BRQMob.log("entrando na funcao retornoGerarSenha");		
+			if(retorno.senha != null){
+				$("input[name='password']").val(retorno.senha);
+			}
+			
+			$("#mensagemSucess").text("Senha Gerada com Sucesso.");
+			 showMessagem("sucesso");
+		}
+		
+		function falha(retorno){
+			$("#mensagemError").text(retorno.mensagem);
+			showMessagem("erro"); 
+			BRQMob.log("falha: " + senha);			
+		}
+		
+		function showMessagem(mensagem){
+			if(mensagem=='sucesso'){
+				document.getElementById('sucesso').style.display = 'block'; 
+				document.getElementById('error').style.display = 'none';
+				$("#mensagemError").text(''); 
+			}else{
+				document.getElementById('sucesso').style.display = 'none'; 
+				document.getElementById('error').style.display = 'block';
+				$("#mensagemSucess").text(''); 
+			}
+		}
+				
+		$(document).ready(		
+			function(){
+			
+			$("#presenha-clearBt").mousedown(function(){
+				 document.getElementById('sucesso').style.display = 'none';
+				 document.getElementById('error').style.display = 'none';
+				 $("#password").val(''); 
+				 $("#mensagemError").text('');
+				 $("#mensagemSucess").text(''); 
+			});		
+				
+			if(getPlataform() == "desktop"){
+				
+				$('#presenha').keypress(function(event) {
+					var keyCode = event.which;
+					if (keyCode >= 48 && keyCode <= 57){
+						return true;
+					}else{
+						return false;
+					}
+					
+				});
+				
+				$('#presenha').keyup(function(event) {
+					event.preventDefault();
+					var expre = /[^\d]/g;
+					// REMOVE OS CARACTERES DA EXPRESSAO ACIMA
+					if ($(this).val().match(expre)){
+						$(this).val($(this).val().replace(expre,''));
+					}
+				});
+				
+
+			}else{
+				var presenha = document.getElementById('presenha');
+				presenha.setAttribute('type','number');
+				
+			}
+		      
+	     	//OCULTA OS ÍCONES DA MENSAGEM
+        	document.getElementById('sucesso').style.display = 'none';
+			document.getElementById('error').style.display = 'none';
+			   
+			}
+		);
+	</script>
+	
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conte�do, caso exista o menu do sistema ele dever� conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		<!-- CONTE�DO, conte�do das se��es da aplica��o -->
+		<div id="content">
+			<!-- CABE�ALHO, topo do aplicativo com a navega��o e t�tulos -->
+			<div id="header">
+				<h1>Senha de Acesso VendasNet</h1>
+			</div>
+			<!-- FIM CABE�ALHO -->
+			<!-- CONTE�DO PRINCIPAL, conte�do da se��o -->
+			<div id="mainContent">
+				<div class="panel paddedGrey">
+					<ul>
+						<li class="sucess">
+							<span id="sucesso" class="icon"></span>
+							<label id="mensagemSucess"></label>
+						</li>						
+						<li class="error">
+							<span id="error" class="icon"></span>
+							<label id="mensagemError"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="panel">
+					<p style="text-align: center;">Para obter as senhas de acesso ao VendasNet, digite abaixo a pré-senha obtida no próprio VendasNet</p>
+				</div>
+				<h2>Pré-senha</h2>
+				<div class="panel">
+					<div class="left"> 
+						<input type="text" name="presenha" id="presenha" class="type" size="30" maxlength="5" />
+					</div>
+					<a class="button left" href="javascript:gerarSenha();">Gerar Senha</a>
+				</div>
+				<h2>Senha</h2>
+				<div class="panel" >
+					<div class="left"><input type="text" id="password" name="password" class="type" size="30" disabled="disabled"/></div>
+				</div>
+			</div>
+			<!-- FIM CONTE�DO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTE�DO -->
+	</div>
+</body>
+</html>

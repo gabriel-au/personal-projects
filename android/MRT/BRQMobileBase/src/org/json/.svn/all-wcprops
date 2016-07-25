@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json
+END
+XMLTokener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/XMLTokener.java
+END
+CDL.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/CDL.java
+END
+HTTP.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/HTTP.java
+END
+JSONObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONObject.java
+END
+JSONML.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONML.java
+END
+JSONException.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONException.java
+END
+JSONStringer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONStringer.java
+END
+Cookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/Cookie.java
+END
+CookieList.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/CookieList.java
+END
+JSONTokener.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONTokener.java
+END
+HTTPTokener.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/HTTPTokener.java
+END
+JSONWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONWriter.java
+END
+JSONString.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONString.java
+END
+XML.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/XML.java
+END
+JSONArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/org/json/JSONArray.java
+END

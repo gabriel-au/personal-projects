@@ -1,0 +1,48 @@
+<project name="ClassPathWindows" default="windows" basedir="../">
+
+	<!--
+	Projeto VendasModulo
+	-->
+	<target name="windows">
+		
+		<property name="vendasModulo" value="${basedir}/VendasModulo" />
+		<replace file="${vendasModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/phonegap-1.3.0.jar&quot;/&gt;" value="" />
+		<replace file="${vendasModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/android.jar&quot;/&gt;" value="" />
+		<replace file="${vendasModulo}/.classpath" token="BRQMobileAndroid" value="BRQMobileWin" />
+		<replaceregexp file="${vendasModulo}/.classpath" match="(\r?\n)\s*\r?\n" flags="g" replace="\1" />
+
+
+		<!--
+	Projeto EstruturaModulo
+	-->
+
+		<property name="estruturaModulo" value="${basedir}/EstruturaModulo" />
+		<replace file="${estruturaModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/phonegap-1.3.0.jar&quot;/&gt;" value="" />
+		<replace file="${estruturaModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/android.jar&quot;/&gt;" value="" />
+		<replace file="${estruturaModulo}/.classpath" token="BRQMobileAndroid" value="BRQMobileWin" />
+		<replaceregexp file="${estruturaModulo}/.classpath" match="(\r?\n)\s*\r?\n" flags="g" replace="\1" />
+
+		<!--
+	Projeto MartinsModulo
+	-->
+
+		<property name="martinsModulo" value="${basedir}/MartinsModulo" />
+		<replace file="${martinsModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/phonegap-1.3.0.jar&quot;/&gt;" value="" />
+		<replace file="${martinsModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/android.jar&quot;/&gt;" value="" />
+		<replace file="${martinsModulo}/.classpath" token="BRQMobileAndroid" value="BRQMobileWin" />
+		<replaceregexp file="${martinsModulo}/.classpath" match="(\r?\n)\s*\r?\n" flags="g" replace="\1" />
+
+
+		<!--
+	Projeto RelacionamentoModulo
+	-->
+
+		<property name="relacionamentoModulo" value="${basedir}/RelacionamentoModulo" />
+		<replace file="${relacionamentoModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/phonegap-1.3.0.jar&quot;/&gt;" value="" />
+		<replace file="${relacionamentoModulo}/.classpath" token="&lt;classpathentry kind=&quot;lib&quot; path=&quot;/BRQMobileAndroid/lib/android.jar&quot;/&gt;" value="" />
+		<replace file="${relacionamentoModulo}/.classpath" token="BRQMobileAndroid" value="BRQMobileWin" />
+		<replaceregexp file="${relacionamentoModulo}/.classpath" match="(\r?\n)\s*\r?\n" flags="g" replace="\1" />
+
+	</target>
+
+</project>

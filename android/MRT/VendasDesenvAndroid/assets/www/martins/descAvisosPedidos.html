@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQMob.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(		
+			function(){
+				carregaAvisos();
+				criaLinkVoltar(getPaginaOrigem());
+			}
+		);
+		
+		function carregaAvisos(){
+			avisosPedidoLoad(getAvisosPedido());
+		}
+		
+		function criaLinkVoltar(linkVoltar){
+			var a_href = $('<a/>', {"class": "bt", href: linkVoltar, text: "Voltar"});
+			$("#voltar").append(a_href);
+		}
+		
+		function avisosPedidoLoad(avisosPedido){
+			var outer_list = $('<ul/>', {"class": "list" });
+			$.each(avisosPedido, function(i,obj){	
+				inner_list = $('<li/>', {});
+				$('<span/>',{"class":"icon aplicado"}).appendTo(inner_list);	
+				$('<div/>',{"class":"left"}).appendTo(inner_list);													
+				mensagem = $('<p/>', {text: obj.mensagemAviso});
+				mensagem_footer = $('<p/>', {text: obj.dataAviso});
+				$(mensagem).appendTo(inner_list);	
+				$(mensagem_footer).appendTo(inner_list);						
+				$(inner_list).appendTo(outer_list);							
+			});
+			$("#listaAvisosPedidos").append(outer_list);
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:history.back()">voltar</a>
+				<h1>Avisos</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Pedidos</h2>
+<!-- 				<div class="panel"> -->
+<!-- 					<div class="left"><input type="text" class="search type" placeholder="Pesquisar" style="width:310px;" /></div> -->
+<!-- 				</div> -->
+				<!-- BUSCA SIMPLES -->
+				<div class="simpleSearch"></div>
+				<!-- Avisos de clientes -->
+				<div class="scroll" id="listaAvisosPedidos"></div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+			
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

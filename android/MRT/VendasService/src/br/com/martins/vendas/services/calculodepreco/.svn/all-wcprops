@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/5675/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco
+END
+ComissaoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/mobile/!svn/ver/5724/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/ComissaoService.java
+END
+Imposto.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mobile/!svn/ver/3379/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/Imposto.java
+END
+Fracionamento.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/420/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/Fracionamento.java
+END
+ImpostoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5675/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/ImpostoService.java
+END
+FaixaMargem.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/4335/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/FaixaMargem.java
+END
+CalculoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/3731/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/CalculoUtil.java
+END
+FatorAjuste.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/1022/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/FatorAjuste.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/5462/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/Item.java
+END
+IPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/1837/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/IPI.java
+END
+CalculoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5724/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/CalculoService.java
+END
+Margem.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/mobile/!svn/ver/3451/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/services/calculodepreco/Margem.java
+END

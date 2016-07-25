@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>Guia da Gula</name>
+    <description>
+        App.
+    </description>
+    <author email="contato@primems.com.br" href="http://www.primems.com.br">
+        Prime Mobile Solutions
+    </author>
+    <content src="error.html" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <access origin="*" />
+    <preference name="useBrowserHistory" value="true" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="disallowOverscroll" value="true" />
+    
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+</widget>
+<!--
+
+<preference name="backgroundColor" value="0x00000000"/>
+<preference name="splashscreen" value="startup" />
+<preference name="errorUrl" value="file:///android_asset/www/error.html"/>
+<preference name="UIWebViewBounce" value="false" />
+
+-->

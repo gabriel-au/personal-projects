@@ -1,0 +1,24 @@
+body {background-color:#666666; padding:0 16px; font-family: Helvetica; color:#FFFFFF;}
+
+.box {float:left; padding:5px; margin:2px; background-color:#333333;}
+.container {float:left; margin:2px;}
+
+/*EIXO X*/
+.1x {width:120px;}
+.2x {width:244px;}
+.3x {width:368px;}
+.4x {width:492px;}
+.5x {width:120px;}
+.6x {width:616px;}
+.7x {width:740px;}
+.8x {width:864px;}
+
+/*EIXO X*/
+.1y {height:120px;}
+.2y {height:244px;}
+.3y {height:368px;}
+.4y {height:492px;}
+.5y {height:120px;}
+.6y {height:616px;}
+.7y {height:740px;}
+.8y {height:864px;}

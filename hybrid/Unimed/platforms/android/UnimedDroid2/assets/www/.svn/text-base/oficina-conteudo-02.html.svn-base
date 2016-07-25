@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Conteúdo Oficina</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="oficinas.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y"><br />
+        	<h2 class="aviso">Normas da NS na prática </h2>
+        	<p>Ministrada por Jordana Miranda Souza, mestre em Direito Empresarial pela Faculdade de Direito Milton Campos (MG) e pós-graduada em Direito da Economia e da Empresa pela Fundação Getúlio Vargas (MG) e em Direito do Trabalho, esta oficina tem como objetivo difundir a legislação de planos de saúde e sua relação com a Agência Nacional de Saúde suplementar - ANS; e conscientizar e capacitar os participantes sobre a importância do código do consumidor nas relações entre a cooperativa e os usuários.</p>
+            <div class="dotted-border"></div>
+            
+            <p><strong>Público-alvo</strong></p>
+            <p>Dirigentes, Conselheiros e Executivos do Sistema Unimed </p>
+            <h2 class="aviso">Conteúdo programático</h2>
+            <p>- ANS; <BR>
+              - DIOPS; <BR>
+              - Reservas Técnicas; <BR>
+              - Responsabilidade Civil do Dirigente; <BR>
+              - Código do Consumidor;<BR>
+              - Conhecendo os impactos da Judicialização da saúde.</p>
+            
+            <p><strong>Resultados esperados</strong></p>
+            <p>Ao final do curso espera-se que o participante compreenda o papel da ANS no processo de Gestão da Cooperativa, bem como se situe das normas que regem as normativas das operadoras de Planos de Saúde.</p>
+			<div class="dotted-border"></div>
+            
+             <p><strong>Bibliografia Básica</strong></p> 
+            <p>- Legislação: 5764/71; 9656/98; 9961/71.<BR>
+              - Resoluções e Instruções Normativas da ANS.<BR>
+            - Manual de Intercâmbio Nacional.</p>
+       </div>
+        <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	
+	<script src="../includes/js/iscroll-lite.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript">
+		var nomeCliente, situacaoTitulos, codigoCliente;
+		$(document).ready(	
+			function(){
+				
+				BRQNavegacao.adicionarPilhaNavegacao('titulosEmAberto');
+				
+				controleBotoes();
+				buscaDadosCliente();
+				carregaPedidos();
+				$("#nomeCliente-clearBt").mousedown(function(){
+					carregaPedidos();
+				});
+				scrollAreaResize('wrapperScroll');	
+				scrollRegistry("contentScroll", true, false);	
+			}
+		);
+		
+		//Resize event
+		$(window).resize(function() {
+			scrollAreaResize('wrapperScroll');
+			});
+		
+		function buscaDadosCliente(){
+			var objStorageClientes = getCliente();
+			codigoCliente = (objStorageClientes != null? objStorageClientes.codigoCliente : null);
+		}
+		
+		function carregaPedidos(situacaoTitulosPar){
+			
+			var codigoTerritorio = null;
+			if(isGerenteMercado()){
+				codigoTerritorio = getRepresentanteEquipe().codigoTerritorio;
+			}
+			
+			situacaoTitulos = situacaoTitulosPar;
+			BRQMob.log("entrando na funcao carregar titulos abertos");
+		  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "titulosAberto", [ situacaoTitulos, codigoCliente, nomeCliente, codigoTerritorio ]);	
+		  	BRQMob.log("saindo na funcao carregar titulos abertos");		
+		}
+		
+		function buscarByCliente(evt){
+			var keycode;
+			nomeCliente = $("input[name='nomeCliente']").val();
+			if (window.event) keycode = window.event.keyCode;
+			else if (e) keycode = e.which;
+			
+			if (keycode == 13){
+			 	BRQMob.log("entrando na funcao carregar titulos abertos por Cliente");
+		  		BRQMob.exec("sucesso", "falha", "VendasDispatcher", "titulosAberto", [situacaoTitulos,null,nomeCliente]);
+			}
+		}
+		
+		function sucesso(retorno){
+			limpaBodyTabela();
+			if(retorno.titulosAbertos){
+				loadListaTitulosAbertos(retorno.titulosAbertos);
+			}
+			if(retorno.titulosTribanco){
+				loadListaTitulosTribanco(retorno.titulosTribanco);
+			}
+		}
+		
+		function falha(retorno){
+			BRQMob.log("falha carregar titulos abertos" + retorno);	 
+		}
+		
+		function loadListaTitulosTribanco(titulosTribanco){
+			var outer_list = $('<div/>', {"class": "tableList" });
+			table=$('<table/>', {"style":"width:100%; border-collapse: collapse"});
+			thead =  $('<thead/>', {});
+			tr= $('<tr/>', {});
+			if(!getViewNameOrigem()){
+				$($('<th/>', {text: 'Cliente'})).appendTo(tr);
+				$($('<th/>', {text:'Razão Social'})).appendTo(tr);
+			}
+			$($('<th/>', {text:'Valor a Vencer'})).appendTo(tr);
+			$($('<th/>', {text:'Valor Vencido'})).appendTo(tr);
+			$($('<th/>', {text:'Qtde. Títulos'})).appendTo(tr);
+			$(tr).appendTo(thead);
+			$(thead).appendTo(table);
+			tbody =  $('<tbody/>', {});	
+				
+			$.each(titulosTribanco, function(i,obj){
+			
+				tr= $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off")});
+				
+				if(!getViewNameOrigem()){
+					td_codigo= $('<td/>', {});
+					$($('<label/>', {"class":"left grid"})).appendTo(td_codigo);
+					$($('<span/>', {"text":obj.codigoCliente})).appendTo(td_codigo);
+					$(td_codigo).appendTo(tr);
+				
+					td_razao_social= $('<td/>', {"style":"text-align:left"});
+					$($('<label/>', {"class":"grid"})).appendTo(td_razao_social);
+					$($('<span/>', {"text":obj.nomeCliente})).appendTo(td_razao_social);
+					$(td_razao_social).appendTo(tr);
+				}
+			
+				td_valorVencer= $('<td/>', {"style":"text-align: right"});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_valorVencer);
+				$($('<span/>', {"text":obj.valorVencer})).appendTo(td_valorVencer);
+				$(td_valorVencer).appendTo(tr);
+				
+				td_valorVencido= $('<td/>', {"style":"text-align: right"});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_valorVencido);
+				$($('<span/>', {"text":obj.valorVencido})).appendTo(td_valorVencido);
+				$(td_valorVencido).appendTo(tr);
+				
+				td_qtdeTitulos= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_qtdeTitulos);
+				$($('<span/>', {"text":obj.quantidadeTitulos})).appendTo(td_qtdeTitulos);
+				$(td_qtdeTitulos).appendTo(tr);
+				
+				$(tr).appendTo(tbody);
+				
+				$(tbody).appendTo(table);					
+			});
+			$("#body_titulos_tribanco").append(table);
+		}
+		
+		
+		function loadListaTitulosAbertos(titulosAbertos){
+			titulo = 'Títulos em Aberto do Cliente';
+			sub_titulo = 'Lista de títulos em aberto do cliente';
+			
+			var outer_list = $('<div/>', {"class": "tableList" });
+						
+			table=$('<table/>', {"style":"width:100%; border-collapse: collapse"});
+			thead =  $('<thead/>', {});
+			tr= $('<tr/>', {});
+			if(!getViewNameOrigem()){
+				$($('<th/>', {text: 'Código'})).appendTo(tr);
+				$($('<th/>', {text:'Razão Social'})).appendTo(tr);
+				titulo = 'Títulos em Aberto';
+				sub_titulo = 'Lista de Títulos em aberto';
+			}
+			
+			$("#header_titulo").text(titulo);
+			$("#header_sub_titulo").text(sub_titulo);
+			
+			
+			$($('<th/>', {text:'N˚ Título'})).appendTo(tr);
+			$($('<th/>', {text:'Vencimento'})).appendTo(tr);
+			$($('<th/>', {text:'Vlr Título'})).appendTo(tr);
+			$($('<th/>', {text:'Tipo'})).appendTo(tr);
+			$($('<th/>', {text:'Estado'})).appendTo(tr);
+			$($('<th/>', {text:'Venc. há'})).appendTo(tr);
+			$(tr).appendTo(thead);
+			$(thead).appendTo(table);
+			tbody =  $('<tbody/>', {});	
+			
+			$.each(titulosAbertos, function(i,obj){
+			
+				tr= $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off")});
+				
+				if(!getViewNameOrigem()){
+					td_codigo= $('<td/>', {});
+					$($('<label/>', {"class":"left grid"})).appendTo(td_codigo);
+					$($('<span/>', {"text":obj.codCliente})).appendTo(td_codigo);
+					$(td_codigo).appendTo(tr);
+				
+					td_razao_social= $('<td/>', {"style":"text-align:left"});
+					$($('<label/>', {"class":"grid"})).appendTo(td_razao_social);
+					$($('<span/>', {"text":obj.nomeCliente})).appendTo(td_razao_social);
+					$(td_razao_social).appendTo(tr);
+				}
+			
+				td_numTitulo= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_numTitulo);
+				$($('<span/>', {"text":obj.numeroCodTitulo})).appendTo(td_numTitulo);
+				$(td_numTitulo).appendTo(tr);
+			
+				var cor=setaCor(obj.idSituacaoTitulo);
+				td_vencimento= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_vencimento);
+				$($('<span/>', {"class":cor})).appendTo(td_vencimento);
+				$($('<span/>', {"text":obj.dataVencimento})).appendTo(td_vencimento);
+				$(td_vencimento).appendTo(tr);			
+				
+				td_vlrTitulo= $('<td/>', {"style":"text-align:right"});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_vlrTitulo);
+				$($('<span/>', {"text":obj.valorSaldoAberto})).appendTo(td_vlrTitulo);
+				$(td_vlrTitulo).appendTo(tr);
+			
+				td_tipo= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_tipo);
+				$($('<span/>', {"text":obj.tipoTitulo})).appendTo(td_tipo);
+				$(td_tipo).appendTo(tr);
+			
+				td_estado= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_estado);
+				$($('<span/>', {"text":obj.codEstadoTitulo})).appendTo(td_estado);
+				$(td_estado).appendTo(tr);
+			
+				td_vencidos= $('<td/>', {});
+				$($('<label/>', {"class":"left grid"})).appendTo(td_vencidos);
+				$($('<span/>', {"text":obj.diasVencidos})).appendTo(td_vencidos);
+				$(td_vencidos).appendTo(tr);		
+					
+				$(tr).appendTo(tbody);
+				
+				$(tbody).appendTo(table);					
+			});
+			$("#body_titulos_aberto").append(table);
+		}
+		
+		function setaCor(idSituacaoTitulo){
+			if(idSituacaoTitulo==1){
+				return "icon bulletRed";
+			}else if(idSituacaoTitulo==4){
+				return "icon bulletYellow";
+			}else if(idSituacaoTitulo==5){
+				return "icon bulletGreen";
+			}
+		}
+		
+		function limpaBodyTabela(){
+			$("#body_titulos_aberto").empty();
+			$("#body_titulos_tribanco").empty();
+		}
+		
+		function controleBotoes(){
+			if(!getViewNameOrigem()){
+				$('#botaoVoltar').empty().remove();
+			}else{
+				$('#menuButton').empty().remove();
+				$('#nomeCliente').empty().remove();
+				$('#nomeCliente-clearBt').empty().remove();
+				$('#nomeCliente-clearBt-div').empty().remove();
+			}
+		}
+		
+	</script>
+	
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+	<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+	<div id="content">
+		<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+		<div id="header">
+			<a id="botaoVoltar" class="button left" href="javascript:BRQNavegacao.voltar();">Voltar</a>
+			<h1 id="header_titulo"></h1>
+		</div>
+		<!-- FIM CABEÇALHO -->
+		
+		<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+		<div id="mainContent">
+			<h2 id="header_sub_titulo">Lista de Títulos em aberto</h2>
+			<div class="panel">
+				<span class="icon bulletRed"></span><div class="left"><label class="large">Provisionados</label></div>
+				<span class="icon bulletYellow"></span><div class="left"><label class="large">Vencidos</label></div>
+				<span class="icon bulletGreen"></span><div class="left"><label class="large">A vencer</label></div>
+			</div>
+			<div id="div-header-area"></div>
+			<div id="div-wrapper-area" style="top:55px;">
+				<div id="div-scroller-area">
+					<div class="result">
+						<div id="body_titulos_aberto"></div>							
+					</div>			
+					<h2>Títulos Tribanco</h2>
+					<div class="result">
+						<div id="body_titulos_tribanco"></div>							
+					</div>
+				</div>
+			</div>
+			<div id="div-footer-area"></div>
+		</div>
+		<!-- FIM CONTEÚDO PRINCIPAL -->
+	</div>
+	<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>
+<script type="text/javascript">	
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('div-wrapper-area', {
+				useTransform: true,
+		    	onBeforeScrollStart: function (e) {
+			        var target = e.target;
+			        while (target.nodeType != 1) {target = target.parentNode};
+			        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+			        	e.preventDefault();
+			        }
+		       },
+		       onListEndV: function (){
+		       		BRQMob.log('Log onListEndV not remove!');
+		       }
+		    });
+	}
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>

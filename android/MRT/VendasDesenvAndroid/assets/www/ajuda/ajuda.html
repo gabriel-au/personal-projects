@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../ajuda/css/ajuda.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//Definimos que todos as tags dd terão display:none menos o primeiro filho
+		$('dd:not(:first)').hide();
+		//Ao clicar no link, executamos a funcao
+		$('dt a').click(function(){
+			//As tags dd's visíveis agora ficam com display:none
+			$("dd:visible").slideUp("slow");
+			//Apos, a funcao é transferida para seu pai, que procura o proximo irmao no codigo o tonando visível
+			$(this).parent().next().slideDown("slow");
+			return false;
+		});
+	});
+</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<h1>Ajuda</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<h2>Tire suas dúvidas operacionais do Sistema de Vendas Martins durante a utilização</h2>
+										
+				<dl>
+					<dt><a>Apresentação</a></dt>
+					<dd>
+				        <p>Esta é a ferramenta AJUDA que foi desenvolvida para tirar as dúvidas operacionais do Sistema de Vendas Martins durante a sua utilização.</p>
+		                <p>A ajuda é sensível ao contexto de onde é chamada.</p>
+		                <p>Estando em uma tela qualquer do sistema, clique no botão <img src="../includes/images/ajuda/icoAjuda.png" /></p>
+					</dd>
+					<dt><a>Lista de Clientes</a></dt>
+					<dd>
+						<p>Esta tela exibe os clientes do representantes, separados em normais, suspensos e cortados.</p>
+		                <p>Os clientes não atendidos e os clientes atendidos dentro da semana ou do mês corrente, são diferenciados por cores:</p>
+		                	<ul>
+		                		<li>Verde - cliente atendido na semana</li>
+		                		<span class="icon bulletGreen" style="margin: -18px 0"></span>
+		                		<li>Amarelo - cliente atendido no mês</li>
+		                		<span class="icon bulletYellow" style="margin: -18px 0 0 -2px"></span>
+		                		<li>Vermelho - cliente não atendido no mês</li>
+		                		<span class="icon bulletRed" style="margin: -18px 0 0 -2px"></span>
+		                	</ul>
+		                	<br />
+		                	
+		               <img src="../includes/images/ajuda/bt_todos_pedidos.png"> 	      
+		               <p>É possível visualizar todos os pedidos de todos os clientes do RCA.</p>
+		               
+		               <p>Exibir Clientes</p>
+		              
+			               <ul>
+			               		<li>Normais, Suspensos e Cortados</li>
+			               </ul>
+		               		
+		               <p>Ordenar por (Lista ordenada)</p>
+		               		<ul>
+		               			<li>Código Cliente: código do cliente</li>
+		               			<li>Razão Social: nome oficial da empresa</li>
+		               			<li>Nome Fantasia: nome pelo qual a empresa é conhecida</li>
+		               			<li>Top: cliente definido como TOP</li>
+		               			<li>Estrela: cliente definido como Favorito</li>
+		               		</ul>
+		               <br />
+		               <img src="../includes/images/ajuda/bt_top.png"> 	      
+		               <p>Indica que o Cliente é TOP.</p>
+		               <br />
+		               <img src="../includes/images/ajuda/bt_favoritos.png"> 	      
+		               <p>Indica que o Cliente é Favorito</p> 
+					</dd>
+				    
+					<dt><a>Prazo de Pagamento</a></dt>
+				    <dd>
+				        <p>É apresentada uma lista com os prazos disponíveis para pagamento a partir da data de faturamento do pedido.</p>
+				    </dd>
+				</dl>
+								
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+	
+
+</body>
+</html>

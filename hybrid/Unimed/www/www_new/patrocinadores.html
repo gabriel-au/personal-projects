@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Unimed</title>
+
+<link rel="stylesheet" type="text/css"
+	href="includes/css/jquery.mobile-1.0rc1.css" />
+<link rel="stylesheet" type="text/css"
+	href="includes/css/jquery.mobile.scrollview.css" />
+<link rel="stylesheet" type="text/css" href="includes/css/themes" />
+<link rel="stylesheet" type="text/css"
+	href="includes/css/jqm-docs-1.css" />
+<link rel="stylesheet" type="text/css" href="includes/css/estilo.css" />
+<link rel="stylesheet" type="text/css" href="includes/css/estilo2.css" />
+
+<script src="includes/js/jquery-1.6.2.min.js"></script>
+<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+<script src="includes/js/jquery.mobile.scrollview.js"></script>
+<script src="includes/js/data.js"></script>
+<script src="includes/js/load.js"></script>
+
+<script src="includes/js/jquery.easing.1.3.js"></script>
+<script src="includes/js/scrollview.js"></script>
+
+</head>
+
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+
+		<style>
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 1000px;
+	z-index: 1;
+	border-top: 2px solid #696969;
+	background: #000000 url(includes/images/bg-footer_a.png);
+}
+
+.footer ul.evento {
+	list-style-type: none;
+	display: block;
+	position: relative;
+	margin: 0 10px;
+	padding: 0;
+}
+
+.footer ul.evento li {
+	float: left;
+	display: block;
+	width: 59px;
+	height: 50px;
+	margin: 0;
+}
+
+.footer ul.evento li a {
+	display: block;
+	float: left;
+	margin: 4px 0;
+	width: 59px;
+	height: 13px;
+	padding-top: 33px;
+	text-align: center;
+	font-size: 8px;
+	color: #A8A8A8;
+	text-decoration: none;
+	background: url(includes/images/menu_a.png) no-repeat scroll 0 -4px
+		transparent;
+	border-radius: 5px;
+}
+
+ul.evento li.highlight a {
+	color: #FFFFFF;
+}
+
+ul.evento li a.informacoes:hover,ul.evento li.highlight a.informacoes {
+	background-position: 0 -54px;
+}
+
+ul.evento li a.programacao {
+	background-position: -60px -4px;
+}
+
+ul.evento li a.programacao:hover,ul.evento li.highlight a.programacao {
+	background-position: -60px -54px;
+}
+
+ul.evento li a.negocios {
+	background-position: -120px -4px;
+}
+
+ul.evento li a.negocios:hover,ul.evento li.highlight a.negocios {
+	background-position: -120px -54px;
+}
+
+ul.evento li a.mapa {
+	background-position: -180px -4px;
+}
+
+ul.evento li a.mapa:hover,ul.evento li.highlight a.mapa {
+	background-position: -180px -54px;
+}
+
+ul.evento li a.executivos {
+	background-position: -240px -4px;
+}
+
+ul.evento li a.executivos:hover,ul.evento li.highlight a.executivos {
+	background-position: -240px -54px;
+}
+
+ul {
+	list-style: none;
+}
+
+.container .content .master {
+	color: #009900;
+	font-size: 13px;
+	margin-left: 14px;
+}
+
+.container .content .diamante {
+	color: #3399FF;
+	font-size: 13px;
+	margin-left: 14px;
+}
+
+.container .content .ouro {
+	color: #FF9900;
+	font-size: 13px;
+	margin-left: 14px;
+}
+
+.container .content .prata {
+	color: #666666;
+	font-size: 13px;
+	margin-left: 14px;
+}
+</style>
+
+		<script>
+			$(document).ready(
+					function() {
+						$(".footer").css("top", $(window).height() - 67);
+						$(".bg-brq").css("top", $(window).height() - 115);
+						$(".content").css("height", $(window).height() - 165);
+						$(".content .android").css("height",
+								$(window).height() - 165);
+						$(window).resize(
+								function() {
+									$(".footer").css("top",
+											$(window).height() - 67);
+									$(".bg-brq").css("top",
+											$(window).height() - 115);
+									$(".content").css("height",
+											$(window).height() - 165);
+									$(".content .android").css("height",
+											$(window).height() - 165);
+								});
+					})
+		</script>
+		<div class="header">
+			<div class="title">Patrocinadores</div>
+			<div class="sombra"></div>
+			<div class="bottom-voltar">
+				<a href="index.html"><img src="includes/imagens/bt-voltar.jpg"></a>
+			</div>
+		</div>
+
+
+		<!--inicio content-->
+		<div class="content" data-scroll="y" style="height: 350px">
+			<br />
+
+			<div class="section-a">
+				<p class="title-orange">Cota Máster</p>
+				<ul>
+					<li><img src="includes/imagens/logo-ibbca.jpg" alt="ibbca"
+						width="125" height="60" title="ibbca"></li>
+				</ul>
+			</div>
+			<div class="section-b" style="padding-top: 26px;">
+				<p class="title-orange"></p>
+				<ul>
+					<li><img src="includes/imagens/logo-qualicorp.jpg"
+						alt="Unimed - RS" width="125" height="60" title="Unimed -RS"></li>
+				</ul>
+
+			</div>
+			<div class="dotted-border"></div>
+			<div class="section-a">
+				<p class="title-orange">Cota Diamante</p>
+				<ul>
+					<li><img src="includes/imagens/logo-unimed-seguros.jpg"
+						alt="Unimed Seguros" width="125" height="60"
+						title="Unimed Seguros"></li>
+				</ul>
+			</div>
+			<div class="section-b" style="padding-top: 26px;">
+				<p class="title-orange"></p>
+				<ul>
+					<li><img src="includes/imagens/logo-unimed-central.jpg"
+						alt="Unimed Brasil" width="125" height="60" title="Unimed Central"></li>
+				</ul>
+			</div>
+			<div class="dotted-border"></div>
+			<div class="section-a">
+				<p class="title-orange">Cota Ouro</p>
+				<ul>
+					<li><img src="includes/imagens/logo-unimed-participacoes.jpg"
+						alt="Unimed - Participacoes" width="125" height="60"
+						title="Unimed - Participacoes"></li>
+					<li><img src="includes/imagens/logo-ey.jpg" alt="Ey"
+						width="125" height="60" title="Ey"></li>
+					<li><img src="includes/imagens/logo-unimed-federacaominas.jpg"
+						alt="Unimed - Federacao Minas" width="125" height="60"
+						title="Unimed - Federacao Minas"></li>
+					<li><img src="includes/imagens/logo_santander.jpg"
+						alt="Santander" width="125" height="60" title="Santander"></li>
+					<li><img src="includes/imagens/logo-telefonica.jpg"
+						alt="Telefonica - Vivo" width="125" height="60"
+						title="Telefonica - Vivo"></li>
+					<li><img src="includes/imagens/logo-unicred.jpg" alt="Unicred"
+						width="125" height="60" title="Unicred"></li>
+
+				</ul>
+			</div>
+			<div class="section-b" style="padding-top: 26px;">
+				<p class="title-orange"></p>
+				<ul>
+					<li><img src="includes/imagens/logo-unimed-rs.jpg"
+						alt="Unimed - RS" width="125" height="60" title="Unimed - RS"></li>
+					<li><img src="includes/imagens/logo-ativas.jpg" alt="Ativas"
+						width="125" height="60" title="Ativas"></li>
+					<li><img src="includes/imagens/logo-unimed-bh.jpg"
+						alt="Unimed - BH" width="125" height="60" title="Unimed - BH"></li>
+					<li><img src="includes/imagens/logo-axismed.jpg" alt="Axismed"
+						width="125" height="60" title="Axismed"></li>
+					<li><img src="includes/imagens/logo-sistemaocb.jpg"
+						alt="Sistema OCB" width="125" height="60" title="Sistema OCB"></li>
+					<li><img src="includes/imagens/logo-medilar.jpg" alt="Medilar"
+						width="125" height="60" title="Medilar"></li>
+
+
+				</ul>
+			</div>
+			<div class="dotted-border"></div>
+			<div class="section-a">
+				<p class="title-orange">Cota Prata</p>
+				<ul>
+					<li><img src="includes/imagens/logo-aeromedica.jpg"
+						alt="Unimed  Aero Medica" width="125" height="60"
+						title="Unimed  Aero Medica"></li>
+					<li><img src="includes/imagens/logo-bem.jpg" alt="Grupo Bem"
+						width="125" height="60" title="Grupo Bem"></li>
+					<li><img src="includes/imagens/logo-covidien.jpg"
+						alt="Covidien" width="125" height="60" title="Covidien"></li>
+					<li><img src="includes/imagens/logo-medalliance.jpg"
+						alt="Med Allieance" width="125" height="60" title="Med Allieance"></li>
+					<li><img src="includes/imagens/logo-hp.jpg"
+						alt="HP Enterprise Services" width="125" height="60"
+						title="HP Enterprise Services"></li>
+					<li><img src="includes/imagens/logo-lm.jpg" alt="Lm"
+						width="125" height="60" title="Lm"></li>
+					<li><img src="includes/imagens/logo-uniodonto.jpg"
+						alt="Uniodonto do Brasil" width="125" height="60"
+						title="Uniodonto do Brasil"></li>
+					<li><img src="includes/imagens/logo-unimed-fundacao.jpg"
+						alt="Unimed Fundacao" width="125" height="60"
+						title="Unimed Fundacao"></li>
+					<li><img src="includes/imagens/logo-ibcc.jpg" alt="IBCC"
+						width="125" height="60" title="IBCC"></li>
+
+				</ul>
+			</div>
+			<div class="section-b" style="padding-top: 26px;">
+				<p class="title-orange"></p>
+				<ul>
+					<li><img src="includes/imagens/logo-bionexo.jpg" alt="Bionexo"
+						width="125" height="60" title="Bionexo"></li>
+					<li><img src="includes/imagens/logo-tecelpan.jpg"
+						alt="Tecelagem Panamericana" width="125" height="60"
+						title="Tecelagem Panamericana"></li>
+					<li><img src="includes/imagens/logo-emed.jpg" alt="Emed"
+						width="125" height="60" title="Emed"></li>
+					<li><img src="includes/imagens/logo-saudemaneger.jpg"
+						alt="Saude Manager" width="125" height="60" title="Saude Manager"></li>
+					<li><img src="includes/imagens/logo-brq.jpg" alt="BRQ"
+						width="125" height="60" title="BRQ"></li>
+					<li><img src="includes/imagens/logo-fesc.jpg" alt="Fesc"
+						width="125" height="60" title="Fesc"></li>
+					<li><img src="includes/imagens/logo-procenge.jpg"
+						alt="Procenge" width="125" height="60" title="Procenge"></li>
+					<li><img src="includes/imagens/logo-unimed-mulher.jpg"
+						alt="Unimed - Assoc. Mulher" width="125" height="60"
+						title="Unimed - Assoc. Mulher"></li>
+					<li><img src="includes/imagens/logo-brasanitas.jpg"
+						alt="Brasanitas" width="125" height="60" title="Brasanitas"></li>
+
+				</ul>
+
+			</div>
+
+
+		</div>
+
+		<!--fim content-->
+		<div class="bg-brq">
+			<img src="includes/imagens/bg-brq.png" style="float: right;">
+		</div>
+		<div class="footer">
+			<ul class="evento">
+				<li style="border-left: none;"><a class="informacoes"
+					href="index.html" data-transition="none" title="Informações">Informações</a></li>
+				<li><a class="programacao" href="lista-programacao.html"
+					data-transition="none" title="">Programação</a></li>
+				<li><a class="negocios" href="negocio.html"
+					data-transition="none" title="">Negócios</a></li>
+				<li><a class="mapa" href="mapa.html" data-transition="none"
+					title="">Mapa</a></li>
+				<li class="highlight"><a class="executivos"
+					href="patrocinadores.html" data-transition="none" title="">Patrocínios</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--fim container-->
+</body>
+</html>

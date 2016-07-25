@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/voo_online/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">Vôos On-line</div>
+</div>
+
+
+
+<div class="arredondado">
+<div class="arredondado_chamada_right">
+28/07/2010
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_gol.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>01866</strong> GOL</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Rio Jan-Galeao - RJ</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 11:35 - Confirmado: 12:07</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_ok.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_avi.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>06170</strong> AVIANCA - ONE</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Rio Jan-S.Dumont - RJ</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 12:15 - Confirmado: -</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_nao.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_web.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>06790</strong> WEBJET</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>S. Paulo-Congonhas - SP</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 08:07 - Confirmado: 08:07</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_cancel.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_tam.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>03856</strong> TAM</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Belo Horizonte - MG</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 11:43 - Confirmado: 11:43</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_ok.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_chamada_right">
+28/07/2010
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_gol.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>01866</strong> GOL</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Rio Jan-Galeao - RJ</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 11:35 - Confirmado: 12:07</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_ok.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_avi.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>06170</strong> AVIANCA - ONE</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Rio Jan-S.Dumont - RJ</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 12:15 - Confirmado: -</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_nao.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_web.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>06790</strong> WEBJET</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>S. Paulo-Congonhas - SP</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 08:07 - Confirmado: 08:07</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_cancel.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+<div class="arredondado_voos">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="40">
+			<img src="<%=request.getContextPath()%>/imagens/cia_tam.gif">
+		</td>
+		<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr">
+					<td><strong>03856</strong> TAM</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_1">
+					<td>Belo Horizonte - MG</td>
+				</tr>
+				<tr class="arredondado_voos_detalhe_2">
+					<td>Previsto: 11:43 - Confirmado: 11:43</td>
+				</tr>
+			</table>
+		</td>
+		<td width="25">
+			<img src="<%=request.getContextPath()%>/imagens/status_ok.gif">
+		</td>
+	</tr>
+</table>
+</div>
+
+
+</div>
+
+</body>
+</html>

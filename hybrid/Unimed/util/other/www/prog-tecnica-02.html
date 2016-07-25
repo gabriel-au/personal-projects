@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header"> 
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y"><br />
+        	<h2 class="data">12/9 (quarta)</h2>
+        	<h2 class="aviso">9h às 10h30</h2>
+        	<p><strong>Palestra: "Desafios de Crescimento das Cooperativas Frente à Legislação Nacional".</strong></p>
+        	<p><strong>Presidente</strong></p>
+            <p>Dr. Alexandre Augusto Ruschi Filho, presidente da Federação Espírito Santo</p>
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Adelson Severino Chagas, presidente da Federação Inter. Equatorial </p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Eudes de Freitas Aquino, presidente da Unimed do Brasil <br />
+            Luiz Lourenço, presidente da Cocamar </p>
+             <div class="dotted-border"></div>
+             
+            <h2 class="aviso">10h30 às 13h</h2>
+             <p><strong>Palestra: "Relacionamento com a ANS"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Dr. Mohamad Akl, presidente da Central Nacional Unimed</p>
+            <p><strong>Moderador</strong></p>
+            <p>Dr. Omar Abujamra Junior, presidente da Federação Intrafederativa Centro-Oeste Paulista</p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Leandro Reis Tavares, Diretor de Normas e Habilitação de Operadoras da ANS <br />
+            Dr. Mauricio Ceschin, Diretor-presidente da ANS<br />
+            Dr. Bruno Sobral, Diretor de Desenvolvimento Setorial da ANS<br />
+            Dr. André Longo, Diretor de Gestão da ANS<br />
+            Dr. Valdmário Rodrigues Junior, Diretor de Integração Cooperativista da Unimed do Brasil</p>
+             <div class="dotted-border"></div>
+			
+            <h2 class="aviso">13h às 14h30</h2>
+            <p><strong>Almoço</strong></p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">14h30 às 15h30</h2>
+        	<p><strong>Palestra: "Participação da Mulher no Corpo Diretivo das Empresas"</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente</strong></p>
+            <p>Dra. Viviane Vieira Malta, presidente da Unimed Maceió</p>
+            <div class="dotted-border"></div>
+            <p>Debatedores</p>
+            <p>Leyla Nascimento, presidente nacional da ABRH Nacional<br />
+			Patricia Molino, sócia da KPMG</p>
+            
+            <div class="dotted-border"></div>
+            <h2 class="aviso">15h30 às 16h30</h2>
+        	<p><strong>Palestra: "Brasil e suas perspectivas: oportunidades geradas pelo Sistema Unimed"</strong></p>
+			<h2 class="aviso">Palestrante</h2>
+            <p>Eduardo Giannetti, economista e cientista social<br />
+            <strong>. A União faz a Previdência</strong></p>
+            <div class="dotted-border"></div>
+            
+            <p>Debatedores</p>
+            <p>Dr. Eudes de Freitas Aquino, presidente da Unimed do Brasil <br />
+			Dr. Rafael Moliterno Neto, presidente da Seguros Unimed</p>
+			<div class="dotted-border"></div>
+			 
+			 <h2 class="aviso">Palestrante</h2>
+            <p>Dr. Alexandre Augusto Ruschi Filho, presidente da Federação Espírito Santo e Diretor da Seguros Unimed <br />
+            <strong>. Onde investir em uma economia com taxa de juros real em 3% ao ano? </strong></p>
+            <div class="dotted-border"></div>
+            
+            
+            <h2 class="aviso">16h30 às 18h</h2>
+        	<p><strong>Palestra: "Parceria Público-Privada (PPP)"</strong></p>
+        	<p><strong>Presidente</strong></p>
+        	<p>Dr. Edevard José de Araújo, Presidente da Federação Santa Catarina</p>
+        	 <div class="dotted-border"></div>
+        	 
+        	<p>Debatedores</p>
+        	<p>Elena De Mingo, diretora geral de Planejamento, Infraestrutura e Equipamento Sanitário do Ministério da Saúde de Madrid <br />
+        	Prof. Dr. António Serrano, Deputado do Partido Socialista na Assembléia da República de Portugal<br />
+        	Luciana Silveira, superintendente de Regulação da Unimed do Brasil </p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">18h às 18h30</h2>
+        	<p><strong>Entrega dos Prêmios</strong></p>
+        	<p>Profissionais de RH, Advogados e Contador;<br />
+        	Prêmio Jeber Juabre;<br />
+        	Entrega do Selo Nacional Unimed de Governança Cooperativa</p>
+            <div class="dotted-border"></div>
+            
+           <h2 class="aviso">20h</h2> 
+           <p><strong>Festa Típica</strong></p>
+              
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<project name="BRQMobileBase" default="jar" basedir=".">
+
+	<property file="build.properties" />	
+	
+	<path id="classpath.base">
+		<pathelement location="${src-dir}" />
+        <fileset dir="${lib-dir}" includes="**/*.jar" />
+	</path>
+
+	<target name="jar" depends="compile">
+		
+		<echo message="${basedir}" />
+		
+		<jar destfile="${jar-dir}/framework-base.jar">
+	 		<fileset dir="${bin-dir}" />
+		</jar>
+		
+		<copy file="${jar-dir}/framework-base.jar" todir="${jar-windows-dir}" overwrite="true" />
+		<copy file="${jar-dir}/framework-base.jar" todir="${jar-android-dir}" overwrite="true" />
+	</target>
+
+	<target name="compile" depends="clean">	
+		<javac debug="on" includeantruntime="true" destdir="${bin-dir}" target="1.6">
+			<src path="${src-dir}" />
+			<classpath refid="classpath.base" />
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete verbose="true" failonerror="false">
+			<fileset dir="${bin-dir}" includes="**/*.class" />
+		</delete>
+	</target>
+	
+	<target name="copy_to_library" depends="jar">
+		<copy file="${jar-dir}/framework-base.jar" todir="${brq_mobile_library_dir}" overwrite="true" />
+	</target>
+	
+</project>

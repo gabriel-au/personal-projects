@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/BRQMobileAndroid"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/BRQMobileBase"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/EstruturaModulo"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MartinsModulo"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/RelacionamentoModulo"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/VendasModulo"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/VendasService"/>
+	<classpathentry exported="true" kind="lib" path="/BRQMobileAndroid/lib/phonegap-1.3.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="/BRQMobileBase/lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="/BRQMobileBase/lib/additionnal.jar"/>
+	<classpathentry exported="true" kind="lib" path="/BRQMobileBase/lib/mail.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,7 @@
+# This is a simple Microlog configuration file
+microlog.level=TRACE
+microlog.appender=BluetoothSerialAppender
+#microlog.formatter=SimpleFormatter
+microlog.formatter=PatternFormatter
+microlog.formatter.PatternFormatter.pattern=%c [%P] %m %T
+

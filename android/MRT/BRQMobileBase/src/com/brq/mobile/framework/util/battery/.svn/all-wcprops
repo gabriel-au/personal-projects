@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/4793/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery
+END
+BatteryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mobile/!svn/ver/4793/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery/BatteryManager.java
+END
+BatteryManagerAndroidImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/4793/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery/BatteryManagerAndroidImpl.java
+END
+Battery.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/4793/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery/Battery.java
+END
+Kernel32.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/868/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery/Kernel32.java
+END
+BatteryManagerWindowsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/4793/framework/code/trunk/BRQMobileBase/src/com/brq/mobile/framework/util/battery/BatteryManagerWindowsImpl.java
+END

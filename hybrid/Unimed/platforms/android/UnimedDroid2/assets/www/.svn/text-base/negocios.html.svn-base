@@ -1,0 +1,182 @@
+p<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+    <!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+	
+
+   
+
+</head>
+<body>
+	<div class="container" data-role="page">
+	
+	<style> 
+    <!--
+		.container .content .master{
+		color:#009900;
+		font-size:13px;
+		margin-left:14px;
+		}
+		.container .content .diamante{
+			color:#3399FF;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .ouro{
+			color:#FF9900;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .prata{
+			color:#666666;
+			font-size:13px;
+			margin-left:14px;
+		}
+	 -->
+	 </style>	
+	
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Negócios</div>
+             <div class="sombra"></div>
+        </div>
+
+
+        <!--inicio content-->
+		<div class="content" data-scroll="y" style="height:315px"><br />
+        	<h2 class="master">Máster</h2>
+        	<ul class="empresas">
+            	<li>1 - Seguros Unimed</li>
+                <li>2 - Unimed do Brasil</li>
+            </ul>
+            <h2 class="diamante">Diamante</h2>
+            <ul class="empresas">
+                <li>4 - CNU</li>
+            </ul> 
+             <h2 class="ouro">Ouro</h2>
+            <ul class="empresas">
+                <li>5 - Unimed Fortaleza </li>
+                <li>6 - Unimed Fortaleza </li>
+                <li>7 - Axismed</li>
+                <li>8 - Federação RS</li>
+                <li>9 - Unimed Fortaleza</li>
+                <li>10 - Unimed Fortaleza </li>
+                <li>11 - Unicred</li>
+                <li>12 - Unicred</li>
+                <li>13 - Federação Ceará</li>
+                <li>14 - Federação Ceará</li>
+                <li>15 - Federação Ceará</li>
+                <li>16 - Federação Ceará</li>
+                <li>17 - IBBCA</li>
+                <li>18 - Uniodonto</li>
+                <li>19 - Afip</li>
+                <li>20 - CMS</li>
+            </ul> 
+            <h2 class="prata">Prata</h2>
+            <ul class="empresas">
+                <li>21 - Emed </li>
+                <li>22 - IBCC </li>
+                <li>23 - Sanofi-Aventis</li>
+                <li>24 - L+M Gets</li>
+                <li>25 - Procare</li>
+                <li>26 - Polycom </li>
+                <li>27 - Polycom</li>
+                <li>28 - Auto Suture</li>
+                <li>28A - MV</li>
+                <li>29 - Pfizer</li>
+                <li>30 - Brasanitas</li>
+                <li>31 - Unimed Participações</li>
+                <li>32 - Fed. Minas</li>
+                <li>33 - Boston Scientific</li>
+                <li>24 - Med Salva</li>
+                <li>35 - Med Salva</li>
+                <li>36 - HL Bolsas</li>
+                <li>37 - Medalliance</li>
+                <li>38 - Bionexo</li>
+                <li>39 - Portal Unimed</li>
+                <li>40 - LBM</li>
+                <li>44 - Fed. Centro Oeste e Tocantins</li>
+                <li>45 - Fed. Centro Oeste e Tocantins</li>
+                <li>46 - OCB</li>
+                <li>47 - OCB</li>
+                <li>48 - OCB</li>
+                <li>49 - OCB</li>
+                <li>50 - OCB</li>
+                <li>51 - OCB</li>
+                <li>52 - Unimed Odonto</li>
+                <li>53 - Grupo Aliança </li>
+                <li>54 - Grupo Aliança </li>
+                <li>55 - Grupo Aliança </li>
+                <li>57 - Sincoomed</li>
+                <li>58 - Fundação Unimed </li>
+                <li>59 - PCG</li>
+                <li>60 - Medilar </li>
+                <li>61 - Medilar </li>
+                <li>62 - Medilar </li>
+                <li>63 - Medilar </li>
+                <li>64 - Qualicorp </li>
+                <li>65 - Qualicorp </li>
+                <li>66 - Qualicorp </li>
+                <li>67 - Qualicorp </li>
+                <li>68 - OCB</li>
+                <li>69 - OCB</li>
+                <li>70 - OCB</li>
+                <li>71 - OCB</li>
+                <li>72 - BRQ Soluções em Informática</li>
+                <li>73 - Sicurezza</li>
+                <li>74 - Boehringer</li>
+                <li>75 - Strategy</li>
+                <li>76 - Odontoprev</li>
+                <li>77 - HP</li>
+                <li>79 - AMU</li>
+              
+            </ul>    
+       </div>
+    	<!--fim content-->
+
+
+       <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li class="highlight"><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+	
+	<script>
+		//listarEmpresas();
+	</script>
+</body>
+</html>

@@ -1,0 +1,1016 @@
+TAcompanhamentoProcessual
+v7
+r0
+t309790651.590080
+cCheck dependencies
+cCpResource build/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist"
+cProcessInfoPlistFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/Info.plist AcompanhamentoProcessual-Info.plist
+cCompileXIB /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib
+cCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png inicio.png
+cCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png acompanhamento.png
+cCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png pushes.png
+cCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png addprocesso.png
+cProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch.gch AcompanhamentoProcessual_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch.gch AcompanhamentoProcessual_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cDataModelVersionCompile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/main.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessualAppDelegate.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AsyncSocket.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CommandController.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Pushes.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Processos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Mensagens.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CadastroOAB.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/PesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Inicio.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/ResultadoPesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/VisualizadorWeb.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/main.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual normal armv6
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessualAppDelegate.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AsyncSocket.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CommandController.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Pushes.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Processos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Mensagens.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CadastroOAB.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/PesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Inicio.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/ResultadoPesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/VisualizadorWeb.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual normal armv7
+cCreateUniversalBinary /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual normal "armv6 armv7"
+cGenerateDSYMFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual
+cProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision
+cTouch /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+cProcessProductPackaging "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent
+cCodeSign /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk
+c000000004C6DE9E30000000000000110
+t1282271715
+s272
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist
+c000000004C578FA900000000000001A7
+t1280806825
+s423
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+c000000004C578FA900000000000001E5
+t1280806825
+s485
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004C5A524A00000000002CE430
+t1280987722
+s2942000
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004C5A517D00000000000004CF
+t1280987517
+s1231
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004C5A533700000000002F9FB0
+t1280987959
+s3121072
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004C5A5311000000000000046B
+t1280987921
+s1131
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A51050000000000345F00
+t1280987397
+s3432192
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A52B100000000003E1EF0
+t1280987825
+s4071152
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A527F0000000000001466
+t1280987775
+s5222
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C5A556300000000000000C4
+t1280988515
+s196
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C62427000000000000009CD
+t1281507952
+s2509
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C62430F0000000002EBC2B0
+t1281508111
+s49005232
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/Availability.h
+c000000004C57A57A0000000000001A5C
+t1280812410
+s6748
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/arpa/inet.h
+c000000004C5790620000000000001533
+t1280807010
+s5427
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/netdb.h
+c000000004C57909B000000000000307F
+t1280807067
+s12415
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/netinet/in.h
+c000000004C5A4AAE0000000000005462
+t1280985774
+s21602
+
+N/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/sys/socket.h
+c000000004C5A4AB400000000000059D6
+t1280985780
+s22998
+
+N/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision
+c000000004C9BAF280000000000003696
+t1285271336
+s13974
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld
+c000000004C3DB08400000000000000AA
+t1279111300
+s170
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual_Prefix.pch
+c000000004C3DB0840000000000000184
+t1279111300
+s388
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.h
+c000000004C3DB08400000000000005AD
+t1279111300
+s1453
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m
+c000000004C3DB084000000000000362D
+t1279111300
+s13869
+i<QuartzCore/QuartzCore.h>
+i"AcompanhamentoProcessualAppDelegate.h"
+i"VisualizadorWeb.h"
+i"Pushes.h"
+i"Processos.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.h
+c000000004C3DB08400000000000057EF
+t1279111300
+s22511
+i<Foundation/Foundation.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m
+c000000004C3DB08400000000000176C9
+t1279111300
+s95945
+i"AsyncSocket.h"
+i<sys/socket.h>
+i<netinet/in.h>
+i<arpa/inet.h>
+i<netdb.h>
+i<CFNetwork/CFNetwork.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.h
+c000000004C3DB084000000000000024D
+t1279111300
+s589
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m
+c000000004C3DB0840000000000001E94
+t1279111300
+s7828
+i"CadastroOAB.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.h
+c000000004C3DB0840000000000000728
+t1279111300
+s1832
+i"AsyncSocket.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m
+c000000004C3DB084000000000000132E
+t1279111300
+s4910
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.h
+c000000004C3DB0840000000000000160
+t1279111300
+s352
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m
+c000000004C3DB084000000000000084D
+t1279111300
+s2125
+i"Inicio.h"
+i"VisualizadorWeb.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.h
+c000000004C3DB0840000000000000232
+t1279111300
+s562
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m
+c000000004C3DB0840000000000000651
+t1279111300
+s1617
+i"Mensagens.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.h
+c000000004C3DB0840000000000000472
+t1279111300
+s1138
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m
+c000000004C3DB08400000000000034EF
+t1279111300
+s13551
+i"PesquisaProcessos.h"
+i"ResultadoPesquisaProcessos.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.h
+c000000004C3DB084000000000000058D
+t1279111300
+s1421
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m
+c000000004C3DB084000000000000262D
+t1279111300
+s9773
+i"Processos.h"
+i"Mensagens.h"
+i"CadastroOAB.h"
+i"PesquisaProcessos.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.h
+c000000004C3DB08400000000000003DD
+t1279111300
+s989
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m
+c000000004C3DB0840000000000001F6E
+t1279111300
+s8046
+i"Pushes.h"
+i"Mensagens.h"
+i"VisualizadorWeb.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.h
+c000000004C3DB0840000000000000318
+t1279111300
+s792
+i<UIKit/UIKit.h>
+i"CommandController.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m
+c000000004C3DB084000000000000166F
+t1279111300
+s5743
+i"ResultadoPesquisaProcessos.h"
+i"VisualizadorWeb.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.h
+c000000004C3DB084000000000000028D
+t1279111300
+s653
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m
+c000000004C3DB0840000000000000DF9
+t1279111300
+s3577
+i"VisualizadorWeb.h"
+i"Mensagens.h"
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib
+c000000004C3DB084000000000000222B
+t1279111300
+s8747
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/acompanhamento.png
+c000000004C3DB0840000000000000378
+t1279111300
+s888
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/addprocesso.png
+c000000004C3DB0840000000000000259
+t1279111300
+s601
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent
+t1288097851
+s466
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual
+t1288097849
+s229076
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual.LinkFileList
+c000000004CC6D03400000000000009B2
+t1288097844
+s2482
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessualAppDelegate.o
+t1288097848
+s94320
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AsyncSocket.o
+t1288097848
+s168036
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CadastroOAB.o
+t1288097848
+s62096
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CommandController.o
+t1288097848
+s43232
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Inicio.o
+t1288097848
+s41736
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Mensagens.o
+t1288097848
+s42352
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/PesquisaProcessos.o
+t1288097849
+s85940
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Processos.o
+t1288097848
+s85108
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Pushes.o
+t1288097848
+s74236
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/ResultadoPesquisaProcessos.o
+t1288097849
+s67856
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/VisualizadorWeb.o
+t1288097849
+s50016
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/main.o
+t1288097847
+s6600
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual
+t1288097850
+s220316
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual.LinkFileList
+c000000004CC6D03400000000000009B2
+t1288097844
+s2482
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessualAppDelegate.o
+t1288097849
+s93888
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AsyncSocket.o
+t1288097850
+s161108
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CadastroOAB.o
+t1288097850
+s61724
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CommandController.o
+t1288097849
+s42776
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Inicio.o
+t1288097850
+s41580
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Mensagens.o
+t1288097849
+s42012
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/PesquisaProcessos.o
+t1288097850
+s85064
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Processos.o
+t1288097849
+s84312
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Pushes.o
+t1288097849
+s73616
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/ResultadoPesquisaProcessos.o
+t1288097850
+s67440
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/VisualizadorWeb.o
+t1288097850
+s49636
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/main.o
+t1288097849
+s6584
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+t1288097851
+s510
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM
+t1288097850
+s102
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual
+t1288097850
+s468928
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd
+t1288097848
+s136
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/Info.plist
+t1288097844
+s838
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/MainWindow.nib
+t1288097846
+s1548
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/PkgInfo
+t1288097844
+s8
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist
+t1288097844
+s485
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png
+t1288097845
+s693
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png
+t1288097845
+s694
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision
+t1288097850
+s13974
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png
+t1288097845
+s218
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png
+t1288097845
+s412
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/inicio.png
+c000000004C3DB08400000000000000CF
+t1279111300
+s207
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m
+c000000004C3DB084000000000000017E
+t1279111300
+s382
+i<UIKit/UIKit.h>
+
+N/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/pushes.png
+c000000004C3DB084000000000000015B
+t1279111300
+s347
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch.gch
+t1288097847
+s10856684
+
+N/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch.gch
+t1288097847
+s10385644
+
+NAcompanhamentoProcessual-Info.plist
+c000000004C3DB0840000000000000399
+t1279111300
+s921
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309790644#309790644#0(0"0(0#1#0"8616244160#0"0#
+
+CCodeSign /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+s309790651.033586
+e309790651.590037
+r1
+xCodeSign
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+lSLF07#2@58"CodeSign build/Debug-iphoneos/AcompanhamentoProcessual.app309790651#309790651#0(0"0(0#0#135"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app8616807744#969"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate"    /usr/bin/codesign -f -s "iPhone Developer: Gabriel Silva (YM97R9ZK29)" --resource-rules=/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist --entitlements /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessualAppDelegate.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790647.874437
+e309790648.155764
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessualAppDelegate.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@139"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m309790647#309790648#0(0"0(0#0#131"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m8594982624#2715"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessualAppDelegate.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AsyncSocket.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.049633
+e309790648.826200
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AsyncSocket.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m309790648#309790648#0(0"0(0#0#107"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m8613709216#2667"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AsyncSocket.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CadastroOAB.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.754964
+e309790648.899358
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CadastroOAB.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m309790648#309790648#0(0"0(0#0#107"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m8616215360#2667"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CadastroOAB.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CommandController.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.155870
+e309790648.303282
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CommandController.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m309790648#309790648#0(0"0(0#0#113"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m8611721856#2679"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/CommandController.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Inicio.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.899465
+e309790648.979778
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Inicio.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m309790648#309790648#0(0"0(0#0#102"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m8618388192#2657"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Inicio.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Mensagens.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.655727
+e309790648.754854
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Mensagens.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m309790648#309790648#0(0"0(0#0#105"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m8615339008#2663"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Mensagens.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/PesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.826303
+e309790649.043765
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/PesquisaProcessos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m309790648#309790649#0(0"0(0#0#113"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m8618987104#2679"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/PesquisaProcessos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Processos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.471794
+e309790648.655623
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Processos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m309790648#309790648#0(0"0(0#0#105"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m8618288224#2663"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Processos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Pushes.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.303390
+e309790648.471691
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Pushes.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m309790648#309790648#0(0"0(0#0#102"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m8616736352#2657"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/Pushes.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/ResultadoPesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790648.979893
+e309790649.127703
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/ResultadoPesquisaProcessos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@130"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m309790648#309790649#0(0"0(0#0#122"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m8616594976#2697"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/ResultadoPesquisaProcessos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/VisualizadorWeb.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790649.043871
+e309790649.171263
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/VisualizadorWeb.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m309790649#309790649#0(0"0(0#0#111"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m8616488480#2675"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/VisualizadorWeb.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/main.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790647.821014
+e309790647.874330
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/main.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m309790647#309790647#0(0"0(0#0#92"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m8613805472#2645"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessualAppDelegate.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.193900
+e309790649.414017
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessualAppDelegate.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@139"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m309790649#309790649#0(0"0(0#0#131"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m8616802304#2715"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AcompanhamentoProcessualAppDelegate.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessualAppDelegate.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AsyncSocket.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.412555
+e309790650.236457
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AsyncSocket.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m309790649#309790650#0(0"0(0#0#107"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m8616123040#2667"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/AsyncSocket.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AsyncSocket.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CadastroOAB.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.995419
+e309790650.142197
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CadastroOAB.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m309790649#309790650#0(0"0(0#0#107"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m8616796672#2667"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CadastroOAB.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CadastroOAB.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CommandController.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.414117
+e309790649.543433
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CommandController.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m309790649#309790649#0(0"0(0#0#113"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m8615990848#2679"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/CommandController.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/CommandController.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Inicio.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790650.236573
+e309790650.335142
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Inicio.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m309790650#309790650#0(0"0(0#0#102"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m8616009536#2657"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Inicio.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Inicio.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Mensagens.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.877663
+e309790649.995315
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Mensagens.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m309790649#309790649#0(0"0(0#0#105"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m8618727520#2663"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Mensagens.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Mensagens.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/PesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790650.142454
+e309790650.381747
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/PesquisaProcessos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m309790650#309790650#0(0"0(0#0#113"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m8616254496#2679"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/PesquisaProcessos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/PesquisaProcessos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Processos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.709633
+e309790649.877566
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Processos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m309790649#309790649#0(0"0(0#0#105"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m8615949984#2663"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Processos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Processos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Pushes.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.543536
+e309790649.709532
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Pushes.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m309790649#309790649#0(0"0(0#0#102"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m8615855232#2657"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/Pushes.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/Pushes.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/ResultadoPesquisaProcessos.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790650.335251
+e309790650.486061
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/ResultadoPesquisaProcessos.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@130"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m309790650#309790650#0(0"0(0#0#122"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m8616812096#2697"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/ResultadoPesquisaProcessos.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/ResultadoPesquisaProcessos.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/VisualizadorWeb.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790650.381849
+e309790650.491942
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/VisualizadorWeb.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m309790650#309790650#0(0"0(0#0#111"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m8616743136#2675"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/Classes/VisualizadorWeb.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/VisualizadorWeb.o0#
+
+CCompileC build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/main.o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790649.127825
+e309790649.193796
+r1
+xCompileC
+xbuild/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/main.o
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m309790649#309790649#0(0"0(0#0#92"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m8618933696#2645"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -include /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/main.m -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib
+s309790644.887113
+e309790646.284208
+r1
+xCompileXIB
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib309790644#309790646#0(0"0(0#0#100"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib8616697280#764"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/MainWindow.nib /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/MainWindow.xib --sdk "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk"0#
+
+CCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png acompanhamento.png
+s309790645.621172
+e309790645.732099
+r1
+xCopyPNGFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png
+xacompanhamento.png
+lSLF07#2@99"CopyPNGFile build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png acompanhamento.png309790645#309790645#0(0"0(0#0#104"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/acompanhamento.png8618474176#796"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv COPY_COMMAND "/Developer/iPhone SDK 4.1/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/acompanhamento.png /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/acompanhamento.png0#
+
+CCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png addprocesso.png
+s309790645.809047
+e309790645.900849
+r1
+xCopyPNGFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png
+xaddprocesso.png
+lSLF07#2@93"CopyPNGFile build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png addprocesso.png309790645#309790645#0(0"0(0#0#101"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/addprocesso.png8616526624#790"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv COPY_COMMAND "/Developer/iPhone SDK 4.1/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/addprocesso.png /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/addprocesso.png0#
+
+CCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png inicio.png
+s309790644.887832
+e309790645.621037
+r1
+xCopyPNGFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png
+xinicio.png
+lSLF07#2@83"CopyPNGFile build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png inicio.png309790644#309790645#0(0"0(0#0#96"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/inicio.png8616439008#780"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv COPY_COMMAND "/Developer/iPhone SDK 4.1/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/inicio.png /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/inicio.png0#
+
+CCopyPNGFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png pushes.png
+s309790645.732214
+e309790645.808903
+r1
+xCopyPNGFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png
+xpushes.png
+lSLF07#2@83"CopyPNGFile build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png pushes.png309790645#309790645#0(0"0(0#0#96"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/pushes.png8616968608#780"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv COPY_COMMAND "/Developer/iPhone SDK 4.1/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp"    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/pushes.png /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/pushes.png0#
+
+CCpResource build/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist"
+s309790644.835471
+e309790644.887028
+r1
+xCpResource
+xbuild/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist
+x/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+lSLF07#2@109"Copy /Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist309790644#309790644#0(0"0(0#0#104"/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist8613436608#655"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app0#
+
+CCreateUniversalBinary /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual normal "armv6 armv7"
+s309790650.590067
+e309790650.600356
+r1
+xCreateUniversalBinary
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual
+xnormal
+xarmv6 armv7
+lSLF07#2@117"CreateUniversalBinary build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual normal "armv6 armv7"309790650#309790650#0(0"0(0#0#97"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/armv6 armv78616054016#872"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual -output /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual0#
+
+CDataModelVersionCompile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld
+s309790647.820099
+e309790648.049529
+r1
+xDataModelVersionCompile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld
+lSLF07#2@141"DataModelVersionCompile build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd AcompanhamentoProcessual.xcdatamodeld309790647#309790648#0(0"0(0#0#123"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld8618572384#582"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/usr/bin/momc" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual.xcdatamodeld /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual.momd0#
+
+CGenerateDSYMFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual
+s309790650.600458
+e309790650.727640
+r1
+xGenerateDSYMFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual
+lSLF07#2@146"GenerateDSYMFile build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual309790650#309790650#0(0"0(0#0#160"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual8617119648#601"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/usr/bin/dsymutil" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/AcompanhamentoProcessual -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app.dSYM0#
+
+CLd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual normal armv6
+s309790649.171875
+e309790649.412312
+r1
+xLd
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual
+xnormal
+xarmv6
+lSLF07#2@219"Link /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual309790649#309790649#0(0"0(0#0#0"8618376000#1301"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv6 -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -L/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -filelist /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework CFNetwork -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv6/AcompanhamentoProcessual0#
+
+CLd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual normal armv7
+s309790650.492052
+e309790650.589886
+r1
+xLd
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual
+xnormal
+xarmv7
+lSLF07#2@219"Link /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual309790650#309790650#0(0"0(0#0#0"8616241056#1301"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv7 -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -L/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -filelist /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework CFNetwork -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/Objects-normal/armv7/AcompanhamentoProcessual0#
+
+CProcessInfoPlistFile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/Info.plist AcompanhamentoProcessual-Info.plist
+s309790644.841268
+e309790644.883142
+r1
+xProcessInfoPlistFile
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/Info.plist
+xAcompanhamentoProcessual-Info.plist
+lSLF07#2@43"Process AcompanhamentoProcessual-Info.plist309790644#309790644#0(0"0(0#0#121"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual-Info.plist8605582240#848"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility AcompanhamentoProcessual-Info.plist -genpkginfo /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/ResourceRules.plist -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/Info.plist0#
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch.gch AcompanhamentoProcessual_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309790646.285639
+e309790647.819987
+r1
+xProcessPCH
+x/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch.gch
+xAcompanhamentoProcessual_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Precompile AcompanhamentoProcessual_Prefix.pch309790646#309790647#0(0"0(0#0#121"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual_Prefix.pch8616394592#2479"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv7 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual_Prefix.pch -o /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-bpthxassknpndxencaqmzceuqywz/AcompanhamentoProcessual_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch.gch AcompanhamentoProcessual_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309790646.284338
+e309790647.748787
+r1
+xProcessPCH
+x/var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch.gch
+xAcompanhamentoProcessual_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Precompile AcompanhamentoProcessual_Prefix.pch309790646#309790647#0(0"0(0#0#121"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual_Prefix.pch8616659616#2479"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-generated-files.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-own-target-headers.hmap -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-all-target-headers.hmap -iquote /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual-project-headers.hmap -F/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/include -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources/armv6 -I/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/DerivedSources -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/AcompanhamentoProcessual_Prefix.pch -o /var/folders/7I/7IDNcjjLFyepaskKhtdgDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AcompanhamentoProcessual_Prefix-cwnedegpxkzpktbfycyidwuasdit/AcompanhamentoProcessual_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent
+s309790650.997414
+e309790651.033512
+r1
+xProcessProductPackaging
+x/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent
+lSLF07#2@243"ProcessProductPackaging "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist" build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent309790650#309790651#0(0"0(0#0#199"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent8615448064#624"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist" -entitlements -format xml -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/AcompanhamentoProcessual.build/Debug-iphoneos/AcompanhamentoProcessual.build/AcompanhamentoProcessual.xcent0#
+
+CProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision" /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision
+s309790650.727752
+e309790650.992518
+r1
+xProcessProductPackaging
+x/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision
+lSLF07#2@211"ProcessProductPackaging "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision" build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision309790650#309790650#0(0"0(0#0#160"/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision8616027072#566"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Gabriel/Library/MobileDevice/Provisioning Profiles/CF965FD8-65A5-44F3-87EC-D07C6CCCDB87.mobileprovision" -o /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app/embedded.mobileprovision0#
+
+CTouch /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+s309790650.992597
+e309790650.997204
+r1
+xTouch
+x/Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app
+lSLF07#2@141"Touch /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app309790650#309790650#0(0"0(0#0#0"8618623552#405"    cd /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual    setenv PATH "/Developer/iPhone SDK 4.1/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/iPhone SDK 4.1/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Gabriel/Workspace/Projects/STJMobile/Workspace/iPhone/AcompanhamentoProcessual/build/Debug-iphoneos/AcompanhamentoProcessual.app0#
+

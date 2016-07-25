@@ -1,0 +1,372 @@
+<!DOCTYPE HTML><head>
+    <title>Dashboard AIC</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/infobox.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/mapa.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/contador.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/alteraCampo.js" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+	// Accordion
+		$(document).ready(function() {
+			setTimeout(function() {
+				$('#menu5 > li > a.expanded + ul').slideToggle('medium');
+				$('#menu5 > li > a').click(function() {
+					$('#menu5 > li > a.expanded').not(this).toggleClass('expanded').toggleClass('collapsed').parent().find('> ul').slideToggle('medium');
+					$(this).toggleClass('expanded').toggleClass('collapsed').parent().find('> ul').slideToggle('medium');
+				});
+			}, 250);
+		});
+		// Fim Accordion
+		
+		// Slide Index
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 7500,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+		// Fim Slide Index
+    </script>
+</head>
+
+<body>
+	<div id="menuesquerdo">
+		<div class="marca"><img src="img/logo_caixa.png"></div>
+		<div class="box">
+			<div id="example5">
+				<div class="canto"></div>
+                <ul id="menu5" class="example_menu">
+					<li>
+						<a class="collapsed"><p><strong>Período</strong></p> 
+                        	<div id="menu_periodo" class="campo_menu">
+                            	<span class="valor_campo1">Mês Atual</span>
+                            </div>
+                        </a>
+						
+                        <ul class="menu_reduzido">
+							<li class="active">
+								<p><input class="campo" type="checkbox" name="periodo" value="0" checked disabled> Mês Atual</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="periodo" value="" disabled> Outro Período</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="example5">
+            	<div class="canto"></div>
+				<ul id="menu5" class="example_menu">
+					<li>
+						<a class="collapsed"><p>Intervalo</p>
+                        	<div id="menu_periodo" class="campo_menu">
+                            	<span class="valor_campo2">Tempo Real</span>
+                            </div>
+                        </a>
+						<ul class="menu_reduzido">
+							<li class="active">
+								<p><input type="checkbox" name="intervalo" value="0" checked disabled> Tempo Real</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="intervalo" value="-1"> D-1</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="example5">
+				<div class="canto"></div>
+				<ul id="menu5" class="example_menu">
+					<li>
+						<a class="collapsed"><p>Região</p>
+                        	<div id="menu_periodo" class="campo_menu">
+                            	<span class="valor_campo3">Brasil</span>
+                            </div>
+                        </a>
+						<ul>
+							<li class="active">
+                            	<p><input type="checkbox" name="pais" value="br" checked> Brasil</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="1"> AC</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="2"> AL</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="3"> AP</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="4"> AM</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="5"> BA</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="6"> CE</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="7"> DF</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="8"> ES</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="9"> GO</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="10"> MA</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="11"> MT</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="12"> MS</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="13"> MG</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="14"> PA</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="15"> PB</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="16"> PR</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="17"> PE</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="18"> PI</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="19"> RJ</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="20"> RN</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="21"> RS</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="22"> RO</p>
+                            </li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="23"> RR</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="24"> SC</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="25"> SP</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="26"> SE</p>
+							</li>
+                            <li class="active">
+								<p><input type="checkbox" name="estado" value="27"> TO</p>
+							</li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+            <div id="example5">
+				<div class="canto"></div>
+				<ul id="menu5" class="example_menu">
+					<li>
+						<a class="collapsed"><p>Canais</p>
+                        	<div id="menu_periodo" class="campo_menu">
+                            	<span class="valor_campo4">Todos</span>
+                            </div>
+                        </a>
+						<ul>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="1" checked> Internet</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="2" checked> Chat</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="3" checked> Balcão Caixa</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="4" checked> ATM</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="5" checked> Lotéricos</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="6" checked> Internet Banking</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="canal" value="7" checked> Comercializador</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+            
+            <div id="example5">
+				<div class="canto"></div>
+				<ul id="menu5" class="example_menu">
+					<li>
+						<a class="collapsed"><p>Produtos</p>
+                        	<div id="menu_periodo" class="campo_menu">
+                            	<span class="valor_campo5">Selecione</span>
+                            </div>
+                        </a>
+						<ul>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="1" checked> Capitalização</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="2" checked> Previdência</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="3" checked> Consórcio</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="4" checked> Seguro de vida</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="5" checked> Seguro de riscos diversos</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="6" checked> Seguro saúde</p>
+							</li>
+							<li class="active">
+								<p><input type="checkbox" name="produto" value="7" checked> Seguro crédito</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="barra">
+    	<div>
+        	<div class="contador">
+                <h1>Total em Vendas</h1>
+                <h2>Tempo Real</h2>
+                <div class="numeros">
+                    <div class="primeiro"><img id="dig1" src="img/0.jpg"></div>
+                    <div class="segundo"><img id="dig2" src="img/0.jpg"></div>
+                    <div class="terceiro"><img id="dig3" src="img/0.jpg"></div>
+                    <div class="quarto"><img id="dig4" src="img/0.jpg"></div>
+                    <div class="quinto"><img id="dig5" src="img/0.jpg"></div>
+                    <div class="sexto"><img id="dig6" src="img/0.jpg"></div>
+                    <div class="setimo"><img id="dig7" src="img/0.jpg"></div>
+                    <div class="oitavo"><img id="dig8" src="img/0.jpg"></div>
+                    <div class="nono"><img id="dig9" src="img/0.jpg"></div>
+                    <div class="decimo"><img id="dig10" src="img/0.jpg"></div>
+                    <div class="decprimeiro"><img id="dig11" src="img/0.jpg"></div>
+                </div>
+			</div>
+		</div>
+	</div>
+    <div class="barra_total_produto">
+    	<div class="index">
+        	<div id="slides">
+				<div class="slides_container">                    
+                    <div>
+                    	<h1>Capitalização</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide1" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Previdência</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide2" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Consórcio</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide3" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Seguro de vida</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide4" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Seguros diversos</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide5" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Seguro saúde</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide6" class="valor">0,00</div>
+                        </div>
+                    </div>
+                    <div>
+                    	<h1>Seguro crédito</h1>
+                        <div class="campo">
+                            <p><strong>R$</strong></p>
+                            <div id="slide7" class="valor">0,00</div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+        </div>
+    
+    </div>
+    <div class="barra_extra">&nbsp;
+    	<!-- div class="barra_extra_bg">
+    		<img src="img/prime.png" style="margin-top: 20px;" />
+    	</div-->
+    </div>
+ 	<div id="map_canvas"></div>
+    <div style="float:right;margin-right:100px;">
+    	<div class="nivel"></div>
+        <div id="barra_meta"><!-- <img src="img/bgacima.png" width="121" height="545">--></div>
+    </div>
+    
+    <div class="meta">
+    	<div>
+        	<div class="switch">
+        		<div id="metaFilter" class="switchOn"></div>
+        	</div>
+        	<h1>Meta</h1>
+        	<div class="bloco">
+            	<p><strong>R$</strong></p>
+                <h2 id="metaValor">999.500.000,00</h2>
+            </div>
+    	</div>
+    </div>
+    
+    <div id="PanZoomBtn">
+    	<img src="img/PanZoomBtn.png">
+    </div>
+	
+    <!-- div style="position: absolute;z-index:900; top:800px;">
+		<input name="menos" type="button" value="-">
+        <input name="mais" type="button" value="+">
+    </div-->
+
+</body>
+</html>

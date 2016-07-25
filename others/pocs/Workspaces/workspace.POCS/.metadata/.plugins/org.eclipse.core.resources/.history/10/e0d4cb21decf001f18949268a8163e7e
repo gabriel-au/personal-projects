@@ -1,0 +1,21 @@
+package br.jus.stj.site.iphone.ui;
+
+import br.jus.stj.site.iphone.Componente;
+
+public class Br extends Componente
+{
+  public String getCode()
+  {
+/* 20 */     String texto = "<br/>";
+/* 21 */     return texto;
+  }
+
+  protected void getMontarItensObrigatoriosOpcionais()
+  {
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.ui.Br
+ * JD-Core Version:    0.6.0
+ */

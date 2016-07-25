@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script type="text/javascript">
+	
+		var gondola = null;
+	
+		$(document).ready(function() {
+			
+			BRQNavegacao.adicionarPilhaNavegacao('alterarItemGondola');
+
+			if(getPlataform() == "desktop"){
+				
+				$('#quantidadeMercadoriaAtual').bind('keypress', function(event) {
+				 	return bloqueiAlfa(event);
+				});
+				
+				$('#quantidadeMercadoriaAtual').bind('keyup', function(event) {
+				 	bloqueiCtrlCV(event, this);
+				});
+
+			}
+
+			$("#precoCliente").keyup(function(){
+				calcularMargemLucro();
+			});
+			
+			$("#precoCliente-clearBt").mousedown(function(){
+				$("#span_MargemLucro").html("");
+			});
+			
+			$("#botao_Ok").mousedown(function(){
+				execAlterarItemGondola();
+			});
+			
+			var itemGondola = sessionStorage.getObject('itemGondola');
+			
+			execDetalheAlterarItemGondola(itemGondola.codigoCliente, itemGondola.posicaoMercadoria);
+
+		});
+		
+		function execDetalheAlterarItemGondola(codigoCliente, posicaoMercadoria){
+			BRQMob.log("Lendo dados execDetalheAlterarItemGondola");
+			BRQMob.exec("retornoDetalheAlterarItemGondola", "falha", "VendasDispatcher", "detalheAlterarItemGondola", [ codigoCliente, posicaoMercadoria ]);
+		}
+		
+		function retornoDetalheAlterarItemGondola(retorno){
+			BRQMob.log("Lendo dados retornoDetalheAlterarItemGondola");
+			
+			var itemGondola = sessionStorage.getObject('itemGondola');
+			
+			gondola = new Object();
+			gondola.codigoCliente = itemGondola.codigoCliente;
+			gondola.posicaoMercadoria = itemGondola.posicaoMercadoria;
+			gondola.valorUnitarioImposto = removeFormatacao(retorno.Gondola.valorUnitarioImposto, true);
+			
+			$("#span_codigoCliente").html(itemGondola.codigoCliente);
+			$("#span_descricaoMercadoria").html(itemGondola.descricaoMercadoriaComplementar);
+			$("#span_posicao").html(itemGondola.posicaoMercadoria);
+			$("#quantidadeMercadoriaAtual").val(retorno.Gondola.quantidadeMercadoriaAtual);
+			$("#span_quantidadeAnterior").html(retorno.Gondola.quantidadeMercadoriaAnterior);
+			$("#precoCliente").val(removeFormatacao(retorno.Gondola.precoCliente, true));
+			$("#span_dataUltimaVenda").html(retorno.Gondola.dataUltimaVenda);
+			
+			calcularMargemLucro();
+			
+		}
+		
+		function execAlterarItemGondola(){
+			if(validaCampos()){
+				var precoCliente = retornarPrecoCliente();
+				var quantidadeMercadoriaAtual = retornarQuantidadeMercadoriaAtual();
+				BRQMob.log("Lendo dados execAlterarItemGondola");
+				BRQMob.exec("retornoAlterarItemGondola", "falha", "RelacionamentoDispatcher", "alterarItemGondola", [ gondola.codigoCliente, gondola.posicaoMercadoria, 
+				                                                                                                  precoCliente, quantidadeMercadoriaAtual ]);
+			}else{
+				falha("Formato inválido");
+			}
+		}
+		
+		function retornoAlterarItemGondola(){
+			BRQMob.log("Lendo dados retornoAlterarItemGondola");
+			sessionStorage.removeItem('itemGondola');
+			BRQNavegacao.voltar();
+		}
+		
+		function validaCampos(){
+			var precoCliente = $('#precoCliente').val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			if(isNaN(precoCliente) || isNaN($('#quantidadeMercadoriaAtual').val())){
+				return false;
+			}
+			return true;
+		}
+		
+		function retornarPrecoCliente(){
+			var precoCliente = $('#precoCliente').val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			if(precoCliente == "" || isNaN(precoCliente)){
+				precoCliente = "0.00";
+			}
+			return precoCliente;
+		}
+		
+		function retornarQuantidadeMercadoriaAtual(){
+			var quantidadeMercadoriaAtual = $('#quantidadeMercadoriaAtual').val();
+			if(quantidadeMercadoriaAtual == "" || isNaN(quantidadeMercadoriaAtual)){
+				quantidadeMercadoriaAtual = "0";
+			}
+			return quantidadeMercadoriaAtual;
+		}
+		
+		function calcularMargemLucro(){
+			var precoCliente = $("#precoCliente").val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			var valorUnitarioImposto = gondola != null ? gondola.valorUnitarioImposto : 0;
+			if(precoCliente != "" && !isNaN(precoCliente) && precoCliente != 0 
+					&& !isNaN(valorUnitarioImposto) && valorUnitarioImposto != 0){
+				var margemLucro = eval(((precoCliente / valorUnitarioImposto) - 1) * 100);
+				margemLucro = precisaoDecimal(margemLucro);				
+				$("#span_MargemLucro").html(margemLucro.replace(".",","));
+			}
+		}
+
+		function precisaoDecimal(valor){
+			return parseFloat(Math.round(valor * 100) / 100).toFixed(2);
+		}
+
+		function removeFormatacao(valor, isBanco){
+			if(isBanco){ //Remover os pontos
+				valor = valor.replace(/[\.]/g, "");
+			}
+			return valor.replace(",",".");
+		}
+		
+		function falha(result){
+			BRQMob.log("falha: " + result);
+			$("#mensagem").html(result);
+			$("#divMensagem").css('display', 'inline');
+		}
+		
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<div id="header">
+				<a class="button left" id="botaoVoltar" href="javascript:BRQNavegacao.voltar();">Cancelar</a>
+				<!--  a class="button left" href="itensDisponiveis.html">Cancelar</a-->
+					<h1>Adicionar a Gôndola</h1>
+				<a class="button right" href="javascript:void(0);" id="botao_Ok">ok</a>
+			</div>
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="panel paddedGrey" id="divMensagem" style="display: none;">
+					<ul>
+						<li class="error">
+							<span class="icon"></span>
+							<label id="mensagem"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="formDiv">
+					<div class="line">
+						<div class="cell">
+							<label>Código</label>
+							<span id="span_codigoCliente"></span>
+						</div>
+						<div class="cell">
+							<label>Descrição de Mercadoria</label>
+							<span id="span_descricaoMercadoria"></span>
+						</div>
+					</div>
+					<h2>Estoques</h2>
+					<div class="line">
+						<div class="cell">
+							<label>Anterior</label>
+							<span id="span_quantidadeAnterior"></span>
+						</div>
+						<div class="cell">
+							<input type="text" class="type" placeholder="Atual" maxlength="4" id="quantidadeMercadoriaAtual" />
+						</div>
+					</div>
+					<h2>Cliente</h2>
+					<div class="line">
+						<div class="cell">
+							<label>Última Compra</label>
+							<span id="span_dataUltimaVenda"></span>
+						</div>
+						<div class="cell">
+							<input type="text" class="type" placeholder="Preço Cliente" id="precoCliente" maxlength="9"/>
+						</div>
+						<div class="cell">
+							<label>Pos. Gôndola</label>
+							<span id="span_posicao"></span>
+						</div>
+						<div class="cell">
+							<label>Margem de Lucro</label>
+							<span id="span_MargemLucro"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

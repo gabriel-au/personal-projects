@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>AcompanhamentoProcessual.momd/AcompanhamentoProcessual.mom</key>
+		<data>
+		KGZu/WlfwJbEl3NVAiY8+WCCDLY=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		Keb3ggwpwFa+SzLyvW1pWtmvgpE=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>acompanhamento.png</key>
+		<data>
+		X8T7NJc02KfUHMkgBMA4aszQWvI=
+		</data>
+		<key>addprocesso.png</key>
+		<data>
+		PfvyE4P/k8dfQaXuman0brS3vKM=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		qcHrRbq+gwHQ1lIScZWXAhrFCEQ=
+		</data>
+		<key>inicio.png</key>
+		<data>
+		7GnjioiJV75LML0CcwNDtKOatus=
+		</data>
+		<key>pushes.png</key>
+		<data>
+		8JNWqIhE7xOZMVsKUXyhmHAiUuk=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:gravity="top" >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fundo_internas" >
+        
+        <RelativeLayout
+	        android:id="@+id/relativeLayoutContent"
+	        android:layout_width="1390dp"
+	        android:layout_height="880dp"
+	        android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="480dp"
+            android:layout_marginTop="180dp"
+            android:background="@android:color/transparent" >
+
+			<GridView
+			        android:id="@+id/gridView1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:columnWidth="85dp"
+			        android:gravity="center"
+			        android:numColumns="auto_fit"
+			        android:verticalSpacing="5dp"
+    				android:horizontalSpacing="5dp"
+			        android:stretchMode="columnWidth" >
+			    
+			</GridView>
+			
+		</RelativeLayout>
+		
+	</RelativeLayout>
+	
+</LinearLayout>
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" > -->
+
+        <!--
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="INTRO"
+        android:textStyle="bold" />
+        -->
+
+
+        <!--
+         <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+        -->
+
+
+        <!--
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="TESTANDO 123"
+        android:textStyle="italic" />
+        -->
+
+
+        <!--
+         <ImageView
+        android:id="@+id/picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="TESTANDO" />
+        -->
+
+<!-- </LinearLayout> -->

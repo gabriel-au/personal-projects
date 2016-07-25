@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ include file="/includes/head.jsp" %>
+<body>
+
+<%@ include file="/includes/toolbar.jsp" %>
+
+<div class="titulo">
+<a href="<%=request.getContextPath()%>/" >
+<img src="<%=request.getContextPath()%>/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">Noticias</div>
+</div>
+
+
+
+<div class="arredondado">
+22/01/2010
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Acordo entre seguradora e terceiro n&atilde;o isenta segurado de ressarcir</a>
+</div>
+</div>
+
+
+<div class="arredondado">
+16/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Infraero ministra treinamento para funcionários do Aeroporto de Fernando de Noronha</a>
+</div>
+</div>
+
+<div class="arredondado">
+16/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Hangar do Aprendiz forma novos profissionais em Congonhas</a>
+</div>
+</div>
+
+<div class="arredondado">
+16/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Aeroporto de Curitiba entra no ritmo da Copa do Mundo</a>
+</div>
+</div>
+
+<div class="arredondado">
+14/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Infraero e Exército iniciam obras no sistema de pistas do Aeroporto de Guarulhos</a>
+</div>
+</div>
+
+<div class="arredondado">
+14/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Infraero marca presença na feira ABF Franchising</a>
+</div>
+</div>
+
+<div class="arredondado">
+14/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Brasil conquista quatro medalhas na etapa de Lisboa da Copa do Mundo de Judô</a>
+</div>
+</div>
+
+<div class="arredondado">
+11/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Aeroporto de Rio Branco já pode voltar a operar voos internacionais</a>
+</div>
+</div>
+
+<div class="arredondado">
+11/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Aeroporto de Manaus mostra resultados das ações adotadas no Terminal de Cargas</a>
+</div>
+</div>
+
+<div class="arredondado">
+11/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Presidente da Infraero participa de comemoração dos 11 anos do Ministério da Defesa</a>
+</div>
+</div>
+
+<div class="arredondado">
+11/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Tem inÃ­cio readequaÃ§Ã£o do canteiro de obras do Aeroporto de Guarulhos</a>
+</div>
+</div>
+
+<div class="arredondado">
+10/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Terminal de Carga de Navegantes bate recorde pelo quinto mÃªs consecutivo</a>
+</div>
+</div>
+
+<div class="arredondado">
+09/06/10 
+<div class="arredondado_link_left">
+<a href="<%=request.getContextPath()%>/noticias/noticias.jsp" >
+Presidente Lula assina decreto de concessÃ£o do Aeroporto de SÃ£o GonÃ§alo do Amarante (RN)</a>
+</div>
+</div>
+
+
+<div class="titulo_mais_noticias">
+<a href="<%=request.getContextPath()%>/noticias/" >
+Mais Not&iacute;cias  </a>
+</div>
+
+</body>
+</html>

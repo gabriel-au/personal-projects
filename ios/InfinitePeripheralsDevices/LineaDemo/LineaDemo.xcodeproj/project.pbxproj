@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* LineaDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LineaDemoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		C0435A4617F3339100BF472B /* martins_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C0435A4517F3339100BF472B /* martins_logo.gif */; };
+		C0DF8CAB17F21DAE00B1F08D /* martinslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C0DF8CAA17F21DAE00B1F08D /* martinslogo.png */; };
+		C0DF8CAD17F22E5700B1F08D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DF8CAC17F22E5700B1F08D /* CoreBluetooth.framework */; };
+		C0DF8CAE17F239DD00B1F08D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E232A217F0DDEF0010C0C6 /* Default-568h@2x.png */; };
+		F7D3BD41160757C700CBBAAE /* Opticon_FL49J09.bin in Resources */ = {isa = PBXBuildFile; fileRef = F7D3BD2A160757C600CBBAAE /* Opticon_FL49J09.bin */; };
+		F7DC1AA01546C25D00AF9233 /* EMSRCryptoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A9F1546C25D00AF9233 /* EMSRCryptoViewController.m */; };
+		F7E62B0C1667C0DE00B86FF2 /* LINEAPro1_1BAM_288.bin in Resources */ = {isa = PBXBuildFile; fileRef = F7E62B0A1667C0DE00B86FF2 /* LINEAPro1_1BAM_288.bin */; };
+		F7E62B0D1667C0DE00B86FF2 /* LINEAPro1_BM_288.bin in Resources */ = {isa = PBXBuildFile; fileRef = F7E62B0B1667C0DE00B86FF2 /* LINEAPro1_BM_288.bin */; };
+		F7EABF2B15C96F01004DC2B0 /* dukpt.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EABF2A15C96F01004DC2B0 /* dukpt.m */; };
+		F7FB885E16132A5A004D349A /* C005922_0336-system-cr8000-CD_GEN.CRZ in Resources */ = {isa = PBXBuildFile; fileRef = F7FB885D16132A5A004D349A /* C005922_0336-system-cr8000-CD_GEN.CRZ */; };
+		FF172557122BE303007E92FE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF172555122BE303007E92FE /* SettingsViewController.m */; };
+		FF172601122BECD2007E92FE /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF172600122BECD2007E92FE /* ScannerViewController.m */; };
+		FF172775122D2142007E92FE /* CryptoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF172774122D2142007E92FE /* CryptoViewController.m */; };
+		FF28AFF71073BBA400465ABF /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28AFF61073BBA400465ABF /* MainTabBarController.m */; };
+		FF28B0051073BBA400465ABF /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFF91073BBA400465ABF /* 0.png */; };
+		FF28B0061073BBA400465ABF /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFFA1073BBA400465ABF /* 20-gear2.png */; };
+		FF28B0071073BBA400465ABF /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFFB1073BBA400465ABF /* 25.png */; };
+		FF28B0081073BBA400465ABF /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFFC1073BBA400465ABF /* 50.png */; };
+		FF28B0091073BBA400465ABF /* 75.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFFD1073BBA400465ABF /* 75.png */; };
+		FF28B00A1073BBA400465ABF /* 100.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28AFFE1073BBA400465ABF /* 100.png */; };
+		FF28B0121073BBA400465ABF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28B0111073BBA400465ABF /* ExternalAccessory.framework */; };
+		FF28B0421073BBA400465ABF /* linea.png in Resources */ = {isa = PBXBuildFile; fileRef = FF28B0411073BBA400465ABF /* linea.png */; };
+		FF29D2A51381708F00AFD25D /* connected.png in Resources */ = {isa = PBXBuildFile; fileRef = FF29D2A21381708F00AFD25D /* connected.png */; };
+		FF29D2A61381708F00AFD25D /* disconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = FF29D2A31381708F00AFD25D /* disconnected.png */; };
+		FF29D2A71381708F00AFD25D /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = FF29D2A41381708F00AFD25D /* lock.png */; };
+		FF29D2A9138170EA00AFD25D /* scanning.png in Resources */ = {isa = PBXBuildFile; fileRef = FF29D2A8138170EA00AFD25D /* scanning.png */; };
+		FF29D2AE13817CE500AFD25D /* signal-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FF29D2AD13817CE500AFD25D /* signal-1.png */; };
+		FF36188013D41055003FD7CB /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF36187C13D41055003FD7CB /* MainWindow-iPad.xib */; };
+		FF36188113D41055003FD7CB /* MainWindow-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF36187E13D41055003FD7CB /* MainWindow-iPhone.xib */; };
+		FF4A6E751380F95300FC1C0E /* RFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4A6E741380F95300FC1C0E /* RFViewController.m */; };
+		FF4A6E7E1381696400FC1C0E /* back_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4A6E7C1381696400FC1C0E /* back_iPad.png */; };
+		FF4A6E7F1381696400FC1C0E /* back_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4A6E7D1381696400FC1C0E /* back_iPhone.png */; };
+		FF5EB7201188802300B36DA6 /* NSDataCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5EB71F1188802300B36DA6 /* NSDataCrypto.m */; };
+		FF79C55616DB4BB500AB34F4 /* LINEAPro4U_IBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FF79C55216DB4BB500AB34F4 /* LINEAPro4U_IBAMBL_296.bin */; };
+		FF79C55716DB4BB600AB34F4 /* LINEAPro4U_IBAMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FF79C55316DB4BB500AB34F4 /* LINEAPro4U_IBAMBLRF_296.bin */; };
+		FF79C55816DB4BB600AB34F4 /* LINEAPro4U_IBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FF79C55416DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBL_296.bin */; };
+		FF79C55916DB4BB600AB34F4 /* LINEAPro4U_IBAMCMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FF79C55516DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBLRF_296.bin */; };
+		FF7B20181367181C00D9F944 /* taz.png in Resources */ = {isa = PBXBuildFile; fileRef = FF7B20171367181C00D9F944 /* taz.png */; };
+		FF8B225B10F5D18F004F765E /* printer1.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8B225910F5D18F004F765E /* printer1.png */; };
+		FFA0698B1379700200C80F79 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFA0698A1379700200C80F79 /* Entitlements.plist */; };
+		FFDB750C139CF9EE00B63808 /* libdtdev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDB750A139CF9EE00B63808 /* libdtdev.a */; };
+		FFDB7511139CFA2600B63808 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDB750E139CFA2600B63808 /* ProgressView.m */; };
+		FFDB7512139CFA2600B63808 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDB7510139CFA2600B63808 /* ProgressViewController.m */; };
+		FFF1A7ED16DF417500535449 /* LINEAPad2_CBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7DD16DF417500535449 /* LINEAPad2_CBAMBL_296.bin */; };
+		FFF1A7EE16DF417500535449 /* LINEAPad2_CBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7DE16DF417500535449 /* LINEAPad2_CBAMCMBL_296.bin */; };
+		FFF1A7EF16DF417500535449 /* LINEAPad2_XBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7DF16DF417500535449 /* LINEAPad2_XBAMBL_296.bin */; };
+		FFF1A7F016DF417500535449 /* LINEAPad2_XBCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E016DF417500535449 /* LINEAPad2_XBCMBL_296.bin */; };
+		FFF1A7F116DF417500535449 /* LINEAPad2L_CBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E116DF417500535449 /* LINEAPad2L_CBAMBL_296.bin */; };
+		FFF1A7F216DF417500535449 /* LINEAPad2L_CBAMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E216DF417500535449 /* LINEAPad2L_CBAMBLRF_296.bin */; };
+		FFF1A7F316DF417500535449 /* LINEAPad2L_CBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E316DF417500535449 /* LINEAPad2L_CBAMCMBL_296.bin */; };
+		FFF1A7F416DF417500535449 /* LINEAPad2L_CBAMCMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E416DF417500535449 /* LINEAPad2L_CBAMCMBLRF_296.bin */; };
+		FFF1A7F516DF417500535449 /* LINEAPad2L_IBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E516DF417500535449 /* LINEAPad2L_IBAMBL_296.bin */; };
+		FFF1A7F616DF417500535449 /* LINEAPad2L_IBAMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E616DF417500535449 /* LINEAPad2L_IBAMBLRF_296.bin */; };
+		FFF1A7F716DF417500535449 /* LINEAPad2L_IBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E716DF417500535449 /* LINEAPad2L_IBAMCMBL_296.bin */; };
+		FFF1A7F816DF417500535449 /* LINEAPad2L_IBAMCMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E816DF417500535449 /* LINEAPad2L_IBAMCMBLRF_296.bin */; };
+		FFF1A7F916DF417500535449 /* LINEAPad2L_XBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7E916DF417500535449 /* LINEAPad2L_XBAMBL_296.bin */; };
+		FFF1A7FA16DF417500535449 /* LINEAPad2L_XBAMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7EA16DF417500535449 /* LINEAPad2L_XBAMBLRF_296.bin */; };
+		FFF1A7FB16DF417500535449 /* LINEAPad2L_XBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7EB16DF417500535449 /* LINEAPad2L_XBAMCMBL_296.bin */; };
+		FFF1A7FC16DF417500535449 /* LINEAPad2L_XBAMCMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7EC16DF417500535449 /* LINEAPad2L_XBAMCMBLRF_296.bin */; };
+		FFF1A80916DF418000535449 /* LINEAPro4_CBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7FD16DF418000535449 /* LINEAPro4_CBAMBL_296.bin */; };
+		FFF1A80A16DF418000535449 /* LINEAPro4_CBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7FE16DF418000535449 /* LINEAPro4_CBAMCMBL_296.bin */; };
+		FFF1A80B16DF418000535449 /* LINEAPro4_IBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A7FF16DF418000535449 /* LINEAPro4_IBAMBL_296.bin */; };
+		FFF1A80C16DF418000535449 /* LINEAPro4_IBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80016DF418000535449 /* LINEAPro4_IBAMCMBL_296.bin */; };
+		FFF1A80D16DF418000535449 /* LINEAPro4_XBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80116DF418000535449 /* LINEAPro4_XBAMBL_296.bin */; };
+		FFF1A80E16DF418000535449 /* LINEAPro4_XBAMBLsn_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80216DF418000535449 /* LINEAPro4_XBAMBLsn_296.bin */; };
+		FFF1A80F16DF418000535449 /* LINEAPro4_XBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80316DF418000535449 /* LINEAPro4_XBAMCMBL_296.bin */; };
+		FFF1A81016DF418000535449 /* LINEAPro4L_XBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80416DF418000535449 /* LINEAPro4L_XBAMBL_296.bin */; };
+		FFF1A81116DF418000535449 /* LINEAPro4U_CBAMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80516DF418000535449 /* LINEAPro4U_CBAMBL_296.bin */; };
+		FFF1A81216DF418000535449 /* LINEAPro4U_CBAMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80616DF418000535449 /* LINEAPro4U_CBAMBLRF_296.bin */; };
+		FFF1A81316DF418000535449 /* LINEAPro4U_CBAMCMBL_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80716DF418000535449 /* LINEAPro4U_CBAMCMBL_296.bin */; };
+		FFF1A81416DF418000535449 /* LINEAPro4U_CBAMCMBLRF_296.bin in Resources */ = {isa = PBXBuildFile; fileRef = FFF1A80816DF418000535449 /* LINEAPro4U_CBAMCMBLRF_296.bin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* LineaDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineaDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* LineaDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineaDemoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* LineaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* LineaDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineaDemo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LineaDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LineaDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C0435A4517F3339100BF472B /* martins_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = martins_logo.gif; sourceTree = "<group>"; };
+		C0DF8CAA17F21DAE00B1F08D /* martinslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = martinslogo.png; sourceTree = "<group>"; };
+		C0DF8CAC17F22E5700B1F08D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C0E232A217F0DDEF0010C0C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F7D3BD2A160757C600CBBAAE /* Opticon_FL49J09.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = Opticon_FL49J09.bin; path = ../Firmware/Opticon_FL49J09.bin; sourceTree = "<group>"; };
+		F7DC1A9E1546C25D00AF9233 /* EMSRCryptoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSRCryptoViewController.h; sourceTree = "<group>"; };
+		F7DC1A9F1546C25D00AF9233 /* EMSRCryptoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSRCryptoViewController.m; sourceTree = "<group>"; };
+		F7E62B0A1667C0DE00B86FF2 /* LINEAPro1_1BAM_288.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro1_1BAM_288.bin; path = ../Firmware/LINEAPro1_1BAM_288.bin; sourceTree = "<group>"; };
+		F7E62B0B1667C0DE00B86FF2 /* LINEAPro1_BM_288.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro1_BM_288.bin; path = ../Firmware/LINEAPro1_BM_288.bin; sourceTree = "<group>"; };
+		F7EABF2915C96F01004DC2B0 /* dukpt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dukpt.h; sourceTree = "<group>"; };
+		F7EABF2A15C96F01004DC2B0 /* dukpt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dukpt.m; sourceTree = "<group>"; };
+		F7FB885D16132A5A004D349A /* C005922_0336-system-cr8000-CD_GEN.CRZ */ = {isa = PBXFileReference; lastKnownFileType = file; name = "C005922_0336-system-cr8000-CD_GEN.CRZ"; path = "../Firmware/C005922_0336-system-cr8000-CD_GEN.CRZ"; sourceTree = "<group>"; };
+		FF13E6351456F1C00033D05B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FF13E6361456F1C00033D05B /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		FF172555122BE303007E92FE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		FF172556122BE303007E92FE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		FF1725FF122BECD2007E92FE /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		FF172600122BECD2007E92FE /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		FF172773122D2142007E92FE /* CryptoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoViewController.h; sourceTree = "<group>"; };
+		FF172774122D2142007E92FE /* CryptoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoViewController.m; sourceTree = "<group>"; };
+		FF17985E13A23E1D00565F00 /* PrinterSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrinterSDK.h; path = ../Library/PrinterSDK.h; sourceTree = "<group>"; };
+		FF28AFF51073BBA400465ABF /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		FF28AFF61073BBA400465ABF /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		FF28AFF91073BBA400465ABF /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		FF28AFFA1073BBA400465ABF /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
+		FF28AFFB1073BBA400465ABF /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		FF28AFFC1073BBA400465ABF /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
+		FF28AFFD1073BBA400465ABF /* 75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 75.png; sourceTree = "<group>"; };
+		FF28AFFE1073BBA400465ABF /* 100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100.png; sourceTree = "<group>"; };
+		FF28B0111073BBA400465ABF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		FF28B0411073BBA400465ABF /* linea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linea.png; sourceTree = "<group>"; };
+		FF29D2A21381708F00AFD25D /* connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected.png; sourceTree = "<group>"; };
+		FF29D2A31381708F00AFD25D /* disconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnected.png; sourceTree = "<group>"; };
+		FF29D2A41381708F00AFD25D /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		FF29D2A8138170EA00AFD25D /* scanning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanning.png; sourceTree = "<group>"; };
+		FF29D2AD13817CE500AFD25D /* signal-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-1.png"; sourceTree = "<group>"; };
+		FF36187D13D41055003FD7CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		FF36187F13D41055003FD7CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "MainWindow-iPhone.xib"; sourceTree = "<group>"; };
+		FF4A6E731380F95300FC1C0E /* RFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFViewController.h; sourceTree = "<group>"; };
+		FF4A6E741380F95300FC1C0E /* RFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFViewController.m; sourceTree = "<group>"; };
+		FF4A6E7C1381696400FC1C0E /* back_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_iPad.png; sourceTree = "<group>"; };
+		FF4A6E7D1381696400FC1C0E /* back_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_iPhone.png; sourceTree = "<group>"; };
+		FF5EB71E1188802300B36DA6 /* NSDataCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataCrypto.h; sourceTree = "<group>"; };
+		FF5EB71F1188802300B36DA6 /* NSDataCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataCrypto.m; sourceTree = "<group>"; };
+		FF79C55216DB4BB500AB34F4 /* LINEAPro4U_IBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_IBAMBL_296.bin; path = ../Firmware/LINEAPro4U_IBAMBL_296.bin; sourceTree = "<group>"; };
+		FF79C55316DB4BB500AB34F4 /* LINEAPro4U_IBAMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_IBAMBLRF_296.bin; path = ../Firmware/LINEAPro4U_IBAMBLRF_296.bin; sourceTree = "<group>"; };
+		FF79C55416DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_IBAMCMBL_296.bin; path = ../Firmware/LINEAPro4U_IBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FF79C55516DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_IBAMCMBLRF_296.bin; path = ../Firmware/LINEAPro4U_IBAMCMBLRF_296.bin; sourceTree = "<group>"; };
+		FF7B20171367181C00D9F944 /* taz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taz.png; sourceTree = "<group>"; };
+		FF8B225910F5D18F004F765E /* printer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printer1.png; sourceTree = "<group>"; };
+		FFA0698A1379700200C80F79 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		FFDB750A139CF9EE00B63808 /* libdtdev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdtdev.a; path = ../Library/libdtdev.a; sourceTree = "<group>"; };
+		FFDB750B139CF9EE00B63808 /* LineaSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineaSDK.h; path = ../Library/LineaSDK.h; sourceTree = "<group>"; };
+		FFDB750D139CFA2600B63808 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		FFDB750E139CFA2600B63808 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		FFDB750F139CFA2600B63808 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		FFDB7510139CFA2600B63808 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		FFF1A7DD16DF417500535449 /* LINEAPad2_CBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2_CBAMBL_296.bin; path = ../Firmware/LINEAPad2_CBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7DE16DF417500535449 /* LINEAPad2_CBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2_CBAMCMBL_296.bin; path = ../Firmware/LINEAPad2_CBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7DF16DF417500535449 /* LINEAPad2_XBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2_XBAMBL_296.bin; path = ../Firmware/LINEAPad2_XBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E016DF417500535449 /* LINEAPad2_XBCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2_XBCMBL_296.bin; path = ../Firmware/LINEAPad2_XBCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E116DF417500535449 /* LINEAPad2L_CBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_CBAMBL_296.bin; path = ../Firmware/LINEAPad2L_CBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E216DF417500535449 /* LINEAPad2L_CBAMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_CBAMBLRF_296.bin; path = ../Firmware/LINEAPad2L_CBAMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7E316DF417500535449 /* LINEAPad2L_CBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_CBAMCMBL_296.bin; path = ../Firmware/LINEAPad2L_CBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E416DF417500535449 /* LINEAPad2L_CBAMCMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_CBAMCMBLRF_296.bin; path = ../Firmware/LINEAPad2L_CBAMCMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7E516DF417500535449 /* LINEAPad2L_IBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_IBAMBL_296.bin; path = ../Firmware/LINEAPad2L_IBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E616DF417500535449 /* LINEAPad2L_IBAMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_IBAMBLRF_296.bin; path = ../Firmware/LINEAPad2L_IBAMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7E716DF417500535449 /* LINEAPad2L_IBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_IBAMCMBL_296.bin; path = ../Firmware/LINEAPad2L_IBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7E816DF417500535449 /* LINEAPad2L_IBAMCMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_IBAMCMBLRF_296.bin; path = ../Firmware/LINEAPad2L_IBAMCMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7E916DF417500535449 /* LINEAPad2L_XBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_XBAMBL_296.bin; path = ../Firmware/LINEAPad2L_XBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7EA16DF417500535449 /* LINEAPad2L_XBAMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_XBAMBLRF_296.bin; path = ../Firmware/LINEAPad2L_XBAMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7EB16DF417500535449 /* LINEAPad2L_XBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_XBAMCMBL_296.bin; path = ../Firmware/LINEAPad2L_XBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7EC16DF417500535449 /* LINEAPad2L_XBAMCMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPad2L_XBAMCMBLRF_296.bin; path = ../Firmware/LINEAPad2L_XBAMCMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A7FD16DF418000535449 /* LINEAPro4_CBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_CBAMBL_296.bin; path = ../Firmware/LINEAPro4_CBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7FE16DF418000535449 /* LINEAPro4_CBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_CBAMCMBL_296.bin; path = ../Firmware/LINEAPro4_CBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A7FF16DF418000535449 /* LINEAPro4_IBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_IBAMBL_296.bin; path = ../Firmware/LINEAPro4_IBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80016DF418000535449 /* LINEAPro4_IBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_IBAMCMBL_296.bin; path = ../Firmware/LINEAPro4_IBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80116DF418000535449 /* LINEAPro4_XBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_XBAMBL_296.bin; path = ../Firmware/LINEAPro4_XBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80216DF418000535449 /* LINEAPro4_XBAMBLsn_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_XBAMBLsn_296.bin; path = ../Firmware/LINEAPro4_XBAMBLsn_296.bin; sourceTree = "<group>"; };
+		FFF1A80316DF418000535449 /* LINEAPro4_XBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4_XBAMCMBL_296.bin; path = ../Firmware/LINEAPro4_XBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80416DF418000535449 /* LINEAPro4L_XBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4L_XBAMBL_296.bin; path = ../Firmware/LINEAPro4L_XBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80516DF418000535449 /* LINEAPro4U_CBAMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_CBAMBL_296.bin; path = ../Firmware/LINEAPro4U_CBAMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80616DF418000535449 /* LINEAPro4U_CBAMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_CBAMBLRF_296.bin; path = ../Firmware/LINEAPro4U_CBAMBLRF_296.bin; sourceTree = "<group>"; };
+		FFF1A80716DF418000535449 /* LINEAPro4U_CBAMCMBL_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_CBAMCMBL_296.bin; path = ../Firmware/LINEAPro4U_CBAMCMBL_296.bin; sourceTree = "<group>"; };
+		FFF1A80816DF418000535449 /* LINEAPro4U_CBAMCMBLRF_296.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = LINEAPro4U_CBAMCMBLRF_296.bin; path = ../Firmware/LINEAPro4U_CBAMCMBLRF_296.bin; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DF8CAD17F22E5700B1F08D /* CoreBluetooth.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				FF28B0121073BBA400465ABF /* ExternalAccessory.framework in Frameworks */,
+				FFDB750C139CF9EE00B63808 /* libdtdev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7EABF2915C96F01004DC2B0 /* dukpt.h */,
+				F7EABF2A15C96F01004DC2B0 /* dukpt.m */,
+				F7DC1A9E1546C25D00AF9233 /* EMSRCryptoViewController.h */,
+				F7DC1A9F1546C25D00AF9233 /* EMSRCryptoViewController.m */,
+				FFDB750D139CFA2600B63808 /* ProgressView.h */,
+				FFDB750E139CFA2600B63808 /* ProgressView.m */,
+				FFDB750F139CFA2600B63808 /* ProgressViewController.h */,
+				FFDB7510139CFA2600B63808 /* ProgressViewController.m */,
+				FF172555122BE303007E92FE /* SettingsViewController.m */,
+				FF172556122BE303007E92FE /* SettingsViewController.h */,
+				FF1725FF122BECD2007E92FE /* ScannerViewController.h */,
+				FF172600122BECD2007E92FE /* ScannerViewController.m */,
+				FF172773122D2142007E92FE /* CryptoViewController.h */,
+				FF172774122D2142007E92FE /* CryptoViewController.m */,
+				FF28AFF51073BBA400465ABF /* MainTabBarController.h */,
+				FF28AFF61073BBA400465ABF /* MainTabBarController.m */,
+				1D3623240D0F684500981E51 /* LineaDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* LineaDemoAppDelegate.m */,
+				FF5EB71E1188802300B36DA6 /* NSDataCrypto.h */,
+				FF5EB71F1188802300B36DA6 /* NSDataCrypto.m */,
+				FF4A6E731380F95300FC1C0E /* RFViewController.h */,
+				FF4A6E741380F95300FC1C0E /* RFViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* LineaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				C0E232A217F0DDEF0010C0C6 /* Default-568h@2x.png */,
+				FFECB71E1079D4BF00C0234A /* SDK */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				F7D3BD12160757BB00CBBAAE /* Firmware */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* LineaDemo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0435A4517F3339100BF472B /* martins_logo.gif */,
+				C0DF8CAA17F21DAE00B1F08D /* martinslogo.png */,
+				FF13E6351456F1C00033D05B /* Icon.png */,
+				FF13E6361456F1C00033D05B /* Icon-72.png */,
+				FF36187B13D41055003FD7CB /* en.lproj */,
+				FF29D2AD13817CE500AFD25D /* signal-1.png */,
+				FF29D2A8138170EA00AFD25D /* scanning.png */,
+				FF29D2A21381708F00AFD25D /* connected.png */,
+				FF29D2A31381708F00AFD25D /* disconnected.png */,
+				FF29D2A41381708F00AFD25D /* lock.png */,
+				FF4A6E7C1381696400FC1C0E /* back_iPad.png */,
+				FF4A6E7D1381696400FC1C0E /* back_iPhone.png */,
+				FF7B20171367181C00D9F944 /* taz.png */,
+				FF8B225910F5D18F004F765E /* printer1.png */,
+				FF28B0411073BBA400465ABF /* linea.png */,
+				FF28AFF91073BBA400465ABF /* 0.png */,
+				FF28AFFA1073BBA400465ABF /* 20-gear2.png */,
+				FF28AFFB1073BBA400465ABF /* 25.png */,
+				FF28AFFC1073BBA400465ABF /* 50.png */,
+				FF28AFFD1073BBA400465ABF /* 75.png */,
+				FF28AFFE1073BBA400465ABF /* 100.png */,
+				8D1107310486CEB800E47090 /* LineaDemo-Info.plist */,
+				FFA0698A1379700200C80F79 /* Entitlements.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0DF8CAC17F22E5700B1F08D /* CoreBluetooth.framework */,
+				FF28B0111073BBA400465ABF /* ExternalAccessory.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7D3BD12160757BB00CBBAAE /* Firmware */ = {
+			isa = PBXGroup;
+			children = (
+				FFF1A7FD16DF418000535449 /* LINEAPro4_CBAMBL_296.bin */,
+				FFF1A7FE16DF418000535449 /* LINEAPro4_CBAMCMBL_296.bin */,
+				FFF1A7FF16DF418000535449 /* LINEAPro4_IBAMBL_296.bin */,
+				FFF1A80016DF418000535449 /* LINEAPro4_IBAMCMBL_296.bin */,
+				FFF1A80116DF418000535449 /* LINEAPro4_XBAMBL_296.bin */,
+				FFF1A80216DF418000535449 /* LINEAPro4_XBAMBLsn_296.bin */,
+				FFF1A80316DF418000535449 /* LINEAPro4_XBAMCMBL_296.bin */,
+				FFF1A80416DF418000535449 /* LINEAPro4L_XBAMBL_296.bin */,
+				FFF1A80516DF418000535449 /* LINEAPro4U_CBAMBL_296.bin */,
+				FFF1A80616DF418000535449 /* LINEAPro4U_CBAMBLRF_296.bin */,
+				FFF1A80716DF418000535449 /* LINEAPro4U_CBAMCMBL_296.bin */,
+				FFF1A80816DF418000535449 /* LINEAPro4U_CBAMCMBLRF_296.bin */,
+				FFF1A7DD16DF417500535449 /* LINEAPad2_CBAMBL_296.bin */,
+				FFF1A7DE16DF417500535449 /* LINEAPad2_CBAMCMBL_296.bin */,
+				FFF1A7DF16DF417500535449 /* LINEAPad2_XBAMBL_296.bin */,
+				FFF1A7E016DF417500535449 /* LINEAPad2_XBCMBL_296.bin */,
+				FFF1A7E116DF417500535449 /* LINEAPad2L_CBAMBL_296.bin */,
+				FFF1A7E216DF417500535449 /* LINEAPad2L_CBAMBLRF_296.bin */,
+				FFF1A7E316DF417500535449 /* LINEAPad2L_CBAMCMBL_296.bin */,
+				FFF1A7E416DF417500535449 /* LINEAPad2L_CBAMCMBLRF_296.bin */,
+				FFF1A7E516DF417500535449 /* LINEAPad2L_IBAMBL_296.bin */,
+				FFF1A7E616DF417500535449 /* LINEAPad2L_IBAMBLRF_296.bin */,
+				FFF1A7E716DF417500535449 /* LINEAPad2L_IBAMCMBL_296.bin */,
+				FFF1A7E816DF417500535449 /* LINEAPad2L_IBAMCMBLRF_296.bin */,
+				FFF1A7E916DF417500535449 /* LINEAPad2L_XBAMBL_296.bin */,
+				FFF1A7EA16DF417500535449 /* LINEAPad2L_XBAMBLRF_296.bin */,
+				FFF1A7EB16DF417500535449 /* LINEAPad2L_XBAMCMBL_296.bin */,
+				FFF1A7EC16DF417500535449 /* LINEAPad2L_XBAMCMBLRF_296.bin */,
+				FF79C55216DB4BB500AB34F4 /* LINEAPro4U_IBAMBL_296.bin */,
+				FF79C55316DB4BB500AB34F4 /* LINEAPro4U_IBAMBLRF_296.bin */,
+				FF79C55416DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBL_296.bin */,
+				FF79C55516DB4BB500AB34F4 /* LINEAPro4U_IBAMCMBLRF_296.bin */,
+				F7E62B0A1667C0DE00B86FF2 /* LINEAPro1_1BAM_288.bin */,
+				F7E62B0B1667C0DE00B86FF2 /* LINEAPro1_BM_288.bin */,
+				F7FB885D16132A5A004D349A /* C005922_0336-system-cr8000-CD_GEN.CRZ */,
+				F7D3BD2A160757C600CBBAAE /* Opticon_FL49J09.bin */,
+			);
+			name = Firmware;
+			sourceTree = "<group>";
+		};
+		FF36187B13D41055003FD7CB /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FF36187C13D41055003FD7CB /* MainWindow-iPad.xib */,
+				FF36187E13D41055003FD7CB /* MainWindow-iPhone.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		FFECB71E1079D4BF00C0234A /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF17985E13A23E1D00565F00 /* PrinterSDK.h */,
+				FFDB750B139CF9EE00B63808 /* LineaSDK.h */,
+				FFDB750A139CF9EE00B63808 /* libdtdev.a */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* LineaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LineaDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LineaDemo;
+			productName = LineaDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* LineaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LineaDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				de,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* LineaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF28B0051073BBA400465ABF /* 0.png in Resources */,
+				FF28B0061073BBA400465ABF /* 20-gear2.png in Resources */,
+				FF28B0071073BBA400465ABF /* 25.png in Resources */,
+				FF28B0081073BBA400465ABF /* 50.png in Resources */,
+				FF28B0091073BBA400465ABF /* 75.png in Resources */,
+				FF28B00A1073BBA400465ABF /* 100.png in Resources */,
+				FF28B0421073BBA400465ABF /* linea.png in Resources */,
+				FF8B225B10F5D18F004F765E /* printer1.png in Resources */,
+				FF7B20181367181C00D9F944 /* taz.png in Resources */,
+				FFA0698B1379700200C80F79 /* Entitlements.plist in Resources */,
+				FF4A6E7E1381696400FC1C0E /* back_iPad.png in Resources */,
+				FF4A6E7F1381696400FC1C0E /* back_iPhone.png in Resources */,
+				FF29D2A51381708F00AFD25D /* connected.png in Resources */,
+				FF29D2A61381708F00AFD25D /* disconnected.png in Resources */,
+				FF29D2A71381708F00AFD25D /* lock.png in Resources */,
+				FF29D2A9138170EA00AFD25D /* scanning.png in Resources */,
+				FF29D2AE13817CE500AFD25D /* signal-1.png in Resources */,
+				FF36188013D41055003FD7CB /* MainWindow-iPad.xib in Resources */,
+				FF36188113D41055003FD7CB /* MainWindow-iPhone.xib in Resources */,
+				F7D3BD41160757C700CBBAAE /* Opticon_FL49J09.bin in Resources */,
+				F7FB885E16132A5A004D349A /* C005922_0336-system-cr8000-CD_GEN.CRZ in Resources */,
+				F7E62B0C1667C0DE00B86FF2 /* LINEAPro1_1BAM_288.bin in Resources */,
+				F7E62B0D1667C0DE00B86FF2 /* LINEAPro1_BM_288.bin in Resources */,
+				FF79C55616DB4BB500AB34F4 /* LINEAPro4U_IBAMBL_296.bin in Resources */,
+				FF79C55716DB4BB600AB34F4 /* LINEAPro4U_IBAMBLRF_296.bin in Resources */,
+				FF79C55816DB4BB600AB34F4 /* LINEAPro4U_IBAMCMBL_296.bin in Resources */,
+				FF79C55916DB4BB600AB34F4 /* LINEAPro4U_IBAMCMBLRF_296.bin in Resources */,
+				FFF1A7ED16DF417500535449 /* LINEAPad2_CBAMBL_296.bin in Resources */,
+				FFF1A7EE16DF417500535449 /* LINEAPad2_CBAMCMBL_296.bin in Resources */,
+				FFF1A7EF16DF417500535449 /* LINEAPad2_XBAMBL_296.bin in Resources */,
+				FFF1A7F016DF417500535449 /* LINEAPad2_XBCMBL_296.bin in Resources */,
+				FFF1A7F116DF417500535449 /* LINEAPad2L_CBAMBL_296.bin in Resources */,
+				FFF1A7F216DF417500535449 /* LINEAPad2L_CBAMBLRF_296.bin in Resources */,
+				FFF1A7F316DF417500535449 /* LINEAPad2L_CBAMCMBL_296.bin in Resources */,
+				FFF1A7F416DF417500535449 /* LINEAPad2L_CBAMCMBLRF_296.bin in Resources */,
+				FFF1A7F516DF417500535449 /* LINEAPad2L_IBAMBL_296.bin in Resources */,
+				FFF1A7F616DF417500535449 /* LINEAPad2L_IBAMBLRF_296.bin in Resources */,
+				FFF1A7F716DF417500535449 /* LINEAPad2L_IBAMCMBL_296.bin in Resources */,
+				FFF1A7F816DF417500535449 /* LINEAPad2L_IBAMCMBLRF_296.bin in Resources */,
+				FFF1A7F916DF417500535449 /* LINEAPad2L_XBAMBL_296.bin in Resources */,
+				FFF1A7FA16DF417500535449 /* LINEAPad2L_XBAMBLRF_296.bin in Resources */,
+				FFF1A7FB16DF417500535449 /* LINEAPad2L_XBAMCMBL_296.bin in Resources */,
+				FFF1A7FC16DF417500535449 /* LINEAPad2L_XBAMCMBLRF_296.bin in Resources */,
+				FFF1A80916DF418000535449 /* LINEAPro4_CBAMBL_296.bin in Resources */,
+				FFF1A80A16DF418000535449 /* LINEAPro4_CBAMCMBL_296.bin in Resources */,
+				FFF1A80B16DF418000535449 /* LINEAPro4_IBAMBL_296.bin in Resources */,
+				FFF1A80C16DF418000535449 /* LINEAPro4_IBAMCMBL_296.bin in Resources */,
+				FFF1A80D16DF418000535449 /* LINEAPro4_XBAMBL_296.bin in Resources */,
+				FFF1A80E16DF418000535449 /* LINEAPro4_XBAMBLsn_296.bin in Resources */,
+				FFF1A80F16DF418000535449 /* LINEAPro4_XBAMCMBL_296.bin in Resources */,
+				FFF1A81016DF418000535449 /* LINEAPro4L_XBAMBL_296.bin in Resources */,
+				FFF1A81116DF418000535449 /* LINEAPro4U_CBAMBL_296.bin in Resources */,
+				FFF1A81216DF418000535449 /* LINEAPro4U_CBAMBLRF_296.bin in Resources */,
+				FFF1A81316DF418000535449 /* LINEAPro4U_CBAMCMBL_296.bin in Resources */,
+				FFF1A81416DF418000535449 /* LINEAPro4U_CBAMCMBLRF_296.bin in Resources */,
+				C0DF8CAB17F21DAE00B1F08D /* martinslogo.png in Resources */,
+				C0DF8CAE17F239DD00B1F08D /* Default-568h@2x.png in Resources */,
+				C0435A4617F3339100BF472B /* martins_logo.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* LineaDemoAppDelegate.m in Sources */,
+				FF28AFF71073BBA400465ABF /* MainTabBarController.m in Sources */,
+				FF5EB7201188802300B36DA6 /* NSDataCrypto.m in Sources */,
+				FF172557122BE303007E92FE /* SettingsViewController.m in Sources */,
+				FF172601122BECD2007E92FE /* ScannerViewController.m in Sources */,
+				FF172775122D2142007E92FE /* CryptoViewController.m in Sources */,
+				FF4A6E751380F95300FC1C0E /* RFViewController.m in Sources */,
+				FFDB7511139CFA2600B63808 /* ProgressView.m in Sources */,
+				FFDB7512139CFA2600B63808 /* ProgressViewController.m in Sources */,
+				F7DC1AA01546C25D00AF9233 /* EMSRCryptoViewController.m in Sources */,
+				F7EABF2B15C96F01004DC2B0 /* dukpt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF36187C13D41055003FD7CB /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF36187D13D41055003FD7CB /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		FF36187E13D41055003FD7CB /* MainWindow-iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF36187F13D41055003FD7CB /* en */,
+			);
+			name = "MainWindow-iPhone.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LineaDemo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "LineaDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LineaDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LineaDemo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "LineaDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LineaDemo;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FF9C0982120BEF34000A8BD4 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = AdHoc;
+		};
+		FF9C0983120BEF34000A8BD4 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LineaDemo_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "LineaDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LineaDemo;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LineaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				FF9C0983120BEF34000A8BD4 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LineaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				FF9C0982120BEF34000A8BD4 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

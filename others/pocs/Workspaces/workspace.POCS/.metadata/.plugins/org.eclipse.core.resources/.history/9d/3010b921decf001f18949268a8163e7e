@@ -1,0 +1,205 @@
+package br.jus.stj.site.iphone.servlet;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.stj.mobile.bd.pojo.TipoPesquisaProcesso;
+import br.jus.stj.site.iphone.PadraoPaginas;
+import br.jus.stj.site.iphone.Padroes;
+import br.jus.stj.site.iphone.ui.A;
+import br.jus.stj.site.iphone.ui.Body;
+import br.jus.stj.site.iphone.ui.Div;
+import br.jus.stj.site.iphone.ui.Form;
+import br.jus.stj.site.iphone.ui.HTML;
+import br.jus.stj.site.iphone.ui.Head;
+import br.jus.stj.site.iphone.ui.Img;
+import br.jus.stj.site.iphone.ui.Input;
+import br.jus.stj.site.iphone.ui.Option;
+import br.jus.stj.site.iphone.ui.Script;
+import br.jus.stj.site.iphone.ui.Select;
+import br.jus.stj.site.iphone.ui.Style;
+import br.jus.stj.site.iphone.ui.Texto;
+import java.util.Map;
+import javax.servlet.http.HttpSession;
+
+public class PaginaDJEletronico extends PadraoPaginas
+{
+  public String gerarPagina()
+    throws SystemException
+  {
+/*  30 */     return null;
+  }
+
+  public String gerarPagina(String metodo, Map<String, String> listaParametros, HttpSession session)
+    throws SystemException
+  {
+/*  38 */     HTML pagina = new HTML();
+/*  39 */     Head head = Padroes.getHeader();
+/*  40 */     head.add(new Style("css/styleJurisprudencia.css"));
+/*  41 */     head.add(new Script("js/script.js"));
+/*  42 */     pagina.add(head);
+/*  43 */     Body body = Padroes.getBody();
+/*  44 */     pagina.add(body);
+
+/*  47 */     Div div = new Div("titulo");
+/*  48 */     A at = new A("", true);
+/*  49 */     at.add(new Img("imagens/botao-inicio-azul.png"));
+/*  50 */     div.add(at);
+/*  51 */     div.add(new Div("titulo_texto", new Texto("DJE")));
+/*  52 */     body.add(div);
+
+/*  55 */     if ((metodo == null) || (metodo.equals("gerarPagina"))) {
+/*  56 */       gerarPaginaInicial(body);
+/*  57 */     } else if (metodo.equals("acesso")) {
+/*  58 */       at.setHref("Pagina?p=DJEletronico");
+/*  59 */       gerarPaginaConsultaProcesso(body, "DJEletronico", TipoPesquisaProcesso.NUMERO, "");
+/*  60 */     } else if (metodo.equals("exibirOpcao")) {
+/*  61 */       String parametro = (String)listaParametros.get("parametro");
+/*  62 */       pagina.clear();
+/*  63 */       body.clear();
+/*  64 */       pagina.add(body);
+/*  65 */       body.add(gerarPaginaOpcaoConsulta(parametro));
+/*  66 */     } else if (metodo.equals("consultar")) {
+/*  67 */       String parametro = (String)listaParametros.get("parametro");
+
+/*  69 */       if ((parametro == null) || (parametro.trim().equals(""))) {
+/*  70 */         pagina.clear();
+/*  71 */         return gerarPaginaMensagem("DJE", 
+/*  72 */           "O critério de pesquisa não foi informado.", 
+/*  73 */           "Pagina?p=Processos");
+/*  75 */       }at.setHref("Pagina?p=DJEletronico");
+
+/*  77 */       String opcaoConsulta = (String)listaParametros.get("opcaoConsulta");
+      TipoPesquisaProcesso tipo;
+      try { tipo = TipoPesquisaProcesso.valueOf(opcaoConsulta);
+      }
+      catch (Exception e)
+      {
+        TipoPesquisaProcesso tipo;
+/*  83 */         tipo = TipoPesquisaProcesso.INTEGRAL;
+      }
+
+/*  87 */       gerarPaginaConsultaResultado(body, parametro, tipo);
+    } else {
+/*  89 */       return gerarPaginaErro400();
+    }
+
+/*  92 */     return pagina.toString();
+  }
+  private Div gerarPaginaOpcaoConsulta(String parametro) throws SystemException {
+    TipoPesquisaProcesso tipo;
+    try { tipo = TipoPesquisaProcesso.valueOf(parametro);
+    }
+    catch (Exception e)
+    {
+      TipoPesquisaProcesso tipo;
+/*  99 */       tipo = TipoPesquisaProcesso.INTEGRAL;
+    }
+/* 101 */     PaginaDJEletronicoConsultas tela = new PaginaDJEletronicoConsultas();
+
+/* 104 */     switch (tipo) {
+    case INTEGRAL:
+/* 106 */       return tela.getNumero();
+    case NOME_ADVOGADO:
+/* 108 */       return tela.getNumeroRegistro();
+    case NOME_PARTE:
+/* 110 */       return tela.getNumeroUnico();
+    case NUMERO:
+/* 112 */       return tela.getNumeroOrigem();
+    case NUMERO_ORIGEM:
+/* 114 */       return tela.getOAB();
+    case NUMERO_REGISTRO:
+/* 116 */       return tela.getNomeParte();
+    case NUMERO_UNICO:
+/* 118 */       return tela.getNomeAdvogado();
+    case OAB:
+/* 120 */       return tela.getIntegral();
+    }
+/* 122 */     return tela.getIntegral();
+  }
+
+  private void gerarPaginaConsultaResultado(Body body, String parametro, TipoPesquisaProcesso tipo)
+    throws SystemException
+  {
+  }
+
+  public void gerarPaginaInicial(Body body)
+    throws SystemException
+  {
+/* 136 */     Div div = new Div("arredondado");
+/* 137 */     A a = new A("Pagina?p=DJEletronico&m=acesso", true);
+/* 138 */     a.add(new Texto("Acesso Direto ao Sistema"));
+/* 139 */     div.add(new Div("arredondado_link", a));
+/* 140 */     body.add(div);
+
+/* 143 */     Div div = new Div("arredondado");
+/* 144 */     A a = new A("dje_guia.jsp", true);
+/* 145 */     a.add(new Texto("Guia para Consulta à Publicação"));
+/* 146 */     div.add(new Div("arredondado_link", a));
+/* 147 */     body.add(div);
+  }
+
+  public void gerarPaginaConsultaProcesso(Body body, String metodoAction, TipoPesquisaProcesso selecionado, String texto)
+    throws SystemException
+  {
+/* 155 */     Div divPrincipal = new Div("arredondado");
+
+/* 157 */     divPrincipal.add(new Script("js/script_dje.js"));
+
+/* 160 */     Div div = new Div("arredondado_titulo");
+/* 161 */     div.add(new Texto("Consulta"));
+/* 162 */     divPrincipal.add(div);
+
+/* 165 */     Form form = new Form("Pagina");
+/* 166 */     form.add(new Input("hidden", "p", metodoAction));
+/* 167 */     form.add(new Input("hidden", "m", "consultar"));
+/* 168 */     form.setMethod("GET");
+
+/* 170 */     form.add(
+/* 171 */       new Div("arredondado_chamada", 
+/* 171 */       new Texto("Parâmetro de pesquisa:")));
+
+/* 174 */     Div div = new Div("arredondado_chamada_simples_center");
+/* 175 */     Select lista = new Select("input_select", "opcaoConsulta");
+/* 176 */     lista.setOnchange("exibirOpcao()");
+/* 177 */     lista.add(
+/* 178 */       new Option(TipoPesquisaProcesso.INTEGRAL, 
+/* 178 */       "Íntegra para Download"));
+/* 179 */     lista.add(
+/* 180 */       new Option(TipoPesquisaProcesso.NUMERO, 
+/* 180 */       "Número do Processo"));
+/* 181 */     lista.add(
+/* 182 */       new Option(TipoPesquisaProcesso.NUMERO_REGISTRO, 
+/* 182 */       "Número de REGISTRO"));
+/* 183 */     lista.add(
+/* 184 */       new Option(TipoPesquisaProcesso.NUMERO_UNICO, 
+/* 184 */       "Número Único de Processo (NUP)"));
+/* 185 */     lista.add(
+/* 186 */       new Option(TipoPesquisaProcesso.NUMERO_ORIGEM, 
+/* 186 */       "Número do Processo na ORIGEM"));
+/* 187 */     lista.add(
+/* 188 */       new Option(TipoPesquisaProcesso.OAB, 
+/* 188 */       "OAB do Advogado"));
+/* 189 */     lista.add(
+/* 190 */       new Option(TipoPesquisaProcesso.NOME_PARTE, 
+/* 190 */       "Nome da PARTE"));
+/* 191 */     lista.add(
+/* 192 */       new Option(TipoPesquisaProcesso.NOME_ADVOGADO, 
+/* 192 */       "Nome do ADVOGADO"));
+
+/* 194 */     div.add(lista);
+/* 195 */     form.add(div);
+
+/* 200 */     PaginaDJEletronicoConsultas consulta = new PaginaDJEletronicoConsultas();
+/* 201 */     Div divConteudo = new Div();
+/* 202 */     divConteudo.setId("conteudo");
+/* 203 */     divConteudo.add(consulta.getIntegral());
+/* 204 */     form.add(divConteudo);
+
+/* 206 */     divPrincipal.add(form);
+/* 207 */     body.add(divPrincipal);
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.servlet.PaginaDJEletronico
+ * JD-Core Version:    0.6.0
+ */

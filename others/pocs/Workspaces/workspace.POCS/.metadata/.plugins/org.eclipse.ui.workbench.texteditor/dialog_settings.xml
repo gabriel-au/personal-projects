@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="263" key="DIALOG_WIDTH"/>
+		<item value="124" key="DIALOG_Y_ORIGIN"/>
+		<item value="395" key="DIALOG_HEIGHT"/>
+		<item value="509" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="&lt;%=request.getContextPath()%&gt;" key="selection"/>
+		<list key="findhistory">
+			<item value="/stj"/>
+			<item value="Pagina?p=Processos&amp;m=detalhar&amp;parametro=2008/0049085-9"/>
+			<item value="jurisprudencia.jsp?"/>
+			<item value="Pagina?p=Jurisprudencia&amp;m=detalhar&amp;"/>
+			<item value="Pagina?p=Noticias&amp;m=detalhar&amp;id=95648"/>
+			<item value="stj.site.iphone"/>
+			<item value="/*    */ "/>
+			<item value="site.iphone"/>
+		</list>
+		<list key="replacehistory">
+			<item value="&lt;%=request.getContextPath()%&gt;"/>
+			<item value="processoDetalhe.jsp"/>
+			<item value="jurisprudenciaDetalhe.jsp?"/>
+			<item value="jurisprudencia.jsp?"/>
+			<item value="noticiaDetalhe.jsp"/>
+			<item value="tst.mobilesite"/>
+			<item value=""/>
+			<item value="mobilesite"/>
+		</list>
+	</section>
+</section>

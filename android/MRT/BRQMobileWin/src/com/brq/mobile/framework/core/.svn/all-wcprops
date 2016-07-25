@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/4792/framework/code/trunk/BRQMobileWin/src/com/brq/mobile/framework/core
+END
+DispatcherBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobile/!svn/ver/4324/framework/code/trunk/BRQMobileWin/src/com/brq/mobile/framework/core/DispatcherBase.java
+END
+ActionResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/4792/framework/code/trunk/BRQMobileWin/src/com/brq/mobile/framework/core/ActionResult.java
+END
+LockMultipleInstances.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/1229/framework/code/trunk/BRQMobileWin/src/com/brq/mobile/framework/core/LockMultipleInstances.java
+END

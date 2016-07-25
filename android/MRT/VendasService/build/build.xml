@@ -1,0 +1,40 @@
+<project name="VendasService" default="jar" basedir=".">
+
+	<property name="brq-win-lib-dir"  	value="../../BRQMobileWin/lib" />
+	<property name="service-src-dir"  location="../src" />
+	<property name="service-bin-dir"  location="../bin" />
+	<property name="service-dist-dir"  location="../dist" />
+	<property name="brq-martins-lib-dir" value="../../MartinsDist/framework" />
+
+	<path id="service-classpath-base">
+		<pathelement location="${brq-martins-lib-dir}/framework-base.jar" />
+		<pathelement location="${brq-martins-lib-dir}/framework-windows.jar" />
+		<pathelement location="${brq-win-lib-dir}/xpp3-1.1.4c.jar" />
+	</path>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${service-dist-dir}/VendasService.jar">
+			<fileset dir="${service-bin-dir}" />
+		</jar>
+	</target>
+
+	<target name="compile" depends="clean,init">
+		<echo>Compilando projeto VendasService</echo>
+		<javac debug="on" includeantruntime="true" destdir="${service-bin-dir}">
+			<src path="${service-src-dir}" />
+			<classpath refid="service-classpath-base" />
+		</javac>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${service-bin-dir}" />
+	</target>
+
+	<target name="clean">
+		<delete failonerror="false">
+			<fileset dir="${service-dist-dir}" />
+			<fileset dir="${service-bin-dir}" />
+		</delete>
+	</target>
+
+</project>

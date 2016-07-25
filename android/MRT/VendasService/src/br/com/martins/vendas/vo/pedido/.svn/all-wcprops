@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/4783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/vo/pedido
+END
+ReducaoItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/4783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/vo/pedido/ReducaoItem.java
+END
+DetalhePedido.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/4783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/vo/pedido/DetalhePedido.java
+END
+FechamentoFilial.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/4783/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/vo/pedido/FechamentoFilial.java
+END

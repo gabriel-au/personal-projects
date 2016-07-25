@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobile/!svn/ver/5198/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums
+END
+TipoNegociacaoMercadoria.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/mobile/!svn/ver/4162/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoNegociacaoMercadoria.java
+END
+TipoMensagemErroPedido.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/4925/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoMensagemErroPedido.java
+END
+TipoVendaPedido.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/4929/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoVendaPedido.java
+END
+TipoNegociacao.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/5724/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoNegociacao.java
+END
+TipoCondicaoPagamento.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/5198/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoCondicaoPagamento.java
+END
+TipoCliente.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/2313/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoCliente.java
+END
+TipoMargem.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mobile/!svn/ver/1448/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoMargem.java
+END
+TipoPedidoMensagem.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/5172/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoPedidoMensagem.java
+END
+GrupamentoCliente.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/3012/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/GrupamentoCliente.java
+END
+TipoErroPedido.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/5173/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoErroPedido.java
+END
+TipoCobranca.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/4836/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoCobranca.java
+END
+TipoFinanciamento.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/1196/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/TipoFinanciamento.java
+END
+RoleUsuario.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/3012/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/RoleUsuario.java
+END
+PedidoStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/4077/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/PedidoStatus.java
+END
+Faixa.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mobile/!svn/ver/2114/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/Faixa.java
+END
+DadoTemporario.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/4185/martins/funcionalidades/code/trunk/Vendas/VendasService/src/br/com/martins/vendas/enums/DadoTemporario.java
+END

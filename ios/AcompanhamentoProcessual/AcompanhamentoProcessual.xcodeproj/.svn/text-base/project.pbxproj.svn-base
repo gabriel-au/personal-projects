@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28193060112F816700ECF9B4 /* AcompanhamentoProcessual.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* AcompanhamentoProcessual.xcdatamodeld */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		805BE18711AC1F5A007AC2CD /* PesquisaProcessos.m in Sources */ = {isa = PBXBuildFile; fileRef = 805BE18611AC1F59007AC2CD /* PesquisaProcessos.m */; };
+		807C3C0011AD620800D4FEF4 /* Inicio.m in Sources */ = {isa = PBXBuildFile; fileRef = 807C3BFF11AD620800D4FEF4 /* Inicio.m */; };
+		80885D10119B369E00BDD73E /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80885D0F119B369E00BDD73E /* AsyncSocket.m */; };
+		80885D14119B36EA00BDD73E /* CommandController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80885D13119B36EA00BDD73E /* CommandController.m */; };
+		80885D2A119B38AC00BDD73E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80885D29119B38AC00BDD73E /* CFNetwork.framework */; };
+		80A4ACA111B3460900861508 /* ResultadoPesquisaProcessos.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A4ACA011B3460900861508 /* ResultadoPesquisaProcessos.m */; };
+		80A4ACC211B3541600861508 /* VisualizadorWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A4ACC111B3541600861508 /* VisualizadorWeb.m */; };
+		80CA833511A56E92006D359B /* CadastroOAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CA833411A56E92006D359B /* CadastroOAB.m */; };
+		80CDF50511B49B10002AF018 /* inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CDF50411B49B10002AF018 /* inicio.png */; };
+		80CDF50811B49B39002AF018 /* acompanhamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CDF50711B49B39002AF018 /* acompanhamento.png */; };
+		80CDF50A11B49B56002AF018 /* pushes.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CDF50911B49B56002AF018 /* pushes.png */; };
+		80CDF53311B4A250002AF018 /* addprocesso.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CDF53211B4A250002AF018 /* addprocesso.png */; };
+		80D29E6911A424C300C1AE48 /* Pushes.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D29E6811A424C300C1AE48 /* Pushes.m */; };
+		80D29F7C11A46F0D00C1AE48 /* Processos.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D29F7B11A46F0D00C1AE48 /* Processos.m */; };
+		80E6AC7411A4CFD000A6DF13 /* Mensagens.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6AC7311A4CFD000A6DF13 /* Mensagens.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcompanhamentoProcessualAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcompanhamentoProcessualAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* AcompanhamentoProcessual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcompanhamentoProcessual.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* AcompanhamentoProcessual.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = AcompanhamentoProcessual.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* AcompanhamentoProcessual_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcompanhamentoProcessual_Prefix.pch; sourceTree = "<group>"; };
+		805BE18511AC1F59007AC2CD /* PesquisaProcessos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PesquisaProcessos.h; sourceTree = "<group>"; };
+		805BE18611AC1F59007AC2CD /* PesquisaProcessos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PesquisaProcessos.m; sourceTree = "<group>"; };
+		807C3BFE11AD620800D4FEF4 /* Inicio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inicio.h; sourceTree = "<group>"; };
+		807C3BFF11AD620800D4FEF4 /* Inicio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inicio.m; sourceTree = "<group>"; };
+		80885D0E119B369E00BDD73E /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		80885D0F119B369E00BDD73E /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		80885D12119B36EA00BDD73E /* CommandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandController.h; sourceTree = "<group>"; };
+		80885D13119B36EA00BDD73E /* CommandController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandController.m; sourceTree = "<group>"; };
+		80885D29119B38AC00BDD73E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		80A4AC9F11B3460900861508 /* ResultadoPesquisaProcessos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultadoPesquisaProcessos.h; sourceTree = "<group>"; };
+		80A4ACA011B3460900861508 /* ResultadoPesquisaProcessos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultadoPesquisaProcessos.m; sourceTree = "<group>"; };
+		80A4ACC011B3541600861508 /* VisualizadorWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizadorWeb.h; sourceTree = "<group>"; };
+		80A4ACC111B3541600861508 /* VisualizadorWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizadorWeb.m; sourceTree = "<group>"; };
+		80CA833311A56E92006D359B /* CadastroOAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroOAB.h; sourceTree = "<group>"; };
+		80CA833411A56E92006D359B /* CadastroOAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CadastroOAB.m; sourceTree = "<group>"; };
+		80CDF50411B49B10002AF018 /* inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inicio.png; sourceTree = "<group>"; };
+		80CDF50711B49B39002AF018 /* acompanhamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acompanhamento.png; sourceTree = "<group>"; };
+		80CDF50911B49B56002AF018 /* pushes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushes.png; sourceTree = "<group>"; };
+		80CDF53211B4A250002AF018 /* addprocesso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addprocesso.png; sourceTree = "<group>"; };
+		80D29E6711A424C300C1AE48 /* Pushes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushes.h; sourceTree = "<group>"; };
+		80D29E6811A424C300C1AE48 /* Pushes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pushes.m; sourceTree = "<group>"; };
+		80D29F7A11A46F0D00C1AE48 /* Processos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processos.h; sourceTree = "<group>"; };
+		80D29F7B11A46F0D00C1AE48 /* Processos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Processos.m; sourceTree = "<group>"; };
+		80E6AC7211A4CFD000A6DF13 /* Mensagens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensagens.h; sourceTree = "<group>"; };
+		80E6AC7311A4CFD000A6DF13 /* Mensagens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensagens.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* AcompanhamentoProcessual-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AcompanhamentoProcessual-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+				80885D2A119B38AC00BDD73E /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				807C3BFD11AD61EF00D4FEF4 /* Inicio */,
+				80E6AC7111A4CFB900A6DF13 /* Comum */,
+				8052E7A711A321EC007C4CD8 /* Cadastros */,
+				8052E79A11A32014007C4CD8 /* Processos */,
+				8052E79911A32000007C4CD8 /* Pushes */,
+				8039A96F119C6D4D00946ACF /* Settings */,
+				80885D11119B36BC00BDD73E /* Command Controller */,
+				80885D0C119B364200BDD73E /* Framework */,
+				80885D0B119B363500BDD73E /* App Delegate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* AcompanhamentoProcessual.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* AcompanhamentoProcessual_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80CDF53211B4A250002AF018 /* addprocesso.png */,
+				80CDF50411B49B10002AF018 /* inicio.png */,
+				80CDF50911B49B56002AF018 /* pushes.png */,
+				80CDF50711B49B39002AF018 /* acompanhamento.png */,
+				2819305F112F816700ECF9B4 /* AcompanhamentoProcessual.xcdatamodeld */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* AcompanhamentoProcessual-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+				80885D29119B38AC00BDD73E /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8039A96F119C6D4D00946ACF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		8052E79911A32000007C4CD8 /* Pushes */ = {
+			isa = PBXGroup;
+			children = (
+				80D29E6711A424C300C1AE48 /* Pushes.h */,
+				80D29E6811A424C300C1AE48 /* Pushes.m */,
+			);
+			name = Pushes;
+			sourceTree = "<group>";
+		};
+		8052E79A11A32014007C4CD8 /* Processos */ = {
+			isa = PBXGroup;
+			children = (
+				80D29F7A11A46F0D00C1AE48 /* Processos.h */,
+				80D29F7B11A46F0D00C1AE48 /* Processos.m */,
+			);
+			name = Processos;
+			sourceTree = "<group>";
+		};
+		8052E7A711A321EC007C4CD8 /* Cadastros */ = {
+			isa = PBXGroup;
+			children = (
+				80CA833311A56E92006D359B /* CadastroOAB.h */,
+				80CA833411A56E92006D359B /* CadastroOAB.m */,
+				805BE18511AC1F59007AC2CD /* PesquisaProcessos.h */,
+				805BE18611AC1F59007AC2CD /* PesquisaProcessos.m */,
+				80A4AC9F11B3460900861508 /* ResultadoPesquisaProcessos.h */,
+				80A4ACA011B3460900861508 /* ResultadoPesquisaProcessos.m */,
+			);
+			name = Cadastros;
+			sourceTree = "<group>";
+		};
+		807C3BFD11AD61EF00D4FEF4 /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				807C3BFE11AD620800D4FEF4 /* Inicio.h */,
+				807C3BFF11AD620800D4FEF4 /* Inicio.m */,
+			);
+			name = Inicio;
+			sourceTree = "<group>";
+		};
+		80885D0B119B363500BDD73E /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.h */,
+				1D3623250D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		80885D0C119B364200BDD73E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				80885D0D119B364C00BDD73E /* Network */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		80885D0D119B364C00BDD73E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				80885D0E119B369E00BDD73E /* AsyncSocket.h */,
+				80885D0F119B369E00BDD73E /* AsyncSocket.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		80885D11119B36BC00BDD73E /* Command Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80885D12119B36EA00BDD73E /* CommandController.h */,
+				80885D13119B36EA00BDD73E /* CommandController.m */,
+			);
+			name = "Command Controller";
+			sourceTree = "<group>";
+		};
+		80E6AC7111A4CFB900A6DF13 /* Comum */ = {
+			isa = PBXGroup;
+			children = (
+				80E6AC7211A4CFD000A6DF13 /* Mensagens.h */,
+				80E6AC7311A4CFD000A6DF13 /* Mensagens.m */,
+				80A4ACC011B3541600861508 /* VisualizadorWeb.h */,
+				80A4ACC111B3541600861508 /* VisualizadorWeb.m */,
+			);
+			name = Comum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* AcompanhamentoProcessual */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AcompanhamentoProcessual" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcompanhamentoProcessual;
+			productName = AcompanhamentoProcessual;
+			productReference = 1D6058910D05DD3D006BFB54 /* AcompanhamentoProcessual.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AcompanhamentoProcessual" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* AcompanhamentoProcessual */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				80CDF50511B49B10002AF018 /* inicio.png in Resources */,
+				80CDF50811B49B39002AF018 /* acompanhamento.png in Resources */,
+				80CDF50A11B49B56002AF018 /* pushes.png in Resources */,
+				80CDF53311B4A250002AF018 /* addprocesso.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AcompanhamentoProcessualAppDelegate.m in Sources */,
+				28193060112F816700ECF9B4 /* AcompanhamentoProcessual.xcdatamodeld in Sources */,
+				80885D10119B369E00BDD73E /* AsyncSocket.m in Sources */,
+				80885D14119B36EA00BDD73E /* CommandController.m in Sources */,
+				80D29E6911A424C300C1AE48 /* Pushes.m in Sources */,
+				80D29F7C11A46F0D00C1AE48 /* Processos.m in Sources */,
+				80E6AC7411A4CFD000A6DF13 /* Mensagens.m in Sources */,
+				80CA833511A56E92006D359B /* CadastroOAB.m in Sources */,
+				805BE18711AC1F5A007AC2CD /* PesquisaProcessos.m in Sources */,
+				807C3C0011AD620800D4FEF4 /* Inicio.m in Sources */,
+				80A4ACA111B3460900861508 /* ResultadoPesquisaProcessos.m in Sources */,
+				80A4ACC211B3541600861508 /* VisualizadorWeb.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AcompanhamentoProcessual_Prefix.pch;
+				INFOPLIST_FILE = "AcompanhamentoProcessual-Info.plist";
+				PRODUCT_NAME = AcompanhamentoProcessual;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AcompanhamentoProcessual_Prefix.pch;
+				INFOPLIST_FILE = "AcompanhamentoProcessual-Info.plist";
+				PRODUCT_NAME = AcompanhamentoProcessual;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paulo Ferreira (87N87WXLXU)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "396CC52A-01CE-4416-A088-685085D73DB1";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AcompanhamentoProcessual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AcompanhamentoProcessual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2819305F112F816700ECF9B4 /* AcompanhamentoProcessual.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28C3AD890F43EF2300507BA6 /* AcompanhamentoProcessual.xcdatamodel */,
+			);
+			currentVersion = 28C3AD890F43EF2300507BA6 /* AcompanhamentoProcessual.xcdatamodel */;
+			path = AcompanhamentoProcessual.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

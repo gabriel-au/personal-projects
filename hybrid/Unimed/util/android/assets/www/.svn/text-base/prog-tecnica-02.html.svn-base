@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header"> 
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="calendario.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y"><br />
+        	<h2 class="data">26/10</h2>
+        	<h2 class="aviso">8h às 9h</h2>
+        	<p><strong>Início das atividades no Centro de Convenções</strong></p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">9h às 9h40</h2>
+             <p><strong>Palestra: "Governança Cooperativa"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Humberto Jorge Isaac, presidente da FESP</p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">9h40 às 10h30</h2>
+            <p><strong>Palestra: Conferência: "Prontuário eletrônico"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Mohamad Akl, presidente da Central Nacional Unimed </p>
+            <p>- Conferencista - Guilherme de Paula Pinto Schettino / Gerente médico do Hospital Sírio Libanês<br />
+            - Debate</p>
+            <div class="dotted-border"></div>
+            <h2 class="aviso">10h30 às 11h30</h2>
+        	<p><strong>Mesa-redonda: "Operadora X Prestadora: repaginando o Sistema"</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente da Mesa</strong></p>
+            <p>Jamal Nasser Haddad, presidente da Federação do Estado do Mato Grosso do Sul</p>
+            <div class="dotted-border"></div>
+            <p>Moderador</p>
+            <p>Aldemar Antônio Amorim Barra, superintendente da Unimed Belém<br />
+			- O Sistema Estadual Unimed do Ceará - Darival Bringel de Olinda, presidente da Federação Ceará<br />
+            - Federação como operadora - Edevard José de Araújo, presidente da Federação Santa Catarina<br />
+            - Incorporações e Aquisições - Helton Freitas, presidente da Unimed-BH<br />
+            - Debate</p>
+            
+            <div class="dotted-border"></div>
+            <h2 class="aviso">11h30 às 12h30</h2>
+        	<p><strong>Visita à Feira de Negócios</strong></p>
+
+            
+            <div class="dotted-border"></div>
+            <h2 class="aviso">12h30 às 14h</h2>
+        	<p><strong>Almoço</strong></p>
+            <div class="dotted-border"></div>
+            
+            
+            <h2 class="aviso">14h às 14h30</h2>
+        	<p><strong>Entrega dos Prêmios</strong></p>
+            <p>- Profissionais do Ano: RH, Advogado, Contador e Atuário<br />
+            - 1º Prêmio Nacional de RH</p>
+            <div class="dotted-border"></div>
+            
+             <h2 class="aviso">14h às 16h</h2>
+        	<p><strong>Palestra: "Raízes Populares da Cultura Brasileira"</strong></p>
+            <p><strong>Presidente</strong></p>
+            <p>Nilson Luiz May, presidente da Unimed Rio Grande do Sul</p>
+             <div class="dotted-border"></div>
+            <h2 class="aviso">Palestrante</h2>
+            <p>Ariano Suassuna</p>
+            <p>Bacharel em Direito e doutor em História pela UFPE, da qual recebeu o título de professor emérito em 1997. Foi secretário de Cultura de Recife e do Estado de Pernambuco, pertence à Academia Taperoáense de Poesia, à Academia Pernambucana e à Academia Brasileira de Letras. É romancista, dramaturgo e poeta, destacando-se entre suas obras mais conhecidas a peça 'O Auto da Compadecida' e o romance 'A Pedra do Reino'.</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">16h às 17h15</h2>
+        	<p><strong>Mesa-redonda: "Investimentos e Perspectivas para o Setor de Saúde" </strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente de Mesa</strong></p>
+            <p>Adelson Severino Chagas, presidente da Unimed Equatorial </p>           
+            <div class="dotted-border"></div>
+            <p><strong>Moderador</strong></p>
+            <p>Reinaldo Antônio M. Barbosa, presidente da Federação do Vale do Paraíba</p>   
+            <div class="dotted-border"></div> 
+           <p>- Necessidade de investimento em recurso próprio no Sistema Unimed - Rodolfo Pinto Machado de Araújo, diretor administrativo e financeiro da Central Nacional Unimed</p>
+           
+           <p>- Desafios da verticalização - Mairton Lucena, presidente da Unimed Fortaleza</p>
+           <p>- Debate </p>
+            
+             <div class="dotted-border"></div>
+            <h2 class="aviso">17h15 às 18h</h2>
+        	<p><strong>Palestra 'Coach e Família. E daí?'</strong></p>
+            <div class="dotted-border"></div>
+            <p><strong>Presidente</strong></p>
+            <p>Paulo César Januzzi de Carvalho, presidente da Federação Interfederativa Regional Sul de Minas</p>           
+            <div class="dotted-border"></div>
+            <h2 class="aviso">Palestrante</h2>
+            <p>Carlos Hecktheuer</p>
+            <div class="dotted-border"></div>
+            <p>Médico pela Faculdade de Medicina da Universidade Federal de Santa Maria/RS e especialista em Psiquiatria pela Associação Brasileira de Psiquiatria. Professor e palestrante, também conhecido como "médico-filósofo".</p>
+              
+       </div>
+       <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

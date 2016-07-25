@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<!-- Navegação esquerda - em caso de seção com menu, deixar o leftNav vazio -->
+				<div class="leftNav">
+					<a href="avisos.html" class="bt">Voltar</a>
+				</div>
+				<h1>Avisos de Clientes</h1>
+				<!-- Navegação da direita -->
+				<div class="rightNav">
+					<a href="javascript:void(0);" class="bt">Editar</a>
+				</div>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<!-- BUSCA SIMPLES -->
+				<div class="simpleSearch"></div>
+				<!-- Avisos de clientes -->
+				<div class="scroll">
+					<ul class="list">
+						<li>
+							<p>No non ono no nononon ono no non onono non on on on onononononono no non onono non on</p>
+							<p class="footerDate">XX:XX XX/XX/XXXX</p>
+						</li>
+						<li>
+							<p>No non ono no nononon ono no non onono non on on on onononononono no non onono non on </p>
+							<p class="footerDate">XX:XX XX/XX/XXXX</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

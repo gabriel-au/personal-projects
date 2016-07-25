@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+<html debug="true"><head>
+
+
+
+<title>Highcharts Demo Gallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--  meta http-equiv="X-UA-Compatible" content="chrome=1" -->
+
+<link rel="shortcut icon" href="http://www.highcharts.com/favicon.ico">
+
+
+
+
+<script type="text/javascript" src="pie-donut_arquivos/jquery.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+
+<script type="text/javascript" src="pie-donut_arquivos/highcharts.js"></script>
+<script type="text/javascript" src="pie-donut_arquivos/exporting.js"></script>
+
+
+<!-- Highslide code -->
+<script type="text/javascript" src="pie-donut_arquivos/highslide-full.js"></script>
+<script type="text/javascript" src="pie-donut_arquivos/highslide.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="pie-donut_arquivos/highslide.css">
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="/highslide/highslide-ie6.css" />
+<![endif]-->
+<!-- End Highslide code -->
+
+<script type="text/javascript">
+var example = 'pie-donut',
+	theme = 'default';
+</script>
+
+<script type="text/javascript" src="pie-donut_arquivos/scripts.js"></script>
+
+<script type="text/javascript">
+	Highcharts.theme = { colors: ['#4572A7'] };// prevent errors in default theme
+	var highchartsOptions = Highcharts.getOptions(); 
+</script>
+
+<link rel="stylesheet" href="pie-donut_arquivos/template.css" type="text/css">
+<link rel="stylesheet" href="pie-donut_arquivos/brown.css" type="text/css">
+<link href="pie-donut_arquivos/demo.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+		var chart;
+		jQuery(document).ready(function() {
+			chart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container',
+					margin: [50, 0, 0, 0],
+					plotBackgroundColor: 'none',
+					plotBorderWidth: 0,
+					plotShadow: false				
+				},
+				title: {
+					text: 'Browser market shares at a specific website'
+				},
+				subtitle: {
+					text: 'Inner circle: 2008, outer circle: 2010'
+				},
+				tooltip: {
+					formatter: function() {
+						return '<b>'+ this.series.name +'</b><br/>'+ 
+							this.point.name +': '+ this.y +' %';
+					}
+				},
+			    series: [{
+					type: 'pie',
+					name: '2008',
+					size: '45%',
+					innerSize: '20%',
+					data: [
+						{ name: 'Firefox', y: 44.2, color: '#4572A7' },
+						{ name: 'IE', y: 46.6, color: '#AA4643' },
+						{ name: 'Chrome', y: 3.1, color: '#89A54E' },
+						{ name: 'Safari', y: 2.7, color: '#80699B' },
+						{ name: 'Opera', y: 2.3, color: '#3D96AE' },
+						{ name: 'Mozilla', y: 0.4, color: '#DB843D' }
+					],
+					dataLabels: {
+						enabled: false
+					}
+				}, {
+					type: 'pie',
+					name: '2010',
+					innerSize: '45%',
+					data: [
+						{ name: 'Firefox', y: 45.0, color: '#4572A7' },
+						{ name: 'IE', y: 26.8, color: '#AA4643' },
+						{ name: 'Chrome', y: 12.8, color: '#89A54E' },
+						{ name: 'Safari', y: 8.5, color: '#80699B' },
+						{ name: 'Opera', y: 6.2, color: '#3D96AE' },
+						{ name: 'Mozilla', y: 0.2, color: '#DB843D' }
+					],
+					dataLabels: {
+						enabled: true,
+						color: Highcharts.theme.textColor || '#000000',
+						connectorColor: Highcharts.theme.textColor || '#000000'
+					}
+				}]
+			});
+			
+			
+		});
+	</script>
+
+<style type="text/css">.highslide img {cursor: url(http://www.highcharts.com/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head><body>
+
+
+
+<div id="demo-header">
+	<h1>Highcharts Demo Gallery</h1>
+	<a href="http://www.highcharts.com/">« Go to the Highcharts home page</a>
+	<p>Pick an example on the left and combine it with a preset theme in the top menu. Click 
+	"View options" to inspect the code.</p>
+</div>
+
+<div id="demo-menu">
+		<h4>Line and scatter charts</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/line-basic">
+			Basic line</a></li>
+				<li><a href="http://www.highcharts.com/demo/line-ajax">
+			Ajax loaded data, clickable points</a></li>
+				<li><a href="http://www.highcharts.com/demo/line-labels">
+			With data labels</a></li>
+				<li><a href="http://www.highcharts.com/demo/line-time-series">
+			Time series, zoomable</a></li>
+				<li><a href="http://www.highcharts.com/demo/spline-inverted">
+			Spline with inverted axes</a></li>
+				<li><a href="http://www.highcharts.com/demo/spline-symbols">
+			Spline with symbols</a></li>
+				<li><a href="http://www.highcharts.com/demo/spline-plot-bands">
+			Spline with plot bands</a></li>
+				<li><a href="http://www.highcharts.com/demo/spline-irregular-time">
+			Time data with irregular intervals</a></li>
+				<li><a href="http://www.highcharts.com/demo/scatter">
+			Scatter plot</a></li>
+			</ul>
+		<h4>Area charts</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/area-basic">
+			Basic area</a></li>
+				<li><a href="http://www.highcharts.com/demo/area-negative">
+			Area with negative values</a></li>
+				<li><a href="http://www.highcharts.com/demo/area-stacked">
+			Stacked area</a></li>
+				<li><a href="http://www.highcharts.com/demo/area-stacked-percent">
+			Percentage area</a></li>
+				<li><a href="http://www.highcharts.com/demo/area-missing">
+			Area with missing points</a></li>
+				<li><a href="http://www.highcharts.com/demo/area-inverted">
+			Inverted axes</a></li>
+				<li><a href="http://www.highcharts.com/demo/areaspline">
+			Area-spline</a></li>
+			</ul>
+		<h4>Column and bar charts</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/bar-basic">
+			Basic bar</a></li>
+				<li><a href="http://www.highcharts.com/demo/bar-stacked">
+			Stacked bar</a></li>
+				<li><a href="http://www.highcharts.com/demo/bar-negative-stack">
+			Bar with negative stack</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-basic">
+			Basic column</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-negative">
+			Column with negative values</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-stacked">
+			Stacked column</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-stacked-and-grouped">
+			Stacked and grouped column</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-stacked-percent">
+			Stacked percentage column</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-rotated-labels">
+			Column with rotated labels</a></li>
+				<li><a href="http://www.highcharts.com/demo/column-parsed">
+			Data defined in a HTML table</a></li>
+			</ul>
+		<h4>Pie charts</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/pie-basic">
+			Pie chart</a></li>
+				<li class="active"><a href="http://www.highcharts.com/demo/pie-donut">
+			Donut chart</a></li>
+				<li><a href="http://www.highcharts.com/demo/pie-legend">
+			Pie with legend</a></li>
+			</ul>
+		<h4>Dynamic charts</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/dynamic-update">
+			Spline updating each second</a></li>
+				<li><a href="http://www.highcharts.com/demo/dynamic-click-to-add">
+			Click to add a point</a></li>
+				<li><a href="http://www.highcharts.com/demo/dynamic-master-detail">
+			Master-detail chart</a></li>
+			</ul>
+		<h4>Combinations</h4>
+	<ul>
+				<li><a href="http://www.highcharts.com/demo/combo">
+			Column, line and pie</a></li>
+				<li><a href="http://www.highcharts.com/demo/combo-dual-axes">
+			Dual axes, line and column</a></li>
+				<li><a href="http://www.highcharts.com/demo/combo-multi-axes">
+			Multiple axes</a></li>
+				<li><a href="http://www.highcharts.com/demo/combo-regression">
+			Scatter with regression line</a></li>
+			</ul>
+	</div>
+
+<div id="demo-content">
+	
+	<div id="styleswitcher">
+		<ul>
+			<li class="active"><a href="http://www.highcharts.com/demo/pie-donut">Default</a></li>
+			<li><a href="http://www.highcharts.com/demo/pie-donut/grid">Grid</a></li>
+			<li><a href="http://www.highcharts.com/demo/pie-donut/skies">Skies</a></li>
+			<li><a href="http://www.highcharts.com/demo/pie-donut/gray">Gray</a></li>
+			<li><a href="http://www.highcharts.com/demo/pie-donut/dark-blue">Dark blue</a></li>
+			<li><a href="http://www.highcharts.com/demo/pie-donut/dark-green">Dark green</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div id="container" class="highcharts-container" style="height: 410px; margin: 0pt 2em; clear: both; min-width: 600px;"><div style="position: relative; overflow: hidden; width: 1026px; height: 410px; text-align: left; font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; font-size: 12px; left: -0.600006px; top: 0px;" id="highcharts-0" class="highcharts-container"><svg height="410" width="1026" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient y2="20" x2="0" y1="0" x1="0" gradientUnits="userSpaceOnUse" id="highcharts-1"><stop stop-opacity="1" stop-color="#F7F7F7" offset="0.4"></stop><stop stop-opacity="1" stop-color="#E3E3E3" offset="0.6"></stop></linearGradient><linearGradient y2="20" x2="0" y1="0" x1="0" gradientUnits="userSpaceOnUse" id="highcharts-2"><stop stop-opacity="1" stop-color="#F7F7F7" offset="0.4"></stop><stop stop-opacity="1" stop-color="#E3E3E3" offset="0.6"></stop></linearGradient></defs><rect stroke="#4572A7" stroke-width="0" height="410" width="1026" y="0" x="0" fill="#FFFFFF" ry="5" rx="5"></rect><rect stroke-width="0" height="360" width="1026" y="50" x="0" fill="none" ry="0" rx="0"></rect><text zIndex="1" class="highcharts-title" text-anchor="middle" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(62, 87, 111); font-size: 16px; fill: rgb(62, 87, 111);" y="25" x="513"><tspan x="513">Browser market shares at a specific website</tspan></text><text zIndex="1" class="highcharts-subtitle" text-anchor="middle" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(109, 134, 159); fill: rgb(109, 134, 159);" y="40" x="513"><tspan x="513">Inner circle: 2008, outer circle: 2010</tspan></text><g zIndex="3" class="highcharts-series-group"></g><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 506.94582540829805 15.00336756184927 L 511.94582540829805 15.00336756184927 L 512.0672152097668 34.002979781999954 L 512.1374935158802 45.00275527787667"></path><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 439.2540164284901 30.00336756184927 L 444.2540164284901 30.00336756184927 L 482.79493555864894 37.15864015596243 L 485.0706595919014 47.92066041818444"></path><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 405.16410675190144 50.96597712283137 L 410.16410675190144 50.96597712283137 L 422.0058156713795 65.82444036323261 L 428.8615418879194 74.42670855504385"></path><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 347.17398113746555 143.1219352890134 L 352.17398113746555 143.1219352890134 L 370.69334088527256 147.36850031633912 L 381.4150754761082 149.82703796373823"></path><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 422.29124359531335 320.9929398075027 L 427.29124359531335 320.9929398075027 L 437.16073675706514 304.75738916300236 L 442.8746538507109 295.3578598425022"></path><path transform="translate(0, 50)" zIndex="3" visibility="visible" stroke="#000000" stroke-width="1" fill="none" d="M 681.147227859447 155.34270814185612 L 676.147227859447 155.34270814185612 L 657.3605773786621 158.18203265885452 L 646.4840955213657 159.8258521160641"></path><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#4572A7" d="M 512.9835024705006 99.00000168005236 A 81 81 0 0 1 540.3784811015183 256.232662111288 L 525.168213822897 213.88118316057245 A 36 36 0 0 0 512.992667764667 144.00000074668992 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#AA4643" d="M 540.3784048688425 256.232689489731 A 81 81 0 0 1 471.53645587236736 110.41713926277636 L 494.5717581654966 149.0742841167895 A 36 36 0 0 0 525.1681799417078 213.8811953287693 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#89A54E" d="M 471.5365254552488 110.41709779926701 A 81 81 0 0 1 485.88142841550854 103.67449263046585 L 500.94730151800377 146.07755228020704 A 36 36 0 0 0 494.5717890912217 149.07426568856312 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#80699B" d="M 485.88150474102946 103.67446551193242 A 81 81 0 0 1 499.2650977115793 100.17298415243411 L 506.8955989829241 144.52132628997072 A 36 36 0 0 0 500.94733544045755 146.07754022752553 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#3D96AE" d="M 499.265177538602 100.17297041757173 A 81 81 0 0 1 510.94363254538297 99.02610696717372 L 512.086058909059 144.01160309652164 A 36 36 0 0 0 506.8956344616009 144.52132018558746 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#DB843D" d="M 510.943713519277 99.02610491084675 A 81 81 0 0 1 512.9684115896408 99.0000061594303 L 512.9859607065071 144.00000273752457 A 36 36 0 0 0 512.0860948974564 144.01160218259855 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path fill-opacity="1" stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#4572A7" d="M 512.9725041175011 45.00000280008726 A 135 135 0 0 1 552.8690882304757 308.97850907678594 L 536.9214529382854 257.3871054460716 A 81 81 0 0 0 512.9835024705006 99.00000168005236 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#AA4643" d="M 552.8689592519466 308.9785489458097 A 135 135 0 0 1 380.1472428543565 203.98217919207215 L 433.2883457126139 194.3893075152433 A 81 81 0 0 0 536.921375551168 257.3871293674858 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#89A54E" d="M 380.1472188722437 203.982046339303 A 135 135 0 0 1 403.86908963596136 100.5302296271333 L 447.52145378157684 132.31813777627997 A 81 81 0 0 0 433.2883313233462 194.3892278035818 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path fill-opacity="1" stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#80699B" d="M 403.8691691057863 100.53012049626265 A 135 135 0 0 1 459.8831677586083 55.88875098267742 L 481.129900655165 105.53325058960645 A 81 81 0 0 0 447.5215014634718 132.3180722977576 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path fill-opacity="1" stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#3D96AE" d="M 459.8832918698839 55.88869786590723 A 135 135 0 0 1 511.3273954428708 45.01036190138345 L 511.9964372657225 99.00621714083006 A 81 81 0 0 0 481.12997512193033 105.53321871954434 Z"></path></g><g transform="translate(0, 50)" zIndex="5" class="highcharts-point"><path fill-opacity="1" stroke-linejoin="round" stroke-width="1" stroke="#FFFFFF" fill="#DB843D" d="M 511.3275304325098 45.010360228846395 A 135 135 0 0 1 512.9473526494013 45.00001026571715 L 512.9684115896408 99.0000061594303 A 81 81 0 0 0 511.9965182595059 99.00621613730783 Z"></path></g><g transform="translate(0, 50)" zIndex="5" visibility="visible" class="highcharts-highcharts-data-labels"><text visibility="visible" zIndex="1" text-anchor="start" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="160.343" x="686.147"><tspan x="686.147">Firefox</tspan></text><text visibility="visible" zIndex="1" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="325.993" x="417.291"><tspan x="417.291">IE</tspan></text><text visibility="visible" zIndex="1" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="148.122" x="342.174"><tspan x="342.174">Chrome</tspan></text><text visibility="visible" zIndex="1" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="55.966" x="400.164"><tspan x="400.164">Safari</tspan></text><text visibility="visible" zIndex="1" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="35.0034" x="434.254"><tspan x="434.254">Opera</tspan></text><text visibility="visible" zIndex="1" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); font-size: 11px; line-height: 14px; fill: rgb(0, 0, 0);" y="20.0034" x="501.946"><tspan x="501.946">Mozilla</tspan></text></g><g transform="translate(508, 403)" zIndex="7" class="highcharts-legend"><rect visibility="hidden" stroke="#909090" stroke-width="1" height="-1" width="9" y="0.5" x="0.5" fill="none" ry="5" rx="5"></rect></g><g transform="translate(337, 115)" visibility="hidden" zIndex="8" class="highcharts-tooltip"><rect transform="translate(1, 1)" stroke-opacity="0.05" stroke="rgb(0, 0, 0)" isShadow="true" fill-opacity="0.85" stroke-width="5" height="44" width="85" y="7" x="7" fill="none" ry="5" rx="5"></rect><rect transform="translate(1, 1)" stroke-opacity="0.1" stroke="rgb(0, 0, 0)" isShadow="true" fill-opacity="0.85" stroke-width="3" height="44" width="85" y="7" x="7" fill="none" ry="5" rx="5"></rect><rect transform="translate(1, 1)" stroke-opacity="0.15000000000000002" stroke="rgb(0, 0, 0)" isShadow="true" fill-opacity="0.85" stroke-width="1" height="44" width="85" y="7" x="7" fill="none" ry="5" rx="5"></rect><rect stroke="#80699B" fill-opacity="0.85" stroke-width="2" height="44" width="85" y="7" x="7" fill="rgb(255,255,255)" ry="5" rx="5"></rect><text zIndex="1" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; color: rgb(51, 51, 51); font-size: 12px; padding: 0pt; white-space: nowrap; fill: rgb(51, 51, 51);" y="24" x="12"><tspan x="12" style="font-weight: bold;">2010</tspan><tspan x="12" dy="18">Safari: 8.5 %</tspan></text></g><text zIndex="8" text-anchor="end" style="font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; cursor: pointer; color: rgb(144, 144, 144); font-size: 10px; fill: rgb(144, 144, 144);" y="405" x="1016"><tspan x="1016">Highcharts.com</tspan></text><g transform="translate(0, 50)" zIndex="9" class="highcharts-tracker"><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 512.9835024705006 99.00000168005236 A 81 81 0 0 1 540.3784811015183 256.232662111288 L 525.168213822897 213.88118316057245 A 36 36 0 0 0 512.992667764667 144.00000074668992 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 540.3784048688425 256.232689489731 A 81 81 0 0 1 471.53645587236736 110.41713926277636 L 494.5717581654966 149.0742841167895 A 36 36 0 0 0 525.1681799417078 213.8811953287693 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 471.5365254552488 110.41709779926701 A 81 81 0 0 1 485.88142841550854 103.67449263046585 L 500.94730151800377 146.07755228020704 A 36 36 0 0 0 494.5717890912217 149.07426568856312 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 485.88150474102946 103.67446551193242 A 81 81 0 0 1 499.2650977115793 100.17298415243411 L 506.8955989829241 144.52132628997072 A 36 36 0 0 0 500.94733544045755 146.07754022752553 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 499.265177538602 100.17297041757173 A 81 81 0 0 1 510.94363254538297 99.02610696717372 L 512.086058909059 144.01160309652164 A 36 36 0 0 0 506.8956344616009 144.52132018558746 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322016" fill="rgb(192,192,192)" d="M 510.943713519277 99.02610491084675 A 81 81 0 0 1 512.9684115896408 99.0000061594303 L 512.9859607065071 144.00000273752457 A 36 36 0 0 0 512.0860948974564 144.01160218259855 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 512.9725041175011 45.00000280008726 A 135 135 0 0 1 552.8690882304757 308.97850907678594 L 536.9214529382854 257.3871054460716 A 81 81 0 0 0 512.9835024705006 99.00000168005236 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 552.8689592519466 308.9785489458097 A 135 135 0 0 1 380.1472428543565 203.98217919207215 L 433.2883457126139 194.3893075152433 A 81 81 0 0 0 536.921375551168 257.3871293674858 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 380.1472188722437 203.982046339303 A 135 135 0 0 1 403.86908963596136 100.5302296271333 L 447.52145378157684 132.31813777627997 A 81 81 0 0 0 433.2883313233462 194.3892278035818 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 403.8691691057863 100.53012049626265 A 135 135 0 0 1 459.8831677586083 55.88875098267742 L 481.129900655165 105.53325058960645 A 81 81 0 0 0 447.5215014634718 132.3180722977576 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 459.8832918698839 55.88869786590723 A 135 135 0 0 1 511.3273954428708 45.01036190138345 L 511.9964372657225 99.00621714083006 A 81 81 0 0 0 481.12997512193033 105.53321871954434 Z"></path><path style="" zIndex="1" visibility="visible" fill-opacity="0.000001" isTracker="1305829322027" fill="rgb(192,192,192)" d="M 511.3275304325098 45.010360228846395 A 135 135 0 0 1 512.9473526494013 45.00001026571715 L 512.9684115896408 99.0000061594303 A 81 81 0 0 0 511.9965182595059 99.00621613730783 Z"></path></g><rect stroke="#B0B0B0" zIndex="19" transform="translate(992, 10)" stroke-width="1" height="19" width="23" y="0.5" x="0.5" fill="url(http://www.highcharts.com/demo/pie-donut#highcharts-1)" ry="3" rx="3"></rect><rect stroke="#B0B0B0" zIndex="19" transform="translate(966, 10)" stroke-width="1" height="19" width="23" y="0.5" x="0.5" fill="url(http://www.highcharts.com/demo/pie-donut#highcharts-2)" ry="3" rx="3"></rect><path zIndex="20" stroke-width="1" stroke="#A0A0A0" transform="translate(992, 10)" fill="#A8BF77" d="M 5.5 16.5 L 17.5 16.5 17.5 13.5 5.5 13.5 Z M 11.5 13.5 L 8.5 8.5 10.5 8.5 10.5 4.5 12.5 4.5 12.5 8.5 14.5 8.5 Z"></path><path zIndex="20" stroke-width="1" stroke="#A0A0A0" transform="translate(966, 10)" fill="#B5C9DF" d="M 5.5 13.5 L 17.5 13.5 17.5 8.5 5.5 8.5 Z M 8.5 8.5 L 8.5 4.5 14.5 4.5 14.5 8.5 Z M 8.5 13.5 L 7 16.5 16 16.5 14.5 13.5 Z"></path><rect style="cursor: pointer;" zIndex="21" title="Export to raster or vector image" fill-opacity="0.001" stroke-width="0" height="20" width="24" y="10" x="992" fill="rgb(255,255,255)" ry="0" rx="0"></rect><rect style="cursor: pointer;" zIndex="21" title="Print the chart" fill-opacity="0.001" stroke-width="0" height="20" width="24" y="10" x="966" fill="rgb(255,255,255)" ry="0" rx="0"></rect></svg></div></div>
+
+	<div style="margin: 1em;">
+	
+			
+		<div class="buttons">
+			<a href="javascript:" onclick="hs.htmlExpand(this, { width: 800,
+					headingText: 'Highcharts Configuration Preview', 
+					wrapperClassName: 'draggable-header' })">
+				View options</a>
+			<div class="highslide-maincontent">
+				<pre>var chart;
+$(document).ready(function() {
+   chart = new Highcharts.Chart({
+      chart: {
+         renderTo: 'container',
+         margin: [50, 0, 0, 0],
+         plotBackgroundColor: 'none',
+         plotBorderWidth: 0,
+         plotShadow: false            
+      },
+      title: {
+         text: 'Browser market shares at a specific website'
+      },
+      subtitle: {
+         text: 'Inner circle: 2008, outer circle: 2010'
+      },
+      tooltip: {
+         formatter: function() {
+            return '&lt;b&gt;'+ this.series.name +'&lt;/b&gt;&lt;br/&gt;'+ 
+               this.point.name +': '+ this.y +' %';
+         }
+      },
+       series: [{
+         type: 'pie',
+         name: '2008',
+         size: '45%',
+         innerSize: '20%',
+         data: [
+            { name: 'Firefox', y: 44.2, color: '#4572A7' },
+            { name: 'IE', y: 46.6, color: '#AA4643' },
+            { name: 'Chrome', y: 3.1, color: '#89A54E' },
+            { name: 'Safari', y: 2.7, color: '#80699B' },
+            { name: 'Opera', y: 2.3, color: '#3D96AE' },
+            { name: 'Mozilla', y: 0.4, color: '#DB843D' }
+         ],
+         dataLabels: {
+            enabled: false
+         }
+      }, {
+         type: 'pie',
+         name: '2010',
+         innerSize: '45%',
+         data: [
+            { name: 'Firefox', y: 45.0, color: '#4572A7' },
+            { name: 'IE', y: 26.8, color: '#AA4643' },
+            { name: 'Chrome', y: 12.8, color: '#89A54E' },
+            { name: 'Safari', y: 8.5, color: '#80699B' },
+            { name: 'Opera', y: 6.2, color: '#3D96AE' },
+            { name: 'Mozilla', y: 0.2, color: '#DB843D' }
+         ],
+         dataLabels: {
+            enabled: true,
+            color: Highcharts.theme.textColor || '#000000',
+            connectorColor: Highcharts.theme.textColor || '#000000'
+         }
+      }]
+   });
+   
+   
+});
+   </pre>
+			</div>
+			
+						
+						<a id="previous-example" title="Previous (arrow left)" href="http://www.highcharts.com/demo/pie-basic">« Previous</a>
+						
+						<a id="next-example" title="Next (arrow right)" href="http://www.highcharts.com/demo/pie-legend">Next »</a>
+					</div>
+		
+		
+	</div>
+	
+
+</div>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="pie-donut_arquivos/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2995052-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<div style="padding: 0pt; border: medium none; margin: 0pt; position: absolute; left: 0pt; top: 0pt; width: 100%; z-index: 1001; direction: ltr;" class="highslide-container"><a style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;" href="javascript:;" title="Click to cancel" class="highslide-loading">Loading...</a><div style="display: none;"></div><div style="padding: 0pt; border: medium none; margin: 0pt; visibility: hidden;" class="highslide-viewport highslide-viewport-size"></div><table style="padding: 0pt; border: medium none; margin: 0pt; visibility: hidden; position: absolute; border-collapse: collapse; width: 0pt;" cellspacing="0"><tbody style="padding: 0pt; border: medium none; margin: 0pt;"><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll 0px 0px transparent; height: 20px; width: 20px;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll 0px -40px transparent; height: 20px; width: 20px;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll -20px 0px transparent; height: 20px; width: 20px;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll 0px -80px transparent; height: 20px; width: 20px;"></td><td class="rounded-white highslide-outline" style="padding: 0pt; border: medium none; margin: 0pt; position: relative;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll -20px -80px transparent; height: 20px; width: 20px;"></td></tr><tr style="padding: 0pt; border: medium none; margin: 0pt; height: auto;"><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll 0px -20px transparent; height: 20px; width: 20px;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll 0px -60px transparent; height: 20px; width: 20px;"></td><td style="padding: 0pt; border: medium none; margin: 0pt; line-height: 0pt; font-size: 0pt; background: url(&quot;http://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) repeat scroll -20px -20px transparent; height: 20px; width: 20px;"></td></tr></tbody></table></div></body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+	
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+		<form>
+		</form>
+        
+		<div class="header">
+        	<div class="title">Executivos</div>
+			<div class="sombra"></div>
+        </div>
+		
+		<div class="content">
+		<!--inicio content-->
+
+			<div id="dadosUsuario">
+				<h2 class="title-login">Efetue seu login</h2>
+				
+				<div class="formulario">
+					<input type="text" value = "" id="usuario"/>
+				</div>	
+				<div class="formulario">
+					<input type="password" value = "" id="senha"/>
+				</div>	
+				<div class="formulario">
+					<img src="includes/images/bt_entrar.png" onclick='login()' id='enviar'/>
+				</div>
+				<br/><br/>
+			</div>
+       
+			<div data-scroll="y" id="sy" style="height:315px">
+				<div id="listaDeEmpresas" style="display:none">
+				</div>
+			</div>
+			
+    	<!--fim content-->
+        </div>
+	
+		<div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+
+		 <!--inicio footer-->
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li class="highlight"><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+		<!--fim container-->
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+	
+		if(localStorage['idUsuario'] != "0" && localStorage['idUsuario'] != null){
+		
+			$("#dadosUsuario").css("display","none");
+			$("#sy").css("display","");
+			$("#listaDeEmpresas").css("display","");
+			$("#listaDeEmpresas").removeClass("msg-login");
+		
+			listarEmpresas();
+		
+			timedRefresh(30000);
+			
+		}else{
+	
+			$("#sy").css("display","none");
+			$("#dadosUsuario").css("display","");
+			$("#listaDeEmpresas").css("display","");
+			$("#listaDeEmpresas").addClass("msg-login");
+		
+			$("#listaDeEmpresas").html("Favor informar os dados de login.");
+	
+		}
+		
+		
+	});
+	
+	</script>
+
+</div>
+
+</body>
+</html>

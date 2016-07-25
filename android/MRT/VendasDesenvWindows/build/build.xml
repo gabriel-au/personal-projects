@@ -1,0 +1,210 @@
+<project name="VendasWindows" default="dist" basedir=".">
+	<echo>${basedir}</echo>
+	
+	<property file="build.properties" />
+	
+	<path id="classpath.base">
+		<pathelement location="${brq-martins-lib-dir}/framework-base.jar" />
+		<pathelement location="${brq-martins-lib-dir}/framework-windows.jar" />
+	</path>
+	
+	<echo>${brq-martins-lib-dir}</echo>
+
+	<target name="jar" depends="clean,init,compile,manifest">
+		<copy todir="${bin-dir}">
+			<fileset dir="../src">
+				<include name="**/*.properties" />
+				<include name="**/*.xml" />
+			</fileset>
+			<fileset dir="../resources">
+				<include name="**/*.properties" />
+				<include name="**/*.xml" />
+			</fileset>
+		</copy>
+		
+		<jar destfile="${windows-dist-dir}/${prj-name}.jar" manifest="MANIFEST.MF">
+	 		<fileset dir="${bin-dir}" />
+		</jar>
+	</target>
+	
+	<target name="manifest">	
+		<buildnumber file="build.num" />
+		<tstamp>
+			<format property="TODAY" pattern="yyyy-MM-dd HH:mm:ss" />
+		</tstamp>
+		<manifest file="MANIFEST.MF">
+			<attribute name="Built-By" value="${built.by}_${user.name} " />
+			<attribute name="Build-Number" value="${build.number}" />
+			<attribute name="Implementation-Version" value="${version.num}${build.number}" />
+			<attribute name="Built-Date" value="${TODAY}" />
+			<attribute name="Main-Class" value="br.com.martins.vendas.Inicia" />
+			<attribute name="Class-Path" value="lib/framework-base.jar lib/framework-windows.jar lib/DJNativeSwing-SWT.jar lib/DJNativeSwing.jar lib/swt.jar lib/xpp3-1.1.4c.jar lib/VendasService.jar
+				lib/VendasModulo.jar lib/RelacionamentoModulo.jar lib/MartinsModulo.jar lib/EstruturaModulo.jar lib/log4j-1.2.16.jar lib/sqlitejdbc-v056.jar" />
+		</manifest>
+	</target>
+
+	<target name="compile">	
+		<javac debug="on" includeantruntime="true" destdir="${bin-dir}">
+			<src path="${src-dir}" />
+			<classpath refid="classpath.base" />
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete dir="${bin-dir}" />
+		<delete dir="${dist-dir}" />
+	</target>
+	
+	<target name="init">
+		<mkdir dir="${bin-dir}" />
+	</target>
+	
+	<target name="dist" depends="jar,compile.dependencies,copy.dependencies">
+		<copy todir="${windows-dist-lib-dir}">
+			<fileset dir="${brq-win-lib-dir}">
+				<include name="brq-mobile-base.jar" />
+				<include name="brq-mobile-win.jar" />
+				<include name="DJNativeSwing-SWT.jar" />
+				<include name="DJNativeSwing.jar" />
+				<include name="swt.jar" />
+				<include name="xpp3-1.1.4c.jar" />
+				<include name="log4j-1.2.16.jar" />
+				<include name="sqlitejdbc-v056.jar" />
+			</fileset>
+			<fileset dir="${brq-martins-lib-dir}">
+				<include name="framework-base.jar" />
+				<include name="framework-windows.jar" />
+			</fileset>
+		</copy>
+		
+		<copy file="vendas_windows.bat" tofile="${windows-dist-dir}/vendas_windows.bat" overwrite="true" />
+		
+		<antcall target="replace.build.id" />
+		
+		<copy todir="${dist-dir}/${vendas-dir}/${android-dir}/assets">
+			<fileset dir="../../VendasDesenvAndroid/assets">
+				<include name="**/*.*" />
+				<exclude name="**/*.sqlite" />
+			</fileset>
+		</copy>
+		
+		<copy file="../database/martins.sqlite" tofile="${windows-dist-dir}/database/martins.sqlite" overwrite="true" />
+	</target>
+	
+	<target name="compile.dependencies">
+		<ant antfile="../../VendasService/build/build.xml" dir="../../VendasService/build/" />
+		<ant antfile="../../VendasModulo/build/build.xml" dir="../../VendasModulo/build/" />
+		<ant antfile="../../RelacionamentoModulo/build/build.xml" dir="../../RelacionamentoModulo/build/" />
+		<ant antfile="../../MartinsModulo/build/build.xml" dir="../../MartinsModulo/build/" />
+		<ant antfile="../../EstruturaModulo/build/build.xml" dir="../../EstruturaModulo/build/" />
+	</target>
+	
+	<target name="copy.dependencies">
+		<echo>Copiando dependencias</echo>
+		<copy file="${service-dist-dir}/VendasService.jar" tofile="${windows-dist-lib-dir}/VendasService.jar" overwrite="true" />
+		<copy file="${vendas-modulo-dist-dir}/VendasModulo.jar" tofile="${windows-dist-lib-dir}/VendasModulo.jar" overwrite="true" />
+		<copy file="${relacionamento-modulo-dist-dir}/RelacionamentoModulo.jar" tofile="${windows-dist-lib-dir}/RelacionamentoModulo.jar" overwrite="true" />
+		<copy file="${martins-modulo-dist-dir}/MartinsModulo.jar" tofile="${windows-dist-lib-dir}/MartinsModulo.jar" overwrite="true" />
+		<copy file="${estrutura-modulo-dist-dir}/EstruturaModulo.jar" tofile="${windows-dist-lib-dir}/EstruturaModulo.jar" overwrite="true" />
+	</target>
+	
+	<target name="zip.dist" depends="dist">
+		<zip destfile="${dist-dir}/VendasWindows.zip" basedir="${dist-dir}/${vendas-dir}" update="true"/>
+		<delete dir="${dist-dir}/${vendas-dir}" />
+		<zip destfile="${dist-dir}/mtn-sdcard.zip">
+			<zipfileset dir="C:\mnt" includes="**/**" prefix="mnt"/>
+			<zipfileset dir="." includes="DESCOMPACTAR_RAIZ_C.txt" fullpath="DESCOMPACTAR_RAIZ_C.txt"/>
+		</zip>
+	</target>
+	
+	<target name="dist.software.equipe.teste" depends="dist">
+		<tstamp>
+			<format property="TODAY_DIR" pattern="ddMMyy_HH_mm" />
+		</tstamp>
+		
+		<property name="dist.dir" value="\versoes_martins\sprint_${sprint.num}\${TODAY_DIR}_${user.name}" />
+			
+		
+		<echo>Dist Artimos</echo>
+		<copy todir="${host.artimos}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+		<echo>Dist Vitor</echo>
+		<copy todir="${host.vitor}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+		<echo>Dist Leo</echo>
+		<copy todir="${host.leo}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+		<echo>Dist Suelen</echo>
+		<copy todir="${host.suelen}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+		<echo>Dist Rafael</echo>
+		<copy todir="${host.rafael}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+		<echo>Dist Caio</echo>
+		<copy todir="${host.caio}\${dist.dir}">
+			<fileset dir="${dist-dir}/${vendas-dir}">
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="dist.recursos.equipe.teste">
+		<tstamp>
+			<format property="TODAY_DIR" pattern="ddMMyy_HH_mm" />
+		</tstamp>
+		
+		<echo>Dist Artimos</echo>
+		<copy todir="${host.artimos}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>	
+		<echo>Dist Vitor</echo>
+		<copy todir="${host.vitor}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>
+		<echo>Dist Leo</echo>
+		<copy todir="${host.leo}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>
+		<echo>Dist Suelen</echo>
+		<copy todir="${host.suelen}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>
+		<echo>Dist Rafael</echo>
+		<copy todir="${host.rafael}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>
+		<echo>Dist Caio</echo>
+		<copy todir="${host.caio}\mnt">
+			<fileset dir="C:\mnt">
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="replace.build.id">
+		<echo>Alterando build no arquivo indexRca.html para ${user.name}_${build.number}</echo>
+		<replaceregexp match="&lt;span id='build'&gt;.+&lt;/span&gt;" replace="&lt;span id='build'&gt;${user.name}_${build.number}&lt;/span&gt;" flags="g" byline="true">
+		    <fileset dir="../../${android-dir}/assets/www/martins/" includes="indexRca.html"/>
+		</replaceregexp>
+	</target>
+	
+	<target name="exibe.proxima.versao.build">
+		<property file="build.num"/>
+		<echo>################################################################</echo>
+		<echo>###     Proxima versao build = ${user.name}_${build.number}</echo>
+		<echo>################################################################</echo>
+	</target>
+</project>

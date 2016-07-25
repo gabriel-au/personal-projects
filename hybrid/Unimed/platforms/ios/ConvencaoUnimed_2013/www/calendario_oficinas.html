@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+	
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo2.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	<script src="includes/js/load.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+	
+</head>
+
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+	
+	<style>
+		.footer {
+			position:absolute;
+			width:100%;
+			height:50px;
+			left:0;
+			top:1000px;
+			z-index:1;
+			border-top:2px solid #696969;
+		    background: #000000 url(includes/images/bg-footer_a.png);
+		}
+
+
+		.footer ul.evento{
+			list-style-type:none;
+			display:block;
+			position:relative;
+			margin:0 10px;
+			padding:0;
+		}
+		.footer ul.evento li
+		{
+			float:left; 
+			display:block;
+			width:59px;
+			height:50px;
+			margin:0;
+		}
+		.footer ul.evento li a{
+			display:block;
+			float:left;
+		    margin:4px 0;
+			width: 59px;
+			height:13px;
+			padding-top:33px;
+			text-align: center;
+			font-size:8px;
+			color: #A8A8A8;
+			text-decoration:none;
+			background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+		    border-radius:5px;
+		}
+
+		ul.evento li.highlight a {
+		    color:#FFFFFF;
+		}
+		ul.evento li a.informacoes:hover, 
+		ul.evento li.highlight a.informacoes{
+			background-position:0 -54px;
+		}
+		ul.evento li a.programacao{
+			background-position:-60px -4px;
+		}
+		ul.evento li a.programacao:hover,
+		ul.evento li.highlight a.programacao{
+			background-position:-60px -54px;
+		}
+		ul.evento li a.negocios{
+			background-position:-120px -4px;
+		}
+		ul.evento li a.negocios:hover,
+		ul.evento li.highlight a.negocios{
+			background-position:-120px -54px;
+		}
+		ul.evento li a.mapa{
+			background-position:-180px -4px;
+		}
+		ul.evento li a.mapa:hover,
+		ul.evento li.highlight a.mapa{
+			background-position:-180px -54px;
+		}
+		ul.evento li a.executivos{
+			background-position:-240px -4px;
+		}
+		ul.evento li a.executivos:hover,
+		ul.evento li.highlight a.executivos{
+			background-position:-240px -54px;
+		}
+	
+    
+		ul {list-style:none;}
+		.container .content .master{
+		color:#009900;
+		font-size:13px;
+		margin-left:14px;
+		}
+		.container .content .diamante{
+			color:#3399FF;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .ouro{
+			color:#FF9900;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .prata{
+			color:#666666;
+			font-size:13px;
+			margin-left:14px;
+		}
+	
+	 </style>	
+	
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Oficinas</div>
+            <div class="sombra"></div>
+            <div class="bottom-voltar"><a href="lista-programacao.html"><img src="includes/imagens/bt-voltar.jpg"></a></div>
+            
+        </div>
+        	
+
+        <!--inicio content-->
+        <div class="content" data-scroll="y" style="height:350px"><br />
+        	<h2 class="aviso">Auditório Ágata </h2>
+        	<p><span class="aviso">9h às 12h:</span> Construindo processos para efetivação do Código de Conduta</p>
+            <p><span class="aviso">Facilitadora:</span>Cristiane Hirota (Desenv. Humano e Sustentabilidade)</p>
+                 <p>• Importância Código de Conduta<br>
+                    • Legislação<br>
+                    • Composição, funcionamento do Comitê de Código de Conduta<br>
+                    • Implantação do canal de denuncias<br>
+                    • Feedback educativo e disciplinar<br>
+                    • Monitoramento da efetividade<br>
+			
+				 <a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=197" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+            <div class="dotted-border"></div>
+			<p><span class="aviso">14h às 17h:</span> Repensando o modelo de Gestão de Pessoas do Sistema Unimed</p>			
+			<p><span class="aviso">Facilitadora:</span> Monica Carvalho (RH)</p>
+                 <p>• Modelo Atual x Modelo Proposto.<br>
+                    • Revisão do Manual das Práticas de Gestão de Pessoas do Sistema Unimed.<br>
+                    • Melhores Práticas de Gestão de Pessoas das Melhores Empresas para se Trabalhar.<br>
+                    • Relatório – Gestão de Pessoas e Negócios para a Sustentabilidade – Pesquisa Brasileira – Benchmarking 2013.<br>
+                    • Indicadores de RH.<br>
+                    • Revisão da Pesquisa Salarial 2013.<br>
+			      <a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=196" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+			<div class="dotted-border"></div>
+			<h2 class="aviso">Auditório Quartzo</h2>
+			<p><span class="aviso">9h às 12h:</span> Saúde Ocupacional Unimed (SOU)</p>
+			<p><span class="aviso">Facilitador:</span>Júlio Miclos Júnior (Saúde Ocupacional)</p>
+			<a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=198" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+			<div class="dotted-border"></div>
+			<p><span class="aviso">14h às 17h:</span>Intercâmbio</p>
+			<p><span class="aviso">Facilitadora:</span>Carla Sales</p>
+		    <p>ventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=199</p>
+                 <p>Principais ações relacionadas à:<br>
+                    • Ajius<br>
+                    • Manual de Intercâmbio Nacional<br>
+                    • Câmara Técnica<br>
+                    • TISS 3.0 </p>	
+			<a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=199" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+			<div class="dotted-border"></div>
+			<h2 class="aviso">Auditório Turmalina </h2>
+			<p><span class="aviso">9h às 17h:</span> II Oficina de Gestão do Sistema Unimed </p>
+			<p><span class="aviso">Facilitadoras:</span> Jania D’Amario e Luciana Langer </p>
+			<p>Planejamento Estratégico:
+
+                 <p>• Estratégia<br>
+                    • Planejamento e sistema<br>
+                    • Metodologia de elaboração e implementação do planejamento estratégico<br>
+                     <p style="margin-left:8px;">
+					  o Fase I – Diagnóstico Estratégico<br>     
+				      o Fase II – Missão da empresa<br> 
+                      o Fase III – Tradução da Estratégia<br> 
+                      o Fase IV – Controle e avaliação da estratégia <br> 
+					  
+					  <p>09h às 10h30 – Planejamento estratégico<br> 
+                         10h30 às 12h – Gestão da marca<br> 
+                         14h às 15h30 – Planejamento orçamentário<br> 
+                         15h30 às 17h – Administração financeira</p> 
+			     <p>Workshop da Marca:</p>
+                     <p style="margin-left:8px;">
+					 o Cultura da Marca<br>
+                     o Diretrizes de Adesivagem de Ambulância<br>
+                     o Aplicações de Logos<br>
+                     o Nova Tipografia<br>
+                     o Diretrizes para Inserção de Texto<br>
+                     o Grafismos<br>
+                     o Diretrizes de Fotografia<br>
+                     o Paleta de Cores </p>
+			<a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=200" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+			<div class="dotted-border"></div>
+			<p><span class="aviso">14h às 17h:</span>Planejamento Orçamentário e Administração Financeira</p>
+			<p><span class="aviso">Facilitadora:</span> Isabel Rizo </p>
+			<p>• A importância do planejamento orçamentário<br>
+                    • Tipos de orçamentos<br>
+                    • Quais as premissas a serem consideradas no orçamento<br>
+                    • Orçamento econômico x orçamento de caixa<br>
+                    • A gestão financeira sem perder de vista a situação econômica<br>
+                    • Problemas causados pela falta ou deficiência de planejamento orçamentário<br>
+                    • Operações financeiras estruturadas </p>
+            <a style="float:right;" target = "_blank" href="http://eventos.unimed.coop.br/sgebr-brasil/insereInscricao.action?id=201" ><span class="aviso"><strong>clique aqui!</strong></span></a></p>
+    	    <div class="dotted-border"></div>
+    	 </div>
+		<!--fim content-->
+		<div class="bg-brq">
+			<img src="includes/imagens/bg-brq.png" style="float: right;">
+		</div>
+		<div class="footer">
+			<ul class="evento">
+				<li style="border-left: none;"><a class="informacoes"
+					href="index.html" data-transition="none" title="Informações">Informações</a></li>
+				<li class="highlight"><a class="programacao" href="lista-programacao.html"
+					data-transition="none" title="">Programação</a></li>
+				<li><a class="negocios" href="negocio.html"
+					data-transition="none" title="">Negócios</a></li>
+				<li><a class="mapa" href="mapa.html" data-transition="none"
+					title="">Mapa</a></li>
+				<li><a class="executivos"
+					href="patrocinadores.html" data-transition="none" title="">Patrocínios</a></li>
+			</ul>
+		</div>
+    </div>
+    <!--fim container-->
+</body>
+</html>

@@ -1,0 +1,29 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.cdt.dsf,2.2.0.201202111925,"org.eclipse.cdt.dsf",1342651708314
+started,bundle,org.eclipse.cdt.dsf.gdb,4.0.2.201202111925,"org.eclipse.cdt.dsf.gdb",1342651708315
+started,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.gdb.ui",1342651708317
+started,bundle,org.eclipse.cdt.make.core,7.1.2.201202111925,"org.eclipse.cdt.make.core",1342651708318
+started,bundle,org.eclipse.cdt.make.ui,7.1.2.201202111925,"org.eclipse.cdt.make.ui",1342651708320
+started,bundle,org.eclipse.cdt.managedbuilder.core,8.0.2.201202111925,"org.eclipse.cdt.managedbuilder.core",1342651708322
+started,bundle,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui",1342651708324
+os,sysinfo,,,"macosx",1342651708327
+arch,sysinfo,,,"x86",1342651708327
+ws,sysinfo,,,"cocoa",1342651708327
+locale,sysinfo,,,"en_US",1342651708327
+processors,sysinfo,,,"4",1342651708327
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1342651708327
+java.runtime.version,sysinfo,,,"1.6.0_33-b03-424-11M3720",1342651708327
+java.specification.name,sysinfo,,,"Java Platform API Specification",1342651708327
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1342651708327
+java.specification.version,sysinfo,,,"1.6",1342651708327
+java.vendor,sysinfo,,,"Apple Inc.",1342651708327
+java.version,sysinfo,,,"1.6.0_33",1342651708327
+java.vm.info,sysinfo,,,"mixed mode",1342651708327
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1342651708327
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1342651708327
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1342651708327
+java.vm.specification.version,sysinfo,,,"1.0",1342651708327
+java.vm.vendor,sysinfo,,,"Apple Inc.",1342651708327
+java.vm.version,sysinfo,,,"20.8-b03-424",1342651708327
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1342651709337
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1342651709602

@@ -1,0 +1,517 @@
+package br.com.consorciosdf.intranet.persistencia;
+
+import br.com.consorciosdf.intranet.modelo.*;
+import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Date;
+
+public class ManterReportDAO {
+    
+    private Conexao conexao;
+    private Connection connection;
+    
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    
+    public List recuperarTiposRelatorio() throws SQLException {
+        List list = null;
+        
+        return list;
+    }
+    
+    public boolean importReport(List listImport) throws SQLException {
+        PreparedStatement pstm = null;
+        ResultSet rs;
+        
+        Relatorio relatorio;
+        RelatorioTipo relatorioTipo;
+        Equipamento equipamento;
+        Usuario tecnico;
+        Usuario usuarioInclusao;
+        
+        Date dataNow = new Date();
+        String dataInclusao = dateFormat.format(dataNow);
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {    
+            for (int i=0; i < listImport.size(); i++) {
+                relatorio = (Relatorio) listImport.get(i);
+                relatorioTipo = relatorio.getRelatorioTipo();
+                equipamento = relatorio.getEquipamento();
+                tecnico = relatorio.getTecnico();
+                usuarioInclusao = relatorio.getUsuarioInclusao();
+                
+                String nomeEquipamento = "";
+                String observacao = "";
+                String matriculaTecnico = "";
+                String dataInicial = "0000-00-00 00:00:00";
+                String datafinal = "0000-00-00 00:00:00";
+                
+                if (equipamento != null) {
+                    nomeEquipamento = equipamento.getNomeEquipamento();
+                }
+                
+                if (relatorio.getObservacao() != null) {
+                    observacao = relatorio.getObservacao();
+                }
+                
+                if (tecnico != null) {
+                    matriculaTecnico = tecnico.getMatriculaUsuario();
+                }
+                
+                if (relatorio.getDataInicial() != null) {
+                    dataInicial = dateFormat.format(relatorio.getDataInicial());
+                }
+                
+                if (relatorio.getDataFinal() != null) {
+                    datafinal = dateFormat.format(relatorio.getDataFinal());
+                }
+                
+                String sql = "INSERT INTO relatorios (id_tipo_relatorio, " +
+                        "equipamento, observacao, dt_inicial, dt_final, " +
+                        "matricula_tecnico, usuario_inclusao, dt_inclusao) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+                pstm = connection.prepareStatement(sql);
+                pstm.setInt(1, relatorioTipo.getId());
+                pstm.setString(2, nomeEquipamento);
+                pstm.setString(3, observacao);
+                pstm.setString(4, dataInicial);
+                pstm.setString(5, datafinal);
+                pstm.setString(6, matriculaTecnico);
+                pstm.setString(7, usuarioInclusao.getMatriculaUsuario());
+                pstm.setString(8, dataInclusao);
+                pstm.execute();
+            }
+            return true;
+        
+        } catch (SQLException e) {
+            System.out.println("Erro(ManterReportDAO.importReport): " + e.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return false;
+    }
+    
+    public Relatorio recuperarReport(int id) throws SQLException {
+        PreparedStatement pstm = null;
+        ResultSet rs;
+        
+        Relatorio relatorio = null;
+        Equipamento equipamento = null;
+        Usuario tecnico = null;
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {
+            /*String sql = "SELECT rel.*, equip.end_logradouro, equip.end_cidade, " +
+                    "equip.end_estado, tec.nome as nome_tecnico, " +
+                    "tec.sobrenome as sobrenome_tecnico " +
+                    "FROM relatorios rel, " +
+                    "equipamentos equip, usuario tec " +
+                    "WHERE rel.equipamento = equip.nome " +
+                    "AND rel.matricula_tecnico = tec.matricula " +
+                    "AND rel.id = " + id;*/
+            
+            String sql = "SELECT rel.*, equip.end_logradouro, equip.end_cidade, equip.end_estado, " +
+                    "(SELECT CONCAT(tec.nome , ' ', tec.sobrenome) " +
+                    "FROM usuario tec " +
+                    "WHERE tec.matricula = rel.matricula_tecnico) as tecnico " +
+                    "FROM relatorios rel, equipamentos equip " +
+                    "WHERE rel.equipamento = equip.nome " +
+                    "AND rel.id = " + id;
+            
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            if (rs != null) {
+                rs.last();
+                
+                relatorio = new Relatorio();
+                equipamento = new Equipamento();
+                tecnico = new Usuario();
+                
+                String dataInicial = "";
+                String dataFinal = "";
+                
+                relatorio.setObservacao(rs.getString("observacao"));
+                equipamento.setNomeEquipamento(rs.getString("equipamento"));
+                equipamento.setEnderecoLogradouroEquipamento(rs.getString("end_logradouro"));
+                equipamento.setEnderecoCidadeEquipamento(rs.getString("end_cidade"));
+                equipamento.setEnderecoEstadoEquipamento(rs.getString("end_estado"));
+                tecnico.setNomeUsuario(rs.getString("tecnico"));
+                tecnico.setSobrenomeUsuario("");
+                relatorio.setEquipamento(equipamento);
+                relatorio.setTecnico(tecnico);
+                dataInicial = rs.getString("dt_inicial");
+                dataFinal = rs.getString("dt_final");
+                
+                if (!dataInicial.trim().equals("") && !dataInicial.trim().equals("0000-00-00 00:00:00")) {
+                    relatorio.setDataInicial(dateFormat.parse(dataInicial));
+                }
+                
+                if (!dataFinal.trim().equals("") && !dataFinal.trim().equals("0000-00-00 00:00:00")) {
+                    relatorio.setDataFinal(dateFormat.parse(dataFinal));
+                }
+                
+                return relatorio;
+            }
+            
+        } catch (SQLException e) {
+                System.out.println("Erro(ManterReportDAO.recuperarReport): " + e.getMessage());
+        } catch (ParseException pe) {
+            System.out.println("Erro(ManterReportDAO.recuperarReport): " + pe.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return relatorio;
+    }
+    
+    public List recuperarEquipamentos() throws SQLException {
+        List list = null;
+        
+        PreparedStatement pstm = null;
+        Equipamento equipamento;
+        ResultSet rs;
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {
+            String sql = "SELECT * FROM equipamentos " +
+                    "ORDER BY tipo DESC, num_equipamento ASC"; // +
+                    //"WHERE ativo = 'y'";
+            
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+        
+            if (rs != null) {
+                list = new ArrayList();
+                
+                while(rs.next()) {
+                    equipamento = new Equipamento();
+                    equipamento.setIdEquipamento(rs.getInt("id"));
+                    equipamento.setNomeEquipamento(rs.getString("nome"));
+                    equipamento.setDescricaoEquipamento(rs.getString("descricao"));
+                    equipamento.setEnderecoLogradouroEquipamento(rs.getString("end_logradouro"));
+                    equipamento.setEnderecoCidadeEquipamento(rs.getString("end_cidade"));
+                    equipamento.setEnderecoEstadoEquipamento(rs.getString("end_estado"));
+                    
+                    list.add(equipamento);
+                }
+                return list;
+            }
+        } catch (SQLException e) {
+                System.out.println("Erro(OSDAO.recuperarEquipamentos): " + e.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return list;
+    }
+    
+    public List recuperarReportsPag(int idReport, int pageNumber, int pageLimit, String orderBy, String order) throws SQLException {
+        List list = null;
+        
+        PreparedStatement pstm = null;
+        ResultSet rs;
+        
+        Relatorio relatorio;
+        Equipamento equipamento;
+        Usuario tecnico;
+        Paginacao paginacao;
+        
+        //ordenacao
+        String ordenacao = " ORDER by dt_inicial DESC";
+        
+        if (orderBy != null) {
+            if (!orderBy.trim().equals("")) {
+                if (orderBy.trim().equals("id")) {
+                    ordenacao = " ORDER BY id " + order;
+                } else if (orderBy.trim().equals("equipamento")) {
+                    ordenacao = " ORDER BY equipamento " + order;
+                } else if (orderBy.trim().equals("observacao")) {
+                    ordenacao = " ORDER BY observacao " + order;
+                } else if (orderBy.trim().equals("tecnico")) {
+                    ordenacao = " ORDER BY matricula_tecnico " + order;
+                } else if (orderBy.trim().equals("data")) {
+                    ordenacao = " ORDER BY dt_inicial " + order;
+                }
+            }
+        }
+        
+        //paginacao
+        int pageInit = 0;
+        int resultSize = 0;
+        int pageNavigator = 0;
+        int pageLeft = 0;
+        
+        pageInit = pageNumber * pageLimit;
+        
+        //filtro - tipo relatorio
+        String filtroRelatorio = "";
+        
+        if (idReport > 0) {
+            filtroRelatorio = " WHERE id_tipo_relatorio = " + String.valueOf(idReport);
+        }
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {
+            String sql = "SELECT * FROM relatorios" + filtroRelatorio + ordenacao;
+            
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+        
+            if (rs != null) {
+                rs.last();
+                resultSize = rs.getRow();
+                rs.beforeFirst();
+                
+                if (resultSize > pageLimit) {
+                    sql += " LIMIT " + pageInit + ", " + pageLimit;
+                    pageNavigator = resultSize / pageLimit;
+                    pageLeft = resultSize % pageLimit;
+                    
+                    if (pageLeft > 0) {
+                        pageNavigator++;
+                    }
+                    
+                    pstm = connection.prepareStatement(sql);
+                    rs = pstm.executeQuery();
+                } else {
+                    pageNavigator = 1;
+                }
+                
+                list = new ArrayList();
+                
+                while(rs.next()) {
+                    relatorio = new Relatorio();
+                    equipamento = new Equipamento();
+                    tecnico = new Usuario();
+                    paginacao = new Paginacao();
+                    
+                    paginacao.setPageInit(pageInit);
+                    paginacao.setPageLeft(pageLeft);
+                    paginacao.setPageLimit(pageLimit);
+                    paginacao.setPageNavigator(pageNavigator);
+                    paginacao.setPageNumber(pageNumber);
+                    paginacao.setResultSize(resultSize);
+                    
+                    String dtInicial = "";
+                    String dtFinal = "";
+                    
+                    Date dataInicial = null;
+                    Date dataFinal = null;
+                    
+                    equipamento.setNomeEquipamento(rs.getString("equipamento"));
+                    tecnico.setMatriculaUsuario(rs.getString("matricula_tecnico"));
+                    dtInicial = rs.getString("dt_inicial");
+                    dtFinal = rs.getString("dt_final");
+                    
+                    if (!dtInicial.trim().equals("")) {
+                        if (!dtInicial.trim().equals("0000-00-00 00:00:00")) {
+                            dataInicial = dateFormat.parse(dtInicial);
+                        }
+                    }
+                    
+                    if (!dtFinal.trim().equals("")) {
+                        if (!dtFinal.trim().equals("0000-00-00 00:00:00")) {
+                            dataFinal = dateFormat.parse(dtFinal);
+                        }
+                    }
+                    
+                    relatorio.setId(rs.getInt("id"));
+                    relatorio.setObservacao(rs.getString("observacao"));
+                    relatorio.setEquipamento(equipamento);
+                    relatorio.setTecnico(tecnico);
+                    relatorio.setDataInicial(dataInicial);
+                    relatorio.setDataFinal(dataFinal);
+                    relatorio.setPaginacao(paginacao);
+                    
+                    list.add(relatorio);
+                }
+                
+                return list;
+            }
+        } catch (SQLException e) {
+            System.out.println("Erro(ManterColetaDAO.recuperarRelatoriosPag): " + e.getMessage());
+        } catch (ParseException pe) {
+            System.out.println("Erro(ManterColetaDAO.recuperarRelatoriosPag): " + pe.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return list;
+    }
+    
+    public int recuperarQuantidadeReport(int tipo, int aberto, int mes, int ano) throws SQLException {
+        PreparedStatement pstm = null;
+        ResultSet rs;
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {
+            String sql = "";
+            
+            if (aberto == 0) {
+                sql = "SELECT COUNT(*) as qtd FROM relatorios " +
+                    "WHERE id_tipo_relatorio = " + tipo + " " +
+                    "AND MONTH(dt_inicial) = " + mes + " " +
+                    "AND YEAR(dt_inicial) = " + ano;
+            } else if (aberto == 1) {
+                sql = "SELECT COUNT(*) as qtd FROM relatorios " +
+                    "WHERE id_tipo_relatorio = " + tipo + " " +
+                    "AND MONTH(dt_final) = " + mes + " " +
+                    "AND YEAR(dt_final) = " + ano;
+            }
+            
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            if (rs != null) {
+                rs.last();
+                
+                return rs.getInt("qtd");
+            }
+            
+        } catch (SQLException e) {
+                System.out.println("Erro(ManterReportDAO.recuperarQuantidadeReport): " + e.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return 0;
+    }
+    
+    /*public int recuperarQuantidadeReportDet(int tipo) throws SQLException {
+        PreparedStatement pstm = null;
+        ResultSet rs;
+        
+        if (conexao == null || connection == null) {
+            conexao = new Conexao();
+            connection = conexao.abreConexao();
+        }
+        
+        try {
+            String sql = "";
+            
+            //PT DF
+            if (tipo == 0) {
+                sql = "SELECT COUNT(*) as qtd FROM relatorios " +
+                    "WHERE id_tipo_relatorio = " + tipo + " " +
+                    "AND MONTH(dt_inicial) = " + mes + " " +
+                    "AND YEAR(dt_inicial) = " + ano;
+                
+            //PT SEM COLETA
+            } else if (tipo == 1) {
+                sql = "SELECT COUNT(*) as qtd FROM relatorios " +
+                    "WHERE id_tipo_relatorio = " + tipo + " " +
+                    "AND MONTH(dt_final) = " + mes + " " +
+                    "AND YEAR(dt_final) = " + ano;
+            }
+            
+            pstm = connection.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            if (rs != null) {
+                rs.last();
+                
+                return rs.getInt("qtd");
+            }
+            
+        } catch (SQLException e) {
+                System.out.println("Erro(ManterReportDAO.recuperarQuantidadeReport): " + e.getMessage());
+        } finally {
+            try {
+                if (pstm != null) {
+                    pstm.close();
+                }
+                if (connection != null) {
+                    conexao.fechaConexao(connection);
+                    conexao = null;
+                    connection = null;
+                }
+            } catch (SQLException e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
+        }
+        
+        return 0;
+    }*/
+    
+}

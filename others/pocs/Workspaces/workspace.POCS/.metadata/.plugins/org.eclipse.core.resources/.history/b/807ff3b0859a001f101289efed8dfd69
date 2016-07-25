@@ -1,0 +1,10 @@
+<HTML>
+<HEAD>
+	<TITLE>Assunto X</TITLE>
+</HEAD>
+
+<frameset cols="*, 50">
+	<frame src="indice1.html" name="main">
+	<FRAME src="banner_320x50.gif" NAME="banner">
+</FRAMESET>
+</HTML>

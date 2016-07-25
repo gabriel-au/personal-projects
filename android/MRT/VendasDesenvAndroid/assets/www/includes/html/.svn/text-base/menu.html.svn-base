@@ -1,0 +1,24 @@
+<!-- MENU -->
+	<ul>
+		<!-- MARTINS -->
+		<li><h2>Martins</h2></li>
+		<li><a href="../martins/indexRca.html">Inicial</a></li>
+<!--		<li><a href="../martins/posicaoDeVendas.html">Posição de Vendas</a></li>-->
+		<li><a href="../martins/avisos.html">Avisos</a></li>
+		<li><a href="../martins/senhasVendasNet.html">Senha de Acesso VendasNet</a></li>
+		<li><a href="../martins/cadastroChave.html">Cadastro Chave de Acesso NFe</a></li>
+		<li><a href="../martins/cidadesTerritorios.html">Cidades dos Territórios</a></li>
+		<!-- CLIENTE -->
+		<li><h2>Relacionamento</h2></li>
+		<li><a href="../relacionamento/listaClientes.html">Clientes</a></li>
+		<li><a href="../relacionamento/situacaoClientes.html">Situação de Clientes</a></li>
+		<!-- VENDA -->
+		<li><h2>Venda</h2></li>
+		<li><a href="../vendas/infosGerais.html">Informações Gerais</a></li>
+		<li><a href="../vendas/cotacao.html">Cotação</a></li>
+		<li><a href="../vendas/pedidos.html">Pedido</a></li>
+		<li><a href="../vendas/itensVendidos.html">Itens Vendidos na Semana</a></li>
+		<li><a href="../vendas/titulosEmAberto.html">Títulos em Aberto</a></li>
+		<li><a href="../vendas/agendaRoteirizacao.html">Agenda Roteirização</a></li>
+		<!-- li><a href="../vendas/modeloDistribuicao.html">Modelo de Distribuição</a></li-->
+	</ul>

@@ -1,0 +1,399 @@
+/* 
+RECOMENDAÇÕES PARA FACILITAR E OTIMIZAR O TRABALHO DE TODOS
+AS REGRAS CSS DEVEM SEGUIR A SEQUENCIA PADRÃO PARA FACILITAR A TODOS QUE NECESSITEM DAR MANUTENÇÃO EVOLUTIVA NO SITE 
+
+SEQUENCIA:
+1º ELEMENTOS VISUAIS. EX: display, border, background, color, font, text etc…
+2º REGRAS PARA MEDIDAS E DISTANCIAS ENTRE OS ELEMENTOS. EX:margin, padding, width, height, min-width, min-height etc…
+3º REGRAS DE POSICIONAMENTO DOS ELEMENTOS. EX: float, position
+
+USAR TEXTO EM CAIXA BAIXA PARA PADRONIZAR E ECONOMIZAR NO NO ESPAÇO HORIZONTAL E FACILITAR A LEITURA DO CÓDIGO CSS.
+
+UTILIZAR COMENTÁRIOS DETALHADOS PARA AS REGRAS DE ESTILO. 
+
+NÃO USAR HACKS PARA O INTERNET EXPLORER, AS REGRAS ESPECÍFICAS PARA ESTE NAVEGADOR ESTÃO NO ARQUIVO estilos_ie.css NO DIRETÓRIO css.
+
+COMPLEMENTAR ESTAS RECOMENDAÇÕES SEMPRE QUE ACHAR NECESSÁRIO.
+
+ESTA FOLHA DE ESTILO IMPORTA  FORMATA O SITE PARA IMPRESSÃO.
+
+DESENVOLVIDO EM MARÇO DE 2007
+POR LUIZ PAULO ARAUJO PEDROSA
+PARA O BANCO DE BRASÍLIA - BRB
+
+*/
+
+hr{	display:none; }
+
+body{ 
+	font:24pt "Times New Roman", Times, serif;
+	color:#000;
+	width:auto;
+	height:auto;
+	margin:auto;
+	padding:auto;
+	}
+
+/* DIV QUE CENTRALIZA O CONTEÚDO */
+
+div#main { 
+	margin:auto;
+	padding: auto;
+	width:auto; 
+	float:none;
+	}
+div#left, div#conteudo, div#right{  /* FLOAT PARA POSICIONAR AS 3 COLUNAS */
+	float:none;
+	}
+
+
+/* TOPO */
+div#topo{ 
+	border-bottom: 1px solid #000;
+	padding-bottom:4px;
+	}
+div#topo, div#topo2{
+	width: auto;
+	height:auto; 
+	float:none;
+	}
+
+/* LOGO E SLOGAN */
+div#topo div#topo2 h1{
+	color:#006699;
+	font-size:90%;
+	text-indent:0;
+	width:auto;
+	height:auto;
+	margin:0 0 8px 0;
+	padding:0;
+	float:none;
+	}	
+div#topo div#topo2 h1 a{
+	border:0px solid #fff;
+	text-decoration:none;
+	text-indent: 0;
+	margin:0;
+	width:auto;
+	height:auto;
+	display: block;
+	}	
+	
+
+
+div#topo div#topo2 h6{
+	font:50%;
+	font-weight:bold;
+	color:#666;
+	margin:0 0 8px 0;
+	padding:0;
+	float:none;
+	}
+/* QUICK MENU */
+div#topo div#topo2 select{	
+	display:none;
+	}
+/* DATA */
+div#topo div#topo2 p{
+	font-size: 40%;
+	color:#666;
+	float:none;
+	margin:0 0 8px 0;
+	padding:0;
+	float:none;
+	position:relative;
+	left:0;
+	top:0;
+	}
+/* MENU AUXILIAR */
+div#topo div#topo2 ul, div#topo div#topo2 li{
+	display:none;
+	}
+	
+/*********************************************************************
+MENU ESQUERDO 
+************************************************************************/
+div#main div#left{
+	display:none;
+	}
+
+/*********************************************************************
+CONTEUDO PRINCIPAL
+************************************************************************/
+
+/* CONTEUDO CENTRAL */
+div#main div#conteudo{
+	border:0;
+	width:auto;
+	padding:0; 
+	margin:0;
+	float:none;
+	}
+/* FULL BANNER */
+div#main div#conteudo div#full-banner, 
+div#main div#conteudo div#full-banner-internas{
+	display:none
+	}
+
+/* ABAS */	
+div#main div#conteudo ul{
+	display:none;
+	}
+
+/* CONTEUDO "PRINCIPAL" */
+div#main div#conteudo div#conteudo-principal,
+div#main div#conteudo div#conteudo-principal-internas{
+	background: none;
+	border: 0;
+	float:none;
+	margin:0;
+	padding: 0;
+	width:auto;
+	}	
+div#main div#conteudo p#rota{
+	color:#000;
+	font-size:50%;
+	width:auto;
+	margin:0;
+	padding:0;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos h1{
+	margin:8px 0 4px 0;
+	padding:0;
+	font-weight:bold;
+	font-size:50%;
+	color:#000;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos h3{
+	background:none;
+	font-size:70%;
+	color:#000;
+	text-decoration:underline;
+	width:auto;
+	margin:7px 0 10px 0;
+	padding:0;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos p{
+	width:auto;
+	margin:0; padding:0;
+	font-size:60%;
+	}
+div#main div#conteudo div#conteudo-principal-internas h5,
+div#main div#conteudo div#conteudo-principal-internas div#menu-auxiliar-interno,
+div#right-internas{
+	display:none;
+	}
+/* LISTA ORDENADA PARA TEXTOS SEGUE O MESMO PADRÃO PARA TODAS AS PÁGINAS DE SEGUNDO NÍVEL */
+div#main div#conteudo div#conteudo-principal-internas div#textos ol{
+	border:0px solid#000;
+	margin:0;
+	padding:0;
+	width:auto;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos ol li ol{
+	margin:0 0 0 25px;
+	padding:0;
+	width:auto;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos ol li{
+	font-size:70%;
+	color:#000;
+	width:auto;
+	height: auto;
+	margin:2px 0 6px 0;
+	padding:0;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos ol li li{
+	font-size:90%;
+	color:#000;
+	width:auto;
+	height: auto;
+	margin:2px 0 6px 0;
+	padding:0;
+	}
+div#main div#conteudo div#conteudo-principal-internas div#textos ol li a{
+	color:#000;
+	text-decoration:none;
+	}
+	
+/* LISTA PARA OS PONTOS DE CONVENIÊNCIA */	
+div#main div#conteudo div#conteudo-principal-internas div#textos ol.pt-atendimento{
+	border-bottom:1px solid #000;
+	background-position: left top;
+	width:auto;
+	height: auto;
+	margin:0 0 0 0;
+	padding:0 0 8px 0;
+	position: relative;
+	left:4px;
+	top:-4px;
+	}
+
+div#main div#conteudo div#conteudo-principal-internas div#textos ol.pt-atendimento li{
+	font-size:70%;
+	color:#000;
+	width:auto;
+	height: auto;
+	margin:0px 0 0px 0;
+	padding:0;
+	}
+	
+	
+/*********************************************************************
+COLUNA DIREITA 
+************************************************************************/
+
+div#main div#right{
+	background:none;
+	border:0; 
+	float:none;
+	width:auto; 
+	padding:auto;
+	margin:auto;
+	}
+
+div#main div#right h1{
+	display:none;
+	}
+
+	
+/* COLUNA DIREITA -> SEGURANÇA */
+div#main div#right h1.seguranca{
+	color:#006699;
+	font-size:50%;
+	font-weight:bold;
+	border: 0;
+	background:none;	
+	display:block;
+	float:none;
+	width:auto;
+	height:auto;
+	margin:12px 0 2px 0;
+	padding:0;
+	}
+div#main div#right div#seguranca {
+	background: none;
+	border:0; 
+	float:none;
+	width:auto; 
+	margin:auto;
+	padding:auto;
+	}
+	
+div#main div#right div#seguranca h2{
+	background: none;
+	color:#000;
+	font-size:50%;
+	border: 0;
+	float:none;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	}
+
+div#main div#right div#seguranca h3{
+	background: none;
+	color:#000;
+	font-size:50%;
+	border: 0;
+	float:none;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	}
+div#main div#right div#seguranca p{
+	background: none;
+	color:#000;
+	font-size:50%;
+	border: 0;
+	float:none;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	}
+	
+/* COLUNA DIREITA -> ABRA SUA CONTA */
+div#main div#right h1.abra-sua-conta{
+	display:none;
+	}
+
+/* COLUNA DIREITA -> INSTITUCIONAL */
+div#main div#right fieldset{
+	display:none;
+	}
+div#main div#right fieldset legend{
+	display:none;
+	}
+div#main div#right fieldset label.label-sites{
+	display:none;
+	}
+div#main div#right fieldset select.combo-sites{
+	display:none;
+	}
+div#main div#right fieldset label.acesso-rapido{
+	display:none;
+	}
+div#main div#right fieldset select.combo-acesso{
+	display:none;
+	}
+
+/* COLUNA DIREITA -> SERVIÇOS */
+div#main div#right h3#servicos{
+	display:none;
+	}
+
+div#main div#right ol {
+	display:none;
+	}
+
+div#main div#right ol li{
+	display:none;
+	}
+
+
+body h1{
+	margin: 10px 0 0 10px 0;
+	color:#666;
+	}
+
+/*********************************************************************
+RODAPÉ
+************************************************************************/
+div#rodape{ 
+	background:0;
+	border-top:1px solid #000;
+	width:50%;
+	height:auto;
+	margin:0;
+	padding:0;
+	}
+	
+div#rodape ul{
+	display:none;
+	}
+	
+div#rodape ul li{
+	display:none;
+	}	
+div#rodape p{
+	color:#006699;
+	font-size:30%;
+	margin:10px 0 0 0;
+	padding:0;
+	}
+/******************************************************************
+TABELAS
+********************************************************************/
+div#main div#conteudo div#conteudo-principal-internas table{
+	border:0px solid #ccc;
+	border-top:1px solid #ccc;
+	color:#000;
+	font-size:60%;
+	text-align:center;
+	margin:20px 0 0px 0;
+	width:95%;
+	}
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/5033/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services
+END
+ClienteServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/4783/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services/ClienteServiceTest.java
+END
+CalculaPrecoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/5033/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services/CalculaPrecoTest.java
+END
+JustificativaNaoAtendimentoServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/mobile/!svn/ver/2974/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services/JustificativaNaoAtendimentoServiceTest.java
+END
+PedidoServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4035/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services/PedidoServiceTest.java
+END
+GondolaServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/2974/martins/funcionalidades/code/trunk/Vendas/VendasService/test/br/com/martins/vendas/services/GondolaServiceTest.java
+END

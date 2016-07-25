@@ -1,0 +1,63 @@
+10
+
+dir
+7299
+https://mobile139.brq.com:8443/svn/mobile/unimed/ConvencaoUnimed/code/trunk
+https://mobile139.brq.com:8443/svn/mobile
+
+
+
+2012-08-14T20:36:05.158805Z
+7145
+alexandreoliveira
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+692d38cc-a861-b441-aa62-ddaff52ae480
+
+build
+dir
+
+Unimed
+dir
+
+www
+dir
+
+icon
+file
+
+
+
+add
+
+cd0ecc15f7b3cce739c42a69cdd14baa
+
+
+
+has-props
+
+
+
+
+
+
+
+copied
+https://mobile139.brq.com:8443/svn/mobile/unimed/ConvencaoUnimed/code/trunk/Unimed/icon@2x.png
+7299
+
+Unimed.xcodeproj
+dir
+

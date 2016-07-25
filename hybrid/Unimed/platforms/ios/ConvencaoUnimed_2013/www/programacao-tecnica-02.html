@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+	
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo2.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	<script src="includes/js/load.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+	 
+</head>
+
+<body>
+	<!--inicio container-->
+	<div class="container" data-role="page">
+	
+	<style>
+		.footer {
+			position:absolute;
+			width:100%;
+			height:50px;
+			left:0;
+			top:1000px;
+			z-index:1;
+			border-top:2px solid #696969;
+		    background: #000000 url(includes/images/bg-footer_a.png);
+		}
+
+
+		.footer ul.evento{
+			list-style-type:none;
+			display:block;
+			position:relative;
+			margin:0 10px;
+			padding:0;
+		}
+		.footer ul.evento li
+		{
+			float:left; 
+			display:block;
+			width:59px;
+			height:50px;
+			margin:0;
+		}
+		.footer ul.evento li a{
+			display:block;
+			float:left;
+		    margin:4px 0;
+			width: 59px;
+			height:13px;
+			padding-top:33px;
+			text-align: center;
+			font-size:8px;
+			color: #A8A8A8;
+			text-decoration:none;
+			background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+		    border-radius:5px;
+		}
+
+		ul.evento li.highlight a {
+		    color:#FFFFFF;
+		}
+		ul.evento li a.informacoes:hover, 
+		ul.evento li.highlight a.informacoes{
+			background-position:0 -54px;
+		}
+		ul.evento li a.programacao{
+			background-position:-60px -4px;
+		}
+		ul.evento li a.programacao:hover,
+		ul.evento li.highlight a.programacao{
+			background-position:-60px -54px;
+		}
+		ul.evento li a.negocios{
+			background-position:-120px -4px;
+		}
+		ul.evento li a.negocios:hover,
+		ul.evento li.highlight a.negocios{
+			background-position:-120px -54px;
+		}
+		ul.evento li a.mapa{
+			background-position:-180px -4px;
+		}
+		ul.evento li a.mapa:hover,
+		ul.evento li.highlight a.mapa{
+			background-position:-180px -54px;
+		}
+		ul.evento li a.executivos{
+			background-position:-240px -4px;
+		}
+		ul.evento li a.executivos:hover,
+		ul.evento li.highlight a.executivos{
+			background-position:-240px -54px;
+		}
+	
+    
+		ul {list-style:none;}
+		.container .content .master{
+		color:#009900;
+		font-size:13px;
+		margin-left:14px;
+		}
+		.container .content .diamante{
+			color:#3399FF;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .ouro{
+			color:#FF9900;
+			font-size:13px;
+			margin-left:14px;
+		}
+		.container .content .prata{
+			color:#666666;
+			font-size:13px;
+			margin-left:14px;
+		}
+	
+	 </style>	
+	
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Programação Téc.</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="lista-programacao.html"><img src="includes/imagens/bt-voltar.jpg"></a></div>
+        </div>
+        	
+
+        <!--inicio content-->
+        <div class="content" data-scroll="y" style="height:350px"><br />
+        	<h2 class="data">18/09 QUARTA-FEIRA</h2>
+        	<h2 class="aviso">8h às 9h</h2>
+        	<p>FEIRA DE NEGÓCIOS -  Abertura e visita aos estandes</p>
+            <div class="dotted-border"></div>
+			<h2 class="aviso">9h às 10h</h2>
+        	<p>CONFERÊNCIA MAGNA - “Perspectivas Macroeconômicas do Brasil frente ao Mundo para a década das cooperativas”</p>
+			<p>Conferencista/Magno: Henrique Meirelles</p>
+<p>Executivo do setor financeiro brasileiro e internacional, ex-presidente do Banco Central do Brasil, permaneceu no cargo entre 2003 e 2011, sendo sucedido por Alexandre Tombini.</p>
+<p>Conforme a lista de presidentes do Banco Central do Brasil, foi quem por mais tempo ocupou a presidência desta instituição. Em 2002 candidatou-se a deputado federal por Goiás, tendo sido o candidato mais votado neste Estado. Entretanto, não chegou a ocupar a cadeira de deputado federal, pois aceitou o cargo de presidente do Banco Central do Brasil.</p>
+
+<p>Presidente da Sessão: Marcelo Mergh Monteiro
+Presidente da Federação Interfederativa do Estado de Minas Gerais</p>
+
+<p>Moderador: Hugo Campos Borges
+Presidente da Federação Intrafederativa da Zona da Mata Mineira </p>
+            <div class="dotted-border"></div>
+			<h2 class="aviso">10h às 11h</h2> <p>MESA-REDONDA - “Conectividade” </p>
+			<p>Debatedor: Fernando Jucá
+Renomado Escritor, Professor e Doutor pela FGV. Com mais de 20 anos de experiência em treinamento e mudança comportamental, incluindo trabalhos nas áreas de influência,
+comunicação, percepção e boca a boca, Jucá é doutor pela FGV, onde leciona em cursos de pós-graduação. Já conduziu mais de mil workshops nas principais instituições do Brasil, além de ser autor e co-autor de seis livros, entre eles: “Arregace as Mangas” e “Executivo que Gostava de Ler”.
+
+<p>Debatedor: Rafael Moliterno Neto
+Presidente da Seguros Unimed</p>
+
+<p>Presidente de mesa: Eudes de Freitas Aquino
+Presidente da Unimed do Brasil</p>
+
+<p>Moderador: Mauri Raphaelli
+Diretor de Negócios da Seguros Unimed</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">11h às 11h20</h2> <p>PALESTRA - “Quer investir? O melhor investimento está aqui, no Sistema Unimed”</p>
+
+<p>Palestrante: Alexandre Ruschi Filho
+Diretor Técnico da Seguros Unimed</p>
+
+<p>Presidente da Sessão: Paulo Januzzi
+Diretor de Atenção à Saúde e Intercâmbio da Central Nacional Unimed</p>
+
+<p>Moderador: Genoir Simoni
+Presidente da Unimed Grande Florianópolis</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">11h20 às 12h30</h2> <p>PAINEL POLÍTICO - “O Brasil do amanhã”</p>
+
+<p>Debatedor: Eudes de Freitas Aquino
+Mestre e Doutor em Clínica Médica pela Faculdade de Medicina de Ribeirão Preto/SP. Possui pós-graduação em Gestão Empresarial Avançada em Saúde e MBA em Gestão de
+Serviços de Saúde, ambos pela FAAP, em SP. Foi presidente da Unimed Piracicaba, criou a Federação Intrafederativa do Centro Paulista e a presidiu por duas gestões. Na FESP foi membro do Conselho de Administração também por duas gestões e, depois, diretor de Programas Educativos e Assistenciais. De 2005 a 2009, atuou como seu presidente. É representante estadual do Ramo Saúde junto à Organização das Cooperativas do Estado de São Paulo. Em 2009, assumiu a presidência da Unimed do Brasil, passou a responder pela vice-presidência da International Health Cooperative Organization e tornou-se Membro titular do Conselho de Administração da ACI Américas.
+
+<p>Debatedor: Márcio Pochmann Professor do Instituto de Economia e pesquisador do Centro de Estudos Sindicais e de Economia do Trabalho, ambos da Unicamp, Pochmann também atuou como pesquisador visitante em universidades de Paris e Itália. Foi secretário do Desenvolvimento, Trabalho e Solidariedade do município de São Paulo (2001–2004) e presidente do Instituto de Pesquisa Econômica Aplicada (Ipea), entre 2007 e 2012. Escreveu mais de 40 livros e atua como consultor de instituições governamentais nacionais e internacionais, tais como: Unicef, Unesco e Sebrae.
+
+<p>Presidente de Mesa: José Abel Ximenes, Assessor Político Institucional da Unimed do Brasil
+
+<p>Moderador: Ricardo Eugênio Boechat
+Jornalista da Rede Bandeirantes de Televisão e Rádio já esteve presente nos principais jornais do país, como O Globo, O Dia, Estado de S. Paulo e Jornal do Brasil. Trabalha diariamente como âncora de dois jornais, na rádio BandNews FM e a emissora Band.</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">12h30 às 14h</h2> <p>INTERVALO PARA ALMOÇO</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">14h às 14h45</h2> <p>MESA-REDONDA - “Unimed e o Instituto Superar: como se apropriar do esporte paraolímpico até 2016" </p>
+
+<p>Debatedor: Marcelo Collet
+Atleta medalhista da seleção brasileira paraolímpica de natação. Iniciou sua carreira paraolímpica após sofrer um acidente em Salvador. Na época, com 17 anos, já despontava como promessa do triatlo brasileiro. Superando-se gradativamente, Marcelo investiu na natação paraolímpica colocando-se entre os melhores atletas desta modalidade.
+Em seu currículo, além de mundiais de natação, estão dois Parapanamericanos (Mar Del Plata e Rio de Janeiro) e duas Paraolimpíadas (Atenas e Pequim).</p>
+
+<p>Debatedor: Roberto Trinas
+Presidente da Catena Marketing Esportivo e Diretor de Marketing do Instituto Superar, Roberto Trinas foi diretor associado da agência Vibra e diretor de Negócios da agência
+Tátil. Formado em Engenharia de Produção pela UFRJ e com MBA Executivo pela COPPEAD - UFRJ, Trinas tem se dedicado à promoção do paradesporto brasileiro e hoje é considerado um dos maiores especialistas do país no assunto.</p>
+
+<p>Debatedor: Marcos Malafaia
+Fundador e Diretor Geral do Superar Esportes.</p>
+
+<p>Presidente de Mesa: Luiz Roberto Dib Mathias Duarte
+Presidente da Federação Unimed do Estado de São Paulo</p>
+
+<p>Moderador: José Martiniano Grillo Neto
+Presidente da Federação Intrafederativa Unimed Centro Paulista</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">14h45 às 15h30</h2><p>PALESTRA - “Operadoras de planos de saúde: desafios atuais”</p>
+
+<p>Palestrante: Mohamad Akl
+Diretor-Presidente da Central Nacional Unimed</p>
+
+<p>Presidente da Sessão: Dilson Lamaita Miranda
+Presidente da Federação Unimed Intrafederativa Regional Sul de Minas</p>
+
+<p>Moderador: Délio Pereira dos Santos
+Presidente da Federação Unimed Leste/Nordeste de Minas</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">15h30 às 17h</h2> <p>MESA-REDONDA - “ A nova agenda regulatória e cenário da saúde suplementar”</p>
+
+<p>Debatedor: Eudes de Freitas Aquino
+Presidente da Unimed do Brasil</p>
+
+<p>Debatedor: André Longo
+Presidente da Agência Nacional de Saúde Suplementar - ANS. Nascido na cidade de Patos, alto sertão paraibano, André Longo foi o primeiro diretor da ANS, Agência Nacional de
+Saúde, a representar as regiões Norte e Nordeste do Brasil, tornando-se presidente em 17 de janeiro de 2012, depois da nomeação por decreto presidencial e sabatina na Comissão
+de Assuntos Sociais, CAS, do Senado Federal, sendo aprovado por unanimidade.</p>
+
+<p>Presidente de mesa: Antonio Luiz Chaguri
+Presidente da Federação Intrafederativa Unimed Nordeste Paulista</p>
+
+<p>Moderador: Omar Abujamra Junior
+Presidente da Federação Intrafederativa Unimed Centro-Oeste Paulista</p>
+<div class="dotted-border"></div>
+<h2 class="aviso">17h às 18h</h2> <p>FEIRA DE NEGÓCIOS</p>
+<p>Visita aos estandes, sorteios e happy hour </p>
+            <div class="dotted-border"></div>
+           
+       </div>
+    	<!--fim content-->
+    	<div class="bg-brq">
+			<img src="includes/imagens/bg-brq.png" style="float: right;">
+		</div>
+		<div class="footer">
+			<ul class="evento">
+				<li style="border-left: none;"><a class="informacoes"
+					href="index.html" data-transition="none" title="Informações">Informações</a></li>
+				<li class="highlight"><a class="programacao" href="lista-programacao.html"
+					data-transition="none" title="">Programação</a></li>
+				<li><a class="negocios" href="negocio.html"
+					data-transition="none" title="">Negócios</a></li>
+				<li><a class="mapa" href="mapa.html" data-transition="none"
+					title="">Mapa</a></li>
+				<li><a class="executivos"
+					href="patrocinadores.html" data-transition="none" title="">Patrocínios</a></li>
+			</ul>
+		</div>
+    </div>
+    <!--fim container-->
+</body>
+</html>

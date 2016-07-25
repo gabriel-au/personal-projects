@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="378" key="RevertDialog.location.x"/>
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="561" key="passwordStores.size.y"/>
+	<item value="131" key="RevertDialog.location.y"/>
+	<item value="556" key="passwordStores.size.x"/>
+	<item value="417" key="BranchTag.size.y"/>
+	<item value="563" key="BranchTag.size.x"/>
+	<item value="236" key="HistoryTableProvider.SVNHistoryPage.Author"/>
+	<item value="131" key="BranchTag.location.y"/>
+	<item value="359" key="BranchTag.location.x"/>
+	<item value="109" key="CommitDialog.location.y"/>
+	<item value="77" key="CommitDialog.location.x"/>
+	<item value="35" key="passwordStores.location.y"/>
+	<item value="362" key="passwordStores.location.x"/>
+	<item value="525" key="RevertDialog.size.x"/>
+	<item value="417" key="RevertDialog.size.y"/>
+	<item value="295" key="HistoryTableProvider.SVNHistoryPage.Date"/>
+	<item value="590" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
+	<item value="1127" key="CommitDialog.size.x"/>
+	<item value="451" key="CommitDialog.size.y"/>
+	<item value="119" key="HistoryTableProvider.SVNHistoryPage.Revision"/>
+	<section name="CommitWizard">
+		<item value="false" key="ShowCompare"/>
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://patrocinio.primetecnologia.net/svn/intranetsdf"/>
+		</list>
+	</section>
+	<section name="SynchronizeResourceSelectionDialog">
+		<item value="" key="SynchronizeResourceSelectionDialog.STORE_WORKING_SETS"/>
+	</section>
+</section>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF32BB46-E741-4D2A-928E-6D991B546718</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Unimed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C62C8AF8-CAA0-4602-BC50-D561AE65777A</key>
+		<string>https://mobile139.brq.com:8443/svn/mobile/unimed/ConvencaoUnimed/code/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Unimed.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C62C8AF8-CAA0-4602-BC50-D561AE65777A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>C62C8AF8-CAA0-4602-BC50-D561AE65777A</key>
+		<string>https://mobile139.brq.com:8443/svn/mobile</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://mobile139.brq.com:8443/svn/mobile/unimed/ConvencaoUnimed/code/trunk/Unimed.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C62C8AF8-CAA0-4602-BC50-D561AE65777A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C62C8AF8-CAA0-4602-BC50-D561AE65777A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ConvencaoUnimed_2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>

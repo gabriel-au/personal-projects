@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/5691/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action
+END
+CalculaPrecoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mobile/!svn/ver/5724/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/CalculaPrecoAction.java
+END
+RecuperarDadosBuscaAvancadaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/RecuperarDadosBuscaAvancadaAction.java
+END
+AlterarGruposMercadoriaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarGruposMercadoriaAction.java
+END
+ComissaoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ComissaoAction.java
+END
+KitAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/KitAction.java
+END
+AlterarFilialPromocaoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/mobile/!svn/ver/5770/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarFilialPromocaoAction.java
+END
+DetalheAlterarItemGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/DetalheAlterarItemGondolaClienteAction.java
+END
+AlterarCategoriaMercadoriaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarCategoriaMercadoriaAction.java
+END
+RecuperaInforGeraisAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/RecuperaInforGeraisAction.java
+END
+DeletarItemGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/DeletarItemGondolaClienteAction.java
+END
+GerarSenhaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/GerarSenhaAction.java
+END
+BeneficiosCustomizadosAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/BeneficiosCustomizadosAction.java
+END
+ValidarCondicaoPagamentoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ValidarCondicaoPagamentoAction.java
+END
+SimulacaoBeneficioAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/SimulacaoBeneficioAction.java
+END
+PedidosAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/PedidosAction.java
+END
+CadastrarItemGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/CadastrarItemGondolaClienteAction.java
+END
+ListarModeloDistribuicaoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ListarModeloDistribuicaoAction.java
+END
+RetornosClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/5664/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/RetornosClienteAction.java
+END
+AlterarQuantidadeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarQuantidadeAction.java
+END
+FilialAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/FilialAction.java
+END
+AplicarBeneficioCustomizadoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AplicarBeneficioCustomizadoAction.java
+END
+MarcarCurtirProdutoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/MarcarCurtirProdutoAction.java
+END
+RepresentanteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/RepresentanteAction.java
+END
+AgendaRoteirizacaoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AgendaRoteirizacaoAction.java
+END
+ItensDisponiveisAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mobile/!svn/ver/5714/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ItensDisponiveisAction.java
+END
+CidadesTerritoriosAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/CidadesTerritoriosAction.java
+END
+DeletarGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/DeletarGondolaClienteAction.java
+END
+RecuperaDetalhePEEAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/RecuperaDetalhePEEAction.java
+END
+DetalheProdutoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/DetalheProdutoAction.java
+END
+ListarMercadoriasAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ListarMercadoriasAction.java
+END
+ItensSimilaresAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mobile/!svn/ver/5703/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ItensSimilaresAction.java
+END
+EnviarRelatorioEmailPedidoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mobile/!svn/ver/5782/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/EnviarRelatorioEmailPedidoAction.java
+END
+EscolherListaProdutoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/EscolherListaProdutoAction.java
+END
+PosicaoVendasAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/PosicaoVendasAction.java
+END
+EnviarRelatorioEmailGondolaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/EnviarRelatorioEmailGondolaAction.java
+END
+CadastroChaveAcessoNFeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/CadastroChaveAcessoNFeAction.java
+END
+AlterarItemGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mobile/!svn/ver/4786/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarItemGondolaClienteAction.java
+END
+ListarPedidoClientesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ListarPedidoClientesAction.java
+END
+BeneficiosCustomizadosDetalheAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/BeneficiosCustomizadosDetalheAction.java
+END
+ListarCortesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ListarCortesAction.java
+END
+AlterarFilialItemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/5703/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarFilialItemAction.java
+END
+BuscarDescricaoProdutoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/BuscarDescricaoProdutoAction.java
+END
+ListarGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ListarGondolaClienteAction.java
+END
+TitulosAbertoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/TitulosAbertoAction.java
+END
+PromocaoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/PromocaoAction.java
+END
+DetalheItemGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/DetalheItemGondolaClienteAction.java
+END
+AlterarSubCategoriaMercadoriaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/AlterarSubCategoriaMercadoriaAction.java
+END
+ItensVendidosSemanaAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/ItensVendidosSemanaAction.java
+END
+CondicaoPagamentoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/mobile/!svn/ver/5643/martins/funcionalidades/code/trunk/Vendas/VendasModulo/src/br/com/martins/vendas/vendas/action/CondicaoPagamentoAction.java
+END

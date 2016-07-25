@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes
+END
+IndiceViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceViewController.h
+END
+SplashView.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/SplashView.m
+END
+ProcessaArquivo.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ProcessaArquivo.m
+END
+EdicaoIndice.xib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoIndice.xib
+END
+Busca.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/Busca.h
+END
+NavigationController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/NavigationController.xib
+END
+IndiceViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceViewController.m
+END
+IndiceProcessoView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceProcessoView.xib
+END
+Busca.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/Busca.m
+END
+VOTopico.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOTopico.h
+END
+ZipArchive.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ZipArchive.h
+END
+ConteudoView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ConteudoView.xib
+END
+VOResultado.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOResultado.h
+END
+VOTopico.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOTopico.m
+END
+VOTurmaSecao.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOTurmaSecao.h
+END
+ResultadoTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ResultadoTableViewController.h
+END
+VOResultado.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOResultado.m
+END
+VOTurmaSecao.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOTurmaSecao.m
+END
+ResultadoTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ResultadoTableViewController.m
+END
+DetalhaProcessoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/DetalhaProcessoViewController.h
+END
+IndiceView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceView.xib
+END
+DetalhaProcessoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/DetalhaProcessoViewController.m
+END
+PesquisaViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/PesquisaViewController.h
+END
+VOEdicao.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOEdicao.h
+END
+RevistaSTJAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/RevistaSTJAppDelegate.h
+END
+PesquisaViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/PesquisaViewController.m
+END
+VOEdicao.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOEdicao.m
+END
+EdicaoIndiceViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoIndiceViewController.h
+END
+RevistaSTJAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/RevistaSTJAppDelegate.m
+END
+VOProcesso.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOProcesso.h
+END
+EdicaoIndiceViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoIndiceViewController.m
+END
+ResultadoTable.xib
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ResultadoTable.xib
+END
+DetalhaProcessoView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/DetalhaProcessoView.xib
+END
+VOProcesso.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/VOProcesso.m
+END
+IndiceProcessoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceProcessoViewController.h
+END
+EdicaoView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoView.xib
+END
+WebViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/WebViewController.h
+END
+IndiceProcessoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/IndiceProcessoViewController.m
+END
+FileUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/FileUtil.h
+END
+ConteudoViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ConteudoViewController.h
+END
+EdicaoView.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoView.h
+END
+PesquisaView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/PesquisaView.xib
+END
+SplashView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/SplashView.xib
+END
+WebViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/WebViewController.m
+END
+FileUtil.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/FileUtil.m
+END
+RootViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/RootViewController.h
+END
+ConteudoViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ConteudoViewController.m
+END
+EdicaoView.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/EdicaoView.m
+END
+SplashView.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/SplashView.h
+END
+ProcessaArquivo.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ProcessaArquivo.h
+END
+ZipArchive.mm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/ZipArchive.mm
+END
+RootViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/stjmobile/!svn/ver/481/trunk/RevistaSTJ/Classes/RootViewController.m
+END

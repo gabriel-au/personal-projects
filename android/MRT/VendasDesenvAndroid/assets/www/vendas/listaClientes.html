@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script src="../includes/js/pages/pedido.js"></script>
+		
+	<script type="text/javascript">
+	
+		/* Variável de instância utilizada para armazenamento do alfabeto */
+		var alphabet = new Array("A","B","C","D","E","F","G","H","I","J","K","L","M","","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
+		
+		/* Variável de instância utilizada para armazenamento da lista de clientes após cada consulta (Normais, Suspensos ou Cortados)*/
+		var jsonClientes = null;
+
+		/*
+		* Executado ao iniciar a tela
+		*/
+		$(document).ready(function() {
+			BRQNavegacao.adicionarPilhaNavegacao('listaCliente');
+			
+			// Refaz a renderizacao do Scroll no Android
+			document.addEventListener("touchmove", function ScrollStart() { $("#dummy").focus(); }, false);
+
+			controleBotoes();
+			cleanSession();
+			//Recuperando dados do Representando para barra de aproveitamento
+			//setarValoresAproveitamento();
+			
+			$("#divRazaoFantasia").children().children().each(function() {
+				$(this).click(function() {
+					montarListaClientes();
+				});
+			});
+			
+			$("#tops").click(function() {
+					montarListaClientes();
+				}
+			);
+		
+			$("#favoritos").click(function() {
+					montarListaClientes();
+				}
+			);
+		
+			$("#divTipoConsulta").children().children().each(function() {
+				$(this).click(function() {
+					montarListaClientes();
+				});
+			});
+			
+			//Função para adicionar ação ao botão da letra do alfabeto
+			$("#clientFilter").children().children().click(function() {
+					montarListaClientes();
+				}
+			);
+			
+			var objStorageClientes = getCliente();
+			
+			//Identifica se existe objeto no local storage
+			if (objStorageClientes == null) {
+				// (Primeira vez na tela)
+				// Selecionar padrão inicial da tela: css nos botões Razão social e Normais
+		  		$("#divRazaoFantasia").children().children().eq(0).addClass("selected");
+				// Selecionar o tipo de consulta (Normais - 0, Suspensos - 1 ou cortados - 2)
+				$("#divTipoConsulta").children().children().eq(0).addClass("selected");
+				
+				listarClientes();
+				
+			} else {
+				// Recarregar os dados
+				recarregarTela(objStorageClientes);
+			}
+			
+			calculaAltura(document.getElementsByClassName('result')[0], document.getElementById('clientFilter'));
+			
+		});
+
+		function cleanSession() {
+			if ('todosPedidos'!= getViewNameOrigem()) {
+				sessionStorage.removeItem("cliente");
+			}
+		}		
+		
+		/**
+		* Método para listar clientes
+		*/
+		function listarClientes() {
+			var codigoTerritorio = null;
+			
+			if (isGerenteMercado()) {
+				codigoTerritorio = getRepresentanteEquipe().codigoTerritorio;
+			}
+			
+			BRQMob.exec("retornoListaClientes", "falha", "VendasDispatcher", 'listarPedidos', [ codigoTerritorio ]);
+		}
+
+		/**
+		* Método para montar a lista de clientes
+		* @param clientes - lista de clientes retornados da action
+		*/
+		function retornoListaClientes(cliente) {
+			var recuperavel = cliente.numeroStatus == 1 ? true : false;
+			var descricaoCliente = cliente.descricaoCliente;
+
+			if (recuperavel) {
+				if (confirm("Foi detectada uma saída anormal do sistema.\nExiste um pedido que não foi confirmado.\nDeseja recuperá-lo para este cliente?\n\n" + descricaoCliente)){
+					// Gera um novo numero de Pedido, altera o status do pedido na tabela PCASOS e limpa as tabelas temporarias.
+					BRQMob.exec("retornoProximaPagina", "falha", "VendasDispatcher", 'criaNovoPedido', [recuperavel]);
+
+				} else {
+					BRQMob.exec("retornoProximaPagina2", "falha", "VendasDispatcher", 'criaNovoPedido', [false]);
+					
+					if (cliente != null) {
+						//Armazenando a lista de clientes
+						jsonClientes = cliente.Clientes;
+						goTop();
+						montarListaClientes();
+					 }
+
+				}
+
+			} else {
+				BRQMob.exec("retornoProximaPagina2", "falha", "VendasDispatcher", 'criaNovoPedido', [false]);
+				
+				if(cliente != null) {
+					//Armazenando a lista de clientes
+					jsonClientes = cliente.Clientes;
+					goTop();
+					montarListaClientes();
+				 }
+
+			}
+
+		}
+		
+		/**
+		* Método que monta a lista de clientes de acordo com todas as opções selecionadas em tela:
+		* Tipo de consulta - Razão Social ou Nome Fantasia
+		* Favoritos - identifica se a opção de favoritos está selecionada
+		* Letra - identifica se existe letra do alfabeto selecionada
+		*/
+		function montarListaClientes() {
+			if(jsonClientes != null) {
+				
+				// Inicializa o array de listagem de clientes
+				var listaClientes = new Array();
+				
+				// Verifica o tipo de ordenação da lista
+				var	tipoRazaoFantasia = retornarRazaoFantasia();
+				
+				// Verifica o tipo consulta selecionado
+				var	tipoConsulta = retornarTipoConsulta();
+				
+				// Verificar se tem favoritos selecionado
+				var favoritos = retornarFavorito();
+				
+				// Verificar se tem top selecionado
+				var tops = retornarTop();
+				
+				// Verificando o tipo de consulta
+				listaClientes = retornarListaPorTipoConsulta(tipoConsulta);
+				
+				// Verifica se existe letra selecionada
+				var letra = retornarLetra();
+				
+				if (letra != "") {
+					listaClientes = retornarListaPorLetra(listaClientes, letra, tipoRazaoFantasia);
+				}
+	
+				var objLista = inicializarLista();
+				
+				if (listaClientes.length > 0) {
+					
+					//Ordenar a lista de clientes
+					listaClientes = ordenarPorRazaoFantasia(listaClientes, tipoRazaoFantasia);
+					
+					//Separar a lista em favoritos
+					if (favoritos == "S" && tops == "S") {
+						listaClientes = ordenarPorFavoritoTop(listaClientes);
+					} else if (favoritos == "S") {
+						listaClientes = ordenarPorFavorito(listaClientes);
+					} else if (tops == "S") {
+						listaClientes = ordenarPorTop(listaClientes);
+					}
+
+					montarTabela(listaClientes, objLista, tipoRazaoFantasia);
+				}
+
+			}
+
+		}
+
+		/*
+		 * Método que cria e inicializa o objeto para montagem da lista de clientes
+		 * @return objLista - objeto: <ul></ul>
+		 */
+		function inicializarLista() {
+			var objLista = $("#ulClientes");
+			objLista.html("");
+			return objLista;
+		}
+
+		/**
+		 * Método que monta a linha com os dados de cliente
+		 * @param cliente - objeto cliente
+		 * @param objLista - objeto onde a linha será adicionada
+		 * @param tipoRazaoFantasia - identificador do campo a ser utilizado para exibição na lista: R (Razão social) ou N (Nome Fantasia)
+		 */
+		function montarTabela(pedidoCliente, objLista, tipoRazaoFantasia) {
+			var tag_ul = document.createElement('ul');
+			var obj;
+			var tag_li, tag_span, tag_div, tag_label, tag_br, tag_a, tag_div_interna;
+
+			tag_ul.className = 'listNav';
+			
+			for ( var index = 0; index < pedidoCliente.length; index++) {
+				obj = pedidoCliente[index];
+				tag_li = document.createElement('li');
+
+				if (index % 2 != 0) {
+					tag_li.className = 'off';
+				}
+
+				tag_span = document.createElement('span');
+				tag_span.className = verificarIndicativos(obj.indicativoFavorito, obj.indicativoTop);
+				tag_li.appendChild(tag_span);
+
+				tag_div = document.createElement('div');
+
+				tag_div.onclick = (function(codigoCliente, nomeCliente, canal,
+						situacao, mensagem, motivoBloqueio, bloqueado,
+						diferencaDias, codigoTerritorio, tipoContratoVendor,
+						tipoCobrancaCondicaoPagamento, tipoAnaliseCredito,
+						codigoSegmento) {
+					return function() {
+						detalharCliente(codigoCliente, nomeCliente, canal,
+								situacao, mensagem, motivoBloqueio, bloqueado,
+								diferencaDias, codigoTerritorio,
+								tipoContratoVendor,
+								tipoCobrancaCondicaoPagamento,
+								tipoAnaliseCredito, codigoSegmento)
+					}
+				})(obj.codigoCliente, obj.nomeCliente, obj.canal, obj.situacao,
+						obj.mensagem, obj.motivoBloqueio, obj.bloqueado,
+						obj.diferencaDias, obj.codigoTerritorio,
+						obj.tipoContratoVendor,
+						obj.tipoCobrancaCondicaoPagamento,
+						obj.tipoAnaliseCredito, obj.codigoSegmento);
+
+				tag_div.className = 'left';
+				tag_div.style.width = '55%';
+				tag_label = document.createElement('label');
+				tag_label.className = 'large';
+				tag_label.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoCliente)));
+				tag_div.appendChild(tag_label);
+
+				tag_span = document.createElement('span');
+				tag_span.className = 'large';
+				tag_span.appendChild(document.createTextNode(" " + tratamentoAtributoNulo(obj.nomeCliente)));
+				tag_div.appendChild(tag_span);
+
+				tag_br = document.createElement('br');
+				tag_div.appendChild(tag_br);
+
+				tag_label = document.createElement('label');
+				tag_label.appendChild(document.createTextNode(' Nome fantasia: '));
+				tag_div.appendChild(tag_label);
+
+				tag_span = document.createElement('span');
+				tag_span.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.nomeFantasia)));
+				tag_div.appendChild(tag_span);
+
+				tag_br = document.createElement('br');
+				tag_div.appendChild(tag_br);
+
+				tag_label = document.createElement('label');
+				tag_label.appendChild(document.createTextNode(' Telefone: '));
+				tag_div.appendChild(tag_label);
+
+				tag_span = document.createElement('span');
+				tag_span.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.telefone)));
+				tag_div.appendChild(tag_span);
+
+				tag_br = document.createElement('br');
+				tag_div.appendChild(tag_br);
+
+				tag_label = document.createElement('label');
+				tag_label.appendChild(document.createTextNode(' Território: '));
+				tag_div.appendChild(tag_label);
+
+				tag_span = document.createElement('span');
+				tag_span.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.codigoTerritorio)));
+				tag_span.appendChild(document.createTextNode(" - "));
+				tag_span.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.nomeCidade)));
+				tag_span.appendChild(document.createTextNode("/" + tratamentoAtributoNulo(obj.uf)));
+				tag_div.appendChild(tag_span);
+
+				tag_li.appendChild(tag_div);
+
+				tag_div = document.createElement('div');
+
+				tag_a = document.createElement('a');
+				tag_a.style.marginTop = '20px';
+				tag_a.onclick = (function(codigoCliente, nomeCliente, canal,
+						situacao, mensagem, motivoBloqueio, bloqueado,
+						diferencaDias, codigoTerritorio, tipoContratoVendor,
+						tipoCobrancaCondicaoPagamento, tipoAnaliseCredito,
+						codigoSegmento) {
+					return function() {
+						ativaOpcoesListPedVenda(codigoCliente, nomeCliente,
+								canal, situacao, mensagem, motivoBloqueio,
+								bloqueado, diferencaDias, codigoTerritorio,
+								tipoContratoVendor,
+								tipoCobrancaCondicaoPagamento,
+								tipoAnaliseCredito, codigoSegmento)
+					}
+				})(obj.codigoCliente, obj.nomeCliente, obj.canal, obj.situacao,
+						obj.mensagem, obj.motivoBloqueio, obj.bloqueado,
+						obj.diferencaDias, obj.codigoTerritorio,
+						obj.tipoContratoVendor,
+						obj.tipoCobrancaCondicaoPagamento,
+						obj.tipoAnaliseCredito, obj.codigoSegmento);
+				tag_a.className = 'button right';
+
+				tag_span = document.createElement('span');
+				tag_span.className = 'icon opcoes';
+				tag_a.appendChild(tag_span);
+				tag_div.appendChild(tag_a);
+
+				tag_div_interna = document.createElement('div');
+				tag_div_interna.className = 'right positivar';
+				tag_div_interna.style.marginTop = '20px';
+
+				tag_label = document.createElement('label');
+				//tag_label.style.marginLeft='55px';
+				tag_label.appendChild(document.createTextNode("Positivar"));
+				tag_div_interna.appendChild(tag_label);
+
+				tag_br = document.createElement('br');
+				tag_div_interna.appendChild(tag_br);
+
+				tag_span = document.createElement('span');
+				tag_span.appendChild(document.createTextNode(tratamentoAtributoNulo(obj.positivar)));
+				tag_span.style.position = 'relative';
+				tag_span.style.cssFloat = 'right';
+
+				tag_div_interna.appendChild(tag_span);
+
+				tag_div.appendChild(tag_div_interna);
+
+				tag_span = document.createElement('span');
+				tag_span.style.marginRight = "-44px";
+				tag_span.style.marginTop = '23px';
+				
+				if (obj.statusAtendimento == 0) {
+					tag_span.className = 'icon bulletRed right';
+				} else if (obj.statusAtendimento == 1) {
+					tag_span.className = 'icon bulletGreen right';
+				} else {
+					tag_span.className = 'icon bulletYellow right';
+				}
+
+				tag_div.appendChild(tag_span);
+
+				tag_li.appendChild(tag_div);
+				tag_ul.appendChild(tag_li);
+			}
+
+			$("#ulClientes").append(tag_ul);
+		}
+
+		function buscarPedidoCliente(codigoCliente) {
+			objStorageClientes = new Object();
+			objStorageClientes.codigoCliente = codigoCliente;
+			sessionStorage.setObject('cliente', objStorageClientes);
+			window.location = "../relacionamento/clientePedidos.html";
+		}
+
+		function ativaOpcoesListPedVenda(codigoCliente, nomeCliente, canal,
+				situacao, mensagem, motivoBloqueio, bloqueado, diferencaDias,
+				codigoTerritorio, tipoContratoVendor,
+				tipoCobrancaCondicaoPagamento, tipoAnaliseCredito,
+				codigoSegmento) {
+			$("body").append("<div class='menuOpcoes'><h2>Cód.: "
+					+ codigoCliente
+					+ "</h2><a onclick='buscarPedidoCliente("
+					+ codigoCliente
+					+ ");' class='button'>Pedidos do cliente</a><a onclick='detalharCliente("
+					+ codigoCliente + ", \"" + nomeCliente
+					+ "\", " + canal + ", \"" + situacao
+					+ "\", \"" + mensagem + "\", \""
+					+ motivoBloqueio + "\"," + bloqueado + ", "
+					+ diferencaDias + ", " + codigoTerritorio
+					+ ", \"" + tipoContratoVendor + "\", "
+					+ tipoCobrancaCondicaoPagamento + ", \""
+					+ tipoAnaliseCredito + "\", "
+					+ codigoSegmento
+					+ ");' class='button'>Novo Pedido</a>");
+
+			sessionStorage.setObject(CONST_PESQUISA_BY_CLIENTE, 'true');
+
+			if ($(".menuOpcoes").css("display") !== "none") {
+				$(".menuOpcoes").hide("fast");
+			} else {
+				$(".menuOpcoes").show("fast");
+			}
+
+			document.getElementById("mainContent").onmousedown = evento3;
+		}
+
+		function tratamentoAtributoNulo(valor) {
+			if (valor != undefined) {
+				return valor;
+			} else {
+				return "";
+			}
+		}
+
+		function verificarIndicativos(indicativoFavorito, indicativoTop) {
+			if (indicativoFavorito == '1') {
+				return "icon favorito";
+			} else if (indicativoTop == '1') {
+				return "icon top";
+			} else {
+				return "icon";
+			}
+		}
+
+		/*
+		 * Método que idetifica o tipo de seleção (index do botão na página - 0 para Razão Social e 1 para Nome Fantasia)
+		 * @return tipoRazaoFantasia - retorna com C (Código do cliente), R (Razão Social) ou N (Nome Fantasia)
+		 */
+		function retornarRazaoFantasia() {
+			var index = $("#divRazaoFantasia").children().children(".selected").index();
+			var tipoConsulta = "";
+
+			switch (index) {
+			case 0:
+				tipoConsulta = "C"; //Código cliente
+				break;
+			case 1:
+				tipoConsulta = "R"; // Razão Social
+				break;
+			case 2:
+				tipoConsulta = "N"; // Nome Fantasia
+				break;
+			}
+
+			return tipoConsulta;
+		}
+
+		/*
+		 * Método que idetifica o tipo de consulta selecionado (index do botão - 0 Normais, 1 - Suspensos ou 2 - Cortados)
+		 * @return tipoConsulta - retorna N (Normais), S (Suspensos) ou C (Cortados)
+		 */
+		function retornarTipoConsulta() {
+			var index = $("#divTipoConsulta").children().children(".selected").index();
+			var tipoConsulta = "";
+
+			switch (index) {
+			case 0:
+				tipoConsulta = "N";
+				break;
+			case 1:
+				tipoConsulta = "S";
+				break;
+			case 2:
+				tipoConsulta = "C";
+				break;
+			}
+
+			return tipoConsulta;
+		}
+
+		/*
+		 * Método que idetifica se favorito está selecionado ou não
+		 * @return favorito - retorna S (selecionado) ou N (não está selecionado)
+		 */
+		function retornarFavorito() {
+			return ($("#favoritos").hasClass("highlight") ? "S" : "N");
+		}
+
+		/*
+		 * Método que idetifica se favorito está selecionado ou não
+		 * @return favorito - retorna S (selecionado) ou N (não está selecionado)
+		 */
+		function retornarTop() {
+			return ($("#tops").hasClass("highlight") ? "S" : "N");
+		}
+
+		/*
+		 * Método que idetifica se tem alguma letra do alfabeto selecionada
+		 * @return letra - retorna a letra do alfabeto ou vazio caso não tenha nenhuma letra selecionada
+		 */
+		function retornarLetra() {
+			var letra = "";
+			if ($("#clientFilter").children().children(".selected").index() > -1) {
+				letra = alphabet[$("#clientFilter").children().children(
+						".selected").index()];
+			}
+
+			return letra;
+		}
+
+		/*
+		 * Método que ordena a lista de clientes de acordo com o tipo de consulta selecinado (Razão Social ou Nome Fantasia)
+		 * @param clientes - lista de clientes para ordenação
+		 * @param tipoRazaoFantasia - tipo Razão ou Fantasia selecionado
+		 * @return clientes - lista de clientes ordenada conforme seleção	
+		 */
+		function ordenarPorRazaoFantasia(clientes, tipoRazaoFantasia) {
+			if (tipoRazaoFantasia == 'C') { // Código
+				function SortClientesCodigo(cliente, clienteAux) {
+					return ((cliente.codigoCliente < clienteAux.codigoCliente) ? -1 : ((cliente.codigoCliente > clienteAux.codigoCliente) ? 1 : 0));
+				}
+
+				return clientes.sort(SortClientesCodigo);
+			} else { // razão social ou nome fantasia
+				function SortClientes(cliente, clienteAux) {
+					if (tipoRazaoFantasia == 'R') {
+						return ((cliente.nomeCliente < clienteAux.nomeCliente) ? -1 : ((cliente.nomeCliente > clienteAux.nomeCliente) ? 1 : 0));
+
+					} else {
+						return ((cliente.nomeFantasia < clienteAux.nomeFantasia) ? -1 : ((cliente.nomeFantasia > clienteAux.nomeFantasia) ? 1 : 0));
+
+					}
+				}
+
+				return clientes.sort(SortClientes);
+			}
+		}
+
+		/*
+		 * Método que ordena a lista de clientes exibindo primeiro os favoritos
+		 * @param clientes - lista de clientes para ordenação
+		 * @return clientes - lista de clientes ordenada conforme seleção	
+		 */
+		function ordenarPorFavorito(clientes) {
+			var listaFavoritos = new Array();
+			var listaNaoFavoritos = new Array();
+			
+			for (var index = 0; index < clientes.length; index++) {
+				if (clientes[index].indicativoFavorito != null && clientes[index].indicativoFavorito == "1") {
+					listaFavoritos.push(clientes[index]);
+				} else {
+					listaNaoFavoritos.push(clientes[index]);
+				}
+			}
+			
+			for ( var index = 0; index < listaNaoFavoritos.length; index++) {
+				listaFavoritos.push(listaNaoFavoritos[index]);
+			}
+			
+			return listaFavoritos;
+		}
+
+		/*
+		 * Método que ordena a lista de clientes exibindo primeiro os favoritos
+		 * @param clientes - lista de clientes para ordenação
+		 * @return clientes - lista de clientes ordenada conforme seleção	
+		 */
+		function ordenarPorTop(clientes) {
+			var listaTops = new Array();
+			var listaNaoTops = new Array();
+			
+			for (var index = 0; index < clientes.length; index++) {
+				if (clientes[index].indicativoTop != null && clientes[index].indicativoTop == "1") {
+					listaTops.push(clientes[index]);
+				} else {
+					listaNaoTops.push(clientes[index]);
+				}
+			}
+			
+			for ( var index = 0; index < listaNaoTops.length; index++) {
+				listaTops.push(listaNaoTops[index]);
+			}
+			
+			return listaTops;
+		}
+
+		/*
+		 * Método que ordena a lista de clientes exibindo primeiro os favoritos, segundo os clientes tops
+		 * @param clientes - lista de clientes para ordenação
+		 * @return clientes - lista de clientes ordenada conforme seleção	
+		 */
+		function ordenarPorFavoritoTop(clientes) {
+			var listaFavoritos = new Array();
+			var listaNaoFavoritos = new Array();
+			var listaTops = new Array();
+			
+			for ( var index = 0; index < clientes.length; index++) {
+				if (clientes[index].indicativoFavorito != null && clientes[index].indicativoFavorito == "1") {
+					listaFavoritos.push(clientes[index]);
+				} else if (clientes[index].indicativoTop != null && clientes[index].indicativoTop == "1") {
+					listaTops.push(clientes[index]);
+				} else {
+					listaNaoFavoritos.push(clientes[index]);
+				}
+			}
+			
+			for ( var index = 0; index < listaTops.length; index++) {
+				listaFavoritos.push(listaTops[index]);
+			}
+			
+			for ( var index = 0; index < listaNaoFavoritos.length; index++) {
+				listaFavoritos.push(listaNaoFavoritos[index]);
+			}
+			
+			return listaFavoritos;
+		}
+
+		/*
+		 * Método que retorna a lista de clientes de acordo com a letra e tipo de consulta selecionado
+		 * @param letra - letra do alfabeto selecionada
+		 * @param tipoRazaoFantasia - tipo de consulta (Razão Social ou Nome Fantasia)
+		 * @return listaPorLetra - nova lista de acordo com os parâmetros selecionados
+		 */
+		function retornarListaPorLetra(listaClientes, letra, tipoRazaoFantasia) {
+			var listaPorLetra = new Array();
+			
+			for ( var index = 0; index < listaClientes.length; index++) {
+				if (tipoRazaoFantasia == 'R' || tipoRazaoFantasia == 'C') {
+					if (listaClientes[index].nomeCliente[0].toUpperCase() == letra) {
+						listaPorLetra.push(listaClientes[index]);
+					}
+				} else {
+					if (listaClientes[index].nomeFantasia[0].toUpperCase() == letra) {
+						listaPorLetra.push(listaClientes[index]);
+					}
+				}
+			}
+			
+			return listaPorLetra;
+		}
+
+		/**
+		 * Método que retorna a lista de clientes de acordo com o tipo de consulta selecionado
+		 * @param tipoConsulta - tipo de consulta selecionada (N - Normais, S - Suspensos ou C - Cortados)
+		 * @return lista - lista apenas com o tipo de consula selecionado
+		 */
+		function retornarListaPorTipoConsulta(tipoConsulta) {
+			var listaPorTipoConsulta = new Array();
+			
+			for ( var index = 0; index < jsonClientes.length; index++) {
+				if (jsonClientes[index].situacao == tipoConsulta) {
+					listaPorTipoConsulta.push(jsonClientes[index]);
+				}
+			}
+			
+			return listaPorTipoConsulta;
+		}
+
+		/**
+		 * Método para detalhar informações do cliente
+		 * @param codigoCliente - código do cliente selecionado
+		 */
+		function detalharCliente(codigoCliente, nomeCliente, canal,
+				situacaoCliente, mensagem, motivoBloqueio, bloqueado,
+				diferencaDias, territorio, tipoContratoVendor,
+				tipoCobrancaCondicaoPagamento, tipoAnaliseCredito,
+				codigoSegmento) {
+			BRQMob.log("entrando na funcao : codigoCliente = " + codigoCliente + ", nomeCliente = " + nomeCliente);
+
+			var msg = verificarMensagem(mensagem, motivoBloqueio, diferencaDias);
+			
+			if (bloqueado) {
+				alert(msg);
+			} else {
+
+				if (msg != "") {
+					alert(msg);
+				}
+
+				if (situacaoCliente != "N" && tipoAnaliseCredito == "B") {
+					if (confirm('Este cliente está com o crédito bloqueado no sistema. Os pedidos enviados estarão sujeitos à reprovação automática.\n\nMotivo do bloqueio : '
+							+ motivoBloqueio
+							+ '\n\nDeseja continuar o pedido?\n')) {
+						addSessionStorageClientes(codigoCliente, nomeCliente,
+								canal, territorio, tipoContratoVendor,
+								tipoCobrancaCondicaoPagamento, codigoSegmento);
+						sessionStorage.removeObject('modeloDistribuicao');
+						sessionStorage.removeObject('condicaoPagamento');
+						proximaPagina();
+					}
+				} else {
+					addSessionStorageClientes(codigoCliente, nomeCliente,
+							canal, territorio, tipoContratoVendor,
+							tipoCobrancaCondicaoPagamento, codigoSegmento);
+					sessionStorage.removeObject('modeloDistribuicao');
+					sessionStorage.removeObject('condicaoPagamento');
+					proximaPagina();
+				}
+
+			}
+		}
+
+		function verificarMensagem(mensagem, motivoBloqueio, diferencaDias) {
+			var msg = "";
+			
+			if (mensagem == '0') {
+				msg = 'O prazo para a revisão cadastral deste cliente foi esgotado !!! Para fazer o desbloqueio, basta revisar o cadastro do cliente !!! ';
+			} else if (mensagem == '1') {
+				msg = 'Hoje é o último dia para a revisão cadastral deste cliente!!! A partir de amanhã, os novos pedidos para ele serão bloqueados!!! ';
+			} else if (mensagem == '2') {
+				msg = 'O prazo para a revisão cadastral deste cliente é de '
+						+ diferencaDias
+						+ ' dia(s)!!! Após este prazo, os novos pedidos para ele serão bloqueados!!! ';
+			}
+			
+			return msg;
+		}
+
+		/**
+		 * Método para armazenamento do local storage o último estado da tela
+		 * @param codigoCliente - código do cliente selecionado
+		 */
+		function addSessionStorageClientes(codigoCliente, nomeCliente, canal,
+				territorio, tipoContratoVendor, tipoCobrancaCondicaoPagamento,
+				codigoSegmento) {
+			BRQMob.log("entrando na funcao addSessionStorageClientes");
+
+			//Removendo item anterior
+			sessionStorage.removeItem("objStorageClientes");
+
+			//Armazenar o estado da tela
+			var objStorageClientes = new Object();
+
+			//Código do cliente selecionado para detalhamento
+			objStorageClientes.codigoCliente = codigoCliente;
+
+			//Nome do cliente selecionado para detalhamento
+			objStorageClientes.nomeCliente = nomeCliente;
+
+			//Canal do cliente selecionado para detalhamento
+			objStorageClientes.canal = canal;
+
+			objStorageClientes.codigoTerritorio = territorio;
+
+			//Verifica se exibe razão social - 0 ou nome fantasia - 1
+			objStorageClientes.indexRazaoFantasia = $("#divRazaoFantasia").children().children(".selected").index();
+
+			//Verifica seleção de Favoritos
+			objStorageClientes.indicativoFavorito = retornarFavorito();
+
+			//Verifica seleção de Tops
+			objStorageClientes.indicativoTop = retornarTop();
+
+			objStorageClientes.tipoContratoVendor = tipoContratoVendor;
+
+			objStorageClientes.tipoCobrancaCondicaoPagamento = tipoCobrancaCondicaoPagamento;
+
+			objStorageClientes.codigoSegmento = codigoSegmento;
+
+			//Armazena o objeto json retornado na consulta
+			objStorageClientes.clientes = jsonClientes;
+
+			//Verifica a seleção de letra selecionada
+			objStorageClientes.indexOrdenacao = $("#clientFilter").children().children(".selected").index();
+
+			//Index do botão tipo de consulta (0 - Normais, 1 - Suspensos ou 2 - Cortados)
+			objStorageClientes.indexTipoConsulta = $("#divTipoConsulta").children().children(".selected").index();
+
+			sessionStorage.setObject('cliente', objStorageClientes);
+		}
+
+		/**
+		 * Método para recarregar o conteúdo da página após detalhamento de dados do cliente
+		 * @param objStorageClientes - objeto armazenado no local storage contendo dados do último estado da tela
+		 */
+		function recarregarTela(objStorageClientes) {
+			BRQMob.log("entrando na funcao recarregarTela");
+
+			jsonClientes = objStorageClientes.clientes;
+
+			//Selecionar Botão Razão social ou Nome fantasia
+			$("#divRazaoFantasia").children().children().eq(objStorageClientes.indexRazaoFantasia).addClass("selected");
+
+			//Verifica seleção de Favoritos
+			if (objStorageClientes.indicativoFavorito == "S") {
+				$("#favoritos").addClass("highlight");
+			}
+			
+			//Verifica seleção de Tops
+			if (objStorageClientes.indicativoTop == "S") {
+				$("#tops").addClass("highlight");
+			}
+
+			//Selecionar letra de ordenação
+			if (objStorageClientes.indexOrdenacao > -1) {
+				$("#clientFilter").children().children().eq(objStorageClientes.indexOrdenacao).addClass("selected");
+			}
+
+			//Selecionar o tipo de consulta (Normais - 0, Suspensos - 1 ou cortados - 2)
+			$("#divTipoConsulta").children().children().eq(objStorageClientes.indexTipoConsulta).addClass("selected");
+
+			if (objStorageClientes.indexTipoConsulta != '0') {
+				$("#divTipoConsulta").children().children().eq(0).removeClass("selected");
+			}
+
+			//Montar a lista de clientes
+			montarListaClientes();
+
+			//Limpar sessionStorage
+			sessionStorage.removeItem("cliente");
+
+		}
+
+		/**
+		 * Método para chamar a tela de detalhe do cliente
+		 */
+		function proximaPagina() {
+			nav(getPage('condPagamento'));
+		}
+
+		function retornoProximaPagina(retorno) {
+			sessionStorage.setObject('numeroPedido', retorno.numeroPedido);
+			sessionStorage.setObject('cliente', retorno.cliente);
+			nav(getPage('condPagamento'));
+		}
+
+		function retornoProximaPagina2(retorno) {
+			sessionStorage.setObject('numeroPedido', retorno.numeroPedido);
+		}
+
+		/**
+		 * Método para tratamento de falha no retorno das consultas
+		 * @param result - mensagem de falha
+		 */
+		function falha(result) {
+			BRQMob.log("falha: " + result);
+			$("#mensagem").html(result);
+			$("#divMensagem").css('display', 'inline');
+		}
+
+		function controleBotoes() {
+			if ('pedido' != getViewNameOrigem()) {
+				$('#botaoVoltar').empty().remove();
+			} else {
+				$('#menuButton').empty().remove();
+			}
+		}
+
+		function listarPedidos() {
+			sessionStorage.setObject(CONST_PESQUISA_BY_CLIENTE, 'false');
+			nav(getPage('todosPedidos'));
+		}
+	</script>
+</head>
+<body>
+
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button right" href="#" onclick="listarPedidos();">Todos os Pedidos</a>
+				<h1>Clientes</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">			
+				<h2>Lista de Clientes</h2>
+				<div class="panel">
+					<div class="left">
+						<label>Exibir</label>	
+					</div>
+					<div class="left">
+						<div class="groupButtons" id="divTipoConsulta">
+							<ul>
+								<li class="selected"><a href="javascript:void(0);">Normais</a></li>
+								<li><a href="javascript:void(0);">Suspensos</a></li>
+								<li><a href="javascript:void(0);">Cortados</a></li>
+							</ul>
+						</div>	
+					</div>
+					<a class="button right selectable" href="../ajuda/ajuda.html"><span class="icon help"></span></a>		
+				</div>
+				<div class="panel">
+					<div class="left">
+						<label>Ordenar por</label>
+					</div>
+					<div class="left">
+						<div class="groupButtons" id="divRazaoFantasia">
+							<ul>
+								<li><a href="javascript:void(0);">Código Cliente</a></li>
+								<li><a href="javascript:void(0);">Razão Social</a></li>
+								<li><a href="javascript:void(0);">Nome Fantasia</a></li>
+							</ul>
+						</div>
+					</div>
+					<a class="button right selectable" href="javascript:void(0);" id="favoritos"><span class="icon favoritoHighlight"></span></a>
+					<a class="button right selectable" href="javascript:void(0);" id="tops"><span class="icon top"></span>Top</a>
+				</div>
+				
+				
+				<div id="div-header-area"></div>
+				
+				<div id="div-wrapper-area">
+					<div class="result" style="overflow: scroll; -webkit-overflow-scrolling: touch;">
+						<div id="ulClientes"></div>
+					</div>
+				</div>
+				
+				<div id="div-footer-area"></div>
+				
+				<div id="clientFilter" class="filterAlphabet"></div>
+
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		
+		<!-- Refaz a renderizacao do Scroll no Android -->
+		<input type="text" id="dummy" class="js-notRequired"  style="width: 1px; height:1px; margin:0; padding:0; border: 0;" />
+		
+		<!-- FIM CONTEÚDO -->
+	</div>
+
+</body>
+</html>

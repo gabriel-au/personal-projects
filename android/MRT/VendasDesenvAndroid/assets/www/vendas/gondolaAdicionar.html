@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<!-- script src="../includes/js/jquery.alphanumeric.js"></script-->
+	
+	<script type="text/javascript">
+	
+		var gondola = null;
+	
+		$(document).ready(function() {
+			
+			BRQNavegacao.adicionarPilhaNavegacao('adicionarItemGondola');
+
+			if(getPlataform() == "desktop"){
+				
+				$('#quantidadeMercadoriaAtual').bind('keypress', function(event) {
+				 	return bloqueiAlfa(event);
+				});
+				
+				$('#quantidadeMercadoriaAtual').bind('keyup', function(event) {
+				 	bloqueiCtrlCV(event, this);
+				});
+				
+				//jgomes ***
+				//Validar máscara
+				//$('#precoCliente').numeric({allow:".,"});
+				
+			}
+			/*else{
+				var quantidadeMercadoriaAtual = document.getElementById('quantidadeMercadoriaAtual');
+				quantidadeMercadoriaAtual.setAttribute('type','number');
+			}*/
+			
+			$("#precoCliente").keyup(function(){
+				calcularMargemLucro();
+			});
+			
+			$("#precoCliente-clearBt").mousedown(function(){
+				$("#span_MargemLucro").html("");
+			});
+			
+			$("#botao_Ok").mousedown(function(){
+				execCadastrarItemGondola();
+			});
+			
+			execDetalheItemGondola(getCliente().codigoCliente, sessionStorage.getObject(CONST_ITEM_GONDOLA));
+
+		});
+		
+		/*
+		* Método que recupera as informações do cliente
+		* @param codigoCliente - código do cliente
+		* @param codigoMercadoria - código da mercadoria
+		* @param codigoFilialExpedicao - código da filial de expedição
+		* @param codigoFilialFaturamento - código da filial de faturamento
+		* @param descricaoMercadoria - descrição da mercadoria e complemento
+		* @param valorUnitarioImposto - valor unitário com imposto
+ 		*/
+		function execDetalheItemGondola(codigoCliente, codigoMercadoria) {
+			BRQMob.log("Lendo dados execDetalheItemGondola");
+			BRQMob.exec("retornoDetalheItemGondola", "falha", "VendasDispatcher", "detalheItemGondola", [codigoCliente, codigoMercadoria]);
+		}
+		
+		/*
+		* Método que carrega as informaçoes de mercadoria
+		* @param Gondola - retorno do json
+ 		*/
+		function retornoDetalheItemGondola(retorno){
+			BRQMob.log("Lendo dados retornoDetalheItemGondola");
+			
+			gondola = new Object();
+			gondola.codigoCliente = retorno.Gondola.codigoCliente;
+			gondola.codigoMercadoria = retorno.Gondola.codigoMercadoria;
+			gondola.posicaoMercadoria = retorno.Gondola.posicaoMercadoria;
+			gondola.codigoFilialExpedicao = retorno.Gondola.codigoFilialExpedicao;
+			gondola.codigoFilialFaturamento = retorno.Gondola.codigoFilialFaturamento;
+			gondola.valorUnitarioImposto = removeFormatacao(retorno.Gondola.valorUnitarioImposto, true);
+			
+			$("#span_codigo_Mercadoria").html(retorno.Gondola.codigoMercadoria);
+			$("#span_descricaoMercadoria").html(retorno.Gondola.descricaoMercadoria);
+			$("#span_posicao").html(retorno.Gondola.posicaoMercadoria);
+			//$("#quantidadeMercadoriaAtual").val(0);
+			//$("#precoCliente").val("0.00");
+		}
+		
+		/**
+		* Método que cadastra o item selecionado na gôndola do cliente
+		*/
+		function execCadastrarItemGondola(){
+			
+			if (validaCampos()) {
+				var precoCliente = retornarPrecoCliente();
+				var quantidadeMercadoriaAtual = retornarQuantidadeMercadoriaAtual();
+				BRQMob.log("Lendo dados execCadastrarItemGondola");
+				BRQMob.exec("retornoCadastrarItemGondola", "falha", "VendasDispatcher", "cadastrarItemGondola", [ 
+					gondola.codigoMercadoria, 
+					gondola.codigoCliente,
+					gondola.posicaoMercadoria,
+					precoCliente,
+					quantidadeMercadoriaAtual,
+					gondola.codigoFilialExpedicao,
+					gondola.codigoFilialFaturamento ]);
+					
+			} else {
+				falha("Formato inválido");
+			}
+		}
+		
+		/**
+		* Método que valida a digitação incorreta nos campos
+		*@return true para campos corretos ou false para incorretos
+		*/
+		function validaCampos(){
+			var precoCliente = $('#precoCliente').val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			if(isNaN(precoCliente) || isNaN($('#quantidadeMercadoriaAtual').val())){
+				return false;
+			}
+			return true;
+		}
+		
+		/*
+		* Método que faz o tratamento do preço do cliente
+		* Caso o valor esteja incorreto deverá retornar zero
+		*/
+		function retornarPrecoCliente(){
+			var precoCliente = $('#precoCliente').val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			if(precoCliente == "" || isNaN(precoCliente)){
+				precoCliente = "0.00";
+			}
+			return precoCliente;
+		}
+		
+		function retornarQuantidadeMercadoriaAtual(){
+			var quantidadeMercadoriaAtual = $('#quantidadeMercadoriaAtual').val();
+			if(quantidadeMercadoriaAtual == "" || isNaN(quantidadeMercadoriaAtual)){
+				quantidadeMercadoriaAtual = "0";
+			}
+			return quantidadeMercadoriaAtual;
+		}
+		
+		/*
+		* Método de retorno do cadastro de item na gôndola
+		* @param Gondola - retorno do json
+ 		*/
+		function retornoCadastrarItemGondola(retorno){
+			BRQMob.log("Lendo dados retornoCadastrarItemGondola");
+					
+			sessionStorage.removeObject(CONST_ITEM_GONDOLA);
+			sessionStorage.setObject(CONST_ITEM_DISPONIVEL_RECUPERA_PESQUISA_ANTERIOR, true);
+			
+			BRQNavegacao.voltar();
+		}
+		
+		/**
+		* Método que realiza o cálculo da margem de lucro 
+		* a partir do preço digitado no campo e valor unitário imposto da mercadoria
+		*/
+		function calcularMargemLucro(){
+			var precoCliente = $("#precoCliente").val();
+			precoCliente = removeFormatacao(precoCliente, false);
+			var valorUnitarioImposto = gondola != null ? gondola.valorUnitarioImposto : 0;
+			if(precoCliente != "" && !isNaN(precoCliente) && precoCliente != 0 
+					&& !isNaN(valorUnitarioImposto) && valorUnitarioImposto != 0){
+				var margemLucro = eval(((precoCliente / valorUnitarioImposto) - 1) * 100);
+				margemLucro = precisaoDecimal(margemLucro);				
+				$("#span_MargemLucro").html(margemLucro.replace(".",","));
+			}
+		}
+
+		/**
+		* Método que faz o arredondamento para 2 casas decimais
+		*/
+		function precisaoDecimal(valor){
+			return parseFloat(Math.round(valor * 100) / 100).toFixed(2);
+		}
+
+		/**
+		* Método que remove a formatação numérica
+		* @param valor - valor para remover a formatação
+		* @param isBanco - parametro true informa que deverá ser removido pontos: formatação banco (#.###,##)
+		*/
+		function removeFormatacao(valor, isBanco){
+			if(isBanco){ //Remover os pontos
+				valor = valor.replace(/[\.]/g, "");
+			}
+			return valor.replace(",",".");
+		}
+		
+		/**
+		* Método para tratamento de falha no retorno das consultas
+		* @param result - mensagem de falha
+		*/
+		function falha(result){
+			BRQMob.log("falha: " + result);
+			$("#mensagem").html(result);
+			$("#divMensagem").css('display', 'inline');
+		}
+		
+		function cancelar(result) {
+			sessionStorage.setObject(CONST_ITEM_DISPONIVEL_RECUPERA_PESQUISA_ANTERIOR, true);
+			BRQNavegacao.voltar();
+		}
+		
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<div id="header">
+				<a class="button left" id="botaoVoltar" href="javascript:cancelar();">Cancelar</a>
+				<!--  a class="button left" href="itensDisponiveis.html">Cancelar</a-->
+					<h1>Adicionar a Gôndola</h1>
+				<a class="button right" href="javascript:void(0);" id="botao_Ok">ok</a>
+			</div>
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="panel paddedGrey" id="divMensagem" style="display: none;">
+					<ul>
+						<li class="error">
+							<span class="icon"></span>
+							<label id="mensagem"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="formDiv">
+					<div class="line">
+						<div class="cell">
+							<label>Código</label>
+							<span id="span_codigo_Mercadoria"></span>
+						</div>
+						<div class="cell">
+							<label>Descrição de Mercadoria</label>
+							<span id="span_descricaoMercadoria"></span>
+						</div>
+					</div>
+					<h2>Estoques</h2>
+					<div class="line">
+						<div class="cell">
+							<label>Anterior</label>
+							<span id="span_quantidadeAnterior" style="text-align: center;">0</span>
+						</div>
+						<div class="cell">
+							<input type="text" class="type" placeholder="Atual" maxlength="4" id="quantidadeMercadoriaAtual" />
+						</div>
+					</div>
+					<h2>Cliente</h2>
+					<div class="line">
+						<div class="cell">
+							<label>Última Compra</label>
+							<span></span>
+						</div>
+						<div class="cell">
+							<input type="text" class="type" placeholder="Preço Cliente" id="precoCliente" maxlength="9"/>
+						</div>
+						<div class="cell">
+							<label>Pos. Gôndola</label>
+							<span id="span_posicao" style="text-align: center;"></span>
+						</div>
+						<div class="cell">
+							<label>Margem de Lucro</label>
+							<span id="span_MargemLucro" style="text-align: right;"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

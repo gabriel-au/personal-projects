@@ -1,0 +1,65 @@
+10
+
+dir
+37
+svn+ssh://192.168.1.15/svn/poc/trunk/TST/TSTMobileSite/WebContent/WEB-INF
+svn+ssh://192.168.1.15/svn/poc
+
+
+
+2010-09-30T21:17:01.143947Z
+33
+Gabriel Silva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ebed8b1-cc68-4b1b-8978-543341dfb65d
+
+lib
+dir
+
+web.xml
+file
+
+
+
+
+2010-09-30T21:20:21.000000Z
+3bf321632e53946f1832ef4f4885622b
+2010-09-30T21:17:01.143947Z
+33
+Gabriel Silva
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+707
+

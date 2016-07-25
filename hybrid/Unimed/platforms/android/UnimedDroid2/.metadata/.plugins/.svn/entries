@@ -1,0 +1,67 @@
+8
+
+dir
+54
+http://rjserver162.brq.com:8978/svn/Mobilidade/UnimedDroid/.metadata/.plugins
+http://rjserver162.brq.com:8978/svn/Mobilidade
+
+
+
+2011-10-20T22:25:36.554585Z
+50
+tgoncalves
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+82c5b4fb-17c2-0941-b1d8-291f0392c9ad
+
+com.google.gdt.eclipse.managedapis
+dir
+
+org.eclipse.core.resources
+dir
+
+org.eclipse.core.runtime
+dir
+
+org.eclipse.debug.core
+dir
+
+org.eclipse.epp.usagedata.recording
+dir
+
+org.eclipse.jdt.core
+dir
+
+org.eclipse.jdt.ui
+dir
+
+org.eclipse.mylyn.bugzilla.core
+dir
+
+org.eclipse.mylyn.tasks.ui
+dir
+
+org.eclipse.team.cvs.core
+dir
+
+org.eclipse.ui.intro
+dir
+
+org.eclipse.ui.workbench
+dir
+
+org.eclipse.wb.core
+dir
+

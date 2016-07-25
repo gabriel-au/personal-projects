@@ -1,0 +1,113 @@
+package br.jus.stj.site.iphone.ui;
+
+import br.jus.stj.site.iphone.Componente;
+import br.jus.stj.site.iphone.util.UtilString;
+
+public class Iframe extends Componente
+{
+/*   9 */   private int marginwidth = 0;
+/*  10 */   private int marginheight = 0;
+/*  11 */   private int hspace = 0;
+/*  12 */   private int vspace = 0;
+/*  13 */   private int frameborder = 0;
+/*  14 */   private boolean scrolling = false;
+/*  15 */   private int height = 10;
+/*  16 */   private int width = 300;
+  private String src;
+  private boolean isFullPah;
+
+  public Iframe(String src, boolean isFullPath)
+  {
+/*  22 */     this.src = src;
+/*  23 */     this.isFullPah = isFullPath;
+  }
+
+  public String getCode()
+  {
+/*  29 */     String texto = "<iframe ";
+/*  30 */     texto = texto + "marginwidth=\"" + this.marginwidth + "\" ";
+/*  31 */     texto = texto + "marginheight=\"" + this.marginheight + "\" ";
+/*  32 */     texto = texto + "hspace=\"" + this.hspace + "\" ";
+/*  33 */     texto = texto + "vspace=\"" + this.vspace + "\" ";
+/*  34 */     texto = texto + "frameborder=\"" + this.frameborder + "\" ";
+/*  35 */     texto = texto + "scrolling=\"" + (this.scrolling ? "yes" : "no") + "\" ";
+/*  36 */     texto = texto + "height=\"" + this.height + "\" ";
+/*  37 */     texto = texto + "width=\"" + this.width + "\" ";
+/*  38 */     if (this.isFullPah)
+/*  39 */       texto = texto + "src=\"" + UtilString.getFullPath() + this.src + "\" ";
+    else
+/*  41 */       texto = texto + "src=\"" + this.src + "\" ";
+/*  42 */     texto = texto + ">";
+/*  43 */     texto = texto + "</iframe>";
+/*  44 */     return texto;
+  }
+
+  protected void getMontarItensObrigatoriosOpcionais() {
+  }
+
+  public int getMarginwidth() {
+/*  51 */     return this.marginwidth;
+  }
+  public void setMarginwidth(int marginwidth) {
+/*  54 */     this.marginwidth = marginwidth;
+  }
+  public int getMarginheight() {
+/*  57 */     return this.marginheight;
+  }
+  public void setMarginheight(int marginheight) {
+/*  60 */     this.marginheight = marginheight;
+  }
+  public int getHspace() {
+/*  63 */     return this.hspace;
+  }
+  public void setHspace(int hspace) {
+/*  66 */     this.hspace = hspace;
+  }
+  public int getVspace() {
+/*  69 */     return this.vspace;
+  }
+  public void setVspace(int vspace) {
+/*  72 */     this.vspace = vspace;
+  }
+  public int getFrameborder() {
+/*  75 */     return this.frameborder;
+  }
+  public void setFrameborder(int frameborder) {
+/*  78 */     this.frameborder = frameborder;
+  }
+  public boolean isScrolling() {
+/*  81 */     return this.scrolling;
+  }
+  public void setScrolling(boolean scrolling) {
+/*  84 */     this.scrolling = scrolling;
+  }
+  public int getHeight() {
+/*  87 */     return this.height;
+  }
+  public void setHeight(int height) {
+/*  90 */     this.height = height;
+  }
+  public int getWidth() {
+/*  93 */     return this.width;
+  }
+  public void setWidth(int width) {
+/*  96 */     this.width = width;
+  }
+  public String getSrc() {
+/*  99 */     return this.src;
+  }
+  public void setSrc(String src) {
+/* 102 */     this.src = src;
+  }
+  public boolean isFullPah() {
+/* 105 */     return this.isFullPah;
+  }
+  public void setFullPah(boolean isFullPah) {
+/* 108 */     this.isFullPah = isFullPah;
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.ui.Iframe
+ * JD-Core Version:    0.6.0
+ */

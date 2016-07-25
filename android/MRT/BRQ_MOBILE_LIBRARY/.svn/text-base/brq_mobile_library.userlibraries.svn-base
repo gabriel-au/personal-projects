@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="BRQ_MOBILE_ANDROID" systemlibrary="false">
+        <archive path="/BRQ_MOBILE_LIBRARY/framework/framework-base.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/framework/sqlitejdbc-v056.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/android/framework-android.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/android/phonegap-1.3.0.jar"/>
+    </library>
+    <library name="BRQ_MOBILE_WINDOWS" systemlibrary="false">
+        <archive path="/BRQ_MOBILE_LIBRARY/framework/framework-base.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/DJNativeSwing.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/DJNativeSwing-SWT.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/framework-windows.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/log4j-1.2.16.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/swt.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/windows/xpp3-1.1.4c.jar"/>
+        <archive path="/BRQ_MOBILE_LIBRARY/framework/sqlitejdbc-v056.jar"/>
+    </library>
+</eclipse-userlibraries>

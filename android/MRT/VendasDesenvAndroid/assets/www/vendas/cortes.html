@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	
+	<script type="text/javascript">		
+	$(document).ready(	
+		function(){				
+			BRQNavegacao.adicionarPilhaNavegacao('cortes');
+			
+			limparMensagens();			
+			carregaListaCortes();		
+		}
+	);	
+	
+	function limparMensagens(){	
+		document.getElementById('error').style.display = 'none';
+		$("#mensagemError").text('');					
+	}
+	
+	function carregaListaCortes(){		
+		var numPedido = getPedido().numeroPedido;
+		BRQMob.log("entrando na funcao carregar lista de cortes");
+	  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "listarCortes",[numPedido]);	
+	}
+	
+	function sucesso(retorno){
+		if(retorno.listaCortes=='undefined'){
+			exibirMensagem();
+		}else{
+		  loadListaCortes(retorno.listaCortes);
+		}
+	}	
+	
+	function exibirMensagem(){	
+		document.getElementById('error').style.display = 'block';
+		$("#mensagemError").text('Não há cortes neste pedido!');		
+	}
+	
+	
+	function ativaOpcoesPedido() { 
+		var numeroPedido = getPedido().numeroPedido;		
+		if(confirm('Deseja realmente regerar os itens do Pedido ' + numeroPedido + ' ? ')){
+			regeraPedidoCortes(numeroPedido);
+		}	
+	}
+	
+	function regeraPedidoCortes(numeroPedido){
+	   BRQMob.exec("sucessoLimpaTabelas", "falhaLimpaTabelas", "VendasDispatcher", "regeraPedidoByCortes",[numeroPedido]);
+	}
+	
+	function sucessoLimpaTabelas(retorno){
+		sessionStorage.setObject('numeroPedido', retorno.numeroPedido);
+		nav('../vendas/infosGerais.html');
+	}
+	
+	function falhaLimpaTabelas(retorno){
+		alert(retorno.mensagem);
+	}
+	
+	function loadListaCortes(listaCortes){
+	
+	  $.each(listaCortes, function(i,obj){					
+		
+		tr = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off "),onclick:"tableTR(this);"});
+						
+		td_codigo= $('<td/>', {});			
+		$($('<span/>', {"text":obj.codigoMercadoria})).appendTo(td_codigo);
+		$(td_codigo).appendTo(tr);
+		
+		td_cad= $('<td/>', {});
+		$($('<span/>', {"text":obj.filialExpedicao})).appendTo(td_cad);
+		$(td_cad).appendTo(tr);	
+		
+		td_filialEpd= $('<td/>', {});
+		$($('<span/>', {"text":obj.filialFaturamento})).appendTo(td_filialEpd);
+		$(td_filialEpd).appendTo(tr);				
+		
+		td_descMercadoria= $('<td/>', {"style":"text-align:left"});
+		href=$('<a/>', {href:"javascript:void(0);",onclick:"selectLine(this);ativaOpcoesPedido();"});
+		$($('<label/>', {"class":"left"})).appendTo(href);
+		$($('<span/>', {"text":obj.descricaoMercadoria})).appendTo(href);
+		$(href).appendTo(td_descMercadoria);
+		$(td_descMercadoria).appendTo(tr);	
+		
+		td_qtdPedido= $('<td/>', {});
+		$($('<span/>', {"text":obj.qtdMercadoriaPedido})).appendTo(td_qtdPedido);
+		$(td_qtdPedido).appendTo(tr);
+		
+		td_qtdCortada= $('<td/>', {});
+		$($('<span/>', {"text":obj.qtdMercadoriaCortado})).appendTo(td_qtdCortada);
+		$(td_qtdCortada).appendTo(tr);
+		
+		td_qtdRecuperada= $('<td/>', {});
+		$($('<span/>', {"text": obj.qtdMercadoriaRecuperada})).appendTo(td_qtdRecuperada);
+		$(td_qtdRecuperada).appendTo(tr);
+		
+		td_valorLiq= $('<td/>', {"style":"text-align:right"});
+		$($('<span/>', {"text":obj.valorLiquidoCalculado})).appendTo(td_valorLiq);
+		$(td_valorLiq).appendTo(tr);
+		
+		td_motivo= $('<td/>', {"style":"text-align:left"});
+		$($('<span/>', {"text":obj.descMotivoCorte})).appendTo(td_motivo);
+		$(td_motivo).appendTo(tr);
+		
+		$(tr).appendTo(tbody_lista_cortes);
+	 });	
+  }
+		function voltar(){
+		
+			if('clientePedidos' != getViewNameOrigem()){
+				sessionStorage.removeObject('cliente');				
+				javascript:BRQNavegacao.voltar() ;
+			}else{				
+				javascript:BRQNavegacao.voltar() ;
+			}		
+		}
+	
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:voltar()">Retornar Lista de Pedidos</a>
+				<a class="button right" href="#" onclick="ativaOpcoesPedido();">Regerar Pedido</a>
+				<h1>Cortes</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent" class="scroll">
+				<div class="panel paddedGrey">
+					<ul>
+						<li class="error">
+							<span id="error" class="icon"></span>
+							<label id="mensagemError"></label>
+						</li>
+					</ul>
+				</div>
+				<h2>Lista de Cortes</h2>
+				<div class="tableList">
+					<!-- Exemplo grupo de listas para seleção de dados -->
+					<table style="width:100%;" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Código</th>
+								<th>CAD</th>
+								<th>Fil</th>
+								<th>Descrição da Mercadoria</th>
+								<th>Q. Ped.</th>
+								<th>Q. Ctd.</th>
+								<th>Q. Rcp.</th>
+								<th>Valor Líq.</th>
+								<th>Motivo do Corte</th>
+							</tr>
+						</thead>
+						<tbody id="tbody_lista_cortes">
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

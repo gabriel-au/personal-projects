@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action
+END
+ListarClientesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/ListarClientesAction.java
+END
+ListarItensGondolaClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/ListarItensGondolaClienteAction.java
+END
+ListarSituacaoClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/ListarSituacaoClienteAction.java
+END
+ListarJustificasNaoAtendimentoClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/ListarJustificasNaoAtendimentoClienteAction.java
+END
+ClienteFavoritoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/ClienteFavoritoAction.java
+END
+CadastrarJustificativaNaoAtendimentoClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/CadastrarJustificativaNaoAtendimentoClienteAction.java
+END
+DetalharClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/DetalharClienteAction.java
+END
+RelacionamentoClienteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/mobile/!svn/ver/5645/martins/funcionalidades/code/trunk/Vendas/RelacionamentoModulo/src/br/com/martins/vendas/relacionamento/action/RelacionamentoClienteAction.java
+END

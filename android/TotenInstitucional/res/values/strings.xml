@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TotenInstitucional</string>
+    <string name="path_xml">content/xml</string>
+    <string name="path_media">content/media</string>
+    <string name="path_css">content/css</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_institucional">InstitucionalActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_linha_tempo">LinhaTempoActivity</string>
+    <string name="title_activity_projetos">ProjetosActivity</string>
+    <string name="title_activity_galeria_fotos">GaleriaFotosActivity</string>
+    <string name="title_activity_galeria_videos">GaleriaVideosActivity</string>
+    <string name="title_activity_pic_select">PicSelectActivity</string>
+
+</resources>

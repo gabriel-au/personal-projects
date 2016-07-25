@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="especie" namespace="/especie" extends="default">
+		<action name="editar" method="editar"
+			class="br.com.xtrategia.fiscon.web.EspecieAction">
+			<result>/WEB-INF/src/especie/editar.jsp</result>
+		</action>
+		<action name="salvar" method="salvar"
+			class="br.com.xtrategia.fiscon.web.EspecieAction">
+			<result>/WEB-INF/src/especie/listar.jsp</result>
+		</action>
+		<action name="excluir" method="excluir"
+			class="br.com.xtrategia.fiscon.web.EspecieAction">
+			<result>/WEB-INF/src/especie/listar.jsp</result>
+		</action>
+		<action name="listar" method="listar"
+			class="br.com.xtrategia.fiscon.web.EspecieAction">
+			<result>/WEB-INF/src/especie/listar.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

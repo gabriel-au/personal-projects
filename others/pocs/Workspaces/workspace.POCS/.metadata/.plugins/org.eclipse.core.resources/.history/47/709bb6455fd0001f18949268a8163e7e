@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Superior Tribunal de Justi&ccedil;a - O Tribunal da Cidadania</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+<!-- link rel="apple-touch-icon" href="/stj/imagens/logo-touch-icon.png"/-->
+<!-- link  rel="shortcut icon" href="/stj/imagens/logo-touch-icon.ico" type="image/icon" /--> 
+<style type="text/css" media="screen">@import "/stj/css/style.css";</style>
+<style type="text/css" media="screen">@import "/stj/css/styleComplemento.css";</style>
+<script type="application/x-javascript">
+if (navigator.userAgent.indexOf('iPhone') != -1) {
+        addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+        }, false);
+}
+
+function hideURLbar() {
+        window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body>
+<div class="toolbar">
+<a href="/stj/" >
+<img src="/stj/imagens/topo.png" /></a>
+</div>
+<div class="titulo">
+<a href="/stj/Pagina?p=Noticias" >
+<img src="/stj/imagens/botao-inicio-azul.png" /></a>
+<div class="titulo_texto">
+Sala de Not&iacute;cias
+</div>
+</div>
+<div class="arredondado">
+<div class="arredondado_titulo">
+22/01/2010
+</div>
+<div class="arredondado_titulo_hora">
+14h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+Acordo entre seguradora e terceiro n&atilde;o isenta segurado de ressarcir</a>
+</div>
+<div class="arredondado_titulo_hora">
+13h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+S&iacute;ndico vai pagar por liga&ccedil;&otilde;es telef&ocirc;nicas sem identifica&ccedil;&atilde;o</a>
+</div>
+<div class="arredondado_titulo_hora">
+12h07
+ - 
+ESPECIAL
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+Venda ad corpus de im&oacute;vel n&atilde;o gera abatimento do valor contratado</a>
+</div>
+<div class="arredondado_titulo_hora">
+11h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+Acordo entre seguradora e terceiro n&atilde;o isenta segurado de ressarcir</a>
+</div>
+<div class="arredondado_titulo_espaco_superior">
+21/01/2010
+</div>
+<div class="arredondado_titulo_hora">
+18h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+S&iacute;ndico vai pagar por liga&ccedil;&otilde;es telef&ocirc;nicas sem identifica&ccedil;&atilde;o</a>
+</div>
+<div class="arredondado_titulo_hora">
+16h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+Venda ad corpus de im&oacute;vel n&atilde;o gera abatimento do valor contratado</a>
+</div>
+<div class="arredondado_titulo_hora">
+14h07
+ - 
+ESPECIAL
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+Acordo entre seguradora e terceiro n&atilde;o isenta segurado de ressarcir</a>
+</div>
+<div class="arredondado_titulo_hora">
+12h07
+ - 
+DECIS&Atilde;O
+</div>
+<div class="arredondado_link_left">
+<a href="/stj/Pagina?p=Noticias&m=detalhar&id=95648" >
+S&iacute;ndico vai pagar por liga&ccedil;&otilde;es telef&ocirc;nicas sem identifica&ccedil;&atilde;o</a>
+</div>
+</div>
+<div class="titulo_mais_noticias">
+<a href="/stj/Pagina?p=Noticias&m=listar&dataInicio=20/01/2010" >
+Mais Not&iacute;cias  </a>
+</div>
+</body>
+</html>

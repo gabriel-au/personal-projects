@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/1272/framework/code/trunk/BRQ_MOBILE_LIBRARY/framework
+END
+framework-base.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/1272/framework/code/trunk/BRQ_MOBILE_LIBRARY/framework/framework-base.jar
+END
+sqlitejdbc-v056.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/1272/framework/code/trunk/BRQ_MOBILE_LIBRARY/framework/sqlitejdbc-v056.jar
+END

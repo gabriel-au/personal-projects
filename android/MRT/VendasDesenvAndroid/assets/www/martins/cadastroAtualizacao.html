@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script>
+	
+	$(document).ready(		
+		function(){		
+		
+		var representante = getRepresentante();
+		
+		var codigoRepresentante, nomeRepresentante;
+		if(isGerenteMercado()){
+			codigoRepresentante = representante.codigoGerenteMercado;
+			nomeRepresentante = representante.nomeGerenteMercado;
+		}else{
+			codigoRepresentante = representante.codigoRepresentante;
+			nomeRepresentante = representante.nomeRepresentante;
+		}	
+		$("#codigoRepresentante").text(codigoRepresentante); 
+		$("#nomeRepresentante").text(nomeRepresentante); 
+		
+		montarFormulario(representante);			
+	});	
+		
+	function montarFormulario(representante){	
+		email = representante.email;	
+		separa = email.split('@');	
+		
+		document.getElementById("selectLogradouro").value=representante.tipoLogradouro;	 	 				
+		document.getElementById("selectCamiseta").value=representante.tamanhoCamiseta;
+		document.getElementById("cepRepresentante").value=representante.cep;
+		document.getElementById("descLogradouro").value=representante.descLogradouro;
+		document.getElementById("numero").value=representante.numeroEndereco;
+		document.getElementById("complemento").value=representante.complemento;
+		document.getElementById("bairro").value=representante.bairro;
+		document.getElementById("email").value=separa[0];
+		document.getElementById("selectEmail").value=separa[1];
+		document.getElementById("telResidencial").value=representante.telResidencial;
+		document.getElementById("celular1").value=representante.numCelular1;
+		document.getElementById("celular2").value=representante.numCelular2;		
+		
+		//selectDefault($('#selectCamiseta'), representante.tamanhoCamiseta);
+		//selectDefault($('#selectLogradouro'), representante.tipoLogradouro);
+		//selectDefault($('#selectEmail'),separa[1]);
+		
+		verificaAutorizacaoMensagens(representante.flagEmail,representante.flagSms);		
+	}
+	
+	//verifica autorizacao de recebimento de mensagens por email e sms
+	function verificaAutorizacaoMensagens(flagEmail,flagSms){
+		if(flagEmail==1){
+			$("#receberEmail").addClass("on");
+		}
+		if(flagSms==1){
+			$("#receberSms").addClass("on");
+		}
+	}
+	
+	function formatarCampos(mascara, documento){
+	  var i = documento.value.length;
+	  var saida = mascara.substring(0,1);
+	  var texto = mascara.substring(i)
+	  
+	  if (texto.substring(0,1) != saida){
+	       documento.value += texto.substring(0,1);
+	  }  
+	}
+	
+	function salvaDados(){
+		codigo=$('#codigoRepresentante').text();
+		cep=limparMask($('#cepRepresentante').val());
+		tipoLogradouro=$('#selectLogradouro').val();
+		tamanhoCamiseta=$('#selectCamiseta').val();
+		descLogradouro=$('#descLogradouro').val();
+		complemento=$('#complemento').val();
+		numero=$('#numero').val();
+		bairro=$('#bairro').val();
+		email=$('#email').val();
+		dominio=$('#selectEmail').val();
+		telefone=limparMask($('#telResidencial').val());
+		cel1=limparMask($('#celular1').val());
+		cel2=limparMask($('#celular2').val());
+		flagEmail=$("#receberEmail").hasClass("on") ? 1 : 0;
+		flagSms=$("#receberSms").hasClass("on") ? 1 : 0;		
+				
+		if(validaDados(cep,descLogradouro,numero,bairro,email,dominio,telefone,cel1,cel2)){
+			BRQMob.log("entrando na funcao salva dados");
+			BRQMob.exec("sucesso", "falha", "VendasDispatcher", "cadastroAtualizacao", [cep,tipoLogradouro,tamanhoCamiseta,descLogradouro,complemento,numero,bairro,email,dominio,telefone,cel1,cel2,flagEmail,flagSms,codigo]);
+		}
+	}
+	
+	function sucesso(retorno){
+		alert("A atualização cadastral foi realizada com sucesso !!!");
+		sessionStorage.setObject('representante', retorno.representante);
+	}
+	
+	function falha(){
+		alert("Não foi possível preparar o arquivo para a transmissão !!!");
+	}
+	
+	function limparMask(valor){
+		valor=valor.replace("-",'')
+		return valor.replace(" ","");	
+	}
+	
+	function validaDados(cep,descLogradouro,numero,bairro,email,dominio,telefone,cel1,cel2){
+		var caracteresInvalidos = new Array("'","!","@","#","$","%","¨","&","*","(",")","=","+","|","?","<",">",":",";","{","}","[","]",",");	
+		var mensagem="";
+		valido=new Boolean(true);
+		emailValido=new Boolean(true);		
+		var i=0;
+		
+		
+		//verifica se o email possui caracteres inválidos
+		while(i<=email.length){	
+			if(caracteresInvalidos.indexOf(email.charAt(i))!=-1){
+				emailValido=false;
+				break;
+			}			
+			i++;			
+		}
+		
+		//verifica se o último caracter do email é "."
+		if(emailValido){
+			index = email.length-1;
+			valor=email.charAt(index);
+			if(valor=="."){
+				emailValido=false;
+			}
+		}		
+						
+		if(cep.length<8){
+			mensagem += "O CEP informado está incorreto!\r\n";				
+		}
+		if(descLogradouro==""){
+			mensagem += "A descrição do logradouro informada está incorreta!\r\n";
+		}
+		if(numero==""){
+			mensagem += "O número do logradouro informado está incorreto!\r\n";
+		}
+		if(bairro==""){
+			mensagem += "O bairro informado está incorreto!\r\n";
+		}
+		if(dominio=="" || !emailValido){
+			mensagem += "O e-mail informado não é válido!\r\n";
+		}
+		if(telefone.length>0 && telefone.length<11){
+			mensagem += "O telefone residencial informado está incorreto!\r\n";
+		}
+		if(cel1.length>0 && cel1.length<11){
+			mensagem += "O telefone celular 1 informado está incorreto!\r\n";
+		}
+		if(cel2.length>0 && cel2.length<11){
+			mensagem += "O telefone celular 2 informado está incorreto!\r\n";
+		}
+		if(mensagem!=""){
+			alert(mensagem);
+			valido=false;
+		}
+		return valido;
+	}
+	
+	</script>
+	
+</head>
+<body id="body_condicoes_pagamento">
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container" class="wMenu">
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button right" onclick="javascript:salvaDados();">Salvar</a>
+				<h1>Atualização cadastral</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent" style="background-color: #EBEBEB;">
+				<h2>Cadastro</h2>
+				<div class="formDiv">
+					<div class="line">
+						<div class="cell" style="width:20%;">
+							<label>Código</label>
+							<span id="codigoRepresentante"></span>
+						</div>
+						<div class="cell">
+							<label>Nome</label>
+							<span id="nomeRepresentante"></span>
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<label>CEP</label>
+							<input type="text" class="type" id="cepRepresentante" maxlength="9" OnKeyPress="formatarCampos('#####-###', this);return bloqueiAlfa(event);" />
+						</div>
+						<div class="cell">
+							<label>Tipo do Logadouro</label>	
+						<div class="left" >
+							<select style="height:20px;" id="selectLogradouro">
+								<option value="Alameda">Alameda</option>
+								<option value="Avenida">Avenida</option>
+								<option value="Bloco">Bloco</option>
+								<option value="Cais">Cais</option>
+								<option value="Estrada">Estrada</option>
+								<option value="Fazenda">Fazenda</option>
+								<option value="Praça">Praça</option>
+								<option value="Quadra">Quadra</option>
+								<option value="Rodo Anel">Rodo Anel</option>
+								<option value="Rodovia">Rodovia</option>
+								<option value="Rua">Rua</option>
+								<option value="Travessa">Travessa</option>
+								<option value="Via">Via</option>
+								<option value="Vila">Vila</option>
+							</select>
+						</div>	
+						</div>
+						<div class="cell">
+							<label>Tamanho de Camiseta</label>
+							<div class="left">
+								<select style="height:20px;" id="selectCamiseta" name="selectCamiseta">
+									<option value="PP">PP</option>
+									<option value="P">P</option>
+									<option value="M">M</option>
+									<option value="G">G</option>
+									<option value="GG">GG</option>
+									<option value="XG">XG</option>
+								</select>
+						</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<label>Descrição do Logradouro</label>
+							<input type="text" class="type" id="descLogradouro" size="70" />
+						</div>
+						<div class="cell">
+							<label>N˚</label>
+							<input type="text" class="type" id="numero" OnKeyPress="return bloqueiAlfa(event);" size="10" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<label>Complemento</label>
+							<input type="text" class="type" id="complemento" size="40" />
+						</div>
+						<div class="cell">
+							<label>Bairro</label>
+							<input type="text" class="type" id="bairro" size="38" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<label>E-mail</label>
+							<input type="text" class="type" id="email" size="40" />
+						</div>
+						<div class="cell">
+							<label style="margin-top: 20px;">@</label>
+						</div>
+						<div class="cell">
+							<label>Domínio</label>
+							<div class="left">
+								<select style="height:20px;" id="selectEmail" name="selectEmail">
+									<option value="bol.com.br">bol.com.br</option>
+									<option value="gmail.com">gmail.com</option>
+									<option value="hotmail.com">hotmail.com</option>
+									<option value="terra.com.br">terra.com.br</option>
+									<option value="uol.com.br">uol.com.br</option>
+									<option value="yahoo.com">yahoo.com</option>
+									<option value="yahoo.com.br">yahoo.com.br</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<label>Telefone Residencial</label>
+							<input type="text" class="type" id="telResidencial" maxlength="13" OnKeyPress="formatarCampos('### ####-####', this);return bloqueiAlfa(event);" />
+						</div>
+						<div class="cell">
+							<label>Telefone Celular 1</label>
+							<input type="text" class="type" id="celular1" maxlength="13" OnKeyPress="formatarCampos('### ####-####', this);return bloqueiAlfa(event);" />
+						</div>
+						<div class="cell">
+							<label>Telefone Celular 2</label>
+							<input type="text" class="type" id="celular2" maxlength="13" OnKeyPress="formatarCampos('### ####-####', this);return bloqueiAlfa(event);" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell" >
+							<div class="left"><label class="labelSwitch" style="margin:5px; width:200px; height:15px; padding-top:7px; position:relative; float: left;">Autorizo o Recebimento de E-mail?</label><div id="receberEmail" class="switch wLabel"></div></div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="cell">
+							<div class="left"><label class="labelSwitch" style="margin:5px; width:200px; height:15px; padding-top:7px; position:relative; float: left;">Autorizo o Recebimento de Mensagens SMS?</label><div id="receberSms" class="switch wLabel"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

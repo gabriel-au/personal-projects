@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	96B3C0A3142A774600B76290 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = B484E8681434BAAF004EBB1D /* Unimed */;
+		activeSDKPreference = iphoneos4.3;
+		activeTarget = 96B3C0AB142A774600B76290 /* Unimed */;
+		breakpoints = (
+			B484E9E514350DAC004EBB1D /* InvokedUrlCommand.m:27 */,
+		);
+		codeSenseManager = B484E88E1434BAD0004EBB1D /* Code sense */;
+		executables = (
+			B484E8681434BAAF004EBB1D /* Unimed */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					693,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 340063416;
+			PBXWorkspaceStateSaveDate = 340063416;
+		};
+		perUserProjectItems = {
+			B416B9E21444E13B00C6F893 /* PBXTextBookmark */ = B416B9E21444E13B00C6F893 /* PBXTextBookmark */;
+			B416B9E31444E13B00C6F893 /* PBXTextBookmark */ = B416B9E31444E13B00C6F893 /* PBXTextBookmark */;
+			B451068B1444E73300906207 /* PBXTextBookmark */ = B451068B1444E73300906207 /* PBXTextBookmark */;
+			B451068C1444E73300906207 /* PBXTextBookmark */ = B451068C1444E73300906207 /* PBXTextBookmark */;
+			B45106BD1444F33200906207 /* PBXTextBookmark */ = B45106BD1444F33200906207 /* PBXTextBookmark */;
+			B47879411444F4D30028944D /* PBXTextBookmark */ = B47879411444F4D30028944D /* PBXTextBookmark */;
+			B4D70CA41444E52400B5058D /* PlistBookmark */ = B4D70CA41444E52400B5058D /* PlistBookmark */;
+		};
+		sourceControlManager = B484E88D1434BAD0004EBB1D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	96B3C0AB142A774600B76290 /* Unimed */ = {
+		activeExec = 0;
+		executables = (
+			B484E8681434BAAF004EBB1D /* Unimed */,
+		);
+	};
+	96B3C0BF142A774600B76290 /* UnimedAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 444}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 421}";
+		};
+	};
+	96B3C0C0142A774600B76290 /* UnimedAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 962}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3, 1215}";
+		};
+	};
+	96B3C0C5142A774600B76290 /* UnimedViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 444}}";
+			sepNavSelRange = "{426, 0}";
+			sepNavVisRange = "{0, 435}";
+		};
+	};
+	96B3C0C6142A774600B76290 /* UnimedViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1027, 1209}}";
+			sepNavSelRange = "{1480, 0}";
+			sepNavVisRange = "{1121, 1019}";
+		};
+	};
+	96B3C0EC142A85A600B76290 /* BSADConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1218, 196}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 179}";
+		};
+	};
+	96B3C0ED142A85A600B76290 /* BSADConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1524, 663}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 476}";
+		};
+	};
+	96B3C0F2142A85A600B76290 /* Loader.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 444}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 729}";
+		};
+	};
+	96B3C0F3142A85A600B76290 /* Loader.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 2106}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 862}";
+		};
+	};
+	96B3C0F4142A85A600B76290 /* Network.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 455}}";
+			sepNavSelRange = "{279, 6}";
+			sepNavVisRange = "{0, 698}";
+		};
+	};
+	96B3C0F5142A85A600B76290 /* Network.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1377, 2366}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1582, 1061}";
+		};
+	};
+	96B3C106142A864900B76290 /* InvokedUrlCommand.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 819}}";
+			sepNavSelRange = "{573, 0}";
+			sepNavVisRange = "{0, 972}";
+		};
+	};
+	B416B9E21444E13B00C6F893 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 96B3C0EC142A85A600B76290 /* BSADConfig.h */;
+		name = "BSADConfig.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 0;
+	};
+	B416B9E31444E13B00C6F893 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B416B9E41444E13B00C6F893 /* prog-acompanhantes.html */;
+		name = "prog-acompanhantes.html: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 0;
+	};
+	B416B9E41444E13B00C6F893 /* prog-acompanhantes.html */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.html;
+		name = "prog-acompanhantes.html";
+		path = "/Users/tiagopellegrino/BRQ/Unimed_upload/Unimed/Unimed/www/prog-acompanhantes.html";
+		sourceTree = "<absolute>";
+	};
+	B451068B1444E73300906207 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 96B3C0ED142A85A600B76290 /* BSADConfig.m */;
+		name = "BSADConfig.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 476;
+		vrLoc = 0;
+	};
+	B451068C1444E73300906207 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B451068D1444E73300906207 /* version.txt */;
+		name = "version.txt: 1";
+		rLen = 0;
+		rLoc = 3;
+		rType = 0;
+		vrLen = 3;
+		vrLoc = 0;
+	};
+	B451068D1444E73300906207 /* version.txt */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = version.txt;
+		path = /Users/tiagopellegrino/BRQ/Unimed_upload/Unimed/Unimed/www/version.txt;
+		sourceTree = "<absolute>";
+	};
+	B45106BD1444F33200906207 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 96B3C0C6142A774600B76290 /* UnimedViewController.m */;
+		name = "UnimedViewController.m: 63";
+		rLen = 0;
+		rLoc = 1593;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 1126;
+	};
+	B47879411444F4D30028944D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 96B3C0C6142A774600B76290 /* UnimedViewController.m */;
+		name = "UnimedViewController.m: 59";
+		rLen = 0;
+		rLoc = 1480;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 1121;
+	};
+	B484E8681434BAAF004EBB1D /* Unimed */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Unimed;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	B484E88D1434BAD0004EBB1D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B484E88E1434BAD0004EBB1D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B484E9E514350DAC004EBB1D /* InvokedUrlCommand.m:27 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 96B3C106142A864900B76290 /* InvokedUrlCommand.m */;
+		functionName = "+newFromUrl:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 27;
+		location = Unimed;
+		modificationTime = 339021476.412613;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B4D70CA41444E52400B5058D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 96B3C0B8142A774600B76290 /* Unimed-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleSignature,
+		);
+		name = "/Users/tiagopellegrino/BRQ/Unimed_upload/Unimed/Unimed/Unimed-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+}

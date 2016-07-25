@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobile/!svn/ver/5695/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages
+END
+clienteRelacionamento.js
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/5569/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/clienteRelacionamento.js
+END
+gerarPDF_pedido.js
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/5665/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/gerarPDF_pedido.js
+END
+pedidoBase.js
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mobile/!svn/ver/5569/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/pedidoBase.js
+END
+conversor.js
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mobile/!svn/ver/1113/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/conversor.js
+END
+posicaoDeVendas.js
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/3162/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/posicaoDeVendas.js
+END
+clientePedidos.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/5704/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/clientePedidos.js
+END
+jquery-1.6.2.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/2069/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/jquery-1.6.2.min.js
+END
+beneficiosCustomizados.js
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/5037/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/beneficiosCustomizados.js
+END
+clienteGondola.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/2577/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/clienteGondola.js
+END
+promocoes.js
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mobile/!svn/ver/5769/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/promocoes.js
+END
+pedido.js
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mobile/!svn/ver/5644/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/pedido.js
+END
+fecharPedidoMensagem.js
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/4604/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/fecharPedidoMensagem.js
+END
+condPagamento.js
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/5740/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/condPagamento.js
+END
+caminhao.js
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/5701/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/caminhao.js
+END
+produtoDetalhe.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/5341/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/produtoDetalhe.js
+END
+itensDisponiveis.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/5758/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/itensDisponiveis.js
+END
+clienteDetalhe.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/5569/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/clienteDetalhe.js
+END
+situacaoClientes.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/4849/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/situacaoClientes.js
+END
+cidadesTerritorios.js
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/4587/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/cidadesTerritorios.js
+END
+indexRca.js
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/4563/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/indexRca.js
+END
+infosGerais.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/5634/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/infosGerais.js
+END
+justificarAtendimento.js
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mobile/!svn/ver/3102/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/justificarAtendimento.js
+END
+simulacaoBnf.js
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/4926/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/simulacaoBnf.js
+END
+iscroll-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/2069/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/iscroll-min.js
+END
+itensSimilares.js
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/5758/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/itensSimilares.js
+END
+listaClientesRelacionamento.js
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/5665/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/listaClientesRelacionamento.js
+END
+gerarPDFGondola.js
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/2355/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/gerarPDFGondola.js
+END
+indexGm.js
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mobile/!svn/ver/3489/martins/funcionalidades/code/trunk/Vendas/VendasDesenvAndroid/assets/www/includes/js/pages/indexGm.js
+END

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 9 elements to &apos;WebContent&apos;&#x0A;- Original project: &apos;InfraeroMobileSite&apos;&#x0A;- Destination element: &apos;WebContent&apos;&#x0A;- Original elements:&#x0A;     includes&#x0A;     cargo&#x0A;     negocios&#x0A;     pdf&#x0A;     voo_online&#x0A;     css&#x0A;     js&#x0A;     imagens&#x0A;     noticias" description="Copy folders" element1="WebContent/includes" element2="WebContent/cargo" element3="WebContent/negocios" element4="WebContent/pdf" element5="WebContent/voo_online" element6="WebContent/css" element7="WebContent/js" element8="WebContent/imagens" element9="WebContent/noticias" files="0" flags="589830" folders="9" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1280338949244" target="/FaturaOnLine/WebContent" units="0" version="1.0"/>
+</session>

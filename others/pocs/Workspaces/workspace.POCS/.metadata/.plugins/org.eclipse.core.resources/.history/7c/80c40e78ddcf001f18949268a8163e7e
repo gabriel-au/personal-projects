@@ -1,0 +1,91 @@
+/*    */ package br.jus.stj.site.iphone.ui;
+/*    */ 
+/*    */ import br.jus.stj.site.iphone.Componente;
+/*    */ import java.util.List;
+/*    */ 
+/*    */ public class Form extends Componente
+/*    */ {
+/*    */   private String title;
+/*    */   private String clazz;
+/*    */   private String action;
+/* 16 */   private String method = "post";
+/*    */   private String selected;
+/*    */ 
+/*    */   public Form(String action)
+/*    */   {
+/* 21 */     this.action = action;
+/*    */   }
+/*    */ 
+/*    */   public String getCode()
+/*    */   {
+/* 26 */     String texto = "<form";
+/* 27 */     texto = texto + " action=\"" + this.action + "\"";
+/* 28 */     texto = texto + " method=\"" + this.method + "\"";
+/* 29 */     if (this.clazz != null)
+/* 30 */       texto = texto + " class=\"" + this.clazz + "\"";
+/* 31 */     if (this.title != null)
+/* 32 */       texto = texto + " title=\"" + this.title + "\"";
+/* 33 */     texto = texto + ">\n";
+/* 34 */     texto = texto + getCodeChild();
+/* 35 */     texto = texto + "</form>";
+/* 36 */     return texto;
+/*    */   }
+/*    */ 
+/*    */   protected void getMontarItensObrigatoriosOpcionais()
+/*    */   {
+/* 41 */     this.itensOpcionais.add(Input.class);
+/* 42 */     this.itensOpcionais.add(H1.class);
+/* 43 */     this.itensOpcionais.add(H2.class);
+/* 44 */     this.itensOpcionais.add(Img.class);
+/* 45 */     this.itensOpcionais.add(P.class);
+/* 46 */     this.itensOpcionais.add(Div.class);
+/* 47 */     this.itensOpcionais.add(Texto.class);
+/* 48 */     this.itensOpcionais.add(Texto.class);
+/* 49 */     this.itensOpcionais.add(Select.class);
+/*    */   }
+/*    */ 
+/*    */   public String getTitle() {
+/* 53 */     return this.title;
+/*    */   }
+/*    */ 
+/*    */   public void setTitle(String title) {
+/* 57 */     this.title = title;
+/*    */   }
+/*    */ 
+/*    */   public String getClazz() {
+/* 61 */     return this.clazz;
+/*    */   }
+/*    */ 
+/*    */   public void setClazz(String clazz) {
+/* 65 */     this.clazz = clazz;
+/*    */   }
+/*    */ 
+/*    */   public String getAction() {
+/* 69 */     return this.action;
+/*    */   }
+/*    */ 
+/*    */   public void setAction(String action) {
+/* 73 */     this.action = action;
+/*    */   }
+/*    */ 
+/*    */   public String getMethod() {
+/* 77 */     return this.method;
+/*    */   }
+/*    */ 
+/*    */   public void setMethod(String method) {
+/* 81 */     this.method = method;
+/*    */   }
+/*    */ 
+/*    */   public String getSelected() {
+/* 85 */     return this.selected;
+/*    */   }
+/*    */ 
+/*    */   public void setSelected(String selected) {
+/* 89 */     this.selected = selected;
+/*    */   }
+/*    */ }
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.ui.Form
+ * JD-Core Version:    0.6.0
+ */

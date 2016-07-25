@@ -1,0 +1,10 @@
+<HTML>
+<HEAD>
+	<TITLE>Fatura On-Line</TITLE>
+</HEAD>
+
+<frameset rows="430px, 50">
+	<frame src="main.jsp" name="main">
+	<FRAME src="banner_320x50.gif" NAME="banner">
+</FRAMESET>
+</HTML>

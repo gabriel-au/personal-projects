@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu"
+    android:gravity="top"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    
+	    <ImageButton
+	        android:id="@+id/buttonInstitucional"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+	        android:padding="280dp"
+	        android:layout_marginTop="425dp"
+	        android:layout_marginLeft="75dp"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/rounded_button"
+	        android:scaleType="fitEnd" />
+	    
+	    <ImageButton
+	        android:id="@+id/buttonLinhaTempo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+	        android:padding="160dp"
+	        android:layout_marginLeft="645dp"
+            android:layout_marginTop="360dp"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/rounded_button"
+	        android:scaleType="fitEnd" />
+	    
+	    <ImageButton
+	        android:id="@+id/buttonProjetos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+	        android:padding="160dp"
+	        android:layout_marginLeft="850dp"
+            android:layout_marginTop="665dp"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/rounded_button"
+	        android:scaleType="fitEnd" />
+	    
+	    <ImageButton
+	        android:id="@+id/buttonGaleriaFotos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+	        android:padding="160dp"
+	        android:layout_marginLeft="1065dp"
+            android:layout_marginTop="360dp"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/rounded_button"
+	        android:scaleType="fitEnd" />
+	    
+	    <ImageButton
+	        android:id="@+id/buttonGaleriaVideos"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+	        android:padding="160dp"
+	        android:layout_marginLeft="1280dp"
+            android:layout_marginTop="665dp"
+	        android:adjustViewBounds="true"
+	        android:background="@drawable/rounded_button"
+	        android:scaleType="fitEnd" />
+
+	    <!-- <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="1600dp"
+	        android:layout_marginTop="800dp"
+	        android:text="720"
+	        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+	            
+	</RelativeLayout>
+    
+    <!-- RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/menu" >
+        
+        
+        
+        <Button
+            android:id="@+id/buttonInstitucional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="182dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/rounded_button" />
+        
+        <Button
+            android:id="@+id/buttonLinhaTempo"
+            android:layout_width="205dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="435dp"
+            android:layout_marginBottom="285dp"
+            android:background="@drawable/rounded_button" />
+        
+        <Button
+            android:id="@+id/buttonProjetos"
+            android:layout_width="205dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="570dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/rounded_button" />
+        
+        <Button
+            android:id="@+id/buttonGaleriaFotos"
+            android:layout_width="205dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="715dp"
+            android:layout_marginBottom="285dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/buttonGaleriaVideos"
+            android:layout_width="205dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="855dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/rounded_button" />
+
+
+    </RelativeLayout-->
+
+
+</LinearLayout>
+
+<!-- 
+android:layout_width="365dp"
+            android:layout_height="380dp"
+
+ -->

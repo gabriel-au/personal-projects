@@ -1,0 +1,69 @@
+package br.jus.stj.site.iphone.paginas;
+
+import br.jus.stj.site.iphone.Padroes;
+import br.jus.stj.site.iphone.ui.Body;
+import br.jus.stj.site.iphone.ui.Div;
+import br.jus.stj.site.iphone.ui.H1;
+import br.jus.stj.site.iphone.ui.HTML;
+import br.jus.stj.site.iphone.ui.P;
+import br.jus.stj.site.iphone.util.CriarArquivo;
+
+public class GeraPaginasErro
+{
+  public static void main(String[] args)
+  {
+/* 17 */     gerar();
+  }
+
+  public static void gerar() {
+    try {
+/* 22 */       gerarErro400();
+/* 23 */       gerarErro500();
+    }
+    catch (Exception e) {
+/* 26 */       e.printStackTrace();
+    }
+  }
+
+  public static void gerarErro400() throws Exception
+  {
+/* 32 */     HTML pagina = new HTML();
+/* 33 */     pagina.add(Padroes.getHeader());
+/* 34 */     Body body = Padroes.getBody();
+/* 35 */     pagina.add(body);
+
+/* 37 */     String texto = "A página que você procura não está disponível no portal móvel do STJ. Por favor, verifique se você digitou o endereço corretamente e tente outra vez";
+/* 38 */     Div div = new Div("mensagem");
+/* 39 */     H1 titulo = new H1("A Página não foi Encontrada.");
+/* 40 */     P mensagem = new P(texto);
+
+/* 42 */     div.add(titulo);
+/* 43 */     div.add(mensagem);
+/* 44 */     body.add(div);
+
+/* 46 */     CriarArquivo.salvar("erro/400.jsp", pagina);
+  }
+
+  public static void gerarErro500() throws Exception {
+/* 50 */     HTML pagina = new HTML();
+/* 51 */     pagina.add(Padroes.getHeader());
+/* 52 */     Body body = Padroes.getBody();
+/* 53 */     pagina.add(body);
+
+/* 55 */     String texto = "Uma operação gerou uma falha na requisição desta página. Por favor, verifique se você digitou o endereço corretamente e tente outra vez";
+/* 56 */     Div div = new Div("mensagem");
+/* 57 */     H1 titulo = new H1("A Página não foi carregada.");
+/* 58 */     P mensagem = new P(texto);
+
+/* 60 */     div.add(titulo);
+/* 61 */     div.add(mensagem);
+/* 62 */     body.add(div);
+
+/* 64 */     CriarArquivo.salvar("erro/500.jsp", pagina);
+  }
+}
+
+/* Location:           /Users/Gabriel/Workspace/POCs/Workspaces/workspace.POCS/STJMobileSite/WebContent/WEB-INF/classes/
+ * Qualified Name:     br.jus.stj.site.iphone.paginas.GeraPaginasErro
+ * JD-Core Version:    0.6.0
+ */

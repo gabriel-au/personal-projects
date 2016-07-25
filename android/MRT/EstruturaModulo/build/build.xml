@@ -1,0 +1,44 @@
+<project name="EstruturaModulo" default="jar" basedir=".">
+
+	<property name="brq-win-lib-dir" value="../../BRQMobileWin/lib" />
+	<property name="service-dist-dir" value="../../VendasService/lib" />
+	
+	<property name="brq-martins-lib-dir" value="../../MartinsDist/framework" />
+
+	<property name="estrutura-modulo-src-dir"  location="../src" />
+	<property name="estrutura-modulo-bin-dir"  location="../bin" />
+	<property name="estrutura-modulo-dist-dir"  location="../dist" />
+
+	<path id="service-classpath-base">
+		<pathelement location="${brq-martins-lib-dir}/framework-base.jar" />
+		<pathelement location="${brq-martins-lib-dir}/framework-windows.jar" />
+		<pathelement location="${brq-win-lib-dir}/xpp3-1.1.4c.jar" />
+		<pathelement location="${service-dist-dir}/VendasService.jar" />
+	</path>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${estrutura-modulo-dist-dir}/EstruturaModulo.jar">
+			<fileset dir="${estrutura-modulo-bin-dir}" />
+		</jar>
+	</target>
+
+	<target name="compile" depends="clean,init">
+		<echo>Compilando projeto EstruturaModulo</echo>
+		<javac debug="on" includeantruntime="true" destdir="${estrutura-modulo-bin-dir}">
+			<src path="${estrutura-modulo-src-dir}" />
+			<classpath refid="service-classpath-base" />
+		</javac>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${estrutura-modulo-bin-dir}" />
+	</target>
+
+	<target name="clean" >
+		<delete failonerror="false">
+			<fileset dir="${estrutura-modulo-dist-dir}" />
+			<fileset dir="${estrutura-modulo-bin-dir}" />
+		</delete>
+	</target>
+
+</project>

@@ -1,0 +1,13 @@
+###############################
+#                             #  
+#  Configuração da aplicação
+#                             #  
+# autor: Gustavo Marcelo      #  
+###############################
+
+#configuração de banco
+driver=com.mysql.jdbc.Driver
+user=root
+password=root
+url=jdbc:mysql://localhost:3306/fiscon2
+

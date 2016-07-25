@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.1.v200908111817,"org.eclipse.jst.common.project.facet.core",1280329218605
+started,bundle,org.eclipse.dltk.core,1.0.1.v20090910-1601,"org.eclipse.dltk.core",1280329218657
+started,bundle,org.eclipse.dltk.launching,1.0.1.v20090910-1601,"org.eclipse.dltk.launching",1280329218689
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1280329218836
+started,bundle,org.eclipse.jem,2.0.300.v200901272200,"org.eclipse.jem",1280329218848
+started,bundle,org.eclipse.jst.common.frameworks,1.1.300.v200904132230,"org.eclipse.jst.common.frameworks",1280329218882
+started,bundle,org.eclipse.jst.j2ee.core,1.1.301.v200908181930,"org.eclipse.jst.j2ee.core",1280329218931
+started,bundle,org.eclipse.jst.j2ee.web,1.1.301.v200908270924,"org.eclipse.jst.j2ee.web",1280329219134
+started,bundle,org.eclipse.jst.jee,1.0.201.v200909030330,"org.eclipse.jst.jee",1280329219179
+started,bundle,org.eclipse.jst.jsf.common,1.1.7.v20090903,"org.eclipse.jst.jsf.common",1280329219232
+started,bundle,org.eclipse.jst.jsf.core,1.2.2.v20090903,"org.eclipse.jst.jsf.core",1280329219321
+os,sysinfo,,,"macosx",1280329219327
+arch,sysinfo,,,"x86_64",1280329219327
+ws,sysinfo,,,"cocoa",1280329219327
+locale,sysinfo,,,"en_US",1280329219327
+processors,sysinfo,,,"2",1280329219327
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1280329219327
+java.runtime.version,sysinfo,,,"1.6.0_20-b02-279-10M3065",1280329219327
+java.specification.name,sysinfo,,,"Java Platform API Specification",1280329219327
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1280329219327
+java.specification.version,sysinfo,,,"1.6",1280329219327
+java.vendor,sysinfo,,,"Apple Inc.",1280329219327
+java.version,sysinfo,,,"1.6.0_20",1280329219327
+java.vm.info,sysinfo,,,"mixed mode",1280329219327
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1280329219327

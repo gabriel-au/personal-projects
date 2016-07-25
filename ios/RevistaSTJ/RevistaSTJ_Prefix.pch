@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'RevistaSTJ' target in the 'RevistaSTJ' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "TemplateDAO.h"
+	#import "Constantes.h"
+#import "FMDatabase.h"
+#endif

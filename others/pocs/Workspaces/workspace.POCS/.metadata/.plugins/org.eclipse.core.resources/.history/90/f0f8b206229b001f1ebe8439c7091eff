@@ -1,0 +1,221 @@
+/*Sala de not�cias*/
+.titulo_mais_noticias {
+	display: block;
+	padding-top: 3px;
+	padding-right: 5px;
+	background-image: url("../imagens/bg-barra_p.png");
+	height: 28px;
+	text-align: right;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.titulo_mais_noticias>a {
+	background: transparent url("../imagens/btn_link_branco.png") no-repeat scroll right center;
+	color: #fff;
+	font-size: 20px;
+	padding-right: 30px;
+}
+
+/**/
+.voos {
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.arredondado {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	border: 1px solid #DDE;
+	font-size: 16px;
+}
+
+.arredondado_center {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	border: 1px solid #DDE;
+	text-align: center;
+}
+
+.arredondado_titulo {
+	color: #9D362E;
+	text-align: left;
+	font-weight: bold;
+}
+
+.arredondado_titulo_voos {
+	color: #9D362E;
+	text-align: left;
+	font-weight: bold;
+}
+
+.arredondado_titulo_espaco_superior {
+	border-top: 1px dashed #DDE;
+	color: #9D362E;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+.arredondado_chamada {
+	border-top: 1px dashed #DDE;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+.arredondado_chamada_simples {
+	padding-top: 0px;
+}
+.arredondado_chamada_simples_espaco {
+	padding-top: 10px;
+}
+.arredondado_chamada_simples>a {
+	font-weight: bold;
+}
+.arredondado_chamada_simples_center {
+	padding-top: 10px;
+	text-align: center;
+}
+.arredondado_chamada_negrito {
+	border-top: 1px dashed #DDE;
+	text-align: left;
+	margin-top: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+}
+.arredondado_chamada_negrito_sem_borda {
+	text-align: left;
+	font-weight: bold;
+}
+.arredondado_chamada_right {
+	text-align: right;
+	font-weight: bold;
+}
+.arredondado_chamada_right_borda {
+	text-align: right;
+	font-weight: bold;
+	border-bottom: 1px dashed #DDE;
+	padding-bottom: 10px;
+}
+.arredondado_chamada_dupla_borda {
+	border-top: 1px dashed #DDE;
+	border-bottom: 1px dashed #DDE;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.arredondado_link_borda {
+	border-top: 1px dashed #DDE;
+	background: transparent url("../imagens/btn_link.png") no-repeat scroll right center;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.arredondado_link {
+	background: transparent url("../imagens/btn_link.png") no-repeat scroll right center;
+	padding-right: 20px;
+	font-weight: bold;
+}
+.arredondado_link_left {
+	background: transparent url("../imagens/btn_link.png") no-repeat scroll right center;
+	padding-right: 20px;
+	padding-left: 30px;
+}
+.arredondado_link_left_espaco_superior {
+	background: transparent url("../imagens/btn_link.png") no-repeat scroll right center;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+.arredondado_link>a {
+	font-weight: bold;
+}
+.arredondado_link_left>a {
+	font-weight: bold;
+}
+.arredondado_link_left_espaco_superior>a {
+	font-weight: bold;
+}
+
+/*Listar as noticias*/
+.arredondado_titulo_hora {
+	border-top: 1px dashed #DDE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	color: #354E77;
+	margin-top: 10px;
+}
+
+.lista_texto {
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+.lista_texto>a {
+	color: #494949;
+}
+
+.formulario{
+	padding-top: 10px;
+	text-align: center;
+}
+
+.formulario_submit {
+	background-color: #DDE;
+	border: 1px solid #DDE;
+	color: #eef3f6;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 6px;
+	width: 100px;
+}
+
+/*lista*/
+.lista {
+	color: #4d4835;
+	font-weight: bold;
+	border: 1px solid #c9c8ac;
+	margin-top: 15px;
+}
+
+.lista>a {
+}
+
+.lista_esquerda {
+	width: 30px;
+	float: left;
+	clear: both;
+}
+
+.lista_central {
+	border-left: 1px dashed #c9c8ac;
+	margin-left: 30px;
+	font-weight: lighter;
+}
+
+.lista_central>a {
+	color: #4d4835;
+	font-weight: bold;
+}
+
+.lista_base {
+	border-top: 1px dashed #c9c8ac;
+	font-weight: normal;
+	padding: 0;
+	float: none;
+}
+

@@ -1,0 +1,46 @@
+FISCON
+
+* GERAL
+- Implementar funcionalidade de gerar lotes das mutas (por hora);
+
+* Import
+- Recebe arquivos com formato TXT com a base de dados do DETRAN/DF (municipios, cores, placas, …)
+Obs.: layout autoexplicativo (já está definido no projeto FISCON IMPORT no repositório do FISCON);
+Sugestão: Interface gráfica;
+
+* Export
+- Gerar lotes com imagens e txts com os dados da infração;
+
+* Mobile
+- Implementar funcionalidade para atualização automática do aplicativo;
+- Login com tempo de expiração (1 hora);
+- Implementar um banco local com uma função de "favoritos" para os 10 códigos de infração mais utilizados;
+- Implementar função de pesquisa por número e descrição (de forma mais automática);
+- Na parte de endereço obter o GPS e confirmar o endereço com uma possível referência (com opção de digitação manual);
+- Implementar thread que não trave a tela no envio;
+- Auto salvar o auto de infração evitando a perda caso a bateria acabe;
+- Permitir a opção de salvar o auto;
+
+- Implementar a consulta de CNH (implementar consulta por robô - cnh e dt nasc., e banco fake - cnh e cpf);
+- Auto com foto e sem foto;
+- Relatório diário;
+- Logout;
+- Ajuda;
+
+
+* Web
+- Consulta veículo;
+- Consulta CNH;
+- Relatórios de multas (mes, agente, hora, local);
+- Alterar a lógica de controle de usuários;
+
+* Middleware
+- Processamento dos dados;
+
+
+PLATAFORMAS:
+- GSM:
+Nenhuma restrição
+
+- NEXTEL:
+Dividir imagens em pacotes menores que 5KB;

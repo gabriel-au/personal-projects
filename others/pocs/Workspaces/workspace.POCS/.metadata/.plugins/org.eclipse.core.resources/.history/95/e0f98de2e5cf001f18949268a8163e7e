@@ -1,0 +1,93 @@
+package br.jus.tst.mobilesite.servlet;
+
+import br.jus.stj.mobile.SystemException;
+import br.jus.stj.mobile.bd.consulta.ConsultaDiarioJustica;
+import br.jus.stj.mobile.bd.pojo.DiarioJusticaPojo;
+import br.jus.tst.mobilesite.ui.A;
+import br.jus.tst.mobilesite.ui.Div;
+import br.jus.tst.mobilesite.ui.Input;
+import br.jus.tst.mobilesite.ui.P;
+import br.jus.tst.mobilesite.ui.Texto;
+import java.util.List;
+
+public class PaginaDJEletronicoConsultas {
+	public Div getNumero() throws SystemException {
+		Div d = new Div();
+
+		d.add(new Div("arredondado_chamada", new Texto(
+				"Número do Processo no STJ:")));
+
+		Div div = new Div("arredondado_chamada_simples_center");
+		div.add(new Input("text", "parametro", "input_text", "", "50"));
+		div.add(new Input("submit", "valor", "input_submit", "", "50"));
+		d.add(div);
+
+		d.add(new Div("arredondado_chamada", new Texto("Data:")));
+
+		Div div = new Div("arredondado_chamada_simples_center");
+		div.add(new Input("text", "parametro", "input_text", "", "10"));
+		div.add(new Input("button", "valor", "input_data", "", "50"));
+		d.add(div);
+
+		return d;
+	}
+
+	public Div getNumeroRegistro() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getNumeroUnico() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getNumeroOrigem() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getOAB() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getNomeParte() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getNomeAdvogado() throws SystemException {
+		Div d = new Div();
+		return d;
+	}
+
+	public Div getIntegral() throws SystemException {
+		ConsultaDiarioJustica consulta = new ConsultaDiarioJustica();
+
+		Div d = new Div();
+
+		d.add(new P(
+				"Atenção! Cada arquivo PDF contendo a íntegra do DJe tem um tamanho aproximado de 30 MB. Arquivos desse tamanho costumam levar cerca de 30 minutos para serem copiados (download) em conexões de 256 Kbps, podendo demorar mais em função da quantidade de usuários que estiverem utilizando o serviço. Caso haja lentidão excessiva durante a cópia do arquivo, tente efetuá-lo em horários de menor concorrência."));
+
+		d.add(new P(
+				"O arquivo único representa o resultado de um dos critérios de pesquisa. Não tem valor legal por não ser assinado digitalmente. O resultado dessa pesquisa é mantido durante 60 dias."));
+
+		List lista = consulta.listarUltimasEdicoes();
+
+		for (DiarioJusticaPojo pojo : lista) {
+			A a = new A(pojo.getLink(), true);
+			Div div = new Div();
+			div.add(new Div(new Texto("Edição nº " + pojo.getEdicao() + " "
+					+ pojo.getLocal())));
+			div.add(new Div(new Texto(pojo.getDisponivelEm())));
+			div.add(new Div(new Texto(pojo.getPublicadoEm())));
+
+			a.add(div);
+
+			d.add(new Div("arredondado_link_borda", a));
+		}
+
+		return d;
+	}
+}

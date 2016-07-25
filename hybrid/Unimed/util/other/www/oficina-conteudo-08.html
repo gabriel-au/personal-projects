@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<style>
+			.footer {
+				position:absolute;
+				width:100%;
+				height:50px;
+				left:0;
+				top:1000px;
+				z-index:1;
+				border-top:2px solid #696969;
+			    background: #000000 url(includes/images/bg-footer_a.png);
+			}
+
+
+			.footer ul.evento{
+				list-style-type:none;
+				display:block;
+				position:relative;
+				margin:0 10px;
+				padding:0;
+			}
+			.footer ul.evento li
+			{
+				float:left; 
+				display:block;
+				width:59px;
+				height:50px;
+				margin:0;
+			}
+			.footer ul.evento li a{
+				display:block;
+				float:left;
+			    margin:4px 0;
+				width: 59px;
+				height:13px;
+				padding-top:33px;
+				text-align: center;
+				font-size:8px;
+				color: #A8A8A8;
+				text-decoration:none;
+				background:url(includes/images/menu_a.png) no-repeat scroll 0 -4px transparent;
+			    border-radius:5px;
+			}
+
+			ul.evento li.highlight a {
+			    color:#FFFFFF;
+			}
+			ul.evento li a.informacoes:hover, 
+			ul.evento li.highlight a.informacoes{
+				background-position:0 -54px;
+			}
+			ul.evento li a.programacao{
+				background-position:-60px -4px;
+			}
+			ul.evento li a.programacao:hover,
+			ul.evento li.highlight a.programacao{
+				background-position:-60px -54px;
+			}
+			ul.evento li a.negocios{
+				background-position:-120px -4px;
+			}
+			ul.evento li a.negocios:hover,
+			ul.evento li.highlight a.negocios{
+				background-position:-120px -54px;
+			}
+			ul.evento li a.mapa{
+				background-position:-180px -4px;
+			}
+			ul.evento li a.mapa:hover,
+			ul.evento li.highlight a.mapa{
+				background-position:-180px -54px;
+			}
+			ul.evento li a.executivos{
+				background-position:-240px -4px;
+			}
+			ul.evento li a.executivos:hover,
+			ul.evento li.highlight a.executivos{
+				background-position:-240px -54px;
+			}
+		</style>
+		<script>
+            $(document).ready(function(){
+                              $(".footer").css("top", $(window).height() - 67);
+                              $(".bg-brq").css("top", $(window).height() - 115);
+                              $(".content").css("height", $(window).height() - 165);
+                              $(".content .android").css("height", $(window).height() - 165);
+                              $(window).resize(function() {
+                                               $(".footer").css("top", $(window).height() - 67);
+                                               $(".bg-brq").css("top", $(window).height() - 115);
+                                               $(".content").css("height", $(window).height() - 165);
+                                               $(".content .android").css("height", $(window).height() - 165);
+                                               });
+                              })
+            </script>
+        <div class="header">
+        	<div class="title">Conteúdo oficina</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="oficinas.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="aviso">Estratégica da Unimed do Brasil junto ao Órgão Regulador</h2>
+        	<p><strong>Ministrada por </strong>Luciana Souza da Silveira</p>
+        	<p>Carga horária: 01 hora<br />
+        	Horário: 15h às 16h<br />
+        	Local: Sala Graciosa I</p>
+        	<p>Considerada uma área estratégica da Unimed do Brasil, a Superintendência de Regulação está vinculada diretamente à Presidência, justamente para que possa interagir com dirigentes, gestores e técnicos e fazer com que os processos de trabalho relacionados à regulação funcionem de maneira alinhada com toda a estrutura organizacional, pois somente desta forma será possível atingir os objetivos transversais à organização – eficácia nos outputs, eficiência dos recursos e aumento de valor.</p>
+            <p>O projeto da Superintendência de Regulação foi aprovado na reunião da Diretoria Executiva da Unimed do Brasil do dia 09 de novembro de 2012, momento em que ficou estabelecido que a atividade principal da Superintendência seria subsidiar a Unimed do Brasil nos aspectos concernentes à política regulatória, buscando defender os direitos e interesses das cooperativas médicas junto aos Órgãos e Entidades da Administração Pública Federal e estimular a coesão nas ações estratégicas e operacionais do Sistema Cooperativista. O objetivo dessa oficina é Demonstrar a importância do diálogo com o Órgão Regulador para a defesa dos interesses do Sistema Unimed.</p>
+            <div class="dotted-border"></div>
+            
+            <p><strong>Público-alvo</strong></p>
+            <p>Dirigentes, Conselheiros e Executivos do Sistema Unimed</p>
+            <div class="dotted-border"></div>
+            
+            <h2 class="aviso">Conteúdo Programático</h2>
+            <p>- Demonstração de resultados da Superintendência de Regulação.<br />
+			<div class="dotted-border"></div>
+            
+            <h2 class="aviso">Currículo Palestrante</h2> 
+            <p>Luciana Silveira é graduada em Administração - UNEB DF; MBA em Gestão de Saúde - FGV RJ.<br /><br />
+            MBA em Regulação de Saúde Suplementar - FGV RJ e Mestre em Gestão de Saúde - FIOCRUZ RJ.<br /><br />
+            Autora do livro Prevenção de Doenças e Promoção da Saúde – diferenciais estratégicos na conjuntura da saúde suplementar e de diversos artigos.<br /><br />
+            Iniciou sua carreira em 1992, na operadora de planos de saúde Amil, em Brasília, onde permaneceu por 7 anos.<br /><br />
+            Em 1999 atuou como Consultora da Organização Pan-Americana da Saúde, no Ministério da Saúde, oportunidade em que propôs reformas no texto da Lei 9.656/98, a qual regulamenta os planos de saúde, que naquela época eram realizadas por meio de publicações mensais de Medidas Provisórias.<br /><br />
+            Em 2000 aceitou o convite para ser Gerente de Fiscalização da ANS (DIFIS), no Rio de Janeiro, e ajudar na implantação dos trabalhos da nova Agência Reguladora.<br /><br />
+            Tornou-se Diretora-Adjunta da Diretoria de Normas e Habilitação de Operadoras (DIOPE), Diretora-Adjunta de Desenvolvimento Setorial (DIDES), Diretora-Adjunta de Normas e Habilitação de Produtos (DIPRO), Secretária-Executiva (PRESI) e Secretária-Geral da ANS (DICOL), sendo estes dois últimos cargos de enorme prestígio no serviço público, já que o Secretário é uma autoridade que pode substituir, inclusive, Ministros e tem denotação totalmente distinta daquela usualmente utilizada no setor privado.<br /><br />
+            Participou de discussões estratégicas, da formulação de normativos relacionados à regulamentação dos planos de saúde e foi representante da ANS junto à Casa Civil da Presidência da República nas reuniões sobre política regulatória.<br /><br />
+            Atualmente é Superintendente de Regulação da Unimed do Brasil.<br /></p>
+       </div>
+       <div class="bg-brq"></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index2.html" data-transition="none" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="none" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="none" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="none" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="none" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

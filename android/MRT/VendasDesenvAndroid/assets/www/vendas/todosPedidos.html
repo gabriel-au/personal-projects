@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/scroll.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/UISlider-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	<script src="../includes/js/iscroll-lite.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(		
+			function(){
+				BRQNavegacao.adicionarPilhaNavegacao('todosPedidos');
+						
+				controleBotoes();			
+				carregaPedidos();
+				
+				$("#clientePedido").keydown(function(event){
+				var keyCode = (event.keyCode ? event.keyCode : event.which);
+				if (keyCode == 13){
+					montarListaPedido();
+				}				
+			});	
+			
+			$("#clientePedido-clearBt").mousedown(function(){
+				carregaPedidos();
+			});					
+		});			
+		
+		function carregaPedidos(){
+			var objStorageClientes = getCliente();
+			var codigoCliente = (objStorageClientes != null ? objStorageClientes.codigoCliente : null);
+			BRQMob.log("entrando na funcao carregar pedidos");
+		  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "pedidos", [ codigoCliente ]);			
+		}
+		
+		function sucesso(retorno){
+			listaPedidos = retorno.pedidos;
+			loadListaPedidos(retorno.pedidos);
+		}
+		
+		function loadListaPedidos(pedidos){
+			 BRQMob.log(JSON.stringify(pedidos));
+			$("#tbody_todos_pedidos").empty();
+			var tbody_todos_pedidos = $("#tbody_todos_pedidos");
+			$.each(pedidos, function(i,obj){
+				tr = $('<tr/>', {"onclick":"tableTR(this);"});
+				td_codigo= $('<td/>', {});
+				div_codigo=$('<div/>', {"class":"left"});
+				$($('<label/>', {"class":"left"})).appendTo(div_codigo);
+				$($('<span/>', {text:obj.codigoCliente})).appendTo(div_codigo);
+				$($('<br/>', {"class":"clear"})).appendTo(div_codigo);
+				$($('<label/>', {"class":"grid"})).appendTo(div_codigo);
+				$($('<span/>', {text:obj.nomeCliente})).appendTo(div_codigo);
+				div_btn=$('<div/>', {"class":"right", "style":"margin-top: 2px;"});
+				href=$('<a/>', {href:"javascript:void(0);","class":"button right", onclick : "gravaNumeroPedidoSelecionado("+obj.numeroPedido+");ativaOpcoesPedido('"+obj.nomeCliente+"','"+obj.codigoCliente+"','"+obj.numeroPedido+"','"+obj.preparado +"','"+ obj.dataPedido +"','"+ obj.horaPedido +"','"+ obj.dataResultado +"','"+ obj.quantidadeItens +"','"+ obj.valorTotalPedido +"');selecionaLinha(" + obj.codigoCliente + ",'" + obj.nomeCliente + "'," + obj.numeroPedido + "," + obj.codigoTerritorio + ",'" + obj.codigoSegmento + "'" + ");"});
+				$($('<span/>', {"class":"icon opcoes"})).appendTo(href);
+				$(href).appendTo(div_btn);
+				$(div_codigo).appendTo(td_codigo);
+				$(div_btn).appendTo(td_codigo);
+				$(td_codigo).appendTo(tr);
+			
+				
+				td_numPedido= $('<td/>', {});
+				numPedido=$($('<label/>', {})).appendTo(td_numPedido);
+				$($('<span/>', {text:obj.numeroPedido})).appendTo(numPedido);
+				$(td_numPedido).appendTo(tr);
+				
+				td_prep= $('<td/>', {});
+				prep=$($('<label/>', {"class":"left"})).appendTo(td_prep);
+				$($('<span/>', {text:obj.preparado})).appendTo(prep);
+				$(td_prep).appendTo(tr);
+				
+				td_data_pedido= $('<td/>', {});
+				data_pedido=$($('<label/>', {})).appendTo(td_data_pedido);
+				$($('<span/>', {text:obj.dataPedido})).appendTo(data_pedido);
+				$(td_data_pedido).appendTo(tr);
+				
+				td_hora_pedido= $('<td/>', {});
+				hora_pedido=$($('<label/>', {})).appendTo(td_hora_pedido);
+				$($('<span/>', {text:obj.horaPedido})).appendTo(hora_pedido);
+				$(td_hora_pedido).appendTo(tr);
+				
+				td_data_result= $('<td/>', {});
+				data_result=$($('<label/>', {})).appendTo(td_data_result);
+				$($('<span/>', {text:obj.dataResultado})).appendTo(data_result);
+				$(td_data_result).appendTo(tr);
+				
+				td_qtd_itens= $('<td/>', {});
+				qtd_itens=$($('<label/>', {})).appendTo(td_qtd_itens);
+				$($('<span/>', {text:obj.quantidadeItens})).appendTo(qtd_itens);
+				$(td_qtd_itens).appendTo(tr);
+				
+				td_tot_liq= $('<td/>', {});
+				liq=$($('<label/>', {"class":"right"})).appendTo(td_tot_liq);
+				$($('<span/>', {text:obj.valorTotalPedido})).appendTo(liq);
+				$(td_tot_liq).appendTo(tr);
+				
+				td_cortes= $('<td/>', {});
+				cortes=$($('<label/>', {})).appendTo(td_cortes);
+				$($('<span/>', {text:obj.mercadoriaCortada})).appendTo(cortes);
+				$(td_cortes).appendTo(tr);
+				
+				$(tr).appendTo(tbody_todos_pedidos);	
+			});
+		}
+			
+		function selecionaLinha(codigoCliente, nomeCliente, numPedido,codigoTerritorio,codigoSegmento){
+			
+			objStorageClientes = new Object();
+			objStoragePedido = new Object();			
+		
+			objStorageClientes.codigoCliente = codigoCliente;
+			objStorageClientes.nomeCliente = nomeCliente;
+			objStorageClientes.codigoTerritorio = codigoTerritorio;
+			objStorageClientes.codigoSegmento = codigoSegmento;
+			objStoragePedido.numeroPedido = numPedido;			
+			
+			sessionStorage.setObject('pedido', objStoragePedido);
+			sessionStorage.setObject('cliente', objStorageClientes);		
+		}	
+		
+		function removeSelecaoLinha(){
+			sessionStorage.removeObject('pedido');
+			sessionStorage.removeObject('cliente');		
+		}
+			
+		function falha(retorno){
+			BRQMob.log("falha dados iniciais: " + retorno);	 
+		}
+		
+		function proximaPagina(){
+			if('clienteRelacionamento' == getViewNameOrigem()){
+				window.location.href = getUrlPagina('informacoesGerais');
+			}else{
+				window.location.href = getUrlPagina('listaCliente');
+			}
+		}		
+		
+		function montarListaPedido(){
+			if(listaPedidos!=null){
+				var pedidos = new Array();
+				var clientePedido = $('#clientePedido').val().trim();	
+	  			if(parseInt(clientePedido) ) {
+ 			   		pedidos = retornaListaPorCodPedidoOuCodCliente(listaPedidos, clientePedido);     			   		
+				}else{					
+	  				pedidos = retornaListaPorNomeCliente(listaPedidos, clientePedido);
+	  			}
+	  			loadListaPedidos(pedidos);
+	  			scrollTop();
+			}
+		}
+		
+		function retornaListaPorNomeCliente(listaPedidos, clientePedido){
+			var listaPorNomeCliente = new Array();
+			for(var index=0;index<listaPedidos.length;index++){
+				if(listaPedidos[index].nomeCliente.toLowerCase().indexOf(clientePedido.toLowerCase()) != -1 ){
+					listaPorNomeCliente.push(listaPedidos[index]);
+	    		}
+			}
+    		return listaPorNomeCliente;
+		}
+		
+		function retornaListaPorCodPedidoOuCodCliente(listaPedidos, clientePedido){
+			var listaPorCodPedido = new Array();	
+			for(var index=0; index<listaPedidos.length; index++){
+				if(listaPedidos[index].numeroPedido==clientePedido ||  listaPedidos[index].codigoCliente == clientePedido){				
+					listaPorCodPedido.push(listaPedidos[index]);
+				}
+			}	
+			return listaPorCodPedido;
+		}
+		
+		function controleBotoes(){
+			if(!getViewNameOrigem()){
+				$('#botaoVoltar').empty().remove();
+			}else{
+				$('#menuButton').empty().remove();
+			}
+		}
+		
+		function PedidoEmail(nomeCliente,codigoCliente,numeroPedido,preparado,dataPedido,horaPedido,dataResultado,quantidadeItens,valorTotalPedido ) {
+			this.nomeCliente = nomeCliente;
+			this.codigoCliente = codigoCliente;
+			this.numeroPedido = numeroPedido;
+			this.preparado = preparado;
+			this.dataPedido = dataPedido;
+			this.horaPedido = horaPedido;
+			this.dataResultado = dataResultado;
+			this.quantidadeItens = quantidadeItens;
+			this.valorTotalPedido = valorTotalPedido;
+		}
+		
+		function montarPedidoEmail(nomeCliente,codigoCliente,numeroPedido,preparado,dataPedido,horaPedido,dataResultado,quantidadeItens,valorTotalPedido){
+				var pedidoEmail = new PedidoEmail(nomeCliente,codigoCliente,numeroPedido,preparado,dataPedido,horaPedido,dataResultado,quantidadeItens,valorTotalPedido);
+				//guarda o pedido no objeto de pedidos
+				sessionStorage.setObject('pedidoEmail', pedidoEmail);
+				window.location.href = "../vendas/gerarPDF_pedido.html";
+				// window.location.href = getUrlPagina("gerarPDF_pedido");
+		}
+		
+		function gravaNumeroPedidoSelecionado(numeroPedidoSelecionado){
+			var pedido = new Object();
+			pedido.numeroPedido = numeroPedidoSelecionado;
+			sessionStorage.setObject('pedido', pedido);
+			sessionStorage.setObject('numeroPedidoSelecionado', numeroPedidoSelecionado);
+		}
+		
+		function removeNumeroPedidoSelecionado(){
+			sessionStorage.removeObject('numeroPedidoSelecionado');
+		}
+		
+		function carregaTodosPedidos(){
+			BRQMob.log("entrando na funcao carregaTodosPedidos()");
+		  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "pedidos", []);			
+		}
+		
+		function excluiPedido(){
+			var numeroPedidoSelecionado = sessionStorage.getObject('numeroPedidoSelecionado');
+			if (confirm("Deseja realmente excluir o pedido de no. " + numeroPedidoSelecionado + " ?")){
+				BRQMob.exec("retornoExcluiPedido", "retornoExcluiPedido", "VendasDispatcher", "excluiPedido", [numeroPedidoSelecionado]);
+			}		
+		}
+		
+		function retornoExcluiPedido(retorno){
+			if(retorno.mensagem != null){
+				alert(retorno.mensagem);
+				carregaTodosPedidos();
+				evento3(this);
+			}
+		}
+		
+		function voltar(){
+			
+			//Remove pedido do storage
+			removeSelecaoLinha();
+			removeNumeroPedidoSelecionado();
+			
+			if('listaCliente' == getViewNameOrigem()){
+				nav(getPage('listaCliente'));
+			}else if('clientePedidos' != getViewNameOrigem()){
+				sessionStorage.removeItem("listaCliente");
+				BRQNavegacao.voltar();				
+			}else{
+				BRQNavegacao.voltar();
+			}
+		}
+		
+		var myScroll;
+		function loaded() {
+			myScroll = new iScroll('div-wrapper-area', {
+					useTransform: true,
+			    	onBeforeScrollStart: function (e) {
+				        var target = e.target;
+				        while (target.nodeType != 1) {target = target.parentNode};
+				        if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+				        	e.preventDefault();
+				        }
+			       },
+			       onListEndV: function (){
+			       		BRQMob.log('Log onListEndV not remove!');
+			       }
+			    });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		document.addEventListener('DOMContentLoaded', loaded, false);		
+		
+	</script>
+
+</head>
+
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:voltar()">Voltar</a>
+				<h1>Todos os Pedidos</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent">
+				<div class="panel">
+					<div class="left">
+						<input type="text" onchange="montarListaPedido()" class="type search" placeholder="Pesquisa de clientes e pedido" style="width:320px;" id="clientePedido"/>
+					</div>
+				</div>
+			</div>
+				<div id="div-header-area"></div>
+				<div id="div-wrapper-area" style="top:110px;height:465px;">
+				<div id="div-scroller-area" class="result">
+					<table style="width: 2080px" cellspacing="0" id="tabela_todos_pedidos">
+						<thead>
+							<tr>
+								<th style="width:100px;">Código/Nome do Cliente</th>
+								<th style="width:100px;">N° Pedido</th>
+								<th style="width:50px;">Prep.</th>
+								<th style="width:100px;">Data Ped.</th>
+								<th style="width:100px;">Hora Ped.</th>
+								<th style="width:100px;">Data Result.</th>
+								<th style="width:100px;">N° itens</th>
+								<th style="width:50px;">Total líq.</th>
+								<th style="width:50px;">Cortes</th>
+							</tr>
+						</thead>
+						<tbody id="tbody_todos_pedidos">
+						</tbody>
+					</table>					
+				</div>
+			</div>					
+			<div id="div-footer-area"></div>			
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+
+</html>

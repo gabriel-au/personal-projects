@@ -1,0 +1,34 @@
+10
+
+dir
+42
+svn+ssh://192.168.1.15/svn/poc/trunk/TPi/iPhone/FaturaOnLine/build
+svn+ssh://192.168.1.15/svn/poc
+
+
+
+2010-08-02T20:48:36.050891Z
+19
+gabrielsilva
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3ebed8b1-cc68-4b1b-8978-543341dfb65d
+
+Debug-iphonesimulator
+dir
+
+FaturaOnLine.build
+dir
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Unimed</title>
+<!--<link rel="stylesheet" type="text/css" href="includes/css/estilo.css"/>-->
+	<link rel="stylesheet" type="text/css" href="includes/css/estilo-android.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile-1.0rc1.css"/>
+	<link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.scrollview.css"/>  
+	<link rel="stylesheet" type="text/css" href="includes/css/themes" />  
+	<link rel="stylesheet" type="text/css" href="includes/css/jqm-docs-1.css"/>
+	
+	<script src="includes/js/jquery-1.6.2.min.js"></script>
+	<script src="includes/js/jquery.mobile-1.0rc1.js"></script>
+	<script src="includes/js/jquery.mobile.scrollview.js"></script>
+	<script src="includes/js/data.js"></script>
+	
+	<script src="includes/js/jquery.easing.1.3.js"></script>
+	<script src="includes/js/scrollview.js"></script>
+</head>
+<body>
+	<div class="container" data-role="page">
+		<script>
+			$(document).ready(function(){
+				$(".footer").css("top", $(window).height() - 50);
+				$(".bg-brq").css("top", $(window).height() - 98);
+				$(".content").css("height", $(window).height() - 148);
+				$(".content .android").css("height", $(window).height() - 148);
+				$(window).resize(function() {
+					$(".footer").css("top", $(window).height() - 50);
+					$(".bg-brq").css("top", $(window).height() - 98);
+					$(".content").css("height", $(window).height() - 148);
+					$(".content .android").css("height", $(window).height() - 148);
+				});
+			})
+		</script>
+        <div class="header">
+        	<div class="title">Conteúdo oficina</div>
+             <div class="sombra"></div>
+             <div class="bottom-voltar"><a href="oficinas.html">Voltar</a></div>
+        </div>
+
+        <div class="content android" data-scroll="y" ><br />
+        	<h2 class="aviso">Dirigente, conheça as informações gerenciais de sua Cooperativa</h2>
+        	<p>Ministrada por Isabel Marques Rizo, MBA em Controladoria e Finanças pela Trevisan Educacional em São Paulo e pós-graduada em Gestão Empresarial Avançada pela Fundação Armando Alvares Penteado (FAAP), esta oficina tem como objetivo apresentar as noções básicas de contabilidade, importantes para a análise e acompanhamento do desempenho administrativo de uma singular.</p>
+            <div class="dotted-border"></div>
+            
+            <p><strong>Público-alvo</strong></p>
+            <p>Dirigentes, Conselheiros e Executivos do Sistema Unimed</p>
+            <h2 class="aviso">Conteúdo programático</h2>
+            <p>- Fatores que podem gerar maior ou menor sucesso na gestão da Cooperativa;<br /><br />
+			- Situação Econômica do Sistema Unimed - O conhecimento de gestão de operadora como ferramenta para o sucesso na gestão - Macro análises cujos resultados demonstram o que está ocorrendo na Cooperativa - Indicadores Gerenciais - Análise de casos apresentados para fixação do conteúdo;<br /><br />
+			- Objetivo da Norma Derivada nº 010/2011;</p>
+            
+            <p><strong>Resultados esperados</strong></p>
+            <p>- Desenvolver a percepção dos dirigentes sobre a importância da contabilidade no gerenciamento da cooperativa.<br /><br />
+			- Compreender os aspectos jurídicos e contábeis de uma operadora de planos de saúde.</p>
+			<div class="dotted-border"></div>
+            
+             <p><strong>Bibliografia Básica</strong></p> 
+            <p>- KRUEGER, Guilherme; MURGEL, Maria Inês. Apostila utilizada no Programa de Autogestão: Aspectos legais e tributários das cooperativas. São Paulo: OCESP/SSCOOP-SP, 2002. <br /><br />
+            - LUDÍCIBUS, Sérgio de. Análise de Balanços. Ed. Atlas, 2009. <br /><br />
+            - MARION, José Carlos. Contabilidade Básica. Ed. Atlas, 2009</p>
+       </div>
+       <div class="bg-brq"><a href="http://www.brq.com" target="_blank" style="display:block; float:left; width:100%; height:40px;"></a></div>
+    	<div  class="footer">
+        	<ul class="evento">
+              <li style="border-left:none;"><a class="informacoes" href="index.html" data-transition="slide" title="Informações">Informações</a></li>
+           	  <li class="highlight"><a class="programacao" href="lista-programacao.html" data-transition="slide" title="">Programação</a></li>
+              <li><a class="negocios" href="negocios.html" data-transition="slide" title="">Negócios</a></li>
+              <li><a class="mapa" href="mapa.html" data-transition="slide" title="">Mapa</a></li>
+              <li><a class="executivos" href="executivos.html" data-transition="slide" title="">Executivos</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>

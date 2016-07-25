@@ -1,0 +1,43 @@
+<project name="MartinsModulo" default="jar" basedir=".">
+
+	<property name="brq-win-lib-dir"  	value="../../BRQMobileWin/lib" />
+	<property name="service-dist-dir"  	value="../../VendasService/lib" />
+	<property name="brq-martins-lib-dir" value="../../MartinsDist/framework" />
+	
+	<property name="martins-modulo-src-dir"  location="../src" />
+	<property name="martins-modulo-bin-dir"  location="../bin" />
+	<property name="martins-modulo-dist-dir"  location="../dist" />
+
+	<path id="service-classpath-base">
+		<pathelement location="${brq-martins-lib-dir}/framework-base.jar" />
+		<pathelement location="${brq-martins-lib-dir}/framework-windows.jar" />
+		<pathelement location="${brq-win-lib-dir}/xpp3-1.1.4c.jar" />
+		<pathelement location="${service-dist-dir}/VendasService.jar" />
+	</path>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${martins-modulo-dist-dir}/MartinsModulo.jar">
+			<fileset dir="${martins-modulo-bin-dir}" />
+		</jar>
+	</target>
+
+	<target name="compile" depends="clean,init">
+		<echo>Compilando projeto MartinsModulo</echo>
+		<javac debug="on" includeantruntime="true" destdir="${martins-modulo-bin-dir}">
+			<src path="${martins-modulo-src-dir}" />
+			<classpath refid="service-classpath-base" />
+		</javac>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${martins-modulo-bin-dir}" />
+	</target>
+
+	<target name="clean" >
+		<delete failonerror="false">
+			<fileset dir="${martins-modulo-dist-dir}" />
+			<fileset dir="${martins-modulo-bin-dir}" />
+		</delete>
+	</target>
+
+</project>

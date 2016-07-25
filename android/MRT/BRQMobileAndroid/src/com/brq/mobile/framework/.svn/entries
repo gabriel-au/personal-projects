@@ -1,0 +1,34 @@
+10
+
+dir
+5647
+https://mobile139.brq.com:8443/svn/mobile/framework/code/trunk/BRQMobileAndroid/src/com/brq/mobile/framework
+https://mobile139.brq.com:8443/svn/mobile
+
+
+
+2012-07-09T15:44:57.885003Z
+5617
+alexandreoliveira
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+692d38cc-a861-b441-aa62-ddaff52ae480
+
+core
+dir
+
+http
+dir
+

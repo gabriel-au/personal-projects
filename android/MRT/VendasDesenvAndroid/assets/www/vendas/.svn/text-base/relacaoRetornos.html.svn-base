@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.6.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script>
+		
+		$(document).ready(		
+			function(){
+			BRQNavegacao.adicionarPilhaNavegacao('retornos');
+			numeroPedido= getPedido().numeroPedido;
+			codigoCliente = getCliente().codigoCliente;	
+			$("#cliente").text( getCliente().nomeCliente);
+			$("#numero_pedido").text(numeroPedido);	
+			carregaRetornos(numeroPedido);		
+		   }
+		);
+		
+		function carregaRetornos(numeroPedido){
+			BRQMob.log("entrando na funcao carregar titulos abertos");
+		  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "retornosCliente", [numeroPedido]);	
+		}
+		function sucesso(retorno){
+			loadListaRetornos(retorno.listaRetornos);
+		}
+		
+		function loadListaRetornos(lista){			
+			limparTabela();	
+				
+			$.each(lista, function(i,obj){					
+				
+				tr = $('<tr/>', {});
+				
+				td_data= $('<td/>', {});			
+				$($('<span/>', {"text":obj.dataOcorrencia})).appendTo(td_data);
+				$(td_data).appendTo(tr);
+				
+				td_hora= $('<td/>', {});
+				$($('<span/>', {"text":obj.horaOcorrencia})).appendTo(td_hora);
+				$(td_hora).appendTo(tr);
+				
+				td_resultado= $('<td/>', {"style":"text-align:left"});
+				$($('<span/>', {"text":obj.codigoSituacaoPedido})).appendTo(td_resultado);
+				$(td_resultado).appendTo(tr);
+				
+				td_descricao= $('<td/>', {"style":"text-align:left"});
+				$($('<span/>', {"text":obj.descricaoSituacaoPedido})).appendTo(td_descricao);
+				$(td_descricao).appendTo(tr);				
+				
+				td_observacao= $('<td/>', {"style":"text-align:left"});
+				$($('<span/>', {"text":obj.descObservacao})).appendTo(td_observacao);
+				$(td_observacao).appendTo(tr);	
+				
+				$(tr).appendTo(tbody_lista_retorno);
+			});	
+		}
+	
+		function limparTabela(){
+			$(tbody_lista_retorno).empty();
+		}
+	
+		function voltar(){
+			if('clientePedidos' != getViewNameOrigem()){
+				sessionStorage.removeObject('cliente');
+				sessionStorage.removeObject('pedido');
+				javascript:BRQNavegacao.voltar() ;
+			}else{				
+				javascript:BRQNavegacao.voltar() ;
+			}		
+		}
+	
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<a class="button left" href="javascript:voltar()">Retornar Lista de Pedidos</a>
+				<h1>Retornos</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<div id="mainContent" class="scroll">
+				<h2>Relação dos Retornos</h2>
+				<div class="formDiv">
+					<div class="line">
+						<div class="cell">
+							<label>Pedido</label>
+							<span id="numero_pedido" style="text-align:center"></span>
+						</div>
+						<div class="cell">
+							<label>Cliente</label>
+							<span id="cliente"></span>
+						</div>
+					</div>
+				</div>
+				<div class="tableList">
+					<!-- Exemplo grupo de listas para seleção de dados -->
+					<table style="width:100%;" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Data</th>
+								<th>Hora</th>
+								<th>Resultado</th>
+								<th>Descrição do Resultado</th>
+								<th>Observação</th>
+							</tr>
+						</thead>
+						<tbody id="tbody_lista_retorno">							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

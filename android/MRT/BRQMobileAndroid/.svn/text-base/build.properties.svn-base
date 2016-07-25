@@ -1,0 +1,8 @@
+src-dir=src
+bin-dir=bin
+lib-dir=lib
+
+dist-dir=../MartinsDist/framework
+dist-android-dir=../MartinsDist/app_android
+
+brq_mobile_library_dir=../BRQ_MOBILE_LIBRARY/android

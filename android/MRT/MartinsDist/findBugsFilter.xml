@@ -1,0 +1,17 @@
+<FindBugsFilter>
+
+<Match>
+	<Class name=".*\.brq\.*" />
+	<Not>
+		<Bug code="NP_TOSTRING_COULD_RETURN_NULL" />
+	</Not>
+</Match>
+
+<Match>
+	<Class name=".*\.martins\.*" />
+		<Not>
+		<Bug code="NP_TOSTRING_COULD_RETURN_NULL" />
+	</Not>
+</Match>
+
+</FindBugsFilter>

@@ -1,0 +1,603 @@
+TRevistaSTJ
+v7
+r0
+t291307734.521683
+cCheck dependencies
+cProcessInfoPlistFile /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/Info.plist RevistaSTJ-Info.plist
+cCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib
+cCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib
+cProcessPCH /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/main.o /Users/ecarminati/Projetos/RevistaSTJ/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJAppDelegate.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/IndiceViewController.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FileUtil.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ZipArchive.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ioapi.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/mztools.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/unzip.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/zip.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+cLd /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ normal i386
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B9F68DC00000000000000EE
+t1268738268
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026EE30
+t1261128899
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/errno.h
+c000000004748A13100000000000003EB
+t1195942193
+s1003
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/stdlib.h
+c000000004748A1330000000000002A79
+t1195942195
+s10873
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/string.h
+c000000004748A1330000000000001731
+t1195942195
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/time.h
+c000000004748A133000000000000178E
+t1195942195
+s6030
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/zconf.h
+c000000004748ECC90000000000002577
+t1195961545
+s9591
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/zlib.h
+c000000004748ECC900000000000102A5
+t1195961545
+s66213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004748AF950000000000003197
+t1195945877
+s12695
+
+N/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm
+c000000004ADF0C660000000000002107
+t1256131686
+s8455
+i"ZipArchive.h"
+i"zlib.h"
+i"zconf.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c
+c0000000049F07BF00000000000000F1F
+t1240497136
+s3871
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c
+c0000000049F07BF0000000000000204A
+t1240497136
+s8266
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c
+c0000000049F07BF0000000000000C6CA
+t1240497136
+s50890
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c
+c0000000049F07BF000000000000096AC
+t1240497136
+s38572
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<time.h>
+i"zlib.h"
+i"zip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.h
+c000000004BACC8F600000000000002AA
+t1269614838
+s682
+i<Foundation/Foundation.h>
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m
+c000000004BACC90900000000000005FA
+t1269614857
+s1530
+i"FileUtil.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/FirstViewController.h
+c000000004BACC67900000000000000FD
+t1269614201
+s253
+i<UIKit/UIKit.h>
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/FirstViewController.m
+c000000004BACC67900000000000005C2
+t1269614201
+s1474
+i"FirstViewController.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib
+c000000004BACC8430000000000001877
+t1269614659
+s6263
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.h
+c000000004BACC84300000000000000FF
+t1269614659
+s255
+i<UIKit/UIKit.h>
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m
+c000000004BACC843000000000000058F
+t1269614659
+s1423
+i"IndiceViewController.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.xib
+c000000004BACC8430000000000001877
+t1269614659
+s6263
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.h
+c000000004BACC67900000000000001F2
+t1269614201
+s498
+i<UIKit/UIKit.h>
+
+N/Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m
+c000000004BACC67900000000000003D6
+t1269614201
+s982
+i"RevistaSTJAppDelegate.h"
+
+N/Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib
+c000000004BACC6790000000000004221
+t1269614201
+s16929
+
+N/Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch
+c000000004BACC67900000000000000BD
+t1269614201
+s189
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/ecarminati/Projetos/RevistaSTJ/SecondView.xib
+c000000004BACC67900000000000022F2
+t1269614201
+s8946
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app.dSYM
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/IndiceView.nib
+t1269614931
+s1106
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/IndiceViewController.nib
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/Info.plist
+t1269614931
+s576
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/MainWindow.nib
+t1269614931
+s4048
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/PkgInfo
+t1269614931
+s8
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/SecondView.nib
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FileUtil.o
+t1269614933
+s11480
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FirstViewController.o
+t2
+s0
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/IndiceViewController.o
+t1269614933
+s29936
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJ.LinkFileList
+c000000004BACC95200000000000004A6
+t1269614930
+s1190
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJAppDelegate.o
+t1269614933
+s40924
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ZipArchive.o
+t1269614934
+s29452
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ioapi.o
+t1269614934
+s7020
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/main.o
+t1269614933
+s5956
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/mztools.o
+t1269614934
+s9032
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/unzip.o
+t1269614934
+s28560
+
+N/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/zip.o
+t1269614934
+s26504
+
+N/Users/ecarminati/Projetos/RevistaSTJ/main.m
+c000000004BACC6790000000000000178
+t1269614201
+s376
+i<UIKit/UIKit.h>
+
+N/Users/ecarminati/Projetos/TabBarApp/Classes/ZipArchive.h
+c000000004ADF0D6A0000000000000457
+t1256131946
+s1111
+i<UIKit/UIKit.h>
+i"minizip/zip.h"
+i"minizip/unzip.h"
+
+N/Users/ecarminati/Projetos/TabBarApp/Classes/minizip/crypt.h
+c0000000049F07BF000000000000012EC
+t1240497136
+s4844
+
+N/Users/ecarminati/Projetos/TabBarApp/Classes/minizip/ioapi.h
+c0000000049F07BF00000000000000A32
+t1240497136
+s2610
+
+N/Users/ecarminati/Projetos/TabBarApp/Classes/minizip/unzip.h
+c0000000049F07BF0000000000000340A
+t1240497136
+s13322
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/ecarminati/Projetos/TabBarApp/Classes/minizip/zip.h
+c0000000049F07BF0000000000000237A
+t1240497136
+s9082
+i"zlib.h"
+i"ioapi.h"
+
+N/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch.gch
+t1269614933
+s2142576
+
+N/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch.gch
+t1269614932
+s13972912
+
+N/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch.gch
+t1269614932
+s13034960
+
+NRevistaSTJ-Info.plist
+c000000004BACC679000000000000038D
+t1269614201
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies291307730#291307730#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FileUtil.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s291307733.656154
+e291307733.751026
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FileUtil.o
+x/Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m291307733#291307733#0(0"0(0#0#56"/Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m4300885448#1924"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/Classes/FileUtil.m -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FileUtil.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/FirstViewController.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/IndiceViewController.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s291307733.628067
+e291307733.692960
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/IndiceViewController.o
+x/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m291307733#291307733#0(0"0(0#0#68"/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m4300885448#1948"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.m -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/IndiceViewController.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJAppDelegate.o /Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s291307733.574331
+e291307733.656046
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJAppDelegate.o
+x/Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m291307733#291307733#0(0"0(0#0#69"/Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m4300885448#1950"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/Classes/RevistaSTJAppDelegate.m -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJAppDelegate.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ZipArchive.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s291307733.693066
+e291307734.068760
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ZipArchive.o
+x/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm: In function 'BOOL -[ZipArchive UnzipOpenFile:](ZipArchive*, objc_selector*, NSString*)':
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm:160: warning: format not a string literal and no format arguments
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm: In function 'BOOL -[ZipArchive UnzipFileTo:overWrite:](ZipArchive*, objc_selector*, NSString*, BOOL)':
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm:210: warning: 'stringWithCString:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:364)
+lSLF07#2@80"Compile /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm291307733#291307734#0(771"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm: In function 'BOOL -[ZipArchive UnzipOpenFile:](ZipArchive*, objc_selector*, NSString*)':/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm:160: warning: format not a string literal and no format arguments/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm: In function 'BOOL -[ZipArchive UnzipFileTo:overWrite:](ZipArchive*, objc_selector*, NSString*, BOOL)':/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm:210: warning: 'stringWithCString:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:364)2(22@51"Format not a string literal and no format arguments291307733#163#139#0(6@72"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm277824486#160#0#160#0#51"format not a string literal and no format arguments0(22@204"'stringWithCString:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:364)291307733#479#292#0(6@72"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm277824486#210#0#210#0#33"'*' is deprecated (declared at *)0(0#0#72"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm4300885448#1963"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/ZipArchive.mm -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ZipArchive.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ioapi.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+s291307733.751138
+e291307734.015450
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ioapi.o
+x/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c291307733#291307734#0(0"0(0#0#74"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c4300885448#1929"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/ioapi.c -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/ioapi.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/main.o /Users/ecarminati/Projetos/RevistaSTJ/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s291307733.573323
+e291307733.627957
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/main.o
+x/Users/ecarminati/Projetos/RevistaSTJ/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/ecarminati/Projetos/RevistaSTJ/main.m291307733#291307733#0(0"0(0#0#44"/Users/ecarminati/Projetos/RevistaSTJ/main.m4300885448#1908"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/main.m -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/main.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/mztools.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+s291307734.015571
+e291307734.093999
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/mztools.o
+x/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c291307734#291307734#0(0"0(0#0#76"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c6076307475033323520#1933"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/mztools.c -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/mztools.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/unzip.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+s291307734.068865
+e291307734.249069
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/unzip.o
+x/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c: In function 'unzGetGlobalComment':
+o/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c:1537: warning: unused variable 'err'
+lSLF07#2@82"Compile /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c291307734#291307734#0(223"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c: In function 'unzGetGlobalComment':/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c:1537: warning: unused variable 'err'1(22@21"Unused variable 'err'291307734#111#112#0(6@74"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c262189936#1537#0#1537#0#19"unused variable '*'0(0#0#74"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c4300885448#1929"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/unzip.c -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/unzip.o0#
+
+CCompileC build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/zip.o /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+s291307734.094105
+e291307734.237904
+r1
+xCompileC
+xbuild/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/zip.o
+x/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c291307734#291307734#0(0"0(0#0#72"/Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c4300885448#1925"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -include /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch -c /Users/ecarminati/Projetos/RevistaSTJ/../TabBarApp/Classes/minizip/zip.c -o /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/zip.o0#
+
+CCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib
+s291307731.008521
+e291307731.394394
+r1
+xCompileXIB
+x/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib
+lSLF07#2@33"CompileXIB Classes/IndiceView.xib291307731#291307731#0(0"0(0#0#60"/Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib4300885448#490"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/IndiceView.nib /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceView.xib0#
+
+CCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/Classes/IndiceViewController.xib
+r0
+
+CCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib
+s291307731.007525
+e291307731.486953
+r1
+xCompileXIB
+x/Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib291307731#291307731#0(0"0(0#0#52"/Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib4300885448#482"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/MainWindow.nib /Users/ecarminati/Projetos/RevistaSTJ/MainWindow.xib0#
+
+CCompileXIB /Users/ecarminati/Projetos/RevistaSTJ/SecondView.xib
+r0
+
+CGenerateDSYMFile /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app.dSYM /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ
+r0
+
+CLd /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ normal i386
+s291307734.249194
+e291307734.521582
+r0
+xLd
+x/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ
+xnormal
+xi386
+oUndefined symbols:
+o  "_crc32", referenced from:
+o      -[ZipArchive addFileToZip:newname:] in ZipArchive.o
+o      -[ZipArchive addFileToZip:newname:] in ZipArchive.o
+o      _unzReadCurrentFile in unzip.o
+o      _unzReadCurrentFile in unzip.o
+o      _zipWriteInFileInZip in zip.o
+o  "_deflate", referenced from:
+o      _zipWriteInFileInZip in zip.o
+o      _zipCloseFileInZipRaw in zip.o
+o  "_inflate", referenced from:
+o      _unzReadCurrentFile in unzip.o
+o  "_deflateEnd", referenced from:
+o      _zipCloseFileInZipRaw in zip.o
+o  "_inflateEnd", referenced from:
+o      _unzCloseCurrentFile in unzip.o
+o  "_inflateInit2_", referenced from:
+o      _unzOpenCurrentFile3 in unzip.o
+o  "_get_crc_table", referenced from:
+o      _unzOpenCurrentFile3 in unzip.o
+o      _zipOpenNewFileInZip3 in zip.o
+o  "_deflateInit2_", referenced from:
+o      _zipOpenNewFileInZip3 in zip.o
+old: symbol(s) not found
+ocollect2: ld returned 1 exit status
+lSLF07#2@96"Link /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ291307734#291307734#0(910"Undefined symbols:  "_crc32", referenced from:      -[ZipArchive addFileToZip:newname:] in ZipArchive.o      -[ZipArchive addFileToZip:newname:] in ZipArchive.o      _unzReadCurrentFile in unzip.o      _unzReadCurrentFile in unzip.o      _zipWriteInFileInZip in zip.o  "_deflate", referenced from:      _zipWriteInFileInZip in zip.o      _zipCloseFileInZipRaw in zip.o  "_inflate", referenced from:      _unzReadCurrentFile in unzip.o  "_deflateEnd", referenced from:      _zipCloseFileInZipRaw in zip.o  "_inflateEnd", referenced from:      _unzCloseCurrentFile in unzip.o  "_inflateInit2_", referenced from:      _unzOpenCurrentFile3 in unzip.o  "_get_crc_table", referenced from:      _unzOpenCurrentFile3 in unzip.o      _zipOpenNewFileInZip3 in zip.o  "_deflateInit2_", referenced from:      _zipOpenNewFileInZip3 in zip.old: symbol(s) not foundcollect2: ld returned 1 exit status24(4@26""_crc32", referenced from:291307734#19#29#0(6@0"291307734#0#0#0#0#0"0(13@51"-[ZipArchive addFileToZip:newname:] in ZipArchive.o291307734#48#58#0(6@0"291307734#0#0#0#0#0"0(13@51"-[ZipArchive addFileToZip:newname:] in ZipArchive.o291307734#106#58#0(6@0"291307734#0#0#0#0#0"0(13@30"_unzReadCurrentFile in unzip.o291307734#164#37#0(6@0"291307734#0#0#0#0#0"0(13@30"_unzReadCurrentFile in unzip.o291307734#201#37#0(6@0"291307734#0#0#0#0#0"0(13@29"_zipWriteInFileInZip in zip.o291307734#238#36#0(6@0"291307734#0#0#0#0#0"0(4@28""_deflate", referenced from:291307734#274#31#0(6@0"291307734#0#0#0#0#0"0(13@29"_zipWriteInFileInZip in zip.o291307734#305#36#0(6@0"291307734#0#0#0#0#0"0(13@30"_zipCloseFileInZipRaw in zip.o291307734#341#37#0(6@0"291307734#0#0#0#0#0"0(4@28""_inflate", referenced from:291307734#378#31#0(6@0"291307734#0#0#0#0#0"0(13@30"_unzReadCurrentFile in unzip.o291307734#409#37#0(6@0"291307734#0#0#0#0#0"0(4@31""_deflateEnd", referenced from:291307734#446#34#0(6@0"291307734#0#0#0#0#0"0(13@30"_zipCloseFileInZipRaw in zip.o291307734#480#37#0(6@0"291307734#0#0#0#0#0"0(4@31""_inflateEnd", referenced from:291307734#517#34#0(6@0"291307734#0#0#0#0#0"0(13@31"_unzCloseCurrentFile in unzip.o291307734#551#38#0(6@0"291307734#0#0#0#0#0"0(4@34""_inflateInit2_", referenced from:291307734#589#37#0(6@0"291307734#0#0#0#0#0"0(13@31"_unzOpenCurrentFile3 in unzip.o291307734#626#38#0(6@0"291307734#0#0#0#0#0"0(4@34""_get_crc_table", referenced from:291307734#664#37#0(6@0"291307734#0#0#0#0#0"0(13@31"_unzOpenCurrentFile3 in unzip.o291307734#701#38#0(6@0"291307734#0#0#0#0#0"0(13@30"_zipOpenNewFileInZip3 in zip.o291307734#739#37#0(6@0"291307734#0#0#0#0#0"0(4@34""_deflateInit2_", referenced from:291307734#776#37#0(6@0"291307734#0#0#0#0#0"0(13@30"_zipOpenNewFileInZip3 in zip.o291307734#813#37#0(6@0"291307734#0#0#0#0#0"0(13@19"Symbol(s) not found291307734#850#24#0(6@0"291307734#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status291307734#874#36#0(6@0"291307734#0#0#0#0#0"0(0#0#0"4300885448#874"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -filelist /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/Objects-normal/i386/RevistaSTJ.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/RevistaSTJ1#
+
+CProcessInfoPlistFile /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/Info.plist RevistaSTJ-Info.plist
+s291307730.969646
+e291307731.007422
+r1
+xProcessInfoPlistFile
+x/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/Info.plist
+xRevistaSTJ-Info.plist
+lSLF07#2@29"Process RevistaSTJ-Info.plist291307731#291307731#0(0"0(0#0#59"/Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ-Info.plist29555065834897524#485"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RevistaSTJ-Info.plist -genpkginfo /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app/Info.plist0#
+
+CProcessPCH /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s291307733.321701
+e291307733.573198
+r1
+xProcessPCH
+x/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch.gch
+xRevistaSTJ_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile RevistaSTJ_Prefix.pch291307733#291307733#0(0"0(0#0#59"/Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch4300885448#1788"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -c /Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch -o /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-bibmfphtyllmztfphpcfnbnliigm/RevistaSTJ_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s291307731.487153
+e291307733.497473
+r1
+xProcessPCH
+x/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch.gch
+xRevistaSTJ_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile RevistaSTJ_Prefix.pch291307731#291307733#0(0"0(0#0#59"/Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch4300885448#1798"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -c /Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch -o /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-eyjaaysxbfslvifljygrlgpikpqg/RevistaSTJ_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch.gch RevistaSTJ_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s291307731.488113
+e291307733.321478
+r1
+xProcessPCH++
+x/var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch.gch
+xRevistaSTJ_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile RevistaSTJ_Prefix.pch291307731#291307733#0(0"0(0#0#59"/Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch4300885448#1819"    cd /Users/ecarminati/Projetos/RevistaSTJ    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-generated-files.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-own-target-headers.hmap -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-all-target-headers.hmap -iquote /Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/RevistaSTJ-project-headers.hmap -F/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator -I/Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/include -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources/i386 -I/Users/ecarminati/Projetos/RevistaSTJ/build/RevistaSTJ.build/Debug-iphonesimulator/RevistaSTJ.build/DerivedSources -c /Users/ecarminati/Projetos/RevistaSTJ/RevistaSTJ_Prefix.pch -o /var/folders/34/34qeS9fMF-yM1EntBopYyk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RevistaSTJ_Prefix-ejnmftcpkenkamhhrxxxjhnyrbhw/RevistaSTJ_Prefix.pch.gch0#
+
+CTouch /Users/ecarminati/Projetos/RevistaSTJ/build/Debug-iphonesimulator/RevistaSTJ.app
+r0
+

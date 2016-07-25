@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Sistema de Vendas Martins</title>
+    
+	<link rel="stylesheet" type="text/css" href="../includes/css/skeleton.css"/>
+	<link rel="stylesheet" type="text/css" href="../includes/css/components.css"/>
+	
+	<script src="../includes/js/BRQMob.js"></script>
+	<script src="../includes/js/phonegap-1.3.0.js"></script>
+	<script src="../includes/js/jquery-1.7.2.min.js"></script>
+	<script src="../includes/js/iscroll-min.js"></script>
+	<script src="../includes/js/actions.js"></script>
+	<script src="../includes/js/BRQComum.js"></script>
+	<script src="../includes/js/BRQNavegacao.js"></script>
+	
+	<script>
+	
+	$(document).ready(		
+		function(){
+			cliente = getCliente();
+			representante = getRepresentante();
+			carregaComissaoBySimboloMercadoria(cliente);			
+		}
+	);	
+	
+	function carregaComissaoBySimboloMercadoria(){
+		BRQMob.log("entrando na funcao carregar comissao por simbolo de mercadoria");
+	  	BRQMob.exec("sucesso", "falha", "VendasDispatcher", "comissaoSimbolo",[cliente.canal,cliente.tipoLimiteCredito,representante.naturezaRepresentante]);
+		
+	}
+	
+	function sucesso(retorno){		
+		montarTabelaComissao(retorno.listaComissao);
+	}
+	
+	function montarTabelaComissao(listaComissao){
+		limpaBodyTabela();
+					
+		$.each(listaComissao, function(i,obj){
+			
+			tr = $('<tr/>', {"class" : ( i % 2 == 0 ? "" : "off ")});
+					
+			td_simbolo= $('<td/>', {"style":"text-align: center"});			
+			$($('<span/>', {"text":obj.codigoSimboloSituacao})).appendTo(td_simbolo);
+			$(td_simbolo).appendTo(tr);	
+			
+			td_comissao= $('<td/>', {"style":"text-align: right"});			
+			$($('<span/>', {"text":obj.percentualComissaoSimbolo})).appendTo(td_comissao);
+			$(td_comissao).appendTo(tr);
+			
+			td_valor_venda= $('<td/>', {"style":"text-align: right"});			
+			$($('<span/>', {"text":obj.valorVendaMercadoria})).appendTo(td_valor_venda);
+			$(td_valor_venda).appendTo(tr);	
+			
+			td_comissao_simbolo= $('<td/>', {"style":"text-align: right"});			
+			$($('<span/>', {"text":obj.valorComissaoSMB})).appendTo(td_comissao_simbolo);
+			$(td_comissao_simbolo).appendTo(tr);
+			
+			td_comissao_variavel= $('<td/>', {"style":"text-align: right"});			
+			$($('<span/>', {"text":obj.valorComissaoVariavel})).appendTo(td_comissao_variavel);
+			$(td_comissao_variavel).appendTo(tr);	
+			
+			td_comissao_total= $('<td/>', {"style":"text-align: right"});			
+			$($('<span/>', {"text":obj.valorComissaoTotal})).appendTo(td_comissao_total);
+			$(td_comissao_total).appendTo(tr);	
+			
+			$(tr).appendTo(tbody_lista_comissao_mercadoria);		
+		
+		});				
+	}
+	
+		function limpaBodyTabela(){
+			$(tbody_lista_comissao_mercadoria).empty();
+		}
+	</script>
+	
+</head>
+<body>
+	<!-- CONTAINER, envolve todo conteúdo, caso exista o menu do sistema ele deverá conter a classe 'wMenu' -->
+	<div id="container">
+		
+		<!-- CONTEÚDO, conteúdo das seções da aplicação -->
+		<div id="content">
+			<!-- CABEÇALHO, topo do aplicativo com a navegação e títulos -->
+			<div id="header">
+				<!-- Navegação esquerda - em caso de seção com menu, deixar o leftNav vazio -->
+				<a class="button left" href="fecharPedido.html">Voltar</a>
+				<h1>Comissão por Símbolo de Mercadoria</h1>
+			</div>
+			<!-- FIM CABEÇALHO -->
+			<!-- CONTEÚDO PRINCIPAL, conteúdo da seção -->
+			<table style="width:100%" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Símbolo</th>
+						<th>%Comissão</th>
+						<th>Valor Venda</th>
+						<th>Comissão Símbolo</th>
+						<th>Comissão Variável</th>
+						<th>Comissão Total</th>
+					</tr>
+				</thead>
+				<tbody id="tbody_lista_comissao_mercadoria">
+					
+				</tbody>
+			</table>
+			<!-- FIM CONTEÚDO PRINCIPAL -->
+		</div>
+		<!-- FIM CONTEÚDO -->
+	</div>
+</body>
+</html>

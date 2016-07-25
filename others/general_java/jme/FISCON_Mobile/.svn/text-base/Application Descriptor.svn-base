@@ -1,0 +1,9 @@
+MIDlet-1: FISCON,/icones/icone.png,br.com.codequest.mobile.MobileMain
+MIDlet-Jar-URL: fiscon.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 3.0.0
+MIDlet-Name: FISCON
+MIDlet-Vendor: Prime Mobile Solutions
+MIDlet-Info-URL: http://www.primems.com.br
+MIDlet-Permissions: javax.microedition.io.Connector.http,javax.microedition.location.Orientation,javax.microedition.location.Location,javax.microedition.location.ProximityListener,javax.microedition.media.control.VideoControl.getSnapshot
+MicroEdition-Profile: MIDP-2.0

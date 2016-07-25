@@ -1,0 +1,50 @@
+* {margin:0; padding:0; font-size:1em; font-family: Verdana; color: #4A4A4A;}
+
+body {background-color: #DADCD7;} 
+.invisible {display:none;}
+
+.container {width:1024px; height:748px; position:relative; margin:auto;}
+.initial {background: url(../img/bg_inicial.png) no-repeat 0 140px;}
+
+/* PÁGINA INICIAL */
+.introHeader {position:absolute; top:20px; left:30px;}
+.loginArea {float:right; height:518px; padding-top:230px; padding-right:240px;}
+.welcome {float:left; width:50%; height:518px; padding-top:230px; background: transparent url(../img/separador_y.gif) no-repeat right center;}
+.campaignBaseNave {float:left; width:50%; height:618px; padding-top:130px; position:relative;}
+
+/* PÁGINA WEBCHARTS */
+.webchartsHeader {width:100%; float:left;}
+.webchartsHeader .top {width:100%; height:45px; float:left; background: -moz-linear-gradient(55px 100% 90deg, #901f26, #d82e39); background: -webkit-gradient(linear, 0 0%, 0 100%, from(#d82e39), to(#901f26)); -moz-border-radius:7px 7px 0px 0px; -webkit-border-radius: 7px 7px 0 0; border-radius: 7px 7px 0px 0px;}
+.webchartsHeader .toolbar {width:100%; height:45px; float:left; background: url(../img/bg_taskBar.gif) repeat-x top left; -moz-border-radius:0 0 7px 7px; -webkit-border-radius: 0 0 7px 7px; border-radius: 0 0 7px 7px; border:2px solid #333333; border-left:0; border-right:0; -moz-border-bottom-colors: #666666 #333333; -moz-border-top-colors: #333333 #666666;}
+
+/*CONTEÚDO PRINCIPAL*/
+.content {clear:both; position:relative; padding:0 30px 35px;}
+.content .navigation {width:100%; height:20px; float:left; margin-top:10px;}
+.content .mainContent {width:400%; height:613px; clear:both; margin-top:10px; padding:5px; position:absolute;}
+
+/*GRÁFICOS*/
+.chartArea {border:5px solid #DCDCDC; float:left; background: -moz-linear-gradient(75% 25% 90deg, #EDEDED, #FFFFFF); background: -webkit-gradient(linear, 50% top, right top, from(#FFFFFF), to(#EDEDED)); -moz-box-shadow: 0px 0px 5px #333333;-webkit-box-shadow: 0px 0px 5px #333333; box-shadow: 0px 0px 5px #333333; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;}
+.small {width:460px; height:260px;}
+.small2lines {width:460px; height:550px;}
+.large {width:960px; height:260px;}
+.large2lines {width:960px; height:550px;}
+.chartContent {padding:5px; position:relative}
+.chartMaximized {position:fixed; width:1014px; height:738px; z-index:1000; top:0; left:0; margin:0 !important;}
+.small .chartContent, .large .chartContent {height:223px;}
+.small2lines .chartContent, .large2lines .chartContent {height:513px;}
+
+/*SCROLL*/
+.scrollbar {margin:15px 0px 0px; position:relative; height:20px; width:960px; background: url(../img/bg_scrollBar.gif); -moz-border-radius:0 7px 0 7px; -webkit-border-radius: 0 0 7px 7px; border-radius: 0 0 7px 7px;}
+.scrollbar .scroll {width: 40px; height:16px; position:absolute; background: url(../img/bg_taskBar.gif) repeat-x 0 50%; -moz-border-radius:0 5px 0 5px; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; -moz-box-shadow: 2px 0px 3px #666666;-webkit-box-shadow: 2px 0px 3px #666666; box-shadow: 2px 0px 3px #666666; border:2px solid #2C2C2C; -moz-border-bottom-colors: #2C2C2C #474747; -moz-border-top-colors: #2C2C2C #474747; -moz-border-right-colors: #2C2C2C #474747; -moz-border-left-colors: #2C2C2C #474747;}
+
+/*MENU ASSUNTOS*/
+.subjectNav {width:960px; margin:0 5px; position:absolute; bottom:0; z-index:99; background: -moz-linear-gradient(10% 90% 90deg, #0D0D0D, #2C2C2C); background: -webkit-gradient(linear, 0 50%, 0 100%, from(#2C2C2C), to(#0D0D0D)); -moz-border-radius:7px 7px 0 0; -webkit-border-radius: 7px 7px 0 0; border-radius: 7px 7px 0 0;}
+.subjectNav .headerNav {width:100%; height:30px;}
+.subjectNav .subjectNavContent {width:100%; height:315px; display:none;}
+.subjectNav .navControl {position:absolute; bottom:20px; z-index:100; width:960px; height:20px;}
+
+/*FLUTUANTE*/
+.floater {position: absolute; top:40%; left:50%; margin-left:-240px; z-index:50; padding:5px; background: url(../img/bg_floater.png); -moz-border-radius:7px; -webkit-border-radius: 7px; border-radius:7px;}
+.chartInfo {float:right; width:65%;}
+
+#webcharts {position:absolute; width:100%; height:748px; top:0; left:0; z-index:8; background-color: #DADCD7;}
