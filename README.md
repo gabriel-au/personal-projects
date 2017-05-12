@@ -29,8 +29,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 2:** To enable 'Neo_AddQtyIncrement' extension, run the following commands:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento module:enable --clear-static-content Neo_AddQtyIncrement
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:upgrade
 ```
@@ -38,16 +36,12 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 3** *(optional):* Run 'setup:di:compile' using command below. It helps to improve your site performance after installation:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:di:compile
 ```
 
 **Step 4:** To finish this installation, flush the cache following this command:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento cache:flush
 ```
 
@@ -58,8 +52,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 1:** Disable 'Neo_AddQtyIncrement' extension running this command:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento module:disable --clear-static-content Neo_AddQtyIncrement
 ```
 
@@ -68,8 +60,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 3:** Execute these commands:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:upgrade
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento cache:flush
 
@@ -82,8 +72,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 1:** Disable 'Neo_AddQtyIncrement' extension running this command:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento module:disable --clear-static-content Neo_AddQtyIncrement
 ```
 
@@ -92,8 +80,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 **Step 3:** Execute these commands:
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:upgrade
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento cache:flush
 ```
@@ -108,8 +94,6 @@ Sometimes, extensions installations require extra commands to clean cache, stati
 Removing cache and static files:
 
 ```
-#!bash
-
 sudo rm -rf [YOUR_PATH]/var/cache/* [YOUR_PATH]/var/generation [YOUR_PATH]/var/log [YOUR_PATH]/var/page_cache/*
 sudo rm -rf [YOUR_PATH]/pub/static
 ```
@@ -117,16 +101,12 @@ sudo rm -rf [YOUR_PATH]/pub/static
 Deploying all content files (static and cache):
 
 ```
-#!bash
-
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:static-content:deploy
 ```
 
 Solving permission issues (sample for Bitnami usage):
 
 ```
-#!bash
-
 sudo find /opt/bitnami/apps/magento/htdocs/var -type d -exec chmod 775 {} \;
 sudo find /opt/bitnami/apps/magento/htdocs/var -type f -exec chmod 664 {} \;
 sudo chown -R bitnami:daemon /opt/bitnami/apps/magento/htdocs/var;
@@ -141,8 +121,6 @@ sudo chown -R bitnami:daemon /opt/bitnami/apps/magento/htdocs/app;
 Extra commands for permission issues:
 
 ```
-#!bash
-
 sudo find /opt/bitnami/apps/magento/htdocs/vendor -type d -exec chmod 775 {} \;
 sudo find /opt/bitnami/apps/magento/htdocs/vendor -type f -exec chmod 664 {} \;
 sudo chown -R bitnami:daemon /opt/bitnami/apps/magento/htdocs/vendor;
