@@ -62,7 +62,6 @@ Enable quantity increment buttons for products as configured in your advanced in
 ```
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento setup:upgrade
 [YOUR_PATH]/php [YOUR_PATH]/bin/magento cache:flush
-
 ```
 
 **Step 4:** Execute installation steps again (above)
